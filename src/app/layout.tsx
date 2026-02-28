@@ -1,0 +1,121 @@
+import type { Metadata } from 'next';
+import { Inter, Outfit } from 'next/font/google';
+import '@/styles/globals.css';
+import { ThemeProvider } from '@/components/ThemeProvider';
+import { CompareProvider } from '@/components/CompareProvider';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { CompareBar } from '@/components/CompareBar';
+import { OrganizationJsonLd } from '@/components/JsonLd';
+
+const bodyFont = Inter({
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+});
+
+const displayFont = Outfit({
+  subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+  weight: ['400', '500', '600', '700', '800'],
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Magido USA — Leaders in Aqueous Parts Washing Systems',
+    template: '%s | Magido USA',
+  },
+  description:
+    'Magido USA manufactures professional aqueous parts washers built entirely from AISI 304 stainless steel. Spray cabinet, immersion, conveyor, and rotary systems for every industrial cleaning application.',
+  keywords: [
+    'aqueous parts washer',
+    'industrial parts cleaning',
+    'stainless steel parts washer',
+    'spray cabinet washer',
+    'immersion parts washer',
+    'conveyor parts washer',
+    'rotary drum washer',
+    'parts cleaning systems',
+    'AISI 304 stainless steel',
+    'Magido USA',
+  ],
+  authors: [{ name: 'Magido USA' }],
+  creator: 'Magido USA',
+  metadataBase: new URL('https://adv.magidousa.com'),
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://adv.magidousa.com',
+    siteName: 'Magido USA',
+    title: 'Magido USA — Leaders in Aqueous Parts Washing Systems',
+    description:
+      'Professional aqueous parts washers built from AISI 304 stainless steel. Spray cabinet, immersion, conveyor, and rotary systems.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Magido USA — Aqueous Parts Washing Systems',
+    description:
+      'Professional aqueous parts washers built from AISI 304 stainless steel.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://adv.magidousa.com',
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Favicon */}
+        <link rel="icon" href="/images/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/favicon.png" />
+        {/* Prevent FOUC for dark mode */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('magido-theme');
+                  if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                  }
+                } catch(e) {}
+              })();
+            `,
+          }}
+        />
+        <OrganizationJsonLd />
+      </head>
+      <body
+        className={`${bodyFont.variable} ${displayFont.variable} font-sans antialiased`}
+      >
+        <ThemeProvider>
+          <CompareProvider>
+            <div className="flex min-h-screen flex-col">
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+            <CompareBar />
+          </CompareProvider>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
