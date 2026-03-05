@@ -67,23 +67,28 @@ export function Footer() {
             </h3>
             <ul className="mt-3 space-y-2">
               <li>
+                <Link href="/resources" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
+                  Product Catalog & Docs
+                </Link>
+              </li>
+              <li>
                 <Link href="/how-to-choose" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
-                  How to Choose a Parts Washer
+                  How to Choose a Washer
                 </Link>
               </li>
               <li>
                 <Link href="/blog" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
-                  Blog & Guides
+                  Blog & Videos
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact#evaluation" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
+                  Process Evaluation
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
-                  About Magido
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
-                  Contact Us
+                  About Magido USA
                 </Link>
               </li>
               <li>

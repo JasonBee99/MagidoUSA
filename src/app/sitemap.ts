@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllCategories, getAllProductSlugs } from '@/lib/products';
 import { getAllBlogSlugs } from '@/data/blog';
 import { getAllIndustrySlugs } from '@/data/industries';
+import { getAllResourceSlugs } from '@/data/resources';
 
 const BASE_URL = 'https://adv.magidousa.com';
 
@@ -17,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/how-to-choose`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE_URL}/industries`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/resources`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/compare`, lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
   ];
 
@@ -56,11 +58,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  // Resource pages
+  const resourceSlugs = getAllResourceSlugs();
+  const resourcePages: MetadataRoute.Sitemap = resourceSlugs.map((slug) => ({
+    url: `${BASE_URL}/resources/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...categoryPages,
     ...productPages,
     ...blogPages,
     ...industryPages,
+    ...resourcePages,
   ];
 }

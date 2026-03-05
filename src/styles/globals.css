@@ -232,3 +232,32 @@
     opacity: 0;
   }
 }
+
+/* ─── Resource Content (HTML rendered from data) ─── */
+.resource-content h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.9375rem;
+}
+
+.resource-content ul {
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.resource-content li {
+  margin-bottom: 0.25rem;
+}
+
+.resource-content p {
+  margin-bottom: 0.75rem;
+}
+
+.resource-content strong {
+  color: var(--color-text);
+  font-weight: 600;
+}

@@ -7,13 +7,10 @@ import {
   getCategoryBySlug,
   getSeriesBySlug,
   getProductsBySeries,
-  getCategoryNavigation,
 } from '@/lib/products';
 import { ProductImageGallery } from '@/components/ProductImageGallery';
 import { ProductSpecTabs } from '@/components/ProductSpecTabs';
 import { SeriesComparisonTable } from '@/components/SeriesComparisonTable';
-import { ProductNavigation } from '@/components/ProductNavigation';
-import { ChevronRight, FileText, Phone } from 'lucide-react';
 import { ProductJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd';
 
 // ─── Static generation for all product slugs ───
@@ -35,30 +32,41 @@ export function generateMetadata({
 
   const category = getCategoryBySlug(params.category);
   const series = getSeriesBySlug(product.seriesSlug);
-  const displayModel = product.model.replace(/-(\d)/, '/$1');
 
-  // Build a short spec summary for description
   const specHighlights: string[] = [];
   if (product.specs['Load Weight']) specHighlights.push(`Load: ${product.specs['Load Weight'].value}`);
   if (product.specs['Tank Capacity']) specHighlights.push(`Tank: ${product.specs['Tank Capacity'].value}`);
   if (product.specs['Heater']) specHighlights.push(`Heater: ${product.specs['Heater'].value} kW`);
 
-  const description = `${displayModel} ${series?.type || ''} parts washer by Magido USA. ${specHighlights.join(', ')}. Built from AISI 304 stainless steel.`;
+  const description = `${product.name} by Magido USA. ${series?.type || 'Parts Washer'}. ${specHighlights.join(', ')}. Built from AISI 304 stainless steel.`;
 
   return {
-    title: `${displayModel} — ${category?.name || 'Parts Washer'}`,
+    title: `${product.name} | Magido USA`,
     description,
     openGraph: {
-      title: `${displayModel} | Magido USA`,
+      title: `${product.name} | Magido USA`,
       description,
       images: product.images.length > 0 ? [{ url: product.images[0] }] : undefined,
     },
   };
 }
 
-function getDisplayModel(model: string): string {
-  return model.replace(/-(\d)/, '/$1');
-}
+// ─── Key specs to display as inline pairs (order matters) ───
+const KEY_SPEC_DISPLAY: { specKey: string; label: string }[] = [
+  { specKey: 'Belt Width', label: 'Belt Width' },
+  { specKey: 'Turntable Basket Diameter', label: 'Basket' },
+  { specKey: 'Drum Diameter', label: 'Drum' },
+  { specKey: 'Working Dimensions', label: 'Working Size' },
+  { specKey: 'Max Part Size', label: 'Max Part' },
+  { specKey: 'Load Weight', label: 'Load Weight' },
+  { specKey: 'Load Height', label: 'Wash Height' },
+  { specKey: 'Tank Capacity', label: 'Wash Tank' },
+  { specKey: 'Pump(s)', label: 'Wash Pump' },
+  { specKey: 'Flow Rate', label: 'Flow Rate' },
+  { specKey: 'Max Operating Temperature', label: 'Temperature' },
+  { specKey: 'Voltage', label: 'Power Supply' },
+  { specKey: 'Timer', label: 'Timer' },
+];
 
 export default function ProductPage({
   params,
@@ -73,8 +81,23 @@ export default function ProductPage({
 
   const series = getSeriesBySlug(product.seriesSlug);
   const seriesProducts = getProductsBySeries(product.seriesSlug);
-  const { prev, next } = getCategoryNavigation(product.slug);
-  const displayModel = getDisplayModel(product.model);
+
+  // Build key specs for display
+  const keySpecs = KEY_SPEC_DISPLAY
+    .filter((ks) => {
+      const spec = product.specs[ks.specKey];
+      return spec && spec.value && spec.value !== '–' && spec.value !== '-';
+    })
+    .map((ks) => {
+      const spec = product.specs[ks.specKey];
+      let displayValue = spec.value;
+      // Append unit if not already included
+      if (spec.unit && !spec.value.toLowerCase().includes(spec.unit.toLowerCase())) {
+        displayValue = `${spec.value} ${spec.unit}`;
+      }
+      return { label: ks.label, value: displayValue };
+    })
+    .slice(0, 8); // max 8 key specs shown
 
   return (
     <>
@@ -83,48 +106,44 @@ export default function ProductPage({
         className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-3 sm:px-6 lg:px-8"
         aria-label="Breadcrumb"
       >
-        <div className="mx-auto flex max-w-7xl items-center gap-2 text-sm">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-1.5 text-sm">
           <Link
             href="/"
             className="text-[var(--color-text-muted)] transition-colors hover:text-magido-orange"
           >
             Home
           </Link>
-          <ChevronRight className="h-3.5 w-3.5 text-[var(--color-text-muted)]" />
-          <Link
-            href="/products"
-            className="text-[var(--color-text-muted)] transition-colors hover:text-magido-orange"
-          >
-            Products
-          </Link>
-          <ChevronRight className="h-3.5 w-3.5 text-[var(--color-text-muted)]" />
+          <span className="text-[var(--color-text-muted)]">›</span>
           <Link
             href={`/products/${params.category}`}
             className="text-[var(--color-text-muted)] transition-colors hover:text-magido-orange"
           >
             {category.name}
           </Link>
-          <ChevronRight className="h-3.5 w-3.5 text-[var(--color-text-muted)]" />
+          {series && (
+            <>
+              <span className="text-[var(--color-text-muted)]">›</span>
+              <Link
+                href={`/products/${params.category}?series=${series.slug}-series`}
+                className="text-[var(--color-text-muted)] transition-colors hover:text-magido-orange"
+              >
+                {series.name}
+              </Link>
+            </>
+          )}
+          <span className="text-[var(--color-text-muted)]">›</span>
           <span className="font-medium text-[var(--color-text)]">
-            {displayModel}
+            {product.name}
           </span>
         </div>
       </nav>
-
-      {/* ─── Prev/Next Navigation ─── */}
-      <ProductNavigation
-        prev={prev}
-        next={next}
-        categorySlug={params.category}
-        categoryName={category.name}
-      />
 
       {/* ─── Product Hero ─── */}
       <section className="px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
-            {/* Left: Image gallery */}
-            <div className="lg:w-1/2">
+            {/* Left: Image */}
+            <div className="lg:w-5/12">
               <ProductImageGallery
                 images={product.images}
                 alt={product.name}
@@ -132,80 +151,66 @@ export default function ProductPage({
             </div>
 
             {/* Right: Product info */}
-            <div className="lg:w-1/2">
+            <div className="lg:w-7/12">
               {/* Series badge */}
               {series && (
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium text-[var(--color-text-muted)]">
-                    {series.name}
-                  </span>
-                  {series.isNew && (
-                    <span className="rounded-full bg-magido-orange px-2 py-0.5 text-2xs font-bold uppercase tracking-wider text-white">
-                      New
-                    </span>
-                  )}
-                </div>
+                <p className="text-sm font-medium text-[var(--color-text-muted)]">
+                  {series.name}
+                </p>
               )}
 
-              {/* Model title */}
-              <h1 className="mt-2 font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">
-                {displayModel}
+              {/* Product title */}
+              <h1 className="mt-1 font-display text-2xl font-bold tracking-tight text-[var(--color-text)] sm:text-3xl lg:text-4xl">
+                {product.name}
               </h1>
 
-              {/* Type description */}
-              <p className="mt-2 text-base text-[var(--color-text-secondary)]">
-                {series?.type || 'Parts Washer'} • Built from AISI 304
-                Stainless Steel
-              </p>
+              {/* Description */}
+              {series?.description && (
+                <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base">
+                  {series.description}
+                </p>
+              )}
 
-              {/* Quick specs */}
-              <div className="mt-6 grid grid-cols-2 gap-3">
-                {product.specs['Load Weight'] && product.specs['Load Weight'].value !== '–' && (
-                  <QuickSpec label="Load Capacity" value={product.specs['Load Weight'].value} />
-                )}
-                {product.specs['Tank Capacity'] && product.specs['Tank Capacity'].value !== '–' && (
-                  <QuickSpec label="Tank Capacity" value={product.specs['Tank Capacity'].value} />
-                )}
-                {product.specs['Heater'] && product.specs['Heater'].value !== '–' && (
-                  <QuickSpec label="Heater" value={`${product.specs['Heater'].value} kW`} />
-                )}
-                {product.specs['Voltage'] && product.specs['Voltage'].value !== '–' && (
-                  <QuickSpec label="Voltage" value={`${product.specs['Voltage'].value}V`} />
-                )}
-                {product.specs['Turntable Basket Diameter'] && product.specs['Turntable Basket Diameter'].value !== '–' && (
-                  <QuickSpec label="Basket Diameter" value={product.specs['Turntable Basket Diameter'].value} />
-                )}
-                {product.specs['Pump(s)'] && product.specs['Pump(s)'].value !== '–' && (
-                  <QuickSpec label="Pump(s)" value={product.specs['Pump(s)'].value} />
-                )}
-              </div>
+              {/* Key specs — bold label / value pairs */}
+              {keySpecs.length > 0 && (
+                <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 lg:grid-cols-4">
+                  {keySpecs.map((ks) => (
+                    <div key={ks.label}>
+                      <dt className="text-xs font-medium text-[var(--color-text-muted)]">
+                        {ks.label}
+                      </dt>
+                      <dd className="mt-0.5 text-sm font-bold text-[var(--color-text)]">
+                        {ks.value}
+                      </dd>
+                    </div>
+                  ))}
+                </div>
+              )}
 
               {/* CTAs */}
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
-                  href={`/contact?model=${encodeURIComponent(product.model)}`}
+                  href={`/contact?product=${encodeURIComponent(product.slug)}`}
                   className="inline-flex items-center gap-2 rounded-lg bg-magido-orange px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
                 >
-                  <FileText className="h-4 w-4" />
                   Request a Quote
                 </Link>
-                <a
-                  href="tel:8444624436"
+                <Link
+                  href="/contact?type=evaluation"
                   className="inline-flex items-center gap-2 rounded-lg border border-magido-blue px-6 py-3 text-sm font-semibold text-magido-blue transition-colors hover:bg-magido-blue hover:text-white dark:border-[var(--color-border)] dark:text-[var(--color-text-secondary)] dark:hover:bg-[var(--color-bg-tertiary)]"
                 >
-                  <Phone className="h-4 w-4" />
-                  844-4MA-GIDO
-                </a>
+                  Process Evaluation
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── Spec Tabs ─── */}
+      {/* ─── Spec Tabs (Features | Options | Full Specifications) ─── */}
       <section className="px-4 pb-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <ProductSpecTabs product={product} />
+          <ProductSpecTabs product={product} series={series || null} />
         </div>
       </section>
 
@@ -217,8 +222,7 @@ export default function ProductPage({
               Compare {series.name} Models
             </h2>
             <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-              Side-by-side specifications for all {seriesProducts.length} models
-              in the {series.name}
+              All specifications shown side-by-side for easy selection.
             </p>
             <div className="mt-6">
               <SeriesComparisonTable
@@ -231,20 +235,51 @@ export default function ProductPage({
           </div>
         </section>
       )}
-    </>
-  );
-}
 
-// ─── Quick Spec Card ───
-function QuickSpec({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="rounded-lg bg-[var(--color-bg-secondary)] px-3 py-2.5">
-      <dt className="text-2xs font-medium uppercase tracking-wider text-[var(--color-text-muted)]">
-        {label}
-      </dt>
-      <dd className="mt-0.5 text-sm font-semibold text-[var(--color-text)]">
-        {value}
-      </dd>
-    </div>
+      {/* ─── Bottom CTA ─── */}
+      <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-display text-xl font-bold text-[var(--color-text)]">
+            Ready to Move Forward?
+          </h2>
+          <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
+            Contact our team for a quote, process evaluation, or to discuss
+            custom configurations for your specific parts cleaning application.
+          </p>
+          <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link
+              href="/contact"
+              className="inline-flex rounded-lg bg-magido-orange px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
+            >
+              Request a Quote
+            </Link>
+            <a
+              href="tel:8444624436"
+              className="inline-flex rounded-lg border border-magido-blue px-6 py-2.5 text-sm font-semibold text-magido-blue transition-colors hover:bg-magido-blue hover:text-white dark:border-[var(--color-border)] dark:text-[var(--color-text-secondary)] dark:hover:bg-[var(--color-bg-tertiary)]"
+            >
+              📞 844-462-4436
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── JSON-LD ─── */}
+      <ProductJsonLd
+        name={product.name}
+        model={product.model}
+        description={series?.description || `${product.name} by Magido USA.`}
+        image={product.images[0]}
+        category={category.name}
+        url={`/products/${params.category}/${product.slug}`}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: category.name, url: `/products/${params.category}` },
+          ...(series ? [{ name: series.name, url: `/products/${params.category}?series=${series.slug}-series` }] : []),
+          { name: product.name, url: `/products/${params.category}/${product.slug}` },
+        ]}
+      />
+    </>
   );
 }

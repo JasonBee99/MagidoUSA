@@ -24,6 +24,7 @@ export interface Product {
   categorySlug: string;
   url: string;
   images: string[];
+  videoUrl?: string;
   specs: Record<string, ProductSpec>;
 }
 
@@ -42,6 +43,8 @@ export interface Series {
   description: string;
   isNew?: boolean;
   products: string[];  // product slugs
+  standardFeatures: string[];
+  availableOptions: string[];
   specTable: {
     models: string[];
     rows: SpecTableRow[];

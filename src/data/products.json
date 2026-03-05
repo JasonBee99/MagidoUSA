@@ -400,20 +400,20 @@
             "name": "Timer",
             "unit": "Min",
             "values": {
-              "L101": "0 – 60",
-              "L102": "0 – 60",
-              "L122": "0 – 60",
-              "L152": "0 – 60"
+              "L101": "0 \u2013 60",
+              "L102": "0 \u2013 60",
+              "L122": "0 \u2013 60",
+              "L152": "0 \u2013 60"
             }
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L101": "140°",
-              "L102": "140°",
-              "L122": "140°",
-              "L152": "140°"
+              "L101": "140\u00b0",
+              "L102": "140\u00b0",
+              "L122": "140\u00b0",
+              "L152": "140\u00b0"
             }
           },
           {
@@ -470,9 +470,9 @@
             "name": "Pneumatic Lid",
             "unit": "",
             "values": {
-              "L101": "–",
-              "L102": "–",
-              "L122": "–",
+              "L101": "\u2013",
+              "L102": "\u2013",
+              "L122": "\u2013",
               "L152": "Standard"
             }
           },
@@ -487,7 +487,23 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Automatic Rotary Turntable with Sprocket Drive",
+        "V-Jet Spray Nozzle System (up to 58 nozzles)",
+        "Adjustable Solution Heater & Wash Cycle Timer",
+        "Fluid Level Sensor",
+        "Removable Filter Basket",
+        "Tank Drain"
+      ],
+      "availableOptions": [
+        "Drying cycle with heated blower",
+        "Rinse stage",
+        "Cartridge or bag filtration",
+        "Oil skimmer",
+        "Stainless steel lid lifter (pneumatic or electric)"
+      ]
     },
     {
       "slug": "gold-1b",
@@ -837,7 +853,35 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "Durable Stainless Steel Construction",
+        "Vertical Stainless Steel Pumps",
+        "Stainless Steel Belt Conveyor",
+        "Heavy Duty Drive System With Variable Speed Control",
+        "Electric Dryer",
+        "Tank & Cabinet Insulation",
+        "Stage Isolation Curtains",
+        "Electric Heating Elements",
+        "NEMA 4 Electrical Panel With Disconnect Switch",
+        "PLC With Industrial Controls",
+        "Low Water Shut-Off & Automatic Water Fill Combination",
+        "Stainless Steel Wash Nozzles & Custom Header Manifold",
+        "Emergency Stop Button At Load & Unload Zones",
+        "Removable Chip Baskets",
+        "Lift-Off Tank Access Panels",
+        "Solution Tank Drain & Overflow",
+        "Marine Style Cleanout Doors",
+        "Steam Exhaust Fan"
+      ],
+      "availableOptions": [
+        "Pre-wash stage",
+        "Additional rinse stages",
+        "Rust prevention stage",
+        "Enhanced drying systems",
+        "Advanced filtration",
+        "Oil skimmer"
+      ]
     },
     {
       "slug": "gold-2b",
@@ -1187,7 +1231,35 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "Durable Stainless Steel Construction",
+        "Vertical Stainless Steel Pumps",
+        "Stainless Steel Belt Conveyor",
+        "Heavy Duty Drive System With Variable Speed Control",
+        "Electric Dryer",
+        "Tank & Cabinet Insulation",
+        "Stage Isolation Curtains",
+        "Electric Heating Elements",
+        "NEMA 4 Electrical Panel With Disconnect Switch",
+        "PLC With Industrial Controls",
+        "Low Water Shut-Off & Automatic Water Fill Combination",
+        "Stainless Steel Wash Nozzles & Custom Header Manifold",
+        "Emergency Stop Button At Load & Unload Zones",
+        "Removable Chip Baskets",
+        "Lift-Off Tank Access Panels",
+        "Solution Tank Drain & Overflow",
+        "Marine Style Cleanout Doors",
+        "Steam Exhaust Fan"
+      ],
+      "availableOptions": [
+        "Pre-wash stage",
+        "Additional rinse stages",
+        "Rust prevention stage",
+        "Enhanced drying systems",
+        "Advanced filtration",
+        "Oil skimmer"
+      ]
     },
     {
       "slug": "silver",
@@ -1363,7 +1435,23 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Continuous Belt Conveyor System",
+        "Adjustable Belt Speed",
+        "V-Jet Spray Nozzle Arrays",
+        "Solution Heating System",
+        "Customizable Process Zones"
+      ],
+      "availableOptions": [
+        "Pre-wash stage",
+        "Rinse stage",
+        "Rust prevention stage",
+        "Blow-off and drying stages",
+        "Filtration systems",
+        "Oil skimmer"
+      ]
     },
     {
       "slug": "dg",
@@ -1425,10 +1513,10 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "DG-8": "113°F",
-              "DG-9": "113°F"
+              "DG-8": "113\u00b0F",
+              "DG-9": "113\u00b0F"
             }
           },
           {
@@ -1480,7 +1568,18 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "External Magnetic Drive Pump",
+        "Flo-Thru Brush",
+        "Electrical Heater Controlled by a Thermostat",
+        "Liquid Level Shut Off"
+      ],
+      "availableOptions": [
+        "Cartridge filter",
+        "Casters"
+      ]
     },
     {
       "slug": "l",
@@ -1542,10 +1641,10 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L-7": "113°F",
-              "L-10": "113°F"
+              "L-7": "113\u00b0F",
+              "L-10": "113\u00b0F"
             }
           },
           {
@@ -1605,7 +1704,18 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Electrical Heater with Thermostat Control",
+        "Liquid Level Sensor",
+        "Drain Valve",
+        "Removable Parts Basket"
+      ],
+      "availableOptions": [
+        "Cartridge or bag filtration",
+        "Additional heater capacity"
+      ]
     },
     {
       "slug": "hp",
@@ -1691,10 +1801,10 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "HP-25": "113°F",
-              "HP-30": "113°F"
+              "HP-25": "113\u00b0F",
+              "HP-30": "113\u00b0F"
             }
           },
           {
@@ -1754,7 +1864,20 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "Powerful (870 PSI) Piston-Drive Pump",
+        "LED Illuminated Cabinet",
+        "Ergonomic Spray Wand",
+        "Window-Clearing Blower",
+        "Thermostat Controlled Heater",
+        "Liquid Level Sensor & Low Water Shut Off",
+        "Removable Work Tray & Screened Filter Basket"
+      ],
+      "availableOptions": [
+        "Oil skimmer",
+        "External filtration"
+      ]
     },
     {
       "slug": "x81",
@@ -1868,11 +1991,11 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L-35": "140°F",
-              "L-55": "140°F",
-              "L-90": "140°F"
+              "L-35": "140\u00b0F",
+              "L-55": "140\u00b0F",
+              "L-90": "140\u00b0F"
             }
           },
           {
@@ -1966,7 +2089,22 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Automatic Rotary Turntable with Sprocket Drive",
+        "Calibrated V-Jet Spray Nozzle System",
+        "Adjustable Solution Heater with Thermostat",
+        "Fluid Level Sensor",
+        "Removable Mesh Filter Basket",
+        "Tank Drain"
+      ],
+      "availableOptions": [
+        "Drying cycle with heated blower",
+        "Cartridge or bag filtration",
+        "Oil skimmer",
+        "Stainless steel lid lifter"
+      ]
     },
     {
       "slug": "eco",
@@ -2082,12 +2220,12 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L800FP": "140°F",
-              "L901FP": "140°F",
-              "L902FP": "140°F",
-              "L922FP": "140°F"
+              "L800FP": "140\u00b0F",
+              "L901FP": "140\u00b0F",
+              "L902FP": "140\u00b0F",
+              "L922FP": "140\u00b0F"
             }
           },
           {
@@ -2171,7 +2309,21 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Automatic Rotary Turntable with Sprocket Drive",
+        "Calibrated V-Jet Spray Nozzle System",
+        "Adjustable Solution Heater with Thermostat",
+        "Fluid Level Sensor",
+        "Removable Mesh Filter Basket",
+        "Tank Drain"
+      ],
+      "availableOptions": [
+        "Drying cycle with heated blower",
+        "Cartridge or bag filtration",
+        "Oil skimmer"
+      ]
     },
     {
       "slug": "x51hp",
@@ -2285,11 +2437,11 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L101HP": "160°F",
-              "L102HP": "160°F",
-              "L122HP": "160°F"
+              "L101HP": "160\u00b0F",
+              "L102HP": "160\u00b0F",
+              "L122HP": "160\u00b0F"
             }
           },
           {
@@ -2365,7 +2517,23 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "High-Pressure Pump System",
+        "Automatic Rotary Turntable",
+        "V-Jet Spray Nozzle System",
+        "Adjustable Solution Heater & Timer",
+        "Fluid Level Sensor",
+        "Removable Filter Basket"
+      ],
+      "availableOptions": [
+        "Drying cycle with heated blower",
+        "Rinse stage",
+        "Cartridge or bag filtration",
+        "Oil skimmer",
+        "Pneumatic or electric lid lifter"
+      ]
     },
     {
       "slug": "x51-2",
@@ -2569,11 +2737,11 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L103": "140°",
-              "L123": "140°",
-              "L153": "140°"
+              "L103": "140\u00b0",
+              "L123": "140\u00b0",
+              "L153": "140\u00b0"
             }
           },
           {
@@ -2676,7 +2844,21 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Dual Tanks \u2014 Wash & Rinse with PLC Control",
+        "Automatic Rotary Turntable",
+        "V-Jet Spray Nozzle System",
+        "Independent Heaters for Each Tank",
+        "Fluid Level Sensors"
+      ],
+      "availableOptions": [
+        "Drying cycle with heated blower",
+        "Cartridge or bag filtration",
+        "Oil skimmer",
+        "Pneumatic or electric lid lifter"
+      ]
     },
     {
       "slug": "x53",
@@ -2782,12 +2964,12 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L160": "160°",
-              "L190": "160°",
-              "L210": "160°",
-              "L240": "160°"
+              "L160": "160\u00b0",
+              "L190": "160\u00b0",
+              "L210": "160\u00b0",
+              "L240": "160\u00b0"
             }
           },
           {
@@ -2861,7 +3043,23 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Front-Loading Door with Safety Interlock",
+        "Fixed Platform with Spray Ramp",
+        "V-Jet Nozzle Configuration",
+        "Adjustable Solution Heater",
+        "Fluid Level Sensor",
+        "Removable Filter Basket"
+      ],
+      "availableOptions": [
+        "Mobile loading cart",
+        "Drying cycle",
+        "Rinse stage",
+        "Oil skimmer",
+        "Filtration upgrades"
+      ]
     },
     {
       "slug": "x53-2",
@@ -3017,12 +3215,12 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L162": "160°",
-              "L192": "160°",
-              "L212": "160°",
-              "L242": "160°"
+              "L162": "160\u00b0",
+              "L192": "160\u00b0",
+              "L212": "160\u00b0",
+              "L242": "160\u00b0"
             }
           },
           {
@@ -3156,7 +3354,20 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Dual Tanks \u2014 Wash & Rinse with PLC Control",
+        "Front-Loading Door with Safety Interlock",
+        "Fixed Platform with Spray Ramp",
+        "Independent Heaters for Each Tank"
+      ],
+      "availableOptions": [
+        "Mobile loading cart",
+        "Drying cycle",
+        "Oil skimmer",
+        "Filtration upgrades"
+      ]
     },
     {
       "slug": "agita",
@@ -3239,13 +3450,13 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "A600": "Ambient-170°F",
-              "A700": "Ambient-170°F",
-              "A900": "Ambient-170°F",
-              "A1100": "Ambient-170°F",
-              "A1300": "Ambient-170°F"
+              "A600": "Ambient-170\u00b0F",
+              "A700": "Ambient-170\u00b0F",
+              "A900": "Ambient-170\u00b0F",
+              "A1100": "Ambient-170\u00b0F",
+              "A1300": "Ambient-170\u00b0F"
             }
           },
           {
@@ -3315,7 +3526,21 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Rotary Basket/Fixture Immersion System",
+        "Turbulent Immersion Bath",
+        "Combined Immersion & Spray Cycles",
+        "PLC Control Operation",
+        "Solution Heating System"
+      ],
+      "availableOptions": [
+        "Rinse stage (spray and/or immersion)",
+        "Heated drying stage",
+        "Filtration systems",
+        "Oil skimmer"
+      ]
     },
     {
       "slug": "ultra",
@@ -3421,13 +3646,13 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "U600": "Ambient-170°F",
-              "U700": "Ambient-170°F",
-              "U900": "Ambient-170°F",
-              "U1100": "Ambient-170°F",
-              "U1300": "Ambient-170°F"
+              "U600": "Ambient-170\u00b0F",
+              "U700": "Ambient-170\u00b0F",
+              "U900": "Ambient-170\u00b0F",
+              "U1100": "Ambient-170\u00b0F",
+              "U1300": "Ambient-170\u00b0F"
             }
           },
           {
@@ -3497,7 +3722,21 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Rotary Basket/Fixture Immersion System",
+        "Turbulent Immersion Bath",
+        "Combined Immersion & Spray Cycles",
+        "PLC Control Operation",
+        "Solution Heating System"
+      ],
+      "availableOptions": [
+        "Rinse stage (spray and/or immersion)",
+        "Heated drying stage",
+        "Filtration systems",
+        "Oil skimmer"
+      ]
     },
     {
       "slug": "jolly",
@@ -3653,7 +3892,7 @@
           },
           {
             "name": "Solution temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
               "J210": "100-140",
               "J320": "100-140",
@@ -3722,7 +3961,22 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Helical Auger Drum Design",
+        "Combined Submersion & Spray Cleaning",
+        "Adjustable Drum Speed",
+        "Solution Heating System",
+        "Customizable Process Zones"
+      ],
+      "availableOptions": [
+        "Rinse stage",
+        "Rust prevention stage",
+        "Blow-off and drying stages",
+        "Filtration systems",
+        "Oil skimmer"
+      ]
     },
     {
       "slug": "spira-1b",
@@ -3882,7 +4136,7 @@
           },
           {
             "name": "Solution temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
               "SP210": "100-160",
               "SP320": "100-160",
@@ -3969,7 +4223,22 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Helical Auger Drum Design",
+        "Combined Submersion & Spray Cleaning",
+        "Adjustable Drum Speed",
+        "Solution Heating System",
+        "Customizable Process Zones"
+      ],
+      "availableOptions": [
+        "Rinse stage",
+        "Rust prevention stage",
+        "Blow-off and drying stages",
+        "Filtration systems",
+        "Oil skimmer"
+      ]
     },
     {
       "slug": "spira-2b",
@@ -4173,7 +4442,7 @@
           },
           {
             "name": "Solution temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
               "SP210/2": "100-160",
               "SP320/2": "100-160",
@@ -4260,7 +4529,22 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Dual-Helix Auger Drum Design",
+        "Combined Submersion & Spray Cleaning",
+        "Adjustable Drum Speed",
+        "Solution Heating System",
+        "Customizable Process Zones"
+      ],
+      "availableOptions": [
+        "Rinse stage",
+        "Rust prevention stage",
+        "Blow-off and drying stages",
+        "Filtration systems",
+        "Oil skimmer"
+      ]
     },
     {
       "slug": "platinum",
@@ -4379,10 +4663,10 @@
             "unit": "",
             "values": {
               "PM400": "",
-              "P600/2": "¼ Hp / 60 cfm",
-              "P900/2": "½ HP / 180 cfm",
-              "P1200/2": "½ HP / 180 cfm",
-              "P1500/2": "¾ HP / 470 cfm"
+              "P600/2": "\u00bc Hp / 60 cfm",
+              "P900/2": "\u00bd HP / 180 cfm",
+              "P1200/2": "\u00bd HP / 180 cfm",
+              "P1500/2": "\u00be HP / 470 cfm"
             }
           },
           {
@@ -4423,8 +4707,8 @@
             "unit": "",
             "values": {
               "PM400": "",
-              "P600/2": "¼ Hp",
-              "P900/2": "¾ Hp",
+              "P600/2": "\u00bc Hp",
+              "P900/2": "\u00be Hp",
               "P1200/2": "1 Hp",
               "P1500/2": "1 Hp"
             }
@@ -4463,7 +4747,21 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Rotary Basket/Fixture Immersion System",
+        "Turbulent Immersion Bath",
+        "Combined Immersion & Spray Cycles",
+        "PLC Control Operation",
+        "Solution Heating System"
+      ],
+      "availableOptions": [
+        "Rinse stage (spray and/or immersion)",
+        "Heated drying stage",
+        "Filtration systems",
+        "Oil skimmer"
+      ]
     },
     {
       "slug": "fls",
@@ -4471,7 +4769,7 @@
       "displayName": "FLS",
       "category": "front-load-washers",
       "type": "Front Load Spray Cabinet",
-      "description": "NEW — Heavy-duty front load spray cabinet washers with high weight capacity.",
+      "description": "NEW \u2014 Heavy-duty front load spray cabinet washers with high weight capacity.",
       "isNew": true,
       "modelPrefix": "FLS-",
       "products": [
@@ -4578,11 +4876,11 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "FLS-30": "140°F",
-              "FLS-35": "140°F",
-              "FLS-45": "140°F"
+              "FLS-30": "140\u00b0F",
+              "FLS-35": "140\u00b0F",
+              "FLS-45": "140\u00b0F"
             }
           },
           {
@@ -4631,7 +4929,21 @@
             }
           }
         ]
-      }
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Front-Loading Door with Safety Interlock",
+        "Fixed Platform with Spray Ramp",
+        "V-Jet Nozzle Configuration",
+        "Adjustable Solution Heater",
+        "Fluid Level Sensor"
+      ],
+      "availableOptions": [
+        "Mobile loading cart",
+        "Drying cycle",
+        "Oil skimmer",
+        "Filtration upgrades"
+      ]
     }
   ],
   "products": [
@@ -4697,12 +5009,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 – 60",
+          "value": "0 \u2013 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Length (lid open)": {
           "value": "51\"",
@@ -4725,14 +5037,15 @@
           "unit": "Lbs"
         },
         "Pneumatic Lid": {
-          "value": "–",
+          "value": "\u2013",
           "unit": ""
         },
         "Automatic Turntable Basket": {
           "value": "Standard",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg"
     },
     {
       "slug": "l102",
@@ -4800,12 +5113,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 – 60",
+          "value": "0 \u2013 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Length (lid open)": {
           "value": "51\"",
@@ -4828,14 +5141,15 @@
           "unit": "Lbs"
         },
         "Pneumatic Lid": {
-          "value": "–",
+          "value": "\u2013",
           "unit": ""
         },
         "Automatic Turntable Basket": {
           "value": "Standard",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg"
     },
     {
       "slug": "l122",
@@ -4903,12 +5217,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 – 60",
+          "value": "0 \u2013 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Length (lid open)": {
           "value": "69\"",
@@ -4931,14 +5245,15 @@
           "unit": "Lbs"
         },
         "Pneumatic Lid": {
-          "value": "–",
+          "value": "\u2013",
           "unit": ""
         },
         "Automatic Turntable Basket": {
           "value": "Standard",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg"
     },
     {
       "slug": "l152",
@@ -5001,12 +5316,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 – 60",
+          "value": "0 \u2013 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Length (lid open)": {
           "value": "85\"",
@@ -5036,7 +5351,8 @@
           "value": "Standard",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg"
     },
     {
       "slug": "g200",
@@ -7060,8 +7376,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage / Amperage": {
           "value": "115/19",
@@ -7122,8 +7438,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage / Amperage": {
           "value": "115/19",
@@ -7184,8 +7500,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "115",
@@ -7250,8 +7566,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "115",
@@ -7328,8 +7644,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage / Amperage": {
           "value": "26.5/14",
@@ -7359,7 +7675,8 @@
           "value": "319 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/sc5ArM0rB94"
     },
     {
       "slug": "hp-30",
@@ -7405,8 +7722,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage / Amperage": {
           "value": "31/15.5",
@@ -7436,7 +7753,8 @@
           "value": "400 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/uuyJ0DRmT2M"
     },
     {
       "slug": "l-35",
@@ -7491,8 +7809,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -7590,8 +7908,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -7689,8 +8007,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -7778,8 +8096,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -7859,8 +8177,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -7940,8 +8258,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -8021,8 +8339,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -8110,8 +8428,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°F",
-          "unit": "°F"
+          "value": "160\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -8199,8 +8517,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°F",
-          "unit": "°F"
+          "value": "160\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -8288,8 +8606,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°F",
-          "unit": "°F"
+          "value": "160\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -8400,8 +8718,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "Programmable",
@@ -8447,7 +8765,8 @@
           "value": "915 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw"
     },
     {
       "slug": "l123",
@@ -8522,8 +8841,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "Programmable",
@@ -8569,7 +8888,8 @@
           "value": "1,234 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw"
     },
     {
       "slug": "l153",
@@ -8643,8 +8963,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "Programmable",
@@ -8690,7 +9010,8 @@
           "value": "1,358",
           "unit": "Lbs"
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw"
     },
     {
       "slug": "l160",
@@ -8736,8 +9057,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -8815,8 +9136,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -8892,8 +9213,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -8969,8 +9290,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -9058,8 +9379,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9159,8 +9480,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9260,8 +9581,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9361,8 +9682,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9436,8 +9757,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9497,8 +9818,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9558,8 +9879,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9619,8 +9940,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9680,8 +10001,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9747,8 +10068,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9814,8 +10135,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9881,8 +10202,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9948,8 +10269,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -10015,8 +10336,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -10107,7 +10428,7 @@
         },
         "Solution temperature": {
           "value": "100-140",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.12 / 60",
@@ -10133,7 +10454,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "j320",
@@ -10201,7 +10523,7 @@
         },
         "Solution temperature": {
           "value": "100-140",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.12 / 60",
@@ -10227,7 +10549,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "j210-2",
@@ -10292,7 +10615,7 @@
         },
         "Solution temperature": {
           "value": "100-140",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.12 / 60",
@@ -10318,7 +10641,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "j320-2",
@@ -10383,7 +10707,7 @@
         },
         "Solution temperature": {
           "value": "100-140",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.12 / 60",
@@ -10409,7 +10733,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "sp210",
@@ -10470,7 +10795,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10500,7 +10825,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "sp320",
@@ -10563,7 +10889,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10593,7 +10919,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "sp480",
@@ -10656,7 +10983,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10686,7 +11013,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "sp640",
@@ -10749,7 +11077,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10779,7 +11107,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "sp950",
@@ -10842,7 +11171,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.75 / 470",
@@ -10872,7 +11201,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "sp210-2",
@@ -10949,7 +11279,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10979,7 +11309,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "sp320-2",
@@ -11058,7 +11389,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -11088,7 +11419,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "sp480-2",
@@ -11167,7 +11499,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -11197,7 +11529,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "sp640-2",
@@ -11276,7 +11609,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -11306,7 +11639,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "sp950-2",
@@ -11385,7 +11719,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.75 / 470",
@@ -11415,7 +11749,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
     },
     {
       "slug": "pm400",
@@ -11436,7 +11771,8 @@
           "value": "Weintek",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s"
     },
     {
       "slug": "p600-2",
@@ -11482,7 +11818,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "¼ Hp / 60 cfm",
+          "value": "\u00bc Hp / 60 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11498,7 +11834,7 @@
           "unit": "Inches"
         },
         "Drum Rotation": {
-          "value": "¼ Hp",
+          "value": "\u00bc Hp",
           "unit": ""
         },
         "Rotation Speed": {
@@ -11513,7 +11849,8 @@
           "value": "460V/3PH/60 Hz",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s"
     },
     {
       "slug": "p900-2",
@@ -11559,7 +11896,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "½ HP / 180 cfm",
+          "value": "\u00bd HP / 180 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11575,7 +11912,7 @@
           "unit": "Inches"
         },
         "Drum Rotation": {
-          "value": "¾ Hp",
+          "value": "\u00be Hp",
           "unit": ""
         },
         "Rotation Speed": {
@@ -11590,7 +11927,8 @@
           "value": "460V/3PH/60 Hz",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s"
     },
     {
       "slug": "p1200-2",
@@ -11636,7 +11974,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "½ HP / 180 cfm",
+          "value": "\u00bd HP / 180 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11667,7 +12005,8 @@
           "value": "460V/3PH/60 Hz",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s"
     },
     {
       "slug": "p1500-2",
@@ -11713,7 +12052,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "¾ HP / 470 cfm",
+          "value": "\u00be HP / 470 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11744,7 +12083,8 @@
           "value": "460V/3PH/60 Hz",
           "unit": ""
         }
-      }
+      },
+      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s"
     },
     {
       "slug": "fls-30",
@@ -11796,8 +12136,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Electric Power": {
           "value": "230",
@@ -11874,8 +12214,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Electric Power": {
           "value": "230/480",
@@ -11949,8 +12289,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Electric Power": {
           "value": "230/480",

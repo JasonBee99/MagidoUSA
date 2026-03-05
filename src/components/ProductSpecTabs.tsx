@@ -1,72 +1,37 @@
 'use client';
 
 import { useState } from 'react';
-import type { Product } from '@/lib/products';
+import { Check } from 'lucide-react';
+import type { Product, Series } from '@/lib/products';
+
+type TabId = 'features' | 'options' | 'specs';
 
 interface ProductSpecTabsProps {
   product: Product;
+  series: Series | null;
 }
 
-// Organize specs into logical groups
-function categorizeSpecs(specs: Product['specs']) {
-  const performance: { key: string; value: string; unit: string }[] = [];
-  const dimensions: { key: string; value: string; unit: string }[] = [];
-  const electrical: { key: string; value: string; unit: string }[] = [];
-  const features: { key: string; value: string; unit: string }[] = [];
+export function ProductSpecTabs({ product, series }: ProductSpecTabsProps) {
+  const features = series?.standardFeatures || [];
+  const options = series?.availableOptions || [];
 
-  const performanceKeys = [
-    'Turntable Basket Diameter', 'Basket Diameter', 'Drum Diameter',
-    'Belt Width', 'Working Dimensions', 'Max Part Size',
-    'Load Weight', 'Load Height', 'Tank Capacity',
-    'Flow Rate', 'Spray Pressure', 'Spray Bars (304 Stainless)',
-    'V-Jet Spray Nozzles (optimized)', 'Pump(s)',
-    'Timer', 'Max Operating Temperature',
-  ];
+  // Build all specs as flat key/value list
+  const allSpecs = Object.entries(product.specs)
+    .filter(([, spec]) => spec.value && spec.value !== '–' && spec.value !== '-')
+    .map(([key, spec]) => ({
+      key,
+      value: spec.unit && spec.value !== spec.unit && !spec.value.toLowerCase().includes(spec.unit.toLowerCase())
+        ? `${spec.value} ${spec.unit}`
+        : spec.value,
+    }));
 
-  const dimensionKeys = [
-    'Length (lid open)', 'Length', 'Width', 'Height (lid open)', 'Height',
-    'Depth', 'Overall Dimensions', 'Shipping Dimensions',
-    'Net Weight', 'Gross Weight',
-  ];
+  // Build tabs
+  const tabs: { id: TabId; label: string }[] = [];
+  if (features.length > 0) tabs.push({ id: 'features', label: 'Features' });
+  if (options.length > 0) tabs.push({ id: 'options', label: 'Options' });
+  if (allSpecs.length > 0) tabs.push({ id: 'specs', label: 'Full Specifications' });
 
-  const electricalKeys = [
-    'Heater', 'Amperage', 'Voltage', 'Phase', 'Power',
-    'Total Power', 'Motor',
-  ];
-
-  for (const [key, spec] of Object.entries(specs)) {
-    if (!spec.value || spec.value === '–' || spec.value === '-') continue;
-
-    const item = { key, value: spec.value, unit: spec.unit };
-
-    if (performanceKeys.includes(key)) {
-      performance.push(item);
-    } else if (dimensionKeys.includes(key)) {
-      dimensions.push(item);
-    } else if (electricalKeys.includes(key)) {
-      electrical.push(item);
-    } else {
-      features.push(item);
-    }
-  }
-
-  return { performance, dimensions, electrical, features };
-}
-
-type TabId = 'specs' | 'dimensions' | 'electrical' | 'features';
-
-export function ProductSpecTabs({ product }: ProductSpecTabsProps) {
-  const { performance, dimensions, electrical, features } = categorizeSpecs(product.specs);
-  
-  // Build tabs dynamically based on available data
-  const tabs: { id: TabId; label: string; data: { key: string; value: string; unit: string }[] }[] = [];
-  if (performance.length > 0) tabs.push({ id: 'specs', label: 'Specifications', data: performance });
-  if (dimensions.length > 0) tabs.push({ id: 'dimensions', label: 'Dimensions', data: dimensions });
-  if (electrical.length > 0) tabs.push({ id: 'electrical', label: 'Electrical', data: electrical });
-  if (features.length > 0) tabs.push({ id: 'features', label: 'Features', data: features });
-
-  const [activeTab, setActiveTab] = useState<TabId>(tabs[0]?.id || 'specs');
-  const activeData = tabs.find((t) => t.id === activeTab)?.data || [];
+  const [activeTab, setActiveTab] = useState<TabId>(tabs[0]?.id || 'features');
 
   if (tabs.length === 0) return null;
 
@@ -85,39 +50,53 @@ export function ProductSpecTabs({ product }: ProductSpecTabsProps) {
             }`}
           >
             {tab.label}
-            <span className="ml-1.5 text-2xs font-normal text-[var(--color-text-muted)]">
-              ({tab.data.length})
-            </span>
           </button>
         ))}
       </div>
 
-      {/* Tab content — specs table */}
-      <div className="p-1">
-        <table className="w-full">
-          <tbody>
-            {activeData.map((item, i) => (
-              <tr
-                key={item.key}
-                className={`${
-                  i % 2 === 0 ? 'bg-transparent' : 'bg-[var(--color-bg-secondary)]/50'
-                }`}
-              >
-                <td className="px-4 py-2.5 text-sm font-medium text-[var(--color-text-secondary)]">
-                  {item.key}
-                </td>
-                <td className="px-4 py-2.5 text-right text-sm font-semibold text-[var(--color-text)]">
-                  {item.value}
-                  {item.unit && item.value !== item.unit && !item.value.toLowerCase().includes(item.unit.toLowerCase()) && (
-                    <span className="ml-1 text-[var(--color-text-muted)]">
-                      {item.unit}
-                    </span>
-                  )}
-                </td>
-              </tr>
+      {/* Tab content */}
+      <div className="p-5">
+        {activeTab === 'features' && (
+          <ul className="grid gap-2 sm:grid-cols-2">
+            {features.map((feature) => (
+              <li key={feature} className="flex items-start gap-2.5">
+                <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500" />
+                <span className="text-sm text-[var(--color-text)]">{feature}</span>
+              </li>
             ))}
-          </tbody>
-        </table>
+          </ul>
+        )}
+
+        {activeTab === 'options' && (
+          <ul className="grid gap-2 sm:grid-cols-2">
+            {options.map((option) => (
+              <li key={option} className="flex items-start gap-2.5">
+                <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-magido-blue" />
+                <span className="text-sm text-[var(--color-text)]">{option}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {activeTab === 'specs' && (
+          <table className="w-full">
+            <tbody>
+              {allSpecs.map((item, i) => (
+                <tr
+                  key={item.key}
+                  className={i % 2 === 0 ? 'bg-transparent' : 'bg-[var(--color-bg-secondary)]/50'}
+                >
+                  <td className="px-3 py-2.5 text-sm font-medium text-[var(--color-text-secondary)]">
+                    {item.key}
+                  </td>
+                  <td className="px-3 py-2.5 text-right text-sm font-semibold text-[var(--color-text)]">
+                    {item.value}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </div>
     </div>
   );
