@@ -38,20 +38,27 @@ export function ProductSpecTabs({ product, series }: ProductSpecTabsProps) {
   return (
     <div className="overflow-hidden rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)]">
       {/* Tab headers */}
-      <div className="flex overflow-x-auto border-b border-[var(--color-border)] scrollbar-thin">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className={`flex-shrink-0 px-5 py-3.5 text-sm font-semibold transition-colors ${
-              activeTab === tab.id
-                ? 'border-b-2 border-magido-orange bg-[var(--color-bg-secondary)] text-magido-orange'
-                : 'text-[var(--color-text-secondary)] hover:bg-[var(--color-bg-secondary)] hover:text-[var(--color-text)]'
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
+      <div className="flex items-center border-b border-[var(--color-border)]">
+        <div className="flex overflow-x-auto scrollbar-thin">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex-shrink-0 px-5 py-3.5 text-sm font-semibold transition-colors ${
+                activeTab === tab.id
+                  ? 'border-b-2 border-magido-orange bg-[var(--color-bg-secondary)] text-magido-orange'
+                  : 'text-[var(--color-text-secondary)] hover:bg-[var(--color-bg-secondary)] hover:text-[var(--color-text)]'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+        <div className="ml-auto flex-shrink-0 px-4">
+          <span className="rounded-md bg-[#eb6c1c] px-3 py-1.5 text-xs font-bold text-white">
+            {series?.name || ''} {product.model}
+          </span>
+        </div>
       </div>
 
       {/* Tab content */}

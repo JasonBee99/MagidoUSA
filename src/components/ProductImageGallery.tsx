@@ -7,9 +7,11 @@ import { X, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react';
 interface ProductImageGalleryProps {
   images: string[];
   alt: string;
+  seriesName?: string;
+  model?: string;
 }
 
-export function ProductImageGallery({ images, alt }: ProductImageGalleryProps) {
+export function ProductImageGallery({ images, alt, seriesName, model }: ProductImageGalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const hasImages = images.length > 0;
@@ -88,6 +90,20 @@ export function ProductImageGallery({ images, alt }: ProductImageGalleryProps) {
             </div>
           </div>
         </button>
+
+        {/* Series badge — top left */}
+        {seriesName && (
+          <div className="absolute left-0 top-0 z-10 rounded-br-lg bg-[#eb6c1c] px-3 py-1 text-xs font-bold text-white">
+            {seriesName} Series
+          </div>
+        )}
+
+        {/* Model badge — top right */}
+        {model && (
+          <div className="absolute right-0 top-0 z-10 rounded-bl-lg bg-[#eb6c1c] px-3 py-1 text-xs font-bold text-white">
+            {model}
+          </div>
+        )}
 
         {/* Image counter badge */}
         {images.length > 1 && (

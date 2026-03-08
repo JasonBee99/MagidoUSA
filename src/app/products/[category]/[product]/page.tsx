@@ -172,6 +172,8 @@ export default function ProductPage({
                   <ProductImageGallery
                     images={product.images}
                     alt={product.name}
+                    seriesName={series?.displayName}
+                    model={product.model}
                   />
                 </div>
 
