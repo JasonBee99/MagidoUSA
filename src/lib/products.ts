@@ -20,6 +20,7 @@ export interface Product {
   slug: string;
   model: string;
   name: string;
+  description?: string;
   seriesSlug: string;
   categorySlug: string;
   url: string;

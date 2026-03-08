@@ -5055,7 +5055,8 @@
       "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg",
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
-      ]
+      ],
+      "description": "The Magido L101 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L101 operates with aqueous detergents at temperatures up to 150\u00b0F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance \u2014 simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
     },
     {
       "slug": "l102",
@@ -5162,7 +5163,8 @@
       "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg",
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
-      ]
+      ],
+      "description": "The Magido L102 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L102 operates with aqueous detergents at temperatures up to 150\u00b0F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance \u2014 simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
     },
     {
       "slug": "l122",
@@ -5269,7 +5271,8 @@
       "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg",
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
-      ]
+      ],
+      "description": "The Magido L122 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L122 operates with aqueous detergents at temperatures up to 150\u00b0F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance \u2014 simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
     },
     {
       "slug": "l152",
@@ -5371,7 +5374,8 @@
       "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg",
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
-      ]
+      ],
+      "description": "The Magido L152 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L152 operates with aqueous detergents at temperatures up to 150\u00b0F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance \u2014 simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
     },
     {
       "slug": "g200",
@@ -5468,7 +5472,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G200 is a single-stage in-line belt conveyor aqueous parts washer from the Gold 1b Series, engineered for high-volume continuous cleaning in production environments. Parts ride a stainless steel mesh belt through precision spray zones using heated aqueous detergent for thorough removal of oils, greases, and machining residues. Constructed from AISI 304 stainless steel, the G200 features adjustable belt speed, temperature control, and programmable wash cycles. The Gold 1b Series uses environmentally safe water-based cleaning solutions, making it ideal for manufacturing operations requiring automated inline cleaning with repeatable quality."
     },
     {
       "slug": "g300",
@@ -5565,7 +5570,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G300 is a single-stage in-line belt conveyor aqueous parts washer from the Gold 1b Series, engineered for high-volume continuous cleaning in production environments. Parts ride a stainless steel mesh belt through precision spray zones using heated aqueous detergent for thorough removal of oils, greases, and machining residues. Constructed from AISI 304 stainless steel, the G300 features adjustable belt speed, temperature control, and programmable wash cycles. The Gold 1b Series uses environmentally safe water-based cleaning solutions, making it ideal for manufacturing operations requiring automated inline cleaning with repeatable quality."
     },
     {
       "slug": "g400",
@@ -5662,7 +5668,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G400 is a single-stage in-line belt conveyor aqueous parts washer from the Gold 1b Series, engineered for high-volume continuous cleaning in production environments. Parts ride a stainless steel mesh belt through precision spray zones using heated aqueous detergent for thorough removal of oils, greases, and machining residues. Constructed from AISI 304 stainless steel, the G400 features adjustable belt speed, temperature control, and programmable wash cycles. The Gold 1b Series uses environmentally safe water-based cleaning solutions, making it ideal for manufacturing operations requiring automated inline cleaning with repeatable quality."
     },
     {
       "slug": "g500",
@@ -5759,7 +5766,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G500 is a single-stage in-line belt conveyor aqueous parts washer from the Gold 1b Series, engineered for high-volume continuous cleaning in production environments. Parts ride a stainless steel mesh belt through precision spray zones using heated aqueous detergent for thorough removal of oils, greases, and machining residues. Constructed from AISI 304 stainless steel, the G500 features adjustable belt speed, temperature control, and programmable wash cycles. The Gold 1b Series uses environmentally safe water-based cleaning solutions, making it ideal for manufacturing operations requiring automated inline cleaning with repeatable quality."
     },
     {
       "slug": "g600",
@@ -5856,7 +5864,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G600 is a single-stage in-line belt conveyor aqueous parts washer from the Gold 1b Series, engineered for high-volume continuous cleaning in production environments. Parts ride a stainless steel mesh belt through precision spray zones using heated aqueous detergent for thorough removal of oils, greases, and machining residues. Constructed from AISI 304 stainless steel, the G600 features adjustable belt speed, temperature control, and programmable wash cycles. The Gold 1b Series uses environmentally safe water-based cleaning solutions, making it ideal for manufacturing operations requiring automated inline cleaning with repeatable quality."
     },
     {
       "slug": "g700",
@@ -5953,7 +5962,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G700 is a single-stage in-line belt conveyor aqueous parts washer from the Gold 1b Series, engineered for high-volume continuous cleaning in production environments. Parts ride a stainless steel mesh belt through precision spray zones using heated aqueous detergent for thorough removal of oils, greases, and machining residues. Constructed from AISI 304 stainless steel, the G700 features adjustable belt speed, temperature control, and programmable wash cycles. The Gold 1b Series uses environmentally safe water-based cleaning solutions, making it ideal for manufacturing operations requiring automated inline cleaning with repeatable quality."
     },
     {
       "slug": "g800",
@@ -6050,7 +6060,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G800 is a single-stage in-line belt conveyor aqueous parts washer from the Gold 1b Series, engineered for high-volume continuous cleaning in production environments. Parts ride a stainless steel mesh belt through precision spray zones using heated aqueous detergent for thorough removal of oils, greases, and machining residues. Constructed from AISI 304 stainless steel, the G800 features adjustable belt speed, temperature control, and programmable wash cycles. The Gold 1b Series uses environmentally safe water-based cleaning solutions, making it ideal for manufacturing operations requiring automated inline cleaning with repeatable quality."
     },
     {
       "slug": "g900",
@@ -6147,7 +6158,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G900 is a single-stage in-line belt conveyor aqueous parts washer from the Gold 1b Series, engineered for high-volume continuous cleaning in production environments. Parts ride a stainless steel mesh belt through precision spray zones using heated aqueous detergent for thorough removal of oils, greases, and machining residues. Constructed from AISI 304 stainless steel, the G900 features adjustable belt speed, temperature control, and programmable wash cycles. The Gold 1b Series uses environmentally safe water-based cleaning solutions, making it ideal for manufacturing operations requiring automated inline cleaning with repeatable quality."
     },
     {
       "slug": "g1000",
@@ -6244,7 +6256,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G1000 is a single-stage in-line belt conveyor aqueous parts washer from the Gold 1b Series, engineered for high-volume continuous cleaning in production environments. Parts ride a stainless steel mesh belt through precision spray zones using heated aqueous detergent for thorough removal of oils, greases, and machining residues. Constructed from AISI 304 stainless steel, the G1000 features adjustable belt speed, temperature control, and programmable wash cycles. The Gold 1b Series uses environmentally safe water-based cleaning solutions, making it ideal for manufacturing operations requiring automated inline cleaning with repeatable quality."
     },
     {
       "slug": "g200-2",
@@ -6341,7 +6354,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G200/2 is a dual-stage in-line belt conveyor aqueous parts washer from the Gold 2b Series, featuring separate wash and rinse zones for residue-free cleaning in continuous production environments. Parts travel on a stainless steel mesh belt through sequential cleaning stages using heated aqueous detergent, ensuring thorough contaminant removal followed by a clean rinse. Built from AISI 304 stainless steel with adjustable belt speed and programmable cycles, the G200/2 delivers consistent, high-quality results at production-line speeds. The Gold 2b Series is designed for operations demanding both cleanliness and throughput."
     },
     {
       "slug": "g300-2",
@@ -6438,7 +6452,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G300/2 is a dual-stage in-line belt conveyor aqueous parts washer from the Gold 2b Series, featuring separate wash and rinse zones for residue-free cleaning in continuous production environments. Parts travel on a stainless steel mesh belt through sequential cleaning stages using heated aqueous detergent, ensuring thorough contaminant removal followed by a clean rinse. Built from AISI 304 stainless steel with adjustable belt speed and programmable cycles, the G300/2 delivers consistent, high-quality results at production-line speeds. The Gold 2b Series is designed for operations demanding both cleanliness and throughput."
     },
     {
       "slug": "g400-2",
@@ -6535,7 +6550,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G400/2 is a dual-stage in-line belt conveyor aqueous parts washer from the Gold 2b Series, featuring separate wash and rinse zones for residue-free cleaning in continuous production environments. Parts travel on a stainless steel mesh belt through sequential cleaning stages using heated aqueous detergent, ensuring thorough contaminant removal followed by a clean rinse. Built from AISI 304 stainless steel with adjustable belt speed and programmable cycles, the G400/2 delivers consistent, high-quality results at production-line speeds. The Gold 2b Series is designed for operations demanding both cleanliness and throughput."
     },
     {
       "slug": "g500-2",
@@ -6632,7 +6648,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G500/2 is a dual-stage in-line belt conveyor aqueous parts washer from the Gold 2b Series, featuring separate wash and rinse zones for residue-free cleaning in continuous production environments. Parts travel on a stainless steel mesh belt through sequential cleaning stages using heated aqueous detergent, ensuring thorough contaminant removal followed by a clean rinse. Built from AISI 304 stainless steel with adjustable belt speed and programmable cycles, the G500/2 delivers consistent, high-quality results at production-line speeds. The Gold 2b Series is designed for operations demanding both cleanliness and throughput."
     },
     {
       "slug": "g600-2",
@@ -6729,7 +6746,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G600/2 is a dual-stage in-line belt conveyor aqueous parts washer from the Gold 2b Series, featuring separate wash and rinse zones for residue-free cleaning in continuous production environments. Parts travel on a stainless steel mesh belt through sequential cleaning stages using heated aqueous detergent, ensuring thorough contaminant removal followed by a clean rinse. Built from AISI 304 stainless steel with adjustable belt speed and programmable cycles, the G600/2 delivers consistent, high-quality results at production-line speeds. The Gold 2b Series is designed for operations demanding both cleanliness and throughput."
     },
     {
       "slug": "g700-2",
@@ -6826,7 +6844,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G700/2 is a dual-stage in-line belt conveyor aqueous parts washer from the Gold 2b Series, featuring separate wash and rinse zones for residue-free cleaning in continuous production environments. Parts travel on a stainless steel mesh belt through sequential cleaning stages using heated aqueous detergent, ensuring thorough contaminant removal followed by a clean rinse. Built from AISI 304 stainless steel with adjustable belt speed and programmable cycles, the G700/2 delivers consistent, high-quality results at production-line speeds. The Gold 2b Series is designed for operations demanding both cleanliness and throughput."
     },
     {
       "slug": "g800-2",
@@ -6923,7 +6942,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G800/2 is a dual-stage in-line belt conveyor aqueous parts washer from the Gold 2b Series, featuring separate wash and rinse zones for residue-free cleaning in continuous production environments. Parts travel on a stainless steel mesh belt through sequential cleaning stages using heated aqueous detergent, ensuring thorough contaminant removal followed by a clean rinse. Built from AISI 304 stainless steel with adjustable belt speed and programmable cycles, the G800/2 delivers consistent, high-quality results at production-line speeds. The Gold 2b Series is designed for operations demanding both cleanliness and throughput."
     },
     {
       "slug": "g900-2",
@@ -7020,7 +7040,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G900/2 is a dual-stage in-line belt conveyor aqueous parts washer from the Gold 2b Series, featuring separate wash and rinse zones for residue-free cleaning in continuous production environments. Parts travel on a stainless steel mesh belt through sequential cleaning stages using heated aqueous detergent, ensuring thorough contaminant removal followed by a clean rinse. Built from AISI 304 stainless steel with adjustable belt speed and programmable cycles, the G900/2 delivers consistent, high-quality results at production-line speeds. The Gold 2b Series is designed for operations demanding both cleanliness and throughput."
     },
     {
       "slug": "g1000-2",
@@ -7117,7 +7138,8 @@
           "value": "Siemens",
           "unit": ""
         }
-      }
+      },
+      "description": "The Magido G1000/2 is a dual-stage in-line belt conveyor aqueous parts washer from the Gold 2b Series, featuring separate wash and rinse zones for residue-free cleaning in continuous production environments. Parts travel on a stainless steel mesh belt through sequential cleaning stages using heated aqueous detergent, ensuring thorough contaminant removal followed by a clean rinse. Built from AISI 304 stainless steel with adjustable belt speed and programmable cycles, the G1000/2 delivers consistent, high-quality results at production-line speeds. The Gold 2b Series is designed for operations demanding both cleanliness and throughput."
     },
     {
       "slug": "s200",
@@ -7198,7 +7220,8 @@
           "value": "Siemens",
           "unit": "Siemens"
         }
-      }
+      },
+      "description": "The Magido S200 is a compact single-stage in-line belt conveyor aqueous parts washer from the Silver Series, designed for continuous automated cleaning integrated directly into your production line. Parts are placed on a stainless steel mesh belt and carried through the wash zone at controlled speeds, delivering consistent cleaning results without manual handling. Built from AISI 304 stainless steel, the S200 uses heated aqueous detergent and precision spray nozzles for effective removal of oils, machining fluids, and contaminants. The Silver Series is ideal for operations needing automated throughput in a compact footprint."
     },
     {
       "slug": "s300",
@@ -7279,7 +7302,8 @@
           "value": "Siemens",
           "unit": "Siemens"
         }
-      }
+      },
+      "description": "The Magido S300 is a compact single-stage in-line belt conveyor aqueous parts washer from the Silver Series, designed for continuous automated cleaning integrated directly into your production line. Parts are placed on a stainless steel mesh belt and carried through the wash zone at controlled speeds, delivering consistent cleaning results without manual handling. Built from AISI 304 stainless steel, the S300 uses heated aqueous detergent and precision spray nozzles for effective removal of oils, machining fluids, and contaminants. The Silver Series is ideal for operations needing automated throughput in a compact footprint."
     },
     {
       "slug": "s400",
@@ -7360,7 +7384,8 @@
           "value": "Siemens",
           "unit": "Siemens"
         }
-      }
+      },
+      "description": "The Magido S400 is a compact single-stage in-line belt conveyor aqueous parts washer from the Silver Series, designed for continuous automated cleaning integrated directly into your production line. Parts are placed on a stainless steel mesh belt and carried through the wash zone at controlled speeds, delivering consistent cleaning results without manual handling. Built from AISI 304 stainless steel, the S400 uses heated aqueous detergent and precision spray nozzles for effective removal of oils, machining fluids, and contaminants. The Silver Series is ideal for operations needing automated throughput in a compact footprint."
     },
     {
       "slug": "dg-8",
@@ -7422,7 +7447,8 @@
           "value": "121 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido DG-8 is a sink-style manual aqueous parts washer engineered for industrial and automotive maintenance cleaning applications. This stainless steel cleaning station uses environmentally safe water-based detergents to effectively remove oils, greases, dirt, and grime from small to medium-sized components. Standard features include an external magnetic drive pump, flow-through brush, thermostat-controlled electric heater, and liquid level shut-off. Built entirely from AISI 304 stainless steel, the DG-8 delivers reliable hands-on cleaning performance with minimal maintenance. Optional cartridge filter and casters are available."
     },
     {
       "slug": "dg-9",
@@ -7484,7 +7510,8 @@
           "value": "132 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido DG-9 is a sink-style manual aqueous parts washer engineered for industrial and automotive maintenance cleaning applications. This stainless steel cleaning station uses environmentally safe water-based detergents to effectively remove oils, greases, dirt, and grime from small to medium-sized components. Standard features include an external magnetic drive pump, flow-through brush, thermostat-controlled electric heater, and liquid level shut-off. Built entirely from AISI 304 stainless steel, the DG-9 delivers reliable hands-on cleaning performance with minimal maintenance. Optional cartridge filter and casters are available."
     },
     {
       "slug": "l-7",
@@ -7550,7 +7577,8 @@
           "value": "155 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L-7 is a vat-style manual aqueous parts washer designed for industrial maintenance and shop-floor cleaning applications. This open-top design allows operators to soak and manually clean larger parts using heated water-based detergent solutions. Constructed entirely from AISI 304 stainless steel, the L-7 features a thermostat-controlled heater, external magnetic drive pump, flow-through brush, and liquid level shut-off. Its robust vat design is ideal for degreasing bulky components, engine blocks, and transmission parts where full submersion is beneficial. Optional accessories include a cartridge filter and casters for mobility."
     },
     {
       "slug": "l-10",
@@ -7616,7 +7644,8 @@
           "value": "210 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L-10 is a vat-style manual aqueous parts washer designed for industrial maintenance and shop-floor cleaning applications. This open-top design allows operators to soak and manually clean larger parts using heated water-based detergent solutions. Constructed entirely from AISI 304 stainless steel, the L-10 features a thermostat-controlled heater, external magnetic drive pump, flow-through brush, and liquid level shut-off. Its robust vat design is ideal for degreasing bulky components, engine blocks, and transmission parts where full submersion is beneficial. Optional accessories include a cartridge filter and casters for mobility."
     },
     {
       "slug": "hp-25",
@@ -7703,7 +7732,8 @@
       "videoTitles": [
         "HP Demo",
         "HP Instructional"
-      ]
+      ],
+      "description": "The Magido HP-25 is a high-pressure manual cabinet parts washer built entirely from AISI 304 stainless steel. Designed for technicians who need to reduce cleaning time, the HP-25 uses a powerful 870 PSI piston-drive pump to blast parts clean with a heated aqueous solution. Standard features include an LED-illuminated cabinet, ergonomic spray wand, window-clearing blower, thermostat-controlled heater, liquid level sensor, low water shut-off, removable work tray, and screened filter basket. Ideal for cleaning parts with hard-to-reach areas such as wheel bearings, valve bodies, small dies, and cylinder heads."
     },
     {
       "slug": "hp-30",
@@ -7789,7 +7819,8 @@
       "videoTitles": [
         "HP Demo",
         "HP Instructional"
-      ]
+      ],
+      "description": "The Magido HP-30 is a high-pressure manual cabinet parts washer built entirely from AISI 304 stainless steel. Designed for technicians who need to reduce cleaning time, the HP-30 uses a powerful 870 PSI piston-drive pump to blast parts clean with a heated aqueous solution. Standard features include an LED-illuminated cabinet, ergonomic spray wand, window-clearing blower, thermostat-controlled heater, liquid level sensor, low water shut-off, removable work tray, and screened filter basket. Ideal for cleaning parts with hard-to-reach areas such as wheel bearings, valve bodies, small dies, and cylinder heads."
     },
     {
       "slug": "l-35",
@@ -7887,7 +7918,8 @@
           "value": "110 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L-35 is a compact top load spray cabinet parts washer from the X81 Series, featuring an automatic rotary turntable and calibrated jet-spray manifold for thorough aqueous cleaning. Designed for work-cell and small-workspace applications, the L-35 uses heated water-based detergent at temperatures up to 150\u00b0F to remove oils, greases, and contaminants from small to medium-sized industrial parts. Standard features include a solution heater, complete AISI 304 stainless steel construction, fluid level control, tank drain, and removable filter basket. Its top-loading design makes it the ideal parts washer for space-constrained environments."
     },
     {
       "slug": "l-55",
@@ -7986,7 +8018,8 @@
           "value": "130 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L-55 is a compact top load spray cabinet parts washer from the X81 Series, featuring an automatic rotary turntable and calibrated jet-spray manifold for thorough aqueous cleaning. Designed for work-cell and small-workspace applications, the L-55 uses heated water-based detergent at temperatures up to 150\u00b0F to remove oils, greases, and contaminants from small to medium-sized industrial parts. Standard features include a solution heater, complete AISI 304 stainless steel construction, fluid level control, tank drain, and removable filter basket. Its top-loading design makes it the ideal parts washer for space-constrained environments."
     },
     {
       "slug": "l-90",
@@ -8085,7 +8118,8 @@
           "value": "175 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L-90 is a compact top load spray cabinet parts washer from the X81 Series, featuring an automatic rotary turntable and calibrated jet-spray manifold for thorough aqueous cleaning. Designed for work-cell and small-workspace applications, the L-90 uses heated water-based detergent at temperatures up to 150\u00b0F to remove oils, greases, and contaminants from small to medium-sized industrial parts. Standard features include a solution heater, complete AISI 304 stainless steel construction, fluid level control, tank drain, and removable filter basket. Its top-loading design makes it the ideal parts washer for space-constrained environments."
     },
     {
       "slug": "l800fp",
@@ -8166,7 +8200,8 @@
           "value": "308 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L800FP is a compact top load aqueous parts washer from the Eco Series, designed with a small footprint that makes it the ideal cleaning solution for limited workspaces. Featuring an automatic sprocket turntable drive, calibrated jet-spray nozzles, and a liquid level sensor, the L800FP delivers efficient spray cleaning using heated aqueous detergent. Built entirely from AISI 304 stainless steel, this washer provides professional-grade cleaning performance in a space-efficient package. The Eco Series is perfect for shops and facilities that need reliable automated parts cleaning without dedicating large floor space."
     },
     {
       "slug": "l901fp",
@@ -8247,7 +8282,8 @@
           "value": "375 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L901FP is a compact top load aqueous parts washer from the Eco Series, designed with a small footprint that makes it the ideal cleaning solution for limited workspaces. Featuring an automatic sprocket turntable drive, calibrated jet-spray nozzles, and a liquid level sensor, the L901FP delivers efficient spray cleaning using heated aqueous detergent. Built entirely from AISI 304 stainless steel, this washer provides professional-grade cleaning performance in a space-efficient package. The Eco Series is perfect for shops and facilities that need reliable automated parts cleaning without dedicating large floor space."
     },
     {
       "slug": "l902fp",
@@ -8328,7 +8364,8 @@
           "value": "441 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L902FP is a compact top load aqueous parts washer from the Eco Series, designed with a small footprint that makes it the ideal cleaning solution for limited workspaces. Featuring an automatic sprocket turntable drive, calibrated jet-spray nozzles, and a liquid level sensor, the L902FP delivers efficient spray cleaning using heated aqueous detergent. Built entirely from AISI 304 stainless steel, this washer provides professional-grade cleaning performance in a space-efficient package. The Eco Series is perfect for shops and facilities that need reliable automated parts cleaning without dedicating large floor space."
     },
     {
       "slug": "l922fp",
@@ -8409,7 +8446,8 @@
           "value": "661 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L922FP is a compact top load aqueous parts washer from the Eco Series, designed with a small footprint that makes it the ideal cleaning solution for limited workspaces. Featuring an automatic sprocket turntable drive, calibrated jet-spray nozzles, and a liquid level sensor, the L922FP delivers efficient spray cleaning using heated aqueous detergent. Built entirely from AISI 304 stainless steel, this washer provides professional-grade cleaning performance in a space-efficient package. The Eco Series is perfect for shops and facilities that need reliable automated parts cleaning without dedicating large floor space."
     },
     {
       "slug": "l101hp",
@@ -8498,7 +8536,8 @@
           "value": "78.75\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido L101HP is a high-performance top load spray cabinet washer from the X51HP Series, combining the proven X51 platform with enhanced high-pressure cleaning capability. Built from AISI 304 stainless steel, the L101HP features a rotating turntable and high-pressure spray system that delivers superior cleaning results on heavily soiled parts. Adjustable temperature and wash cycle time are standard, with options for filtration and drying. The X51HP Series is ideal for applications requiring more aggressive cleaning action on medium to large industrial components with stubborn contaminants."
     },
     {
       "slug": "l102hp",
@@ -8587,7 +8626,8 @@
           "value": "78.75\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido L102HP is a high-performance top load spray cabinet washer from the X51HP Series, combining the proven X51 platform with enhanced high-pressure cleaning capability. Built from AISI 304 stainless steel, the L102HP features a rotating turntable and high-pressure spray system that delivers superior cleaning results on heavily soiled parts. Adjustable temperature and wash cycle time are standard, with options for filtration and drying. The X51HP Series is ideal for applications requiring more aggressive cleaning action on medium to large industrial components with stubborn contaminants."
     },
     {
       "slug": "l122hp",
@@ -8676,7 +8716,8 @@
           "value": "85.5\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido L122HP is a high-performance top load spray cabinet washer from the X51HP Series, combining the proven X51 platform with enhanced high-pressure cleaning capability. Built from AISI 304 stainless steel, the L122HP features a rotating turntable and high-pressure spray system that delivers superior cleaning results on heavily soiled parts. Adjustable temperature and wash cycle time are standard, with options for filtration and drying. The X51HP Series is ideal for applications requiring more aggressive cleaning action on medium to large industrial components with stubborn contaminants."
     },
     {
       "slug": "l103",
@@ -8804,7 +8845,8 @@
       "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw",
       "videoUrls": [
         "https://www.youtube.com/embed/P-4oF1WX7Qw"
-      ]
+      ],
+      "description": "The Magido L103 is a dual-stage top load spray cabinet washer from the X51/2 Series, featuring separate wash and rinse tanks to ensure a residue-free finish. Constructed from AISI 304 stainless steel, the L103 uses a rotating turntable and spray bar with PLC-controlled operation that prevents cross-contamination between wash and rinse stages. Adjustable temperature and cycle time are standard features, with options for filtration and drying. The X51/2 Series is ideal for applications where parts must emerge clean and residue-free, eliminating the need for additional manual rinsing."
     },
     {
       "slug": "l123",
@@ -8930,7 +8972,8 @@
       "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw",
       "videoUrls": [
         "https://www.youtube.com/embed/P-4oF1WX7Qw"
-      ]
+      ],
+      "description": "The Magido L123 is a dual-stage top load spray cabinet washer from the X51/2 Series, featuring separate wash and rinse tanks to ensure a residue-free finish. Constructed from AISI 304 stainless steel, the L123 uses a rotating turntable and spray bar with PLC-controlled operation that prevents cross-contamination between wash and rinse stages. Adjustable temperature and cycle time are standard features, with options for filtration and drying. The X51/2 Series is ideal for applications where parts must emerge clean and residue-free, eliminating the need for additional manual rinsing."
     },
     {
       "slug": "l153",
@@ -9055,7 +9098,8 @@
       "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw",
       "videoUrls": [
         "https://www.youtube.com/embed/P-4oF1WX7Qw"
-      ]
+      ],
+      "description": "The Magido L153 is a dual-stage top load spray cabinet washer from the X51/2 Series, featuring separate wash and rinse tanks to ensure a residue-free finish. Constructed from AISI 304 stainless steel, the L153 uses a rotating turntable and spray bar with PLC-controlled operation that prevents cross-contamination between wash and rinse stages. Adjustable temperature and cycle time are standard features, with options for filtration and drying. The X51/2 Series is ideal for applications where parts must emerge clean and residue-free, eliminating the need for additional manual rinsing."
     },
     {
       "slug": "l160",
@@ -9132,7 +9176,8 @@
           "value": "2,048",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L160 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The L160 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
     },
     {
       "slug": "l190",
@@ -9211,7 +9256,8 @@
           "value": "2,481",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L190 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The L190 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
     },
     {
       "slug": "l210",
@@ -9288,7 +9334,8 @@
           "value": "2,590",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L210 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The L210 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
     },
     {
       "slug": "l240",
@@ -9365,7 +9412,8 @@
           "value": "2,866",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L240 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The L240 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
     },
     {
       "slug": "l162",
@@ -9466,7 +9514,8 @@
           "value": "2,645",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L162 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160\u00b0F, the L162 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
     },
     {
       "slug": "l192",
@@ -9567,7 +9616,8 @@
           "value": "2,976",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L192 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160\u00b0F, the L192 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
     },
     {
       "slug": "l212",
@@ -9668,7 +9718,8 @@
           "value": "3,127",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L212 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160\u00b0F, the L212 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
     },
     {
       "slug": "l242",
@@ -9769,7 +9820,8 @@
           "value": "3,640",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido L242 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160\u00b0F, the L242 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
     },
     {
       "slug": "a600",
@@ -9828,7 +9880,8 @@
           "value": "59\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido A600 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A600 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
     },
     {
       "slug": "a700",
@@ -9889,7 +9942,8 @@
           "value": "59\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido A700 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A700 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
     },
     {
       "slug": "a900",
@@ -9950,7 +10004,8 @@
           "value": "67\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido A900 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A900 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
     },
     {
       "slug": "a1100",
@@ -10011,7 +10066,8 @@
           "value": "67\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido A1100 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A1100 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
     },
     {
       "slug": "a1300",
@@ -10072,7 +10128,8 @@
           "value": "70\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido A1300 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A1300 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
     },
     {
       "slug": "u600",
@@ -10139,7 +10196,8 @@
           "value": "59\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido U600 is an advanced immersion parts washer from the Ultra Series, providing enhanced cleaning performance for parts with complex internal geometries and tight tolerances. Using a pneumatic platform and agitation method with heated aqueous detergent, the U600 fully submerses parts for thorough cleaning of internal bores, channels, and intricate features. Built from AISI 304 stainless steel and operating at temperatures up to 167\u00b0F, the Ultra Series delivers superior immersion cleaning for demanding applications in precision manufacturing, aerospace, and automotive industries."
     },
     {
       "slug": "u700",
@@ -10206,7 +10264,8 @@
           "value": "59\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido U700 is an advanced immersion parts washer from the Ultra Series, providing enhanced cleaning performance for parts with complex internal geometries and tight tolerances. Using a pneumatic platform and agitation method with heated aqueous detergent, the U700 fully submerses parts for thorough cleaning of internal bores, channels, and intricate features. Built from AISI 304 stainless steel and operating at temperatures up to 167\u00b0F, the Ultra Series delivers superior immersion cleaning for demanding applications in precision manufacturing, aerospace, and automotive industries."
     },
     {
       "slug": "u900",
@@ -10273,7 +10332,8 @@
           "value": "67\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido U900 is an advanced immersion parts washer from the Ultra Series, providing enhanced cleaning performance for parts with complex internal geometries and tight tolerances. Using a pneumatic platform and agitation method with heated aqueous detergent, the U900 fully submerses parts for thorough cleaning of internal bores, channels, and intricate features. Built from AISI 304 stainless steel and operating at temperatures up to 167\u00b0F, the Ultra Series delivers superior immersion cleaning for demanding applications in precision manufacturing, aerospace, and automotive industries."
     },
     {
       "slug": "u1100",
@@ -10340,7 +10400,8 @@
           "value": "67\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido U1100 is an advanced immersion parts washer from the Ultra Series, providing enhanced cleaning performance for parts with complex internal geometries and tight tolerances. Using a pneumatic platform and agitation method with heated aqueous detergent, the U1100 fully submerses parts for thorough cleaning of internal bores, channels, and intricate features. Built from AISI 304 stainless steel and operating at temperatures up to 167\u00b0F, the Ultra Series delivers superior immersion cleaning for demanding applications in precision manufacturing, aerospace, and automotive industries."
     },
     {
       "slug": "u1300",
@@ -10407,7 +10468,8 @@
           "value": "70\"",
           "unit": "Inches"
         }
-      }
+      },
+      "description": "The Magido U1300 is an advanced immersion parts washer from the Ultra Series, providing enhanced cleaning performance for parts with complex internal geometries and tight tolerances. Using a pneumatic platform and agitation method with heated aqueous detergent, the U1300 fully submerses parts for thorough cleaning of internal bores, channels, and intricate features. Built from AISI 304 stainless steel and operating at temperatures up to 167\u00b0F, the Ultra Series delivers superior immersion cleaning for demanding applications in precision manufacturing, aerospace, and automotive industries."
     },
     {
       "slug": "j210",
@@ -10502,7 +10564,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido J210 is a rotary drum aqueous parts washer from the Jolly Series, using a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and carried through the wash zone by the internal helix, emerging clean at the other end for non-stop processing without batching. Constructed from AISI 304 stainless steel, the J210 uses heated aqueous detergent for effective removal of oils, chips, and contaminants. The Jolly Series is ideal for high-volume operations requiring consistent, automated cleaning of small parts."
     },
     {
       "slug": "j320",
@@ -10600,7 +10663,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido J320 is a rotary drum aqueous parts washer from the Jolly Series, using a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and carried through the wash zone by the internal helix, emerging clean at the other end for non-stop processing without batching. Constructed from AISI 304 stainless steel, the J320 uses heated aqueous detergent for effective removal of oils, chips, and contaminants. The Jolly Series is ideal for high-volume operations requiring consistent, automated cleaning of small parts."
     },
     {
       "slug": "j210-2",
@@ -10695,7 +10759,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido J210/2 is a rotary drum aqueous parts washer from the Jolly Series, using a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and carried through the wash zone by the internal helix, emerging clean at the other end for non-stop processing without batching. Constructed from AISI 304 stainless steel, the J210/2 uses heated aqueous detergent for effective removal of oils, chips, and contaminants. The Jolly Series is ideal for high-volume operations requiring consistent, automated cleaning of small parts."
     },
     {
       "slug": "j320-2",
@@ -10790,7 +10855,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido J320/2 is a rotary drum aqueous parts washer from the Jolly Series, using a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and carried through the wash zone by the internal helix, emerging clean at the other end for non-stop processing without batching. Constructed from AISI 304 stainless steel, the J320/2 uses heated aqueous detergent for effective removal of oils, chips, and contaminants. The Jolly Series is ideal for high-volume operations requiring consistent, automated cleaning of small parts."
     },
     {
       "slug": "sp210",
@@ -10885,7 +10951,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido SP210 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, designed for continuous cleaning of small to medium parts using a helical auger drum system. The rotating drum carries parts through heated aqueous cleaning solution while combining spray and immersion washing for thorough contaminant removal from complex geometries. Built from AISI 304 stainless steel, the SP210 handles high volumes of fasteners, stampings, turned parts, and machined components without interruption. The Spira 1b Series offers an efficient, automated solution for production-line cleaning operations."
     },
     {
       "slug": "sp320",
@@ -10982,7 +11049,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido SP320 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, designed for continuous cleaning of small to medium parts using a helical auger drum system. The rotating drum carries parts through heated aqueous cleaning solution while combining spray and immersion washing for thorough contaminant removal from complex geometries. Built from AISI 304 stainless steel, the SP320 handles high volumes of fasteners, stampings, turned parts, and machined components without interruption. The Spira 1b Series offers an efficient, automated solution for production-line cleaning operations."
     },
     {
       "slug": "sp480",
@@ -11079,7 +11147,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido SP480 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, designed for continuous cleaning of small to medium parts using a helical auger drum system. The rotating drum carries parts through heated aqueous cleaning solution while combining spray and immersion washing for thorough contaminant removal from complex geometries. Built from AISI 304 stainless steel, the SP480 handles high volumes of fasteners, stampings, turned parts, and machined components without interruption. The Spira 1b Series offers an efficient, automated solution for production-line cleaning operations."
     },
     {
       "slug": "sp640",
@@ -11176,7 +11245,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido SP640 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, designed for continuous cleaning of small to medium parts using a helical auger drum system. The rotating drum carries parts through heated aqueous cleaning solution while combining spray and immersion washing for thorough contaminant removal from complex geometries. Built from AISI 304 stainless steel, the SP640 handles high volumes of fasteners, stampings, turned parts, and machined components without interruption. The Spira 1b Series offers an efficient, automated solution for production-line cleaning operations."
     },
     {
       "slug": "sp950",
@@ -11273,7 +11343,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido SP950 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, designed for continuous cleaning of small to medium parts using a helical auger drum system. The rotating drum carries parts through heated aqueous cleaning solution while combining spray and immersion washing for thorough contaminant removal from complex geometries. Built from AISI 304 stainless steel, the SP950 handles high volumes of fasteners, stampings, turned parts, and machined components without interruption. The Spira 1b Series offers an efficient, automated solution for production-line cleaning operations."
     },
     {
       "slug": "sp210-2",
@@ -11384,7 +11455,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido SP210/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring separate wash and rinse stages for superior cleaning results on small to medium parts. Using a helical auger drum system, the SP210/2 continuously moves parts through sequential cleaning zones with heated aqueous detergent, combining spray and immersion methods. Constructed from AISI 304 stainless steel, the Spira 2b Series delivers residue-free results at high throughput rates, making it the right choice for production environments demanding both cleanliness and continuous operation."
     },
     {
       "slug": "sp320-2",
@@ -11497,7 +11569,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido SP320/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring separate wash and rinse stages for superior cleaning results on small to medium parts. Using a helical auger drum system, the SP320/2 continuously moves parts through sequential cleaning zones with heated aqueous detergent, combining spray and immersion methods. Constructed from AISI 304 stainless steel, the Spira 2b Series delivers residue-free results at high throughput rates, making it the right choice for production environments demanding both cleanliness and continuous operation."
     },
     {
       "slug": "sp480-2",
@@ -11610,7 +11683,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido SP480/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring separate wash and rinse stages for superior cleaning results on small to medium parts. Using a helical auger drum system, the SP480/2 continuously moves parts through sequential cleaning zones with heated aqueous detergent, combining spray and immersion methods. Constructed from AISI 304 stainless steel, the Spira 2b Series delivers residue-free results at high throughput rates, making it the right choice for production environments demanding both cleanliness and continuous operation."
     },
     {
       "slug": "sp640-2",
@@ -11723,7 +11797,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido SP640/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring separate wash and rinse stages for superior cleaning results on small to medium parts. Using a helical auger drum system, the SP640/2 continuously moves parts through sequential cleaning zones with heated aqueous detergent, combining spray and immersion methods. Constructed from AISI 304 stainless steel, the Spira 2b Series delivers residue-free results at high throughput rates, making it the right choice for production environments demanding both cleanliness and continuous operation."
     },
     {
       "slug": "sp950-2",
@@ -11836,7 +11911,8 @@
       "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
-      ]
+      ],
+      "description": "The Magido SP950/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring separate wash and rinse stages for superior cleaning results on small to medium parts. Using a helical auger drum system, the SP950/2 continuously moves parts through sequential cleaning zones with heated aqueous detergent, combining spray and immersion methods. Constructed from AISI 304 stainless steel, the Spira 2b Series delivers residue-free results at high throughput rates, making it the right choice for production environments demanding both cleanliness and continuous operation."
     },
     {
       "slug": "pm400",
@@ -11861,7 +11937,8 @@
       "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s",
       "videoUrls": [
         "https://www.youtube.com/embed/1Qrr-9qi16s"
-      ]
+      ],
+      "description": "The Magido PM400 is a 2-stage rotary immersion parts washer from the Platinum Series, using a containment basket to submerge parts in a heated aqueous cleaning solution. The Platinum Series provides an effective method for cleaning critical components with complex geometries, particularly those with internal bores and channels where debris and oils can become lodged. The PM400 incorporates distinct wash and rinse phases using direct spray impingement, hydraulic purging via immersion, and rotational agitation. Built from AISI 304 stainless steel, this system is ideal for precision parts requiring thorough, repeatable cleaning results."
     },
     {
       "slug": "p600-2",
@@ -11942,7 +12019,8 @@
       "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s",
       "videoUrls": [
         "https://www.youtube.com/embed/1Qrr-9qi16s"
-      ]
+      ],
+      "description": "The Magido P600/2 is a 3-stage rotary immersion parts washer from the Platinum Series, using a containment basket to submerge parts in a heated aqueous cleaning solution. The Platinum Series provides an effective method for cleaning critical components with complex geometries, particularly those with internal bores and channels where debris and oils can become lodged. The P600/2 incorporates distinct wash and rinse phases using direct spray impingement, hydraulic purging via immersion, and rotational agitation. Built from AISI 304 stainless steel, this system is customizable to your specifications for demanding applications in aerospace, automotive, and precision manufacturing."
     },
     {
       "slug": "p900-2",
@@ -12023,7 +12101,8 @@
       "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s",
       "videoUrls": [
         "https://www.youtube.com/embed/1Qrr-9qi16s"
-      ]
+      ],
+      "description": "The Magido P900/2 is a 3-stage rotary immersion parts washer from the Platinum Series, using a containment basket to submerge parts in a heated aqueous cleaning solution. The Platinum Series provides an effective method for cleaning critical components with complex geometries, particularly those with internal bores and channels where debris and oils can become lodged. The P900/2 incorporates distinct wash and rinse phases using direct spray impingement, hydraulic purging via immersion, and rotational agitation. Built from AISI 304 stainless steel, this system is customizable to your specifications for demanding applications in aerospace, automotive, and precision manufacturing."
     },
     {
       "slug": "p1200-2",
@@ -12104,7 +12183,8 @@
       "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s",
       "videoUrls": [
         "https://www.youtube.com/embed/1Qrr-9qi16s"
-      ]
+      ],
+      "description": "The Magido P1200/2 is a 3-stage rotary immersion parts washer from the Platinum Series, using a containment basket to submerge parts in a heated aqueous cleaning solution. The Platinum Series provides an effective method for cleaning critical components with complex geometries, particularly those with internal bores and channels where debris and oils can become lodged. The P1200/2 incorporates distinct wash and rinse phases using direct spray impingement, hydraulic purging via immersion, and rotational agitation. Built from AISI 304 stainless steel, this system is customizable to your specifications for demanding applications in aerospace, automotive, and precision manufacturing."
     },
     {
       "slug": "p1500-2",
@@ -12185,7 +12265,8 @@
       "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s",
       "videoUrls": [
         "https://www.youtube.com/embed/1Qrr-9qi16s"
-      ]
+      ],
+      "description": "The Magido P1500/2 is a 3-stage rotary immersion parts washer from the Platinum Series, using a containment basket to submerge parts in a heated aqueous cleaning solution. The Platinum Series provides an effective method for cleaning critical components with complex geometries, particularly those with internal bores and channels where debris and oils can become lodged. The P1500/2 incorporates distinct wash and rinse phases using direct spray impingement, hydraulic purging via immersion, and rotational agitation. Built from AISI 304 stainless steel, this system is customizable to your specifications for demanding applications in aerospace, automotive, and precision manufacturing."
     },
     {
       "slug": "fls-30",
@@ -12260,7 +12341,8 @@
           "value": "1500 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido FLS-30 is a front load spray cabinet washer from the FLS Series, designed for efficient automated cleaning of medium to large parts. Featuring a front-loading door for easy access to the wash chamber, the FLS-30 uses heated aqueous detergent and precision spray nozzles to thoroughly remove oils, greases, and contaminants. Built from AISI 304 stainless steel, this system includes safety interlocks and programmable wash cycles. The FLS Series offers a compact front-load solution for facilities that need automated spray washing with convenient part loading and unloading."
     },
     {
       "slug": "fls-35",
@@ -12338,7 +12420,8 @@
           "value": "1700 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido FLS-35 is a front load spray cabinet washer from the FLS Series, designed for efficient automated cleaning of medium to large parts. Featuring a front-loading door for easy access to the wash chamber, the FLS-35 uses heated aqueous detergent and precision spray nozzles to thoroughly remove oils, greases, and contaminants. Built from AISI 304 stainless steel, this system includes safety interlocks and programmable wash cycles. The FLS Series offers a compact front-load solution for facilities that need automated spray washing with convenient part loading and unloading."
     },
     {
       "slug": "fls-45",
@@ -12413,7 +12496,8 @@
           "value": "2200 lbs",
           "unit": "Lbs"
         }
-      }
+      },
+      "description": "The Magido FLS-45 is a front load spray cabinet washer from the FLS Series, designed for efficient automated cleaning of medium to large parts. Featuring a front-loading door for easy access to the wash chamber, the FLS-45 uses heated aqueous detergent and precision spray nozzles to thoroughly remove oils, greases, and contaminants. Built from AISI 304 stainless steel, this system includes safety interlocks and programmable wash cycles. The FLS Series offers a compact front-load solution for facilities that need automated spray washing with convenient part loading and unloading."
     }
   ]
 }

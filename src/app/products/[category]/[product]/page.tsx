@@ -1,12 +1,14 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import {
   getAllProductSlugs,
   getProductBySlug,
   getCategoryBySlug,
   getSeriesBySlug,
   getProductsBySeries,
+  getCategoryNavigation,
 } from '@/lib/products';
 import { ProductImageGallery } from '@/components/ProductImageGallery';
 import { ProductSpecTabs } from '@/components/ProductSpecTabs';
@@ -38,14 +40,16 @@ export function generateMetadata({
   if (product.specs['Tank Capacity']) specHighlights.push(`Tank: ${product.specs['Tank Capacity'].value}`);
   if (product.specs['Heater']) specHighlights.push(`Heater: ${product.specs['Heater'].value} kW`);
 
-  const description = `${product.name} by Magido USA. ${series?.type || 'Parts Washer'}. ${specHighlights.join(', ')}. Built from AISI 304 stainless steel.`;
+  const metaDescription = product.description
+    ? `${product.description.slice(0, 155)}...`
+    : `${product.name} by Magido USA. ${series?.type || 'Parts Washer'}. ${specHighlights.join(', ')}. Built from AISI 304 stainless steel.`;
 
   return {
     title: `${product.name} | Magido USA`,
-    description,
+    description: metaDescription,
     openGraph: {
       title: `${product.name} | Magido USA`,
-      description,
+      description: metaDescription,
       images: product.images.length > 0 ? [{ url: product.images[0] }] : undefined,
     },
   };
@@ -81,6 +85,9 @@ export default function ProductPage({
 
   const series = getSeriesBySlug(product.seriesSlug);
   const seriesProducts = getProductsBySeries(product.seriesSlug);
+  const { prev, next } = getCategoryNavigation(params.product);
+  const prevSeries = prev ? getSeriesBySlug(prev.seriesSlug) : null;
+  const nextSeries = next ? getSeriesBySlug(next.seriesSlug) : null;
 
   // Build key specs for display
   const keySpecs = KEY_SPEC_DISPLAY
@@ -141,13 +148,48 @@ export default function ProductPage({
       {/* ─── Product Hero ─── */}
       <section className="px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
         <div className="mx-auto max-w-7xl">
-          <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
-            {/* Left: Image */}
+          <div className="flex flex-col gap-8 lg:flex-row lg:gap-10">
+            {/* Left: Prev button + Image + Next button */}
             <div className="lg:w-5/12">
-              <ProductImageGallery
-                images={product.images}
-                alt={product.name}
-              />
+              <div className="flex items-center gap-2">
+                {/* Prev button */}
+                {prev ? (
+                  <Link
+                    href={`/products/${params.category}/${prev.slug}`}
+                    className="flex flex-col items-center gap-0.5 rounded-lg border border-[var(--color-border)] bg-[var(--color-card-bg)] px-2 py-3 text-center transition-colors hover:border-magido-orange/40 hover:bg-[var(--color-bg-secondary)]"
+                    title={prev.name}
+                  >
+                    <ChevronLeft className="h-4 w-4 text-magido-orange" />
+                    <span className="text-2xs font-semibold text-magido-orange">{prevSeries?.displayName}</span>
+                    <span className="text-2xs font-bold text-[var(--color-text)]">{prev.model}</span>
+                  </Link>
+                ) : (
+                  <div className="w-14 flex-shrink-0" />
+                )}
+
+                {/* Image — slightly reduced */}
+                <div className="flex-1 min-w-0">
+                  <ProductImageGallery
+                    images={product.images}
+                    alt={product.name}
+                  />
+                </div>
+
+                {/* Next button */}
+                {next ? (
+                  <Link
+                    href={`/products/${params.category}/${next.slug}`}
+                    className="flex flex-col items-center gap-0.5 rounded-lg border border-[var(--color-border)] bg-[var(--color-card-bg)] px-2 py-3 text-center transition-colors hover:border-magido-orange/40 hover:bg-[var(--color-bg-secondary)]"
+                    title={next.name}
+                  >
+                    <ChevronRight className="h-4 w-4 text-magido-orange" />
+                    <span className="text-2xs font-semibold text-magido-orange">{nextSeries?.displayName}</span>
+                    <span className="text-2xs font-bold text-[var(--color-text)]">{next.model}</span>
+                  </Link>
+                ) : (
+                  <div className="w-14 flex-shrink-0" />
+                )}
+              </div>
             </div>
 
             {/* Right: Product info */}
@@ -165,9 +207,9 @@ export default function ProductPage({
               </h1>
 
               {/* Description */}
-              {series?.description && (
+              {(product.description || series?.description) && (
                 <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base">
-                  {series.description}
+                  {product.description || series?.description}
                 </p>
               )}
 
@@ -267,7 +309,7 @@ export default function ProductPage({
       <ProductJsonLd
         name={product.name}
         model={product.model}
-        description={series?.description || `${product.name} by Magido USA.`}
+        description={product.description || series?.description || `${product.name} by Magido USA.`}
         image={product.images[0]}
         category={category.name}
         url={`/products/${params.category}/${product.slug}`}
