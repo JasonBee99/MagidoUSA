@@ -24,7 +24,9 @@ export interface Product {
   categorySlug: string;
   url: string;
   images: string[];
-  videoUrl?: string;
+  videoUrl?: string;      // Legacy single video (still supported)
+  videoUrls?: string[];   // Multiple videos
+  videoTitles?: string[]; // Labels for each video tab
   specs: Record<string, ProductSpec>;
 }
 
@@ -63,6 +65,7 @@ export interface Category {
   name: string;
   slug: string;
   shortDescription: string;
+  description?: string;
   order: number;
   series: SeriesSummary[];
   totalProducts: number;

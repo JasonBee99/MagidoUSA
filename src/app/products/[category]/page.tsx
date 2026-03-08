@@ -28,9 +28,13 @@ export function generateMetadata({
   const category = getCategoryBySlug(params.category);
   if (!category) return {};
 
+  const metaDescription = category.description
+    ? `${category.description.slice(0, 155)}...`
+    : `Explore Magido's ${category.name.toLowerCase()} — ${category.shortDescription.toLowerCase()}. ${category.totalProducts} models across ${category.series.length} series, all built from AISI 304 stainless steel.`;
+
   return {
     title: `${category.name} — Industrial Aqueous Parts Washers`,
-    description: `Explore Magido's ${category.name.toLowerCase()} — ${category.shortDescription.toLowerCase()}. ${category.totalProducts} models across ${category.series.length} series, all built from AISI 304 stainless steel.`,
+    description: metaDescription,
     openGraph: {
       title: `${category.name} | Magido USA`,
       description: category.shortDescription,

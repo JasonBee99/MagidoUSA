@@ -38,7 +38,8 @@
           "isNew": false
         }
       ],
-      "totalProducts": 6
+      "totalProducts": 6,
+      "description": "Magido manual aqueous parts washers are engineered to handle the most rigorous cleaning challenges found in industrial and automotive maintenance applications. Available in sink-style, vat-style, and high-pressure cabinet configurations, these systems use environmentally safe water-based cleaning solutions to effectively remove oils, greases, dirt, and grime. Built entirely from AISI 304 stainless steel, Magido manual washers deliver reliable performance with minimal maintenance \u2014 ideal for shop-floor degreasing where hands-on control is essential."
     },
     {
       "name": "Top Load Washers",
@@ -89,7 +90,8 @@
           "isNew": false
         }
       ],
-      "totalProducts": 17
+      "totalProducts": 17,
+      "description": "Magido top load aqueous parts washers are engineered for automatic spray washing applications using aqueous detergents at temperatures up to 150\u00b0F. Each system features a motorized rotating turntable and precision-angled jet nozzles that deliver thorough, consistent cleaning coverage across all part surfaces. Available in compact, standard, and high-performance configurations with turntable sizes ranging from 14\" to 55\" in diameter, these washers handle everything from small precision components to medium-sized industrial parts. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages."
     },
     {
       "name": "Front Load Washers",
@@ -124,7 +126,8 @@
           "isNew": false
         }
       ],
-      "totalProducts": 11
+      "totalProducts": 11,
+      "description": "Magido front load aqueous parts washers are engineered for automatic spray washing of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The operation principle uses a fixed platform with a series of angled water jet nozzles configured on a spray ramp to optimally clean all part surfaces. Front load systems feature a removable turntable that transfers easily onto a mobile cart for convenient loading and unloading outside the wash chamber. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages \u2014 built for high-throughput production environments."
     },
     {
       "name": "Immersion Washers",
@@ -151,7 +154,8 @@
           "isNew": true
         }
       ],
-      "totalProducts": 10
+      "totalProducts": 10,
+      "description": "Magido immersion aqueous parts washers are designed for thorough cleaning of parts with complex geometries using a full-submersion agitation process. Parts are lowered into a heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, these systems are ideal for precision components, machined parts, and assemblies requiring complete surface contact. All machines are constructed from AISI 304 stainless steel and are characterized by their cleaning platform size and load capacity."
     },
     {
       "name": "In-Line Belt Conveyor Washers",
@@ -186,7 +190,8 @@
           "isNew": false
         }
       ],
-      "totalProducts": 21
+      "totalProducts": 21,
+      "description": "Magido in-line belt conveyor aqueous parts washers are designed for continuous, high-volume cleaning integrated directly into your production line. Parts are loaded onto a stainless steel mesh belt that carries them through single-stage or dual-stage wash and rinse zones at controlled speeds, delivering consistent results without manual handling. Available in compact Silver series and high-capacity Gold series configurations, these systems use environmentally safe aqueous cleaning solutions and are built entirely from AISI 304 stainless steel. Ideal for manufacturing operations that demand automated throughput with repeatable cleaning quality."
     },
     {
       "name": "Rotary Drum Washers",
@@ -221,7 +226,8 @@
           "isNew": false
         }
       ],
-      "totalProducts": 14
+      "totalProducts": 14,
+      "description": "Magido rotary drum aqueous parts washers use a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and are carried through the wash zone by the internal helix, emerging clean at the other end \u2014 enabling non-stop processing without batching. Available in single-stage and dual-stage configurations with wash and rinse capabilities, all machines are constructed from AISI 304 stainless steel. These systems are the right choice for high-volume operations requiring consistent, automated cleaning."
     },
     {
       "name": "Rotary Immersion Washers",
@@ -240,7 +246,8 @@
           "isNew": false
         }
       ],
-      "totalProducts": 5
+      "totalProducts": 5,
+      "description": "Magido rotary immersion aqueous parts washers combine turbulent immersion washing with spray cleaning to deliver superior results on parts with complex geometries. During the cleaning cycle, parts in baskets or fixtures are rotated through an immersion bath while simultaneously receiving spray cleaning, followed by spray and immersion rinsing with an available drying stage. Each system is customizable to your exact specifications and built entirely from AISI 304 stainless steel. These multi-action washers are ideal for critical components in aerospace, automotive, and precision manufacturing where thorough, repeatable cleaning is essential."
     }
   ],
   "series": [
@@ -5045,7 +5052,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg"
+      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg",
+      "videoUrls": [
+        "https://www.youtube.com/embed/A-BYLrmWdsg"
+      ]
     },
     {
       "slug": "l102",
@@ -5149,7 +5159,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg"
+      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg",
+      "videoUrls": [
+        "https://www.youtube.com/embed/A-BYLrmWdsg"
+      ]
     },
     {
       "slug": "l122",
@@ -5253,7 +5266,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg"
+      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg",
+      "videoUrls": [
+        "https://www.youtube.com/embed/A-BYLrmWdsg"
+      ]
     },
     {
       "slug": "l152",
@@ -5352,7 +5368,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg"
+      "videoUrl": "https://www.youtube.com/embed/A-BYLrmWdsg",
+      "videoUrls": [
+        "https://www.youtube.com/embed/A-BYLrmWdsg"
+      ]
     },
     {
       "slug": "g200",
@@ -7676,7 +7695,15 @@
           "unit": "Lbs"
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/sc5ArM0rB94"
+      "videoUrl": "https://www.youtube.com/embed/sc5ArM0rB94",
+      "videoUrls": [
+        "https://www.youtube.com/embed/sc5ArM0rB94",
+        "https://www.youtube.com/embed/uuyJ0DRmT2M"
+      ],
+      "videoTitles": [
+        "HP Demo",
+        "HP Instructional"
+      ]
     },
     {
       "slug": "hp-30",
@@ -7754,7 +7781,15 @@
           "unit": "Lbs"
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/uuyJ0DRmT2M"
+      "videoUrl": "https://www.youtube.com/embed/sc5ArM0rB94",
+      "videoUrls": [
+        "https://www.youtube.com/embed/sc5ArM0rB94",
+        "https://www.youtube.com/embed/uuyJ0DRmT2M"
+      ],
+      "videoTitles": [
+        "HP Demo",
+        "HP Instructional"
+      ]
     },
     {
       "slug": "l-35",
@@ -8766,7 +8801,10 @@
           "unit": "Lbs"
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw"
+      "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw",
+      "videoUrls": [
+        "https://www.youtube.com/embed/P-4oF1WX7Qw"
+      ]
     },
     {
       "slug": "l123",
@@ -8889,7 +8927,10 @@
           "unit": "Lbs"
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw"
+      "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw",
+      "videoUrls": [
+        "https://www.youtube.com/embed/P-4oF1WX7Qw"
+      ]
     },
     {
       "slug": "l153",
@@ -9011,7 +9052,10 @@
           "unit": "Lbs"
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw"
+      "videoUrl": "https://www.youtube.com/embed/P-4oF1WX7Qw",
+      "videoUrls": [
+        "https://www.youtube.com/embed/P-4oF1WX7Qw"
+      ]
     },
     {
       "slug": "l160",
@@ -10455,7 +10499,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "j320",
@@ -10550,7 +10597,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "j210-2",
@@ -10642,7 +10692,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "j320-2",
@@ -10734,7 +10787,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "sp210",
@@ -10826,7 +10882,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "sp320",
@@ -10920,7 +10979,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "sp480",
@@ -11014,7 +11076,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "sp640",
@@ -11108,7 +11173,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "sp950",
@@ -11202,7 +11270,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "sp210-2",
@@ -11310,7 +11381,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "sp320-2",
@@ -11420,7 +11494,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "sp480-2",
@@ -11530,7 +11607,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "sp640-2",
@@ -11640,7 +11720,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "sp950-2",
@@ -11750,7 +11833,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0"
+      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
+      "videoUrls": [
+        "https://www.youtube.com/embed/4VWa99wPMK0"
+      ]
     },
     {
       "slug": "pm400",
@@ -11772,7 +11858,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s"
+      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s",
+      "videoUrls": [
+        "https://www.youtube.com/embed/1Qrr-9qi16s"
+      ]
     },
     {
       "slug": "p600-2",
@@ -11850,7 +11939,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s"
+      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s",
+      "videoUrls": [
+        "https://www.youtube.com/embed/1Qrr-9qi16s"
+      ]
     },
     {
       "slug": "p900-2",
@@ -11928,7 +12020,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s"
+      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s",
+      "videoUrls": [
+        "https://www.youtube.com/embed/1Qrr-9qi16s"
+      ]
     },
     {
       "slug": "p1200-2",
@@ -12006,7 +12101,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s"
+      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s",
+      "videoUrls": [
+        "https://www.youtube.com/embed/1Qrr-9qi16s"
+      ]
     },
     {
       "slug": "p1500-2",
@@ -12084,7 +12182,10 @@
           "unit": ""
         }
       },
-      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s"
+      "videoUrl": "https://www.youtube.com/embed/1Qrr-9qi16s",
+      "videoUrls": [
+        "https://www.youtube.com/embed/1Qrr-9qi16s"
+      ]
     },
     {
       "slug": "fls-30",

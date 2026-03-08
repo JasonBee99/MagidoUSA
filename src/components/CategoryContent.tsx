@@ -45,15 +45,16 @@ export function CategoryContent({
   const heroTitle = activeSeries ? activeSeries.name : category.name;
   const heroDescription = activeSeries
     ? activeSeries.description || `${activeSeries.type} aqueous parts washing systems.`
-    : `${category.shortDescription}. Every machine built entirely from AISI 304 stainless steel — engineered in Italy for lasting performance.`;
+    : category.description || category.shortDescription;
 
   return (
     <>
       {/* ─── Hero Section ─── */}
       <section className="hero-bg px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
-          <div className="flex flex-col items-center gap-8 lg:flex-row lg:justify-between lg:gap-12">
-            <div className="max-w-2xl lg:max-w-xl">
+          <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:gap-10">
+            {/* Text — appears first on all screens */}
+            <div className="lg:flex-1 text-center lg:text-left">
               <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
                 {category.name}
               </p>
@@ -65,15 +66,16 @@ export function CategoryContent({
               </p>
             </div>
 
+            {/* Image — below text on mobile, right side on desktop */}
             {heroImage && (
-              <div className="relative flex-shrink-0">
-                <div className="product-halo relative h-56 w-56 sm:h-72 sm:w-72 lg:h-80 lg:w-80">
+              <div className="flex items-center justify-center lg:flex-1">
+                <div className="product-halo relative h-56 w-56 sm:h-64 sm:w-64 lg:h-80 lg:w-80">
                   <Image
                     src={heroImage}
                     alt={`${heroTitle} representative product`}
                     fill
                     className="object-contain"
-                    sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 320px"
+                    sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 320px"
                     priority
                   />
                 </div>
@@ -110,7 +112,8 @@ export function CategoryContent({
                   key={product.slug}
                   product={product}
                   categorySlug={category.slug}
-                  seriesName={productSeries?.name}
+                  seriesName={productSeries?.displayName}
+                  seriesDescription={productSeries?.description}
                 />
               );
             })}

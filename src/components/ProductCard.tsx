@@ -11,14 +11,18 @@ interface ProductCardProps {
   product: Product;
   categorySlug: string;
   seriesName?: string;
+  seriesDescription?: string;
 }
 
-export function ProductCard({ product, categorySlug, seriesName }: ProductCardProps) {
+export function ProductCard({ product, categorySlug, seriesName, seriesDescription }: ProductCardProps) {
   const { isInCompare, addProduct, removeProduct, isFull } = useCompare();
   const [showVideo, setShowVideo] = useState(false);
+  const [activeVideoIndex, setActiveVideoIndex] = useState(0);
   const inCompare = isInCompare(product.slug);
   const hasImage = product.images.length > 0;
-  const hasVideo = !!product.videoUrl;
+  const videos = product.videoUrls || (product.videoUrl ? [product.videoUrl] : []);
+  const videoTitles = product.videoTitles || videos.map((_, i) => `Video ${i + 1}`);
+  const hasVideo = videos.length > 0;
 
   const handleCompareToggle = () => {
     if (inCompare) {
@@ -27,11 +31,6 @@ export function ProductCard({ product, categorySlug, seriesName }: ProductCardPr
       addProduct(product.slug);
     }
   };
-
-  // Build a short description from series type
-  const shortDesc = seriesName
-    ? `${seriesName} ${product.name.includes('parts washer') || product.name.includes('Parts Washer') ? '' : 'parts washer'}.`.replace('  ', ' ')
-    : '';
 
   return (
     <>
@@ -68,9 +67,16 @@ export function ProductCard({ product, categorySlug, seriesName }: ProductCardPr
             )}
           </div>
 
+          {/* Series badge — top left on image */}
+          {seriesName && (
+            <div className="absolute left-0 top-0 rounded-br-lg bg-[#eb6c1c] px-3 py-1 text-xs font-bold text-white">
+              {seriesName}
+            </div>
+          )}
+
           {/* Compare badge on image */}
           {inCompare && (
-            <div className="absolute left-2 top-2 flex items-center gap-1 rounded-full bg-magido-orange px-2 py-0.5 text-2xs font-bold text-white">
+            <div className="absolute right-2 top-2 flex items-center gap-1 rounded-full bg-magido-orange px-2 py-0.5 text-2xs font-bold text-white">
               <Check className="h-3 w-3" />
               Comparing
             </div>
@@ -79,24 +85,17 @@ export function ProductCard({ product, categorySlug, seriesName }: ProductCardPr
 
         {/* Content area */}
         <div className="flex flex-1 flex-col px-4 pb-4 pt-3">
-          {/* Series label */}
-          {seriesName && (
-            <p className="text-2xs font-medium text-[var(--color-text-muted)]">
-              {seriesName}
-            </p>
-          )}
-
           {/* Product title */}
           <Link href={`/products/${categorySlug}/${product.slug}`}>
-            <h3 className="mt-0.5 font-display text-base font-bold leading-snug text-[var(--color-text)] transition-colors group-hover:text-magido-orange">
+            <h3 className="font-display text-base font-bold leading-snug text-[var(--color-text)] transition-colors group-hover:text-magido-orange">
               {product.name}
             </h3>
           </Link>
 
-          {/* Short description */}
-          {shortDesc && (
+          {/* One-liner description from series */}
+          {seriesDescription && (
             <p className="mt-1 text-xs text-[var(--color-text-muted)]">
-              {shortDesc}
+              {seriesDescription}
             </p>
           )}
 
@@ -126,7 +125,7 @@ export function ProductCard({ product, categorySlug, seriesName }: ProductCardPr
                 className="flex items-center gap-1 rounded-md px-2 py-1.5 text-xs font-medium text-[var(--color-text-secondary)] transition-colors hover:bg-[var(--color-bg-secondary)] hover:text-[var(--color-text)]"
               >
                 <Play className="h-3 w-3" />
-                Video
+                Video{videos.length > 1 ? `s (${videos.length})` : ''}
               </button>
             )}
 
@@ -151,17 +150,17 @@ export function ProductCard({ product, categorySlug, seriesName }: ProductCardPr
       </div>
 
       {/* Video Modal */}
-      {showVideo && product.videoUrl && (
+      {showVideo && videos.length > 0 && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-          onClick={() => setShowVideo(false)}
+          onClick={() => { setShowVideo(false); setActiveVideoIndex(0); }}
         >
           <div
             className="relative w-full max-w-3xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              onClick={() => setShowVideo(false)}
+              onClick={() => { setShowVideo(false); setActiveVideoIndex(0); }}
               className="absolute -right-2 -top-10 rounded-full bg-white/10 p-1.5 text-white transition-colors hover:bg-white/20"
               aria-label="Close video"
             >
@@ -169,13 +168,37 @@ export function ProductCard({ product, categorySlug, seriesName }: ProductCardPr
             </button>
             <div className="aspect-video w-full overflow-hidden rounded-xl">
               <iframe
-                src={product.videoUrl}
+                src={videos[activeVideoIndex]}
                 className="h-full w-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                title={`${product.name} video`}
+                title={videoTitles[activeVideoIndex]}
               />
             </div>
+
+            {/* Tabs + title below video */}
+            {videos.length > 1 && (
+              <div className="mt-3">
+                <div className="flex items-center gap-1">
+                  {videos.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setActiveVideoIndex(i)}
+                      className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
+                        i === activeVideoIndex
+                          ? 'bg-magido-orange text-white'
+                          : 'bg-white/10 text-white/60 hover:bg-white/20 hover:text-white'
+                      }`}
+                    >
+                      {videoTitles[i]}
+                    </button>
+                  ))}
+                </div>
+                <p className="mt-2 text-sm text-white/80">
+                  {videoTitles[activeVideoIndex]}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       )}
