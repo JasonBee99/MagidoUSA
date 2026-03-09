@@ -55,21 +55,38 @@ export function generateMetadata({
   };
 }
 
-// ─── Key specs to display as inline pairs (order matters) ───
-const KEY_SPEC_DISPLAY: { specKey: string; label: string }[] = [
-  { specKey: 'Belt Width', label: 'Belt Width' },
-  { specKey: 'Turntable Basket Diameter', label: 'Basket' },
-  { specKey: 'Drum Diameter', label: 'Drum' },
-  { specKey: 'Working Dimensions', label: 'Working Size' },
-  { specKey: 'Max Part Size', label: 'Max Part' },
-  { specKey: 'Load Weight', label: 'Load Weight' },
-  { specKey: 'Load Height', label: 'Wash Height' },
-  { specKey: 'Tank Capacity', label: 'Wash Tank' },
-  { specKey: 'Pump(s)', label: 'Wash Pump' },
-  { specKey: 'Flow Rate', label: 'Flow Rate' },
-  { specKey: 'Max Operating Temperature', label: 'Temperature' },
-  { specKey: 'Voltage', label: 'Power Supply' },
-  { specKey: 'Timer', label: 'Timer' },
+// ─── Key specs — ordered list of candidates, first match per label wins ───
+// Each entry: { specKeys: string[], label: string }
+// Multiple specKeys allow fallback across categories that use different key names
+const KEY_SPEC_CANDIDATES: { specKeys: string[]; label: string }[] = [
+  // Size / working area
+  { specKeys: ['Working Area', 'Working Envelope'],                       label: 'Working Area' },
+  { specKeys: ['Turntable Basket Diameter'],                              label: 'Basket Dia.' },
+  { specKeys: ['Turntable Basket', 'Basket Dimensions'],                  label: 'Basket Size' },
+  { specKeys: ['Drum diameter', 'Drum Diameter'],                        label: 'Drum Dia.' },
+  { specKeys: ['Drum Length'],                                            label: 'Drum Length' },
+  { specKeys: ['Width of Conveyor belt', 'Available width of conveyor belt'], label: 'Belt Width' },
+  { specKeys: ['Usable washing height'],                                  label: 'Wash Height' },
+  // Load
+  { specKeys: ['Load Weight'],                                            label: 'Load Weight' },
+  { specKeys: ['Load Height'],                                            label: 'Load Height' },
+  // Tank / fluid
+  { specKeys: ['Fluid/Tank Capacity', 'Fluid Capacity', 'Tank Capacity'], label: 'Tank' },
+  { specKeys: ['Wash Tank', 'Wash Fluid Capacity'],                       label: 'Wash Tank' },
+  { specKeys: ['Rinse Fluid Capacity'],                                   label: 'Rinse Tank' },
+  // Pump / flow
+  { specKeys: ['Pump', 'Pump(s)', 'Wash Pump', 'Wash pump'],             label: 'Pump' },
+  { specKeys: ['Flow Rate'],                                              label: 'Flow Rate' },
+  { specKeys: ['Spray Pressure'],                                         label: 'Spray Pressure' },
+  // Heating / temperature
+  { specKeys: ['Heater', 'Wash Heater', 'Wash electrical heating'],       label: 'Heater' },
+  { specKeys: ['Max Operating Temperature', 'Operating Temperature', 'Solution temperature'], label: 'Temperature' },
+  // Rotation (Platinum)
+  { specKeys: ['Rotation Speed'],                                         label: 'Rotation' },
+  // Production (Rotary Drum)
+  { specKeys: ['Production'],                                             label: 'Production' },
+  // Power
+  { specKeys: ['Voltage', 'Voltage / Amperage', 'Power supply'],          label: 'Power Supply' },
 ];
 
 export default function ProductPage({
@@ -89,22 +106,32 @@ export default function ProductPage({
   const prevSeries = prev ? getSeriesBySlug(prev.seriesSlug) : null;
   const nextSeries = next ? getSeriesBySlug(next.seriesSlug) : null;
 
-  // Build key specs for display
-  const keySpecs = KEY_SPEC_DISPLAY
-    .filter((ks) => {
-      const spec = product.specs[ks.specKey];
-      return spec && spec.value && spec.value !== '–' && spec.value !== '-';
-    })
-    .map((ks) => {
-      const spec = product.specs[ks.specKey];
+  // Build key specs — first matching specKey per candidate, deduplicate labels
+  const seenLabels = new Set<string>();
+  const keySpecs: { label: string; value: string }[] = [];
+
+  for (const candidate of KEY_SPEC_CANDIDATES) {
+    if (keySpecs.length >= 8) break;
+    if (seenLabels.has(candidate.label)) continue;
+
+    for (const specKey of candidate.specKeys) {
+      const spec = product.specs[specKey];
+      if (!spec?.value || spec.value === '–' || spec.value === '-') continue;
+
       let displayValue = spec.value;
-      // Append unit if not already included
-      if (spec.unit && !spec.value.toLowerCase().includes(spec.unit.toLowerCase())) {
+      if (
+        spec.unit &&
+        spec.value !== spec.unit &&
+        !spec.value.toLowerCase().includes(spec.unit.toLowerCase())
+      ) {
         displayValue = `${spec.value} ${spec.unit}`;
       }
-      return { label: ks.label, value: displayValue };
-    })
-    .slice(0, 8); // max 8 key specs shown
+
+      keySpecs.push({ label: candidate.label, value: displayValue });
+      seenLabels.add(candidate.label);
+      break; // first matching key wins
+    }
+  }
 
   return (
     <>
@@ -149,47 +176,42 @@ export default function ProductPage({
       <section className="px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-8 lg:flex-row lg:gap-10">
-            {/* Left: Prev button + Image + Next button */}
+
+            {/* Left: Image with floating Prev / Next buttons */}
             <div className="lg:w-5/12">
-              <div className="flex items-center gap-2">
-                {/* Prev button */}
-                {prev ? (
+              <div className="relative">
+                {/* Image — full width of container */}
+                <ProductImageGallery
+                  images={product.images}
+                  alt={product.name}
+                  seriesName={series?.displayName}
+                  model={product.model}
+                />
+
+                {/* Prev button — floats over left edge, vertically centered */}
+                {prev && (
                   <Link
                     href={`/products/${params.category}/${prev.slug}`}
-                    className="flex flex-col items-center gap-0.5 rounded-lg border border-[var(--color-border)] bg-[var(--color-card-bg)] px-2 py-3 text-center transition-colors hover:border-magido-orange/40 hover:bg-[var(--color-bg-secondary)]"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 z-20 flex flex-col items-center gap-0.5 rounded-lg border border-[var(--color-border)] bg-[var(--color-card-bg)]/90 backdrop-blur-sm px-2 py-3 text-center shadow-md transition-colors hover:border-magido-orange/40 hover:bg-[var(--color-bg-secondary)]"
                     title={prev.name}
                   >
                     <ChevronLeft className="h-4 w-4 text-magido-orange" />
                     <span className="text-2xs font-semibold text-magido-orange">{prevSeries?.displayName}</span>
                     <span className="text-2xs font-bold text-[var(--color-text)]">{prev.model}</span>
                   </Link>
-                ) : (
-                  <div className="w-14 flex-shrink-0" />
                 )}
 
-                {/* Image — slightly reduced */}
-                <div className="flex-1 min-w-0">
-                  <ProductImageGallery
-                    images={product.images}
-                    alt={product.name}
-                    seriesName={series?.displayName}
-                    model={product.model}
-                  />
-                </div>
-
-                {/* Next button */}
-                {next ? (
+                {/* Next button — floats over right edge, vertically centered */}
+                {next && (
                   <Link
                     href={`/products/${params.category}/${next.slug}`}
-                    className="flex flex-col items-center gap-0.5 rounded-lg border border-[var(--color-border)] bg-[var(--color-card-bg)] px-2 py-3 text-center transition-colors hover:border-magido-orange/40 hover:bg-[var(--color-bg-secondary)]"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 z-20 flex flex-col items-center gap-0.5 rounded-lg border border-[var(--color-border)] bg-[var(--color-card-bg)]/90 backdrop-blur-sm px-2 py-3 text-center shadow-md transition-colors hover:border-magido-orange/40 hover:bg-[var(--color-bg-secondary)]"
                     title={next.name}
                   >
                     <ChevronRight className="h-4 w-4 text-magido-orange" />
                     <span className="text-2xs font-semibold text-magido-orange">{nextSeries?.displayName}</span>
                     <span className="text-2xs font-bold text-[var(--color-text)]">{next.model}</span>
                   </Link>
-                ) : (
-                  <div className="w-14 flex-shrink-0" />
                 )}
               </div>
             </div>

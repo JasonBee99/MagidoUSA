@@ -176,6 +176,12 @@ export function getSeriesRepresentativeImage(seriesSlug: string): string | null 
  * Get the representative image for a category (first product with images)
  */
 export function getCategoryRepresentativeImage(categorySlug: string): string | null {
+  // Use explicit heroImage if set on the category
+  const category = getCategoryBySlug(categorySlug);
+  if (category && (category as unknown as Record<string, unknown>).heroImage) {
+    return (category as unknown as Record<string, unknown>).heroImage as string;
+  }
+  // Fallback: first product image found
   const products = getProductsByCategory(categorySlug);
   for (const p of products) {
     if (p.images.length > 0) return p.images[0];

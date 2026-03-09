@@ -89,7 +89,7 @@ export default function HomePage() {
               description="Decades of European engineering excellence. Precision-manufactured components with exacting quality standards."
             />
             <ValueProp
-              title="84 Models Available"
+              title="76 Models Available"
               description="From compact manual stations to fully automated conveyor systems — a solution for every application."
             />
             <ValueProp

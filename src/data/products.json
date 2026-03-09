@@ -1,8 +1,8 @@
 {
   "_generated": "2026-02-27T15:59:37.395Z",
   "_version": "1.0.0",
-  "_totalProducts": 84,
-  "_totalSeries": 20,
+  "_totalProducts": 74,
+  "_totalSeries": 19,
   "_totalCategories": 7,
   "categories": [
     {
@@ -39,7 +39,8 @@
         }
       ],
       "totalProducts": 6,
-      "description": "Magido manual aqueous parts washers are engineered to handle the most rigorous cleaning challenges found in industrial and automotive maintenance applications. Available in sink-style, vat-style, and high-pressure cabinet configurations, these systems use environmentally safe water-based cleaning solutions to effectively remove oils, greases, dirt, and grime. Built entirely from AISI 304 stainless steel, Magido manual washers deliver reliable performance with minimal maintenance \u2014 ideal for shop-floor degreasing where hands-on control is essential."
+      "description": "Magido manual aqueous parts washers are engineered to handle the most rigorous cleaning challenges found in industrial and automotive maintenance applications. Available in sink-style, vat-style, and high-pressure cabinet configurations, these systems use environmentally safe water-based cleaning solutions to effectively remove oils, greases, dirt, and grime. Built entirely from AISI 304 stainless steel, Magido manual washers deliver reliable performance with minimal maintenance \u2014 ideal for shop-floor degreasing where hands-on control is essential.",
+      "heroImage": null
     },
     {
       "name": "Top Load Washers",
@@ -91,7 +92,8 @@
         }
       ],
       "totalProducts": 17,
-      "description": "Magido top load aqueous parts washers are engineered for automatic spray washing applications using aqueous detergents at temperatures up to 150\u00b0F. Each system features a motorized rotating turntable and precision-angled jet nozzles that deliver thorough, consistent cleaning coverage across all part surfaces. Available in compact, standard, and high-performance configurations with turntable sizes ranging from 14\" to 55\" in diameter, these washers handle everything from small precision components to medium-sized industrial parts. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages."
+      "description": "Magido top load aqueous parts washers are engineered for automatic spray washing applications using aqueous detergents at temperatures up to 150\u00b0F. Each system features a motorized rotating turntable and precision-angled jet nozzles that deliver thorough, consistent cleaning coverage across all part surfaces. Available in compact, standard, and high-performance configurations with turntable sizes ranging from 14\" to 55\" in diameter, these washers handle everything from small precision components to medium-sized industrial parts. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages.",
+      "heroImage": "/images/products/x51-2/l153.webp"
     },
     {
       "name": "Front Load Washers",
@@ -127,7 +129,8 @@
         }
       ],
       "totalProducts": 11,
-      "description": "Magido front load aqueous parts washers are engineered for automatic spray washing of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The operation principle uses a fixed platform with a series of angled water jet nozzles configured on a spray ramp to optimally clean all part surfaces. Front load systems feature a removable turntable that transfers easily onto a mobile cart for convenient loading and unloading outside the wash chamber. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages \u2014 built for high-throughput production environments."
+      "description": "Magido front load aqueous parts washers are engineered for automatic spray washing of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The operation principle uses a fixed platform with a series of angled water jet nozzles configured on a spray ramp to optimally clean all part surfaces. Front load systems feature a removable turntable that transfers easily onto a mobile cart for convenient loading and unloading outside the wash chamber. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages \u2014 built for high-throughput production environments.",
+      "heroImage": null
     },
     {
       "name": "Immersion Washers",
@@ -135,8 +138,7 @@
       "shortDescription": "Full-submersion cleaning for complex internal geometries",
       "order": 4,
       "seriesOrder": [
-        "agita",
-        "ultra"
+        "agita"
       ],
       "series": [
         {
@@ -145,17 +147,11 @@
           "displayName": "Agita",
           "type": "Immersion",
           "isNew": false
-        },
-        {
-          "slug": "ultra",
-          "name": "Ultra Series",
-          "displayName": "Ultra",
-          "type": "Ultrasonic Immersion",
-          "isNew": true
         }
       ],
       "totalProducts": 10,
-      "description": "Magido immersion aqueous parts washers are designed for thorough cleaning of parts with complex geometries using a full-submersion agitation process. Parts are lowered into a heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, these systems are ideal for precision components, machined parts, and assemblies requiring complete surface contact. All machines are constructed from AISI 304 stainless steel and are characterized by their cleaning platform size and load capacity."
+      "description": "Magido immersion aqueous parts washers are designed for thorough cleaning of parts with complex geometries using a full-submersion agitation process. Parts are lowered into a heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, these systems are ideal for precision components, machined parts, and assemblies requiring complete surface contact. All machines are constructed from AISI 304 stainless steel and are characterized by their cleaning platform size and load capacity.",
+      "heroImage": "/images/products/agita/a1300.webp"
     },
     {
       "name": "In-Line Belt Conveyor Washers",
@@ -191,7 +187,8 @@
         }
       ],
       "totalProducts": 21,
-      "description": "Magido in-line belt conveyor aqueous parts washers are designed for continuous, high-volume cleaning integrated directly into your production line. Parts are loaded onto a stainless steel mesh belt that carries them through single-stage or dual-stage wash and rinse zones at controlled speeds, delivering consistent results without manual handling. Available in compact Silver series and high-capacity Gold series configurations, these systems use environmentally safe aqueous cleaning solutions and are built entirely from AISI 304 stainless steel. Ideal for manufacturing operations that demand automated throughput with repeatable cleaning quality."
+      "description": "Magido in-line belt conveyor aqueous parts washers are designed for continuous, high-volume cleaning integrated directly into your production line. Parts are loaded onto a stainless steel mesh belt that carries them through single-stage or dual-stage wash and rinse zones at controlled speeds, delivering consistent results without manual handling. Available in compact Silver series and high-capacity Gold series configurations, these systems use environmentally safe aqueous cleaning solutions and are built entirely from AISI 304 stainless steel. Ideal for manufacturing operations that demand automated throughput with repeatable cleaning quality.",
+      "heroImage": null
     },
     {
       "name": "Rotary Drum Washers",
@@ -227,7 +224,8 @@
         }
       ],
       "totalProducts": 14,
-      "description": "Magido rotary drum aqueous parts washers use a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and are carried through the wash zone by the internal helix, emerging clean at the other end \u2014 enabling non-stop processing without batching. Available in single-stage and dual-stage configurations with wash and rinse capabilities, all machines are constructed from AISI 304 stainless steel. These systems are the right choice for high-volume operations requiring consistent, automated cleaning."
+      "description": "Magido rotary drum aqueous parts washers use a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and are carried through the wash zone by the internal helix, emerging clean at the other end \u2014 enabling non-stop processing without batching. Available in single-stage and dual-stage configurations with wash and rinse capabilities, all machines are constructed from AISI 304 stainless steel. These systems are the right choice for high-volume operations requiring consistent, automated cleaning.",
+      "heroImage": "/images/products/spira-2b/sp950-2.webp"
     },
     {
       "name": "Rotary Immersion Washers",
@@ -247,7 +245,8 @@
         }
       ],
       "totalProducts": 5,
-      "description": "Magido rotary immersion aqueous parts washers combine turbulent immersion washing with spray cleaning to deliver superior results on parts with complex geometries. During the cleaning cycle, parts in baskets or fixtures are rotated through an immersion bath while simultaneously receiving spray cleaning, followed by spray and immersion rinsing with an available drying stage. Each system is customizable to your exact specifications and built entirely from AISI 304 stainless steel. These multi-action washers are ideal for critical components in aerospace, automotive, and precision manufacturing where thorough, repeatable cleaning is essential."
+      "description": "Magido rotary immersion aqueous parts washers combine turbulent immersion washing with spray cleaning to deliver superior results on parts with complex geometries. During the cleaning cycle, parts in baskets or fixtures are rotated through an immersion bath while simultaneously receiving spray cleaning, followed by spray and immersion rinsing with an available drying stage. Each system is customizable to your exact specifications and built entirely from AISI 304 stainless steel. These multi-action washers are ideal for critical components in aerospace, automotive, and precision manufacturing where thorough, repeatable cleaning is essential.",
+      "heroImage": "/images/products/platinum/p1200.webp"
     }
   ],
   "series": [
@@ -3385,7 +3384,6 @@
       "description": "Pneumatic platform immersion washers with agitation for complex parts.",
       "modelPrefix": "A",
       "products": [
-        "a600",
         "a700",
         "a900",
         "a1100",
@@ -3393,7 +3391,6 @@
       ],
       "specTable": {
         "models": [
-          "A600",
           "A700",
           "A900",
           "A1100",
@@ -3404,7 +3401,6 @@
             "name": "Platform",
             "unit": "Inches",
             "values": {
-              "A600": "W23.6\" x D11.8\"",
               "A700": "W27.6\" x D15.7\"",
               "A900": "W35.4\" x D15.7\"",
               "A1100": "W43.4\" x D15.7\"",
@@ -3415,7 +3411,6 @@
             "name": "Working Height",
             "unit": "Inches",
             "values": {
-              "A600": "13.8'",
               "A700": "13.8'",
               "A900": "15.7\"",
               "A1100": "15.7\"",
@@ -3426,7 +3421,6 @@
             "name": "Load Weight",
             "unit": "Lbs",
             "values": {
-              "A600": "180 lbs",
               "A700": "180 lbs",
               "A900": "550 lbs",
               "A1100": "550 lbs",
@@ -3437,7 +3431,6 @@
             "name": "Fluid/Tank Capacity",
             "unit": "gal US",
             "values": {
-              "A600": "53 gal",
               "A700": "70 gal",
               "A900": "100 gal",
               "A1100": "140 gal",
@@ -3448,7 +3441,6 @@
             "name": "Heater",
             "unit": "kW",
             "values": {
-              "A600": "4kW",
               "A700": "6kW",
               "A900": "8kW",
               "A1100": "10kW",
@@ -3459,7 +3451,6 @@
             "name": "Operating Temperature",
             "unit": "\u00b0F",
             "values": {
-              "A600": "Ambient-170\u00b0F",
               "A700": "Ambient-170\u00b0F",
               "A900": "Ambient-170\u00b0F",
               "A1100": "Ambient-170\u00b0F",
@@ -3470,7 +3461,6 @@
             "name": "PLC",
             "unit": "",
             "values": {
-              "A600": "Siemens",
               "A700": "Siemens",
               "A900": "Siemens",
               "A1100": "Siemens",
@@ -3481,7 +3471,6 @@
             "name": "Voltage / Amperage",
             "unit": "V / A",
             "values": {
-              "A600": "230/460",
               "A700": "230/460",
               "A900": "230/460",
               "A1100": "230/460",
@@ -3492,7 +3481,6 @@
             "name": "Phase",
             "unit": "Ph",
             "values": {
-              "A600": "1-3",
               "A700": "1-3",
               "A900": "3",
               "A1100": "3",
@@ -3503,7 +3491,6 @@
             "name": "Length",
             "unit": "Inches",
             "values": {
-              "A600": "35\"",
               "A700": "38\"",
               "A900": "38\"",
               "A1100": "42\"",
@@ -3514,7 +3501,6 @@
             "name": "Width",
             "unit": "Inches",
             "values": {
-              "A600": "57\"",
               "A700": "60\"",
               "A900": "68\"",
               "A1100": "76\"",
@@ -3525,207 +3511,10 @@
             "name": "Height",
             "unit": "Inches",
             "values": {
-              "A600": "59\"",
               "A700": "59\"",
               "A900": "67\"",
               "A1100": "67\"",
               "A1300": "70\""
-            }
-          }
-        ]
-      },
-      "standardFeatures": [
-        "AISI 304 Stainless Steel Construction",
-        "Rotary Basket/Fixture Immersion System",
-        "Turbulent Immersion Bath",
-        "Combined Immersion & Spray Cycles",
-        "PLC Control Operation",
-        "Solution Heating System"
-      ],
-      "availableOptions": [
-        "Rinse stage (spray and/or immersion)",
-        "Heated drying stage",
-        "Filtration systems",
-        "Oil skimmer"
-      ]
-    },
-    {
-      "slug": "ultra",
-      "name": "Ultra Series",
-      "displayName": "Ultra",
-      "category": "immersion-washers",
-      "type": "Ultrasonic Immersion",
-      "description": "Ultrasonic immersion washers for precision cleaning applications.",
-      "isNew": true,
-      "modelPrefix": "U",
-      "products": [
-        "u600",
-        "u700",
-        "u900",
-        "u1100",
-        "u1300"
-      ],
-      "specTable": {
-        "models": [
-          "U600",
-          "U700",
-          "U900",
-          "U1100",
-          "U1300"
-        ],
-        "rows": [
-          {
-            "name": "Platform",
-            "unit": "Inches",
-            "values": {
-              "U600": "W23.6\" x D11.8\"",
-              "U700": "W27.6\" x D15.7\"",
-              "U900": "W35.4\" x D15.7\"",
-              "U1100": "W43.4\" x D15.7\"",
-              "U1300": "W51.2\" x D23.6\""
-            }
-          },
-          {
-            "name": "Working Height",
-            "unit": "Inches",
-            "values": {
-              "U600": "13.8'",
-              "U700": "13.8'",
-              "U900": "15.7\"",
-              "U1100": "15.7\"",
-              "U1300": "15.7\""
-            }
-          },
-          {
-            "name": "Load Weight",
-            "unit": "Lbs",
-            "values": {
-              "U600": "180 lbs",
-              "U700": "180 lbs",
-              "U900": "550 lbs",
-              "U1100": "550 lbs",
-              "U1300": "550 lbs"
-            }
-          },
-          {
-            "name": "Ultrasonic Frequency",
-            "unit": "kHz",
-            "values": {
-              "U600": "25/40",
-              "U700": "25/40",
-              "U900": "25/40",
-              "U1100": "25/40",
-              "U1300": "25/40"
-            }
-          },
-          {
-            "name": "Ultrasonic Power",
-            "unit": "Wats",
-            "values": {
-              "U600": "1,500",
-              "U700": "2,000",
-              "U900": "3,000",
-              "U1100": "4,000",
-              "U1300": "5,000"
-            }
-          },
-          {
-            "name": "Fluid/Tank Capacity",
-            "unit": "gal US",
-            "values": {
-              "U600": "53 gal",
-              "U700": "70 gal",
-              "U900": "100 gal",
-              "U1100": "140 gal",
-              "U1300": "180 gal"
-            }
-          },
-          {
-            "name": "Heater",
-            "unit": "kW",
-            "values": {
-              "U600": "4kW",
-              "U700": "6kW",
-              "U900": "8kW",
-              "U1100": "10kW",
-              "U1300": "12kW"
-            }
-          },
-          {
-            "name": "Operating Temperature",
-            "unit": "\u00b0F",
-            "values": {
-              "U600": "Ambient-170\u00b0F",
-              "U700": "Ambient-170\u00b0F",
-              "U900": "Ambient-170\u00b0F",
-              "U1100": "Ambient-170\u00b0F",
-              "U1300": "Ambient-170\u00b0F"
-            }
-          },
-          {
-            "name": "PLC",
-            "unit": "",
-            "values": {
-              "U600": "Siemens",
-              "U700": "Siemens",
-              "U900": "Siemens",
-              "U1100": "Siemens",
-              "U1300": "Siemens"
-            }
-          },
-          {
-            "name": "Voltage / Amperage",
-            "unit": "V / A",
-            "values": {
-              "U600": "230/460",
-              "U700": "230/460",
-              "U900": "230/460",
-              "U1100": "230/460",
-              "U1300": "230/460"
-            }
-          },
-          {
-            "name": "Phase",
-            "unit": "Ph",
-            "values": {
-              "U600": "1-3",
-              "U700": "1-3",
-              "U900": "3",
-              "U1100": "3",
-              "U1300": "3"
-            }
-          },
-          {
-            "name": "Length",
-            "unit": "Inches",
-            "values": {
-              "U600": "35\"",
-              "U700": "38\"",
-              "U900": "38\"",
-              "U1100": "42\"",
-              "U1300": "47\""
-            }
-          },
-          {
-            "name": "Width",
-            "unit": "Inches",
-            "values": {
-              "U600": "57\"",
-              "U700": "60\"",
-              "U900": "68\"",
-              "U1100": "76\"",
-              "U1300": "84\""
-            }
-          },
-          {
-            "name": "Height",
-            "unit": "Inches",
-            "values": {
-              "U600": "59\"",
-              "U700": "59\"",
-              "U900": "67\"",
-              "U1100": "67\"",
-              "U1300": "70\""
             }
           }
         ]
@@ -3754,16 +3543,12 @@
       "description": "Compact helical drum washers for small parts in bulk.",
       "modelPrefix": "J",
       "products": [
-        "j210",
         "j320",
-        "j210-2",
         "j320-2"
       ],
       "specTable": {
         "models": [
-          "J210",
           "J320",
-          "J210/2",
           "J320/2"
         ],
         "rows": [
@@ -3771,9 +3556,7 @@
             "name": "Production",
             "unit": "CFH",
             "values": {
-              "J210": "0.7",
               "J320": "1.4",
-              "J210/2": "0.7",
               "J320/2": "1.4"
             }
           },
@@ -3781,9 +3564,7 @@
             "name": "Drum diameter",
             "unit": "Inches",
             "values": {
-              "J210": "8\"",
               "J320": "12\"",
-              "J210/2": "8\"",
               "J320/2": "12\""
             }
           },
@@ -3791,9 +3572,7 @@
             "name": "Drum Length",
             "unit": "Inches",
             "values": {
-              "J210": "47\"",
               "J320": "47\"",
-              "J210/2": "71\"",
               "J320/2": "71\""
             }
           },
@@ -3801,9 +3580,7 @@
             "name": "Thread pitch",
             "unit": "Inches",
             "values": {
-              "J210": "4\"",
               "J320": "5\"",
-              "J210/2": "4\"",
               "J320/2": "5\""
             }
           },
@@ -3811,9 +3588,7 @@
             "name": "Thread depth",
             "unit": "Inches",
             "values": {
-              "J210": "2\"",
               "J320": "2\"",
-              "J210/2": "2\"",
               "J320/2": "2\""
             }
           },
@@ -3821,9 +3596,7 @@
             "name": "Diameter holes drum",
             "unit": "Inches",
             "values": {
-              "J210": "1/5\"",
               "J320": "1/5\"",
-              "J210/2": "1/5\"",
               "J320/2": "1/5\""
             }
           },
@@ -3831,9 +3604,7 @@
             "name": "Loading height",
             "unit": "Inches",
             "values": {
-              "J210": "35\"",
               "J320": "35\"",
-              "J210/2": "35\"",
               "J320/2": "35\""
             }
           },
@@ -3841,9 +3612,7 @@
             "name": "Unloading height",
             "unit": "Inches",
             "values": {
-              "J210": "21\"",
               "J320": "21\"",
-              "J210/2": "21\"",
               "J320/2": "21\""
             }
           },
@@ -3851,9 +3620,7 @@
             "name": "Wash tank",
             "unit": "gal US",
             "values": {
-              "J210": "27",
               "J320": "27",
-              "J210/2": "27",
               "J320/2": "27"
             }
           },
@@ -3861,9 +3628,7 @@
             "name": "Rinse tank",
             "unit": "gal US",
             "values": {
-              "J210": "- -",
               "J320": "- -",
-              "J210/2": "27",
               "J320/2": "27"
             }
           },
@@ -3871,9 +3636,7 @@
             "name": "Wash pump",
             "unit": "Hp",
             "values": {
-              "J210": "0.75",
               "J320": "0.75",
-              "J210/2": "0.75",
               "J320/2": "0.75"
             }
           },
@@ -3881,9 +3644,7 @@
             "name": "Wash flow rate pressure",
             "unit": "GPM / PSI",
             "values": {
-              "J210": "21 / 30",
               "J320": "21 / 30",
-              "J210/2": "21 / 30",
               "J320/2": "21 / 30"
             }
           },
@@ -3891,9 +3652,7 @@
             "name": "Wash electrical heating",
             "unit": "kW",
             "values": {
-              "J210": "8",
               "J320": "8",
-              "J210/2": "8",
               "J320/2": "8"
             }
           },
@@ -3901,9 +3660,7 @@
             "name": "Solution temperature",
             "unit": "\u00b0F",
             "values": {
-              "J210": "100-140",
               "J320": "100-140",
-              "J210/2": "100-140",
               "J320/2": "100-140"
             }
           },
@@ -3911,9 +3668,7 @@
             "name": "Steam aspirator",
             "unit": "HP / CFM",
             "values": {
-              "J210": "0.12 / 60",
               "J320": "0.12 / 60",
-              "J210/2": "0.12 / 60",
               "J320/2": "0.12 / 60"
             }
           },
@@ -3921,9 +3676,7 @@
             "name": "Overall width",
             "unit": "Inches",
             "values": {
-              "J210": "32\"",
               "J320": "32\"",
-              "J210/2": "42\"",
               "J320/2": "42\""
             }
           },
@@ -3931,9 +3684,7 @@
             "name": "Overall height",
             "unit": "Inches",
             "values": {
-              "J210": "54\"",
               "J320": "54\"",
-              "J210/2": "65\"",
               "J320/2": "65\""
             }
           },
@@ -3941,9 +3692,7 @@
             "name": "Overall depth",
             "unit": "Inches",
             "values": {
-              "J210": "65\"",
               "J320": "65\"",
-              "J210/2": "90\"",
               "J320/2": "90\""
             }
           },
@@ -3951,9 +3700,7 @@
             "name": "Power supply",
             "unit": "Volt",
             "values": {
-              "J210": "460V 3ph 60Hz",
               "J320": "460V 3ph 60Hz",
-              "J210/2": "460V 3ph 60Hz",
               "J320/2": "460V 3ph 60Hz"
             }
           },
@@ -3961,9 +3708,7 @@
             "name": "PLC",
             "unit": "",
             "values": {
-              "J210": "Siemens",
               "J320": "Siemens",
-              "J210/2": "Siemens",
               "J320/2": "Siemens"
             }
           }
@@ -3994,7 +3739,6 @@
       "description": "Single-stage rotary drum washers for continuous bulk cleaning.",
       "modelPrefix": "SP",
       "products": [
-        "sp210",
         "sp320",
         "sp480",
         "sp640",
@@ -4002,7 +3746,6 @@
       ],
       "specTable": {
         "models": [
-          "SP210",
           "SP320",
           "SP480",
           "SP640",
@@ -4013,7 +3756,6 @@
             "name": "Production",
             "unit": "CFH",
             "values": {
-              "SP210": "1,6",
               "SP320": "3,2",
               "SP480": "6,4",
               "SP640": "12,7",
@@ -4024,7 +3766,6 @@
             "name": "Drum diameter",
             "unit": "Inches",
             "values": {
-              "SP210": "8\"",
               "SP320": "12\"",
               "SP480": "19\"",
               "SP640": "25\"",
@@ -4035,7 +3776,6 @@
             "name": "Drum Length",
             "unit": "Inches",
             "values": {
-              "SP210": "67\"",
               "SP320": "67\"",
               "SP480": "98\"",
               "SP640": "98\"",
@@ -4046,7 +3786,6 @@
             "name": "Thread pitch",
             "unit": "Inches",
             "values": {
-              "SP210": "4\"",
               "SP320": "5\"",
               "SP480": "6\"",
               "SP640": "8\"",
@@ -4057,7 +3796,6 @@
             "name": "Thread depth",
             "unit": "Inches",
             "values": {
-              "SP210": "2\"",
               "SP320": "2\"",
               "SP480": "3\"",
               "SP640": "5\"",
@@ -4068,7 +3806,6 @@
             "name": "Diameter holes drum",
             "unit": "Inches",
             "values": {
-              "SP210": "1/5\"",
               "SP320": "1/5\"",
               "SP480": "1/5\"",
               "SP640": "1/5\"",
@@ -4079,7 +3816,6 @@
             "name": "Loading height",
             "unit": "Inches",
             "values": {
-              "SP210": "50\"",
               "SP320": "50\"",
               "SP480": "58\"",
               "SP640": "58\"",
@@ -4090,7 +3826,6 @@
             "name": "Unloading height",
             "unit": "Inches",
             "values": {
-              "SP210": "28\"",
               "SP320": "28\"",
               "SP480": "32\"",
               "SP640": "32\"",
@@ -4101,7 +3836,6 @@
             "name": "Wash tank",
             "unit": "gal US",
             "values": {
-              "SP210": "90",
               "SP320": "90",
               "SP480": "130",
               "SP640": "130",
@@ -4112,7 +3846,6 @@
             "name": "Wash pump",
             "unit": "Hp",
             "values": {
-              "SP210": "3",
               "SP320": "3",
               "SP480": "4",
               "SP640": "4",
@@ -4123,7 +3856,6 @@
             "name": "Wash flow rate pressure",
             "unit": "GPM / PSI",
             "values": {
-              "SP210": "65 / 43",
               "SP320": "65 / 43",
               "SP480": "90 / 43",
               "SP640": "90 / 43",
@@ -4134,7 +3866,6 @@
             "name": "Wash electrical heating",
             "unit": "kW",
             "values": {
-              "SP210": "16",
               "SP320": "16",
               "SP480": "24",
               "SP640": "24",
@@ -4145,7 +3876,6 @@
             "name": "Solution temperature",
             "unit": "\u00b0F",
             "values": {
-              "SP210": "100-160",
               "SP320": "100-160",
               "SP480": "100-160",
               "SP640": "100-160",
@@ -4156,7 +3886,6 @@
             "name": "Steam aspirator",
             "unit": "HP / CFM",
             "values": {
-              "SP210": "0.25 / 180",
               "SP320": "0.25 / 180",
               "SP480": "0.25 / 180",
               "SP640": "0.25 / 180",
@@ -4167,7 +3896,6 @@
             "name": "Electric Drying",
             "unit": "kW",
             "values": {
-              "SP210": "9",
               "SP320": "9",
               "SP480": "15",
               "SP640": "15",
@@ -4178,7 +3906,6 @@
             "name": "Overall width",
             "unit": "Inches",
             "values": {
-              "SP210": "55\"",
               "SP320": "55\"",
               "SP480": "65\"",
               "SP640": "65\"",
@@ -4189,7 +3916,6 @@
             "name": "Overall height",
             "unit": "Inches",
             "values": {
-              "SP210": "75\"",
               "SP320": "75\"",
               "SP480": "90\"",
               "SP640": "90\"",
@@ -4200,7 +3926,6 @@
             "name": "Overall depth",
             "unit": "Inches",
             "values": {
-              "SP210": "100\"",
               "SP320": "100\"",
               "SP480": "140\"",
               "SP640": "140\"",
@@ -4211,7 +3936,6 @@
             "name": "Power supply",
             "unit": "Volt",
             "values": {
-              "SP210": "460V 3ph 60Hz",
               "SP320": "460V 3ph 60Hz",
               "SP480": "460V 3ph 60Hz",
               "SP640": "460V 3ph 60Hz",
@@ -4222,7 +3946,6 @@
             "name": "PLC",
             "unit": "",
             "values": {
-              "SP210": "Siemens",
               "SP320": "Siemens",
               "SP480": "Siemens",
               "SP640": "Siemens",
@@ -4256,7 +3979,6 @@
       "description": "Dual-stage rotary drum washers with wash and rinse drums.",
       "modelPrefix": "SP",
       "products": [
-        "sp210-2",
         "sp320-2",
         "sp480-2",
         "sp640-2",
@@ -4264,7 +3986,6 @@
       ],
       "specTable": {
         "models": [
-          "SP210/2",
           "SP320/2",
           "SP480/2",
           "SP640/2",
@@ -4275,7 +3996,6 @@
             "name": "Production",
             "unit": "CFH",
             "values": {
-              "SP210/2": "1,6",
               "SP320/2": "3,2",
               "SP480/2": "6,4",
               "SP640/2": "12,7",
@@ -4286,7 +4006,6 @@
             "name": "Drum diameter",
             "unit": "Inches",
             "values": {
-              "SP210/2": "8\"",
               "SP320/2": "12\"",
               "SP480/2": "19\"",
               "SP640/2": "25\"",
@@ -4297,7 +4016,6 @@
             "name": "Drum Length",
             "unit": "Inches",
             "values": {
-              "SP210/2": "106\"",
               "SP320/2": "106\"",
               "SP480/2": "138\"",
               "SP640/2": "138\"",
@@ -4308,7 +4026,6 @@
             "name": "Thread pitch",
             "unit": "Inches",
             "values": {
-              "SP210/2": "4\"",
               "SP320/2": "5\"",
               "SP480/2": "6\"",
               "SP640/2": "8\"",
@@ -4319,7 +4036,6 @@
             "name": "Thread depth",
             "unit": "Inches",
             "values": {
-              "SP210/2": "2\"",
               "SP320/2": "2\"",
               "SP480/2": "3\"",
               "SP640/2": "5\"",
@@ -4330,7 +4046,6 @@
             "name": "Diameter holes drum",
             "unit": "Inches",
             "values": {
-              "SP210/2": "1/5\"",
               "SP320/2": "1/5\"",
               "SP480/2": "1/5\"",
               "SP640/2": "1/5\"",
@@ -4341,7 +4056,6 @@
             "name": "Loading height",
             "unit": "Inches",
             "values": {
-              "SP210/2": "50\"",
               "SP320/2": "50\"",
               "SP480/2": "58\"",
               "SP640/2": "58\"",
@@ -4352,7 +4066,6 @@
             "name": "Unloading height",
             "unit": "Inches",
             "values": {
-              "SP210/2": "28\"",
               "SP320/2": "28\"",
               "SP480/2": "32\"",
               "SP640/2": "32\"",
@@ -4363,7 +4076,6 @@
             "name": "Wash tank",
             "unit": "gal US",
             "values": {
-              "SP210/2": "90",
               "SP320/2": "90",
               "SP480/2": "130",
               "SP640/2": "130",
@@ -4374,7 +4086,6 @@
             "name": "Rinse tank",
             "unit": "gal US",
             "values": {
-              "SP210/2": "90",
               "SP320/2": "90",
               "SP480/2": "130",
               "SP640/2": "130",
@@ -4385,7 +4096,6 @@
             "name": "Wash pump",
             "unit": "Hp",
             "values": {
-              "SP210/2": "3",
               "SP320/2": "3",
               "SP480/2": "4",
               "SP640/2": "4",
@@ -4396,7 +4106,6 @@
             "name": "Wash flow rate pressure",
             "unit": "GPM / PSI",
             "values": {
-              "SP210/2": "65 / 43",
               "SP320/2": "65 / 43",
               "SP480/2": "90 / 43",
               "SP640/2": "90 / 43",
@@ -4407,7 +4116,6 @@
             "name": "Rinse pump",
             "unit": "Hp",
             "values": {
-              "SP210/2": "3",
               "SP320/2": "3",
               "SP480/2": "4",
               "SP640/2": "4",
@@ -4418,7 +4126,6 @@
             "name": "Rinse flow rate pressure",
             "unit": "GPM / PSI",
             "values": {
-              "SP210/2": "65 / 43",
               "SP320/2": "65 / 43",
               "SP480/2": "65 / 43",
               "SP640/2": "90 / 43",
@@ -4429,7 +4136,6 @@
             "name": "Wash electrical heating",
             "unit": "kW",
             "values": {
-              "SP210/2": "16",
               "SP320/2": "16",
               "SP480/2": "24",
               "SP640/2": "24",
@@ -4440,7 +4146,6 @@
             "name": "Rinse electrical heating",
             "unit": "kW",
             "values": {
-              "SP210/2": "12",
               "SP320/2": "12",
               "SP480/2": "18",
               "SP640/2": "18",
@@ -4451,7 +4156,6 @@
             "name": "Solution temperature",
             "unit": "\u00b0F",
             "values": {
-              "SP210/2": "100-160",
               "SP320/2": "100-160",
               "SP480/2": "100-160",
               "SP640/2": "100-160",
@@ -4462,7 +4166,6 @@
             "name": "Steam aspirator",
             "unit": "HP / CFM",
             "values": {
-              "SP210/2": "0.25 / 180",
               "SP320/2": "0.25 / 180",
               "SP480/2": "0.25 / 180",
               "SP640/2": "0.25 / 180",
@@ -4473,7 +4176,6 @@
             "name": "Electric Drying",
             "unit": "kW",
             "values": {
-              "SP210/2": "9",
               "SP320/2": "9",
               "SP480/2": "15",
               "SP640/2": "15",
@@ -4484,7 +4186,6 @@
             "name": "Overall width",
             "unit": "Inches",
             "values": {
-              "SP210/2": "55\"",
               "SP320/2": "55\"",
               "SP480/2": "70\"",
               "SP640/2": "70\"",
@@ -4495,7 +4196,6 @@
             "name": "Overall height",
             "unit": "Inches",
             "values": {
-              "SP210/2": "75\"",
               "SP320/2": "75\"",
               "SP480/2": "90\"",
               "SP640/2": "90\"",
@@ -4506,7 +4206,6 @@
             "name": "Overall depth",
             "unit": "Inches",
             "values": {
-              "SP210/2": "140\"",
               "SP320/2": "140\"",
               "SP480/2": "175\"",
               "SP640/2": "175\"",
@@ -4517,7 +4216,6 @@
             "name": "Power supply",
             "unit": "Volt",
             "values": {
-              "SP210/2": "460V 3ph 60Hz",
               "SP320/2": "460V 3ph 60Hz",
               "SP480/2": "460V 3ph 60Hz",
               "SP640/2": "460V 3ph 60Hz",
@@ -4528,7 +4226,6 @@
             "name": "PLC",
             "unit": "",
             "values": {
-              "SP210/2": "Siemens",
               "SP320/2": "Siemens",
               "SP480/2": "Siemens",
               "SP640/2": "Siemens",
@@ -9824,66 +9521,6 @@
       "description": "The Magido L242 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160\u00b0F, the L242 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
     },
     {
-      "slug": "a600",
-      "model": "A600",
-      "name": "A600 Immersion Parts Washer",
-      "seriesSlug": "agita",
-      "categorySlug": "immersion-washers",
-      "url": "/products/immersion-washers/a600",
-      "images": [],
-      "specs": {
-        "Platform": {
-          "value": "W23.6\" x D11.8\"",
-          "unit": "Inches"
-        },
-        "Working Height": {
-          "value": "13.8'",
-          "unit": "Inches"
-        },
-        "Load Weight": {
-          "value": "180 lbs",
-          "unit": "Lbs"
-        },
-        "Fluid/Tank Capacity": {
-          "value": "53 gal",
-          "unit": "gal US"
-        },
-        "Heater": {
-          "value": "4kW",
-          "unit": "kW"
-        },
-        "Operating Temperature": {
-          "value": "Ambient-170\u00b0F",
-          "unit": "\u00b0F"
-        },
-        "PLC": {
-          "value": "Siemens",
-          "unit": ""
-        },
-        "Voltage / Amperage": {
-          "value": "230/460",
-          "unit": "V / A"
-        },
-        "Phase": {
-          "value": "1-3",
-          "unit": "Ph"
-        },
-        "Length": {
-          "value": "35\"",
-          "unit": "Inches"
-        },
-        "Width": {
-          "value": "57\"",
-          "unit": "Inches"
-        },
-        "Height": {
-          "value": "59\"",
-          "unit": "Inches"
-        }
-      },
-      "description": "The Magido A600 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A600 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
-    },
-    {
       "slug": "a700",
       "model": "A700",
       "name": "A700 Immersion Parts Washer",
@@ -10132,442 +9769,6 @@
       "description": "The Magido A1300 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A1300 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
     },
     {
-      "slug": "u600",
-      "model": "U600",
-      "name": "U600 Ultrasonic Immersion Parts Washer",
-      "seriesSlug": "ultra",
-      "categorySlug": "immersion-washers",
-      "url": "/products/immersion-washers/u600",
-      "images": [],
-      "specs": {
-        "Platform": {
-          "value": "W23.6\" x D11.8\"",
-          "unit": "Inches"
-        },
-        "Working Height": {
-          "value": "13.8'",
-          "unit": "Inches"
-        },
-        "Load Weight": {
-          "value": "180 lbs",
-          "unit": "Lbs"
-        },
-        "Ultrasonic Frequency": {
-          "value": "25/40",
-          "unit": "kHz"
-        },
-        "Ultrasonic Power": {
-          "value": "1,500",
-          "unit": "Wats"
-        },
-        "Fluid/Tank Capacity": {
-          "value": "53 gal",
-          "unit": "gal US"
-        },
-        "Heater": {
-          "value": "4kW",
-          "unit": "kW"
-        },
-        "Operating Temperature": {
-          "value": "Ambient-170\u00b0F",
-          "unit": "\u00b0F"
-        },
-        "PLC": {
-          "value": "Siemens",
-          "unit": ""
-        },
-        "Voltage / Amperage": {
-          "value": "230/460",
-          "unit": "V / A"
-        },
-        "Phase": {
-          "value": "1-3",
-          "unit": "Ph"
-        },
-        "Length": {
-          "value": "35\"",
-          "unit": "Inches"
-        },
-        "Width": {
-          "value": "57\"",
-          "unit": "Inches"
-        },
-        "Height": {
-          "value": "59\"",
-          "unit": "Inches"
-        }
-      },
-      "description": "The Magido U600 is an advanced immersion parts washer from the Ultra Series, providing enhanced cleaning performance for parts with complex internal geometries and tight tolerances. Using a pneumatic platform and agitation method with heated aqueous detergent, the U600 fully submerses parts for thorough cleaning of internal bores, channels, and intricate features. Built from AISI 304 stainless steel and operating at temperatures up to 167\u00b0F, the Ultra Series delivers superior immersion cleaning for demanding applications in precision manufacturing, aerospace, and automotive industries."
-    },
-    {
-      "slug": "u700",
-      "model": "U700",
-      "name": "U700 Ultrasonic Immersion Parts Washer",
-      "seriesSlug": "ultra",
-      "categorySlug": "immersion-washers",
-      "url": "/products/immersion-washers/u700",
-      "images": [],
-      "specs": {
-        "Platform": {
-          "value": "W27.6\" x D15.7\"",
-          "unit": "Inches"
-        },
-        "Working Height": {
-          "value": "13.8'",
-          "unit": "Inches"
-        },
-        "Load Weight": {
-          "value": "180 lbs",
-          "unit": "Lbs"
-        },
-        "Ultrasonic Frequency": {
-          "value": "25/40",
-          "unit": "kHz"
-        },
-        "Ultrasonic Power": {
-          "value": "2,000",
-          "unit": "Wats"
-        },
-        "Fluid/Tank Capacity": {
-          "value": "70 gal",
-          "unit": "gal US"
-        },
-        "Heater": {
-          "value": "6kW",
-          "unit": "kW"
-        },
-        "Operating Temperature": {
-          "value": "Ambient-170\u00b0F",
-          "unit": "\u00b0F"
-        },
-        "PLC": {
-          "value": "Siemens",
-          "unit": ""
-        },
-        "Voltage / Amperage": {
-          "value": "230/460",
-          "unit": "V / A"
-        },
-        "Phase": {
-          "value": "1-3",
-          "unit": "Ph"
-        },
-        "Length": {
-          "value": "38\"",
-          "unit": "Inches"
-        },
-        "Width": {
-          "value": "60\"",
-          "unit": "Inches"
-        },
-        "Height": {
-          "value": "59\"",
-          "unit": "Inches"
-        }
-      },
-      "description": "The Magido U700 is an advanced immersion parts washer from the Ultra Series, providing enhanced cleaning performance for parts with complex internal geometries and tight tolerances. Using a pneumatic platform and agitation method with heated aqueous detergent, the U700 fully submerses parts for thorough cleaning of internal bores, channels, and intricate features. Built from AISI 304 stainless steel and operating at temperatures up to 167\u00b0F, the Ultra Series delivers superior immersion cleaning for demanding applications in precision manufacturing, aerospace, and automotive industries."
-    },
-    {
-      "slug": "u900",
-      "model": "U900",
-      "name": "U900 Ultrasonic Immersion Parts Washer",
-      "seriesSlug": "ultra",
-      "categorySlug": "immersion-washers",
-      "url": "/products/immersion-washers/u900",
-      "images": [],
-      "specs": {
-        "Platform": {
-          "value": "W35.4\" x D15.7\"",
-          "unit": "Inches"
-        },
-        "Working Height": {
-          "value": "15.7\"",
-          "unit": "Inches"
-        },
-        "Load Weight": {
-          "value": "550 lbs",
-          "unit": "Lbs"
-        },
-        "Ultrasonic Frequency": {
-          "value": "25/40",
-          "unit": "kHz"
-        },
-        "Ultrasonic Power": {
-          "value": "3,000",
-          "unit": "Wats"
-        },
-        "Fluid/Tank Capacity": {
-          "value": "100 gal",
-          "unit": "gal US"
-        },
-        "Heater": {
-          "value": "8kW",
-          "unit": "kW"
-        },
-        "Operating Temperature": {
-          "value": "Ambient-170\u00b0F",
-          "unit": "\u00b0F"
-        },
-        "PLC": {
-          "value": "Siemens",
-          "unit": ""
-        },
-        "Voltage / Amperage": {
-          "value": "230/460",
-          "unit": "V / A"
-        },
-        "Phase": {
-          "value": "3",
-          "unit": "Ph"
-        },
-        "Length": {
-          "value": "38\"",
-          "unit": "Inches"
-        },
-        "Width": {
-          "value": "68\"",
-          "unit": "Inches"
-        },
-        "Height": {
-          "value": "67\"",
-          "unit": "Inches"
-        }
-      },
-      "description": "The Magido U900 is an advanced immersion parts washer from the Ultra Series, providing enhanced cleaning performance for parts with complex internal geometries and tight tolerances. Using a pneumatic platform and agitation method with heated aqueous detergent, the U900 fully submerses parts for thorough cleaning of internal bores, channels, and intricate features. Built from AISI 304 stainless steel and operating at temperatures up to 167\u00b0F, the Ultra Series delivers superior immersion cleaning for demanding applications in precision manufacturing, aerospace, and automotive industries."
-    },
-    {
-      "slug": "u1100",
-      "model": "U1100",
-      "name": "U1100 Ultrasonic Immersion Parts Washer",
-      "seriesSlug": "ultra",
-      "categorySlug": "immersion-washers",
-      "url": "/products/immersion-washers/u1100",
-      "images": [],
-      "specs": {
-        "Platform": {
-          "value": "W43.4\" x D15.7\"",
-          "unit": "Inches"
-        },
-        "Working Height": {
-          "value": "15.7\"",
-          "unit": "Inches"
-        },
-        "Load Weight": {
-          "value": "550 lbs",
-          "unit": "Lbs"
-        },
-        "Ultrasonic Frequency": {
-          "value": "25/40",
-          "unit": "kHz"
-        },
-        "Ultrasonic Power": {
-          "value": "4,000",
-          "unit": "Wats"
-        },
-        "Fluid/Tank Capacity": {
-          "value": "140 gal",
-          "unit": "gal US"
-        },
-        "Heater": {
-          "value": "10kW",
-          "unit": "kW"
-        },
-        "Operating Temperature": {
-          "value": "Ambient-170\u00b0F",
-          "unit": "\u00b0F"
-        },
-        "PLC": {
-          "value": "Siemens",
-          "unit": ""
-        },
-        "Voltage / Amperage": {
-          "value": "230/460",
-          "unit": "V / A"
-        },
-        "Phase": {
-          "value": "3",
-          "unit": "Ph"
-        },
-        "Length": {
-          "value": "42\"",
-          "unit": "Inches"
-        },
-        "Width": {
-          "value": "76\"",
-          "unit": "Inches"
-        },
-        "Height": {
-          "value": "67\"",
-          "unit": "Inches"
-        }
-      },
-      "description": "The Magido U1100 is an advanced immersion parts washer from the Ultra Series, providing enhanced cleaning performance for parts with complex internal geometries and tight tolerances. Using a pneumatic platform and agitation method with heated aqueous detergent, the U1100 fully submerses parts for thorough cleaning of internal bores, channels, and intricate features. Built from AISI 304 stainless steel and operating at temperatures up to 167\u00b0F, the Ultra Series delivers superior immersion cleaning for demanding applications in precision manufacturing, aerospace, and automotive industries."
-    },
-    {
-      "slug": "u1300",
-      "model": "U1300",
-      "name": "U1300 Ultrasonic Immersion Parts Washer",
-      "seriesSlug": "ultra",
-      "categorySlug": "immersion-washers",
-      "url": "/products/immersion-washers/u1300",
-      "images": [],
-      "specs": {
-        "Platform": {
-          "value": "W51.2\" x D23.6\"",
-          "unit": "Inches"
-        },
-        "Working Height": {
-          "value": "15.7\"",
-          "unit": "Inches"
-        },
-        "Load Weight": {
-          "value": "550 lbs",
-          "unit": "Lbs"
-        },
-        "Ultrasonic Frequency": {
-          "value": "25/40",
-          "unit": "kHz"
-        },
-        "Ultrasonic Power": {
-          "value": "5,000",
-          "unit": "Wats"
-        },
-        "Fluid/Tank Capacity": {
-          "value": "180 gal",
-          "unit": "gal US"
-        },
-        "Heater": {
-          "value": "12kW",
-          "unit": "kW"
-        },
-        "Operating Temperature": {
-          "value": "Ambient-170\u00b0F",
-          "unit": "\u00b0F"
-        },
-        "PLC": {
-          "value": "Siemens",
-          "unit": ""
-        },
-        "Voltage / Amperage": {
-          "value": "230/460",
-          "unit": "V / A"
-        },
-        "Phase": {
-          "value": "3",
-          "unit": "Ph"
-        },
-        "Length": {
-          "value": "47\"",
-          "unit": "Inches"
-        },
-        "Width": {
-          "value": "84\"",
-          "unit": "Inches"
-        },
-        "Height": {
-          "value": "70\"",
-          "unit": "Inches"
-        }
-      },
-      "description": "The Magido U1300 is an advanced immersion parts washer from the Ultra Series, providing enhanced cleaning performance for parts with complex internal geometries and tight tolerances. Using a pneumatic platform and agitation method with heated aqueous detergent, the U1300 fully submerses parts for thorough cleaning of internal bores, channels, and intricate features. Built from AISI 304 stainless steel and operating at temperatures up to 167\u00b0F, the Ultra Series delivers superior immersion cleaning for demanding applications in precision manufacturing, aerospace, and automotive industries."
-    },
-    {
-      "slug": "j210",
-      "model": "J210",
-      "name": "J210 Rotary Drum Parts Washer",
-      "seriesSlug": "jolly",
-      "categorySlug": "rotary-drum-washers",
-      "url": "/products/rotary-drum-washers/j210",
-      "images": [],
-      "specs": {
-        "Production": {
-          "value": "0.7",
-          "unit": "CFH"
-        },
-        "Drum diameter": {
-          "value": "8\"",
-          "unit": "Inches"
-        },
-        "Drum Length": {
-          "value": "47\"",
-          "unit": "Inches"
-        },
-        "Thread pitch": {
-          "value": "4\"",
-          "unit": "Inches"
-        },
-        "Thread depth": {
-          "value": "2\"",
-          "unit": "Inches"
-        },
-        "Diameter holes drum": {
-          "value": "1/5\"",
-          "unit": "Inches"
-        },
-        "Loading height": {
-          "value": "35\"",
-          "unit": "Inches"
-        },
-        "Unloading height": {
-          "value": "21\"",
-          "unit": "Inches"
-        },
-        "Wash tank": {
-          "value": "27",
-          "unit": "gal US"
-        },
-        "Rinse tank": {
-          "value": "- -",
-          "unit": "gal US"
-        },
-        "Wash pump": {
-          "value": "0.75",
-          "unit": "Hp"
-        },
-        "Wash flow rate pressure": {
-          "value": "21 / 30",
-          "unit": "GPM / PSI"
-        },
-        "Wash electrical heating": {
-          "value": "8",
-          "unit": "kW"
-        },
-        "Solution temperature": {
-          "value": "100-140",
-          "unit": "\u00b0F"
-        },
-        "Steam aspirator": {
-          "value": "0.12 / 60",
-          "unit": "HP / CFM"
-        },
-        "Overall width": {
-          "value": "32\"",
-          "unit": "Inches"
-        },
-        "Overall height": {
-          "value": "54\"",
-          "unit": "Inches"
-        },
-        "Overall depth": {
-          "value": "65\"",
-          "unit": "Inches"
-        },
-        "Power supply": {
-          "value": "460V 3ph 60Hz",
-          "unit": "Volt"
-        },
-        "PLC": {
-          "value": "Siemens",
-          "unit": ""
-        }
-      },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
-      "videoUrls": [
-        "https://www.youtube.com/embed/4VWa99wPMK0"
-      ],
-      "description": "The Magido J210 is a rotary drum aqueous parts washer from the Jolly Series, using a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and carried through the wash zone by the internal helix, emerging clean at the other end for non-stop processing without batching. Constructed from AISI 304 stainless steel, the J210 uses heated aqueous detergent for effective removal of oils, chips, and contaminants. The Jolly Series is ideal for high-volume operations requiring consistent, automated cleaning of small parts."
-    },
-    {
       "slug": "j320",
       "model": "J320",
       "name": "J320 Rotary Drum Parts Washer",
@@ -10667,109 +9868,15 @@
       "description": "The Magido J320 is a rotary drum aqueous parts washer from the Jolly Series, using a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and carried through the wash zone by the internal helix, emerging clean at the other end for non-stop processing without batching. Constructed from AISI 304 stainless steel, the J320 uses heated aqueous detergent for effective removal of oils, chips, and contaminants. The Jolly Series is ideal for high-volume operations requiring consistent, automated cleaning of small parts."
     },
     {
-      "slug": "j210-2",
-      "model": "J210/2",
-      "name": "J210/2 Rotary Drum Parts Washer",
-      "seriesSlug": "jolly",
-      "categorySlug": "rotary-drum-washers",
-      "url": "/products/rotary-drum-washers/j210-2",
-      "images": [],
-      "specs": {
-        "Production": {
-          "value": "0.7",
-          "unit": "CFH"
-        },
-        "Drum diameter": {
-          "value": "8\"",
-          "unit": "Inches"
-        },
-        "Drum Length": {
-          "value": "71\"",
-          "unit": "Inches"
-        },
-        "Thread pitch": {
-          "value": "4\"",
-          "unit": "Inches"
-        },
-        "Thread depth": {
-          "value": "2\"",
-          "unit": "Inches"
-        },
-        "Diameter holes drum": {
-          "value": "1/5\"",
-          "unit": "Inches"
-        },
-        "Loading height": {
-          "value": "35\"",
-          "unit": "Inches"
-        },
-        "Unloading height": {
-          "value": "21\"",
-          "unit": "Inches"
-        },
-        "Wash tank": {
-          "value": "27",
-          "unit": "gal US"
-        },
-        "Rinse tank": {
-          "value": "27",
-          "unit": "gal US"
-        },
-        "Wash pump": {
-          "value": "0.75",
-          "unit": "Hp"
-        },
-        "Wash flow rate pressure": {
-          "value": "21 / 30",
-          "unit": "GPM / PSI"
-        },
-        "Wash electrical heating": {
-          "value": "8",
-          "unit": "kW"
-        },
-        "Solution temperature": {
-          "value": "100-140",
-          "unit": "\u00b0F"
-        },
-        "Steam aspirator": {
-          "value": "0.12 / 60",
-          "unit": "HP / CFM"
-        },
-        "Overall width": {
-          "value": "42\"",
-          "unit": "Inches"
-        },
-        "Overall height": {
-          "value": "65\"",
-          "unit": "Inches"
-        },
-        "Overall depth": {
-          "value": "90\"",
-          "unit": "Inches"
-        },
-        "Power supply": {
-          "value": "460V 3ph 60Hz",
-          "unit": "Volt"
-        },
-        "PLC": {
-          "value": "Siemens",
-          "unit": ""
-        }
-      },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
-      "videoUrls": [
-        "https://www.youtube.com/embed/4VWa99wPMK0"
-      ],
-      "description": "The Magido J210/2 is a rotary drum aqueous parts washer from the Jolly Series, using a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and carried through the wash zone by the internal helix, emerging clean at the other end for non-stop processing without batching. Constructed from AISI 304 stainless steel, the J210/2 uses heated aqueous detergent for effective removal of oils, chips, and contaminants. The Jolly Series is ideal for high-volume operations requiring consistent, automated cleaning of small parts."
-    },
-    {
       "slug": "j320-2",
       "model": "J320/2",
       "name": "J320/2 Rotary Drum Parts Washer",
       "seriesSlug": "jolly",
       "categorySlug": "rotary-drum-washers",
       "url": "/products/rotary-drum-washers/j320-2",
-      "images": [],
+      "images": [
+        "/images/products/jolly/j320-2.webp"
+      ],
       "specs": {
         "Production": {
           "value": "1.4",
@@ -10857,102 +9964,6 @@
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
       "description": "The Magido J320/2 is a rotary drum aqueous parts washer from the Jolly Series, using a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and carried through the wash zone by the internal helix, emerging clean at the other end for non-stop processing without batching. Constructed from AISI 304 stainless steel, the J320/2 uses heated aqueous detergent for effective removal of oils, chips, and contaminants. The Jolly Series is ideal for high-volume operations requiring consistent, automated cleaning of small parts."
-    },
-    {
-      "slug": "sp210",
-      "model": "SP210",
-      "name": "SP210 Rotary Drum Parts Washer",
-      "seriesSlug": "spira-1b",
-      "categorySlug": "rotary-drum-washers",
-      "url": "/products/rotary-drum-washers/sp210",
-      "images": [],
-      "specs": {
-        "Production": {
-          "value": "1,6",
-          "unit": "CFH"
-        },
-        "Drum diameter": {
-          "value": "8\"",
-          "unit": "Inches"
-        },
-        "Drum Length": {
-          "value": "67\"",
-          "unit": "Inches"
-        },
-        "Thread pitch": {
-          "value": "4\"",
-          "unit": "Inches"
-        },
-        "Thread depth": {
-          "value": "2\"",
-          "unit": "Inches"
-        },
-        "Diameter holes drum": {
-          "value": "1/5\"",
-          "unit": "Inches"
-        },
-        "Loading height": {
-          "value": "50\"",
-          "unit": "Inches"
-        },
-        "Unloading height": {
-          "value": "28\"",
-          "unit": "Inches"
-        },
-        "Wash tank": {
-          "value": "90",
-          "unit": "gal US"
-        },
-        "Wash pump": {
-          "value": "3",
-          "unit": "Hp"
-        },
-        "Wash flow rate pressure": {
-          "value": "65 / 43",
-          "unit": "GPM / PSI"
-        },
-        "Wash electrical heating": {
-          "value": "16",
-          "unit": "kW"
-        },
-        "Solution temperature": {
-          "value": "100-160",
-          "unit": "\u00b0F"
-        },
-        "Steam aspirator": {
-          "value": "0.25 / 180",
-          "unit": "HP / CFM"
-        },
-        "Electric Drying": {
-          "value": "9",
-          "unit": "kW"
-        },
-        "Overall width": {
-          "value": "55\"",
-          "unit": "Inches"
-        },
-        "Overall height": {
-          "value": "75\"",
-          "unit": "Inches"
-        },
-        "Overall depth": {
-          "value": "100\"",
-          "unit": "Inches"
-        },
-        "Power supply": {
-          "value": "460V 3ph 60Hz",
-          "unit": "Volt"
-        },
-        "PLC": {
-          "value": "Siemens",
-          "unit": ""
-        }
-      },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
-      "videoUrls": [
-        "https://www.youtube.com/embed/4VWa99wPMK0"
-      ],
-      "description": "The Magido SP210 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, designed for continuous cleaning of small to medium parts using a helical auger drum system. The rotating drum carries parts through heated aqueous cleaning solution while combining spray and immersion washing for thorough contaminant removal from complex geometries. Built from AISI 304 stainless steel, the SP210 handles high volumes of fasteners, stampings, turned parts, and machined components without interruption. The Spira 1b Series offers an efficient, automated solution for production-line cleaning operations."
     },
     {
       "slug": "sp320",
@@ -11345,118 +10356,6 @@
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
       "description": "The Magido SP950 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, designed for continuous cleaning of small to medium parts using a helical auger drum system. The rotating drum carries parts through heated aqueous cleaning solution while combining spray and immersion washing for thorough contaminant removal from complex geometries. Built from AISI 304 stainless steel, the SP950 handles high volumes of fasteners, stampings, turned parts, and machined components without interruption. The Spira 1b Series offers an efficient, automated solution for production-line cleaning operations."
-    },
-    {
-      "slug": "sp210-2",
-      "model": "SP210/2",
-      "name": "SP210/2 Rotary Drum Parts Washer",
-      "seriesSlug": "spira-2b",
-      "categorySlug": "rotary-drum-washers",
-      "url": "/products/rotary-drum-washers/sp210-2",
-      "images": [],
-      "specs": {
-        "Production": {
-          "value": "1,6",
-          "unit": "CFH"
-        },
-        "Drum diameter": {
-          "value": "8\"",
-          "unit": "Inches"
-        },
-        "Drum Length": {
-          "value": "106\"",
-          "unit": "Inches"
-        },
-        "Thread pitch": {
-          "value": "4\"",
-          "unit": "Inches"
-        },
-        "Thread depth": {
-          "value": "2\"",
-          "unit": "Inches"
-        },
-        "Diameter holes drum": {
-          "value": "1/5\"",
-          "unit": "Inches"
-        },
-        "Loading height": {
-          "value": "50\"",
-          "unit": "Inches"
-        },
-        "Unloading height": {
-          "value": "28\"",
-          "unit": "Inches"
-        },
-        "Wash tank": {
-          "value": "90",
-          "unit": "gal US"
-        },
-        "Rinse tank": {
-          "value": "90",
-          "unit": "gal US"
-        },
-        "Wash pump": {
-          "value": "3",
-          "unit": "Hp"
-        },
-        "Wash flow rate pressure": {
-          "value": "65 / 43",
-          "unit": "GPM / PSI"
-        },
-        "Rinse pump": {
-          "value": "3",
-          "unit": "Hp"
-        },
-        "Rinse flow rate pressure": {
-          "value": "65 / 43",
-          "unit": "GPM / PSI"
-        },
-        "Wash electrical heating": {
-          "value": "16",
-          "unit": "kW"
-        },
-        "Rinse electrical heating": {
-          "value": "12",
-          "unit": "kW"
-        },
-        "Solution temperature": {
-          "value": "100-160",
-          "unit": "\u00b0F"
-        },
-        "Steam aspirator": {
-          "value": "0.25 / 180",
-          "unit": "HP / CFM"
-        },
-        "Electric Drying": {
-          "value": "9",
-          "unit": "kW"
-        },
-        "Overall width": {
-          "value": "55\"",
-          "unit": "Inches"
-        },
-        "Overall height": {
-          "value": "75\"",
-          "unit": "Inches"
-        },
-        "Overall depth": {
-          "value": "140\"",
-          "unit": "Inches"
-        },
-        "Power supply": {
-          "value": "460V 3ph 60Hz",
-          "unit": "Volt"
-        },
-        "PLC": {
-          "value": "Siemens",
-          "unit": ""
-        }
-      },
-      "videoUrl": "https://www.youtube.com/embed/4VWa99wPMK0",
-      "videoUrls": [
-        "https://www.youtube.com/embed/4VWa99wPMK0"
-      ],
-      "description": "The Magido SP210/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring separate wash and rinse stages for superior cleaning results on small to medium parts. Using a helical auger drum system, the SP210/2 continuously moves parts through sequential cleaning zones with heated aqueous detergent, combining spray and immersion methods. Constructed from AISI 304 stainless steel, the Spira 2b Series delivers residue-free results at high throughput rates, making it the right choice for production environments demanding both cleanliness and continuous operation."
     },
     {
       "slug": "sp320-2",

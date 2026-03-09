@@ -51,6 +51,23 @@ const SLIDES: Slide[] = [
   },
 ];
 
+const STATS = [
+  { value: '50+', label: 'Years of Innovation' },
+  { value: '20+', label: 'Washer Series' },
+  { value: '6',   label: 'Industries Served' },
+];
+
+const TICKER_ITEMS = [
+  'Aqueous Parts Washing',
+  'Spray Cabinet Systems',
+  'Rotary Immersion Washers',
+  'In-Line Conveyor Systems',
+  'Manual Cabinet Washers',
+  'Eco-Friendly Solutions',
+  'Custom Engineered Systems',
+  '24/7 Technical Support',
+];
+
 const AUTO_ADVANCE_MS = 7000;
 
 export function HeroCarousel() {
@@ -100,6 +117,7 @@ export function HeroCarousel() {
   const slide = SLIDES[current];
 
   return (
+    <>
     <section
       className="hero-bg relative px-4 py-16 sm:px-6 lg:px-8 lg:py-24"
       onMouseEnter={() => { pausedRef.current = true; }}
@@ -187,10 +205,10 @@ export function HeroCarousel() {
           </div>
         </div>
 
-        {/* ─── Carousel controls ─── */}
-        <div className="mt-10 flex items-center justify-between">
+        {/* ─── Carousel controls + Stats ─── */}
+        <div className="mt-10 flex items-center justify-between gap-4">
           {/* Dots */}
-          <div className="flex items-center gap-2">
+          <div className="flex flex-shrink-0 items-center gap-2">
             {SLIDES.map((s, i) => (
               <button
                 key={s.id}
@@ -205,8 +223,22 @@ export function HeroCarousel() {
             ))}
           </div>
 
+          {/* Stats — centered between dots and arrows */}
+          <div className="flex flex-1 items-center justify-center gap-6 border-x border-white/10 px-6 sm:gap-10">
+            {STATS.map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="font-display text-xl font-bold text-white sm:text-2xl">
+                  {stat.value}
+                </div>
+                <div className="text-2xs font-medium uppercase tracking-wider text-gray-400 sm:text-xs">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+
           {/* Arrows */}
-          <div className="flex items-center gap-2">
+          <div className="flex flex-shrink-0 items-center gap-2">
             <button
               onClick={goPrev}
               className="rounded-lg border border-white/20 p-2 text-white/60 transition-colors hover:border-white/40 hover:text-white"
@@ -225,5 +257,18 @@ export function HeroCarousel() {
         </div>
       </div>
     </section>
+
+    {/* ─── Ticker bar ─── */}
+    <div className="overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] py-3">
+      <div className="ticker-track flex whitespace-nowrap">
+        {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
+          <span key={i} className="mx-6 inline-flex items-center gap-2 text-sm font-medium text-[var(--color-text-secondary)]">
+            <span className="h-1.5 w-1.5 rounded-full bg-magido-orange flex-shrink-0" />
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+    </>
   );
 }

@@ -68,14 +68,14 @@ export function CategoryContent({
 
             {/* Image — below text on mobile, right side on desktop */}
             {heroImage && (
-              <div className="flex items-center justify-center lg:flex-1">
-                <div className="product-halo relative h-56 w-56 sm:h-64 sm:w-64 lg:h-80 lg:w-80">
+              <div className="flex items-stretch justify-center lg:flex-1 lg:self-stretch">
+                <div className="product-halo relative w-full min-h-56 sm:min-h-64 lg:min-h-0 lg:h-full">
                   <Image
                     src={heroImage}
                     alt={`${heroTitle} representative product`}
                     fill
-                    className="object-contain"
-                    sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 320px"
+                    className="object-contain object-center"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 40vw"
                     priority
                   />
                 </div>

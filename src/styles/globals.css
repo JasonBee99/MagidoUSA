@@ -108,38 +108,34 @@
     z-index: 2;
   }
 
-  /* Product image subtle background */
+  /* Product image background — Option G: Orange warm floor glow */
   .product-image-bg {
-    background: linear-gradient(135deg,
-      var(--color-bg-secondary) 0%,
-      var(--color-bg-tertiary) 50%,
-      var(--color-bg-secondary) 100%);
+    background:
+      radial-gradient(ellipse 70% 30% at 50% 100%, rgba(235, 108, 28, 0.10) 0%, transparent 70%),
+      radial-gradient(ellipse 90% 70% at 50% 20%, #dce6f0 0%, #c8d6e6 100%);
     border-radius: 1rem;
   }
 
   .dark .product-image-bg {
-    background: linear-gradient(135deg,
-      rgba(15, 31, 56, 0.8) 0%,
-      rgba(22, 42, 72, 0.6) 50%,
-      rgba(15, 31, 56, 0.8) 100%);
+    background:
+      radial-gradient(ellipse 70% 30% at 50% 100%, rgba(235, 108, 28, 0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 90% 70% at 50% 20%, #16202e 0%, #08111c 100%);
+    border-radius: 1rem;
   }
 
-  /* Product card 3D-ish background */
+  /* Product card background — Option G: Orange warm floor glow */
   .product-card-image-bg {
-    background: linear-gradient(145deg,
-      #f0f4f9 0%,
-      #e4ebf3 40%,
-      #dce3ed 60%,
-      #e8ecf2 100%);
+    background:
+      radial-gradient(ellipse 70% 30% at 50% 100%, rgba(235, 108, 28, 0.10) 0%, transparent 70%),
+      radial-gradient(ellipse 90% 70% at 50% 20%, #dce6f0 0%, #c8d6e6 100%);
     border-radius: 0.75rem;
   }
 
   .dark .product-card-image-bg {
-    background: linear-gradient(145deg,
-      rgba(22, 42, 72, 0.9) 0%,
-      rgba(15, 31, 56, 0.7) 40%,
-      rgba(22, 42, 72, 0.5) 60%,
-      rgba(15, 31, 56, 0.9) 100%);
+    background:
+      radial-gradient(ellipse 70% 30% at 50% 100%, rgba(235, 108, 28, 0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 90% 70% at 50% 20%, #16202e 0%, #08111c 100%);
+    border-radius: 0.75rem;
   }
 
   /* Product halo effect for category hero images */
@@ -181,9 +177,9 @@
     border-radius: 3px;
   }
 }
+
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   PRIORITY 8: WATER RIPPLE SHIMMER
-   Add this to the END of your existing globals.css
+   WATER RIPPLE SHIMMER
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 /* Subtle water shimmer gradient that moves across hero sections */
@@ -260,4 +256,26 @@
 .resource-content strong {
   color: var(--color-text);
   font-weight: 600;
+}
+
+/* ─── Ticker / marquee animation ─── */
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-track {
+  animation: ticker 30s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
