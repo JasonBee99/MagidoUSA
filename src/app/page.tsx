@@ -185,57 +185,80 @@ export default function HomePage() {
       <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="overflow-hidden rounded-2xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] shadow-sm">
-            <div className="flex flex-col lg:flex-row">
+            <div className="p-8 lg:p-12">
 
-              {/* Headshot */}
-              <div className="relative flex-shrink-0 lg:w-64">
-                <div className="aspect-square lg:aspect-auto lg:h-full">
-                  <Image
-                    src="/images/scott-morin.webp"
-                    alt="Scott Morin — National Sales Manager, Magido USA"
-                    fill
-                    className="object-cover object-top"
-                    sizes="(max-width: 1024px) 100vw, 256px"
-                  />
+              {/* ── Top: identity row ── */}
+              <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                {/* Left: label + name + title */}
+                <div>
+                  <p className="font-display text-xs font-semibold uppercase tracking-widest text-magido-orange">
+                    National Sales Manager
+                  </p>
+                  <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">
+                    Scott Morin
+                  </h2>
+                  <p className="mt-1 text-sm text-[var(--color-text-muted)]">
+                    Global Parts Cleaning Manufacturer at Magido USA
+                  </p>
+                  <p className="mt-3 max-w-lg text-sm leading-relaxed text-[var(--color-text-secondary)]">
+                    Contact Scott today — he wants to understand your parts cleaning challenges and recommend the right solution. Free consultation, same-day response.
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-3">
+                    <Link
+                      href="/contact"
+                      className="inline-flex items-center gap-2 rounded-lg bg-magido-orange px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
+                    >
+                      Contact Scott <ArrowRight className="h-4 w-4" />
+                    </Link>
+                    <a
+                      href="tel:8444624436"
+                      className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-5 py-2.5 text-sm font-semibold text-[var(--color-text)] transition-colors hover:border-magido-orange/40 hover:text-magido-orange"
+                    >
+                      📞 844-462-4436
+                    </a>
+                    <a
+                      href="mailto:sales@magidousa.com"
+                      className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-5 py-2.5 text-sm font-semibold text-[var(--color-text)] transition-colors hover:border-magido-orange/40 hover:text-magido-orange"
+                    >
+                      ✉️ Sales@MagidoUSA.com
+                    </a>
+                  </div>
+                </div>
+
+                {/* Right: headshot */}
+                <div className="flex-shrink-0">
+                  <div className="relative h-28 w-28 overflow-hidden rounded-2xl ring-4 ring-magido-orange/20 sm:h-32 sm:w-32">
+                    <Image
+                      src="/images/scott-morin.webp"
+                      alt="Scott Morin — National Sales Manager, Magido USA"
+                      fill
+                      className="object-cover object-top"
+                      sizes="128px"
+                    />
+                  </div>
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="flex flex-col justify-center p-8 lg:p-12">
-                <p className="font-display text-xs font-semibold uppercase tracking-widest text-magido-orange">
-                  National Sales Manager
-                </p>
-                <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">
-                  Scott Morin
-                </h2>
-                <p className="mt-1 text-sm font-medium text-[var(--color-text-muted)]">
-                  Global Parts Cleaning Manufacturer at Magido USA
-                </p>
-                <p className="mt-4 max-w-xl text-base leading-relaxed text-[var(--color-text-secondary)]">
-                  Contact Scott today — he wants to understand your parts cleaning challenges and help find the right solution. Free consultation, same-day response.
-                </p>
-                <div className="mt-8 flex flex-wrap gap-3">
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-2 rounded-lg bg-magido-orange px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
-                  >
-                    Contact Scott
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
-                  <a
-                    href="tel:8444624436"
-                    className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3 text-sm font-semibold text-[var(--color-text)] transition-colors hover:border-magido-orange/40 hover:text-magido-orange"
-                  >
-                    📞 844-462-4436
-                  </a>
-                  <a
-                    href="mailto:sales@magidousa.com"
-                    className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3 text-sm font-semibold text-[var(--color-text)] transition-colors hover:border-magido-orange/40 hover:text-magido-orange"
-                  >
-                    ✉️ Sales@MagidoUSA.com
-                  </a>
-                </div>
+              {/* ── Divider ── */}
+              <div className="my-8 border-t border-[var(--color-border)]" />
+
+              {/* ── Service pillars ── */}
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                {SCOTT_PILLARS.map((p) => (
+                  <div key={p.title} className="flex flex-col gap-2">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-magido-blue/10 text-xl ring-1 ring-magido-blue/20">
+                      {p.icon}
+                    </div>
+                    <h3 className="mt-1 font-display text-sm font-bold text-[var(--color-text)]">
+                      {p.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">
+                      {p.description}
+                    </p>
+                  </div>
+                ))}
               </div>
+
             </div>
           </div>
         </div>
@@ -292,6 +315,29 @@ function ValueProp({ title, description }: { title: string; description: string 
 }
 
 // ─── Data ──────────────────────────────────────────────────────────────────
+
+const SCOTT_PILLARS = [
+  {
+    icon: '🤝',
+    title: 'Pre-Sales Consultation',
+    description: 'Scott works directly with you to understand your parts, contaminants, throughput, and budget before recommending a system — no pressure, no guesswork.',
+  },
+  {
+    icon: '🔬',
+    title: 'Process Development',
+    description: 'Not sure if aqueous cleaning will work for your application? We evaluate your process and validate the cleaning solution before you commit.',
+  },
+  {
+    icon: '🔧',
+    title: 'Technical Support',
+    description: 'Factory-trained technicians available for installation guidance, commissioning, and ongoing technical assistance throughout the life of your machine.',
+  },
+  {
+    icon: '📦',
+    title: 'Parts & Service',
+    description: 'Comprehensive inventory of replacement parts for all current and retired models. Most orders ship within 24–48 hours direct from our US warehouse.',
+  },
+];
 
 const INDUSTRIES = [
   {
