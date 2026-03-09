@@ -187,20 +187,37 @@ export default function HomePage() {
           <div className="overflow-hidden rounded-2xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] shadow-sm">
             <div className="p-8 lg:p-12">
 
-              {/* ── Top: identity row ── */}
-              <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-                {/* Left: label + name + title */}
+              <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
+
+                {/* ── Left: Identity + contact ── */}
                 <div>
-                  <p className="font-display text-xs font-semibold uppercase tracking-widest text-magido-orange">
-                    National Sales Manager
-                  </p>
-                  <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">
-                    Scott Morin
-                  </h2>
-                  <p className="mt-1 text-sm text-[var(--color-text-muted)]">
-                    Global Parts Cleaning Manufacturer at Magido USA
-                  </p>
-                  <p className="mt-3 max-w-lg text-sm leading-relaxed text-[var(--color-text-secondary)]">
+                  {/* Name row: text left, headshot right */}
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <p className="font-display text-xs font-semibold uppercase tracking-widest text-magido-orange">
+                        National Sales Manager
+                      </p>
+                      <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">
+                        Scott Morin
+                      </h2>
+                      <p className="mt-1 text-sm text-[var(--color-text-muted)]">
+                        Global Parts Cleaning Manufacturer at Magido USA
+                      </p>
+                    </div>
+                    {/* Headshot — aligned right of name block */}
+                    <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-2xl ring-4 ring-magido-orange/20 sm:h-28 sm:w-28">
+                      <Image
+                        src="/images/scott-morin.webp"
+                        alt="Scott Morin — National Sales Manager, Magido USA"
+                        fill
+                        className="object-cover object-top"
+                        sizes="112px"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Description + CTAs below the name row */}
+                  <p className="mt-5 text-sm leading-relaxed text-[var(--color-text-secondary)]">
                     Contact Scott today — he wants to understand your parts cleaning challenges and recommend the right solution. Free consultation, same-day response.
                   </p>
                   <div className="mt-5 flex flex-wrap gap-3">
@@ -225,38 +242,23 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* Right: headshot */}
-                <div className="flex-shrink-0">
-                  <div className="relative h-28 w-28 overflow-hidden rounded-2xl ring-4 ring-magido-orange/20 sm:h-32 sm:w-32">
-                    <Image
-                      src="/images/scott-morin.webp"
-                      alt="Scott Morin — National Sales Manager, Magido USA"
-                      fill
-                      className="object-cover object-top"
-                      sizes="128px"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* ── Divider ── */}
-              <div className="my-8 border-t border-[var(--color-border)]" />
-
-              {/* ── Service pillars ── */}
-              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                {SCOTT_PILLARS.map((p) => (
-                  <div key={p.title} className="flex flex-col gap-2">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-magido-blue/10 text-xl ring-1 ring-magido-blue/20">
-                      {p.icon}
+                {/* ── Right: 2×2 service pillars ── */}
+                <div className="grid grid-cols-2 gap-5">
+                  {SCOTT_PILLARS.map((p) => (
+                    <div key={p.title} className="flex flex-col gap-2">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-magido-blue/10 text-xl ring-1 ring-magido-blue/20">
+                        {p.icon}
+                      </div>
+                      <h3 className="mt-1 font-display text-sm font-bold text-[var(--color-text)]">
+                        {p.title}
+                      </h3>
+                      <p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">
+                        {p.description}
+                      </p>
                     </div>
-                    <h3 className="mt-1 font-display text-sm font-bold text-[var(--color-text)]">
-                      {p.title}
-                    </h3>
-                    <p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">
-                      {p.description}
-                    </p>
-                  </div>
-                ))}
+                  ))}
+                </div>
+
               </div>
 
             </div>
