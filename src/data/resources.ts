@@ -335,6 +335,165 @@ export const resourceDocuments: ResourceDocument[] = [
     relatedSeries: ['silver', 'gold-1b', 'gold-2b'],
   },
   {
+    slug: 'immersion-washers',
+    title: 'Immersion Parts Washing Systems — Agita Series',
+    metaDescription:
+      'Technical documentation for the Magido Agita Series top-load immersion parts washers. Full specifications, standard features, options, and safety systems for A700, A900, A1100, and A1300 models.',
+    summary:
+      'Technical documentation for the Agita Series top-load immersion parts washers — pneumatic oscillating platform, optional ultrasonic cleaning, and full specs for all four models.',
+    icon: 'doc',
+    categorySlug: 'immersion-washers',
+    categoryName: 'Immersion Washers',
+    productLink: '/products/immersion-washers',
+    sections: [
+      {
+        heading: 'Overview',
+        body: `<p>The Magido Agita Series immersion parts washers are engineered for aqueous immersion cleaning using water-based detergent solutions at temperatures up to 170°F (75°C). Unlike spray-cabinet washers, immersion cleaning fully submerges parts — ensuring detergent penetrates complex geometries, blind bores, and recessed cavities that spray alone cannot reach.</p>
+<p>The core cleaning action is delivered by a pneumatic oscillating platform that agitates parts within the solution, driving fresh fluid into every surface and displacing loosened contamination. An optional ultrasonic stage, operating at the bottom of the tank, further enhances cleaning performance for the most demanding contamination levels.</p>
+<p>All Agita Series machines are fabricated from AISI 304 stainless steel, providing long-term corrosion resistance in aqueous detergent environments. The Siemens PLC control system delivers repeatable, programmable cleaning cycles, while the oil sparger and weir system continuously removes surface contamination from the solution — extending fluid life and reducing operating costs.</p>`,
+      },
+      {
+        heading: 'Standard Features',
+        body: `<ul>
+<li>AISI 304 Stainless Steel Construction throughout</li>
+<li>Pneumatic Oscillating Immersion Platform — agitates parts during wash cycle</li>
+<li>Oil Sparger &amp; Weir System — continuously skims surface oils to extend fluid life</li>
+<li>Stainless Steel / Incoloy Heating Elements</li>
+<li>Low Water Heating Element Shutoff</li>
+<li>Thermally Insulated Tank — reduces energy consumption and heat loss</li>
+<li>Strut-Assisted Lid for safe and easy access</li>
+<li>Siemens PLC Control System</li>
+<li>Operating Temperature: Ambient to 170°F (75°C)</li>
+</ul>`,
+      },
+      {
+        heading: 'Available Options',
+        body: `<ul>
+<li>Ultrasonic Cleaning Stage — enhanced removal of fine particulate and oils</li>
+<li>Filtration System</li>
+<li>Automatic Lid Operation</li>
+<li>24/7 Heat Controller — maintains solution temperature continuously</li>
+<li>Automatic Water Fill with Fluid Level Sensor</li>
+<li>Steam Exhaust Fan</li>
+<li>Spray-Under-Immersion — adds spray impingement during immersion cycle</li>
+</ul>`,
+      },
+      {
+        heading: 'Safety Features',
+        body: `<ul>
+<li>24V Low-Voltage Control Circuit</li>
+<li>NEMA 4 Electrical Enclosure — splash and dust resistant</li>
+<li>Push-Button Emergency Stop</li>
+<li>Main Power Disconnect Switch</li>
+<li>Counter-Balanced Lid — prevents uncontrolled closure</li>
+<li>Liquid Level Shutoff — protects heating elements from dry-fire</li>
+<li>No Exposed Sharp Metal Edges</li>
+<li>Low Noise Operation — under 70 dBA</li>
+<li>CE Certified</li>
+</ul>`,
+      },
+      {
+        heading: 'Applications',
+        body: `<p>The Agita Series is ideally suited for parts that require thorough cleaning of internal passages, complex castings, and surfaces where spray impingement alone is insufficient. Common applications include:</p>
+<ul>
+<li>Automotive transmission cases, valve bodies, and engine components</li>
+<li>Hydraulic manifolds and cylinders with blind bores</li>
+<li>Machined aluminum and ferrous castings</li>
+<li>Aerospace structural components requiring contamination-free surfaces</li>
+<li>Medical device components requiring high-purity cleaning</li>
+</ul>`,
+      },
+    ],
+    relatedSeries: ['agita'],
+  },
+  {
+    slug: 'rotary-immersion-washers',
+    title: 'Rotary Immersion Parts Washing Systems — Platinum Series',
+    metaDescription:
+      'Technical documentation for the Magido Platinum Series front-load rotary immersion parts washers. Full specifications, standard features, options, and safety systems for PM400, P600/2, P900/2, P1200/2, and P1500/2 models.',
+    summary:
+      'Technical documentation for the Platinum Series front-load rotary immersion washers — triple-action cleaning with spray impingement, immersion, and basket rotation, plus full specs for all five models.',
+    icon: 'doc',
+    categorySlug: 'rotary-immersion-washers',
+    categoryName: 'Rotary Immersion Washers',
+    productLink: '/products/rotary-immersion-washers',
+    sections: [
+      {
+        heading: 'Overview',
+        body: `<p>The Magido Platinum Series rotary immersion parts washers are designed to clean critical components with complex geometry — particularly parts featuring internal bores, deep channels, and blind passages where chips, swarf, and oils become trapped and cannot be removed by spray-only systems.</p>
+<p>Cleaning performance is achieved through the combination of three complementary mechanisms working simultaneously: direct spray impingement from internal manifolds, hydraulic purging through full-part immersion, and continuous rotational agitation of the wash basket. This triple-action process drives fresh cleaning solution through internal passages throughout the entire cycle.</p>
+<p>Each process stage (wash and rinse) is completely isolated, with its own dedicated fluid tank, high-speed drain actuator, circulation pump, and spray manifold. This separation prevents cross-contamination between stages and allows independent temperature and chemical control for each phase. The Siemens PLC with Weintek HMI touch screen provides straightforward operator control and fully automated cycle management.</p>
+<p>All Platinum Series machines are fabricated from AISI 304 stainless steel. The rotating wash basket accepts parts loaded on a front-loading table, with pneumatic door closure sealing the chamber before each cycle begins.</p>`,
+      },
+      {
+        heading: 'Standard Features',
+        body: `<ul>
+<li>AISI 304 Stainless Steel Construction throughout</li>
+<li>Front-Loading Table with Operator Controls</li>
+<li>Siemens PLC with Weintek HMI Operator Touch Screen</li>
+<li>Fully Automated Cycle Control</li>
+<li>Separate Wash &amp; Rinse Stages with Independent Tanks, Pumps &amp; Manifolds</li>
+<li>Stainless Steel High-Pressure Circulation Pumps</li>
+<li>Digital Temperature Controls with Stainless Steel Heating Elements</li>
+<li>Variable-Speed Rotational Drum Drive — basket rotation during wash and rinse</li>
+<li>Liquid Level Control &amp; Automatic Water Fill</li>
+<li>Stainless Steel Exhaust Fan</li>
+<li>Marine-Style Cleanout Door for easy tank maintenance</li>
+<li>Removable Tank Access Panels</li>
+<li>Lift-Out Chip Baskets</li>
+<li>Pneumatic Door Closure</li>
+</ul>`,
+      },
+      {
+        heading: 'Available Options',
+        body: `<ul>
+<li>Electric Dryer / Air Blower</li>
+<li>Filtration System</li>
+<li>Oil / Water Separator</li>
+<li>Oil Skimmer</li>
+<li>Steam / Mist Condenser</li>
+<li>Pallet Loader</li>
+<li>Automatic Chemical Proportioning System</li>
+<li>Automatic Load / Unload System</li>
+<li>Process Light Tower (Stack Light)</li>
+<li>Additional Fluid Capacity</li>
+<li>Pump Upgrades</li>
+<li>Chemical Injector</li>
+<li>Air Knife Blow-Off</li>
+</ul>`,
+      },
+      {
+        heading: 'Safety Features',
+        body: `<ul>
+<li>24V Low-Voltage Control Circuit</li>
+<li>NEMA 4 Electrical Panel — splash and dust resistant</li>
+<li>Push-Button Emergency Stop</li>
+<li>Main Power Disconnect Switch with Lock-Out / Tag-Out provision</li>
+<li>Overload Protection on Pumps, Rotational Drive &amp; Heaters</li>
+<li>Two-Hand Door Operation — prevents door closure during loading</li>
+<li>Door Interlock Safety Switch — cycle cannot start with door open</li>
+<li>Fluid Level Controls — protects pumps and heating elements</li>
+<li>No Exposed Sharp Metal Edges</li>
+<li>Low Noise Operation — under 70 dBA</li>
+<li>CE Certified</li>
+</ul>`,
+      },
+      {
+        heading: 'Applications',
+        body: `<p>The Platinum Series excels where conventional spray washers fall short — components with complex internal geometry that traps chips, oils, and particulate. Typical applications include:</p>
+<ul>
+<li>CNC-machined parts with deep blind bores, cross-drilled passages, and threaded features</li>
+<li>Automotive engine blocks, cylinder heads, crankshafts, and transmission housings</li>
+<li>Aerospace structural components and hydraulic actuator bodies</li>
+<li>Heavy equipment hydraulic valves, manifolds, and pump bodies</li>
+<li>Medical implants and surgical instruments requiring validated cleaning processes</li>
+<li>Remanufactured components requiring removal of embedded contamination</li>
+</ul>`,
+      },
+    ],
+    relatedSeries: ['platinum'],
+  },
+  {
     slug: 'rotary-drum-washers',
     title: 'Rotary Drum Aqueous Parts Washing Systems',
     metaDescription:

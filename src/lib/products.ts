@@ -48,6 +48,7 @@ export interface Series {
   products: string[];  // product slugs
   standardFeatures: string[];
   availableOptions: string[];
+  safetyFeatures: string[];
   specTable: {
     models: string[];
     rows: SpecTableRow[];

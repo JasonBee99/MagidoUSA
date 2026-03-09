@@ -40,13 +40,16 @@ export const metadata: Metadata = {
     'AISI 304 stainless steel',
     'Magido USA',
   ],
+  verification: {
+    google: 'cThqZI_BN2gt3t2kc77Y6TtfTLPr7TtbkMFxWcE184U',
+  },
   authors: [{ name: 'Magido USA' }],
   creator: 'Magido USA',
-  metadataBase: new URL('https://adv.magidousa.com'),
+  metadataBase: new URL('https://www.magidousa.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://adv.magidousa.com',
+    url: 'https://www.magidousa.com',
     siteName: 'Magido USA',
     title: 'Magido USA — Leaders in Aqueous Parts Washing Systems',
     description:
@@ -70,7 +73,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://adv.magidousa.com',
+    canonical: 'https://www.magidousa.com',
   },
 };
 

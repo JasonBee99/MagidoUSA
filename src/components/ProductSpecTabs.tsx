@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Check } from 'lucide-react';
 import type { Product, Series } from '@/lib/products';
 
-type TabId = 'features' | 'options' | 'specs';
+type TabId = 'features' | 'options' | 'safety' | 'specs';
 
 interface ProductSpecTabsProps {
   product: Product;
@@ -14,6 +14,7 @@ interface ProductSpecTabsProps {
 export function ProductSpecTabs({ product, series }: ProductSpecTabsProps) {
   const features = series?.standardFeatures || [];
   const options = series?.availableOptions || [];
+  const safety = series?.safetyFeatures || [];
 
   // Build all specs as flat key/value list
   const allSpecs = Object.entries(product.specs)
@@ -29,6 +30,7 @@ export function ProductSpecTabs({ product, series }: ProductSpecTabsProps) {
   const tabs: { id: TabId; label: string }[] = [];
   if (features.length > 0) tabs.push({ id: 'features', label: 'Features' });
   if (options.length > 0) tabs.push({ id: 'options', label: 'Options' });
+  if (safety.length > 0) tabs.push({ id: 'safety', label: 'Safety Features' });
   if (allSpecs.length > 0) tabs.push({ id: 'specs', label: 'Full Specifications' });
 
   const [activeTab, setActiveTab] = useState<TabId>(tabs[0]?.id || 'features');
@@ -80,6 +82,17 @@ export function ProductSpecTabs({ product, series }: ProductSpecTabsProps) {
               <li key={option} className="flex items-start gap-2.5">
                 <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-magido-blue" />
                 <span className="text-sm text-[var(--color-text)]">{option}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {activeTab === 'safety' && (
+          <ul className="grid gap-2 sm:grid-cols-2">
+            {safety.map((item) => (
+              <li key={item} className="flex items-start gap-2.5">
+                <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-amber-500" />
+                <span className="text-sm text-[var(--color-text)]">{item}</span>
               </li>
             ))}
           </ul>
