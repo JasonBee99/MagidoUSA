@@ -1,0 +1,711 @@
+{
+  "_version": "1.0",
+  "_description": "Landing page data for /solutions/[slug] routes. Each entry is one landing page.",
+  "solutions": [
+    {
+      "slug": "aqueous-vs-solvent-parts-washers",
+      "type": "comparison",
+      "title": "Aqueous vs. Solvent Parts Washers",
+      "headline": "Aqueous vs. Solvent Parts Washers: Which Is Right for Your Shop?",
+      "metaTitle": "Aqueous vs. Solvent Parts Washers | Magido USA",
+      "metaDescription": "Compare aqueous and solvent parts washers side-by-side. Learn which cleaning technology delivers better performance, safety, and ROI for your operation.",
+      "intro": "Choosing between aqueous and solvent parts washing is one of the most important decisions you'll make for your shop's cleaning operation. The right choice depends on your parts, contaminants, throughput, and regulatory environment. Here's an honest, side-by-side breakdown.",
+      "sections": [
+        {
+          "heading": "How Each Technology Works",
+          "content": "Aqueous parts washers use heated water combined with water-based detergents to remove grease, oil, cutting fluids, and shop grime. High-pressure spray jets, immersion agitation, or rotating drums mechanically assist the cleaning action \u2014 no harsh solvents required.\n\nSolvent parts washers use petroleum-based or chlorinated chemical solvents to dissolve oils and greases on contact. Traditional cold solvent sink-on-a-drum units are the most common, though vapor degreasing with chlorinated solvents remains in use for precision applications."
+        },
+        {
+          "heading": "Safety & Environmental Compliance",
+          "content": "Solvent washers present significant regulatory and safety challenges. Petroleum solvents are flammable and subject to EPA and OSHA hazardous waste rules. Many chlorinated solvents (TCE, PCE) are classified carcinogens under OSHA and are increasingly restricted or banned.\n\nAqueous washers eliminate solvent disposal costs entirely. Waste water is managed through a simple oil skimmer and periodic tank changeout \u2014 classified as non-hazardous in most jurisdictions. No special ventilation requirements. No fire risk. No hazardous waste manifest."
+        },
+        {
+          "heading": "Cleaning Performance",
+          "content": "Modern aqueous washers match or exceed solvent performance for the vast majority of industrial cleaning tasks, including heavy shop grease, cutting oils, stamping compounds, and brake dust. Heated water (up to 150\u00b0F) combined with high-pressure spray (up to 45 GPM, 34 PSI on Magido X51 series) provides aggressive mechanical cleaning action.\n\nSolvents retain an edge in a narrow set of applications: very tight blind holes or complex geometries where water surface tension is a limitation, or where residual moisture cannot be tolerated."
+        },
+        {
+          "heading": "Total Cost of Ownership",
+          "content": "Aqueous washers have higher upfront equipment costs but substantially lower operating costs over time. Detergent costs are modest. There are no hazardous waste disposal fees, no solvent purchase costs, and no regulatory compliance overhead.\n\nSolvent systems appear cheaper to buy but accumulate significant ongoing costs: solvent replenishment, hazardous waste disposal (typically $0.50\u2013$2.00/gallon), ventilation requirements, potential EPA reporting, and liability exposure."
+        }
+      ],
+      "comparisonTable": {
+        "headers": [
+          "Factor",
+          "Aqueous Washers",
+          "Solvent Washers"
+        ],
+        "rows": [
+          [
+            "Cleaning Performance (general)",
+            "Excellent",
+            "Good\u2013Excellent"
+          ],
+          [
+            "Fire Hazard",
+            "None",
+            "High (petroleum)"
+          ],
+          [
+            "EPA/OSHA Compliance",
+            "Simple",
+            "Complex"
+          ],
+          [
+            "Hazardous Waste Disposal",
+            "Not required",
+            "Required"
+          ],
+          [
+            "Worker Safety",
+            "High",
+            "Moderate\u2013Low"
+          ],
+          [
+            "Operating Cost (ongoing)",
+            "Low",
+            "High"
+          ],
+          [
+            "Upfront Equipment Cost",
+            "Moderate\u2013High",
+            "Low\u2013Moderate"
+          ],
+          [
+            "Suitable for Blind Holes",
+            "Good",
+            "Excellent"
+          ],
+          [
+            "Best For",
+            "General industrial, automotive, MRO",
+            "Precision aerospace, tight geometries"
+          ]
+        ]
+      },
+      "verdict": "For the overwhelming majority of industrial and automotive cleaning operations, aqueous parts washers deliver equal or better results at lower total cost and with far less regulatory burden. Solvent washers remain appropriate only for specific precision applications with geometry constraints that prevent effective aqueous cleaning.",
+      "ctaHeading": "Explore Magido Aqueous Parts Washers",
+      "ctaText": "Magido offers a complete line of aqueous parts washers \u2014 from manual sink washers for small shops to high-volume automated conveyor systems. Request a consultation to find the right model for your application.",
+      "relatedProductSlugs": [
+        "dg-8",
+        "dg-9",
+        "l-7",
+        "l-10",
+        "l101",
+        "l102",
+        "l-35",
+        "l-55",
+        "g200",
+        "g300",
+        "a700",
+        "a900"
+      ],
+      "relatedProductHeading": "Featured Aqueous Parts Washers"
+    },
+    {
+      "slug": "spray-cabinet-vs-immersion-parts-washers",
+      "type": "comparison",
+      "title": "Spray Cabinet vs. Immersion Parts Washers",
+      "headline": "Spray Cabinet vs. Immersion Parts Washers: Matching the Technology to the Job",
+      "metaTitle": "Spray Cabinet vs. Immersion Parts Washers | Magido USA",
+      "metaDescription": "Spray cabinet or immersion washer \u2014 which is right for your parts? Compare cleaning methods, throughput, and best-fit applications side-by-side.",
+      "intro": "Both spray cabinet and immersion washers use heated aqueous solution \u2014 but they attack contamination in fundamentally different ways. Understanding which mechanism suits your parts and contaminants will determine your cleaning results, throughput, and long-term satisfaction.",
+      "sections": [
+        {
+          "heading": "Spray Cabinet Washers: Pressure-Driven Cleaning",
+          "content": "Spray cabinet washers force heated detergent solution through high-pressure nozzles onto rotating or stationary parts. The mechanical impact of the spray jet physically blasts away contaminants \u2014 effective on external surfaces, threads, machined faces, and general shop grime.\n\nMagido's top-load spray cabinet series (X51, X81) deliver up to 45 GPM flow rate and 34 PSI spray pressure, with basket capacities from 330 to 1,760 lbs. Front-load cabinet models (X53, FLS) offer walk-in access for oversized components and are well-suited to engine blocks, transmission housings, and large castings."
+        },
+        {
+          "heading": "Immersion Washers: Soak-and-Agitate Cleaning",
+          "content": "Immersion washers submerge parts entirely in heated detergent solution, using mechanical agitation \u2014 turbine impellers, oscillating baskets, or rotating drums \u2014 to drive cleaning action into blind holes, internal passages, and complex geometries.\n\nMagido's Agita immersion series uses a high-energy turbine system to create powerful fluid movement around and through parts. This is the preferred method when spray pressure cannot reach internal cavities, when parts have complex geometry, or when delicate surfaces could be damaged by direct spray impact."
+        },
+        {
+          "heading": "Cleaning Reach and Geometry Suitability",
+          "content": "The key differentiator is geometry. Spray washers excel on parts with accessible external surfaces \u2014 brake calipers, wheel hubs, engine heads, machined housings. Immersion washers excel on parts with internal passages, blind holes, or complex recesses \u2014 valve bodies, hydraulic manifolds, injector bodies, bearing housings.\n\nWhen in doubt: if you can't point a spray nozzle at the contamination and see it, immersion is the safer choice."
+        },
+        {
+          "heading": "Throughput and Automation",
+          "content": "For high-volume production environments, Magido's in-line belt conveyor washers (Gold, Gold/2, Silver series) provide fully automated throughput \u2014 parts travel through wash, rinse, and dry zones on a continuous belt. Rotary drum washers (Jolly, Spira) offer basket-style automation for small parts in bulk.\n\nSpray cabinet and immersion machines are generally better suited for batch processing, job shops, and operations where part variety is high."
+        }
+      ],
+      "comparisonTable": {
+        "headers": [
+          "Factor",
+          "Spray Cabinet",
+          "Immersion"
+        ],
+        "rows": [
+          [
+            "Primary Cleaning Mechanism",
+            "High-pressure spray impact",
+            "Fluid agitation & soak"
+          ],
+          [
+            "Best For External Surfaces",
+            "Excellent",
+            "Good"
+          ],
+          [
+            "Best For Blind Holes / Internal Passages",
+            "Limited",
+            "Excellent"
+          ],
+          [
+            "Delicate Surface Suitability",
+            "Moderate",
+            "High"
+          ],
+          [
+            "Typical Batch Size",
+            "Single parts to large assemblies",
+            "Small\u2013medium parts, batches"
+          ],
+          [
+            "Footprint",
+            "Compact\u2013Medium",
+            "Compact\u2013Medium"
+          ],
+          [
+            "Automation Options",
+            "Manual to semi-auto",
+            "Manual to semi-auto"
+          ],
+          [
+            "Best Industries",
+            "Automotive, MRO, general industrial",
+            "Hydraulics, precision, aerospace"
+          ]
+        ]
+      },
+      "verdict": "Spray cabinet washers are the right default for most automotive and general industrial shops cleaning accessible parts. Immersion washers are the right choice when parts have complex internal geometry, tight tolerances, or require gentler cleaning action. Many operations benefit from both \u2014 a spray cabinet for fast general cleaning and an immersion unit for precision components.",
+      "ctaHeading": "Find Your Ideal Magido Washer",
+      "ctaText": "Not sure which technology fits your parts? Our team can review your specific cleaning challenge and recommend the right Magido model. Request a free consultation.",
+      "relatedProductSlugs": [
+        "l101",
+        "l102",
+        "l-35",
+        "l-55",
+        "l-90",
+        "l160",
+        "l190",
+        "a700",
+        "a900",
+        "a1100",
+        "a1300"
+      ],
+      "relatedProductHeading": "Spray Cabinet & Immersion Models"
+    },
+    {
+      "slug": "cleaning-brake-components",
+      "type": "use-case",
+      "title": "Parts Washers for Cleaning Brake Components",
+      "headline": "The Right Way to Clean Brake Components: Washers Built for Automotive Service",
+      "metaTitle": "Parts Washers for Cleaning Brake Components | Magido USA",
+      "metaDescription": "Find the right parts washer for cleaning brake calipers, rotors, drums, and hardware. Compare aqueous washer options for automotive shops and fleet maintenance.",
+      "intro": "Brake service generates some of the most hazardous cleaning challenges in automotive work: brake dust (which may contain asbestos in older vehicles), brake fluid, grease, rust, and road grime must all be removed before inspection, reconditioning, or installation. The right parts washer makes brake cleaning faster, safer, and more thorough.",
+      "sections": [
+        {
+          "heading": "What You're Cleaning",
+          "content": "Brake cleaning involves a range of components with different cleaning requirements. Rotors and drums need degreasing and dust removal without surface damage. Calipers \u2014 especially rebuilt units \u2014 require thorough cleaning of caliper bores, bleeder ports, and mounting surfaces. Wheel cylinders, hardware kits, and brake backing plates all benefit from full aqueous washing rather than aerosol brake cleaner.\n\nAqueous parts washers handle all of these in a single cycle \u2014 one load, one clean, move on."
+        },
+        {
+          "heading": "Eliminating Brake Dust Safely",
+          "content": "OSHA and EPA regulations restrict dry-cleaning methods for brake parts due to the risk of airborne brake dust. Aqueous washing captures and contains brake dust in the wash tank rather than dispersing it into shop air. Modern aqueous detergents are specifically formulated to emulsify brake fluid and suspend metallic brake dust particles, keeping them out of the shop environment.\n\nMagido's spray cabinet washers contain all cleaning activity inside a sealed cabinet with door interlocks \u2014 zero airborne contamination risk during the wash cycle."
+        },
+        {
+          "heading": "Recommended Cleaning Method for Brake Parts",
+          "content": "For most automotive service shops, a top-load or front-load spray cabinet washer is the ideal solution for brake components. The rotating turntable (top-load models) or fixed basket (front-load) holds brake assemblies while high-pressure spray jets remove contaminants from all accessible surfaces.\n\nFor brake calipers with complex internal passages or caliper bores that require more thorough cleaning, an immersion washer like the Magido Agita series provides soak-and-agitate cleaning that reaches inside caliper bodies."
+        },
+        {
+          "heading": "Throughput for Fleet and Production Shops",
+          "content": "High-volume shops \u2014 fleet maintenance operations, production remanufacturers, and dealerships \u2014 benefit from higher-capacity spray cabinet models that can handle multiple brake assemblies per cycle. Magido's X51 series accommodates load weights up to 1,760 lbs and basket diameters up to 55 inches, enabling full axle sets to be cleaned in a single cycle.\n\nFor shops cleaning individual brake components in high volume, Magido's rotary drum washers (Jolly, Spira series) offer automated batch cleaning of small parts like caliper hardware, clips, and wheel cylinder components."
+        }
+      ],
+      "keyBenefits": [
+        "Fully contained cleaning \u2014 no airborne brake dust",
+        "Removes brake fluid, grease, rust, and road grime in one cycle",
+        "OSHA-compliant approach to brake component cleaning",
+        "Heated aqueous solution cleans faster than aerosol brake cleaner",
+        "Reduces shop labor \u2014 load parts and walk away"
+      ],
+      "ctaHeading": "Equip Your Shop for Brake Service",
+      "ctaText": "From small independent shops to high-volume fleet operations, Magido has a parts washer sized for your brake cleaning volume. Request a quote or evaluation unit today.",
+      "relatedProductSlugs": [
+        "dg-8",
+        "dg-9",
+        "l-7",
+        "l-10",
+        "l101",
+        "l102",
+        "l122",
+        "l-35",
+        "l-55",
+        "a700",
+        "a900",
+        "j320",
+        "sp320"
+      ],
+      "relatedProductHeading": "Parts Washers for Brake Service"
+    },
+    {
+      "slug": "removing-cutting-oil-and-coolant",
+      "type": "use-case",
+      "title": "Parts Washers for Removing Cutting Oil & Machining Coolant",
+      "headline": "Removing Cutting Oil and Coolant: Parts Washers for Machined Components",
+      "metaTitle": "Parts Washers for Removing Cutting Oil & Machining Coolant | Magido USA",
+      "metaDescription": "Clean machined parts with confidence. Learn which Magido parts washer removes cutting oil, coolant, chips, and metalworking residue from precision components.",
+      "intro": "Machined parts come off the CNC covered in cutting oil, coolant, chips, and metalworking residue. Before inspection, assembly, coating, or shipment, these parts need to be thoroughly clean. The right parts washer handles this automatically \u2014 without tying up operator time or compromising dimensional tolerances.",
+      "sections": [
+        {
+          "heading": "The Challenge: Cutting Oil and Coolant Are Stubborn",
+          "content": "Modern cutting fluids are formulated to cling to metal surfaces and resist displacement. Synthetic coolants, semi-synthetic fluids, and straight cutting oils all create a tenacious film on machined surfaces that requires thermal, chemical, and mechanical energy to remove.\n\nAqueous parts washers apply all three simultaneously: heated solution (chemical + thermal) delivered at high pressure (mechanical). This combination cuts through cutting oil residue and suspends metallic chips and fines in the wash tank, preventing recontamination of clean parts."
+        },
+        {
+          "heading": "Protecting Tight Tolerances and Surface Finish",
+          "content": "Precision machined components cannot tolerate abrasion or corrosion during the cleaning process. Magido's stainless steel construction (AISI 304) and adjustable temperature controls protect part surfaces. Water temperature is adjustable up to 150\u00b0F \u2014 hot enough to activate detergent chemistry without thermal distortion risk for most ferrous and aluminum components.\n\nFor delicate surfaces or softer alloys, Magido's immersion washers provide gentle but thorough cleaning through fluid agitation rather than direct spray impact."
+        },
+        {
+          "heading": "Handling Chips and Metallic Fines",
+          "content": "CNC machining generates chips \u2014 aluminum, steel, and cast iron fines that contaminate wash tanks if not managed. Magido washers include filtration systems that capture chips and metallic debris before they recirculate through the pump. Optional chip baskets and magnetic separators are available for high-chip-volume applications.\n\nRegular tank maintenance keeps wash solution effective longer and protects the pump from abrasive wear."
+        },
+        {
+          "heading": "Inline Washing for Production Environments",
+          "content": "Machine shops with production lines benefit from inline belt conveyor washers that integrate directly into the part flow. Magido's Gold and Gold/2 series conveyors handle continuous throughput of machined parts \u2014 parts load onto the infeed belt, pass through wash and rinse zones, and exit dry and clean without operator intervention between cycles.\n\nFor batch machining operations, top-load and front-load spray cabinet washers provide flexible cleaning for mixed part geometries common in job shops."
+        }
+      ],
+      "keyBenefits": [
+        "Removes cutting oil, coolant, chips, and metalworking residue in one cycle",
+        "Adjustable temperature up to 150\u00b0F for optimal cleaning chemistry",
+        "Stainless steel construction protects part integrity",
+        "Chip filtration prevents tank contamination and pump wear",
+        "Inline conveyor options for production line integration"
+      ],
+      "ctaHeading": "Clean Machined Parts Faster",
+      "ctaText": "Whether you run a high-volume production floor or a general job shop, Magido has a parts washer that integrates into your workflow. Talk to our team about your throughput requirements.",
+      "relatedProductSlugs": [
+        "l101",
+        "l102",
+        "l122",
+        "l152",
+        "l-35",
+        "l-55",
+        "l-90",
+        "l160",
+        "l190",
+        "l210",
+        "g200",
+        "g300",
+        "g400",
+        "a700",
+        "a900"
+      ],
+      "relatedProductHeading": "Parts Washers for Machining Operations"
+    },
+    {
+      "slug": "industrial-parts-washing-for-mro",
+      "type": "use-case",
+      "title": "Parts Washers for MRO and Maintenance Operations",
+      "headline": "Aqueous Parts Washers for MRO: Keeping Maintenance Operations Running Clean",
+      "metaTitle": "Industrial Parts Washers for MRO Maintenance | Magido USA",
+      "metaDescription": "MRO and industrial maintenance operations need reliable, flexible parts washing. Explore Magido aqueous washers designed for the demands of heavy maintenance environments.",
+      "intro": "Maintenance, Repair, and Operations (MRO) environments deal with the widest range of cleaning challenges in industry: everything from heavily carbonized engine parts to precision hydraulic components, bearings, gearboxes, pumps, and electrical housings. The right parts washer for MRO needs to be versatile, reliable, and easy to operate by maintenance technicians \u2014 not just production specialists.",
+      "sections": [
+        {
+          "heading": "The MRO Cleaning Challenge",
+          "content": "MRO shops don't clean the same part twice. Each shift might bring in a worn pump housing, a corroded bearing assembly, a seized caliper, a contaminated hydraulic valve body, or an encrusted gearbox. The parts washer needs to adapt to whatever shows up.\n\nThis variety requirement points toward flexible batch washers \u2014 spray cabinets and immersion units \u2014 rather than dedicated inline systems. Magido's manual and automatic spray cabinet models handle this diversity well, offering adjustable cycle times, temperature control, and basket configurations that accommodate parts from small fittings to large assemblies."
+        },
+        {
+          "heading": "Removing Heavy Contamination: Carbon, Varnish, and Scale",
+          "content": "MRO cleaning often involves contamination that production cleaning doesn't: baked-on carbon deposits, lacquer varnish, mineral scale, and corrosion products. These require aggressive chemistry paired with sufficient soak time and mechanical energy.\n\nFor heavily contaminated parts, Magido's immersion washers (Agita series) provide extended soak-and-agitate cycles that penetrate and loosen hard deposits. Spray cabinet washers follow as the mechanical cleaning stage. Many MRO operations use both \u2014 an immersion pre-soak for heavily fouled parts before a spray cabinet finish wash."
+        },
+        {
+          "heading": "Ease of Use for Non-Specialist Operators",
+          "content": "MRO maintenance technicians are not production operators. The parts washer needs to be straightforward to operate, easy to maintain, and forgiving of occasional misuse. Magido's washers feature simple controls with adjustable temperature and timer dials, minimal maintenance requirements (oil skimmer, periodic tank changes, filter cleaning), and robust stainless steel construction that stands up to heavy industrial use."
+        },
+        {
+          "heading": "Compliance in Maintenance Environments",
+          "content": "MRO operations in regulated industries \u2014 power generation, food processing, pharmaceutical manufacturing \u2014 face strict requirements around cleaning fluid management and waste disposal. Magido's aqueous washers use water-based detergents that are readily characterized for environmental compliance. Waste water management is straightforward compared to solvent alternatives, and no special ventilation or fire suppression infrastructure is required."
+        }
+      ],
+      "keyBenefits": [
+        "Handles the full variety of MRO cleaning tasks in one machine",
+        "Simple operation for non-specialist maintenance technicians",
+        "Removes carbon, varnish, grease, and scale effectively",
+        "Aqueous chemistry simplifies waste management and compliance",
+        "Robust stainless steel construction for heavy industrial use"
+      ],
+      "ctaHeading": "Upgrade Your MRO Cleaning Operation",
+      "ctaText": "Magido's aqueous parts washers are trusted in maintenance operations across manufacturing, utilities, and heavy industry. Contact our team to discuss your specific cleaning requirements.",
+      "relatedProductSlugs": [
+        "dg-8",
+        "dg-9",
+        "l-7",
+        "l-10",
+        "hp-25",
+        "hp-30",
+        "l101",
+        "l102",
+        "l-35",
+        "l-55",
+        "l160",
+        "l190",
+        "a700",
+        "a900",
+        "a1100"
+      ],
+      "relatedProductHeading": "Recommended for MRO Operations"
+    },
+    {
+      "slug": "cleaning-hydraulic-components",
+      "type": "use-case",
+      "title": "Cleaning Hydraulic Components",
+      "headline": "Aqueous Parts Washers for Hydraulic Component Cleaning",
+      "metaTitle": "Cleaning Hydraulic Components | Magido USA Parts Washers",
+      "metaDescription": "Hydraulic valves, manifolds, and cylinders demand contamination-free cleaning. Learn how Magido aqueous parts washers remove oil, varnish, and particulate from hydraulic components.",
+      "intro": "Hydraulic system failures trace back to contamination in the overwhelming majority of cases. Cleaning hydraulic components \u2014 valve bodies, manifolds, cylinders, pump housings, and fittings \u2014 is not just about removing visible grease. It is about achieving a level of cleanliness that prevents downstream particulate contamination, valve stiction, and seal degradation. Magido aqueous parts washers are built for exactly this kind of precision cleaning.",
+      "sections": [
+        {
+          "heading": "Why Hydraulic Cleaning Demands More",
+          "content": "Hydraulic components operate under extreme pressure with tight tolerances and small orifices. A single metallic particle or residue film in the wrong place can cause valve stiction, accelerated seal wear, or catastrophic pump failure. Standard cleaning methods \u2014 wiping, solvent rinsing, or compressed air \u2014 are inadequate. They redistribute contamination rather than removing it.\n\nEffective hydraulic cleaning requires thermal energy to mobilize varnish and oil films, chemical action to break down petroleum residues, and mechanical energy to flush particulate from internal passages and orifices. Magido's aqueous washers deliver all three simultaneously."
+        },
+        {
+          "heading": "Reaching Internal Passages and Blind Bores",
+          "content": "The hardest cleaning challenge in hydraulic work is internal geometry: cross-drilled passages, blind bores, spool bores, and manifold galleries where contamination accumulates and spray pressure cannot reach directly.\n\nMagido's Agita immersion series addresses this directly. Parts are fully submerged in heated aqueous solution, and a high-energy turbine system drives vigorous fluid movement through and around every internal passage. Extended soak cycles loosen varnish and lacquer deposits. The result is clean internal surfaces that spray-only methods cannot achieve."
+        },
+        {
+          "heading": "Removing Varnish, Lacquer, and Petroleum Residue",
+          "content": "Hydraulic oils degrade under heat and pressure, leaving varnish and lacquer deposits on valve spools, bores, and internal surfaces. These deposits cause valve stiction and erratic system behavior. Aqueous detergents formulated for petroleum removal, heated to 150\u2013167\u00b0F and applied with mechanical agitation, effectively dissolve and remove these deposits without damaging metal surfaces or seals.\n\nFor heavily varnished components, Magido's immersion washers provide the extended contact time needed to penetrate and lift stubborn deposits that a short spray cycle cannot address."
+        },
+        {
+          "heading": "Cleanliness Standards and Verification",
+          "content": "Rebuilt and remanufactured hydraulic assemblies are often required to meet ISO 4406 cleanliness codes or OEM cleanliness specifications. Achieving these standards consistently requires a documented, repeatable cleaning process \u2014 not ad hoc methods.\n\nMagido washers provide precisely this: controlled temperature, adjustable cycle time, consistent detergent concentration, and filtered wash solution that does not recontaminate parts. Combined with a final rinse stage and post-wash drying, components emerge ready for reassembly or cleanliness verification."
+        }
+      ],
+      "keyBenefits": [
+        "Removes varnish, lacquer, oil films, and particulate from internal passages",
+        "Immersion agitation reaches blind bores and complex internal geometry",
+        "Controlled temperature up to 167\u00b0F for effective petroleum deposit removal",
+        "Filtered wash solution prevents recontamination during cleaning",
+        "Repeatable process supports ISO 4406 and OEM cleanliness requirements"
+      ],
+      "ctaHeading": "Clean Hydraulic Components to Spec",
+      "ctaText": "Magido's immersion and spray cabinet washers are used in hydraulic rebuild operations across manufacturing, heavy equipment, and fluid power industries. Contact our team to match the right washer to your component types and cleanliness requirements.",
+      "relatedProductSlugs": [
+        "a700",
+        "a900",
+        "a1100",
+        "a1300",
+        "l101",
+        "l102",
+        "l122",
+        "l152",
+        "x53-25",
+        "x53-30"
+      ],
+      "relatedProductHeading": "Recommended for Hydraulic Component Cleaning"
+    },
+    {
+      "slug": "cleaning-automotive-transmission-parts",
+      "type": "use-case",
+      "title": "Cleaning Automotive Transmission Parts",
+      "headline": "Parts Washers for Automotive Transmission Rebuilding",
+      "metaTitle": "Cleaning Automotive Transmission Parts | Magido USA",
+      "metaDescription": "Transmission rebuilders need thorough, reliable parts cleaning. See how Magido aqueous parts washers clean valve bodies, clutch packs, housings, and internal components to rebuild-ready condition.",
+      "intro": "Transmission rebuilding demands an exacting standard of cleanliness. Valve bodies with spool bores measured in thousandths of an inch, clutch packs sensitive to residual fluid contamination, thrust washers and needle bearings that must be free of metallic debris \u2014 every component needs to be genuinely clean before reassembly. Magido aqueous parts washers are the professional choice for transmission shops that take quality seriously.",
+      "sections": [
+        {
+          "heading": "The Transmission Cleaning Challenge",
+          "content": "Automatic transmission fluid (ATF) is an effective lubricant designed to resist displacement from metal surfaces. Burnt ATF, clutch material dust, metallic debris from worn components, and varnish deposits from degraded fluid create a complex contamination profile that is difficult to remove without the right equipment.\n\nSolvent sink washers and manual scrubbing cannot reliably clean the internal passages and small orifices of a valve body. Residual contamination left in a rebuilt transmission is a warranty claim and a comeback waiting to happen. The right aqueous washer eliminates this risk."
+        },
+        {
+          "heading": "Valve Body Cleaning: The Critical Step",
+          "content": "The transmission valve body is the hydraulic control center \u2014 a machined aluminum casting with dozens of internal passages, check balls, solenoid bores, and spool bores with tolerances of \u00b10.0005\". Any residual varnish, metallic particle, or debris in these passages causes shift quality issues, pressure problems, or outright failure.\n\nMagido's Agita immersion washers submerge valve bodies in heated aqueous solution with high-energy fluid agitation that drives cleaning action into every passage. For shops doing high valve body volume, the front-load X53 spray cabinet handles full valve body cleaning in a single automated cycle."
+        },
+        {
+          "heading": "Housings, Cases, and Bell Housings",
+          "content": "Transmission cases, bell housings, and extension housings are large, heavy castings with internal passages, threaded bores, and machined sealing surfaces that must be clean and free of gasket material, RTV, and ATF residue before reassembly.\n\nMagido's front-load spray cabinet washers (X53, FLS series) are sized for full transmission cases \u2014 up to 1,760 lbs capacity with turntables up to 55\" in diameter. The automated spray cycle cleans all external and accessible internal surfaces while the technician prepares other components."
+        },
+        {
+          "heading": "Small Components: Clutch Pistons, Drums, and Steels",
+          "content": "Clutch pack components, snap rings, thrust washers, and small stampings are high-volume, repetitive cleaning tasks in a busy transmission shop. Magido's rotary drum washers (Spira series) handle bulk quantities of small parts continuously \u2014 parts load in one end and emerge clean at the other without batching or manual handling between pieces.\n\nFor mixed small-part batches, top-load spray cabinet washers (X51 series) provide flexible basket loading that accommodates varied part sizes in a single cycle."
+        }
+      ],
+      "keyBenefits": [
+        "Removes ATF, burnt fluid, clutch dust, and metallic debris thoroughly",
+        "Immersion cleaning reaches valve body passages and spool bores",
+        "Front-load cabinets handle full transmission cases and housings",
+        "Rotary drum washers process bulk small parts continuously",
+        "Eliminates contamination-related comebacks in rebuilt transmissions"
+      ],
+      "ctaHeading": "Equip Your Transmission Shop Right",
+      "ctaText": "Whether you rebuild a dozen transmissions a month or run a high-volume remanufacturing operation, Magido has the right washer for your workflow. Talk to our team about your part mix and throughput requirements.",
+      "relatedProductSlugs": [
+        "a700",
+        "a900",
+        "a1100",
+        "l101",
+        "l102",
+        "l122",
+        "l152",
+        "x53-25",
+        "x53-30",
+        "x53-40",
+        "sp450-1b",
+        "sp650-1b"
+      ],
+      "relatedProductHeading": "Recommended for Transmission Rebuilding"
+    },
+    {
+      "slug": "removing-stamping-and-forming-lubricants",
+      "type": "use-case",
+      "title": "Removing Stamping and Forming Lubricants",
+      "headline": "Removing Stamping Oils and Forming Lubricants from Metal Parts",
+      "metaTitle": "Removing Stamping & Forming Lubricants | Magido USA Parts Washers",
+      "metaDescription": "Stamped and formed metal parts need clean, lubricant-free surfaces before welding, coating, or assembly. Learn how Magido aqueous parts washers remove stamping oils efficiently at production volume.",
+      "intro": "Stamped, drawn, and formed metal parts come off the press coated in lubricant \u2014 compounds designed to cling to metal under extreme forming pressure. Before welding, powder coating, plating, or assembly, every trace of this lubricant must be removed. Inadequate cleaning causes weld porosity, coating adhesion failures, and assembly contamination. Magido aqueous parts washers are built to handle this cleaning task at production volume.",
+      "sections": [
+        {
+          "heading": "Why Stamping Lubricants Are Difficult to Remove",
+          "content": "Stamping and forming lubricants are engineered for adhesion \u2014 they must maintain a film under pressures that exceed the yield strength of the metal being formed. Straight oils, sulfurized oils, chlorinated compounds, and water-soluble forming fluids all present different removal challenges. Simply rinsing with water is ineffective.\n\nAqueous cleaning addresses this with the combination of heated detergent solution (chemical action), temperature (thermal energy to mobilize oil films), and mechanical spray or agitation (physical displacement). This three-way attack removes forming lubricants that cold-rinse and wipe methods leave behind."
+        },
+        {
+          "heading": "Inline Cleaning for High-Volume Stamping Operations",
+          "content": "High-volume stamping operations produce parts faster than any batch washer can clean them. The solution is an inline belt conveyor washer that integrates directly into the part flow after the press or blanking line.\n\nMagido's Gold and Silver series conveyor washers carry stamped parts through wash and rinse zones continuously on a stainless steel mesh belt. No batching, no operator intervention between parts, no production bottleneck. Belt speed, wash temperature, and detergent concentration are all adjustable to match the lubricant type and part geometry."
+        },
+        {
+          "heading": "Batch Cleaning for Job Shop and Mixed-Part Operations",
+          "content": "Stamping job shops and contract manufacturers deal with mixed parts, varied lubricants, and changing production schedules. A single inline washer cannot cover this variety \u2014 batch washers are the right tool.\n\nMagido's top-load spray cabinets (X51, X81 series) handle mixed batches of stamped parts in a basket, cleaning all surfaces in a single automated cycle. For parts with complex geometries or formed features that trap lubricant in recesses, Magido's immersion washers provide thorough cleaning through full submersion and agitation."
+        },
+        {
+          "heading": "Pre-Treatment Cleaning for Coating and Welding",
+          "content": "Parts destined for powder coating, e-coat, plating, or painting require a surface that is chemically clean \u2014 not just visually clean. Residual forming lubricant under a coating creates adhesion failure, blistering, and corrosion. The same standard applies before welding: oil contamination in the weld zone causes porosity, spatter, and weakened joints.\n\nMagido's aqueous washers, using appropriate detergent chemistry and sufficient wash temperature, deliver the surface cleanliness that coating and welding operations require. The AISI 304 stainless steel construction ensures no contamination is introduced by the washer itself."
+        }
+      ],
+      "keyBenefits": [
+        "Removes straight oils, sulfurized compounds, and water-soluble forming fluids",
+        "Inline conveyor washers integrate directly into high-volume stamping lines",
+        "Batch spray cabinets handle mixed-part job shop production",
+        "Achieves surface cleanliness required before coating, plating, and welding",
+        "All stainless construction prevents washer-introduced contamination"
+      ],
+      "ctaHeading": "Clean Stamped Parts at Your Production Rate",
+      "ctaText": "From small job shop presses to high-volume transfer lines, Magido has a parts washing solution that matches your throughput. Contact our team to discuss your lubricant types, part geometry, and production volume.",
+      "relatedProductSlugs": [
+        "g200",
+        "g300",
+        "g400",
+        "l101",
+        "l102",
+        "l122",
+        "l152",
+        "a700",
+        "a900",
+        "sp450-1b",
+        "sp650-1b",
+        "sp450-2b",
+        "sp650-2b"
+      ],
+      "relatedProductHeading": "Recommended for Stamping & Forming Operations"
+    },
+    {
+      "slug": "food-and-beverage-equipment-cleaning",
+      "type": "use-case",
+      "title": "Food and Beverage Equipment Cleaning",
+      "headline": "Industrial Parts Washers for Food and Beverage Equipment Maintenance",
+      "metaTitle": "Food & Beverage Equipment Parts Washing | Magido USA",
+      "metaDescription": "Food and beverage facilities need parts washers that meet sanitary standards. Explore Magido stainless steel aqueous washers for cleaning food processing equipment components.",
+      "intro": "Food and beverage processing facilities maintain their equipment to a different standard \u2014 sanitary, verifiable, and documented. When bearings, housings, conveyor components, pump internals, and processing equipment parts come in for cleaning and maintenance, the washer itself must not introduce contamination. Magido's AISI 304 stainless steel aqueous parts washers are a natural fit for food and beverage maintenance environments.",
+      "sections": [
+        {
+          "heading": "Stainless Steel Construction: The Non-Negotiable",
+          "content": "In food and beverage environments, equipment material matters. Carbon steel, painted surfaces, and galvanized components are sources of contamination and corrosion in high-moisture, high-temperature cleaning environments. Magido builds every parts washer \u2014 cabinet, tank, frame, internal components \u2014 from AISI 304 stainless steel.\n\nThis is the same grade of stainless used in food processing equipment itself. There is no painted surface to chip into a wash basin, no carbon steel to rust into the cleaning solution, and no aluminum to corrode when alkaline detergents are used. The washer is as clean as the parts coming out of it."
+        },
+        {
+          "heading": "Cleaning Food-Grade Lubricants and Process Residues",
+          "content": "Food processing equipment is lubricated with food-grade oils and greases that present their own cleaning challenges. These lubricants are formulated to be safe for incidental food contact \u2014 but they are still oils and greases that foul bearings, housings, and sealing surfaces and must be removed before inspection and reassembly.\n\nAqueous detergents designed for food-grade lubricant removal, heated to 140\u2013167\u00b0F, effectively clean these residues from bearing housings, gearboxes, conveyor components, and pump internals. Magido's heated wash tanks reach and hold operating temperature consistently, ensuring detergent chemistry performs as formulated."
+        },
+        {
+          "heading": "Handling the Part Variety in Food Plant Maintenance",
+          "content": "Food and beverage maintenance shops clean everything from small bearings and sprockets to large pump housings, agitator shafts, and conveyor sections. This variety demands flexibility.\n\nMagido's front-load spray cabinets handle large, heavy components \u2014 conveyor frames, agitator housings, pump casings \u2014 with load capacities up to 1,760 lbs. Top-load cabinets handle medium components efficiently. Rotary drum washers clean bulk quantities of small parts like fasteners, sprocket teeth, and bearing components continuously. Immersion washers address components with complex internal geometry where spray pressure is insufficient."
+        },
+        {
+          "heading": "Aqueous Chemistry and Waste Management",
+          "content": "Solvent-based cleaning is particularly problematic in food and beverage facilities \u2014 both from a worker safety standpoint and from the regulatory perspective of chemical use near food production areas. Aqueous parts washers eliminate this concern entirely.\n\nWaste water from Magido's aqueous washers consists of water, detergent, and the oils and residues removed from parts. This stream is straightforwardly managed \u2014 oil skimming, pH adjustment if required, and disposal through an approved route. No hazardous waste manifests, no solvent storage, no fire risk near production areas."
+        }
+      ],
+      "keyBenefits": [
+        "100% AISI 304 stainless steel construction \u2014 no contamination from the washer itself",
+        "Cleans food-grade lubricants, process residues, and general MRO contamination",
+        "Flexible machine range handles parts from small fasteners to large housings",
+        "Aqueous chemistry eliminates solvent risk near food production areas",
+        "Simple waste water management \u2014 no hazardous waste classification"
+      ],
+      "ctaHeading": "Parts Washing That Meets Your Standards",
+      "ctaText": "Magido's stainless steel aqueous washers are used in food processing, beverage production, and pharmaceutical manufacturing maintenance operations. Contact our team to discuss your equipment cleaning requirements.",
+      "relatedProductSlugs": [
+        "l101",
+        "l102",
+        "l122",
+        "l152",
+        "x53-25",
+        "x53-30",
+        "x53-40",
+        "a700",
+        "a900",
+        "a1100",
+        "sp450-1b",
+        "sp650-1b"
+      ],
+      "relatedProductHeading": "Recommended for Food & Beverage Facilities"
+    },
+    {
+      "slug": "cleaning-electrical-and-electronic-components",
+      "type": "use-case",
+      "title": "Cleaning Electrical and Electronic Components",
+      "headline": "Aqueous Parts Washers for Electrical and Electronic Component Cleaning",
+      "metaTitle": "Cleaning Electrical & Electronic Components | Magido USA",
+      "metaDescription": "Electric motors, switchgear, and industrial electrical components need careful cleaning. Learn how Magido aqueous parts washers remove contamination from electrical equipment safely.",
+      "intro": "Electric motors, generators, switchgear, transformers, and industrial electronic housings accumulate contamination \u2014 carbon dust, oils, moisture, and conductive debris \u2014 that degrades insulation, increases operating temperature, and leads to premature failure. Cleaning these components correctly, without introducing moisture into sensitive windings or damaging insulation, requires the right approach. Magido's controlled aqueous parts washers provide a safe, effective method for industrial electrical component cleaning.",
+      "sections": [
+        {
+          "heading": "What Contaminates Industrial Electrical Equipment",
+          "content": "Industrial electric motors and electrical components fail for predictable contamination-related reasons: conductive carbon tracking on insulation surfaces, oil mist infiltration from nearby machinery that degrades winding insulation, metallic dust that creates short-circuit paths, and moisture accumulation that accelerates insulation breakdown.\n\nRegular cleaning of motor housings, end bells, rotor assemblies, switchgear enclosures, and connection housings removes these contamination sources before they cause failure. In remanufacturing operations, thorough cleaning before rewinding or reconditioning is essential for quality and warranty compliance."
+        },
+        {
+          "heading": "Cleaning Motor Housings, End Bells, and Rotor Assemblies",
+          "content": "The mechanical components of electric motors \u2014 cast iron or aluminum housings, end bells, bearing housings, and rotor assemblies \u2014 are cleaned effectively in Magido spray cabinet washers. These components do not have the moisture sensitivity of windings and can be cleaned aggressively with heated aqueous solution.\n\nMagido's front-load and top-load spray cabinets accommodate motor housings from fractional HP to large industrial frames. The automated cycle removes oil, carbon, and grease from all external and accessible internal surfaces. Load capacities up to 1,760 lbs handle the heaviest industrial motor frames."
+        },
+        {
+          "heading": "Controlled Cleaning for Sensitive Components",
+          "content": "Components with insulated windings, potted electronics, or sealed assemblies require a more controlled approach \u2014 targeted cleaning of external surfaces and housings rather than full immersion or high-pressure spray directed at sensitive areas.\n\nMagido's adjustable spray pressure and cycle time controls allow technicians to dial in the appropriate cleaning intensity for the component at hand. Temperature control prevents thermal shock to materials with different expansion coefficients. For switchgear and enclosure cleaning, front-load cabinets provide easy access for positioning parts to direct spray away from sensitive internal components."
+        },
+        {
+          "heading": "Post-Cleaning Drying: Critical for Electrical Components",
+          "content": "Residual moisture after washing is the primary concern with electrical component cleaning. Parts must be thoroughly dried before reassembly, testing, or return to service. Magido washers with optional drying stages use heated air circulation to remove surface moisture from cleaned parts within the same machine cycle.\n\nFor critical applications, post-wash baking in a drying oven provides the additional assurance of complete moisture removal before electrical testing. The Magido wash cycle removes the contamination; the drying stage ensures no moisture is reintroduced to the assembly."
+        }
+      ],
+      "keyBenefits": [
+        "Removes carbon, oil mist, metallic dust, and conductive contamination",
+        "Handles motor housings and frames from small to large industrial sizes",
+        "Adjustable pressure and temperature for controlled cleaning of sensitive assemblies",
+        "Optional drying stage removes surface moisture in the same machine cycle",
+        "Stainless steel construction is compatible with alkaline and neutral detergent chemistries"
+      ],
+      "ctaHeading": "Keep Electrical Equipment Running Clean",
+      "ctaText": "Magido's parts washers are used in motor rewind shops, switchgear service operations, and industrial electrical maintenance facilities. Contact our team to discuss your component types and cleaning requirements.",
+      "relatedProductSlugs": [
+        "l101",
+        "l102",
+        "l122",
+        "l152",
+        "x53-25",
+        "x53-30",
+        "x53-40",
+        "fls-30",
+        "fls-35",
+        "a700",
+        "a900"
+      ],
+      "relatedProductHeading": "Recommended for Electrical Component Cleaning"
+    },
+    {
+      "slug": "cleaning-aerospace-components",
+      "type": "use-case",
+      "title": "Cleaning Aerospace Components",
+      "headline": "Aqueous Parts Washers for Aerospace Component Cleaning",
+      "metaTitle": "Cleaning Aerospace Components | Magido USA Industrial Parts Washers",
+      "metaDescription": "Aerospace cleaning demands traceability, repeatability, and contamination-free results. Explore how Magido aqueous parts washers support aerospace MRO and precision manufacturing cleaning requirements.",
+      "intro": "Aerospace cleaning is held to a higher standard than general industrial cleaning \u2014 and for good reason. Turbine components, hydraulic actuators, landing gear assemblies, and structural parts cleaned for MRO or overhaul must meet strict cleanliness specifications. The cleaning process must be repeatable, documentable, and free of contamination introduced by the washer itself. Magido's aqueous parts washers, built entirely from AISI 304 stainless steel with precise temperature and cycle control, are used in aerospace MRO and precision manufacturing operations.",
+      "sections": [
+        {
+          "heading": "Cleanliness Requirements in Aerospace",
+          "content": "Aerospace cleaning specifications are demanding: MIL-spec cleanliness standards, AMS process specifications, and OEM overhaul manual requirements define acceptable contamination levels precisely. Parts that fail cleanliness inspection must be re-cleaned \u2014 a costly process that an effective washer eliminates from the workflow.\n\nAqueous cleaning with controlled temperature, detergent concentration, and cycle time delivers repeatable results. Unlike manual cleaning, where operator technique varies, an automated Magido washer applies the same thermal, chemical, and mechanical energy to every load \u2014 consistent results every cycle."
+        },
+        {
+          "heading": "Turbine and Engine Component Cleaning",
+          "content": "Gas turbine components \u2014 compressor blades, turbine discs, nozzle guide vanes, and accessory gearbox housings \u2014 accumulate carbon deposits, oxidation products, and hydrocarbon contamination during service. MRO cleaning must remove these deposits without damaging protective coatings, altering surface finish, or introducing foreign object debris (FOD).\n\nMagido's immersion washers provide gentle but thorough cleaning through fluid agitation at controlled temperatures \u2014 effective on complex airfoil geometries and internal cooling passages without the impact risk of high-pressure spray on thin-wall components."
+        },
+        {
+          "heading": "Hydraulic and Actuator Component Cleaning",
+          "content": "Aircraft hydraulic components \u2014 actuators, servo valves, manifolds, and pump assemblies \u2014 must be cleaned to particulate cleanliness levels specified by NAS 1638 or ISO 4406 standards. Any residual particulate in reassembled hydraulic components causes accelerated wear, seal damage, and system unreliability.\n\nMagido's Agita immersion washers and precision spray cabinets deliver the cleaning action needed to remove hydraulic fluid residue, particulate, and varnish from internal passages. Filtered wash solution prevents recontamination of cleaned components during the wash cycle itself."
+        },
+        {
+          "heading": "Traceability and Process Control",
+          "content": "Aerospace MRO operations require documented, controlled processes. The cleaning step is no exception \u2014 temperature, detergent, cycle time, and water quality are process parameters that must be controlled and recorded.\n\nMagido washers provide the control points needed: adjustable temperature with consistent hold at set point, programmable cycle timers, and filtration systems that maintain wash solution quality. This controllability allows cleaning operations to be written into process documentation and repeated consistently across shifts and operators."
+        }
+      ],
+      "keyBenefits": [
+        "Delivers repeatable, documentable cleaning results for specification compliance",
+        "AISI 304 stainless steel construction \u2014 no FOD or contamination from the washer",
+        "Immersion agitation cleans complex airfoil and internal passage geometries",
+        "Controlled temperature and cycle time support process documentation requirements",
+        "Filtered wash solution prevents recontamination during cleaning"
+      ],
+      "ctaHeading": "Cleaning Solutions for Aerospace Standards",
+      "ctaText": "Magido's aqueous parts washers support aerospace MRO facilities, overhaul shops, and precision component manufacturers. Contact our team to discuss your cleaning specifications and component types.",
+      "relatedProductSlugs": [
+        "a700",
+        "a900",
+        "a1100",
+        "a1300",
+        "l101",
+        "l102",
+        "l122",
+        "l152",
+        "x53-25",
+        "x53-30",
+        "p600",
+        "p900"
+      ],
+      "relatedProductHeading": "Recommended for Aerospace Cleaning"
+    },
+    {
+      "slug": "cleaning-medical-device-components",
+      "type": "use-case",
+      "title": "Cleaning Medical Device Components",
+      "headline": "Aqueous Parts Washers for Medical Device Component Cleaning",
+      "metaTitle": "Cleaning Medical Device Components | Magido USA Parts Washers",
+      "metaDescription": "Medical device manufacturing demands contamination-free, validated cleaning processes. Learn how Magido aqueous parts washers support precision cleaning for medical components.",
+      "intro": "Medical device manufacturing operates under some of the most stringent cleanliness requirements in any industry. Implantable components, surgical instruments, device housings, and precision-machined parts must be cleaned to validated standards \u2014 free of particulate, machining residue, oils, and process chemicals. Magido's aqueous parts washers, with their all-stainless construction, precise process control, and repeatable cleaning performance, support medical device manufacturers in meeting these exacting requirements.",
+      "sections": [
+        {
+          "heading": "Cleaning Precision Machined Medical Components",
+          "content": "CNC-machined medical components \u2014 orthopedic implants, instrument housings, device frames, and precision fittings \u2014 come off the machine with cutting oil, coolant, metallic chips, and fine particulate that must be completely removed before downstream processing.\n\nMagido's top-load and front-load spray cabinet washers clean machined medical components effectively, removing cutting fluid residue and metallic fines in a single automated cycle. The all-stainless construction ensures no contamination is contributed by the washer itself \u2014 a critical requirement when parts will subsequently undergo passivation, coating, or sterile packaging."
+        },
+        {
+          "heading": "Internal Geometry and Complex Channel Cleaning",
+          "content": "Many medical device components have internal channels, cross-drilled ports, and blind bores \u2014 features that must be demonstrably clean for regulatory compliance. Spray washing alone cannot reliably clean these features. Magido's Agita immersion washers address this through full submersion with high-energy fluid agitation, driving cleaning solution into and through internal features that spray cannot reach.\n\nFor validation purposes, the immersion process is consistent and quantifiable \u2014 the same fluid energy is applied to every load, supporting the process characterization required for IQ/OQ/PQ validation activities."
+        },
+        {
+          "heading": "Material Compatibility and Surface Integrity",
+          "content": "Medical device components are made from titanium alloys, cobalt-chrome, stainless steel, PEEK, and other materials with specific surface requirements. The cleaning process must not alter surface finish, introduce corrosion, or compromise the material properties that the component specification requires.\n\nMagido's temperature-controlled wash systems, combined with appropriate cleaning chemistry, provide effective contamination removal without mechanical abrasion. The adjustable temperature range (up to 167\u00b0F) accommodates different material requirements. All-stainless construction eliminates the risk of galvanic contamination that occurs when dissimilar metals contact cleaning solution."
+        },
+        {
+          "heading": "Supporting Validation and Regulatory Compliance",
+          "content": "FDA 21 CFR Part 820 and ISO 13485 require that cleaning processes be validated and controlled. The cleaning step for medical device components is a manufacturing process that must be defined, characterized, and demonstrated to produce consistently clean parts.\n\nMagido washers provide the process control parameters needed for validation: defined and stable operating temperature, adjustable and repeatable cycle time, consistent mechanical energy delivery, and filtration that maintains wash solution quality throughout the production run. These controllable parameters form the foundation of a validatable cleaning process."
+        }
+      ],
+      "keyBenefits": [
+        "All-stainless construction eliminates washer-introduced contamination",
+        "Immersion agitation cleans internal channels and blind bores reliably",
+        "Precise temperature and cycle time control supports process validation",
+        "Compatible with titanium, cobalt-chrome, stainless, and polymer components",
+        "Repeatable cleaning performance supports FDA 21 CFR 820 and ISO 13485 compliance"
+      ],
+      "ctaHeading": "Cleaning Solutions for Medical Manufacturing",
+      "ctaText": "Magido's aqueous parts washers support medical device manufacturers, orthopedic implant producers, and surgical instrument facilities. Contact our team to discuss your component specifications and validation requirements.",
+      "relatedProductSlugs": [
+        "a700",
+        "a900",
+        "a1100",
+        "a1300",
+        "l101",
+        "l102",
+        "l122",
+        "l152",
+        "p600",
+        "p900"
+      ],
+      "relatedProductHeading": "Recommended for Medical Device Cleaning"
+    }
+  ]
+}

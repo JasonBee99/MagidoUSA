@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronRight, Clock, ArrowLeft, ArrowRight } from 'lucide-react';
 import { getBlogPost, getAllBlogSlugs, blogPosts } from '@/data/blog';
+import { ShareButtons } from '@/components/ShareButtons';
 
 export function generateStaticParams() {
   return getAllBlogSlugs().map((slug) => ({ slug }));
@@ -11,7 +12,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const post = getBlogPost(params.slug);
   if (!post) return {};
-  return { title: post.metaTitle + ' | Magido USA', description: post.metaDescription };
+  return {
+    title: post.metaTitle + ' | Magido USA',
+    description: post.metaDescription,
+    alternates: { canonical: `https://www.magidousa.com/blog/${params.slug}` },
+    openGraph: { url: `https://www.magidousa.com/blog/${params.slug}` },
+  };
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
@@ -44,6 +50,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
           <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">{post.title}</h1>
 
+          <div className="mt-5 flex items-center justify-between border-b border-[var(--color-border)] pb-5">
+            <ShareButtons title={post.title} slug={params.slug} />
+          </div>
+
           <div className="mt-8 space-y-6">
             {post.sections.map((section, i) => (
               <div key={i}>
@@ -63,6 +73,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
 
           <div className="mt-10 flex items-center justify-between border-t border-[var(--color-border)] pt-6">
+            <ShareButtons title={post.title} slug={params.slug} />
+          </div>
+
+          <div className="mt-6 flex items-center justify-between">
             {prevPost ? (
               <Link href={`/blog/${prevPost.slug}`} className="group flex items-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange">
                 <ArrowLeft className="h-4 w-4" /><span className="hidden sm:inline truncate max-w-[200px]">{prevPost.title}</span><span className="sm:hidden">Previous</span>

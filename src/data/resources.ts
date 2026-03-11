@@ -525,6 +525,45 @@ export const resourceDocuments: ResourceDocument[] = [
   },
 ];
 
+// ─── Series PDF brochures — only confirmed files ───
+export const SERIES_BROCHURES: {
+  seriesSlug: string;
+  seriesName: string;
+  fileName: string;
+  categoryName: string;
+}[] = [
+  { seriesSlug: 'dg',       seriesName: 'DG Series',        fileName: 'MAGIDO DG_USA.pdf',      categoryName: 'Manual Washers' },
+  { seriesSlug: 'l',        seriesName: 'L Series',         fileName: 'MAGIDO L_USA.pdf',       categoryName: 'Manual Washers' },
+  { seriesSlug: 'hp',       seriesName: 'HP Series',        fileName: 'MAGIDO HP_USA.pdf',      categoryName: 'Manual Washers' },
+  { seriesSlug: 'x81',      seriesName: 'X81 Series',       fileName: 'MAGIDO X81_USA.pdf',     categoryName: 'Top Load Washers' },
+  { seriesSlug: 'x51',      seriesName: 'X51 Series',       fileName: 'MAGIDO X51_USA.pdf',     categoryName: 'Top Load Washers' },
+  { seriesSlug: 'x51-2',    seriesName: 'X51/2 Series',     fileName: 'MAGIDO X51_2_USA.pdf',   categoryName: 'Top Load Washers' },
+  { seriesSlug: 'x51hp',    seriesName: 'X51HP Series',     fileName: 'MAGIDO X51HP.pdf',       categoryName: 'Top Load Washers' },
+  { seriesSlug: 'x53',      seriesName: 'X53 Series',       fileName: 'MAGIDO X53_USA.pdf',     categoryName: 'Front Load Washers' },
+  { seriesSlug: 'x53-2',    seriesName: 'X53/2 Series',     fileName: 'MAGIDO X53_2_USA.pdf',   categoryName: 'Front Load Washers' },
+  { seriesSlug: 'eco',      seriesName: 'ECO Series',       fileName: 'MAGIDO ECO_USA.pdf',     categoryName: 'Top Load Washers' },
+  { seriesSlug: 'spira-1b', seriesName: 'Spira 1b Series',  fileName: 'MAGIDO spiraline.pdf',   categoryName: 'Rotary Drum Washers' },
+  { seriesSlug: 'spira-2b', seriesName: 'Spira 2b Series',  fileName: 'MAGIDO spiraline.pdf',   categoryName: 'Rotary Drum Washers' },
+];
+
+/**
+ * Get brochures grouped by category for the resources page
+ */
+export function getBrochuresByCategory(): {
+  categoryName: string;
+  brochures: typeof SERIES_BROCHURES;
+}[] {
+  const groups: Record<string, typeof SERIES_BROCHURES> = {};
+  for (const b of SERIES_BROCHURES) {
+    if (!groups[b.categoryName]) groups[b.categoryName] = [];
+    groups[b.categoryName].push(b);
+  }
+  return Object.entries(groups).map(([categoryName, brochures]) => ({
+    categoryName,
+    brochures,
+  }));
+}
+
 // ─── Helpers ───
 export function getAllResourceDocuments(): ResourceDocument[] {
   return resourceDocuments;

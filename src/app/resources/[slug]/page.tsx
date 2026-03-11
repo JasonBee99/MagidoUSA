@@ -24,6 +24,8 @@ export function generateMetadata({
   return {
     title: doc.title,
     description: doc.metaDescription,
+    alternates: { canonical: `https://www.magidousa.com/resources/${params.slug}` },
+    openGraph: { url: `https://www.magidousa.com/resources/${params.slug}` },
   };
 }
 

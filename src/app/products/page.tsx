@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Products — Industrial Aqueous Parts Washers',
   description:
     'Browse all Magido USA aqueous parts washing systems: manual, top load, front load, immersion, conveyor, rotary drum, and rotary immersion washers. All built from AISI 304 stainless steel.',
+  alternates: {
+    canonical: 'https://www.magidousa.com/products',
+  },
 };
 
 export default function ProductsIndexPage() {

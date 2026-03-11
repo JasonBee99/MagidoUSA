@@ -14,11 +14,12 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/magido-usa-logo.png"
+                src="/images/magido-usa-logo.webp"
                 alt="Magido USA"
                 width={192}
                 height={43}
                 className="h-10 w-auto"
+                sizes="192px"
               />
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)]">
@@ -67,13 +68,8 @@ export function Footer() {
             </h3>
             <ul className="mt-3 space-y-2">
               <li>
-                <Link href="/resources" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
-                  Product Catalog & Docs
-                </Link>
-              </li>
-              <li>
-                <Link href="/how-to-choose" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
-                  How to Choose a Washer
+                <Link href="/about" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
+                  About Magido USA
                 </Link>
               </li>
               <li>
@@ -82,13 +78,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact#evaluation" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
-                  Process Evaluation
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
-                  About Magido USA
+                <Link href="/how-to-choose" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
+                  How to Choose a Washer
                 </Link>
               </li>
               <li>
@@ -100,6 +91,21 @@ export function Footer() {
                 >
                   Magido Italy <ExternalLink className="h-3 w-3" />
                 </a>
+              </li>
+              <li>
+                <Link href="/contact#evaluation" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
+                  Process Evaluation
+                </Link>
+              </li>
+              <li>
+                <Link href="/resources" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
+                  Product Catalog & Docs
+                </Link>
+              </li>
+              <li>
+                <Link href="/solutions" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
+                  Solutions
+                </Link>
               </li>
             </ul>
           </div>

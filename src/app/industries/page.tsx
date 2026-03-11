@@ -6,6 +6,9 @@ import { industryPages } from '@/data/industries';
 export const metadata: Metadata = {
   title: 'Industries We Serve — Aqueous Parts Washing Solutions',
   description: 'Magido aqueous parts washers serve automotive, aerospace, machining, heavy equipment, medical device, and food processing industries.',
+  alternates: {
+    canonical: 'https://www.magidousa.com/industries',
+  },
 };
 
 export default function IndustriesPage() {

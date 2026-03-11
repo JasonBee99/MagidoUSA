@@ -35,9 +35,13 @@ export function generateMetadata({
   return {
     title: `${category.name} — Industrial Aqueous Parts Washers`,
     description: metaDescription,
+    alternates: {
+      canonical: `https://www.magidousa.com/products/${params.category}`,
+    },
     openGraph: {
       title: `${category.name} | Magido USA`,
       description: category.shortDescription,
+      url: `https://www.magidousa.com/products/${params.category}`,
     },
   };
 }

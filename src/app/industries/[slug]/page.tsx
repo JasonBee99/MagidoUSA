@@ -11,7 +11,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const page = getIndustryPage(params.slug);
   if (!page) return {};
-  return { title: page.metaTitle + ' | Magido USA', description: page.metaDescription };
+  return {
+    title: page.metaTitle + ' | Magido USA',
+    description: page.metaDescription,
+    alternates: { canonical: `https://www.magidousa.com/industries/${params.slug}` },
+    openGraph: { url: `https://www.magidousa.com/industries/${params.slug}` },
+  };
 }
 
 export default function IndustryPageRoute({ params }: { params: { slug: string } }) {

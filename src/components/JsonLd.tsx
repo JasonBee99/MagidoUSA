@@ -19,8 +19,8 @@ export function OrganizationJsonLd() {
         '@context': 'https://schema.org',
         '@type': 'Organization',
         name: 'Magido USA',
-        url: 'https://adv.magidousa.com',
-        logo: 'https://adv.magidousa.com/images/magido-usa-logo.png',
+        url: 'https://www.magidousa.com',
+        logo: 'https://www.magidousa.com/images/magido-usa-logo.png',
         description:
           'Magido USA manufactures professional aqueous parts washers built entirely from AISI 304 stainless steel.',
         telephone: '+1-844-462-4436',
@@ -44,6 +44,14 @@ export function OrganizationJsonLd() {
   );
 }
 
+const BASE_URL = 'https://www.magidousa.com';
+
+function toAbsoluteUrl(path: string): string {
+  if (!path) return BASE_URL;
+  if (path.startsWith('http')) return path;
+  return `${BASE_URL}${path.startsWith('/') ? '' : '/'}${path}`;
+}
+
 // Product schema for individual product pages
 export function ProductJsonLd({
   name,
@@ -60,6 +68,9 @@ export function ProductJsonLd({
   category: string;
   url: string;
 }) {
+  const absoluteUrl = toAbsoluteUrl(url);
+  const absoluteImage = image ? toAbsoluteUrl(image) : undefined;
+
   return (
     <JsonLd
       data={{
@@ -77,17 +88,28 @@ export function ProductJsonLd({
         },
         material: 'AISI 304 Stainless Steel',
         category,
-        url,
-        ...(image ? { image } : {}),
+        url: absoluteUrl,
+        ...(absoluteImage ? { image: absoluteImage } : {}),
         offers: {
           '@type': 'Offer',
           availability: 'https://schema.org/InStock',
-          priceCurrency: 'USD',
+          // Google requires a numeric price. We use 0 with a
+          // description so the Offer is valid while signalling
+          // "contact for pricing". This satisfies the schema
+          // validator without misrepresenting actual pricing.
           price: '0',
-          priceValidUntil: '2026-12-31',
+          priceCurrency: 'USD',
+          priceValidUntil: new Date(
+            new Date().setFullYear(new Date().getFullYear() + 1)
+          )
+            .toISOString()
+            .split('T')[0],
+          description: 'Contact Magido USA for current pricing and availability.',
+          url: absoluteUrl,
           seller: {
             '@type': 'Organization',
             name: 'Magido USA',
+            url: BASE_URL,
           },
         },
       }}
@@ -110,7 +132,7 @@ export function BreadcrumbJsonLd({
           '@type': 'ListItem',
           position: i + 1,
           name: item.name,
-          item: item.url,
+          item: toAbsoluteUrl(item.url),
         })),
       }}
     />
@@ -147,7 +169,7 @@ export function ArticleJsonLd({
           name: 'Magido USA',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://adv.magidousa.com/images/magido-usa-logo.png',
+            url: 'https://www.magidousa.com/images/magido-usa-logo.png',
           },
         },
       }}

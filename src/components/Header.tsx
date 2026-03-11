@@ -11,6 +11,7 @@ import { getAllCategories, getSeriesByCategory } from '@/lib/products';
 const categories = getAllCategories();
 
 const NAV_LINKS = [
+  { href: '/solutions', label: 'Solutions' },
   { href: '/about', label: 'About' },
   { href: '/resources', label: 'Resources' },
   { href: '/blog', label: 'Blog' },
@@ -101,11 +102,12 @@ export function Header() {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <Image
-                src="/images/magido-usa-logo.png"
+                src="/images/magido-usa-logo.webp"
                 alt="Magido USA"
                 width={216}
                 height={48}
                 className="h-10 w-auto lg:h-12"
+                sizes="216px"
                 priority
               />
             </Link>

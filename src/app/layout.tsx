@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
+import Script from 'next/script';
 import '@/styles/globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { CompareProvider } from '@/components/CompareProvider';
@@ -7,6 +8,8 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CompareBar } from '@/components/CompareBar';
 import { OrganizationJsonLd } from '@/components/JsonLd';
+
+const GA_ID = 'G-M6YLZ7YG7T';
 
 const bodyFont = Inter({
   subsets: ['latin'],
@@ -54,12 +57,21 @@ export const metadata: Metadata = {
     title: 'Magido USA — Leaders in Aqueous Parts Washing Systems',
     description:
       'Professional aqueous parts washers built from AISI 304 stainless steel. Spray cabinet, immersion, conveyor, and rotary systems.',
+    images: [
+      {
+        url: 'https://www.magidousa.com/images/og-default.png',
+        width: 1200,
+        height: 630,
+        alt: 'Magido USA — Aqueous Parts Washing Systems',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Magido USA — Aqueous Parts Washing Systems',
     description:
       'Professional aqueous parts washers built from AISI 304 stainless steel.',
+    images: ['https://www.magidousa.com/images/og-default.png'],
   },
   robots: {
     index: true,
@@ -118,6 +130,22 @@ export default function RootLayout({
             <CompareBar />
           </CompareProvider>
         </ThemeProvider>
+
+        {/* ─── Google Analytics 4 ─── */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
       </body>
     </html>
   );

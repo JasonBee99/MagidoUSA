@@ -6,9 +6,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        disallow: ['/api/', '/_next/', '/admin/'],
       },
     ],
-    sitemap: 'https://adv.magidousa.com/sitemap.xml',
+    sitemap: 'https://www.magidousa.com/sitemap.xml',
+    host: 'https://www.magidousa.com',
   };
 }

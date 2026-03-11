@@ -2,15 +2,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getAllCategories, getCategoryRepresentativeImage } from '@/lib/products';
 import { ArrowRight, Shield, Zap, Leaf, HeadphonesIcon } from 'lucide-react';
-import { HeroCarousel } from '@/components/HeroCarousel';
+import { HomeHero } from '@/components/HomeHero';
 
 export default function HomePage() {
   const categories = getAllCategories();
 
   return (
     <>
-      {/* Hero Carousel */}
-      <HeroCarousel />
+      {/* Hero */}
+      <HomeHero />
 
       {/* ─── Built for Every Application ─── */}
       <section className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
@@ -37,7 +37,7 @@ export default function HomePage() {
                   className="group relative overflow-hidden rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] transition-all hover:border-magido-orange/40 hover:shadow-xl"
                 >
                   {/* Number badge */}
-                  <div className="absolute left-4 top-4 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-magido-orange/10 text-xs font-bold text-magido-orange ring-1 ring-magido-orange/30">
+                  <div className="absolute left-4 top-4 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-magido-blue/10 text-xs font-bold text-magido-blue ring-1 ring-magido-blue/20">
                     {String(index + 1).padStart(2, '0')}
                   </div>
 
@@ -186,12 +186,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl">
           <div className="overflow-hidden rounded-2xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] shadow-sm">
             <div className="p-8 lg:p-12">
-
               <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
 
                 {/* ── Left: Identity + contact ── */}
                 <div>
-                  {/* Name row: text left, headshot right */}
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="font-display text-xs font-semibold uppercase tracking-widest text-magido-orange">
@@ -204,7 +202,6 @@ export default function HomePage() {
                         Global Parts Cleaning Manufacturer at Magido USA
                       </p>
                     </div>
-                    {/* Headshot — aligned right of name block */}
                     <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-2xl ring-4 ring-magido-orange/20 sm:h-28 sm:w-28">
                       <Image
                         src="/images/scott-morin.webp"
@@ -216,7 +213,6 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  {/* Description + CTAs below the name row */}
                   <p className="mt-5 text-sm leading-relaxed text-[var(--color-text-secondary)]">
                     Contact Scott today — he wants to understand your parts cleaning challenges and recommend the right solution. Free consultation, same-day response.
                   </p>
@@ -271,7 +267,6 @@ export default function HomePage() {
                 </div>
 
               </div>
-
             </div>
           </div>
         </div>

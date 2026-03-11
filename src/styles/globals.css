@@ -16,8 +16,8 @@
   --color-bg-secondary: #f4f6f9;
   --color-bg-tertiary: #e8ecf2;
   --color-text: #315687;
-  --color-text-secondary: #5a7a9e;
-  --color-text-muted: #8fa3ba;
+  --color-text-secondary: #4d6a8f;   /* was #5a7a9e — darkened for 4.5:1 contrast */
+  --color-text-muted: #556c90;       /* was #8fa3ba — darkened for 4.5:1 contrast */
   --color-border: #d4dde8;
   --color-border-light: #e8ecf2;
 
@@ -37,7 +37,7 @@
   --color-bg-tertiary: #162a48;
   --color-text: #e2eaf4;
   --color-text-secondary: #a0b4cc;
-  --color-text-muted: #6b83a0;
+  --color-text-muted: #90aac7;       /* was #6b83a0 — lightened for 4.5:1 contrast */
   --color-border: #1e3554;
   --color-border-light: #162a48;
 

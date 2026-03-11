@@ -5,6 +5,9 @@ import { ChevronRight, ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'How to Choose a Parts Washer — Sizing & Selection Guide',
   description: 'Find the right aqueous parts washer. Compare spray cabinet, immersion, conveyor, and rotary systems by part size, throughput, and cleaning method.',
+  alternates: {
+    canonical: 'https://www.magidousa.com/how-to-choose',
+  },
 };
 
 const METHODS = [

@@ -47,19 +47,36 @@ export function generateMetadata({
   return {
     title: `${product.name} | Magido USA`,
     description: metaDescription,
+    alternates: {
+      canonical: `https://www.magidousa.com/products/${params.category}/${params.product}`,
+    },
     openGraph: {
       title: `${product.name} | Magido USA`,
       description: metaDescription,
+      url: `https://www.magidousa.com/products/${params.category}/${params.product}`,
       images: product.images.length > 0 ? [{ url: product.images[0] }] : undefined,
     },
   };
 }
 
+// ─── Series PDF brochure map — only series with a confirmed PDF ───
+const SERIES_PDF: Record<string, string> = {
+  'dg':      'MAGIDO DG_USA.pdf',
+  'eco':     'MAGIDO ECO_USA.pdf',
+  'hp':      'MAGIDO HP_USA.pdf',
+  'l':       'MAGIDO L_USA.pdf',
+  'spira-1b':'MAGIDO spiraline.pdf',
+  'spira-2b':'MAGIDO spiraline.pdf',
+  'x51-2':   'MAGIDO X51_2_USA.pdf',
+  'x51hp':   'MAGIDO X51HP.pdf',
+  'x51':     'MAGIDO X51_USA.pdf',
+  'x53-2':   'MAGIDO X53_2_USA.pdf',
+  'x53':     'MAGIDO X53_USA.pdf',
+  'x81':     'MAGIDO X81_USA.pdf',
+};
+
 // ─── Key specs — ordered list of candidates, first match per label wins ───
-// Each entry: { specKeys: string[], label: string }
-// Multiple specKeys allow fallback across categories that use different key names
 const KEY_SPEC_CANDIDATES: { specKeys: string[]; label: string }[] = [
-  // Size / working area
   { specKeys: ['Working Area', 'Working Envelope'],                       label: 'Working Area' },
   { specKeys: ['Turntable Basket Diameter'],                              label: 'Basket Dia.' },
   { specKeys: ['Turntable Basket', 'Basket Dimensions'],                  label: 'Basket Size' },
@@ -67,25 +84,18 @@ const KEY_SPEC_CANDIDATES: { specKeys: string[]; label: string }[] = [
   { specKeys: ['Drum Length'],                                            label: 'Drum Length' },
   { specKeys: ['Width of Conveyor belt', 'Available width of conveyor belt'], label: 'Belt Width' },
   { specKeys: ['Usable washing height'],                                  label: 'Wash Height' },
-  // Load
   { specKeys: ['Load Weight'],                                            label: 'Load Weight' },
   { specKeys: ['Load Height'],                                            label: 'Load Height' },
-  // Tank / fluid
   { specKeys: ['Fluid/Tank Capacity', 'Fluid Capacity', 'Tank Capacity'], label: 'Tank' },
   { specKeys: ['Wash Tank', 'Wash Fluid Capacity'],                       label: 'Wash Tank' },
   { specKeys: ['Rinse Fluid Capacity'],                                   label: 'Rinse Tank' },
-  // Pump / flow
   { specKeys: ['Pump', 'Pump(s)', 'Wash Pump', 'Wash pump'],             label: 'Pump' },
   { specKeys: ['Flow Rate'],                                              label: 'Flow Rate' },
   { specKeys: ['Spray Pressure'],                                         label: 'Spray Pressure' },
-  // Heating / temperature
   { specKeys: ['Heater', 'Wash Heater', 'Wash electrical heating'],       label: 'Heater' },
   { specKeys: ['Max Operating Temperature', 'Operating Temperature', 'Solution temperature'], label: 'Temperature' },
-  // Rotation (Platinum)
   { specKeys: ['Rotation Speed'],                                         label: 'Rotation' },
-  // Production (Rotary Drum)
   { specKeys: ['Production'],                                             label: 'Production' },
-  // Power
   { specKeys: ['Voltage', 'Voltage / Amperage', 'Power supply'],          label: 'Power Supply' },
 ];
 
@@ -102,6 +112,8 @@ export default function ProductPage({
 
   const series = getSeriesBySlug(product.seriesSlug);
   const seriesProducts = getProductsBySeries(product.seriesSlug);
+  const pdfFile = product.seriesSlug ? SERIES_PDF[product.seriesSlug] ?? null : null;
+  const pdfHref = pdfFile ? `/docs/series/${encodeURIComponent(pdfFile)}` : null;
   const { prev, next } = getCategoryNavigation(params.product);
   const prevSeries = prev ? getSeriesBySlug(prev.seriesSlug) : null;
   const nextSeries = next ? getSeriesBySlug(next.seriesSlug) : null;
@@ -129,7 +141,7 @@ export default function ProductPage({
 
       keySpecs.push({ label: candidate.label, value: displayValue });
       seenLabels.add(candidate.label);
-      break; // first matching key wins
+      break;
     }
   }
 
@@ -180,7 +192,6 @@ export default function ProductPage({
             {/* Left: Image with floating Prev / Next buttons */}
             <div className="lg:w-5/12">
               <div className="relative">
-                {/* Image — full width of container */}
                 <ProductImageGallery
                   images={product.images}
                   alt={product.name}
@@ -188,7 +199,6 @@ export default function ProductPage({
                   model={product.model}
                 />
 
-                {/* Prev button — floats over left edge, vertically centered */}
                 {prev && (
                   <Link
                     href={`/products/${params.category}/${prev.slug}`}
@@ -201,7 +211,6 @@ export default function ProductPage({
                   </Link>
                 )}
 
-                {/* Next button — floats over right edge, vertically centered */}
                 {next && (
                   <Link
                     href={`/products/${params.category}/${next.slug}`}
@@ -218,31 +227,28 @@ export default function ProductPage({
 
             {/* Right: Product info */}
             <div className="lg:w-7/12">
-              {/* Series badge */}
               {series && (
-                <p className="text-sm font-medium text-[var(--color-text-muted)]">
+                <p className="text-sm font-semibold text-[var(--color-text-secondary)]">
                   {series.name}
                 </p>
               )}
 
-              {/* Product title */}
               <h1 className="mt-1 font-display text-2xl font-bold tracking-tight text-[var(--color-text)] sm:text-3xl lg:text-4xl">
                 {product.name}
               </h1>
 
-              {/* Description */}
               {(product.description || series?.description) && (
                 <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base">
                   {product.description || series?.description}
                 </p>
               )}
 
-              {/* Key specs — bold label / value pairs */}
+              {/* Key specs — wrapped in <dl> for valid semantics */}
               {keySpecs.length > 0 && (
-                <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 lg:grid-cols-4">
+                <dl className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 lg:grid-cols-4">
                   {keySpecs.map((ks) => (
                     <div key={ks.label}>
-                      <dt className="text-xs font-medium text-[var(--color-text-muted)]">
+                      <dt className="text-xs font-medium text-[var(--color-text-secondary)]">
                         {ks.label}
                       </dt>
                       <dd className="mt-0.5 text-sm font-bold text-[var(--color-text)]">
@@ -250,7 +256,7 @@ export default function ProductPage({
                       </dd>
                     </div>
                   ))}
-                </div>
+                </dl>
               )}
 
               {/* CTAs */}
@@ -267,13 +273,27 @@ export default function ProductPage({
                 >
                   Process Evaluation
                 </Link>
+                {pdfHref && (
+                  <a
+                    href={pdfHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3 text-sm font-semibold text-[var(--color-text-secondary)] transition-colors hover:border-magido-orange hover:text-magido-orange"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                      <path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z" />
+                      <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
+                    </svg>
+                    Download Brochure
+                  </a>
+                )}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── Spec Tabs (Features | Options | Full Specifications) ─── */}
+      {/* ─── Spec Tabs ─── */}
       <section className="px-4 pb-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <ProductSpecTabs product={product} series={series || null} />
