@@ -6,6 +6,7 @@ import {
   getBrochuresByCategory,
 } from '@/data/resources';
 import { ResourceAccordion } from './ResourceAccordion';
+import { ResourceVideoCard, type ResourceVideo } from '@/components/ResourceVideoCard';
 
 export const metadata: Metadata = {
   title: 'Resources & Documentation',
@@ -156,6 +157,34 @@ export default function ResourcesPage() {
           </div>
         </div>
 
+        {/* ─── Videos ─── */}
+        <div className="mb-14">
+          <p className="font-display text-xs font-semibold uppercase tracking-wider text-magido-orange">
+            Videos
+          </p>
+          <h2 className="mt-1 mb-6 font-display text-2xl font-bold text-[var(--color-text)]">
+            Product &amp; Installation Videos
+          </h2>
+
+          <h3 className="mb-3 font-display text-sm font-semibold uppercase tracking-wider text-[var(--color-text-secondary)]">
+            Installation Guides
+          </h3>
+          <div className="mb-8 grid gap-4 sm:grid-cols-2">
+            {INSTALLATION_VIDEOS.map((v) => (
+              <ResourceVideoCard key={v.id} video={v} />
+            ))}
+          </div>
+
+          <h3 className="mb-3 font-display text-sm font-semibold uppercase tracking-wider text-[var(--color-text-secondary)]">
+            Product Demonstrations
+          </h3>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {DEMO_VIDEOS.map((v) => (
+              <ResourceVideoCard key={v.id} video={v} />
+            ))}
+          </div>
+        </div>
+
         {/* ─── Bottom CTA ─── */}
         <div className="mt-16 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-8 text-center">
           <h2 className="font-display text-xl font-bold text-[var(--color-text)]">
@@ -183,3 +212,59 @@ export default function ResourcesPage() {
     </>
   );
 }
+
+// ─── Video data ───────────────────────────────────────────────────────────────
+
+const INSTALLATION_VIDEOS: ResourceVideo[] = [
+  {
+    id: 'hp-instructional',
+    title: 'HP Series Instructional Guide',
+    description: 'Step-by-step instructional video for the HP Series high-pressure manual cabinet washers.',
+    youtubeId: 'uuyJ0DRmT2M',
+    productLink: '/products/manual-washers?series=hp-series',
+    productLinkLabel: 'View HP Series',
+  },
+];
+
+const DEMO_VIDEOS: ResourceVideo[] = [
+  {
+    id: 'hp-series-demo',
+    title: 'HP Series',
+    description: 'HP Series high-pressure manual cabinet washers — powerful spray wand cleaning for shop-floor applications.',
+    youtubeId: 'sc5ArM0rB94',
+    productLink: '/products/manual-washers?series=hp-series',
+    productLinkLabel: 'View HP Series',
+  },
+  {
+    id: 'platinum-demo',
+    title: 'Platinum Series',
+    description: 'Multi-action rotary immersion washers for the most demanding cleaning applications.',
+    youtubeId: '1Qrr-9qi16s',
+    productLink: '/products/rotary-immersion-washers',
+    productLinkLabel: 'View Platinum Series',
+  },
+  {
+    id: 'x51-demo',
+    title: 'X51 Series',
+    description: 'Professional single-stage top load spray cabinet washers.',
+    youtubeId: 'A-BYLrmWdsg',
+    productLink: '/products/top-load-washers?series=x51-series',
+    productLinkLabel: 'View X51 Series',
+  },
+  {
+    id: 'x51-2-demo',
+    title: 'X51/2 Series',
+    description: 'Dual-stage top load washers with separate wash and rinse tanks.',
+    youtubeId: 'P-4oF1WX7Qw',
+    productLink: '/products/top-load-washers?series=x51-2-series',
+    productLinkLabel: 'View X51/2 Series',
+  },
+  {
+    id: 'rotary-drum-demo',
+    title: 'Rotary Drum Series',
+    description: 'Helical drum washers for bulk cleaning of small, loose parts — Jolly, Spira 1b, and Spira 2b.',
+    youtubeId: '4VWa99wPMK0',
+    productLink: '/products/rotary-drum-washers',
+    productLinkLabel: 'View Rotary Drum Series',
+  },
+];

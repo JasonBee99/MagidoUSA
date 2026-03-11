@@ -1,103 +1,375 @@
-export interface IndustryPage {
-  slug: string;
-  name: string;
-  metaTitle: string;
-  metaDescription: string;
-  intro: string;
-  sections: { heading: string; content: string }[];
-  cta: string;
+// src/data/industries.ts
+// Data-driven industries pages — add new industries here, no code changes needed.
+
+export interface IndustryChallenge {
+  title: string;
+  description: string;
 }
 
-export const industryPages: IndustryPage[] = [
+export interface IndustryRecommendedSystem {
+  categorySlug: string;
+  categoryName: string;
+  seriesSlugs: string[];         // highlight these series
+  reason: string;
+}
+
+export interface Industry {
+  slug: string;
+  name: string;
+  icon: string;
+  tagline: string;
+  description: string;
+  heroStat: { value: string; label: string };
+  challenges: IndustryChallenge[];
+  recommendedSystems: IndustryRecommendedSystem[];
+  relatedSolutionSlugs: string[];
+  metaDescription: string;
+}
+
+export const INDUSTRIES: Industry[] = [
   {
     slug: 'automotive',
-    name: 'Automotive Manufacturing',
-    metaTitle: 'Parts Washers for Automotive Manufacturing',
-    metaDescription: 'Magido aqueous parts washers for automotive manufacturing — engine blocks, cylinder heads, transmissions, brake components. Stainless steel spray cabinet, immersion, and conveyor systems.',
-    intro: 'Automotive manufacturing demands cleaning systems that can keep pace with production schedules while meeting strict cleanliness specifications. From raw castings coming off the foundry line to precision-machined engine components heading into assembly, every part needs to be clean — and the cleaning step can\'t be the bottleneck.',
-    sections: [
-      { heading: 'Engine Components', content: 'Cylinder heads, blocks, intake manifolds, exhaust manifolds, valve covers, and oil pans carry oils, metal chips, casting sand, and carbon deposits. Magido X51 and X53 series spray cabinet washers handle these parts efficiently, with turntables sized for the largest common engine components.' },
-      { heading: 'Transmission & Drivetrain', content: 'Housings, gear cases, clutch housings, and differential cases require thorough cleaning before assembly. The X53/2 dual-stage wash-and-rinse system ensures parts are free of both machining contamination and detergent residue.' },
-      { heading: 'Brake Systems', content: 'Calipers, rotors, drums, and brake hardware need degreasing before installation. The compact X81 series handles these parts at the work-cell level, eliminating transport to a centralized wash station.' },
-      { heading: 'Small Parts in Volume', content: 'Fasteners, clips, springs, valve train components, and other small parts benefit from continuous bulk cleaning. Magido\'s Jolly and Spira rotary drum washers clean thousands of small parts per shift.' },
+    name: 'Automotive',
+    icon: '🚗',
+    tagline: 'High-throughput cleaning for production and MRO',
+    description:
+      'Automotive manufacturing and maintenance demand parts washers that keep pace with high-volume production while delivering consistent, validated cleanliness. From engine blocks and transmission housings to stamped brackets and fuel-system components, Magido aqueous systems handle the full range of automotive cleaning challenges — without solvents.',
+    heroStat: { value: '74', label: 'Models Available' },
+    challenges: [
+      {
+        title: 'Mixed Contaminants',
+        description:
+          'Coolants, stamping oils, forming lubricants, carbon deposits, and metallic fines all present on the same production floor.',
+      },
+      {
+        title: 'High Throughput',
+        description:
+          'Production-line cleaning must keep pace with machining cells and assembly — downtime is not an option.',
+      },
+      {
+        title: 'Component Size Variation',
+        description:
+          'From small fasteners and valvetrain parts to full engine blocks and axle housings — one facility may need several machine types.',
+      },
+      {
+        title: 'Cleanliness Verification',
+        description:
+          'OEM and Tier 1 specifications often require documented cleanliness levels per VDA 19 or ISO 16232.',
+      },
     ],
-    cta: 'Contact us at 844-4MA-GIDO (844-462-4436) for automotive parts cleaning solutions.',
+    recommendedSystems: [
+      {
+        categorySlug: 'in-line-belt-conveyor-washers',
+        categoryName: 'In-Line Belt Conveyor Washers',
+        seriesSlugs: ['gold-1b', 'gold-2b', 'silver'],
+        reason:
+          'Continuous-flow conveyor washers integrate directly into production lines for uninterrupted part flow.',
+      },
+      {
+        categorySlug: 'rotary-drum-washers',
+        categoryName: 'Rotary Drum Washers',
+        seriesSlugs: ['spira-1b', 'spira-2b'],
+        reason:
+          'Bulk-clean fasteners, stampings, and small components at high volume with minimal handling.',
+      },
+      {
+        categorySlug: 'front-load-washers',
+        categoryName: 'Front Load Washers',
+        seriesSlugs: ['x53', 'x53-2', 'fls'],
+        reason:
+          'Heavy engine blocks, housings, and large castings load easily through the front door.',
+      },
+    ],
+    relatedSolutionSlugs: [
+      'cleaning-automotive-transmission-parts',
+      'removing-stamping-and-forming-lubricants',
+    ],
+    metaDescription:
+      'Aqueous parts washers for automotive manufacturing and MRO — belt conveyor, rotary drum, and front load systems for engine, transmission, and stamped component cleaning.',
   },
   {
-    slug: 'aerospace-defense',
-    name: 'Aerospace & Defense',
-    metaTitle: 'Parts Washers for Aerospace & Defense | Precision Cleaning',
-    metaDescription: 'Magido aqueous parts washers for aerospace and defense. Precision cleaning of turbine components, hydraulic assemblies, and structural parts in AISI 304 stainless steel.',
-    intro: 'Aerospace and defense manufacturing operates under some of the most demanding cleanliness specifications in any industry. Residual contamination on a turbine blade, a hydraulic valve body, or a structural fitting isn\'t just a quality issue — it\'s a safety issue.',
-    sections: [
-      { heading: 'Turbine & Engine Components', content: 'Blades, vanes, housings, and combustor parts carry machining oils, coolants, and particulate that must be removed before inspection, coating, or assembly. The Platinum series rotary immersion washers reach internal cooling passages and complex airfoil geometries.' },
-      { heading: 'Hydraulic & Pneumatic Components', content: 'Valve bodies, actuator housings, and manifolds with intersecting internal bores require immersion cleaning. The Agita series provides controlled immersion with pneumatic agitation for thorough internal cleaning.' },
-      { heading: 'Structural Components', content: 'Brackets, fittings, frames, and panels need surface preparation before coating. X51 and X53 spray cabinet washers remove oils, and dual-stage X51/2 and X53/2 systems provide clean rinse for coating adhesion.' },
-      { heading: 'Fasteners & Hardware', content: 'Rivets, bolts, nuts, and specialty fasteners consumed in high volumes benefit from continuous cleaning in Spira series rotary drum washers.' },
+    slug: 'aerospace',
+    name: 'Aerospace',
+    icon: '✈️',
+    tagline: 'Precision cleaning where contamination is measured in microns',
+    description:
+      'Aerospace components operate in extreme conditions where even microscopic contamination can cause catastrophic failure. Magido stainless steel aqueous washers deliver the repeatable, validated cleaning performance required by AS9100, NADCAP, and customer-specific cleaning specifications — with full audit trail capability.',
+    heroStat: { value: '100%', label: 'Stainless Steel Construction' },
+    challenges: [
+      {
+        title: 'Cleanliness Specifications',
+        description:
+          'Component cleanliness is defined in milligrams of residue or particle count — manual cleaning cannot achieve or document these levels.',
+      },
+      {
+        title: 'Exotic Materials',
+        description:
+          'Titanium, Inconel, aluminum alloys, and composite substrates require chemistry-compatible, non-damaging cleaning processes.',
+      },
+      {
+        title: 'Complex Geometries',
+        description:
+          'Turbine blades, hydraulic manifolds, and structural castings have blind holes and internal passages that spray systems alone cannot reach.',
+      },
+      {
+        title: 'Process Validation',
+        description:
+          'Cleaning processes must be validated, documented, and repeatable to satisfy quality audits and customer flow-downs.',
+      },
     ],
-    cta: 'Contact us at 844-4MA-GIDO (844-462-4436) for aerospace cleaning applications.',
+    recommendedSystems: [
+      {
+        categorySlug: 'immersion-washers',
+        categoryName: 'Immersion Washers',
+        seriesSlugs: ['agita'],
+        reason:
+          'Full submersion with pneumatic agitation cleans complex internal geometries and blind passages that spray alone cannot reach.',
+      },
+      {
+        categorySlug: 'rotary-immersion-washers',
+        categoryName: 'Rotary Immersion Washers',
+        seriesSlugs: ['platinum'],
+        reason:
+          'Multi-action rotation plus immersion delivers aerospace-grade cleanliness for demanding specifications.',
+      },
+      {
+        categorySlug: 'top-load-washers',
+        categoryName: 'Top Load Washers',
+        seriesSlugs: ['x51-2', 'x51hp'],
+        reason:
+          'Dual-stage wash and rinse systems minimize cross-contamination and support validated cleaning sequences.',
+      },
+    ],
+    relatedSolutionSlugs: ['cleaning-aerospace-components', 'cleaning-hydraulic-components'],
+    metaDescription:
+      'Aerospace parts cleaning systems — aqueous immersion and spray washers for AS9100 and NADCAP-compliant cleaning of turbine, hydraulic, and structural components.',
   },
   {
-    slug: 'machining-metal-fabrication',
-    name: 'Machining & Metal Fabrication',
-    metaTitle: 'Parts Washers for Machine Shops & Metal Fabrication',
-    metaDescription: 'Magido aqueous parts washers for CNC machining, metal fabrication, and job shops. Clean machined parts, remove cutting fluids and chips. Stainless steel construction.',
-    intro: 'Machine shops and metal fabrication operations generate contamination with every cut — cutting oils, coolant residue, metal chips, grinding swarf, and handling soils all need to be removed before parts move to the next operation, go to inspection, or ship to customers.',
-    sections: [
-      { heading: 'CNC Machined Parts', content: 'Parts leave the spindle coated in cutting fluid with embedded chips. X81 and X51 series spray cabinets remove these contaminants efficiently. For high-volume CNC cells, Silver and Gold series belt conveyor washers integrate directly into the production flow.' },
-      { heading: 'Stamped & Formed Parts', content: 'Brackets, housings, shields, and panels carry drawing compound and stamping lubricant. Spray cabinet washers handle these well, and rotary drum washers clean small stampings in bulk.' },
-      { heading: 'Welded Fabrications', content: 'Grinding dust, weld spatter, and handling oils need removal before painting or powder coating. X53 front-load washers accommodate large fabricated assemblies.' },
-      { heading: 'Job Shops', content: 'The X51 series clamshell spray cabinet with adjustable cycle time and temperature handles the widest range of parts and contamination types — ideal for shops cleaning a different part every day.' },
+    slug: 'machining',
+    name: 'Machining & Manufacturing',
+    icon: '⚙️',
+    tagline: 'Versatile aqueous systems for every production scale',
+    description:
+      'CNC machining centers, grinding operations, and fabrication shops generate parts coated in coolant, cutting oil, and metallic chips. Magido offers the widest range of aqueous wash systems in the industry — from a compact manual cabinet on the shop floor to a fully automated conveyor washer integrated into a lights-out cell.',
+    heroStat: { value: '19', label: 'Series to Choose From' },
+    challenges: [
+      {
+        title: 'Coolant & Cutting Oil Removal',
+        description:
+          'Water-soluble and straight-oil coolants require different chemistry — your washer must be compatible with your chosen detergent.',
+      },
+      {
+        title: 'Chip & Swarf Management',
+        description:
+          'Metallic fines and chips contaminate wash solution and deposit on cleaned parts if filtration is not properly sized.',
+      },
+      {
+        title: 'Part Variety',
+        description:
+          'Job shops and contract manufacturers clean parts ranging from small turned parts to large weldments — often in the same shift.',
+      },
+      {
+        title: 'Floor Space',
+        description:
+          'Machine shops are often space-constrained. The washer must fit the available footprint without compromising cleaning performance.',
+      },
     ],
-    cta: 'Contact us at 844-4MA-GIDO (844-462-4436) for machine shop and fabrication cleaning solutions.',
+    recommendedSystems: [
+      {
+        categorySlug: 'top-load-washers',
+        categoryName: 'Top Load Washers',
+        seriesSlugs: ['x51', 'x51hp', 'x51-2', 'eco'],
+        reason:
+          'The most versatile category — compact footprint, easy basket loading, suitable for most machined part sizes.',
+      },
+      {
+        categorySlug: 'manual-washers',
+        categoryName: 'Manual Washers',
+        seriesSlugs: ['dg', 'l', 'hp'],
+        reason:
+          'Ideal for small shops or secondary cleaning stations where operator handling is acceptable.',
+      },
+      {
+        categorySlug: 'front-load-washers',
+        categoryName: 'Front Load Washers',
+        seriesSlugs: ['x53', 'fls'],
+        reason:
+          'When parts are too large or heavy for top loading — fork-friendly baskets and high weight capacities.',
+      },
+    ],
+    relatedSolutionSlugs: [
+      'removing-stamping-and-forming-lubricants',
+      'cleaning-hydraulic-components',
+    ],
+    metaDescription:
+      'Parts washers for CNC machining and manufacturing — top load, front load, and manual aqueous systems for coolant, cutting oil, and chip removal.',
   },
   {
-    slug: 'heavy-equipment-mro',
-    name: 'Heavy Equipment & MRO',
-    metaTitle: 'Parts Washers for Heavy Equipment & MRO Operations',
-    metaDescription: 'Magido aqueous parts washers for heavy equipment maintenance, repair, and overhaul. Clean hydraulic components, engine parts, and drivetrain assemblies in stainless steel.',
-    intro: 'Maintenance, repair, and overhaul operations deal with parts that come in dirty — often seriously dirty. Heavy equipment components arrive caked in grease, hydraulic fluid, carbon buildup, road grime, and years of accumulated contamination. The cleaning needs to be thorough enough to allow proper inspection, measurement, and reassembly.',
-    sections: [
-      { heading: 'Hydraulic Components', content: 'Cylinders, pumps, and valve assemblies require immersion cleaning to flush old fluid, debris, and wear particles from internal passages. The Agita series and Platinum rotary immersion systems are ideal.' },
-      { heading: 'Engine & Drivetrain', content: 'Cylinder heads, blocks, crankshafts, gear housings, and differential cases require thorough degreasing before inspection and reconditioning. Eco series and X53 front-load washers handle the weight and size.' },
-      { heading: 'Brake & Steering', content: 'Discs, calipers, steering gears, and tie rod assemblies need cleaning to remove old grease, brake dust, and road contamination. X51 series spray cabinets handle these parts efficiently.' },
-      { heading: 'Small Parts & Hardware', content: 'Bolts, nuts, bearings, bushings, seals, and gasket surfaces cleaned in batch or continuous mode using X81 spray cabinets or Spira rotary drum washers.' },
+    slug: 'heavy-equipment',
+    name: 'Heavy Equipment',
+    icon: '🏗️',
+    tagline: 'Industrial-grade washers for oversized, heavy components',
+    description:
+      'Construction, mining, and agricultural equipment components are among the most challenging to clean — large, heavy, coated in grit, grease, and heavy oils. Magido front load washers are engineered with high weight capacities, large chamber openings, and robust stainless steel construction that holds up in the harshest maintenance environments.',
+    heroStat: { value: 'AISI 304', label: 'Stainless Steel Throughout' },
+    challenges: [
+      {
+        title: 'Heavy Contamination',
+        description:
+          'Gear oil, hydraulic fluid, grease, and baked-on grime require aggressive spray pressures and elevated wash temperatures.',
+      },
+      {
+        title: 'Component Weight',
+        description:
+          'Axle housings, gear cases, and hydraulic cylinders can weigh hundreds of pounds — the washer basket and frame must be engineered for it.',
+      },
+      {
+        title: 'Large Part Envelopes',
+        description:
+          'Heavy equipment components often exceed the capacity of standard spray cabinets — chamber size is a critical specification.',
+      },
+      {
+        title: 'MRO vs. Production',
+        description:
+          'Heavy equipment cleaning is often MRO-driven — lower volume but high variability in part type and contamination level.',
+      },
     ],
-    cta: 'Contact us at 844-4MA-GIDO (844-462-4436) for MRO parts cleaning solutions.',
+    recommendedSystems: [
+      {
+        categorySlug: 'front-load-washers',
+        categoryName: 'Front Load Washers',
+        seriesSlugs: ['fls', 'x53', 'x53-2'],
+        reason:
+          'Large front-opening chambers, high weight capacity baskets, and fork-truck compatible design for the heaviest components.',
+      },
+      {
+        categorySlug: 'top-load-washers',
+        categoryName: 'Top Load Washers',
+        seriesSlugs: ['x51', 'x51hp'],
+        reason:
+          'For mid-size components — turntable rotation ensures all surfaces are reached by spray nozzles.',
+      },
+    ],
+    relatedSolutionSlugs: ['cleaning-hydraulic-components'],
+    metaDescription:
+      'Heavy equipment parts washers — large-capacity front load spray cabinets for construction, mining, and agricultural component cleaning.',
   },
   {
-    slug: 'medical-devices',
-    name: 'Medical Device Manufacturing',
-    metaTitle: 'Parts Washers for Medical Device Manufacturing',
-    metaDescription: 'Magido aqueous parts washers for medical device production. Precision cleaning with stainless steel construction for implants, instruments, and components.',
-    intro: 'Medical device manufacturing requires cleaning processes that are precise, consistent, and free of cross-contamination. Parts destined for implantation, surgical use, or diagnostic equipment must meet cleanliness standards that leave zero tolerance for residual oils, particulate, or chemical contamination.',
-    sections: [
-      { heading: 'Surgical Instruments & Implants', content: 'Precision cleaning to remove machining oils, polishing compounds, and particulate before passivation, sterilization, or packaging. Immersion cleaning with the Agita series reaches internal lumens and complex geometries. The Platinum system provides multi-action cleaning for the most demanding specifications.' },
-      { heading: 'Orthopedic Implant Components', content: 'Hip, knee, and spinal implant parts require surface cleanliness before coating or polishing operations. Spray cabinet washers handle external surfaces while immersion systems address internal features.' },
-      { heading: 'Small Precision Components', content: 'Screws, pins, plates, and other small implant hardware produced in volume benefit from bulk cleaning in Spira rotary drum washers.' },
+    slug: 'medical',
+    name: 'Medical',
+    icon: '🩺',
+    tagline: 'Validated cleaning for medical device components',
+    description:
+      'Medical device manufacturing demands cleaning processes that are not only effective but validated, documented, and repeatable. Magido stainless steel aqueous systems are compatible with FDA-regulated cleaning validation protocols — providing the foundation for IQ/OQ/PQ qualification of your cleaning process.',
+    heroStat: { value: '100%', label: 'Stainless Steel — No Hidden Plastics' },
+    challenges: [
+      {
+        title: 'Process Validation',
+        description:
+          'FDA 21 CFR and ISO 13485 require cleaning processes to be validated. The washer must deliver repeatable parameters: time, temperature, pressure, chemistry.',
+      },
+      {
+        title: 'Residue-Free Rinsing',
+        description:
+          'Detergent residues on medical components are unacceptable. Multi-stage rinse with DI or purified water is often required.',
+      },
+      {
+        title: 'Material Compatibility',
+        description:
+          'Implant-grade alloys, titanium, and PEEK must not be damaged by the cleaning process — chemistry and temperature selection are critical.',
+      },
+      {
+        title: 'Documentation & Traceability',
+        description:
+          'Lot traceability and process parameter logging are required for device history records.',
+      },
     ],
-    cta: 'Contact us at 844-4MA-GIDO for medical device cleaning applications.',
+    recommendedSystems: [
+      {
+        categorySlug: 'top-load-washers',
+        categoryName: 'Top Load Washers',
+        seriesSlugs: ['x51-2', 'x51'],
+        reason:
+          'Dual-stage models provide separate wash and rinse tanks — essential for residue-free cleaning of medical components.',
+      },
+      {
+        categorySlug: 'immersion-washers',
+        categoryName: 'Immersion Washers',
+        seriesSlugs: ['agita'],
+        reason:
+          'Full submersion with agitation cleans complex implant and instrument geometries including blind holes and threaded features.',
+      },
+      {
+        categorySlug: 'rotary-immersion-washers',
+        categoryName: 'Rotary Immersion Washers',
+        seriesSlugs: ['platinum'],
+        reason:
+          'Highest cleanliness level — multi-action cleaning for the most demanding medical device specifications.',
+      },
+    ],
+    relatedSolutionSlugs: ['cleaning-medical-device-components'],
+    metaDescription:
+      'Medical device parts washers — validated aqueous cleaning systems for implant, instrument, and device component manufacturing per FDA and ISO 13485.',
   },
   {
     slug: 'food-processing',
-    name: 'Food Processing Equipment',
-    metaTitle: 'Parts Washers for Food Processing Equipment',
-    metaDescription: 'Clean food processing equipment parts with Magido aqueous washers. AISI 304 stainless steel construction meets food industry hygiene standards.',
-    intro: 'Food processing and packaging equipment requires regular cleaning to maintain hygiene standards, prevent contamination, and comply with food safety regulations. Magido aqueous parts washers are constructed from AISI 304 stainless steel — the same grade used in food processing equipment itself.',
-    sections: [
-      { heading: 'Grinder Plates, Blades & Dies', content: 'Meat processing and extrusion equipment components that carry fat, protein, and product residues. Manual HP series washers provide targeted high-pressure cleaning, while X81 spray cabinets automate changeover cleaning.' },
-      { heading: 'Mixing & Blending Components', content: 'Paddles, impellers, and housing parts from bakery, dairy, and beverage equipment. X51 spray cabinet washers accommodate a range of sizes.' },
-      { heading: 'Conveyor & Packaging Parts', content: 'Rollers, guides, chains, and fittings from packaging lines. Belt conveyor washers in the Silver and Gold series clean these components in continuous flow.' },
-      { heading: 'Fittings, Valves & Sanitary Hardware', content: 'Tri-clamp fittings, gaskets, and sanitary valve components cleaned in batches using X81 compact spray cabinets or in bulk using Jolly series rotary drum washers.' },
+    name: 'Food Processing',
+    icon: '🍽️',
+    tagline: 'NSF-compatible aqueous cleaning for food-grade equipment',
+    description:
+      'Food processing facilities require cleaning equipment that meets food-grade material standards, handles food residues and sanitation chemicals, and supports HACCP-compliant cleaning programs. Magido AISI 304 stainless steel construction is inherently food-grade — with no painted surfaces, no hidden carbon steel, and no areas that trap contamination.',
+    heroStat: { value: 'AISI 304', label: 'Food-Grade Stainless Steel' },
+    challenges: [
+      {
+        title: 'Food Residue & Biofilm',
+        description:
+          'Fats, proteins, sugars, and biofilm require elevated wash temperatures and compatible sanitation chemistry.',
+      },
+      {
+        title: 'Food-Grade Materials',
+        description:
+          'All surfaces in contact with food-contact equipment must be food-grade — painted carbon steel is not acceptable.',
+      },
+      {
+        title: 'Sanitation Chemistry Compatibility',
+        description:
+          'Food processors use aggressive alkaline and acid CIP chemicals — the washer must be compatible with their existing sanitation program.',
+      },
+      {
+        title: 'HACCP & Audit Compliance',
+        description:
+          'Cleaning equipment and procedures are subject to third-party food safety audits — the cleaning process must be documented and consistent.',
+      },
     ],
-    cta: 'Contact us at 844-4MA-GIDO for food processing equipment cleaning solutions.',
+    recommendedSystems: [
+      {
+        categorySlug: 'top-load-washers',
+        categoryName: 'Top Load Washers',
+        seriesSlugs: ['x51', 'eco', 'x51-2'],
+        reason:
+          'Stainless steel construction throughout — turntable basket cleaning for molds, dies, fillers, and processing components.',
+      },
+      {
+        categorySlug: 'front-load-washers',
+        categoryName: 'Front Load Washers',
+        seriesSlugs: ['x53', 'fls'],
+        reason:
+          'Large-format food processing equipment — conveyor components, mixing attachments, and large tool sets.',
+      },
+      {
+        categorySlug: 'manual-washers',
+        categoryName: 'Manual Washers',
+        seriesSlugs: ['dg', 'l'],
+        reason:
+          'Hand-cleaning station for small tooling, blades, and components between production runs.',
+      },
+    ],
+    relatedSolutionSlugs: ['food-and-beverage-equipment-cleaning'],
+    metaDescription:
+      'Food-grade parts washers — AISI 304 stainless steel aqueous cleaning systems for food processing equipment, tooling, and components.',
   },
 ];
 
-export function getIndustryPage(slug: string): IndustryPage | undefined {
-  return industryPages.find((p) => p.slug === slug);
-}
-
-export function getAllIndustrySlugs(): string[] {
-  return industryPages.map((p) => p.slug);
+export function getIndustry(slug: string): Industry | undefined {
+  return INDUSTRIES.find((i) => i.slug === slug);
 }

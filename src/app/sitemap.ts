@@ -14,6 +14,7 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE}/how-to-choose`,  lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   { url: `${BASE}/compare`,        lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
   { url: `${BASE}/blog`,           lastModified: new Date(), changeFrequency: 'weekly',  priority: 0.7 },
+  { url: `${BASE}/industries`,     lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 ];
 
 // ─── Product category pages ───
@@ -122,6 +123,21 @@ const productRoutes: MetadataRoute.Sitemap = [
   priority: 0.7,
 }));
 
+// ─── Industries pages (Phase 10) ───
+const industryRoutes: MetadataRoute.Sitemap = [
+  'automotive',
+  'aerospace',
+  'machining',
+  'heavy-equipment',
+  'medical',
+  'food-processing',
+].map((slug) => ({
+  url: `${BASE}/industries/${slug}`,
+  lastModified: new Date(),
+  changeFrequency: 'monthly' as const,
+  priority: 0.8,
+}));
+
 // ─── Solution landing pages ───
 const solutionRoutes: MetadataRoute.Sitemap = [
   'aqueous-vs-solvent-parts-washers',
@@ -129,6 +145,14 @@ const solutionRoutes: MetadataRoute.Sitemap = [
   'cleaning-brake-components',
   'removing-cutting-oil-and-coolant',
   'industrial-parts-washing-for-mro',
+  // Phase 9 additions
+  'cleaning-hydraulic-components',
+  'cleaning-automotive-transmission-parts',
+  'removing-stamping-and-forming-lubricants',
+  'food-and-beverage-equipment-cleaning',
+  'cleaning-electrical-and-electronic-components',
+  'cleaning-aerospace-components',
+  'cleaning-medical-device-components',
 ].map((slug) => ({
   url: `${BASE}/solutions/${slug}`,
   lastModified: new Date(),
@@ -156,11 +180,12 @@ const resourceRoutes: MetadataRoute.Sitemap = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    ...staticRoutes,    //  10 pages
+    ...staticRoutes,    //  11 pages
     ...categoryRoutes,  //   7 pages
     ...productRoutes,   //  74 pages
-    ...solutionRoutes,  //   5 pages
+    ...industryRoutes,  //   6 pages
+    ...solutionRoutes,  //  12 pages
     ...resourceRoutes,  //   9 pages
-    // Total: 105 URLs
+    // Total: 119 URLs
   ];
 }

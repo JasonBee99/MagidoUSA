@@ -32,7 +32,7 @@ export function OrganizationJsonLd() {
           postalCode: '53177',
           addressCountry: 'US',
         },
-        sameAs: [],
+        sameAs: ['https://www.linkedin.com/in/toscottmorin'],
         contactPoint: {
           '@type': 'ContactPoint',
           telephone: '+1-844-462-4436',
