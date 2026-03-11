@@ -60,6 +60,7 @@ const productRoutes: MetadataRoute.Sitemap = [
   '/products/top-load-washers/l103',
   '/products/top-load-washers/l123',
   '/products/top-load-washers/l153',
+  '/products/top-load-washers/tr450',
   // Front Load Washers
   '/products/front-load-washers/l160',
   '/products/front-load-washers/l190',
@@ -182,7 +183,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes,    //  11 pages
     ...categoryRoutes,  //   7 pages
-    ...productRoutes,   //  74 pages
+    ...productRoutes,   //  75 pages
     ...industryRoutes,  //   6 pages
     ...solutionRoutes,  //  12 pages
     ...resourceRoutes,  //   9 pages

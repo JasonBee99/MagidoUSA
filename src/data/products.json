@@ -1,8 +1,8 @@
 {
   "_generated": "2026-02-27T15:59:37.395Z",
   "_version": "1.0.0",
-  "_totalProducts": 74,
-  "_totalSeries": 19,
+  "_totalProducts": 75,
+  "_totalSeries": 20,
   "_totalCategories": 7,
   "categories": [
     {
@@ -39,7 +39,7 @@
         }
       ],
       "totalProducts": 6,
-      "description": "Magido manual aqueous parts washers are engineered to handle the most rigorous cleaning challenges found in industrial and automotive maintenance applications. Available in sink-style, vat-style, and high-pressure cabinet configurations, these systems use environmentally safe water-based cleaning solutions to effectively remove oils, greases, dirt, and grime. Built entirely from AISI 304 stainless steel, Magido manual washers deliver reliable performance with minimal maintenance — ideal for shop-floor degreasing where hands-on control is essential.",
+      "description": "Magido manual aqueous parts washers are engineered to handle the most rigorous cleaning challenges found in industrial and automotive maintenance applications. Available in sink-style, vat-style, and high-pressure cabinet configurations, these systems use environmentally safe water-based cleaning solutions to effectively remove oils, greases, dirt, and grime. Built entirely from AISI 304 stainless steel, Magido manual washers deliver reliable performance with minimal maintenance \u2014 ideal for shop-floor degreasing where hands-on control is essential.",
       "heroImage": null
     },
     {
@@ -52,7 +52,8 @@
         "eco",
         "x51hp",
         "x51",
-        "x51-2"
+        "x51-2",
+        "tr450"
       ],
       "series": [
         {
@@ -89,10 +90,17 @@
           "displayName": "X51/2",
           "type": "Top Load Dual Stage",
           "isNew": false
+        },
+        {
+          "slug": "tr450",
+          "name": "TR-450",
+          "displayName": "TR-450",
+          "type": "Top Load Spray/Immersion",
+          "isNew": false
         }
       ],
-      "totalProducts": 17,
-      "description": "Magido top load aqueous parts washers are engineered for automatic spray washing applications using aqueous detergents at temperatures up to 150°F. Each system features a motorized rotating turntable and precision-angled jet nozzles that deliver thorough, consistent cleaning coverage across all part surfaces. Available in compact, standard, and high-performance configurations with turntable sizes ranging from 14\" to 55\" in diameter, these washers handle everything from small precision components to medium-sized industrial parts. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages.",
+      "totalProducts": 18,
+      "description": "Magido top load aqueous parts washers are engineered for automatic spray washing applications using aqueous detergents at temperatures up to 150\u00b0F. Each system features a motorized rotating turntable and precision-angled jet nozzles that deliver thorough, consistent cleaning coverage across all part surfaces. Available in compact, standard, and high-performance configurations with turntable sizes ranging from 14\" to 55\" in diameter, these washers handle everything from small precision components to medium-sized industrial parts. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages.",
       "heroImage": "/images/products/x51-2/l153.webp"
     },
     {
@@ -129,7 +137,7 @@
         }
       ],
       "totalProducts": 11,
-      "description": "Magido front load aqueous parts washers are engineered for automatic spray washing of large, heavy components using aqueous detergents at temperatures up to 160°F. The operation principle uses a fixed platform with a series of angled water jet nozzles configured on a spray ramp to optimally clean all part surfaces. Front load systems feature a removable turntable that transfers easily onto a mobile cart for convenient loading and unloading outside the wash chamber. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages — built for high-throughput production environments.",
+      "description": "Magido front load aqueous parts washers are engineered for automatic spray washing of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The operation principle uses a fixed platform with a series of angled water jet nozzles configured on a spray ramp to optimally clean all part surfaces. Front load systems feature a removable turntable that transfers easily onto a mobile cart for convenient loading and unloading outside the wash chamber. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages \u2014 built for high-throughput production environments.",
       "heroImage": null
     },
     {
@@ -150,7 +158,7 @@
         }
       ],
       "totalProducts": 10,
-      "description": "Magido immersion aqueous parts washers are designed for thorough cleaning of parts with complex geometries using a full-submersion agitation process. Parts are lowered into a heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167°F, these systems are ideal for precision components, machined parts, and assemblies requiring complete surface contact. All machines are constructed from AISI 304 stainless steel and are characterized by their cleaning platform size and load capacity.",
+      "description": "Magido immersion aqueous parts washers are designed for thorough cleaning of parts with complex geometries using a full-submersion agitation process. Parts are lowered into a heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, these systems are ideal for precision components, machined parts, and assemblies requiring complete surface contact. All machines are constructed from AISI 304 stainless steel and are characterized by their cleaning platform size and load capacity.",
       "heroImage": "/images/products/agita/a1300.webp"
     },
     {
@@ -224,7 +232,7 @@
         }
       ],
       "totalProducts": 14,
-      "description": "Magido rotary drum aqueous parts washers use a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and are carried through the wash zone by the internal helix, emerging clean at the other end — enabling non-stop processing without batching. Available in single-stage and dual-stage configurations with wash and rinse capabilities, all machines are constructed from AISI 304 stainless steel. These systems are the right choice for high-volume operations requiring consistent, automated cleaning.",
+      "description": "Magido rotary drum aqueous parts washers use a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and are carried through the wash zone by the internal helix, emerging clean at the other end \u2014 enabling non-stop processing without batching. Available in single-stage and dual-stage configurations with wash and rinse capabilities, all machines are constructed from AISI 304 stainless steel. These systems are the right choice for high-volume operations requiring consistent, automated cleaning.",
       "heroImage": "/images/products/spira-2b/sp950-2.webp"
     },
     {
@@ -406,20 +414,20 @@
             "name": "Timer",
             "unit": "Min",
             "values": {
-              "L101": "0 – 60",
-              "L102": "0 – 60",
-              "L122": "0 – 60",
-              "L152": "0 – 60"
+              "L101": "0 \u2013 60",
+              "L102": "0 \u2013 60",
+              "L122": "0 \u2013 60",
+              "L152": "0 \u2013 60"
             }
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L101": "140°",
-              "L102": "140°",
-              "L122": "140°",
-              "L152": "140°"
+              "L101": "140\u00b0",
+              "L102": "140\u00b0",
+              "L122": "140\u00b0",
+              "L152": "140\u00b0"
             }
           },
           {
@@ -476,9 +484,9 @@
             "name": "Pneumatic Lid",
             "unit": "",
             "values": {
-              "L101": "–",
-              "L102": "–",
-              "L122": "–",
+              "L101": "\u2013",
+              "L102": "\u2013",
+              "L122": "\u2013",
               "L152": "Standard"
             }
           },
@@ -1519,10 +1527,10 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "DG-8": "113°F",
-              "DG-9": "113°F"
+              "DG-8": "113\u00b0F",
+              "DG-9": "113\u00b0F"
             }
           },
           {
@@ -1647,10 +1655,10 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L-7": "113°F",
-              "L-10": "113°F"
+              "L-7": "113\u00b0F",
+              "L-10": "113\u00b0F"
             }
           },
           {
@@ -1807,10 +1815,10 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "HP-25": "113°F",
-              "HP-30": "113°F"
+              "HP-25": "113\u00b0F",
+              "HP-30": "113\u00b0F"
             }
           },
           {
@@ -1997,11 +2005,11 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L-35": "140°F",
-              "L-55": "140°F",
-              "L-90": "140°F"
+              "L-35": "140\u00b0F",
+              "L-55": "140\u00b0F",
+              "L-90": "140\u00b0F"
             }
           },
           {
@@ -2226,12 +2234,12 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L800FP": "140°F",
-              "L901FP": "140°F",
-              "L902FP": "140°F",
-              "L922FP": "140°F"
+              "L800FP": "140\u00b0F",
+              "L901FP": "140\u00b0F",
+              "L902FP": "140\u00b0F",
+              "L922FP": "140\u00b0F"
             }
           },
           {
@@ -2443,11 +2451,11 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L101HP": "160°F",
-              "L102HP": "160°F",
-              "L122HP": "160°F"
+              "L101HP": "160\u00b0F",
+              "L102HP": "160\u00b0F",
+              "L122HP": "160\u00b0F"
             }
           },
           {
@@ -2743,11 +2751,11 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L103": "140°",
-              "L123": "140°",
-              "L153": "140°"
+              "L103": "140\u00b0",
+              "L123": "140\u00b0",
+              "L153": "140\u00b0"
             }
           },
           {
@@ -2853,7 +2861,7 @@
       },
       "standardFeatures": [
         "AISI 304 Stainless Steel Construction",
-        "Dual Tanks — Wash & Rinse with PLC Control",
+        "Dual Tanks \u2014 Wash & Rinse with PLC Control",
         "Automatic Rotary Turntable",
         "V-Jet Spray Nozzle System",
         "Independent Heaters for Each Tank",
@@ -2970,12 +2978,12 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L160": "160°",
-              "L190": "160°",
-              "L210": "160°",
-              "L240": "160°"
+              "L160": "160\u00b0",
+              "L190": "160\u00b0",
+              "L210": "160\u00b0",
+              "L240": "160\u00b0"
             }
           },
           {
@@ -3221,12 +3229,12 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "L162": "160°",
-              "L192": "160°",
-              "L212": "160°",
-              "L242": "160°"
+              "L162": "160\u00b0",
+              "L192": "160\u00b0",
+              "L212": "160\u00b0",
+              "L242": "160\u00b0"
             }
           },
           {
@@ -3363,7 +3371,7 @@
       },
       "standardFeatures": [
         "AISI 304 Stainless Steel Construction",
-        "Dual Tanks — Wash & Rinse with PLC Control",
+        "Dual Tanks \u2014 Wash & Rinse with PLC Control",
         "Front-Loading Door with Safety Interlock",
         "Fixed Platform with Spray Ramp",
         "Independent Heaters for Each Tank"
@@ -3449,12 +3457,12 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "A700": "Ambient-170°F",
-              "A900": "Ambient-170°F",
-              "A1100": "Ambient-170°F",
-              "A1300": "Ambient-170°F"
+              "A700": "Ambient-170\u00b0F",
+              "A900": "Ambient-170\u00b0F",
+              "A1100": "Ambient-170\u00b0F",
+              "A1300": "Ambient-170\u00b0F"
             }
           },
           {
@@ -3521,33 +3529,33 @@
       },
       "standardFeatures": [
         "AISI 304 Stainless Steel Construction throughout",
-        "Pneumatic Oscillating Immersion Platform — agitates parts during wash cycle",
-        "Oil Sparger & Weir System — continuously skims surface oils to extend fluid life",
+        "Pneumatic Oscillating Immersion Platform \u2014 agitates parts during wash cycle",
+        "Oil Sparger & Weir System \u2014 continuously skims surface oils to extend fluid life",
         "Stainless Steel / Incoloy Heating Elements",
         "Low Water Heating Element Shutoff",
-        "Thermally Insulated Tank — reduces energy consumption and heat loss",
+        "Thermally Insulated Tank \u2014 reduces energy consumption and heat loss",
         "Strut-Assisted Lid for safe and easy access",
         "Siemens PLC Control System",
-        "Operating Temperature: Ambient to 170°F (75°C)"
+        "Operating Temperature: Ambient to 170\u00b0F (75\u00b0C)"
       ],
       "availableOptions": [
-        "Ultrasonic Cleaning Stage — enhanced removal of fine particulate and oils",
+        "Ultrasonic Cleaning Stage \u2014 enhanced removal of fine particulate and oils",
         "Filtration System",
         "Automatic Lid Operation",
-        "24/7 Heat Controller — maintains solution temperature continuously",
+        "24/7 Heat Controller \u2014 maintains solution temperature continuously",
         "Automatic Water Fill with Fluid Level Sensor",
         "Steam Exhaust Fan",
-        "Spray-Under-Immersion — adds spray impingement during immersion cycle"
+        "Spray-Under-Immersion \u2014 adds spray impingement during immersion cycle"
       ],
       "safetyFeatures": [
         "24V Low-Voltage Control Circuit",
-        "NEMA 4 Electrical Enclosure — splash and dust resistant",
+        "NEMA 4 Electrical Enclosure \u2014 splash and dust resistant",
         "Push-Button Emergency Stop",
         "Main Power Disconnect Switch",
-        "Counter-Balanced Lid — prevents uncontrolled closure",
-        "Liquid Level Shutoff — protects heating elements from dry-fire",
+        "Counter-Balanced Lid \u2014 prevents uncontrolled closure",
+        "Liquid Level Shutoff \u2014 protects heating elements from dry-fire",
         "No Exposed Sharp Metal Edges",
-        "Low Noise Operation — under 70 dBA",
+        "Low Noise Operation \u2014 under 70 dBA",
         "CE Certified"
       ]
     },
@@ -3675,7 +3683,7 @@
           },
           {
             "name": "Solution temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
               "J320": "100-140",
               "J320/2": "100-140"
@@ -3891,7 +3899,7 @@
           },
           {
             "name": "Solution temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
               "SP320": "100-160",
               "SP480": "100-160",
@@ -4171,7 +4179,7 @@
           },
           {
             "name": "Solution temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
               "SP320/2": "100-160",
               "SP480/2": "100-160",
@@ -4384,10 +4392,10 @@
             "unit": "",
             "values": {
               "PM400": "",
-              "P600/2": "¼ Hp / 60 cfm",
-              "P900/2": "½ HP / 180 cfm",
-              "P1200/2": "½ HP / 180 cfm",
-              "P1500/2": "¾ HP / 470 cfm"
+              "P600/2": "\u00bc Hp / 60 cfm",
+              "P900/2": "\u00bd HP / 180 cfm",
+              "P1200/2": "\u00bd HP / 180 cfm",
+              "P1500/2": "\u00be HP / 470 cfm"
             }
           },
           {
@@ -4428,8 +4436,8 @@
             "unit": "",
             "values": {
               "PM400": "",
-              "P600/2": "¼ Hp",
-              "P900/2": "¾ Hp",
+              "P600/2": "\u00bc Hp",
+              "P900/2": "\u00be Hp",
               "P1200/2": "1 Hp",
               "P1500/2": "1 Hp"
             }
@@ -4477,7 +4485,7 @@
         "Separate Wash & Rinse Stages with Independent Tanks, Pumps & Manifolds",
         "Stainless Steel High-Pressure Circulation Pumps",
         "Digital Temperature Controls with Stainless Steel Heating Elements",
-        "Variable-Speed Rotational Drum Drive — basket rotation during wash and rinse",
+        "Variable-Speed Rotational Drum Drive \u2014 basket rotation during wash and rinse",
         "Liquid Level Control & Automatic Water Fill",
         "Stainless Steel Exhaust Fan",
         "Marine-Style Cleanout Door for easy tank maintenance",
@@ -4502,15 +4510,15 @@
       ],
       "safetyFeatures": [
         "24V Low-Voltage Control Circuit",
-        "NEMA 4 Electrical Panel — splash and dust resistant",
+        "NEMA 4 Electrical Panel \u2014 splash and dust resistant",
         "Push-Button Emergency Stop",
         "Main Power Disconnect Switch with Lock-Out / Tag-Out provision",
         "Overload Protection on Pumps, Rotational Drive & Heaters",
-        "Two-Hand Door Operation — prevents door closure during loading",
-        "Door Interlock Safety Switch — cycle cannot start with door open",
-        "Fluid Level Controls — protects pumps and heating elements",
+        "Two-Hand Door Operation \u2014 prevents door closure during loading",
+        "Door Interlock Safety Switch \u2014 cycle cannot start with door open",
+        "Fluid Level Controls \u2014 protects pumps and heating elements",
         "No Exposed Sharp Metal Edges",
-        "Low Noise Operation — under 70 dBA",
+        "Low Noise Operation \u2014 under 70 dBA",
         "CE Certified"
       ]
     },
@@ -4520,7 +4528,7 @@
       "displayName": "FLS",
       "category": "front-load-washers",
       "type": "Front Load Spray Cabinet",
-      "description": "NEW — Heavy-duty front load spray cabinet washers with high weight capacity.",
+      "description": "NEW \u2014 Heavy-duty front load spray cabinet washers with high weight capacity.",
       "isNew": true,
       "modelPrefix": "FLS-",
       "products": [
@@ -4627,11 +4635,11 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "°F",
+            "unit": "\u00b0F",
             "values": {
-              "FLS-30": "140°F",
-              "FLS-35": "140°F",
-              "FLS-45": "140°F"
+              "FLS-30": "140\u00b0F",
+              "FLS-35": "140\u00b0F",
+              "FLS-45": "140\u00b0F"
             }
           },
           {
@@ -4683,17 +4691,180 @@
       },
       "standardFeatures": [
         "AISI 304 Stainless Steel Construction",
-        "Front-Loading Door with Safety Interlock",
-        "Fixed Platform with Spray Ramp",
-        "V-Jet Nozzle Configuration",
-        "Adjustable Solution Heater",
-        "Fluid Level Sensor"
+        "Automatic Turntable with Containment Ring",
+        "Removable Parts Tree",
+        "Auto Water Fill",
+        "Oil Skimmer",
+        "Removable Chip Basket",
+        "Low Water Level Protection",
+        "Digital Wash Cycle Timer",
+        "Digital Thermostat Controller",
+        "Direct Turntable Drive",
+        "Dual-Height Spray Manifold",
+        "Vertical Stainless Steel Pump",
+        "Programmable Pump Timer",
+        "Fluid Level Sensor",
+        "Safety Switch",
+        "Tank Drain"
       ],
       "availableOptions": [
-        "Mobile loading cart",
-        "Drying cycle",
-        "Oil skimmer",
-        "Filtration upgrades"
+        "Programmable Tank Heater Timer",
+        "S.S. Steam Exhaust Fan",
+        "S.S. Filtration",
+        "S.S. Drain Pump"
+      ]
+    },
+    {
+      "slug": "tr450",
+      "name": "TR-450",
+      "displayName": "TR-450",
+      "category": "top-load-washers",
+      "type": "Top Load Spray/Immersion",
+      "description": "Compact, ergonomic top load parts washer with rotational basket and partial immersion for precision cleaning of small to medium machined components.",
+      "modelPrefix": "TR-",
+      "products": [
+        "tr450"
+      ],
+      "specTable": {
+        "models": [
+          "TR-450"
+        ],
+        "rows": [
+          {
+            "name": "Basket Dimensions",
+            "unit": "Inches",
+            "values": {
+              "TR-450": "L18\" x W12\" x H6\""
+            }
+          },
+          {
+            "name": "Load Weight",
+            "unit": "Lbs",
+            "values": {
+              "TR-450": "110 lbs"
+            }
+          },
+          {
+            "name": "Basket Rotation",
+            "unit": "RPM",
+            "values": {
+              "TR-450": "0.7 \u2013 2.5"
+            }
+          },
+          {
+            "name": "Fluid/Tank Capacity",
+            "unit": "gal US",
+            "values": {
+              "TR-450": "60 gal"
+            }
+          },
+          {
+            "name": "Pump Power",
+            "unit": "Hp",
+            "values": {
+              "TR-450": "2"
+            }
+          },
+          {
+            "name": "Spray Pressure",
+            "unit": "PSI",
+            "values": {
+              "TR-450": "33"
+            }
+          },
+          {
+            "name": "Flow Rate",
+            "unit": "G/Min",
+            "values": {
+              "TR-450": "45"
+            }
+          },
+          {
+            "name": "Tank Heater",
+            "unit": "kW",
+            "values": {
+              "TR-450": "6"
+            }
+          },
+          {
+            "name": "Max Operating Temperature",
+            "unit": "\u00b0F",
+            "values": {
+              "TR-450": "140\u00b0F"
+            }
+          },
+          {
+            "name": "Voltage",
+            "unit": "Volts",
+            "values": {
+              "TR-450": "230V/460V"
+            }
+          },
+          {
+            "name": "Phase",
+            "unit": "Ph",
+            "values": {
+              "TR-450": "3"
+            }
+          },
+          {
+            "name": "Amperage",
+            "unit": "Amps",
+            "values": {
+              "TR-450": "60"
+            }
+          },
+          {
+            "name": "Timer",
+            "unit": "Minute",
+            "values": {
+              "TR-450": "0\u201360"
+            }
+          },
+          {
+            "name": "Overall Dimensions (LxW)",
+            "unit": "Inches",
+            "values": {
+              "TR-450": "57\" x 57\""
+            }
+          },
+          {
+            "name": "Height (lid open)",
+            "unit": "Inches",
+            "values": {
+              "TR-450": "78\""
+            }
+          },
+          {
+            "name": "Net Weight",
+            "unit": "Lbs",
+            "values": {
+              "TR-450": "770 lbs"
+            }
+          }
+        ]
+      },
+      "standardFeatures": [
+        "AISI 304 Stainless Steel Construction",
+        "Rotational Basket Fixture with Variable Speed (0.7\u20132.5 RPM)",
+        "Compact, Ergonomic Top Load Design",
+        "NEMA-4 Rated Electrical Control Panel",
+        "Parts Basket with Cover",
+        "Stainless Steel Spray Manifolds with Optimized V-Jet Nozzles",
+        "Partial Immersion During Cleaning Cycle",
+        "Front, Back, and Side Spray Coverage",
+        "Tank Heater with Digital Thermostat",
+        "Programmable Cycle Timer"
+      ],
+      "availableOptions": [
+        "Heated Parts Dryer",
+        "Oil Skimmer",
+        "Process Indicator Tower",
+        "Air Knife Blower",
+        "Auto Filler",
+        "Steam Exhaust",
+        "Automatic Locking Lid",
+        "27/7 Heater Control"
       ]
     }
   ],
@@ -4760,12 +4931,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 – 60",
+          "value": "0 \u2013 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Length (lid open)": {
           "value": "51\"",
@@ -4788,7 +4959,7 @@
           "unit": "Lbs"
         },
         "Pneumatic Lid": {
-          "value": "–",
+          "value": "\u2013",
           "unit": ""
         },
         "Automatic Turntable Basket": {
@@ -4800,7 +4971,7 @@
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
       ],
-      "description": "The Magido L101 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L101 operates with aqueous detergents at temperatures up to 150°F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance — simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
+      "description": "The Magido L101 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L101 operates with aqueous detergents at temperatures up to 150\u00b0F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance \u2014 simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
     },
     {
       "slug": "l102",
@@ -4868,12 +5039,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 – 60",
+          "value": "0 \u2013 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Length (lid open)": {
           "value": "51\"",
@@ -4896,7 +5067,7 @@
           "unit": "Lbs"
         },
         "Pneumatic Lid": {
-          "value": "–",
+          "value": "\u2013",
           "unit": ""
         },
         "Automatic Turntable Basket": {
@@ -4908,7 +5079,7 @@
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
       ],
-      "description": "The Magido L102 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L102 operates with aqueous detergents at temperatures up to 150°F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance — simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
+      "description": "The Magido L102 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L102 operates with aqueous detergents at temperatures up to 150\u00b0F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance \u2014 simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
     },
     {
       "slug": "l122",
@@ -4976,12 +5147,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 – 60",
+          "value": "0 \u2013 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Length (lid open)": {
           "value": "69\"",
@@ -5004,7 +5175,7 @@
           "unit": "Lbs"
         },
         "Pneumatic Lid": {
-          "value": "–",
+          "value": "\u2013",
           "unit": ""
         },
         "Automatic Turntable Basket": {
@@ -5016,7 +5187,7 @@
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
       ],
-      "description": "The Magido L122 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L122 operates with aqueous detergents at temperatures up to 150°F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance — simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
+      "description": "The Magido L122 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L122 operates with aqueous detergents at temperatures up to 150\u00b0F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance \u2014 simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
     },
     {
       "slug": "l152",
@@ -5079,12 +5250,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 – 60",
+          "value": "0 \u2013 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Length (lid open)": {
           "value": "85\"",
@@ -5119,7 +5290,7 @@
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
       ],
-      "description": "The Magido L152 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L152 operates with aqueous detergents at temperatures up to 150°F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance — simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
+      "description": "The Magido L152 is an automatic spray jet wash system from the X51 Series, constructed entirely from AISI 304 stainless steel. Equipped with a rotating turntable and spray bar that uses water pressure to clean medium and large-sized parts, the L152 operates with aqueous detergents at temperatures up to 150\u00b0F. Adjustable temperature and wash cycle time are standard features, with additional options available for filtration and drying stages. The X51 Series is ergonomically designed to reduce shop labor costs without sacrificing wash performance \u2014 simply load the parts on the turntable, start the automatic cycle, and return to other tasks."
     },
     {
       "slug": "g200",
@@ -7164,8 +7335,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage / Amperage": {
           "value": "115/19",
@@ -7227,8 +7398,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage / Amperage": {
           "value": "115/19",
@@ -7290,8 +7461,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "115",
@@ -7357,8 +7528,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "115",
@@ -7436,8 +7607,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage / Amperage": {
           "value": "26.5/14",
@@ -7523,8 +7694,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113°F",
-          "unit": "°F"
+          "value": "113\u00b0F",
+          "unit": "\u00b0F"
         },
         "Voltage / Amperage": {
           "value": "31/15.5",
@@ -7619,8 +7790,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -7663,7 +7834,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L-35 is a compact top load spray cabinet parts washer from the X81 Series, featuring an automatic rotary turntable and calibrated jet-spray manifold for thorough aqueous cleaning. Designed for work-cell and small-workspace applications, the L-35 uses heated water-based detergent at temperatures up to 150°F to remove oils, greases, and contaminants from small to medium-sized industrial parts. Standard features include a solution heater, complete AISI 304 stainless steel construction, fluid level control, tank drain, and removable filter basket. Its top-loading design makes it the ideal parts washer for space-constrained environments."
+      "description": "The Magido L-35 is a compact top load spray cabinet parts washer from the X81 Series, featuring an automatic rotary turntable and calibrated jet-spray manifold for thorough aqueous cleaning. Designed for work-cell and small-workspace applications, the L-35 uses heated water-based detergent at temperatures up to 150\u00b0F to remove oils, greases, and contaminants from small to medium-sized industrial parts. Standard features include a solution heater, complete AISI 304 stainless steel construction, fluid level control, tank drain, and removable filter basket. Its top-loading design makes it the ideal parts washer for space-constrained environments."
     },
     {
       "slug": "l-55",
@@ -7719,8 +7890,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -7763,7 +7934,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L-55 is a compact top load spray cabinet parts washer from the X81 Series, featuring an automatic rotary turntable and calibrated jet-spray manifold for thorough aqueous cleaning. Designed for work-cell and small-workspace applications, the L-55 uses heated water-based detergent at temperatures up to 150°F to remove oils, greases, and contaminants from small to medium-sized industrial parts. Standard features include a solution heater, complete AISI 304 stainless steel construction, fluid level control, tank drain, and removable filter basket. Its top-loading design makes it the ideal parts washer for space-constrained environments."
+      "description": "The Magido L-55 is a compact top load spray cabinet parts washer from the X81 Series, featuring an automatic rotary turntable and calibrated jet-spray manifold for thorough aqueous cleaning. Designed for work-cell and small-workspace applications, the L-55 uses heated water-based detergent at temperatures up to 150\u00b0F to remove oils, greases, and contaminants from small to medium-sized industrial parts. Standard features include a solution heater, complete AISI 304 stainless steel construction, fluid level control, tank drain, and removable filter basket. Its top-loading design makes it the ideal parts washer for space-constrained environments."
     },
     {
       "slug": "l-90",
@@ -7819,8 +7990,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -7863,7 +8034,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L-90 is a compact top load spray cabinet parts washer from the X81 Series, featuring an automatic rotary turntable and calibrated jet-spray manifold for thorough aqueous cleaning. Designed for work-cell and small-workspace applications, the L-90 uses heated water-based detergent at temperatures up to 150°F to remove oils, greases, and contaminants from small to medium-sized industrial parts. Standard features include a solution heater, complete AISI 304 stainless steel construction, fluid level control, tank drain, and removable filter basket. Its top-loading design makes it the ideal parts washer for space-constrained environments."
+      "description": "The Magido L-90 is a compact top load spray cabinet parts washer from the X81 Series, featuring an automatic rotary turntable and calibrated jet-spray manifold for thorough aqueous cleaning. Designed for work-cell and small-workspace applications, the L-90 uses heated water-based detergent at temperatures up to 150\u00b0F to remove oils, greases, and contaminants from small to medium-sized industrial parts. Standard features include a solution heater, complete AISI 304 stainless steel construction, fluid level control, tank drain, and removable filter basket. Its top-loading design makes it the ideal parts washer for space-constrained environments."
     },
     {
       "slug": "l800fp",
@@ -7909,8 +8080,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -7991,8 +8162,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -8073,8 +8244,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -8155,8 +8326,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -8245,8 +8416,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°F",
-          "unit": "°F"
+          "value": "160\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -8335,8 +8506,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°F",
-          "unit": "°F"
+          "value": "160\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -8425,8 +8596,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°F",
-          "unit": "°F"
+          "value": "160\u00b0F",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -8538,8 +8709,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "Programmable",
@@ -8665,8 +8836,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "Programmable",
@@ -8791,8 +8962,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "140°",
-          "unit": "°F"
+          "value": "140\u00b0",
+          "unit": "\u00b0F"
         },
         "Timer": {
           "value": "Programmable",
@@ -8889,8 +9060,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -8921,7 +9092,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L160 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160°F. The L160 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
+      "description": "The Magido L160 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The L160 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
     },
     {
       "slug": "l190",
@@ -8969,8 +9140,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -9001,7 +9172,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L190 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160°F. The L190 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
+      "description": "The Magido L190 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The L190 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
     },
     {
       "slug": "l210",
@@ -9047,8 +9218,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -9079,7 +9250,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L210 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160°F. The L210 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
+      "description": "The Magido L210 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The L210 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
     },
     {
       "slug": "l240",
@@ -9125,8 +9296,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -9157,7 +9328,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L240 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160°F. The L240 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
+      "description": "The Magido L240 is a front load spray cabinet parts washer from the X53 Series, engineered for automatic cleaning of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The L240 uses a fixed platform with angled water jet nozzles configured on a spray ramp for optimal cleaning coverage across all part surfaces. The turntable removes easily from the wash chamber onto a mobile cart for convenient loading and unloading. Built from AISI 304 stainless steel with options for filtration, rinsing, and drying stages, the X53 Series is designed for high-throughput production environments handling bulky parts."
     },
     {
       "slug": "l162",
@@ -9215,8 +9386,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9259,7 +9430,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L162 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160°F, the L162 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
+      "description": "The Magido L162 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160\u00b0F, the L162 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
     },
     {
       "slug": "l192",
@@ -9317,8 +9488,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9361,7 +9532,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L192 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160°F, the L192 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
+      "description": "The Magido L192 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160\u00b0F, the L192 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
     },
     {
       "slug": "l212",
@@ -9419,8 +9590,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9463,7 +9634,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L212 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160°F, the L212 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
+      "description": "The Magido L212 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160\u00b0F, the L212 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
     },
     {
       "slug": "l242",
@@ -9521,8 +9692,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160°",
-          "unit": "°F"
+          "value": "160\u00b0",
+          "unit": "\u00b0F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9565,7 +9736,7 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L242 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160°F, the L242 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
+      "description": "The Magido L242 is a dual-stage front load spray cabinet washer from the X53/2 Series, providing separate wash and rinse stages for residue-free cleaning of large industrial components. Operating with aqueous detergents at temperatures up to 160\u00b0F, the L242 features angled water jet nozzles on a spray ramp and a removable turntable that transfers onto a mobile cart for easy loading. All machines are constructed from AISI 304 stainless steel with options for filtration and drying. The X53/2 Series delivers thorough, automated cleaning for production operations requiring consistently clean, residue-free results."
     },
     {
       "slug": "a700",
@@ -9599,8 +9770,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9627,7 +9798,7 @@
           "unit": "Inches"
         }
       },
-      "description": "The Magido A700 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167°F, the A700 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
+      "description": "The Magido A700 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A700 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
     },
     {
       "slug": "a900",
@@ -9661,8 +9832,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9689,7 +9860,7 @@
           "unit": "Inches"
         }
       },
-      "description": "The Magido A900 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167°F, the A900 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
+      "description": "The Magido A900 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A900 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
     },
     {
       "slug": "a1100",
@@ -9723,8 +9894,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9751,7 +9922,7 @@
           "unit": "Inches"
         }
       },
-      "description": "The Magido A1100 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167°F, the A1100 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
+      "description": "The Magido A1100 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A1100 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
     },
     {
       "slug": "a1300",
@@ -9785,8 +9956,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170°F",
-          "unit": "°F"
+          "value": "Ambient-170\u00b0F",
+          "unit": "\u00b0F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9813,7 +9984,7 @@
           "unit": "Inches"
         }
       },
-      "description": "The Magido A1300 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167°F, the A1300 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
+      "description": "The Magido A1300 is a top load immersion parts washer from the Agita Series, designed for thorough cleaning of parts with complex geometries using the immersion and agitation method. Parts are lowered into heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, the A1300 is constructed entirely from AISI 304 stainless steel. The Agita Series is ideal for precision components, machined parts, and assemblies requiring complete surface contact with the cleaning solution."
     },
     {
       "slug": "j320",
@@ -9881,7 +10052,7 @@
         },
         "Solution temperature": {
           "value": "100-140",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.12 / 60",
@@ -9979,7 +10150,7 @@
         },
         "Solution temperature": {
           "value": "100-140",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.12 / 60",
@@ -10073,7 +10244,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10171,7 +10342,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10269,7 +10440,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10367,7 +10538,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.75 / 470",
@@ -10481,7 +10652,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10595,7 +10766,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10709,7 +10880,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10823,7 +10994,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "°F"
+          "unit": "\u00b0F"
         },
         "Steam aspirator": {
           "value": "0.75 / 470",
@@ -10930,7 +11101,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "¼ Hp / 60 cfm",
+          "value": "\u00bc Hp / 60 cfm",
           "unit": ""
         },
         "PLC": {
@@ -10946,7 +11117,7 @@
           "unit": "Inches"
         },
         "Drum Rotation": {
-          "value": "¼ Hp",
+          "value": "\u00bc Hp",
           "unit": ""
         },
         "Rotation Speed": {
@@ -11012,7 +11183,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "½ HP / 180 cfm",
+          "value": "\u00bd HP / 180 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11028,7 +11199,7 @@
           "unit": "Inches"
         },
         "Drum Rotation": {
-          "value": "¾ Hp",
+          "value": "\u00be Hp",
           "unit": ""
         },
         "Rotation Speed": {
@@ -11094,7 +11265,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "½ HP / 180 cfm",
+          "value": "\u00bd HP / 180 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11176,7 +11347,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "¾ HP / 470 cfm",
+          "value": "\u00be HP / 470 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11264,8 +11435,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Electric Power": {
           "value": "230",
@@ -11343,8 +11514,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Electric Power": {
           "value": "230/480",
@@ -11419,8 +11590,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140°F",
-          "unit": "°F"
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
         },
         "Electric Power": {
           "value": "230/480",
@@ -11444,6 +11615,87 @@
         }
       },
       "description": "The Magido FLS-45 is a front load spray cabinet washer from the FLS Series, designed for efficient automated cleaning of medium to large parts. Featuring a front-loading door for easy access to the wash chamber, the FLS-45 uses heated aqueous detergent and precision spray nozzles to thoroughly remove oils, greases, and contaminants. Built from AISI 304 stainless steel, this system includes safety interlocks and programmable wash cycles. The FLS Series offers a compact front-load solution for facilities that need automated spray washing with convenient part loading and unloading."
+    },
+    {
+      "slug": "tr450",
+      "model": "TR-450",
+      "name": "TR-450 Top Load Spray/Immersion Parts Washer",
+      "seriesSlug": "tr450",
+      "categorySlug": "top-load-washers",
+      "url": "/products/top-load-washers/tr450",
+      "images": [
+        "/images/products/tr450/tr450-1.webp",
+        "/images/products/tr450/tr450-2.webp",
+        "/images/products/tr450/tr450-3.webp",
+        "/images/products/tr450/tr450-4.webp"
+      ],
+      "specs": {
+        "Basket Dimensions": {
+          "value": "L18\" x W12\" x H6\"",
+          "unit": "Inches"
+        },
+        "Load Weight": {
+          "value": "110 lbs",
+          "unit": "Lbs"
+        },
+        "Basket Rotation": {
+          "value": "0.7 \u2013 2.5",
+          "unit": "RPM"
+        },
+        "Fluid/Tank Capacity": {
+          "value": "60 gal",
+          "unit": "gal US"
+        },
+        "Pump Power": {
+          "value": "2",
+          "unit": "Hp"
+        },
+        "Spray Pressure": {
+          "value": "33",
+          "unit": "PSI"
+        },
+        "Flow Rate": {
+          "value": "45",
+          "unit": "G/Min"
+        },
+        "Tank Heater": {
+          "value": "6",
+          "unit": "kW"
+        },
+        "Max Operating Temperature": {
+          "value": "140\u00b0F",
+          "unit": "\u00b0F"
+        },
+        "Voltage": {
+          "value": "230V/460V",
+          "unit": "Volts"
+        },
+        "Phase": {
+          "value": "3",
+          "unit": "Ph"
+        },
+        "Amperage": {
+          "value": "60",
+          "unit": "Amps"
+        },
+        "Timer": {
+          "value": "0\u201360",
+          "unit": "Minute"
+        },
+        "Overall Dimensions (LxW)": {
+          "value": "57\" x 57\"",
+          "unit": "Inches"
+        },
+        "Height (lid open)": {
+          "value": "78\"",
+          "unit": "Inches"
+        },
+        "Net Weight": {
+          "value": "770 lbs",
+          "unit": "Lbs"
+        }
+      },
+      "description": "The Magido TR-450 is a compact, ergonomically designed top load parts washer built for precision cleaning of machined components. Ideal for integration into a manufacturing cell, the TR-450 uses a rotating basket that is simultaneously sprayed from the front, back, and sides while partially submerging during the cleaning cycle \u2014 ensuring uniform coverage and complete contamination removal. Built entirely from AISI 304 stainless steel with a NEMA-4 rated control panel, the TR-450 handles a wide variety of complex small to medium-sized parts using standard baskets."
     }
   ]
 }

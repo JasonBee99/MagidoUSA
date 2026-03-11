@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ChevronRight, ArrowRight, Clock } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { blogPosts } from '@/data/blog';
+import { BlogList } from '@/components/BlogList';
 
 export const metadata: Metadata = {
   title: 'Blog — Industrial Parts Washing Guides & Insights',
@@ -31,19 +32,8 @@ export default function BlogPage() {
       </section>
 
       <section className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-4xl space-y-6">
-          {blogPosts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="group block rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-6 transition-all hover:border-magido-orange/30 hover:shadow-lg">
-              <div className="flex items-center gap-3 text-xs text-[var(--color-text-muted)]">
-                <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
-                <span>&bull;</span>
-                <span className="flex items-center gap-1"><Clock className="h-3 w-3" /> {post.readTime}</span>
-              </div>
-              <h2 className="mt-2 font-display text-xl font-bold text-[var(--color-text)] transition-colors group-hover:text-magido-orange">{post.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-secondary)]">{post.excerpt}</p>
-              <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-magido-orange">Read More <ArrowRight className="h-3.5 w-3.5" /></span>
-            </Link>
-          ))}
+        <div className="mx-auto max-w-4xl">
+          <BlogList posts={blogPosts} />
         </div>
       </section>
     </>
