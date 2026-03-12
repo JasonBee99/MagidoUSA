@@ -133,7 +133,7 @@ export default function ResourcesPage() {
                   {group.brochures.map((b) => (
                     <a
                       key={b.seriesSlug}
-                      href={`/docs/series/${encodeURIComponent(b.fileName)}`}
+                      href={`/brochures/${b.fileName}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group flex items-center gap-3 rounded-xl border border-[var(--color-border)] bg-[var(--color-card-bg)] p-4 transition-all hover:border-magido-orange/40 hover:shadow-md"

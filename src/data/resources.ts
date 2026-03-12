@@ -532,18 +532,20 @@ export const SERIES_BROCHURES: {
   fileName: string;
   categoryName: string;
 }[] = [
-  { seriesSlug: 'dg',       seriesName: 'DG Series',        fileName: 'MAGIDO DG_USA.pdf',      categoryName: 'Manual Washers' },
-  { seriesSlug: 'l',        seriesName: 'L Series',         fileName: 'MAGIDO L_USA.pdf',       categoryName: 'Manual Washers' },
-  { seriesSlug: 'hp',       seriesName: 'HP Series',        fileName: 'MAGIDO HP_USA.pdf',      categoryName: 'Manual Washers' },
-  { seriesSlug: 'x81',      seriesName: 'X81 Series',       fileName: 'MAGIDO X81_USA.pdf',     categoryName: 'Top Load Washers' },
-  { seriesSlug: 'x51',      seriesName: 'X51 Series',       fileName: 'MAGIDO X51_USA.pdf',     categoryName: 'Top Load Washers' },
-  { seriesSlug: 'x51-2',    seriesName: 'X51/2 Series',     fileName: 'MAGIDO X51_2_USA.pdf',   categoryName: 'Top Load Washers' },
-  { seriesSlug: 'x51hp',    seriesName: 'X51HP Series',     fileName: 'MAGIDO X51HP.pdf',       categoryName: 'Top Load Washers' },
-  { seriesSlug: 'x53',      seriesName: 'X53 Series',       fileName: 'MAGIDO X53_USA.pdf',     categoryName: 'Front Load Washers' },
-  { seriesSlug: 'x53-2',    seriesName: 'X53/2 Series',     fileName: 'MAGIDO X53_2_USA.pdf',   categoryName: 'Front Load Washers' },
-  { seriesSlug: 'eco',      seriesName: 'ECO Series',       fileName: 'MAGIDO ECO_USA.pdf',     categoryName: 'Top Load Washers' },
-  { seriesSlug: 'spira-1b', seriesName: 'Spira 1b Series',  fileName: 'MAGIDO spiraline.pdf',   categoryName: 'Rotary Drum Washers' },
-  { seriesSlug: 'spira-2b', seriesName: 'Spira 2b Series',  fileName: 'MAGIDO spiraline.pdf',   categoryName: 'Rotary Drum Washers' },
+  { seriesSlug: 'dg',       seriesName: 'DG Series',        fileName: 'MAGIDO_DG_USA.pdf',      categoryName: 'Manual Washers' },
+  { seriesSlug: 'l',        seriesName: 'L Series',         fileName: 'MAGIDO_L_USA.pdf',       categoryName: 'Manual Washers' },
+  { seriesSlug: 'hp',       seriesName: 'HP Series',        fileName: 'MAGIDO_HP_USA.pdf',      categoryName: 'Manual Washers' },
+  { seriesSlug: 'x81',      seriesName: 'X81 Series',       fileName: 'MAGIDO_X81_USA.pdf',     categoryName: 'Top Load Washers' },
+  { seriesSlug: 'x51',      seriesName: 'X51 Series',       fileName: 'MAGIDO_X51_USA.pdf',     categoryName: 'Top Load Washers' },
+  { seriesSlug: 'x51-2',    seriesName: 'X51/2 Series',     fileName: 'MAGIDO_X51_2_USA.pdf',   categoryName: 'Top Load Washers' },
+  { seriesSlug: 'x51hp',    seriesName: 'X51HP Series',     fileName: 'MAGIDO_X51HP_USA.pdf',       categoryName: 'Top Load Washers' },
+  { seriesSlug: 'x53',      seriesName: 'X53 Series',       fileName: 'MAGIDO_X53_USA.pdf',     categoryName: 'Front Load Washers' },
+  { seriesSlug: 'x53-2',    seriesName: 'X53/2 Series',     fileName: 'MAGIDO_X53_2_USA.pdf',   categoryName: 'Front Load Washers' },
+  { seriesSlug: 'eco',      seriesName: 'ECO Series',       fileName: 'MAGIDO_ECO_USA.pdf',     categoryName: 'Top Load Washers' },
+  { seriesSlug: 'jolly',    seriesName: 'Jolly Series',      fileName: 'MAGIDO_SPRIALINE_USA.pdf',   categoryName: 'Rotary Drum Washers' },
+  { seriesSlug: 'spira-1b', seriesName: 'Spira 1b Series',  fileName: 'MAGIDO_SPRIALINE_USA.pdf',   categoryName: 'Rotary Drum Washers' },
+  { seriesSlug: 'spira-2b', seriesName: 'Spira 2b Series',  fileName: 'MAGIDO_SPRIALINE_USA.pdf',   categoryName: 'Rotary Drum Washers' },
+  { seriesSlug: 'tr450',    seriesName: 'TR-450 Series',     fileName: 'MAGIDO_TR450_USA.pdf',       categoryName: 'Top Load Washers' },
 ];
 
 /**

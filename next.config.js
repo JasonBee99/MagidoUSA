@@ -44,12 +44,13 @@ const nextConfig = {
       { source: '/product/l101-hp',         destination: '/products/top-load-washers/l101hp',                  permanent: true },
 
       // ── Old docs/resources pages → new resources pages ──
-      { source: '/docs/magido-manual-aqueous-parts-washers',            destination: '/resources/manual-washers',               permanent: true },
-      { source: '/docs/front-loading-aqueous-parts-washing-systems',    destination: '/resources/front-load-washers',           permanent: true },
-      { source: '/docs/helical-rotary-drum-aqueous-parts-washing-system', destination: '/resources/rotary-drum-washers',        permanent: true },
-      { source: '/docs/in-line-belt-conveyor-aqueous-parts-washing-systems', destination: '/resources/in-line-belt-conveyor-washers', permanent: true },
-      { source: '/docs/top-load-aqueous-parts-washing-systems',         destination: '/resources/top-load-washers',             permanent: true },
-      { source: '/docs/:path*',                                         destination: '/resources',                              permanent: true },
+      // NOTE: /docs/ catch-all is safe — PDF brochures now live at /brochures/ (not /docs/)
+      { source: '/docs/magido-manual-aqueous-parts-washers',               destination: '/resources/manual-washers',                    permanent: true },
+      { source: '/docs/front-loading-aqueous-parts-washing-systems',       destination: '/resources/front-load-washers',                permanent: true },
+      { source: '/docs/helical-rotary-drum-aqueous-parts-washing-system',  destination: '/resources/rotary-drum-washers',               permanent: true },
+      { source: '/docs/in-line-belt-conveyor-aqueous-parts-washing-systems', destination: '/resources/in-line-belt-conveyor-washers',   permanent: true },
+      { source: '/docs/top-load-aqueous-parts-washing-systems',            destination: '/resources/top-load-washers',                  permanent: true },
+      { source: '/docs/:path*',                                             destination: '/resources',                                   permanent: true },
 
       // ── Old misc pages ──
       { source: '/applications',            destination: '/solutions',                                          permanent: true },
@@ -81,6 +82,20 @@ const nextConfig = {
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable', // 1 year
+          },
+        ],
+      },
+      // ── PDF brochures — cache 7 days, serve inline ──
+      {
+        source: '/brochures/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=604800, stale-while-revalidate=86400',
+          },
+          {
+            key: 'Content-Disposition',
+            value: 'inline',
           },
         ],
       },

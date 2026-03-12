@@ -61,18 +61,29 @@ export function generateMetadata({
 
 // ─── Series PDF brochure map — only series with a confirmed PDF ───
 const SERIES_PDF: Record<string, string> = {
-  'dg':      'MAGIDO DG_USA.pdf',
-  'eco':     'MAGIDO ECO_USA.pdf',
-  'hp':      'MAGIDO HP_USA.pdf',
-  'l':       'MAGIDO L_USA.pdf',
-  'spira-1b':'MAGIDO spiraline.pdf',
-  'spira-2b':'MAGIDO spiraline.pdf',
-  'x51-2':   'MAGIDO X51_2_USA.pdf',
-  'x51hp':   'MAGIDO X51HP.pdf',
-  'x51':     'MAGIDO X51_USA.pdf',
-  'x53-2':   'MAGIDO X53_2_USA.pdf',
-  'x53':     'MAGIDO X53_USA.pdf',
-  'x81':     'MAGIDO X81_USA.pdf',
+  'dg':      'MAGIDO_DG_USA.pdf',
+  'eco':     'MAGIDO_ECO_USA.pdf',
+  'fls':     'MAGIDO_FLS_USA.pdf',
+  'gold-1b': 'MAGIDO_belt_converyor.pdf',
+  'gold-2b': 'MAGIDO_belt_converyor.pdf',
+  'hp':      'MAGIDO_HP_USA.pdf',
+  'jolly':   'MAGIDO_SPRIALINE_USA.pdf',
+  'l':       'MAGIDO_L_USA.pdf',
+  'silver':  'MAGIDO_belt_converyor.pdf',
+  'spira-1b':'MAGIDO_SPRIALINE_USA.pdf',
+  'spira-2b':'MAGIDO_SPRIALINE_USA.pdf',
+  'tr450':   'MAGIDO_TR450_USA.pdf',
+  'x51-2':   'MAGIDO_X51_2_USA.pdf',
+  'x51hp':   'MAGIDO_X51HP_USA.pdf',
+  'x51':     'MAGIDO_X51_USA.pdf',
+  'x53-2':   'MAGIDO_X53_2_USA.pdf',
+  'x53':     'MAGIDO_X53_USA.pdf',
+  'x81':     'MAGIDO_X81_USA.pdf',
+};
+
+// ─── Secondary PDF map — additional docs (e.g. service instructions) ───
+const SERIES_PDF2: Record<string, { file: string; label: string }> = {
+  'hp': { file: 'HP25_StartUpInstructions_USA.pdf', label: 'Start-Up Instructions' },
 };
 
 // ─── Key specs — ordered list of candidates, first match per label wins ───
@@ -113,7 +124,10 @@ export default function ProductPage({
   const series = getSeriesBySlug(product.seriesSlug);
   const seriesProducts = getProductsBySeries(product.seriesSlug);
   const pdfFile = product.seriesSlug ? SERIES_PDF[product.seriesSlug] ?? null : null;
-  const pdfHref = pdfFile ? `/docs/series/${encodeURIComponent(pdfFile)}` : null;
+  const pdfHref = pdfFile ? `/brochures/${pdfFile}` : null;
+  const pdf2Entry = product.seriesSlug ? SERIES_PDF2[product.seriesSlug] ?? null : null;
+  const pdfHref2 = pdf2Entry ? `/brochures/${pdf2Entry.file}` : null;
+  const pdfLabel2 = pdf2Entry?.label ?? null;
   const { prev, next } = getCategoryNavigation(params.product);
   const prevSeries = prev ? getSeriesBySlug(prev.seriesSlug) : null;
   const nextSeries = next ? getSeriesBySlug(next.seriesSlug) : null;
@@ -285,6 +299,20 @@ export default function ProductPage({
                       <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
                     </svg>
                     Download Brochure
+                  </a>
+                )}
+                {pdfHref2 && (
+                  <a
+                    href={pdfHref2}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3 text-sm font-semibold text-[var(--color-text-secondary)] transition-colors hover:border-magido-orange hover:text-magido-orange"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                      <path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z" />
+                      <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
+                    </svg>
+                    {pdfLabel2}
                   </a>
                 )}
               </div>
