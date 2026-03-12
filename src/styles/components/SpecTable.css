@@ -1,0 +1,415 @@
+/* =============================================================================
+   SpecTable — Series Specification Comparison Table
+   File: styles/components/SpecTable.css  (or import in your global CSS)
+
+   BEM prefix: spec-table__
+   All colours reference CSS custom properties so they adapt to your site theme.
+   Override any variable in :root or a parent selector to re-theme.
+   ============================================================================= */
+
+/* ── Variables (defaults — override in your theme) ─────────────────────────── */
+:root {
+  --st-bg:              #ffffff;
+  --st-border:          #e2e8f0;
+  --st-header-bg:       #1a2744;       /* Magido dark navy */
+  --st-header-fg:       #ffffff;
+  --st-row-even-bg:     #f8fafc;
+  --st-row-odd-bg:      #ffffff;
+  --st-highlight-bg:    #eef6ff;       /* light blue for current model */
+  --st-highlight-border:#2563eb;
+  --st-highlight-th-bg: #2563eb;
+  --st-highlight-th-fg: #ffffff;
+  --st-label-fg:        #374151;
+  --st-value-fg:        #111827;
+  --st-unit-fg:         #9ca3af;
+  --st-dash-fg:         #d1d5db;
+  --st-check-fg:        #16a34a;
+  --st-badge-new-bg:    #dc2626;
+  --st-badge-new-fg:    #ffffff;
+  --st-current-badge-bg:#2563eb;
+  --st-current-badge-fg:#ffffff;
+  --st-btn-bg:          #1a2744;
+  --st-btn-fg:          #ffffff;
+  --st-btn-hover-bg:    #2563eb;
+  --st-accordion-border:#e2e8f0;
+  --st-accordion-bg:    #f9fafb;
+  --st-accordion-hover: #f1f5f9;
+  --st-font-sans:       system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --st-font-mono:       'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  --st-radius:          8px;
+  --st-radius-sm:       4px;
+}
+
+/* ── Wrapper ────────────────────────────────────────────────────────────────── */
+.spec-table {
+  font-family: var(--st-font-sans);
+  background: var(--st-bg);
+  border: 1px solid var(--st-border);
+  border-radius: var(--st-radius);
+  overflow: hidden;
+  margin-block: 2rem;
+}
+
+/* ── Series header ──────────────────────────────────────────────────────────── */
+.spec-table__header {
+  background: var(--st-header-bg);
+  color: var(--st-header-fg);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+}
+
+.spec-table__series-type {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  width: 100%;
+  margin-bottom: -0.25rem;
+}
+
+.spec-table__series-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.spec-table__series-desc {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  margin: 0.25rem 0 0;
+  width: 100%;
+  line-height: 1.5;
+}
+
+/* ── Badges ─────────────────────────────────────────────────────────────────── */
+.spec-table__badge {
+  display: inline-block;
+  padding: 0.15em 0.55em;
+  border-radius: 100px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.spec-table__badge--new {
+  background: var(--st-badge-new-bg);
+  color: var(--st-badge-new-fg);
+}
+
+.spec-table__current-badge {
+  display: block;
+  margin-top: 0.3rem;
+  padding: 0.1em 0.5em;
+  background: var(--st-current-badge-bg);
+  color: var(--st-current-badge-fg);
+  border-radius: 100px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── Scroll wrapper ─────────────────────────────────────────────────────────── */
+.spec-table__scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* subtle shadow cue on mobile to hint scrollability */
+  background:
+    linear-gradient(to right, var(--st-bg) 0%, transparent 2rem) left center / 2rem 100% no-repeat,
+    linear-gradient(to left,  var(--st-bg) 0%, transparent 2rem) right center / 2rem 100% no-repeat;
+}
+
+/* ── Table ──────────────────────────────────────────────────────────────────── */
+.spec-table__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  table-layout: auto;
+}
+
+/* ── Table head ─────────────────────────────────────────────────────────────── */
+.spec-table__th {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: #f1f5f9;
+  border-bottom: 2px solid var(--st-border);
+  white-space: nowrap;
+  color: var(--st-label-fg);
+}
+
+.spec-table__th--label {
+  text-align: left;
+  min-width: 200px;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #f1f5f9;
+  box-shadow: 2px 0 4px -2px rgba(0,0,0,0.08);
+}
+
+.spec-table__th--model {
+  min-width: 130px;
+}
+
+.spec-table__th--highlight {
+  background: var(--st-highlight-th-bg);
+  color: var(--st-highlight-th-fg);
+  border-top: 3px solid var(--st-highlight-border);
+  border-bottom-color: var(--st-highlight-border);
+}
+
+/* ── Table rows ─────────────────────────────────────────────────────────────── */
+.spec-table__row--even {
+  background: var(--st-row-even-bg);
+}
+
+.spec-table__row--odd,
+.spec-table__row:not(.spec-table__row--even) {
+  background: var(--st-row-odd-bg);
+}
+
+.spec-table__row:hover td {
+  background: #f0f7ff;
+}
+
+.spec-table__row--quote {
+  background: #f8fafc;
+  border-top: 2px solid var(--st-border);
+}
+
+.spec-table__row--quote:hover td {
+  background: #f8fafc;
+}
+
+/* ── Table cells ────────────────────────────────────────────────────────────── */
+.spec-table__td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--st-border);
+  vertical-align: middle;
+  color: var(--st-value-fg);
+  line-height: 1.4;
+}
+
+.spec-table__td--label {
+  text-align: left;
+  font-weight: 500;
+  color: var(--st-label-fg);
+  white-space: nowrap;
+  font-size: 0.8125rem;
+  position: sticky;
+  left: 0;
+  background: inherit;
+  box-shadow: 2px 0 4px -2px rgba(0,0,0,0.06);
+  /* inherit row background for sticky cell */
+  z-index: 0;
+}
+
+.spec-table__row--even .spec-table__td--label {
+  background: var(--st-row-even-bg);
+}
+
+.spec-table__row:not(.spec-table__row--even) .spec-table__td--label {
+  background: var(--st-row-odd-bg);
+}
+
+.spec-table__row:hover .spec-table__td--label {
+  background: #f0f7ff;
+}
+
+.spec-table__td--value {
+  text-align: center;
+  font-family: var(--st-font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: -0.01em;
+}
+
+.spec-table__td--highlight {
+  background: var(--st-highlight-bg) !important;
+  border-left: 1px solid #bfdbfe;
+  border-right: 1px solid #bfdbfe;
+}
+
+.spec-table__unit {
+  display: none; /* already in the row label header; hide inline duplicate */
+}
+
+/* ── Special cell values ────────────────────────────────────────────────────── */
+.spec-table__dash {
+  color: var(--st-dash-fg);
+  font-family: var(--st-font-sans);
+  font-size: 1rem;
+}
+
+.spec-table__check {
+  color: var(--st-check-fg);
+  font-weight: 700;
+  font-family: var(--st-font-sans);
+  font-size: 1rem;
+}
+
+/* ── Quote row ──────────────────────────────────────────────────────────────── */
+.spec-table__td--quote-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.spec-table__td--quote {
+  padding: 0.75rem 0.75rem;
+  font-family: var(--st-font-sans);
+}
+
+.spec-table__quote-btn {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  background: var(--st-btn-bg);
+  color: var(--st-btn-fg);
+  border-radius: var(--st-radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.spec-table__quote-btn:hover {
+  background: var(--st-btn-hover-bg);
+  transform: translateY(-1px);
+}
+
+.spec-table__quote-btn:active {
+  transform: translateY(0);
+}
+
+/* ── Features accordion ─────────────────────────────────────────────────────── */
+.spec-table__features-wrap {
+  border-top: 1px solid var(--st-accordion-border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  .spec-table__features-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+.spec-table__accordion {
+  border-right: 1px solid var(--st-accordion-border);
+}
+
+.spec-table__accordion:last-child {
+  border-right: none;
+}
+
+.spec-table__accordion-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1.25rem;
+  background: var(--st-accordion-bg);
+  border: none;
+  cursor: pointer;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--st-label-fg);
+  letter-spacing: 0.01em;
+  text-align: left;
+  transition: background 0.15s;
+  font-family: var(--st-font-sans);
+}
+
+.spec-table__accordion-toggle:hover {
+  background: var(--st-accordion-hover);
+}
+
+.spec-table__accordion-icon {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #6b7280;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.spec-table__feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 1.25rem 1rem;
+  background: var(--st-bg);
+}
+
+.spec-table__feature-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.3rem 0;
+  font-size: 0.8125rem;
+  color: var(--st-label-fg);
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.spec-table__feature-item:last-child {
+  border-bottom: none;
+}
+
+.spec-table__feature-check {
+  color: var(--st-check-fg);
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+}
+
+.spec-table__feature-plus {
+  color: var(--st-highlight-border);
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .spec-table__th,
+  .spec-table__td {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .spec-table__th--label,
+  .spec-table__td--label {
+    min-width: 160px;
+    font-size: 0.75rem;
+  }
+
+  .spec-table__th--model {
+    min-width: 110px;
+  }
+
+  .spec-table__td--value {
+    font-size: 0.75rem;
+  }
+
+  .spec-table__header {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .spec-table__th--label,
+  .spec-table__td--label {
+    min-width: 130px;
+  }
+}

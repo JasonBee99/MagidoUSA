@@ -162,6 +162,25 @@ function ContactPageInner() {
         </div>
       </section>
 
+      {/* ─── FAQ Callout ─── */}
+      <div className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)]">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+          <p className="text-sm text-[var(--color-text-secondary)]">
+            Have a general question? Check our{' '}
+            <Link href="/faq" className="font-medium text-magido-orange hover:underline">
+              FAQ page
+            </Link>{' '}
+            — we may already have the answer.
+          </p>
+          <Link
+            href="/faq"
+            className="flex-shrink-0 text-xs font-semibold text-magido-orange transition-colors hover:text-magido-orange-dark"
+          >
+            View FAQ →
+          </Link>
+        </div>
+      </div>
+
       {/* ─── Main Content ─── */}
       <section className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-7xl">

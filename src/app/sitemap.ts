@@ -2,22 +2,25 @@ import { MetadataRoute } from 'next';
 
 const BASE = 'https://www.magidousa.com';
 
-// ─── Static routes ───
+// ─── Static routes ───────────────────────────────────────────────────────────
+// lastModified: use a real date — only update this when the page content changes.
+// This tells Google "this page actually changed on X" rather than "today" every build.
 const staticRoutes: MetadataRoute.Sitemap = [
-  { url: `${BASE}/`,               lastModified: new Date(), changeFrequency: 'weekly',  priority: 1.0 },
-  { url: `${BASE}/products`,       lastModified: new Date(), changeFrequency: 'weekly',  priority: 0.9 },
-  { url: `${BASE}/solutions`,      lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
-  { url: `${BASE}/resources`,      lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-  { url: `${BASE}/resources/catalog`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-  { url: `${BASE}/contact`,        lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-  { url: `${BASE}/about`,          lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-  { url: `${BASE}/how-to-choose`,  lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-  { url: `${BASE}/compare`,        lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
-  { url: `${BASE}/blog`,           lastModified: new Date(), changeFrequency: 'weekly',  priority: 0.7 },
-  { url: `${BASE}/industries`,     lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+  { url: `${BASE}/`,              lastModified: new Date('2025-01-01'), changeFrequency: 'weekly',  priority: 1.0 },
+  { url: `${BASE}/products`,      lastModified: new Date('2025-01-01'), changeFrequency: 'weekly',  priority: 0.9 },
+  { url: `${BASE}/solutions`,     lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.9 },
+  { url: `${BASE}/resources`,     lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+  { url: `${BASE}/contact`,       lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+  { url: `${BASE}/about`,         lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.7 },
+  { url: `${BASE}/how-to-choose`, lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.7 },
+  { url: `${BASE}/compare`,       lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.6 },
+  { url: `${BASE}/blog`,          lastModified: new Date('2025-01-01'), changeFrequency: 'weekly',  priority: 0.7 },
+  { url: `${BASE}/industries`,    lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.8 },
+  // FAQ — added Phase 11
+  { url: `${BASE}/faq`,           lastModified: new Date('2025-03-01'), changeFrequency: 'monthly', priority: 0.7 },
 ];
 
-// ─── Product category pages ───
+// ─── Product category pages ───────────────────────────────────────────────────
 const categoryRoutes: MetadataRoute.Sitemap = [
   'manual-washers',
   'top-load-washers',
@@ -28,12 +31,12 @@ const categoryRoutes: MetadataRoute.Sitemap = [
   'rotary-immersion-washers',
 ].map((cat) => ({
   url: `${BASE}/products/${cat}`,
-  lastModified: new Date(),
+  lastModified: new Date('2025-01-01'),
   changeFrequency: 'monthly' as const,
   priority: 0.8,
 }));
 
-// ─── Individual product pages (74 total) ───
+// ─── Individual product pages ─────────────────────────────────────────────────
 const productRoutes: MetadataRoute.Sitemap = [
   // Manual Washers
   '/products/manual-washers/dg-8',
@@ -119,12 +122,12 @@ const productRoutes: MetadataRoute.Sitemap = [
   '/products/rotary-immersion-washers/p1500-2',
 ].map((url) => ({
   url: `${BASE}${url}`,
-  lastModified: new Date(),
+  lastModified: new Date('2025-01-01'),
   changeFrequency: 'monthly' as const,
   priority: 0.7,
 }));
 
-// ─── Industries pages (Phase 10) ───
+// ─── Industry pages ───────────────────────────────────────────────────────────
 const industryRoutes: MetadataRoute.Sitemap = [
   'automotive',
   'aerospace',
@@ -134,19 +137,18 @@ const industryRoutes: MetadataRoute.Sitemap = [
   'food-processing',
 ].map((slug) => ({
   url: `${BASE}/industries/${slug}`,
-  lastModified: new Date(),
+  lastModified: new Date('2025-01-01'),
   changeFrequency: 'monthly' as const,
   priority: 0.8,
 }));
 
-// ─── Solution landing pages ───
+// ─── Solution landing pages ───────────────────────────────────────────────────
 const solutionRoutes: MetadataRoute.Sitemap = [
   'aqueous-vs-solvent-parts-washers',
   'spray-cabinet-vs-immersion-parts-washers',
   'cleaning-brake-components',
   'removing-cutting-oil-and-coolant',
   'industrial-parts-washing-for-mro',
-  // Phase 9 additions
   'cleaning-hydraulic-components',
   'cleaning-automotive-transmission-parts',
   'removing-stamping-and-forming-lubricants',
@@ -156,14 +158,14 @@ const solutionRoutes: MetadataRoute.Sitemap = [
   'cleaning-medical-device-components',
 ].map((slug) => ({
   url: `${BASE}/solutions/${slug}`,
-  lastModified: new Date(),
+  lastModified: new Date('2025-01-01'),
   changeFrequency: 'monthly' as const,
   priority: 0.8,
 }));
 
-// ─── Resource / documentation pages ───
+// ─── Resource / documentation pages ──────────────────────────────────────────
+// Note: /resources (the main page) is already in staticRoutes — do not duplicate it here.
 const resourceRoutes: MetadataRoute.Sitemap = [
-  'catalog',
   'top-load-washers',
   'front-load-washers',
   'manual-washers',
@@ -174,19 +176,19 @@ const resourceRoutes: MetadataRoute.Sitemap = [
   'rotary-drum-washers',
 ].map((slug) => ({
   url: `${BASE}/resources/${slug}`,
-  lastModified: new Date(),
+  lastModified: new Date('2025-01-01'),
   changeFrequency: 'monthly' as const,
   priority: 0.6,
 }));
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    ...staticRoutes,    //  11 pages
+    ...staticRoutes,    //  11 pages (inc. FAQ)
     ...categoryRoutes,  //   7 pages
     ...productRoutes,   //  75 pages
     ...industryRoutes,  //   6 pages
     ...solutionRoutes,  //  12 pages
-    ...resourceRoutes,  //   9 pages
+    ...resourceRoutes,  //   8 pages
     // Total: 119 URLs
   ];
 }

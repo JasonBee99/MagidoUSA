@@ -83,6 +83,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/faq" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
+                  FAQ
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://magido.com"
                   target="_blank"

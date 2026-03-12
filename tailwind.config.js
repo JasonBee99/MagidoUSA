@@ -90,7 +90,40 @@ module.exports = {
       backgroundSize: {
         'grid': '40px 40px',
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: 'var(--color-text-secondary)',
+            a: {
+              color: theme('colors.magido.orange'),
+              textDecoration: 'underline',
+              textUnderlineOffset: '2px',
+              '&:hover': { color: theme('colors.magido.orange-dark') },
+            },
+            strong: {
+              color: 'var(--color-text)',
+              fontWeight: '600',
+            },
+            'ul > li::marker': {
+              color: theme('colors.magido.orange'),
+            },
+            'ol > li::marker': {
+              color: theme('colors.magido.orange'),
+            },
+            p: { marginBottom: '0.75rem' },
+            'p:last-child': { marginBottom: '0' },
+          },
+        },
+        invert: {
+          css: {
+            color: 'var(--color-text-secondary)',
+            strong: { color: 'var(--color-text)' },
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
