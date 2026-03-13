@@ -11,7 +11,6 @@ import { getAllCategories, getSeriesByCategory } from '@/lib/products';
 const categories = getAllCategories();
 
 const NAV_LINKS = [
-  { href: '/solutions', label: 'Solutions' },
   { href: '/about', label: 'About' },
   { href: '/resources', label: 'Resources' },
   { href: '/blog', label: 'Blog' },
@@ -25,7 +24,10 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
   const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const solutionsTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -43,6 +45,7 @@ export function Header() {
   useEffect(() => {
     setMobileOpen(false);
     setProductsOpen(false);
+    setSolutionsOpen(false);
   }, [pathname]);
 
   function isActive(href: string) {
@@ -50,6 +53,7 @@ export function Header() {
   }
 
   const isProductsActive = pathname.startsWith('/products');
+  const isSolutionsActive = pathname.startsWith('/solutions') || pathname.startsWith('/how-to-choose');
 
   // Hover handlers with small delay to prevent flicker
   function handleDropdownEnter() {
@@ -60,6 +64,17 @@ export function Header() {
   function handleDropdownLeave() {
     dropdownTimeout.current = setTimeout(() => {
       setProductsOpen(false);
+    }, 150);
+  }
+
+  function handleSolutionsEnter() {
+    if (solutionsTimeout.current) clearTimeout(solutionsTimeout.current);
+    setSolutionsOpen(true);
+  }
+
+  function handleSolutionsLeave() {
+    solutionsTimeout.current = setTimeout(() => {
+      setSolutionsOpen(false);
     }, 150);
   }
 
@@ -214,6 +229,59 @@ export function Header() {
                 )}
               </div>
 
+              {/* Solutions Dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={handleSolutionsEnter}
+                onMouseLeave={handleSolutionsLeave}
+              >
+                <Link
+                  href="/solutions"
+                  className={`flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                    isSolutionsActive
+                      ? 'text-magido-orange'
+                      : 'text-[var(--color-text)] hover:text-magido-orange'
+                  }`}
+                >
+                  Solutions
+                  <ChevronDown
+                    className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                      solutionsOpen ? 'rotate-180' : ''
+                    }`}
+                  />
+                </Link>
+
+                {solutionsOpen && (
+                  <div className="absolute left-1/2 top-full z-50 -translate-x-1/2 pt-2">
+                    <div className="w-56 rounded-xl border border-[var(--color-border)] bg-[var(--color-card-bg)] py-1.5 shadow-2xl">
+                      <Link
+                        href="/solutions"
+                        className={`block px-4 py-2 text-sm font-medium transition-colors hover:text-magido-orange ${
+                          pathname === '/solutions'
+                            ? 'text-magido-orange'
+                            : 'text-[var(--color-text)]'
+                        }`}
+                        onClick={() => setSolutionsOpen(false)}
+                      >
+                        Solutions Overview
+                      </Link>
+                      <div className="mx-4 my-1 border-t border-[var(--color-border-light)]" />
+                      <Link
+                        href="/how-to-choose"
+                        className={`block px-4 py-2 text-sm transition-colors hover:text-magido-orange ${
+                          pathname.startsWith('/how-to-choose')
+                            ? 'font-medium text-magido-orange'
+                            : 'text-[var(--color-text-secondary)]'
+                        }`}
+                        onClick={() => setSolutionsOpen(false)}
+                      >
+                        How to Choose a Washer
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+
               {/* Other nav links */}
               {NAV_LINKS.map((link) => (
                 <Link
@@ -344,6 +412,44 @@ export function Header() {
                         {cat.name}
                       </Link>
                     ))}
+                  </div>
+                )}
+
+                {/* Solutions accordion */}
+                <button
+                  onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
+                  className={`flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
+                    isSolutionsActive ? 'text-magido-orange' : 'text-[var(--color-text)]'
+                  }`}
+                >
+                  Solutions
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform ${
+                      mobileSolutionsOpen ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+
+                {mobileSolutionsOpen && (
+                  <div className="mb-1 ml-3 border-l-2 border-[var(--color-border-light)] pl-3">
+                    <Link
+                      href="/solutions"
+                      className={`block rounded-lg px-2 py-1.5 text-sm font-medium transition-colors ${
+                        pathname === '/solutions' ? 'text-magido-orange' : 'text-[var(--color-text)]'
+                      }`}
+                    >
+                      Solutions Overview
+                    </Link>
+                    <Link
+                      href="/how-to-choose"
+                      className={`block rounded-lg px-2 py-1.5 text-sm transition-colors ${
+                        pathname.startsWith('/how-to-choose')
+                          ? 'font-medium text-magido-orange'
+                          : 'text-[var(--color-text-secondary)]'
+                      }`}
+                    >
+                      How to Choose a Washer
+                    </Link>
                   </div>
                 )}
 
