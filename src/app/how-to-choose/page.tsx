@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import ProductSelector from '@/components/ProductSelector';
+import SelectorTabs from '@/components/SelectorTabs';
 import AqueousProcessDiagram from '@/components/AqueousProcessDiagram';
 
 export const metadata: Metadata = {
@@ -72,17 +72,18 @@ export default function HowToChoosePage() {
             belt conveyor or rotary drum washer.
           </p>
           <p className="mt-3">
-            Not sure where to start? Use the selector below — answer three quick questions and
-            we&apos;ll point you to the right product family.
+            Not sure where to start? Use the selector to find the right product family, or switch
+            to the Capacity Calculator to see exactly how many parts each machine can handle per
+            shift.
           </p>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          PRODUCT SELECTOR — embedded after "Start with Your Parts"
+          PRODUCT SELECTOR + CAPACITY CALCULATOR — tabbed
       ══════════════════════════════════════════════════════════════ */}
-      <section className="mb-14" aria-label="Interactive product selector">
-        <ProductSelector />
+      <section className="mb-14" aria-label="Interactive tools">
+        <SelectorTabs />
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
