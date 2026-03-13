@@ -1,3 +1,5 @@
+'use client';
+
 import { ProductCard } from '@/components/ProductCard';
 import type { Series, Product } from '@/lib/products';
 
@@ -5,17 +7,15 @@ interface CategoryProductGridProps {
   products: Product[];
   seriesList: Series[];
   categorySlug: string;
+  /** When true all cards are forced into spec view */
+  specsMode?: boolean;
 }
 
-/**
- * Product grid — this file itself has no 'use client' directive so Next.js
- * can server-render the grid shell. Each ProductCard is 'use client' for
- * compare/video interactivity, but they hydrate independently and lazily.
- */
 export function CategoryProductGrid({
   products,
   seriesList,
   categorySlug,
+  specsMode = false,
 }: CategoryProductGridProps) {
   if (products.length === 0) {
     return (
@@ -38,6 +38,8 @@ export function CategoryProductGrid({
             categorySlug={categorySlug}
             seriesName={productSeries?.displayName}
             seriesDescription={productSeries?.description}
+            defaultShowSpecs={specsMode}
+            forcedSpecsMode={specsMode}
             priority={index < 4}
           />
         );

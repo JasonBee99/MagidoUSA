@@ -1,17 +1,79 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Check, GitCompareArrows, Play, X } from 'lucide-react';
+import { BarChart2, Check, GitCompareArrows, Play, X } from 'lucide-react';
 import { useCompare } from './CompareProvider';
 import type { Product } from '@/lib/products';
+
+// ─── Key specs priority list per category ─────────────────────────────────────
+const KEY_SPECS_BY_CATEGORY: Record<string, string[]> = {
+  'manual-washers': [
+    'Load Weight', 'Working Area', 'Working Envelope', 'Fluid Capacity',
+    'Heater', 'Pump', 'Flow Rate', 'Spray Pressure', 'Operating Temperature',
+  ],
+  'top-load-washers': [
+    'Load Weight', 'Turntable Basket Diameter', 'Tank Capacity',
+    'Fluid/Tank Capacity', 'Heater', 'Pump(s)', 'Pump', 'Flow Rate',
+    'Spray Pressure', 'Max Operating Temperature',
+  ],
+  'front-load-washers': [
+    'Load Weight', 'Load Height', 'Fluid/Tank Capacity', 'Tank Capacity',
+    'Heater', 'Pump(s)', 'Flow Rate', 'Spray Pressure', 'Max Operating Temperature',
+  ],
+  'immersion-washers': [
+    'Load Weight', 'Platform', 'Working Height', 'Fluid/Tank Capacity',
+    'Heater', 'Operating Temperature',
+  ],
+  'in-line-belt-conveyor-washers': [
+    'Width of Conveyor belt', 'Available width of conveyor belt',
+    'Usable washing height', 'Real load', 'Wash Tank', 'Wash Pump',
+    'Solution temperature', 'Power supply',
+  ],
+  'rotary-drum-washers': [
+    'Drum diameter', 'Drum Length', 'Production', 'Wash tank',
+    'Wash pump', 'Solution temperature', 'Overall width', 'Power supply',
+  ],
+  'rotary-immersion-washers': [
+    'Load Weight', 'Basket Dimensions', 'Load Height', 'Wash Fluid Capacity',
+    'Rinse Fluid Capacity', 'Wash Heater', 'Wash Pump',
+  ],
+};
+
+const FALLBACK_SPEC_KEYS = [
+  'Load Weight', 'Tank Capacity', 'Fluid/Tank Capacity', 'Heater',
+  'Pump(s)', 'Pump', 'Operating Temperature', 'Working Area',
+];
+
+function pickKeySpecs(
+  specs: Product['specs'],
+  categorySlug: string,
+  max = 5,
+): { label: string; value: string }[] {
+  const priorityKeys = KEY_SPECS_BY_CATEGORY[categorySlug] ?? FALLBACK_SPEC_KEYS;
+  const result: { label: string; value: string }[] = [];
+  for (const key of priorityKeys) {
+    const entry = (specs as Record<string, unknown>)[key];
+    if (!entry) continue;
+    const val = typeof entry === 'string' ? entry : (entry as { value: string }).value;
+    if (val && val !== '–' && val !== '-' && val.trim() !== '') {
+      result.push({ label: key, value: val });
+      if (result.length >= max) break;
+    }
+  }
+  return result;
+}
 
 interface ProductCardProps {
   product: Product;
   categorySlug: string;
   seriesName?: string;
   seriesDescription?: string;
+  /** Sets initial spec view state on mount */
+  defaultShowSpecs?: boolean;
+  /** Controlled override — when parent toggles "View All Specs" this forces all cards */
+  forcedSpecsMode?: boolean;
   /** First 4 cards get priority loading; rest are lazy */
   priority?: boolean;
 }
@@ -21,11 +83,21 @@ export function ProductCard({
   categorySlug,
   seriesName,
   seriesDescription,
+  defaultShowSpecs = false,
+  forcedSpecsMode,
   priority = false,
 }: ProductCardProps) {
   const { isInCompare, addProduct, removeProduct, isFull } = useCompare();
   const [showVideo, setShowVideo] = useState(false);
   const [activeVideoIndex, setActiveVideoIndex] = useState(0);
+  const [showSpecs, setShowSpecs] = useState(defaultShowSpecs);
+
+  // When "View All Specs" is toggled from the parent, override all cards
+  useEffect(() => {
+    if (forcedSpecsMode !== undefined) {
+      setShowSpecs(forcedSpecsMode);
+    }
+  }, [forcedSpecsMode]);
 
   /** Extract YouTube video ID from embed or watch URL */
   function getYouTubeId(url: string): string | null {
@@ -42,6 +114,7 @@ export function ProductCard({
   const videos = product.videoUrls || (product.videoUrl ? [product.videoUrl] : []);
   const videoTitles = product.videoTitles || videos.map((_, i) => `Video ${i + 1}`);
   const hasVideo = videos.length > 0;
+  const keySpecs = pickKeySpecs(product.specs, categorySlug);
 
   const handleCompareToggle = () => {
     if (inCompare) {
@@ -54,10 +127,11 @@ export function ProductCard({
   return (
     <>
       <div className="group flex flex-col overflow-hidden rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] transition-all hover:border-magido-orange/30 hover:shadow-lg">
-        {/* Image area */}
+        {/* Image / Spec panel area — fixed aspect ratio, content swaps */}
         <Link
           href={`/products/${categorySlug}/${product.slug}`}
           className="relative block"
+          tabIndex={showSpecs ? -1 : undefined}
         >
           <div className="product-card-image-bg relative flex aspect-[4/3] items-center justify-center overflow-hidden p-4">
             {hasImage ? (
@@ -65,13 +139,13 @@ export function ProductCard({
                 src={product.images[0]}
                 alt={product.name}
                 fill
-                className="object-contain p-3 transition-transform duration-300 group-hover:scale-105"
+                className={`object-contain p-3 transition-transform duration-300 group-hover:scale-105 ${showSpecs ? 'opacity-0' : 'opacity-100'}`}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 priority={priority}
                 loading={priority ? undefined : 'lazy'}
               />
             ) : (
-              <div className="flex flex-col items-center gap-2 text-[var(--color-text-secondary)]">
+              <div className={`flex flex-col items-center gap-2 text-[var(--color-text-secondary)] ${showSpecs ? 'opacity-0' : 'opacity-100'}`}>
                 <svg
                   className="h-16 w-16 opacity-30"
                   viewBox="0 0 24 24"
@@ -87,9 +161,43 @@ export function ProductCard({
                 <span className="text-xs">Image coming soon</span>
               </div>
             )}
+
+            {/* ── Spec panel overlay (same dimensions as image area) ── */}
+            {showSpecs && (
+              <div className="absolute inset-0 flex flex-col bg-[var(--color-card-bg)] p-4">
+                <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-magido-blue">
+                  Key Specs
+                </p>
+                {keySpecs.length > 0 ? (
+                  <dl className="flex flex-1 flex-col gap-1.5 overflow-hidden">
+                    {keySpecs.map((spec) => (
+                      <div key={spec.label} className="flex items-baseline justify-between gap-2 border-b border-[var(--color-border-light)] pb-1 last:border-0">
+                        <dt className="min-w-0 truncate text-[0.7em] text-[var(--color-text-muted)]">
+                          {spec.label}
+                        </dt>
+                        <dd className="shrink-0 text-right text-[0.7em] font-semibold text-[var(--color-text)]">
+                          {spec.value}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                ) : (
+                  <p className="text-[0.7em] text-[var(--color-text-muted)]">
+                    Specs not yet available.
+                  </p>
+                )}
+                <Link
+                  href={`/products/${categorySlug}/${product.slug}`}
+                  className="mt-3 text-center text-[11px] font-semibold text-magido-orange hover:text-magido-orange-dark"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Full specs & details →
+                </Link>
+              </div>
+            )}
           </div>
 
-          {/* Series badge */}
+          {/* Series badge — bottom-left of image */}
           {seriesName && (
             <div className="absolute left-0 top-0 rounded-br-lg bg-[#eb6c1c] px-3 py-1 text-xs font-bold text-white">
               {seriesName}
@@ -104,6 +212,20 @@ export function ProductCard({
             </div>
           )}
         </Link>
+
+        {/* View Key Specs toggle — sits between image and content, full width */}
+        <button
+          onClick={() => setShowSpecs((v) => !v)}
+          className={`flex w-full items-center justify-center gap-1.5 border-b border-t border-[var(--color-border)] py-1.5 text-[11px] font-semibold uppercase tracking-wider transition-colors duration-150 ${
+            showSpecs
+              ? 'bg-magido-blue text-white hover:bg-magido-blue/90'
+              : 'bg-[var(--color-bg-secondary)] text-magido-blue hover:bg-magido-blue hover:text-white'
+          }`}
+          aria-pressed={showSpecs}
+        >
+          <BarChart2 className="h-3 w-3" />
+          {showSpecs ? 'Hide Specs' : 'View Key Specs'}
+        </button>
 
         {/* Content area */}
         <div className="flex flex-1 flex-col px-4 pb-4 pt-3">

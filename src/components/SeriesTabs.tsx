@@ -1,18 +1,24 @@
 'use client';
 
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
+import { BarChart2 } from 'lucide-react';
 import type { Series, Product } from '@/lib/products';
 
 interface SeriesTabsProps {
   seriesList: Series[];
   allProducts: Product[];
   categorySlug: string;
+  /** Controlled from parent — true when "View All Specs" is active */
+  specsMode: boolean;
+  onSpecsModeChange: (value: boolean) => void;
 }
 
 export function SeriesTabs({
   seriesList,
   allProducts,
   categorySlug,
+  specsMode,
+  onSpecsModeChange,
 }: SeriesTabsProps) {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -22,7 +28,6 @@ export function SeriesTabs({
 
   function handleTabClick(seriesSlug: string | null) {
     if (seriesSlug === null) {
-      // "All" tab — remove query param
       router.push(pathname, { scroll: false });
     } else {
       router.push(`${pathname}?series=${seriesSlug}`, { scroll: false });
@@ -30,38 +35,55 @@ export function SeriesTabs({
   }
 
   return (
-    <div className="scrollbar-thin flex items-center gap-2 overflow-x-auto pb-1">
-      {/* All tab */}
+    <div className="flex flex-wrap items-center gap-2 pb-1">
+      {/* Series filter tabs */}
+      <div className="scrollbar-thin flex flex-1 items-center gap-2 overflow-x-auto">
+        {/* All tab */}
+        <button
+          onClick={() => handleTabClick(null)}
+          className={`flex-shrink-0 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+            !activeSeries
+              ? 'bg-magido-orange text-white'
+              : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-secondary)] hover:bg-[var(--color-bg-tertiary)] hover:text-[var(--color-text)]'
+          }`}
+        >
+          All
+        </button>
+
+        {/* Series tabs */}
+        {seriesList.map((series) => {
+          const tabSlug = `${series.slug}-series`;
+          const isActive = activeSeries === tabSlug;
+
+          return (
+            <button
+              key={series.slug}
+              onClick={() => handleTabClick(tabSlug)}
+              className={`flex-shrink-0 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+                isActive
+                  ? 'bg-magido-orange text-white'
+                  : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-secondary)] hover:bg-[var(--color-bg-tertiary)] hover:text-[var(--color-text)]'
+              }`}
+            >
+              {series.name}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* View All Specs toggle — right-aligned, separated by gap */}
       <button
-        onClick={() => handleTabClick(null)}
-        className={`flex-shrink-0 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
-          !activeSeries
-            ? 'bg-magido-orange text-white'
-            : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-secondary)] hover:bg-[var(--color-bg-tertiary)] hover:text-[var(--color-text)]'
+        onClick={() => onSpecsModeChange(!specsMode)}
+        aria-pressed={specsMode}
+        className={`flex flex-shrink-0 items-center gap-1.5 rounded-lg border px-4 py-2 text-sm font-semibold transition-colors duration-150 ${
+          specsMode
+            ? 'border-magido-blue bg-magido-blue text-white hover:bg-magido-blue/90'
+            : 'border-magido-blue bg-transparent text-magido-blue hover:bg-magido-blue hover:text-white'
         }`}
       >
-        All
+        <BarChart2 className="h-4 w-4" />
+        {specsMode ? 'Hide Specs' : 'View All Specs'}
       </button>
-
-      {/* Series tabs */}
-      {seriesList.map((series) => {
-        const tabSlug = `${series.slug}-series`;
-        const isActive = activeSeries === tabSlug;
-
-        return (
-          <button
-            key={series.slug}
-            onClick={() => handleTabClick(tabSlug)}
-            className={`flex-shrink-0 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
-              isActive
-                ? 'bg-magido-orange text-white'
-                : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-secondary)] hover:bg-[var(--color-bg-tertiary)] hover:text-[var(--color-text)]'
-            }`}
-          >
-            {series.name}
-          </button>
-        );
-      })}
     </div>
   );
 }

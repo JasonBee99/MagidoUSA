@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import type { Category, Series, Product } from '@/lib/products';
 import { CategoryHero } from '@/components/CategoryHero';
@@ -26,6 +27,7 @@ export function CategoryContent({
 }: CategoryContentProps) {
   const searchParams = useSearchParams();
   const activeSeriesParam = searchParams.get('series');
+  const [specsMode, setSpecsMode] = useState(false);
 
   const activeSeries = activeSeriesParam
     ? seriesList.find((s) => `${s.slug}-series` === activeSeriesParam)
@@ -60,6 +62,8 @@ export function CategoryContent({
             seriesList={seriesList}
             allProducts={allProducts}
             categorySlug={category.slug}
+            specsMode={specsMode}
+            onSpecsModeChange={setSpecsMode}
           />
 
           <p className="mt-4 text-sm text-[var(--color-text-secondary)]">
@@ -71,6 +75,7 @@ export function CategoryContent({
             products={displayProducts}
             seriesList={seriesList}
             categorySlug={category.slug}
+            specsMode={specsMode}
           />
         </div>
       </section>
