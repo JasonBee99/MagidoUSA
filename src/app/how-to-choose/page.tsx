@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ProductSelector from '@/components/ProductSelector';
+import AqueousProcessDiagram from '@/components/AqueousProcessDiagram';
 
 export const metadata: Metadata = {
   title: 'How to Choose a Parts Washer — Sizing & Selection Guide | Magido USA',
@@ -41,6 +42,11 @@ export default function HowToChoosePage() {
           Match the right cleaning method, capacity, and automation level to your parts,
           contamination type, and production requirements.
         </p>
+      </div>
+
+      {/* ── Aqueous process diagram ── */}
+      <div className="-mt-5 mb-6 -mx-4 sm:-mx-6 lg:-mx-8">
+        <AqueousProcessDiagram />
       </div>
 
       {/* ══════════════════════════════════════════════════════════════
