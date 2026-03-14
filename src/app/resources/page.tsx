@@ -78,7 +78,7 @@ export default function ResourcesPage() {
           </div>
         </div>
 
-        {/* ─── Technical Documentation ─── */}
+        {/* ─── Technical Documentation + Brochures (merged by category) ─── */}
         <div className="mb-8">
           <p className="font-display text-xs font-semibold uppercase tracking-wider text-magido-orange">
             By Product Type
@@ -89,72 +89,70 @@ export default function ResourcesPage() {
         </div>
 
         <div className="space-y-10 mb-14">
-          {grouped.map((group) => (
-            <div key={group.categoryName}>
-              {/* Category header */}
-              <div className="mb-4 flex items-center justify-between">
-                <h3 className="font-display text-lg font-semibold text-[var(--color-text)]">
-                  {group.categoryName}
-                </h3>
-                <Link
-                  href={group.productLink}
-                  className="text-xs font-medium text-magido-orange transition-colors hover:text-magido-orange-dark"
-                >
-                  View Products →
-                </Link>
-              </div>
-
-              {/* Document accordions */}
-              <div className="space-y-3">
-                {group.docs.map((doc) => (
-                  <ResourceAccordion key={doc.slug} doc={doc} />
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* ─── Series Brochures ─── */}
-        <div className="mb-14">
-          <p className="font-display text-xs font-semibold uppercase tracking-wider text-magido-orange">
-            Series Brochures
-          </p>
-          <h2 className="mt-1 mb-6 font-display text-2xl font-bold text-[var(--color-text)]">
-            Download by Series
-          </h2>
-
-          <div className="space-y-8">
-            {brochureGroups.map((group) => (
-              <div key={group.categoryName}>
-                <h3 className="mb-3 font-display text-sm font-semibold uppercase tracking-wider text-[var(--color-text-secondary)]">
-                  {group.categoryName}
-                </h3>
-                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {group.brochures.map((b) => (
-                    <a
-                      key={b.seriesSlug}
-                      href={`/brochures/${b.fileName}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex items-center gap-3 rounded-xl border border-[var(--color-border)] bg-[var(--color-card-bg)] p-4 transition-all hover:border-magido-orange/40 hover:shadow-md"
+          {(() => {
+            // Build a lookup map: categoryName → brochures[]
+            const brochureMap = new Map(
+              brochureGroups.map((bg) => [bg.categoryName, bg.brochures])
+            );
+            return grouped.map((group) => {
+              const brochures = brochureMap.get(group.categoryName) ?? [];
+              return (
+                <div key={group.categoryName}>
+                  {/* Category header */}
+                  <div className="mb-4 flex items-center justify-between">
+                    <h3 className="font-display text-lg font-semibold text-[var(--color-text)]">
+                      {group.categoryName}
+                    </h3>
+                    <Link
+                      href={group.productLink}
+                      className="text-xs font-medium text-magido-orange transition-colors hover:text-magido-orange-dark"
                     >
-                      <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-magido-blue/10 text-magido-blue transition-colors group-hover:bg-magido-orange/10 group-hover:text-magido-orange">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5" aria-hidden="true">
-                          <path fillRule="evenodd" d="M4.5 2A1.5 1.5 0 0 0 3 3.5v13A1.5 1.5 0 0 0 4.5 18h11a1.5 1.5 0 0 0 1.5-1.5V7.621a1.5 1.5 0 0 0-.44-1.06l-4.12-4.122A1.5 1.5 0 0 0 11.378 2H4.5Zm4.75 6.75a.75.75 0 0 1 1.5 0v2.546l.943-1.048a.75.75 0 1 1 1.114 1.004l-2.25 2.5a.75.75 0 0 1-1.114 0l-2.25-2.5a.75.75 0 1 1 1.114-1.004l.943 1.048V8.75Z" clipRule="evenodd" />
-                        </svg>
-                      </span>
-                      <div className="min-w-0">
-                        <p className="text-sm font-semibold text-[var(--color-text)] transition-colors group-hover:text-magido-orange">
-                          {b.seriesName}
-                        </p>
-                        <p className="text-xs text-[var(--color-text-secondary)]">PDF Brochure</p>
+                      View Products →
+                    </Link>
+                  </div>
+
+                  {/* Document accordions */}
+                  <div className="space-y-3">
+                    {group.docs.map((doc) => (
+                      <ResourceAccordion key={doc.slug} doc={doc} />
+                    ))}
+                  </div>
+
+                  {/* Series brochures for this category — inline below docs */}
+                  {brochures.length > 0 && (
+                    <div className="mt-4">
+                      <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-[var(--color-text-secondary)]">
+                        Series Brochures
+                      </p>
+                      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                        {brochures.map((b) => (
+                          <a
+                            key={b.seriesSlug}
+                            href={`/brochures/${b.fileName}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center gap-3 rounded-xl border border-[var(--color-border)] bg-[var(--color-card-bg)] p-4 transition-all hover:border-magido-orange/40 hover:shadow-md"
+                          >
+                            <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-magido-blue/10 text-magido-blue transition-colors group-hover:bg-magido-orange/10 group-hover:text-magido-orange">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5" aria-hidden="true">
+                                <path fillRule="evenodd" d="M4.5 2A1.5 1.5 0 0 0 3 3.5v13A1.5 1.5 0 0 0 4.5 18h11a1.5 1.5 0 0 0 1.5-1.5V7.621a1.5 1.5 0 0 0-.44-1.06l-4.12-4.122A1.5 1.5 0 0 0 11.378 2H4.5Zm4.75 6.75a.75.75 0 0 1 1.5 0v2.546l.943-1.048a.75.75 0 1 1 1.114 1.004l-2.25 2.5a.75.75 0 0 1-1.114 0l-2.25-2.5a.75.75 0 1 1 1.114-1.004l.943 1.048V8.75Z" clipRule="evenodd" />
+                              </svg>
+                            </span>
+                            <div className="min-w-0">
+                              <p className="text-sm font-semibold text-[var(--color-text)] transition-colors group-hover:text-magido-orange">
+                                {b.seriesName}
+                              </p>
+                              <p className="text-xs text-[var(--color-text-secondary)]">PDF Brochure</p>
+                            </div>
+                          </a>
+                        ))}
                       </div>
-                    </a>
-                  ))}
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
-          </div>
+              );
+            });
+          })()}
         </div>
 
         {/* ─── Videos ─── */}

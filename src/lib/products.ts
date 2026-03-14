@@ -107,7 +107,18 @@ export function getSeriesBySlug(slug: string): Series | undefined {
  * Get all series in a category
  */
 export function getSeriesByCategory(categorySlug: string): Series[] {
-  return (productsData.series as unknown as Series[]).filter(s => s.category === categorySlug);
+  const category = getCategoryBySlug(categorySlug);
+  const seriesOrder: string[] = (category as unknown as Record<string, unknown>)?.seriesOrder as string[] ?? [];
+  const filtered = (productsData.series as unknown as Series[]).filter(s => s.category === categorySlug);
+  if (seriesOrder.length === 0) return filtered;
+  return filtered.sort((a, b) => {
+    const ai = seriesOrder.indexOf(a.slug);
+    const bi = seriesOrder.indexOf(b.slug);
+    if (ai === -1 && bi === -1) return 0;
+    if (ai === -1) return 1;
+    if (bi === -1) return -1;
+    return ai - bi;
+  });
 }
 
 /**

@@ -48,14 +48,21 @@
       "shortDescription": "Versatile spray cabinet washers for small to mid-sized parts",
       "order": 2,
       "seriesOrder": [
+        "tr450",
         "x81",
         "eco",
-        "x51hp",
         "x51",
         "x51-2",
-        "tr450"
+        "x51hp"
       ],
       "series": [
+        {
+          "slug": "tr450",
+          "name": "TR-450",
+          "displayName": "TR-450",
+          "type": "Top Load Spray/Immersion",
+          "isNew": false
+        },
         {
           "slug": "x81",
           "name": "X81 Series",
@@ -67,13 +74,6 @@
           "slug": "eco",
           "name": "Eco Series",
           "displayName": "Eco",
-          "type": "Top Load Spray Cabinet",
-          "isNew": false
-        },
-        {
-          "slug": "x51hp",
-          "name": "X51HP Series",
-          "displayName": "X51HP",
           "type": "Top Load Spray Cabinet",
           "isNew": false
         },
@@ -92,10 +92,10 @@
           "isNew": false
         },
         {
-          "slug": "tr450",
-          "name": "TR-450",
-          "displayName": "TR-450",
-          "type": "Top Load Spray/Immersion",
+          "slug": "x51hp",
+          "name": "X51HP Series",
+          "displayName": "X51HP",
+          "type": "Top Load Spray Cabinet",
           "isNew": false
         }
       ],

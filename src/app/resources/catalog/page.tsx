@@ -117,7 +117,7 @@ function CatalogSection({
   badge: string;
   title: string;
   description: string | React.ReactNode;
-  images?: { src: string; alt: string }[];
+  images?: { src: string; alt: string; model?: string; series?: string }[];
   features: string[];
   options: string[];
   safety?: string[];
@@ -186,6 +186,18 @@ function CatalogSection({
                     className="object-contain p-3"
                     sizes="(max-width: 1024px) 144px, 25vw"
                   />
+                  {/* Model badge — top-left, orange, rounded bottom-right only */}
+                  {img.model && (
+                    <span className="absolute top-0 left-0 z-10 rounded-br-md bg-magido-orange px-2 py-1 text-[10px] font-bold tracking-wide text-white leading-none">
+                      {img.model}
+                    </span>
+                  )}
+                  {/* Series badge — top-right, blue, rounded bottom-left only */}
+                  {img.series && (
+                    <span className="absolute top-0 right-0 z-10 rounded-bl-md bg-[var(--color-brand-blue)] px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-white leading-none">
+                      {img.series}
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
@@ -326,8 +338,8 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/dg/dg8-1.webp', alt: 'DG8 Sink-Style Manual Parts Washer' },
-          { src: '/images/products/dg/dg9-1.webp', alt: 'DG9 Sink-Style Manual Parts Washer' },
+          { src: '/images/products/dg/dg8-1.webp', alt: 'DG8 Sink-Style Manual Parts Washer', series: 'DG', model: 'DG-8' },
+          { src: '/images/products/dg/dg9-1.webp', alt: 'DG9 Sink-Style Manual Parts Washer', series: 'DG', model: 'DG-9' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -404,8 +416,8 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/l-series/l7-1.webp', alt: 'L7 Vat-Style Manual Parts Washer' },
-          { src: '/images/products/l-series/l10-1.webp', alt: 'L10 Vat-Style Manual Parts Washer' },
+          { src: '/images/products/l-series/l7-1.webp', alt: 'L7 Vat-Style Manual Parts Washer', series: 'L Series', model: 'L-7' },
+          { src: '/images/products/l-series/l10-1.webp', alt: 'L10 Vat-Style Manual Parts Washer', series: 'L Series', model: 'L-10' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -485,8 +497,8 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/hp/hp25-1.webp', alt: 'HP25 High-Pressure Manual Parts Washer' },
-          { src: '/images/products/hp/hp30.webp', alt: 'HP30 High-Pressure Manual Parts Washer' },
+          { src: '/images/products/hp/hp25-1.webp', alt: 'HP25 High-Pressure Manual Parts Washer', series: 'HP', model: 'HP-25' },
+          { src: '/images/products/hp/hp30.webp', alt: 'HP30 High-Pressure Manual Parts Washer', series: 'HP', model: 'HP-30' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -581,9 +593,9 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x81/l35-1.webp', alt: 'X81 Series L35 Top Load Parts Washer' },
-          { src: '/images/products/x81/l55-1.webp', alt: 'X81 Series L55 Top Load Parts Washer' },
-          { src: '/images/products/x81/l90-1.webp', alt: 'X81 Series L90 Top Load Parts Washer' },
+          { src: '/images/products/x81/l35-1.webp', alt: 'X81 Series L35 Top Load Parts Washer', series: 'X81', model: 'L35' },
+          { src: '/images/products/x81/l55-1.webp', alt: 'X81 Series L55 Top Load Parts Washer', series: 'X81', model: 'L55' },
+          { src: '/images/products/x81/l90-1.webp', alt: 'X81 Series L90 Top Load Parts Washer', series: 'X81', model: 'L90' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -679,9 +691,9 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x51/l101-1.webp', alt: 'X51 Series L101 Top Load Washer' },
-          { src: '/images/products/x51/l122-1.webp', alt: 'X51 Series L122 Top Load Washer' },
-          { src: '/images/products/x51/l152-1.webp', alt: 'X51 Series L152 Top Load Washer' },
+          { src: '/images/products/x51/l101-1.webp', alt: 'X51 Series L101 Top Load Washer', series: 'X51', model: 'L101' },
+          { src: '/images/products/x51/l122-1.webp', alt: 'X51 Series L122 Top Load Washer', series: 'X51', model: 'L122' },
+          { src: '/images/products/x51/l152-1.webp', alt: 'X51 Series L152 Top Load Washer', series: 'X51', model: 'L152' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -774,9 +786,9 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x51hp/l101hp.webp', alt: 'X51 HP Series L101HP Top Load Washer' },
-          { src: '/images/products/x51hp/l102hp.webp', alt: 'X51 HP Series L102HP Top Load Washer' },
-          { src: '/images/products/x51hp/l122hp.webp', alt: 'X51 HP Series L122HP Top Load Washer' },
+          { src: '/images/products/x51hp/l101hp.webp', alt: 'X51 HP Series L101HP Top Load Washer', series: 'X51 HP', model: 'L101HP' },
+          { src: '/images/products/x51hp/l102hp.webp', alt: 'X51 HP Series L102HP Top Load Washer', series: 'X51 HP', model: 'L102HP' },
+          { src: '/images/products/x51hp/l122hp.webp', alt: 'X51 HP Series L122HP Top Load Washer', series: 'X51 HP', model: 'L122HP' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -864,9 +876,9 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x51-2/l103-1.webp', alt: 'X51/2 Series L103 Dual-Stage Top Load Washer' },
-          { src: '/images/products/x51-2/l123-1.webp', alt: 'X51/2 Series L123 Dual-Stage Top Load Washer' },
-          { src: '/images/products/x51-2/l153.webp', alt: 'X51/2 Series L153 Dual-Stage Top Load Washer' },
+          { src: '/images/products/x51-2/l103-1.webp', alt: 'X51/2 Series L103 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L103' },
+          { src: '/images/products/x51-2/l123-1.webp', alt: 'X51/2 Series L123 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L123' },
+          { src: '/images/products/x51-2/l153.webp', alt: 'X51/2 Series L153 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L153' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -962,8 +974,8 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/fls/fls35-closed.webp', alt: 'FLS35 Heavy-Duty Top Load Washer' },
-          { src: '/images/products/fls/fls35-open.webp', alt: 'FLS35 Heavy-Duty Top Load Washer Open' },
+          { src: '/images/products/fls/fls35-closed.webp', alt: 'FLS35 Heavy-Duty Top Load Washer', series: 'FLS', model: 'FLS-35' },
+          { src: '/images/products/fls/fls35-open.webp', alt: 'FLS35 Heavy-Duty Top Load Washer Open', series: 'FLS', model: 'FLS-35' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -1056,9 +1068,9 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x53/l160.webp', alt: 'X53 Series L160 Front Load Parts Washer' },
-          { src: '/images/products/x53/l190-1.webp', alt: 'X53 Series L190 Front Load Parts Washer' },
-          { src: '/images/products/x53/l210.webp', alt: 'X53 Series L210 Front Load Parts Washer' },
+          { src: '/images/products/x53/l160.webp', alt: 'X53 Series L160 Front Load Parts Washer', series: 'X53', model: 'L160' },
+          { src: '/images/products/x53/l190-1.webp', alt: 'X53 Series L190 Front Load Parts Washer', series: 'X53', model: 'L190' },
+          { src: '/images/products/x53/l210.webp', alt: 'X53 Series L210 Front Load Parts Washer', series: 'X53', model: 'L210' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -1149,9 +1161,9 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x53-2/l162.webp', alt: 'X53/2 Series L162 Dual-Stage Front Load Washer' },
-          { src: '/images/products/x53-2/l192.webp', alt: 'X53/2 Series L192 Dual-Stage Front Load Washer' },
-          { src: '/images/products/x53-2/l212.webp', alt: 'X53/2 Series L212 Dual-Stage Front Load Washer' },
+          { src: '/images/products/x53-2/l162.webp', alt: 'X53/2 Series L162 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L162' },
+          { src: '/images/products/x53-2/l192.webp', alt: 'X53/2 Series L192 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L192' },
+          { src: '/images/products/x53-2/l212.webp', alt: 'X53/2 Series L212 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L212' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -1252,9 +1264,9 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/agita/a700.webp', alt: 'Agita A700 Immersion Parts Washer' },
-          { src: '/images/products/agita/a900.webp', alt: 'Agita A900 Immersion Parts Washer' },
-          { src: '/images/products/agita/a1100.webp', alt: 'Agita A1100 Immersion Parts Washer' },
+          { src: '/images/products/agita/a700.webp', alt: 'Agita A700 Immersion Parts Washer', series: 'Agita', model: 'A700' },
+          { src: '/images/products/agita/a900.webp', alt: 'Agita A900 Immersion Parts Washer', series: 'Agita', model: 'A900' },
+          { src: '/images/products/agita/a1100.webp', alt: 'Agita A1100 Immersion Parts Washer', series: 'Agita', model: 'A1100' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -1340,9 +1352,9 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/jolly/j320-1.webp', alt: 'Jolly J320 Rotary Drum Washer' },
-          { src: '/images/products/spira-1b/sp480.webp', alt: 'Spira 1b Series SP480 Rotary Drum Washer' },
-          { src: '/images/products/spira-1b/sp950.webp', alt: 'Spira SP950 Rotary Drum Washer' },
+          { src: '/images/products/jolly/j320-1.webp', alt: 'Jolly J320 Rotary Drum Washer', series: 'Jolly', model: 'J320' },
+          { src: '/images/products/spira-1b/sp480.webp', alt: 'Spira 1b Series SP480 Rotary Drum Washer', series: 'Spira 1b', model: 'SP480' },
+          { src: '/images/products/spira-1b/sp950.webp', alt: 'Spira SP950 Rotary Drum Washer', series: 'Spira 1b', model: 'SP950' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -1508,9 +1520,9 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/silver/s200.webp', alt: 'Silver Series S200 In-Line Belt Conveyor Washer' },
-          { src: '/images/products/gold-1b/g400.webp', alt: 'Gold 1b Series G400 In-Line Belt Conveyor Washer' },
-          { src: '/images/products/gold-2b/g1000.webp', alt: 'Gold 2b Series G1000 In-Line Belt Conveyor Washer' },
+          { src: '/images/products/silver/s200.webp', alt: 'Silver Series S200 In-Line Belt Conveyor Washer', series: 'Silver', model: 'S200' },
+          { src: '/images/products/gold-1b/g400.webp', alt: 'Gold 1b Series G400 In-Line Belt Conveyor Washer', series: 'Gold 1b', model: 'G400' },
+          { src: '/images/products/gold-2b/g1000.webp', alt: 'Gold 2b Series G1000 In-Line Belt Conveyor Washer', series: 'Gold 2b', model: 'G1000' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
@@ -1674,9 +1686,9 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/platinum/p600.webp', alt: 'Platinum Series P600/2 Rotary Immersion Parts Washer' },
-          { src: '/images/products/platinum/p1200.webp', alt: 'Platinum Series P1200/2 Rotary Immersion Parts Washer' },
-          { src: '/images/products/platinum/p1500.webp', alt: 'Platinum Series P1500/2 Rotary Immersion Parts Washer' },
+          { src: '/images/products/platinum/p600.webp', alt: 'Platinum Series P600/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P600/2' },
+          { src: '/images/products/platinum/p1200.webp', alt: 'Platinum Series P1200/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P1200/2' },
+          { src: '/images/products/platinum/p1500.webp', alt: 'Platinum Series P1500/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P1500/2' },
         ]}
         features={[
           'AISI 304 Stainless Steel Construction',
