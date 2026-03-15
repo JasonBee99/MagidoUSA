@@ -71,11 +71,11 @@ export function SeriesTabs({
         })}
       </div>
 
-      {/* View All Specs toggle — right-aligned, separated by gap */}
+      {/* View All Specs toggle — right-aligned, hidden on mobile to avoid tab overlap */}
       <button
         onClick={() => onSpecsModeChange(!specsMode)}
         aria-pressed={specsMode}
-        className={`flex flex-shrink-0 items-center gap-1.5 rounded-lg border px-4 py-2 text-sm font-semibold transition-colors duration-150 ${
+        className={`hidden sm:flex flex-shrink-0 items-center gap-1.5 rounded-lg border px-4 py-2 text-sm font-semibold transition-colors duration-150 ${
           specsMode
             ? 'border-magido-blue bg-magido-blue text-white hover:bg-magido-blue/90'
             : 'border-magido-blue bg-transparent text-magido-blue hover:bg-magido-blue hover:text-white'

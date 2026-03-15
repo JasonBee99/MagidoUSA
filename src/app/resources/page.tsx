@@ -8,6 +8,75 @@ import {
 import { ResourceAccordion } from './ResourceAccordion';
 import { ResourceVideoCard, type ResourceVideo } from '@/components/ResourceVideoCard';
 
+// ─── Category icon map ────────────────────────────────────────────────────────
+function CategoryIcon({ name }: { name: string }) {
+  const icons: Record<string, React.ReactNode> = {
+    'Manual Washers': (
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-7 w-7">
+        <path d="M10 28V16l4-4h8l4 4v12H10z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" fill="currentColor" fillOpacity="0.12"/>
+        <path d="M15 28v-6h6v6" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
+        <circle cx="18" cy="19" r="2" stroke="#eb6c1c" strokeWidth="1.5"/>
+      </svg>
+    ),
+    'Top Load Washers': (
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-7 w-7">
+        <rect x="6" y="14" width="24" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.12"/>
+        <path d="M12 14V10h12v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="18" cy="22" r="5" stroke="#eb6c1c" strokeWidth="1.5"/>
+      </svg>
+    ),
+    'Front Load Washers': (
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-7 w-7">
+        <rect x="6" y="8" width="24" height="22" rx="2" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.12"/>
+        <rect x="11" y="13" width="14" height="12" rx="6" stroke="#eb6c1c" strokeWidth="1.5" fill="none"/>
+        <circle cx="18" cy="19" r="3" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+      </svg>
+    ),
+    'Immersion Washers': (
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-7 w-7">
+        <rect x="6" y="16" width="24" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.12"/>
+        <path d="M8 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="14" y="20" width="8" height="7" rx="1" stroke="#eb6c1c" strokeWidth="1.5" fill="#eb6c1c" fillOpacity="0.1"/>
+        <path d="M12 16v-5M18 16v-7M24 16v-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+      </svg>
+    ),
+    'In-Line Belt Conveyor Washers': (
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-7 w-7">
+        <rect x="4" y="14" width="28" height="12" rx="2" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.12"/>
+        <circle cx="10" cy="26" r="3" stroke="#eb6c1c" strokeWidth="1.5" fill="none"/>
+        <circle cx="26" cy="26" r="3" stroke="#eb6c1c" strokeWidth="1.5" fill="none"/>
+        <line x1="10" y1="29" x2="26" y2="29" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <rect x="13" y="16" width="5" height="4" rx="1" fill="currentColor" fillOpacity="0.4"/>
+        <rect x="20" y="16" width="5" height="4" rx="1" fill="currentColor" fillOpacity="0.4"/>
+      </svg>
+    ),
+    'Rotary Drum Washers': (
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-7 w-7">
+        <ellipse cx="18" cy="20" rx="12" ry="8" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.12"/>
+        <ellipse cx="18" cy="20" rx="5" ry="3" stroke="#eb6c1c" strokeWidth="1.5" fill="none"/>
+        <path d="M22 13l2-4M14 13l-2-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+      </svg>
+    ),
+    'Rotary Immersion Washers': (
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-7 w-7">
+        <circle cx="18" cy="20" rx="12" r="12" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.12"/>
+        <circle cx="18" cy="20" r="6" stroke="#eb6c1c" strokeWidth="1.5" fill="#eb6c1c" fillOpacity="0.1"/>
+        <path d="M18 8v4M18 28v4M6 20h4M26 20h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+        <circle cx="18" cy="20" r="2" fill="#eb6c1c"/>
+      </svg>
+    ),
+  };
+  return (
+    <span className="text-magido-blue">
+      {icons[name] ?? (
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-7 w-7">
+          <circle cx="18" cy="18" r="12" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.12"/>
+        </svg>
+      )}
+    </span>
+  );
+}
+
 export const metadata: Metadata = {
   title: 'Resources & Documentation',
   description:
@@ -54,7 +123,16 @@ export default function ResourcesPage() {
         <div className="mb-14 overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-card-bg)] shadow-lg">
           <div className="flex flex-col sm:flex-row">
             <div className="flex items-center justify-center bg-magido-blue/10 p-8 sm:w-40">
-              <span className="text-5xl">📘</span>
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-16 w-16">
+                <rect x="8" y="6" width="36" height="48" rx="4" fill="#315687" fillOpacity="0.15" stroke="#315687" strokeWidth="2"/>
+                <rect x="14" y="16" width="24" height="3" rx="1.5" fill="#315687" fillOpacity="0.5"/>
+                <rect x="14" y="23" width="20" height="2" rx="1" fill="#315687" fillOpacity="0.3"/>
+                <rect x="14" y="29" width="22" height="2" rx="1" fill="#315687" fillOpacity="0.3"/>
+                <rect x="14" y="35" width="18" height="2" rx="1" fill="#315687" fillOpacity="0.3"/>
+                <rect x="14" y="41" width="20" height="2" rx="1" fill="#315687" fillOpacity="0.3"/>
+                <circle cx="46" cy="46" r="12" fill="#eb6c1c"/>
+                <path d="M46 40v8M42 44h8" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+              </svg>
             </div>
             <div className="flex flex-1 flex-col justify-center p-6 sm:p-8">
               <p className="mb-1 font-display text-xs font-semibold uppercase tracking-wider text-magido-orange">
@@ -100,9 +178,14 @@ export default function ResourcesPage() {
                 <div key={group.categoryName}>
                   {/* Category header */}
                   <div className="mb-4 flex items-center justify-between">
-                    <h3 className="font-display text-lg font-semibold text-[var(--color-text)]">
-                      {group.categoryName}
-                    </h3>
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--color-bg-secondary)] border border-[var(--color-border)]">
+                        <CategoryIcon name={group.categoryName} />
+                      </div>
+                      <h3 className="font-display text-lg font-semibold text-[var(--color-text)]">
+                        {group.categoryName}
+                      </h3>
+                    </div>
                     <Link
                       href={group.productLink}
                       className="text-xs font-medium text-magido-orange transition-colors hover:text-magido-orange-dark"

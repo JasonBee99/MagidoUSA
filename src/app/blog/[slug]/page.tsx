@@ -13,7 +13,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const post = getBlogPost(params.slug);
   if (!post) return {};
   return {
-    title: post.metaTitle + ' | Magido USA',
+    title: post.metaTitle,
     description: post.metaDescription,
     alternates: { canonical: `https://www.magidousa.com/blog/${params.slug}` },
     openGraph: { url: `https://www.magidousa.com/blog/${params.slug}` },

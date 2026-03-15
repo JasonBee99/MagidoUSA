@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.magidousa.com/contact',
   },
   openGraph: {
-    title: 'Contact Magido USA',
+    title: 'Contact Us',
     description:
       'Request a quote, schedule an evaluation, or ask about our aqueous parts washing systems.',
     url: 'https://www.magidousa.com/contact',

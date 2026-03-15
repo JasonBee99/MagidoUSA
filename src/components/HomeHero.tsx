@@ -10,16 +10,6 @@ const STATS = [
   { value: '6',   label: 'Industries Served' },
 ];
 
-const TICKER_ITEMS = [
-  'Aqueous Parts Washing',
-  'Spray Cabinet Systems',
-  'Rotary Immersion Washers',
-  'In-Line Conveyor Systems',
-  'Manual Cabinet Washers',
-  'Eco-Friendly Solutions',
-  'Custom Engineered Systems',
-  '24/7 Technical Support',
-];
 
 // ─── Component ───────────────────────────────────────────────────────────────
 
@@ -131,20 +121,7 @@ export function HomeHero() {
         </div>
       </section>
 
-      {/* ─── Ticker bar (CSS-only animation, no JS) ─── */}
-      <div className="overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] py-3">
-        <div className="ticker-track flex whitespace-nowrap">
-          {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
-            <span
-              key={i}
-              className="mx-6 inline-flex items-center gap-2 text-sm font-medium text-[var(--color-text-secondary)]"
-            >
-              <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-magido-orange" />
-              {item}
-            </span>
-          ))}
-        </div>
-      </div>
+
     </>
   );
 }

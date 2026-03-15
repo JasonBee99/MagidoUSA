@@ -6,7 +6,7 @@ import { BreadcrumbJsonLd } from '@/components/JsonLd';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Industries Served | Magido USA',
+  title: 'Industries Served',
   description:
     'Magido USA aqueous parts washers serve automotive, aerospace, machining, heavy equipment, medical, and food processing industries — stainless steel systems built for the toughest cleaning applications.',
 };

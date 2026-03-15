@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { faqCategories, getAllFaqItems } from '@/data/faq';
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions | Magido USA',
+  title: 'Frequently Asked Questions',
   description:
     'Answers to common questions about Magido USA aqueous parts washers — product selection, technical operation, detergents, lead times, and more.',
   alternates: {

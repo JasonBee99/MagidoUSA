@@ -45,13 +45,13 @@ export function generateMetadata({
     : `${product.name} by Magido USA. ${series?.type || 'Parts Washer'}. ${specHighlights.join(', ')}. Built from AISI 304 stainless steel.`;
 
   return {
-    title: `${product.name} | Magido USA`,
+    title: `${product.name}`,
     description: metaDescription,
     alternates: {
       canonical: `https://www.magidousa.com/products/${params.category}/${params.product}`,
     },
     openGraph: {
-      title: `${product.name} | Magido USA`,
+      title: `${product.name}`,
       description: metaDescription,
       url: `https://www.magidousa.com/products/${params.category}/${params.product}`,
       images: product.images.length > 0 ? [{ url: product.images[0] }] : undefined,

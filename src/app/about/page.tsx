@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ChevronRight, ArrowRight, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About Magido USA — Aqueous Parts Washing Experts',
+  title: 'About',
   description: 'Magido has been engineering parts washing systems in Italy for decades. Every machine is built from AISI 304 stainless steel. US sales, service, and support from Sturtevant, WI.',
   alternates: {
     canonical: 'https://www.magidousa.com/about',

@@ -39,7 +39,7 @@ export function generateMetadata({
       canonical: `https://www.magidousa.com/products/${params.category}`,
     },
     openGraph: {
-      title: `${category.name} | Magido USA`,
+      title: `${category.name}`,
       description: category.shortDescription,
       url: `https://www.magidousa.com/products/${params.category}`,
     },

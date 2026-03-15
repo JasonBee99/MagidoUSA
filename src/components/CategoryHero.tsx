@@ -36,8 +36,8 @@ export function CategoryHero({
 
           {/* Image */}
           {heroImage && (
-            <div className="flex items-stretch justify-center lg:flex-1 lg:self-stretch">
-              <div className="product-halo relative w-full min-h-56 sm:min-h-64 lg:min-h-0 lg:h-full">
+            <div className="w-full lg:flex-1">
+              <div className="product-halo relative h-56 w-full sm:h-64 lg:h-80">
                 <Image
                   src={heroImage}
                   alt={`${heroTitle} representative product`}

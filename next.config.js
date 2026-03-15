@@ -13,7 +13,7 @@ const nextConfig = {
   // Enable compression
   compress: true,
 
-  // ─── 301 redirects from old WordPress URL structure ───
+  // ─── 301 redirects from old WordPress + OpenCart URL structures ───
   async redirects() {
     return [
       // ── Old product-category pages → new category pages ──
@@ -27,40 +27,52 @@ const nextConfig = {
       { source: '/product-category/:path*',                             destination: '/products',                               permanent: true },
 
       // ── Old individual product pages → new product pages ──
-      { source: '/product/l-101',           destination: '/products/top-load-washers/l101',                    permanent: true },
-      { source: '/product/l102',            destination: '/products/top-load-washers/l102',                    permanent: true },
-      { source: '/product/l-102',           destination: '/products/top-load-washers/l102',                    permanent: true },
-      { source: '/product/l-122',           destination: '/products/top-load-washers/l122',                    permanent: true },
-      { source: '/product/l-152',           destination: '/products/top-load-washers/l152',                    permanent: true },
-      { source: '/product/hp25',            destination: '/products/manual-washers/hp-25',                     permanent: true },
-      { source: '/product/hp-25',           destination: '/products/manual-washers/hp-25',                     permanent: true },
-      { source: '/product/hp30',            destination: '/products/manual-washers/hp-30',                     permanent: true },
-      { source: '/product/hp-30',           destination: '/products/manual-washers/hp-30',                     permanent: true },
-      { source: '/product/a700-top-load-immersion-parts-washer',  destination: '/products/immersion-washers/a700',  permanent: true },
-      { source: '/product/a900-top-load-immersion-parts-washer',  destination: '/products/immersion-washers/a900',  permanent: true },
-      { source: '/product/a1100-top-load-immersion-parts-washer', destination: '/products/immersion-washers/a1100', permanent: true },
-      { source: '/product/a1300-top-load-immersion-parts-washer', destination: '/products/immersion-washers/a1300', permanent: true },
-      { source: '/product/l101hp',          destination: '/products/top-load-washers/l101hp',                  permanent: true },
-      { source: '/product/l101-hp',         destination: '/products/top-load-washers/l101hp',                  permanent: true },
+      { source: '/product/l-101',                                  destination: '/products/top-load-washers/l101',         permanent: true },
+      { source: '/product/l102',                                   destination: '/products/top-load-washers/l102',         permanent: true },
+      { source: '/product/l-102',                                  destination: '/products/top-load-washers/l102',         permanent: true },
+      { source: '/product/l-122',                                  destination: '/products/top-load-washers/l122',         permanent: true },
+      { source: '/product/l-152',                                  destination: '/products/top-load-washers/l152',         permanent: true },
+      { source: '/product/hp25',                                   destination: '/products/manual-washers/hp-25',          permanent: true },
+      { source: '/product/hp-25',                                  destination: '/products/manual-washers/hp-25',          permanent: true },
+      { source: '/product/hp30',                                   destination: '/products/manual-washers/hp-30',          permanent: true },
+      { source: '/product/hp-30',                                  destination: '/products/manual-washers/hp-30',          permanent: true },
+      { source: '/product/a700-top-load-immersion-parts-washer',  destination: '/products/immersion-washers/a700',        permanent: true },
+      { source: '/product/a900-top-load-immersion-parts-washer',  destination: '/products/immersion-washers/a900',        permanent: true },
+      { source: '/product/a1100-top-load-immersion-parts-washer', destination: '/products/immersion-washers/a1100',       permanent: true },
+      { source: '/product/a1300-top-load-immersion-parts-washer', destination: '/products/immersion-washers/a1300',       permanent: true },
+      { source: '/product/l101hp',                                 destination: '/products/top-load-washers/l101hp',       permanent: true },
+      { source: '/product/l101-hp',                                destination: '/products/top-load-washers/l101hp',       permanent: true },
+      { source: '/product/magido-l10-manual-parts-washer',        destination: '/products/manual-washers/l-10',           permanent: true },
+      { source: '/product/magido-l7-manual-parts-washer',         destination: '/products/manual-washers/l-7',            permanent: true },
+      { source: '/product/dg-8',                                   destination: '/products/manual-washers/dg-8',           permanent: true },
+      { source: '/product/dg-9',                                   destination: '/products/manual-washers/dg-9',           permanent: true },
+      { source: '/product/dg-11',                                  destination: '/products/manual-washers/dg-11',          permanent: true },
+      // Catch-all for any remaining /product/ URLs not explicitly mapped above
+      { source: '/product/:path*',                                 destination: '/products',                               permanent: true },
 
       // ── Old docs/resources pages → new resources pages ──
       // NOTE: /docs/ catch-all is safe — PDF brochures now live at /brochures/ (not /docs/)
-      { source: '/docs/magido-manual-aqueous-parts-washers',               destination: '/resources/manual-washers',                    permanent: true },
-      { source: '/docs/front-loading-aqueous-parts-washing-systems',       destination: '/resources/front-load-washers',                permanent: true },
-      { source: '/docs/helical-rotary-drum-aqueous-parts-washing-system',  destination: '/resources/rotary-drum-washers',               permanent: true },
-      { source: '/docs/in-line-belt-conveyor-aqueous-parts-washing-systems', destination: '/resources/in-line-belt-conveyor-washers',   permanent: true },
-      { source: '/docs/top-load-aqueous-parts-washing-systems',            destination: '/resources/top-load-washers',                  permanent: true },
-      { source: '/docs/:path*',                                             destination: '/resources',                                   permanent: true },
+      { source: '/docs/magido-manual-aqueous-parts-washers',               destination: '/resources/manual-washers',              permanent: true },
+      { source: '/docs/front-loading-aqueous-parts-washing-systems',       destination: '/resources/front-load-washers',          permanent: true },
+      { source: '/docs/helical-rotary-drum-aqueous-parts-washing-system',  destination: '/resources/rotary-drum-washers',         permanent: true },
+      { source: '/docs/in-line-belt-conveyor-aqueous-parts-washing-systems', destination: '/resources/in-line-belt-conveyor-washers', permanent: true },
+      { source: '/docs/top-load-aqueous-parts-washing-systems',            destination: '/resources/top-load-washers',            permanent: true },
+      { source: '/docs/2722',                                              destination: '/resources/catalog',                     permanent: true },
+      { source: '/docs/:path*',                                            destination: '/resources',                             permanent: true },
 
       // ── Old misc pages ──
-      { source: '/applications',            destination: '/solutions',                                          permanent: true },
-      { source: '/applications/:path*',     destination: '/solutions',                                          permanent: true },
-      { source: '/about-magido-usa',        destination: '/about',                                              permanent: true },
-      { source: '/contact-us',              destination: '/contact',                                            permanent: true },
-      { source: '/brand/magido-usa',        destination: '/about',                                              permanent: true },
+      { source: '/applications',            destination: '/solutions',    permanent: true },
+      { source: '/applications/:path*',     destination: '/solutions',    permanent: true },
+      { source: '/about-magido-usa',        destination: '/about',        permanent: true },
+      { source: '/contact-us',              destination: '/contact',      permanent: true },
+      { source: '/brand/magido-usa',        destination: '/about',        permanent: true },
+      { source: '/brand/:path*',            destination: '/about',        permanent: true },
 
-      // ── Old WP query string URLs (catch-all) ──
-      { source: '/index.php',               destination: '/',                                                   permanent: true },
+      // ── Old WP/OpenCart query string URLs ──
+      // Next.js redirects don't support query string matching natively.
+      // The /index.php path redirect handles the path portion.
+      // ?route= and ?path= OpenCart variants are handled in middleware.ts
+      { source: '/index.php',              destination: '/',              permanent: true },
     ];
   },
 

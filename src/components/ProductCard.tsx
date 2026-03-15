@@ -164,18 +164,19 @@ export function ProductCard({
 
             {/* ── Spec panel overlay (same dimensions as image area) ── */}
             {showSpecs && (
-              <div className="absolute inset-0 flex flex-col bg-[var(--color-card-bg)] p-4">
-                <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-magido-blue">
+              <div className="absolute inset-0 flex flex-col bg-[var(--color-card-bg)] px-4 pb-3 pt-3">
+                {/* "Key Specs" label — top-right to avoid overlap with series badge (top-left) */}
+                <p className="mb-2 self-end text-[10px] font-bold uppercase tracking-widest text-magido-blue">
                   Key Specs
                 </p>
                 {keySpecs.length > 0 ? (
-                  <dl className="flex flex-1 flex-col gap-1.5 overflow-hidden">
+                  <dl className="flex flex-1 flex-col justify-around overflow-visible">
                     {keySpecs.map((spec) => (
                       <div key={spec.label} className="flex items-baseline justify-between gap-2 border-b border-[var(--color-border-light)] pb-1 last:border-0">
-                        <dt className="min-w-0 truncate text-[0.7em] text-[var(--color-text-muted)]">
+                        <dt className="min-w-0 text-[0.68em] leading-tight text-[var(--color-text-muted)]" style={{ wordBreak: 'break-word' }}>
                           {spec.label}
                         </dt>
-                        <dd className="shrink-0 text-right text-[0.7em] font-semibold text-[var(--color-text)]">
+                        <dd className="shrink-0 text-right text-[0.68em] font-semibold leading-tight text-[var(--color-text)]">
                           {spec.value}
                         </dd>
                       </div>
@@ -188,7 +189,7 @@ export function ProductCard({
                 )}
                 <Link
                   href={`/products/${categorySlug}/${product.slug}`}
-                  className="mt-3 text-center text-[11px] font-semibold text-magido-orange hover:text-magido-orange-dark"
+                  className="mt-2 text-center text-[11px] font-semibold text-magido-orange hover:text-magido-orange-dark"
                   onClick={(e) => e.stopPropagation()}
                 >
                   Full specs & details →

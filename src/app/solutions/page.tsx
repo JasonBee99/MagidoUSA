@@ -6,12 +6,12 @@ import solutionsData from '@/data/solutions.json';
 const { solutions } = solutionsData as SolutionsData;
 
 export const metadata: Metadata = {
-  title: 'Parts Washing Solutions & Guides | Magido USA',
+  title: 'Parts Washing Solutions & Guides',
   description:
     'Expert guides on aqueous parts washing — comparisons, application guides, and industry resources to help you choose the right parts washer for your operation.',
   alternates: { canonical: 'https://www.magidousa.com/solutions' },
   openGraph: {
-    title: 'Parts Washing Solutions & Guides | Magido USA',
+    title: 'Parts Washing Solutions & Guides',
     description:
       'Expert guides on aqueous parts washing — comparisons, application guides, and industry resources to help you choose the right parts washer for your operation.',
     url: 'https://www.magidousa.com/solutions',

@@ -4,11 +4,11 @@ import SelectorTabs from '@/components/SelectorTabs';
 import AqueousProcessDiagram from '@/components/AqueousProcessDiagram';
 
 export const metadata: Metadata = {
-  title: 'How to Choose a Parts Washer — Sizing & Selection Guide | Magido USA',
+  title: 'How to Choose a Parts Washer — Sizing & Selection Guide',
   description:
     'Match the right aqueous parts washer to your parts, contamination type, and production volume. Use our interactive selector or read the full sizing guide.',
   openGraph: {
-    title: 'How to Choose a Parts Washer | Magido USA',
+    title: 'How to Choose a Parts Washer',
     description:
       'Interactive selector and complete guide to matching the right wash system to your application.',
     url: 'https://www.magidousa.com/how-to-choose',

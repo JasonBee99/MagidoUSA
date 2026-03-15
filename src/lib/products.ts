@@ -151,7 +151,7 @@ export function getProductsByCategory(categorySlug: string): Product[] {
 
 /**
  * Get prev/next products within the same category (for navigation arrows)
- * Spans across all series in the category.
+ * Spans across all series in the category, respecting seriesOrder from products.json.
  */
 export function getCategoryNavigation(productSlug: string): {
   prev: Product | null;
@@ -162,7 +162,15 @@ export function getCategoryNavigation(productSlug: string): {
   const product = getProductBySlug(productSlug);
   if (!product) return { prev: null, next: null, current: null, categoryProducts: [] };
 
-  const categoryProducts = getProductsByCategory(product.categorySlug);
+  // Build the full ordered product list by walking series in their defined order,
+  // then collecting each series' products in order — same logic as the category page.
+  const orderedSeries = getSeriesByCategory(product.categorySlug);
+  const categoryProducts: Product[] = [];
+  for (const series of orderedSeries) {
+    const seriesProducts = getProductsBySeries(series.slug);
+    categoryProducts.push(...seriesProducts);
+  }
+
   const currentIndex = categoryProducts.findIndex(p => p.slug === productSlug);
 
   return {

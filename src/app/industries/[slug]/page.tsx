@@ -20,7 +20,7 @@ export async function generateMetadata({
   const industry = getIndustry(params.slug);
   if (!industry) return {};
   return {
-    title: `${industry.name} Parts Washing | Magido USA`,
+    title: `${industry.name} Parts Washing`,
     description: industry.metaDescription,
   };
 }
