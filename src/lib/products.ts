@@ -21,6 +21,7 @@ export interface Product {
   model: string;
   name: string;
   description?: string;
+  cardDescription?: string;  // Short title-continuation text for category page cards
   seriesSlug: string;
   categorySlug: string;
   url: string;

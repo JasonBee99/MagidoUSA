@@ -83,6 +83,8 @@ export const INDUSTRIES: Industry[] = [
     relatedSolutionSlugs: [
       'cleaning-automotive-transmission-parts',
       'removing-stamping-and-forming-lubricants',
+      'cleaning-brake-components',
+      'aqueous-vs-solvent-parts-washers',
     ],
     metaDescription:
       'Aqueous parts washers for automotive manufacturing and MRO — belt conveyor, rotary drum, and front load systems for engine, transmission, and stamped component cleaning.',
@@ -140,7 +142,11 @@ export const INDUSTRIES: Industry[] = [
           'Dual-stage wash and rinse systems minimize cross-contamination and support validated cleaning sequences.',
       },
     ],
-    relatedSolutionSlugs: ['cleaning-aerospace-components', 'cleaning-hydraulic-components'],
+    relatedSolutionSlugs: [
+      'cleaning-aerospace-components',
+      'cleaning-hydraulic-components',
+      'spray-cabinet-vs-immersion-parts-washers',
+    ],
     metaDescription:
       'Aerospace parts cleaning systems — aqueous immersion and spray washers for AS9100 and NADCAP-compliant cleaning of turbine, hydraulic, and structural components.',
   },
@@ -199,7 +205,10 @@ export const INDUSTRIES: Industry[] = [
     ],
     relatedSolutionSlugs: [
       'removing-stamping-and-forming-lubricants',
+      'removing-cutting-oil-and-coolant',
       'cleaning-hydraulic-components',
+      'aqueous-vs-solvent-parts-washers',
+      'spray-cabinet-vs-immersion-parts-washers',
     ],
     metaDescription:
       'Parts washers for CNC machining and manufacturing — top load, front load, and manual aqueous systems for coolant, cutting oil, and chip removal.',
@@ -250,7 +259,11 @@ export const INDUSTRIES: Industry[] = [
           'For mid-size components — turntable rotation ensures all surfaces are reached by spray nozzles.',
       },
     ],
-    relatedSolutionSlugs: ['cleaning-hydraulic-components'],
+    relatedSolutionSlugs: [
+      'cleaning-hydraulic-components',
+      'industrial-parts-washing-for-mro',
+      'aqueous-vs-solvent-parts-washers',
+    ],
     metaDescription:
       'Heavy equipment parts washers — large-capacity front load spray cabinets for construction, mining, and agricultural component cleaning.',
   },
@@ -307,7 +320,10 @@ export const INDUSTRIES: Industry[] = [
           'Highest cleanliness level — multi-action cleaning for the most demanding medical device specifications.',
       },
     ],
-    relatedSolutionSlugs: ['cleaning-medical-device-components'],
+    relatedSolutionSlugs: [
+      'cleaning-medical-device-components',
+      'spray-cabinet-vs-immersion-parts-washers',
+    ],
     metaDescription:
       'Medical device parts washers — validated aqueous cleaning systems for implant, instrument, and device component manufacturing per FDA and ISO 13485.',
   },
@@ -364,7 +380,10 @@ export const INDUSTRIES: Industry[] = [
           'Hand-cleaning station for small tooling, blades, and components between production runs.',
       },
     ],
-    relatedSolutionSlugs: ['food-and-beverage-equipment-cleaning'],
+    relatedSolutionSlugs: [
+      'food-and-beverage-equipment-cleaning',
+      'aqueous-vs-solvent-parts-washers',
+    ],
     metaDescription:
       'Food-grade parts washers — AISI 304 stainless steel aqueous cleaning systems for food processing equipment, tooling, and components.',
   },

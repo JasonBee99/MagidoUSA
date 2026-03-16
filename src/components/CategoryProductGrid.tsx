@@ -37,7 +37,7 @@ export function CategoryProductGrid({
             product={product}
             categorySlug={categorySlug}
             seriesName={productSeries?.displayName}
-            seriesDescription={productSeries?.description}
+            seriesDescription={product.cardDescription || product.description}
             defaultShowSpecs={specsMode}
             forcedSpecsMode={specsMode}
             priority={index < 4}

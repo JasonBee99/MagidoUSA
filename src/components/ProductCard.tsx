@@ -46,6 +46,33 @@ const FALLBACK_SPEC_KEYS = [
   'Pump(s)', 'Pump', 'Operating Temperature', 'Working Area',
 ];
 
+// Unit strings that are redundant when already embedded in the value
+const SKIP_UNITS = new Set(['inches', 'in.', '']);
+
+function formatSpecValue(val: string, unit: string): string {
+  if (!unit) return val;
+  const unitLower = unit.toLowerCase().trim();
+  const valLower = val.toLowerCase();
+  // Skip if unit already visually present in value or is inches (shown as ")
+  if (SKIP_UNITS.has(unitLower)) return val;
+  if (valLower.includes(unitLower)) return val;
+  // Skip compound units where a part already appears in value (e.g. '46 gal' + 'gal US' -> avoid '46 gal gal')
+  if (unitLower.split(/[\s/.]+/).some((part: string) => part.length > 1 && valLower.includes(part))) return val;
+  // Normalize unit labels for clean display
+  const unitMap: Record<string, string> = {
+    'lbs': 'lbs', 'lb': 'lbs', 'lb/yd': 'lb/yd',
+    'gal us': 'gal', 'gal.': 'gal',
+    'hp': 'HP', 'kw': 'kW',
+    'gpm': 'GPM', 'gph': 'GPH',
+    'psi': 'PSI', 'rpm': 'RPM', 'fpm': 'fpm',
+    'cfh': 'CFH', '°f': '°F', '°c': '°C',
+    'v': 'V', 'a': 'A', 'ph': 'Ph',
+    'minute': 'min', 'minutes': 'min',
+  };
+  const displayUnit = unitMap[unitLower] ?? unit;
+  return `${val} ${displayUnit}`;
+}
+
 function pickKeySpecs(
   specs: Product['specs'],
   categorySlug: string,
@@ -56,9 +83,10 @@ function pickKeySpecs(
   for (const key of priorityKeys) {
     const entry = (specs as Record<string, unknown>)[key];
     if (!entry) continue;
-    const val = typeof entry === 'string' ? entry : (entry as { value: string }).value;
+    const val = typeof entry === 'string' ? entry : (entry as { value: string; unit?: string }).value;
+    const unit = typeof entry === 'string' ? '' : ((entry as { unit?: string }).unit ?? '');
     if (val && val !== '–' && val !== '-' && val.trim() !== '') {
-      result.push({ label: key, value: val });
+      result.push({ label: key, value: formatSpecValue(val, unit) });
       if (result.length >= max) break;
     }
   }
@@ -237,7 +265,7 @@ export function ProductCard({
           </Link>
 
           {seriesDescription && (
-            <p className="mt-1 text-xs text-[var(--color-text-secondary)]">
+            <p className="mt-1 line-clamp-3 text-xs text-[var(--color-text-secondary)]">
               {seriesDescription}
             </p>
           )}
