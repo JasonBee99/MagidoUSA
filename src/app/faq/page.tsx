@@ -110,7 +110,7 @@ export default function FaqPage() {
             Still have questions?
           </h2>
           <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-            Talk to Scott Morin — free consultation, same-day response.
+            Talk to Scott Morin — free consultation, prompt response.
           </p>
           <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
