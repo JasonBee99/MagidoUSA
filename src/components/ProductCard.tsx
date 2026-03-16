@@ -221,6 +221,7 @@ export function ProductCard({
                   onClick={(e) => e.stopPropagation()}
                 >
                   Full specs & details →
+                  <span className="sr-only"> for {product.name}</span>
                 </Link>
               </div>
             )}
@@ -275,6 +276,7 @@ export function ProductCard({
             className="mt-2 text-xs font-medium text-magido-orange transition-colors hover:text-magido-orange-dark"
           >
             View Details →
+            <span className="sr-only"> for {product.name}</span>
           </Link>
 
           <div className="flex-1" />
@@ -286,6 +288,7 @@ export function ProductCard({
               className="rounded-md bg-magido-orange/10 px-3 py-1.5 text-xs font-semibold text-magido-orange transition-colors hover:bg-magido-orange hover:text-white"
             >
               Get Quote
+              <span className="sr-only"> for {product.name}</span>
             </Link>
 
             {hasVideo && (() => {
