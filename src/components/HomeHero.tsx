@@ -1,14 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, FlaskConical } from 'lucide-react';
-
-// ─── Static data ────────────────────────────────────────────────────────────
-
-const STATS = [
-  { value: '50+', label: 'Years of Innovation' },
-  { value: '20+', label: 'Washer Series' },
-  { value: '6',   label: 'Industries Served' },
-];
+import { FlaskConical } from 'lucide-react';
 
 
 // ─── Component ───────────────────────────────────────────────────────────────
@@ -48,14 +40,14 @@ export function HomeHero() {
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
                   href="/products/front-load-washers"
-                  className="inline-flex items-center gap-2 rounded-lg bg-magido-orange px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
+                  className="btn-primary"
                 >
                   Explore FLS Series
-                  <ArrowRight className="h-4 w-4" />
+                  <span className="btn-arrow">→</span>
                 </Link>
                 <Link
                   href="/contact?model=FLS-35"
-                  className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+                  className="btn-ghost-dark"
                 >
                   Request a Quote
                 </Link>
@@ -100,28 +92,8 @@ export function HomeHero() {
             </div>
           </div>
 
-          {/* Stats bar */}
-          <div className="mt-10 flex items-center justify-center gap-6 border-t border-white/10 pt-8 sm:gap-16">
-            {STATS.map((stat, i) => (
-              <div key={stat.label} className="text-center">
-                <div className="font-display text-2xl font-bold text-white sm:text-3xl">
-                  {stat.value}
-                </div>
-                <div className="text-2xs font-medium uppercase tracking-wider text-gray-400 sm:text-xs">
-                  {stat.label}
-                </div>
-                {/* Divider between stats (not after last) */}
-                {i < STATS.length - 1 && (
-                  <div className="sr-only">|</div>
-                )}
-              </div>
-            ))}
-          </div>
-
         </div>
       </section>
-
-
     </>
   );
 }

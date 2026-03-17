@@ -258,6 +258,63 @@
   font-weight: 600;
 }
 
+/* ─── Solution Card hover effects ─── */
+
+.solution-card-gear {
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+  opacity: 0;
+}
+
+.solution-card:hover .solution-card-gear {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+.solution-card {
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.2s ease;
+}
+
+.solution-card::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 0.75rem;
+  border: 2px solid #EB6C1C;
+  opacity: 0;
+  transform: scaleX(0.85) scaleY(0.92);
+  transform-origin: center;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.solution-card:hover::after {
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+}
+
+.solution-card:hover {
+  background-color: var(--color-card-hover) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(49, 86, 135, 0.12), 0 4px 8px rgba(235, 108, 28, 0.08);
+}
+
+.solution-card-arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.solution-card:hover .solution-card-arrow {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .solution-card-gear { transition: opacity 0.2s ease; transform: none !important; }
+  .solution-card::after { transition: opacity 0.2s ease; transform: none !important; }
+  .solution-card { transition: box-shadow 0.2s ease; transform: none !important; }
+  .solution-card-arrow { transition: none; }
+}
+
 /* ─── Ticker / marquee animation ─── */
 @keyframes ticker {
   0%   { transform: translateX(0); }
@@ -277,5 +334,282 @@
     animation: none;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   BUTTON SYSTEM
+   Three variants: btn-primary, btn-secondary, btn-ghost-dark
+   All share the stamp press active state.
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* ── Shared base ── */
+.btn-primary,
+.btn-secondary,
+.btn-ghost-dark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition:
+    transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.18s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Lift on hover */
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-ghost-dark:hover {
+  transform: translateY(-2px);
+}
+
+/* Stamp press on click — feels like engaging a physical switch */
+.btn-primary:active,
+.btn-secondary:active,
+.btn-ghost-dark:active {
+  transform: translateY(1px) scale(0.97);
+  transition-duration: 0.08s;
+}
+
+/* Arrow nudge inside buttons */
+.btn-primary .btn-arrow,
+.btn-secondary .btn-arrow,
+.btn-ghost-dark .btn-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover .btn-arrow,
+.btn-secondary:hover .btn-arrow,
+.btn-ghost-dark:hover .btn-arrow {
+  transform: translateX(3px);
+}
+
+/* ── Shimmer sweep pseudo-element (shared) ── */
+.btn-primary::before,
+.btn-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.18) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+
+.btn-primary:hover::before,
+.btn-secondary:hover::before {
+  left: 160%;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   PRIMARY — solid orange, white text
+   Hover: lifts + shimmer + deeper shadow
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.btn-primary {
+  background-color: #EB6C1C;
+  color: #ffffff;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 8px rgba(235, 108, 28, 0.30);
+}
+
+.btn-primary:hover {
+  background-color: #d45e14;
+  box-shadow:
+    0 6px 20px rgba(235, 108, 28, 0.45),
+    0 2px 6px rgba(235, 108, 28, 0.25);
+}
+
+.btn-primary:active {
+  box-shadow: 0 1px 4px rgba(235, 108, 28, 0.30);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SECONDARY — outlined, orange fill floods in from left
+   Hover: background sweeps in, text flips to white
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-border);
+  box-shadow: none;
+  /* background-size trick for the flood fill */
+  background-image: linear-gradient(to right, #EB6C1C 50%, transparent 50%);
+  background-size: 205% 100%;
+  background-position: right center;
+  transition:
+    background-position 0.35s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.18s ease;
+}
+
+.btn-secondary:hover {
+  background-position: left center;
+  color: #ffffff;
+  border-color: #EB6C1C;
+  box-shadow: 0 4px 14px rgba(235, 108, 28, 0.25);
+}
+
+/* Override shimmer on secondary since fill does the work */
+.btn-secondary::before {
+  display: none;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   GHOST DARK — for use on dark/hero backgrounds
+   Hover: subtle white fill, stays white text
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.btn-ghost-dark {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: none;
+}
+
+.btn-ghost-dark:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.btn-ghost-dark:active {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   FOCUS — keyboard accessibility ring
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible,
+.btn-ghost-dark:focus-visible {
+  outline: 2px solid #EB6C1C;
+  outline-offset: 3px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   REDUCED MOTION — honour system preference
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-ghost-dark {
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    transform: none !important;
+  }
+  .btn-primary::before,
+  .btn-secondary::before {
+    display: none;
+  }
+  .btn-primary .btn-arrow,
+  .btn-secondary .btn-arrow,
+  .btn-ghost-dark .btn-arrow {
+    transition: none;
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   LIQUID FILL — targets all orange buttons site-wide
+   Uses CSS attribute selector on the shared Tailwind
+   classes — no file edits needed anywhere.
+   Effect: liquid floods up from bottom on hover,
+   deepens on click like pressing into the surface.
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* Select every element that carries both orange bg classes */
+[class*="bg-magido-orange"][class*="rounded-lg"],
+[class*="bg-magido-orange"][class*="rounded-xl"] {
+  position: relative;
+  overflow: hidden;
+  /* Smooth base transitions */
+  transition:
+    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.2s ease,
+    background-color 0.2s ease !important;
+}
+
+/* The liquid fill — a pseudo-element that starts below
+   the button and rises up on hover */
+[class*="bg-magido-orange"][class*="rounded-lg"]::after,
+[class*="bg-magido-orange"][class*="rounded-xl"]::after {
+  content: '';
+  position: absolute;
+  bottom: -5%;
+  left: -10%;
+  width: 120%;
+  height: 0%;
+  background: rgba(255, 255, 255, 0.15);
+  /* Wavy top edge using border-radius trick */
+  border-radius: 40% 40% 0 0 / 20px 20px 0 0;
+  transition: height 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Liquid rises to fill button on hover */
+[class*="bg-magido-orange"][class*="rounded-lg"]:hover::after,
+[class*="bg-magido-orange"][class*="rounded-xl"]:hover::after {
+  height: 130%;
+}
+
+/* Lift the button content above the liquid */
+[class*="bg-magido-orange"][class*="rounded-lg"] > *,
+[class*="bg-magido-orange"][class*="rounded-xl"] > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Also lift direct text nodes — inline-flex handles this naturally */
+[class*="bg-magido-orange"][class*="rounded-lg"]:hover,
+[class*="bg-magido-orange"][class*="rounded-xl"]:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 20px rgba(235, 108, 28, 0.45),
+    0 2px 6px rgba(235, 108, 28, 0.25);
+}
+
+/* Stamp press on click */
+[class*="bg-magido-orange"][class*="rounded-lg"]:active,
+[class*="bg-magido-orange"][class*="rounded-xl"]:active {
+  transform: translateY(1px) scale(0.97) !important;
+  box-shadow: 0 1px 4px rgba(235, 108, 28, 0.30) !important;
+  transition-duration: 0.08s !important;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  [class*="bg-magido-orange"][class*="rounded-lg"],
+  [class*="bg-magido-orange"][class*="rounded-xl"] {
+    transition: background-color 0.15s ease !important;
+    transform: none !important;
+  }
+  [class*="bg-magido-orange"][class*="rounded-lg"]::after,
+  [class*="bg-magido-orange"][class*="rounded-xl"]::after {
+    display: none;
   }
 }

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllCategories, getCategoryRepresentativeImage } from '@/lib/products';
-import { ArrowRight, Shield, Zap, Leaf, HeadphonesIcon } from 'lucide-react';
+import { Shield, Zap, Leaf, HeadphonesIcon, Clock, LayoutGrid, Layers, MapPin } from 'lucide-react';
 import { HomeHero } from '@/components/HomeHero';
 
 export default function HomePage() {
@@ -11,6 +11,107 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <HomeHero />
+
+      {/* ─── Company Intro ─── */}
+      <section className="relative overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+
+        {/* Decorative background accents */}
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-magido-orange/5 blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-magido-blue/5 blur-3xl" />
+          <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-[var(--color-border)] to-transparent lg:block" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
+
+            {/* ── Left: brand statement ── */}
+            <div>
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-1.5 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange transition-opacity hover:opacity-70"
+              >
+                About Magido USA
+                <span className="btn-arrow">→</span>
+              </Link>
+
+              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">
+                Stainless Steel<br />
+                <span className="text-magido-orange">Industrial Cleaning</span><br />
+                Technology
+              </h2>
+
+              <div className="mt-4 h-1 w-16 rounded-full bg-magido-orange" />
+
+              <p className="mt-6 text-base leading-relaxed text-[var(--color-text-secondary)]">
+                Magido Group is recognized as one of the world&apos;s leading manufacturers of aqueous parts washing systems — engineering stainless steel industrial cleaning technology for automotive, aerospace, machining, and heavy equipment applications since 1980.
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-[var(--color-text-secondary)]">
+                Every system is built to order from AISI 304 stainless steel with the flexibility to tailor wash, rinse, and drying stages to your exact process requirements. US sales and support based in Sturtevant, WI.
+              </p>
+
+              <div className="mt-8">
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-magido-orange transition-opacity hover:opacity-70"
+                >
+                  Learn More About Magido <span className="btn-arrow">→</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* ── Right: stat grid ── */}
+            <div className="grid grid-cols-2 gap-5">
+              {COMPANY_STATS.map((stat) => (
+                <div
+                  key={stat.label}
+                  className={`rounded-xl border bg-[var(--color-card-bg)] p-6 shadow-sm ${
+                    stat.italian
+                      ? 'border-transparent bg-gradient-to-br from-[#009246]/10 via-[var(--color-card-bg)] to-[#CE2B37]/10 ring-1 ring-[var(--color-card-border)]'
+                      : 'border-[var(--color-card-border)]'
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <div className={`font-display text-2xl font-bold sm:text-3xl ${stat.italian ? '' : 'text-magido-orange'}`}>
+                      {stat.italian ? (
+                        <span>
+                          <span className="text-[#009246]">Ma</span>
+                          <span className="text-[var(--color-text)]">de </span>
+                          <span className="text-[var(--color-text)]">in </span>
+                          <span className="text-[#CE2B37]">Italy</span>
+                        </span>
+                      ) : (
+                        stat.value
+                      )}
+                    </div>
+                    <div className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg ring-1 ${
+                      stat.italian
+                        ? 'bg-[#009246]/10 text-[#009246] ring-[#009246]/20'
+                        : 'bg-magido-blue/10 text-magido-blue ring-magido-blue/20'
+                    }`}>
+                      {stat.icon}
+                    </div>
+                  </div>
+                  <div className="mt-2 text-sm font-semibold text-[var(--color-text)]">
+                    {stat.label}
+                  </div>
+                  <div className="mt-1 text-xs leading-relaxed text-[var(--color-text-secondary)]">
+                    {stat.description}
+                  </div>
+                  {stat.italian && (
+                    <div className="mt-3 flex h-1.5 overflow-hidden rounded-full">
+                      <div className="flex-1 bg-[#009246]" />
+                      <div className="flex-1 bg-white" />
+                      <div className="flex-1 bg-[#CE2B37]" />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       {/* ─── Built for Every Application ─── */}
       <section className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
@@ -86,31 +187,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── Why Choose Us ─── */}
+      {/* ─── The Magido Difference ─── */}
       <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             {/* Left: heading + intro */}
             <div>
               <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
-                Why Choose Us
+                The Magido Difference
               </p>
               <h2 className="mt-3 font-display text-3xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-4xl">
                 Precision Engineered. Proven.
               </h2>
               <p className="mt-4 text-base leading-relaxed text-[var(--color-text-secondary)]">
-                MAGIDO is a global innovator in the aqueous parts washing market. We design and build wash systems for the most demanding production and maintenance applications using the latest manufacturing technology.
+                Through strategic planning, careful selection of quality materials, and a constant search for innovative solutions, Magido has earned the reputation of producing the highest quality and most competitive wash systems on the market.
               </p>
               <p className="mt-3 text-base leading-relaxed text-[var(--color-text-secondary)]">
-                Our commitment to innovative engineering has earned us the reputation of producing the highest quality and most competitive wash systems on the market.
+                Our team is always attentive and willing to help before and after the sale — ensuring total flexibility in creating a tailor-made wash system for your maintenance or production parts cleaning operation.
               </p>
               <div className="mt-8">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 rounded-lg bg-magido-orange px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
+                  className="btn-primary"
                 >
                   Talk to an Expert
-                  <ArrowRight className="h-4 w-4" />
+                  <span className="btn-arrow">→</span>
                 </Link>
               </div>
             </div>
@@ -219,19 +320,19 @@ export default function HomePage() {
                   <div className="mt-5 flex flex-wrap gap-3">
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-2 rounded-lg bg-magido-orange px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
+                      className="btn-primary"
                     >
-                      Contact Scott <ArrowRight className="h-4 w-4" />
+                      Contact Scott <span className="btn-arrow">→</span>
                     </Link>
                     <a
                       href="tel:8444624436"
-                      className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-5 py-2.5 text-sm font-semibold text-[var(--color-text)] transition-colors hover:border-magido-orange/40 hover:text-magido-orange"
+                      className="btn-secondary"
                     >
                       📞 844-462-4436
                     </a>
                     <a
                       href="mailto:sales@magidousa.com"
-                      className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-5 py-2.5 text-sm font-semibold text-[var(--color-text)] transition-colors hover:border-magido-orange/40 hover:text-magido-orange"
+                      className="btn-secondary"
                     >
                       ✉️ Sales@MagidoUSA.com
                     </a>
@@ -239,7 +340,7 @@ export default function HomePage() {
                       href="https://www.linkedin.com/in/toscottmorin/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-5 py-2.5 text-sm font-semibold text-[var(--color-text)] transition-colors hover:border-[#0A66C2]/40 hover:text-[#0A66C2]"
+                      className="btn-secondary hover:!text-[#0A66C2] hover:!border-[#0A66C2]"
                     >
                       <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -272,17 +373,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── Trust bar ─── */}
-      <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-12 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <ValueProp title="100% Stainless Steel"  description="Every machine built entirely from AISI 304 stainless steel for maximum durability and corrosion resistance." />
-            <ValueProp title="Engineered in Italy"   description="Decades of European engineering excellence. Precision-manufactured components with exacting quality standards." />
-            <ValueProp title="76 Models Available"   description="From compact manual stations to fully automated conveyor systems — a solution for every application." />
-            <ValueProp title="US Sales & Support"    description="Sturtevant, WI-based team providing sales, installation guidance, and ongoing technical support." />
-          </div>
-        </div>
-      </section>
     </>
   );
 }
@@ -299,8 +389,8 @@ function WhyCard({
   description: string;
 }) {
   return (
-    <div className="rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-6">
-      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-magido-blue/10 text-magido-blue ring-1 ring-magido-blue/20">
+    <div className="rounded-xl border border-magido-orange/30 bg-[var(--color-card-bg)] p-6">
+      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-magido-orange/10 text-magido-orange ring-1 ring-magido-orange/30">
         {icon}
       </div>
       <h3 className="mt-4 font-display text-sm font-bold text-[var(--color-text)]">
@@ -313,16 +403,35 @@ function WhyCard({
   );
 }
 
-function ValueProp({ title, description }: { title: string; description: string }) {
-  return (
-    <div className="text-center">
-      <h3 className="font-display text-base font-bold text-[var(--color-text)]">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-secondary)]">{description}</p>
-    </div>
-  );
-}
-
 // ─── Data ──────────────────────────────────────────────────────────────────
+
+const COMPANY_STATS = [
+  {
+    value: '45+',
+    label: 'Years of Innovation',
+    description: 'Engineering aqueous parts washing systems since 1980.',
+    icon: <Clock className="h-4 w-4" />,
+  },
+  {
+    value: '75',
+    label: 'Models Available',
+    description: 'From compact manual stations to fully automated conveyor systems.',
+    icon: <LayoutGrid className="h-4 w-4" />,
+  },
+  {
+    value: '100%',
+    label: 'AISI 304 Stainless Steel',
+    description: 'Every machine built from stainless steel throughout.',
+    icon: <Layers className="h-4 w-4" />,
+  },
+  {
+    value: 'Made in Italy',
+    label: 'Precision Manufactured',
+    description: 'Exacting European engineering standards in every component.',
+    icon: <MapPin className="h-4 w-4" />,
+    italian: true,
+  },
+];
 
 const SCOTT_PILLARS = [
   {

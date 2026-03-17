@@ -19,11 +19,6 @@ export const metadata: Metadata = {
   },
 };
 
-const typeLabels: Record<string, string> = {
-  comparison: 'Comparison Guide',
-  'use-case': 'Application Guide',
-};
-
 export default function SolutionsIndexPage() {
   const comparisons = solutions.filter((s: Solution) => s.type === 'comparison');
   const useCases = solutions.filter((s: Solution) => s.type === 'use-case');
@@ -105,10 +100,9 @@ export default function SolutionsIndexPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block font-semibold py-3 px-8 rounded-lg"
-            style={{ backgroundColor: '#EB6C1C', color: 'white' }}
+            className="btn-primary"
           >
-            Contact Us
+            Contact Us <span className="btn-arrow">→</span>
           </Link>
         </div>
       </section>
@@ -120,31 +114,55 @@ function SolutionCard({ solution }: { solution: Solution }) {
   return (
     <Link
       href={`/solutions/${solution.slug}`}
-      className="group block rounded-xl border p-6 transition-shadow hover:shadow-lg"
+      className="solution-card group block rounded-xl border p-6"
       style={{ backgroundColor: 'var(--color-card-bg)', borderColor: 'var(--color-border)' }}
     >
-      <div className="mb-3">
+      {/* Top row: badge + gear icon */}
+      <div className="mb-3 flex items-center justify-between">
         <span
           className="inline-block text-xs font-semibold uppercase tracking-widest px-2.5 py-1 rounded-full"
           style={{ backgroundColor: '#EB6C1C20', color: '#EB6C1C' }}
         >
           {solution.type === 'comparison' ? 'Comparison Guide' : 'Application Guide'}
         </span>
+
+        {/* Gear icon — spins in on hover */}
+        <svg
+          className="solution-card-gear h-6 w-6 flex-shrink-0"
+          style={{ color: '#EB6C1C' }}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+          <path d="M19.622 10.395l-1.097-2.65L20 6l-2-2-1.735 1.483-2.707-1.113L12.935 2h-1.954l-.632 2.401-2.645 1.115L6 4 4 6l1.453 1.789-1.08 2.657L2 11v2l2.401.655L5.516 16.3 4 18l2 2 1.791-1.46 2.606 1.072L11 22h2l.604-2.387 2.651-1.098C16.697 19.48 18 20 18 20l2-2-1.484-1.75 1.106-2.75L22 13v-2l-2.378-.605Z" />
+        </svg>
       </div>
+
+      {/* Title — turns orange on hover */}
       <h3
-        className="text-lg font-bold mb-2 group-hover:underline"
+        className="text-lg font-bold mb-2 transition-colors duration-200 group-hover:text-[#EB6C1C]"
         style={{ color: '#315687', fontFamily: 'var(--font-display)' }}
       >
         {solution.headline}
       </h3>
+
+      {/* Excerpt */}
       <p
         className="text-sm leading-relaxed line-clamp-3"
         style={{ color: 'var(--color-text-secondary)' }}
       >
         {solution.intro}
       </p>
-      <div className="mt-4 text-sm font-semibold" style={{ color: '#EB6C1C' }}>
-        Read Guide →
+
+      {/* CTA row */}
+      <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold" style={{ color: '#EB6C1C' }}>
+        <span>Read Guide</span>
+        <span className="solution-card-arrow">→</span>
       </div>
     </Link>
   );

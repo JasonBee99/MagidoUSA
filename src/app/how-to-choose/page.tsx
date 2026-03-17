@@ -165,13 +165,22 @@ export default function HowToChoosePage() {
 
 const CLEANING_METHODS = [
   {
-    title: 'Spray Cabinet Washers',
-    subtitle: 'Top Load & Front Load',
+    title: 'Top Load Spray Cabinet Washers',
+    subtitle: 'Eco, X81, X51 & X51/2 Series',
     description:
-      'Parts placed on a rotating basket inside an enclosed stainless steel cabinet, blasted with hot aqueous solution from strategically positioned spray nozzles.',
+      'Parts loaded onto a motorized rotating turntable inside an enclosed stainless steel cabinet and blasted with heated aqueous solution from strategically positioned spray nozzles. Available in single-stage wash and dual-stage wash/rinse configurations.',
     bestFor: 'External surfaces, heavy contamination, oils, greases, carbon deposits',
-    series: 'Eco, X81, X51, X51/2, X53, X53/2, FLS',
+    series: 'Eco, X81, X51, X51/2',
     url: '/products/top-load-washers',
+  },
+  {
+    title: 'Front Load Spray Cabinet Washers',
+    subtitle: 'X53, X53/2 & FLS Series',
+    description:
+      'Parts placed on a fixed platform that rolls out on a mobile cart for loading, then closes inside an enclosed cabinet where angled spray nozzles on a spray ramp wash all surfaces. Designed for heavy, bulky parts up to 1,500 lbs that cannot be lifted into a top-load machine.',
+    bestFor: 'Large engine blocks, gear cases, heavy castings, bulky industrial components',
+    series: 'X53, X53/2, FLS',
+    url: '/products/front-load-washers',
   },
   {
     title: 'Immersion Washers',
@@ -179,7 +188,7 @@ const CLEANING_METHODS = [
     description:
       'Parts fully submerged in heated aqueous solution with pneumatic platform oscillation to force cleaning solution into every internal cavity.',
     bestFor: 'Blind holes, internal channels, threaded bores, complex geometries',
-    series: 'Agita (A700, A900, A1100)',
+    series: 'Agita (A700, A900, A1100, A1300)',
     url: '/products/immersion-washers',
   },
   {
@@ -206,7 +215,7 @@ const CLEANING_METHODS = [
     description:
       'Combines direct spray impingement with full immersion and rotational basket agitation through separate wash and rinse stages.',
     bestFor: 'Complex geometries, tight tolerances, critical cleanliness specs',
-    series: 'Platinum (P800/2, P1200/2)',
+    series: 'Platinum (PM400, P600/2, P900/2, P1200/2, P1500/2)',
     url: '/products/rotary-immersion-washers',
   },
   {

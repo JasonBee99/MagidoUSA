@@ -39,7 +39,7 @@
         }
       ],
       "totalProducts": 6,
-      "description": "Magido manual aqueous parts washers are engineered to handle the most rigorous cleaning challenges found in industrial and automotive maintenance applications. Available in sink-style, vat-style, and high-pressure cabinet configurations, these systems use environmentally safe water-based cleaning solutions to effectively remove oils, greases, dirt, and grime. Built entirely from AISI 304 stainless steel, Magido manual washers deliver reliable performance with minimal maintenance \u2014 ideal for shop-floor degreasing where hands-on control is essential.",
+      "description": "Magido manual aqueous parts washers are engineered to handle the most rigorous cleaning challenges found in industrial and automotive maintenance applications. Available in sink-style, vat-style, and high-pressure cabinet configurations, these systems use environmentally safe water-based cleaning solutions to effectively remove oils, greases, dirt, and grime. Built entirely from AISI 304 stainless steel, Magido manual washers deliver reliable performance with minimal maintenance — ideal for shop-floor degreasing where hands-on control is essential.",
       "heroImage": null
     },
     {
@@ -100,7 +100,7 @@
         }
       ],
       "totalProducts": 18,
-      "description": "Magido top load aqueous parts washers are engineered for automatic spray washing applications using aqueous detergents at temperatures up to 150\u00b0F. Each system features a motorized rotating turntable and precision-angled jet nozzles that deliver thorough, consistent cleaning coverage across all part surfaces. Available in compact, standard, and high-performance configurations with turntable sizes ranging from 14\" to 55\" in diameter, these washers handle everything from small precision components to medium-sized industrial parts. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages.",
+      "description": "Magido top load aqueous parts washers are engineered for automatic spray washing applications using aqueous detergents at temperatures up to 150°F. Each system features a motorized rotating turntable and precision-angled jet nozzles that deliver thorough, consistent cleaning coverage across all part surfaces. Available in compact, standard, and high-performance configurations with turntable sizes ranging from 14\" to 55\" in diameter, these washers handle everything from small precision components to medium-sized industrial parts. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages.",
       "heroImage": "/images/products/x51-2/l153.webp"
     },
     {
@@ -137,7 +137,7 @@
         }
       ],
       "totalProducts": 11,
-      "description": "Magido front load aqueous parts washers are engineered for automatic spray washing of large, heavy components using aqueous detergents at temperatures up to 160\u00b0F. The operation principle uses a fixed platform with a series of angled water jet nozzles configured on a spray ramp to optimally clean all part surfaces. Front load systems feature a removable turntable that transfers easily onto a mobile cart for convenient loading and unloading outside the wash chamber. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages \u2014 built for high-throughput production environments.",
+      "description": "Magido front load aqueous parts washers are engineered for automatic spray washing of large, heavy components using aqueous detergents at temperatures up to 160°F. The operation principle uses a fixed platform with a series of angled water jet nozzles configured on a spray ramp to optimally clean all part surfaces. Front load systems feature a removable turntable that transfers easily onto a mobile cart for convenient loading and unloading outside the wash chamber. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages — built for high-throughput production environments.",
       "heroImage": null
     },
     {
@@ -158,7 +158,7 @@
         }
       ],
       "totalProducts": 10,
-      "description": "Magido immersion aqueous parts washers are designed for thorough cleaning of parts with complex geometries using a full-submersion agitation process. Parts are lowered into a heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167\u00b0F, these systems are ideal for precision components, machined parts, and assemblies requiring complete surface contact. All machines are constructed from AISI 304 stainless steel and are characterized by their cleaning platform size and load capacity.",
+      "description": "Magido immersion aqueous parts washers are designed for thorough cleaning of parts with complex geometries using a full-submersion agitation process. Parts are lowered into a heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167°F, these systems are ideal for precision components, machined parts, and assemblies requiring complete surface contact. All machines are constructed from AISI 304 stainless steel and are characterized by their cleaning platform size and load capacity.",
       "heroImage": "/images/products/agita/a1300.webp"
     },
     {
@@ -232,7 +232,7 @@
         }
       ],
       "totalProducts": 14,
-      "description": "Magido rotary drum aqueous parts washers use a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and are carried through the wash zone by the internal helix, emerging clean at the other end \u2014 enabling non-stop processing without batching. Available in single-stage and dual-stage configurations with wash and rinse capabilities, all machines are constructed from AISI 304 stainless steel. These systems are the right choice for high-volume operations requiring consistent, automated cleaning.",
+      "description": "Magido rotary drum aqueous parts washers use a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and are carried through the wash zone by the internal helix, emerging clean at the other end — enabling non-stop processing without batching. Available in single-stage and dual-stage configurations with wash and rinse capabilities, all machines are constructed from AISI 304 stainless steel. These systems are the right choice for high-volume operations requiring consistent, automated cleaning.",
       "heroImage": "/images/products/spira-2b/sp950-2.webp"
     },
     {
@@ -414,20 +414,20 @@
             "name": "Timer",
             "unit": "Min",
             "values": {
-              "L101": "0 \u2013 60",
-              "L102": "0 \u2013 60",
-              "L122": "0 \u2013 60",
-              "L152": "0 \u2013 60"
+              "L101": "0 – 60",
+              "L102": "0 – 60",
+              "L122": "0 – 60",
+              "L152": "0 – 60"
             }
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "L101": "140\u00b0",
-              "L102": "140\u00b0",
-              "L122": "140\u00b0",
-              "L152": "140\u00b0"
+              "L101": "140°",
+              "L102": "140°",
+              "L122": "140°",
+              "L152": "140°"
             }
           },
           {
@@ -484,9 +484,9 @@
             "name": "Pneumatic Lid",
             "unit": "",
             "values": {
-              "L101": "\u2013",
-              "L102": "\u2013",
-              "L122": "\u2013",
+              "L101": "–",
+              "L102": "–",
+              "L122": "–",
               "L152": "Standard"
             }
           },
@@ -1527,10 +1527,10 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "DG-8": "113\u00b0F",
-              "DG-9": "113\u00b0F"
+              "DG-8": "113°F",
+              "DG-9": "113°F"
             }
           },
           {
@@ -1655,10 +1655,10 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "L-7": "113\u00b0F",
-              "L-10": "113\u00b0F"
+              "L-7": "113°F",
+              "L-10": "113°F"
             }
           },
           {
@@ -1815,10 +1815,10 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "HP-25": "113\u00b0F",
-              "HP-30": "113\u00b0F"
+              "HP-25": "113°F",
+              "HP-30": "113°F"
             }
           },
           {
@@ -2005,11 +2005,11 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "L-35": "140\u00b0F",
-              "L-55": "140\u00b0F",
-              "L-90": "140\u00b0F"
+              "L-35": "140°F",
+              "L-55": "140°F",
+              "L-90": "140°F"
             }
           },
           {
@@ -2234,12 +2234,12 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "L800FP": "140\u00b0F",
-              "L901FP": "140\u00b0F",
-              "L902FP": "140\u00b0F",
-              "L922FP": "140\u00b0F"
+              "L800FP": "140°F",
+              "L901FP": "140°F",
+              "L902FP": "140°F",
+              "L922FP": "140°F"
             }
           },
           {
@@ -2451,11 +2451,11 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "L101HP": "160\u00b0F",
-              "L102HP": "160\u00b0F",
-              "L122HP": "160\u00b0F"
+              "L101HP": "160°F",
+              "L102HP": "160°F",
+              "L122HP": "160°F"
             }
           },
           {
@@ -2751,11 +2751,11 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "L103": "140\u00b0",
-              "L123": "140\u00b0",
-              "L153": "140\u00b0"
+              "L103": "140°",
+              "L123": "140°",
+              "L153": "140°"
             }
           },
           {
@@ -2861,7 +2861,7 @@
       },
       "standardFeatures": [
         "AISI 304 Stainless Steel Construction",
-        "Dual Tanks \u2014 Wash & Rinse with PLC Control",
+        "Dual Tanks — Wash & Rinse with PLC Control",
         "Automatic Rotary Turntable",
         "V-Jet Spray Nozzle System",
         "Independent Heaters for Each Tank",
@@ -2978,12 +2978,12 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "L160": "160\u00b0",
-              "L190": "160\u00b0",
-              "L210": "160\u00b0",
-              "L240": "160\u00b0"
+              "L160": "160°",
+              "L190": "160°",
+              "L210": "160°",
+              "L240": "160°"
             }
           },
           {
@@ -3229,12 +3229,12 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "L162": "160\u00b0",
-              "L192": "160\u00b0",
-              "L212": "160\u00b0",
-              "L242": "160\u00b0"
+              "L162": "160°",
+              "L192": "160°",
+              "L212": "160°",
+              "L242": "160°"
             }
           },
           {
@@ -3371,7 +3371,7 @@
       },
       "standardFeatures": [
         "AISI 304 Stainless Steel Construction",
-        "Dual Tanks \u2014 Wash & Rinse with PLC Control",
+        "Dual Tanks — Wash & Rinse with PLC Control",
         "Front-Loading Door with Safety Interlock",
         "Fixed Platform with Spray Ramp",
         "Independent Heaters for Each Tank"
@@ -3457,12 +3457,12 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "A700": "Ambient-170\u00b0F",
-              "A900": "Ambient-170\u00b0F",
-              "A1100": "Ambient-170\u00b0F",
-              "A1300": "Ambient-170\u00b0F"
+              "A700": "Ambient-170°F",
+              "A900": "Ambient-170°F",
+              "A1100": "Ambient-170°F",
+              "A1300": "Ambient-170°F"
             }
           },
           {
@@ -3529,33 +3529,33 @@
       },
       "standardFeatures": [
         "AISI 304 Stainless Steel Construction throughout",
-        "Pneumatic Oscillating Immersion Platform \u2014 agitates parts during wash cycle",
-        "Oil Sparger & Weir System \u2014 continuously skims surface oils to extend fluid life",
+        "Pneumatic Oscillating Immersion Platform — agitates parts during wash cycle",
+        "Oil Sparger & Weir System — continuously skims surface oils to extend fluid life",
         "Stainless Steel / Incoloy Heating Elements",
         "Low Water Heating Element Shutoff",
-        "Thermally Insulated Tank \u2014 reduces energy consumption and heat loss",
+        "Thermally Insulated Tank — reduces energy consumption and heat loss",
         "Strut-Assisted Lid for safe and easy access",
         "Siemens PLC Control System",
-        "Operating Temperature: Ambient to 170\u00b0F (75\u00b0C)"
+        "Operating Temperature: Ambient to 170°F (75°C)"
       ],
       "availableOptions": [
-        "Ultrasonic Cleaning Stage \u2014 enhanced removal of fine particulate and oils",
+        "Ultrasonic Cleaning Stage — enhanced removal of fine particulate and oils",
         "Filtration System",
         "Automatic Lid Operation",
-        "24/7 Heat Controller \u2014 maintains solution temperature continuously",
+        "24/7 Heat Controller — maintains solution temperature continuously",
         "Automatic Water Fill with Fluid Level Sensor",
         "Steam Exhaust Fan",
-        "Spray-Under-Immersion \u2014 adds spray impingement during immersion cycle"
+        "Spray-Under-Immersion — adds spray impingement during immersion cycle"
       ],
       "safetyFeatures": [
         "24V Low-Voltage Control Circuit",
-        "NEMA 4 Electrical Enclosure \u2014 splash and dust resistant",
+        "NEMA 4 Electrical Enclosure — splash and dust resistant",
         "Push-Button Emergency Stop",
         "Main Power Disconnect Switch",
-        "Counter-Balanced Lid \u2014 prevents uncontrolled closure",
-        "Liquid Level Shutoff \u2014 protects heating elements from dry-fire",
+        "Counter-Balanced Lid — prevents uncontrolled closure",
+        "Liquid Level Shutoff — protects heating elements from dry-fire",
         "No Exposed Sharp Metal Edges",
-        "Low Noise Operation \u2014 under 70 dBA",
+        "Low Noise Operation — under 70 dBA",
         "CE Certified"
       ]
     },
@@ -3683,7 +3683,7 @@
           },
           {
             "name": "Solution temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
               "J320": "100-140",
               "J320/2": "100-140"
@@ -3899,7 +3899,7 @@
           },
           {
             "name": "Solution temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
               "SP320": "100-160",
               "SP480": "100-160",
@@ -4179,7 +4179,7 @@
           },
           {
             "name": "Solution temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
               "SP320/2": "100-160",
               "SP480/2": "100-160",
@@ -4392,10 +4392,10 @@
             "unit": "",
             "values": {
               "PM400": "",
-              "P600/2": "\u00bc Hp / 60 cfm",
-              "P900/2": "\u00bd HP / 180 cfm",
-              "P1200/2": "\u00bd HP / 180 cfm",
-              "P1500/2": "\u00be HP / 470 cfm"
+              "P600/2": "¼ Hp / 60 cfm",
+              "P900/2": "½ HP / 180 cfm",
+              "P1200/2": "½ HP / 180 cfm",
+              "P1500/2": "¾ HP / 470 cfm"
             }
           },
           {
@@ -4436,8 +4436,8 @@
             "unit": "",
             "values": {
               "PM400": "",
-              "P600/2": "\u00bc Hp",
-              "P900/2": "\u00be Hp",
+              "P600/2": "¼ Hp",
+              "P900/2": "¾ Hp",
               "P1200/2": "1 Hp",
               "P1500/2": "1 Hp"
             }
@@ -4485,7 +4485,7 @@
         "Separate Wash & Rinse Stages with Independent Tanks, Pumps & Manifolds",
         "Stainless Steel High-Pressure Circulation Pumps",
         "Digital Temperature Controls with Stainless Steel Heating Elements",
-        "Variable-Speed Rotational Drum Drive \u2014 basket rotation during wash and rinse",
+        "Variable-Speed Rotational Drum Drive — basket rotation during wash and rinse",
         "Liquid Level Control & Automatic Water Fill",
         "Stainless Steel Exhaust Fan",
         "Marine-Style Cleanout Door for easy tank maintenance",
@@ -4510,15 +4510,15 @@
       ],
       "safetyFeatures": [
         "24V Low-Voltage Control Circuit",
-        "NEMA 4 Electrical Panel \u2014 splash and dust resistant",
+        "NEMA 4 Electrical Panel — splash and dust resistant",
         "Push-Button Emergency Stop",
         "Main Power Disconnect Switch with Lock-Out / Tag-Out provision",
         "Overload Protection on Pumps, Rotational Drive & Heaters",
-        "Two-Hand Door Operation \u2014 prevents door closure during loading",
-        "Door Interlock Safety Switch \u2014 cycle cannot start with door open",
-        "Fluid Level Controls \u2014 protects pumps and heating elements",
+        "Two-Hand Door Operation — prevents door closure during loading",
+        "Door Interlock Safety Switch — cycle cannot start with door open",
+        "Fluid Level Controls — protects pumps and heating elements",
         "No Exposed Sharp Metal Edges",
-        "Low Noise Operation \u2014 under 70 dBA",
+        "Low Noise Operation — under 70 dBA",
         "CE Certified"
       ]
     },
@@ -4528,7 +4528,7 @@
       "displayName": "FLS",
       "category": "front-load-washers",
       "type": "Front Load Spray Cabinet",
-      "description": "NEW \u2014 Heavy-duty front load spray cabinet washers with high weight capacity.",
+      "description": "NEW — Heavy-duty front load spray cabinet washers with high weight capacity.",
       "isNew": true,
       "modelPrefix": "FLS-",
       "products": [
@@ -4635,11 +4635,11 @@
           },
           {
             "name": "Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "FLS-30": "140\u00b0F",
-              "FLS-35": "140\u00b0F",
-              "FLS-45": "140\u00b0F"
+              "FLS-30": "140°F",
+              "FLS-35": "140°F",
+              "FLS-45": "140°F"
             }
           },
           {
@@ -4748,7 +4748,7 @@
             "name": "Basket Rotation",
             "unit": "RPM",
             "values": {
-              "TR-450": "0.7 \u2013 2.5"
+              "TR-450": "0.7 – 2.5"
             }
           },
           {
@@ -4788,9 +4788,9 @@
           },
           {
             "name": "Max Operating Temperature",
-            "unit": "\u00b0F",
+            "unit": "°F",
             "values": {
-              "TR-450": "140\u00b0F"
+              "TR-450": "140°F"
             }
           },
           {
@@ -4818,7 +4818,7 @@
             "name": "Timer",
             "unit": "Minute",
             "values": {
-              "TR-450": "0\u201360"
+              "TR-450": "0–60"
             }
           },
           {
@@ -4846,7 +4846,7 @@
       },
       "standardFeatures": [
         "AISI 304 Stainless Steel Construction",
-        "Rotational Basket Fixture with Variable Speed (0.7\u20132.5 RPM)",
+        "Rotational Basket Fixture with Variable Speed (0.7–2.5 RPM)",
         "Compact, Ergonomic Top Load Design",
         "NEMA-4 Rated Electrical Control Panel",
         "Parts Basket with Cover",
@@ -4931,12 +4931,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 \u2013 60",
+          "value": "0 – 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0",
-          "unit": "\u00b0F"
+          "value": "140°",
+          "unit": "°F"
         },
         "Length (lid open)": {
           "value": "51\"",
@@ -4959,7 +4959,7 @@
           "unit": "Lbs"
         },
         "Pneumatic Lid": {
-          "value": "\u2013",
+          "value": "–",
           "unit": ""
         },
         "Automatic Turntable Basket": {
@@ -4971,8 +4971,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
       ],
-      "description": "The Magido L101 is an automatic top load spray cabinet parts washer from the X51 Series, featuring a 35\" rotating turntable, 46-gallon tank, and 440-lb load capacity. A single spray bar with 22 calibrated V-jet nozzles delivers thorough aqueous cleaning at temperatures up to 150\u00b0F, removing oils, coolants, cutting fluids, and metallic fines from small to medium machined parts. The automatic turntable rotates at 7 RPM, ensuring full 360\u00b0 spray coverage without manual repositioning. Built entirely from AISI 304 stainless steel with an adjustable heater, programmable timer, and fluid level sensor, the L101 is the entry-level model in the X51 Series \u2014 the right fit for shops that need reliable automated spray cleaning in a compact footprint. Options include filtration, drying, and oil skimmer.",
-      "cardDescription": "Entry-level X51 \u2014 35\" turntable, 46 gal tank, 440 lb capacity. Single spray bar, V-jet nozzles, temperatures up to 150\u00b0F."
+      "description": "The Magido L101 is an automatic top load spray cabinet parts washer from the X51 Series, featuring a 35\" rotating turntable, 46-gallon tank, and 440-lb load capacity. A single spray bar with 22 calibrated V-jet nozzles delivers thorough aqueous cleaning at temperatures up to 150°F, removing oils, coolants, cutting fluids, and metallic fines from small to medium machined parts. The automatic turntable rotates at 7 RPM, ensuring full 360° spray coverage without manual repositioning. Built entirely from AISI 304 stainless steel with an adjustable heater, programmable timer, and fluid level sensor, the L101 is the entry-level model in the X51 Series — the right fit for shops that need reliable automated spray cleaning in a compact footprint. Options include filtration, drying, and oil skimmer.",
+      "cardDescription": "Entry-level X51 — 35\" turntable, 46 gal tank, 440 lb capacity. Single spray bar, V-jet nozzles, temperatures up to 150°F."
     },
     {
       "slug": "l102",
@@ -5040,12 +5040,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 \u2013 60",
+          "value": "0 – 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0",
-          "unit": "\u00b0F"
+          "value": "140°",
+          "unit": "°F"
         },
         "Length (lid open)": {
           "value": "51\"",
@@ -5068,7 +5068,7 @@
           "unit": "Lbs"
         },
         "Pneumatic Lid": {
-          "value": "\u2013",
+          "value": "–",
           "unit": ""
         },
         "Automatic Turntable Basket": {
@@ -5080,8 +5080,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
       ],
-      "description": "The Magido L102 is an automatic top load spray cabinet parts washer from the X51 Series, sharing the 35\" turntable, 46-gallon tank, and 440-lb load capacity of the L101 but upgrading to a dual spray bar configuration. Two 304 stainless steel manifolds with 44 V-jet nozzles deliver twice the cleaning coverage of the L101, making the L102 better suited for heavier contamination loads \u2014 cutting oils, forming compounds, carbon deposits, and tenacious greases \u2014 on parts that fit the same 35\" turntable. The automatic turntable rotates at 7 RPM for full surface coverage. Built from AISI 304 stainless steel throughout with adjustable heater, programmable timer, and fluid level sensor. Options include filtration, drying, and oil skimmer.",
-      "cardDescription": "35\" turntable, 46 gal tank \u2014 dual spray bars double the nozzle count over the L101 for heavier contamination loads up to 440 lbs."
+      "description": "The Magido L102 is an automatic top load spray cabinet parts washer from the X51 Series, sharing the 35\" turntable, 46-gallon tank, and 440-lb load capacity of the L101 but upgrading to a dual spray bar configuration. Two 304 stainless steel manifolds with 44 V-jet nozzles deliver twice the cleaning coverage of the L101, making the L102 better suited for heavier contamination loads — cutting oils, forming compounds, carbon deposits, and tenacious greases — on parts that fit the same 35\" turntable. The automatic turntable rotates at 7 RPM for full surface coverage. Built from AISI 304 stainless steel throughout with adjustable heater, programmable timer, and fluid level sensor. Options include filtration, drying, and oil skimmer.",
+      "cardDescription": "35\" turntable, 46 gal tank — dual spray bars double the nozzle count over the L101 for heavier contamination loads up to 440 lbs."
     },
     {
       "slug": "l122",
@@ -5148,12 +5148,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 \u2013 60",
+          "value": "0 – 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0",
-          "unit": "\u00b0F"
+          "value": "140°",
+          "unit": "°F"
         },
         "Length (lid open)": {
           "value": "69\"",
@@ -5176,7 +5176,7 @@
           "unit": "Lbs"
         },
         "Pneumatic Lid": {
-          "value": "\u2013",
+          "value": "–",
           "unit": ""
         },
         "Automatic Turntable Basket": {
@@ -5188,8 +5188,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
       ],
-      "description": "The Magido L122 is an automatic top load spray cabinet parts washer from the X51 Series, stepping up to a 45\" turntable with a 74-gallon tank and 770-lb load capacity \u2014 handling a significantly larger part envelope than the 35\" L101 and L102 models. Two 304 stainless steel spray bars with 44 V-jet nozzles deliver thorough coverage across the full turntable diameter at temperatures up to 150\u00b0F. The 7 RPM rotating turntable ensures all part surfaces reach the spray zone without manual intervention. Built from AISI 304 stainless steel throughout, the L122 is the right choice when parts are too large for the 35\" models but a front-load machine would be overkill. Options include filtration, drying, and oil skimmer.",
-      "cardDescription": "45\" turntable, 74 gal tank, 770 lb capacity \u2014 handles a significantly larger part envelope than the 35\" models. Dual spray bars, 44 nozzles."
+      "description": "The Magido L122 is an automatic top load spray cabinet parts washer from the X51 Series, stepping up to a 45\" turntable with a 74-gallon tank and 770-lb load capacity — handling a significantly larger part envelope than the 35\" L101 and L102 models. Two 304 stainless steel spray bars with 44 V-jet nozzles deliver thorough coverage across the full turntable diameter at temperatures up to 150°F. The 7 RPM rotating turntable ensures all part surfaces reach the spray zone without manual intervention. Built from AISI 304 stainless steel throughout, the L122 is the right choice when parts are too large for the 35\" models but a front-load machine would be overkill. Options include filtration, drying, and oil skimmer.",
+      "cardDescription": "45\" turntable, 74 gal tank, 770 lb capacity — handles a significantly larger part envelope than the 35\" models. Dual spray bars, 44 nozzles."
     },
     {
       "slug": "l152",
@@ -5252,12 +5252,12 @@
           "unit": "Phase"
         },
         "Timer": {
-          "value": "0 \u2013 60",
+          "value": "0 – 60",
           "unit": "Min"
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0",
-          "unit": "\u00b0F"
+          "value": "140°",
+          "unit": "°F"
         },
         "Length (lid open)": {
           "value": "85\"",
@@ -5292,8 +5292,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/A-BYLrmWdsg"
       ],
-      "description": "The Magido L152 is the largest model in the X51 Series, featuring a 51\" turntable, 80-gallon tank, and 770-lb load capacity \u2014 the maximum top-load spray cabinet configuration in this line. Two spray bars with 58 V-jet nozzles cover the full 51\" turntable sweep, delivering consistent aqueous cleaning at temperatures up to 150\u00b0F across large fabricated components, transmission cases, and oversized machined parts that would otherwise require a front-load machine. The 7 RPM rotating turntable provides complete surface coverage without manual handling. Built from AISI 304 stainless steel throughout with adjustable heater, programmable timer, and fluid level sensor. Options include filtration, drying, and oil skimmer.",
-      "cardDescription": "Largest X51 \u2014 51\" turntable, 80 gal tank, 770 lb capacity. Dual spray bars with 58 nozzles cover the full turntable sweep."
+      "description": "The Magido L152 is the largest model in the X51 Series, featuring a 51\" turntable, 80-gallon tank, and 770-lb load capacity — the maximum top-load spray cabinet configuration in this line. Two spray bars with 58 V-jet nozzles cover the full 51\" turntable sweep, delivering consistent aqueous cleaning at temperatures up to 150°F across large fabricated components, transmission cases, and oversized machined parts that would otherwise require a front-load machine. The 7 RPM rotating turntable provides complete surface coverage without manual handling. Built from AISI 304 stainless steel throughout with adjustable heater, programmable timer, and fluid level sensor. Options include filtration, drying, and oil skimmer.",
+      "cardDescription": "Largest X51 — 51\" turntable, 80 gal tank, 770 lb capacity. Dual spray bars with 58 nozzles cover the full turntable sweep."
     },
     {
       "slug": "g200",
@@ -5391,8 +5391,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G200 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring an 8\" wide stainless steel mesh belt and a 90-gallon wash tank. Parts are placed on the belt and carried through precision spray zones at 1\u20135 fpm \u2014 adjustable for tunable dwell time based on contamination level. Heated aqueous detergent removes oils, greases, coolants, and machining residues continuously without batching or operator handling. Built entirely from AISI 304 stainless steel with temperature control and programmable wash cycles, the G200 is the entry-level Gold 1b model \u2014 best suited for small fasteners, turned parts, and precision components that fit within a narrow 8\" conveyor lane.",
-      "cardDescription": "Entry Gold 1b \u2014 8\" belt, 90 gal wash tank. Belt speed 1\u20135 fpm. Targets small fasteners, turned parts, and narrow conveyor lines."
+      "description": "The Magido G200 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring an 8\" wide stainless steel mesh belt and a 90-gallon wash tank. Parts are placed on the belt and carried through precision spray zones at 1–5 fpm — adjustable for tunable dwell time based on contamination level. Heated aqueous detergent removes oils, greases, coolants, and machining residues continuously without batching or operator handling. Built entirely from AISI 304 stainless steel with temperature control and programmable wash cycles, the G200 is the entry-level Gold 1b model — best suited for small fasteners, turned parts, and precision components that fit within a narrow 8\" conveyor lane.",
+      "cardDescription": "Entry Gold 1b — 8\" belt, 90 gal wash tank. Belt speed 1–5 fpm. Targets small fasteners, turned parts, and narrow conveyor lines."
     },
     {
       "slug": "g300",
@@ -5490,8 +5490,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G300 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 12\" wide stainless steel mesh belt and a 90-gallon wash tank. The wider belt accommodates slightly larger parts or allows more parts per pass compared to the G200, while the same 90-gallon tank and 1\u20135 fpm belt speed provide equivalent cleaning performance. Parts travel continuously through heated aqueous spray zones without batching. Built from AISI 304 stainless steel throughout with adjustable belt speed, temperature control, and programmable cycles. Suited for machined components, stampings, and small brackets requiring automated inline cleaning.",
-      "cardDescription": "12\" belt, 90 gal wash tank \u2014 slightly wider than the G200 for more parts per pass or wider components on the same production line."
+      "description": "The Magido G300 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 12\" wide stainless steel mesh belt and a 90-gallon wash tank. The wider belt accommodates slightly larger parts or allows more parts per pass compared to the G200, while the same 90-gallon tank and 1–5 fpm belt speed provide equivalent cleaning performance. Parts travel continuously through heated aqueous spray zones without batching. Built from AISI 304 stainless steel throughout with adjustable belt speed, temperature control, and programmable cycles. Suited for machined components, stampings, and small brackets requiring automated inline cleaning.",
+      "cardDescription": "12\" belt, 90 gal wash tank — slightly wider than the G200 for more parts per pass or wider components on the same production line."
     },
     {
       "slug": "g400",
@@ -5589,8 +5589,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G400 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 16\" wide stainless steel mesh belt and a 90-gallon wash tank. The 16\" belt width is a practical mid-range choice for operations cleaning a mixed variety of part sizes on the same production line. Belt speed is adjustable from 1\u20135 fpm to tune dwell time for different contamination levels. Built from AISI 304 stainless steel throughout with temperature control and programmable wash cycles. Well-suited for automotive components, machined housings, and mixed-part production lines where more belt width flexibility is needed than the G200 or G300 provide.",
-      "cardDescription": "16\" belt, 90 gal wash tank \u2014 mid-range belt width suited for automotive components, machined housings, and mixed-part lines."
+      "description": "The Magido G400 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 16\" wide stainless steel mesh belt and a 90-gallon wash tank. The 16\" belt width is a practical mid-range choice for operations cleaning a mixed variety of part sizes on the same production line. Belt speed is adjustable from 1–5 fpm to tune dwell time for different contamination levels. Built from AISI 304 stainless steel throughout with temperature control and programmable wash cycles. Well-suited for automotive components, machined housings, and mixed-part production lines where more belt width flexibility is needed than the G200 or G300 provide.",
+      "cardDescription": "16\" belt, 90 gal wash tank — mid-range belt width suited for automotive components, machined housings, and mixed-part lines."
     },
     {
       "slug": "g500",
@@ -5688,8 +5688,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G500 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 20\" wide stainless steel mesh belt and a 120-gallon wash tank. The step up to 120 gallons \u2014 over the 90-gallon G200\u2013G400 models \u2014 reduces solution temperature drop under continuous load, making the G500 better suited for sustained high-throughput production shifts. Belt speed is adjustable from 1\u20135 fpm. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles. The right choice when medium-sized parts or higher production rates require more solution stability than the smaller-tank models can maintain.",
-      "cardDescription": "20\" belt, 120 gal wash tank \u2014 expanded tank reduces temperature drop under continuous load. Handles medium-sized parts at higher throughput."
+      "description": "The Magido G500 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 20\" wide stainless steel mesh belt and a 120-gallon wash tank. The step up to 120 gallons — over the 90-gallon G200–G400 models — reduces solution temperature drop under continuous load, making the G500 better suited for sustained high-throughput production shifts. Belt speed is adjustable from 1–5 fpm. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles. The right choice when medium-sized parts or higher production rates require more solution stability than the smaller-tank models can maintain.",
+      "cardDescription": "20\" belt, 120 gal wash tank — expanded tank reduces temperature drop under continuous load. Handles medium-sized parts at higher throughput."
     },
     {
       "slug": "g600",
@@ -5787,8 +5787,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G600 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 23\" wide stainless steel mesh belt and a 120-gallon wash tank. Parts up to roughly 20\" wide clean in a single pass without repositioning, making the G600 well-suited for connecting rods, valve bodies, engine brackets, and medium fabricated components. Belt speed adjusts from 1\u20135 fpm for tunable dwell time. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles. The G600 bridges the gap between mid-range and wide belt configurations without the larger footprint of the G700 and above.",
-      "cardDescription": "23\" belt, 120 gal wash tank. Parts up to ~20\" wide clean in a single pass \u2014 suited for connecting rods, valve bodies, and medium fabricated components."
+      "description": "The Magido G600 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 23\" wide stainless steel mesh belt and a 120-gallon wash tank. Parts up to roughly 20\" wide clean in a single pass without repositioning, making the G600 well-suited for connecting rods, valve bodies, engine brackets, and medium fabricated components. Belt speed adjusts from 1–5 fpm for tunable dwell time. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles. The G600 bridges the gap between mid-range and wide belt configurations without the larger footprint of the G700 and above.",
+      "cardDescription": "23\" belt, 120 gal wash tank. Parts up to ~20\" wide clean in a single pass — suited for connecting rods, valve bodies, and medium fabricated components."
     },
     {
       "slug": "g700",
@@ -5886,7 +5886,7 @@
           "unit": ""
         }
       },
-      "description": "The Magido G700 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 27\" wide stainless steel mesh belt and a 120-gallon wash tank. The 27\" belt handles parts too wide for the mid-range G500 and G600 without requiring the largest Gold 1b configurations. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles. A strong choice for gear housings, medium castings, and stamped assemblies in automotive and machining production lines where belt width is the deciding factor.",
+      "description": "The Magido G700 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 27\" wide stainless steel mesh belt and a 120-gallon wash tank. The 27\" belt handles parts too wide for the mid-range G500 and G600 without requiring the largest Gold 1b configurations. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles. A strong choice for gear housings, medium castings, and stamped assemblies in automotive and machining production lines where belt width is the deciding factor.",
       "cardDescription": "27\" belt, 120 gal wash tank. Handles parts too wide for mid-range models without stepping up to the widest Gold 1b configuration."
     },
     {
@@ -5985,8 +5985,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G800 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 31\" wide stainless steel mesh belt and a 140-gallon wash tank. Parts up to approximately 28\" wide clean without manual reorientation, and the 140-gallon tank maintains stable solution temperature through high-load production shifts. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles. Designed for heavy production environments cleaning engine components, transmission cases, and large machined parts at sustained throughput rates.",
-      "cardDescription": "31\" belt, 140 gal wash tank. Parts up to ~28\" wide clean without reorientation \u2014 built for engine components, transmission cases, and large machined parts."
+      "description": "The Magido G800 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 31\" wide stainless steel mesh belt and a 140-gallon wash tank. Parts up to approximately 28\" wide clean without manual reorientation, and the 140-gallon tank maintains stable solution temperature through high-load production shifts. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles. Designed for heavy production environments cleaning engine components, transmission cases, and large machined parts at sustained throughput rates.",
+      "cardDescription": "31\" belt, 140 gal wash tank. Parts up to ~28\" wide clean without reorientation — built for engine components, transmission cases, and large machined parts."
     },
     {
       "slug": "g900",
@@ -6084,8 +6084,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G900 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 35\" wide stainless steel mesh belt and a 140-gallon wash tank \u2014 one of the widest configurations in the Gold 1b line. The high solution volume ensures stable operating temperature under continuous load, and the 35\" belt accommodates large stamped panels, engine blocks, and industrial components that exceed the capacity of the mid-range Gold models. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles.",
-      "cardDescription": "35\" belt, 140 gal wash tank \u2014 one of the widest Gold 1b configurations. High solution volume maintains temperature stability under continuous load."
+      "description": "The Magido G900 is a single-stage in-line belt conveyor parts washer from the Gold 1b Series, featuring a 35\" wide stainless steel mesh belt and a 140-gallon wash tank — one of the widest configurations in the Gold 1b line. The high solution volume ensures stable operating temperature under continuous load, and the 35\" belt accommodates large stamped panels, engine blocks, and industrial components that exceed the capacity of the mid-range Gold models. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles.",
+      "cardDescription": "35\" belt, 140 gal wash tank — one of the widest Gold 1b configurations. High solution volume maintains temperature stability under continuous load."
     },
     {
       "slug": "g1000",
@@ -6183,8 +6183,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G1000 is the widest single-stage model in the Gold 1b Series, featuring a 39\" wide stainless steel mesh belt and a 140-gallon wash tank. It accommodates the largest parts that can pass through an inline belt conveyor, making it the top choice for high-volume production operations cleaning large industrial components, structural weldments, and wide stampings that exceed the capacity of all narrower Gold 1b models. Belt speed adjusts from 1\u20135 fpm for tunable dwell time. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles.",
-      "cardDescription": "39\" belt, 140 gal wash tank \u2014 widest Gold 1b model. Accommodates the largest parts that can pass through an inline belt conveyor."
+      "description": "The Magido G1000 is the widest single-stage model in the Gold 1b Series, featuring a 39\" wide stainless steel mesh belt and a 140-gallon wash tank. It accommodates the largest parts that can pass through an inline belt conveyor, making it the top choice for high-volume production operations cleaning large industrial components, structural weldments, and wide stampings that exceed the capacity of all narrower Gold 1b models. Belt speed adjusts from 1–5 fpm for tunable dwell time. Built from AISI 304 stainless steel throughout with temperature control and programmable cycles.",
+      "cardDescription": "39\" belt, 140 gal wash tank — widest Gold 1b model. Accommodates the largest parts that can pass through an inline belt conveyor."
     },
     {
       "slug": "g200-2",
@@ -6282,8 +6282,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G200/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring an 8\" wide stainless steel mesh belt with separate 90-gallon wash and rinse tanks. The sequential wash-then-rinse cycle eliminates detergent residue \u2014 essential for parts going directly to coating, plating, anodizing, or precision assembly where surface cleanliness is verified. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel throughout with independent temperature control per tank and programmable cycles. The G200/2 is the entry-level dual-stage Gold model \u2014 best for small precision components on narrow conveyor lines where residue-free output is required.",
-      "cardDescription": "Entry dual-stage Gold \u2014 8\" belt, separate 90 gal wash and rinse tanks. Residue-free output for parts going to coating, plating, or precision assembly."
+      "description": "The Magido G200/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring an 8\" wide stainless steel mesh belt with separate 90-gallon wash and rinse tanks. The sequential wash-then-rinse cycle eliminates detergent residue — essential for parts going directly to coating, plating, anodizing, or precision assembly where surface cleanliness is verified. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel throughout with independent temperature control per tank and programmable cycles. The G200/2 is the entry-level dual-stage Gold model — best for small precision components on narrow conveyor lines where residue-free output is required.",
+      "cardDescription": "Entry dual-stage Gold — 8\" belt, separate 90 gal wash and rinse tanks. Residue-free output for parts going to coating, plating, or precision assembly."
     },
     {
       "slug": "g300-2",
@@ -6381,7 +6381,7 @@
           "unit": ""
         }
       },
-      "description": "The Magido G300/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 12\" wide belt with separate 90-gallon wash and rinse tanks. The wider belt accommodates slightly more parts per pass or wider components than the G200/2, while delivering the same residue-free output through a sequential wash-then-rinse cycle. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel throughout with independent temperature control per tank and programmable cycles. Suited for precision machined components and small assemblies requiring a validated two-stage cleaning sequence.",
+      "description": "The Magido G300/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 12\" wide belt with separate 90-gallon wash and rinse tanks. The wider belt accommodates slightly more parts per pass or wider components than the G200/2, while delivering the same residue-free output through a sequential wash-then-rinse cycle. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel throughout with independent temperature control per tank and programmable cycles. Suited for precision machined components and small assemblies requiring a validated two-stage cleaning sequence.",
       "cardDescription": "12\" belt, dual 90 gal wash and rinse tanks. Slightly wider than the G200/2 for more parts per pass with the same residue-free output."
     },
     {
@@ -6480,7 +6480,7 @@
           "unit": ""
         }
       },
-      "description": "The Magido G400/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 16\" wide belt with separate 90-gallon wash and rinse tanks. The 16\" belt handles a broader range of part sizes than the G200/2 and G300/2, while maintaining the residue-free output required for downstream finishing operations. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel throughout with independent temperature control per tank and programmable cycles. A practical mid-range dual-stage choice for operations cleaning varied part sizes that need clean rinse output.",
+      "description": "The Magido G400/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 16\" wide belt with separate 90-gallon wash and rinse tanks. The 16\" belt handles a broader range of part sizes than the G200/2 and G300/2, while maintaining the residue-free output required for downstream finishing operations. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel throughout with independent temperature control per tank and programmable cycles. A practical mid-range dual-stage choice for operations cleaning varied part sizes that need clean rinse output.",
       "cardDescription": "16\" belt, dual-stage wash and rinse, 90 gal tanks. Handles a broader range of part sizes while maintaining residue-free output for downstream finishing."
     },
     {
@@ -6579,7 +6579,7 @@
           "unit": ""
         }
       },
-      "description": "The Magido G500/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 20\" wide belt with a 120-gallon wash tank and dedicated rinse stage. The larger tank provides better solution stability under continuous load compared to the 90-gallon G200/2\u2013G400/2 models \u2014 important for sustained production shifts where temperature consistency affects cleaning quality. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles. Suited for automotive and machining lines where medium-sized parts must emerge clean and residue-free.",
+      "description": "The Magido G500/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 20\" wide belt with a 120-gallon wash tank and dedicated rinse stage. The larger tank provides better solution stability under continuous load compared to the 90-gallon G200/2–G400/2 models — important for sustained production shifts where temperature consistency affects cleaning quality. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles. Suited for automotive and machining lines where medium-sized parts must emerge clean and residue-free.",
       "cardDescription": "20\" belt, 120 gal wash tank with dedicated rinse stage. Increased throughput and solution stability for medium-sized parts requiring clean output."
     },
     {
@@ -6678,8 +6678,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G600/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 23\" wide belt with a 120-gallon wash tank and dedicated rinse stage. Parts up to approximately 20\" wide clean and rinse in a single pass at production-line speed without manual repositioning. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles. The G600/2 is well-suited for automotive transmission components, engine parts, and precision fabricated assemblies requiring residue-free output.",
-      "cardDescription": "23\" belt, dual-stage, 120 gal wash. Parts up to ~20\" wide clean and rinse in a single pass \u2014 suited for transmission components and precision assemblies."
+      "description": "The Magido G600/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 23\" wide belt with a 120-gallon wash tank and dedicated rinse stage. Parts up to approximately 20\" wide clean and rinse in a single pass at production-line speed without manual repositioning. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles. The G600/2 is well-suited for automotive transmission components, engine parts, and precision fabricated assemblies requiring residue-free output.",
+      "cardDescription": "23\" belt, dual-stage, 120 gal wash. Parts up to ~20\" wide clean and rinse in a single pass — suited for transmission components and precision assemblies."
     },
     {
       "slug": "g700-2",
@@ -6777,7 +6777,7 @@
           "unit": ""
         }
       },
-      "description": "The Magido G700/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 27\" wide belt with a 120-gallon wash tank and dedicated rinse stage. The 27\" belt handles wider parts that require both thorough wash coverage and a clean rinse before downstream processing \u2014 such as gear housings, medium castings, and components with complex surface geometries. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles.",
+      "description": "The Magido G700/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 27\" wide belt with a 120-gallon wash tank and dedicated rinse stage. The 27\" belt handles wider parts that require both thorough wash coverage and a clean rinse before downstream processing — such as gear housings, medium castings, and components with complex surface geometries. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles.",
       "cardDescription": "27\" belt, dual-stage, 120 gal wash. Wider parts with both thorough wash coverage and clean rinsing before downstream processing."
     },
     {
@@ -6876,7 +6876,7 @@
           "unit": ""
         }
       },
-      "description": "The Magido G800/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 31\" wide belt with a 140-gallon wash tank and dedicated rinse stage. The 140-gallon wash tank maintains consistent solution temperature through high-load production shifts, and parts up to approximately 28\" wide clean and rinse without manual reorientation. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles. Designed for sustained production-line cleaning of large parts with zero residue tolerance.",
+      "description": "The Magido G800/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 31\" wide belt with a 140-gallon wash tank and dedicated rinse stage. The 140-gallon wash tank maintains consistent solution temperature through high-load production shifts, and parts up to approximately 28\" wide clean and rinse without manual reorientation. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles. Designed for sustained production-line cleaning of large parts with zero residue tolerance.",
       "cardDescription": "31\" belt, dual-stage, 140 gal wash tank. Sustained production-line cleaning of large parts with zero residue tolerance."
     },
     {
@@ -6975,7 +6975,7 @@
           "unit": ""
         }
       },
-      "description": "The Magido G900/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 35\" wide belt with a 140-gallon wash tank and dedicated rinse stage. One of the widest dual-stage configurations in the Gold line, it handles large industrial components \u2014 engine blocks, large castings, and oversized machined parts \u2014 that require both thorough contamination removal and residue-free rinsing. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles.",
+      "description": "The Magido G900/2 is a dual-stage in-line belt conveyor parts washer from the Gold 2b Series, featuring a 35\" wide belt with a 140-gallon wash tank and dedicated rinse stage. One of the widest dual-stage configurations in the Gold line, it handles large industrial components — engine blocks, large castings, and oversized machined parts — that require both thorough contamination removal and residue-free rinsing. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles.",
       "cardDescription": "35\" belt, dual-stage, 140 gal wash. Large industrial components requiring both thorough contamination removal and residue-free rinsing."
     },
     {
@@ -7074,8 +7074,8 @@
           "unit": ""
         }
       },
-      "description": "The Magido G1000/2 is the largest dual-stage model in the Gold 2b Series, featuring a 39\" wide belt with a 140-gallon wash tank and dedicated rinse stage \u2014 the widest belt configuration in the Gold line. It accommodates the largest parts that can pass through an inline conveyor while delivering the residue-free output of a two-stage wash-and-rinse process. Belt speed adjusts from 1\u20135 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles. The top choice for high-volume production operations requiring maximum belt width and clean output.",
-      "cardDescription": "39\" belt, dual-stage, 140 gal wash \u2014 widest dual-stage Gold model. Maximum conveyor width with dedicated rinse for residue-free production-ready output."
+      "description": "The Magido G1000/2 is the largest dual-stage model in the Gold 2b Series, featuring a 39\" wide belt with a 140-gallon wash tank and dedicated rinse stage — the widest belt configuration in the Gold line. It accommodates the largest parts that can pass through an inline conveyor while delivering the residue-free output of a two-stage wash-and-rinse process. Belt speed adjusts from 1–5 fpm. Built from AISI 304 stainless steel with independent temperature control per tank and programmable cycles. The top choice for high-volume production operations requiring maximum belt width and clean output.",
+      "cardDescription": "39\" belt, dual-stage, 140 gal wash — widest dual-stage Gold model. Maximum conveyor width with dedicated rinse for residue-free production-ready output."
     },
     {
       "slug": "s200",
@@ -7157,8 +7157,8 @@
           "unit": "Siemens"
         }
       },
-      "description": "The Magido S200 is a compact single-stage in-line belt conveyor parts washer from the Silver Series, featuring an 8\" wide stainless steel mesh belt, a 40-gallon wash tank, and a 32\" loading height. Parts are placed on the belt and carried automatically through the heated aqueous spray zone at 0.7\u20133.3 fpm \u2014 slower and more adjustable than the Gold Series for tunable dwell time on lighter contamination loads. The lower 32\" loading height makes the S200 easier to integrate ergonomically into existing lines without platform modifications. Built entirely from AISI 304 stainless steel with temperature control and precision spray nozzles. The Silver Series is designed for operations needing automated inline cleaning in a compact footprint where the Gold Series would be oversized.",
-      "cardDescription": "Entry Silver \u2014 8\" belt, 40 gal tank, 32\" loading height. Designed for compact production cells and limited floor space."
+      "description": "The Magido S200 is a compact single-stage in-line belt conveyor parts washer from the Silver Series, featuring an 8\" wide stainless steel mesh belt, a 40-gallon wash tank, and a 32\" loading height. Parts are placed on the belt and carried automatically through the heated aqueous spray zone at 0.7–3.3 fpm — slower and more adjustable than the Gold Series for tunable dwell time on lighter contamination loads. The lower 32\" loading height makes the S200 easier to integrate ergonomically into existing lines without platform modifications. Built entirely from AISI 304 stainless steel with temperature control and precision spray nozzles. The Silver Series is designed for operations needing automated inline cleaning in a compact footprint where the Gold Series would be oversized.",
+      "cardDescription": "Entry Silver — 8\" belt, 40 gal tank, 32\" loading height. Designed for compact production cells and limited floor space."
     },
     {
       "slug": "s300",
@@ -7240,8 +7240,8 @@
           "unit": "Siemens"
         }
       },
-      "description": "The Magido S300 is a compact single-stage in-line belt conveyor parts washer from the Silver Series, featuring a 12\" wide stainless steel mesh belt, a 40-gallon wash tank, and a 32\" loading height. The 12\" belt accommodates more parts per pass or slightly wider components compared to the S200, while maintaining the same compact Silver footprint and lower loading height. Belt speed adjusts from 0.7\u20133.3 fpm. Built from AISI 304 stainless steel with temperature control and precision spray nozzles. The S300 is the right choice for operations that have outgrown the narrowest belt of the S200 but don't need the larger tank capacity and footprint of a Gold Series conveyor.",
-      "cardDescription": "12\" belt, 40 gal tank, 32\" loading height \u2014 more parts per pass than the S200 in the same compact Silver footprint."
+      "description": "The Magido S300 is a compact single-stage in-line belt conveyor parts washer from the Silver Series, featuring a 12\" wide stainless steel mesh belt, a 40-gallon wash tank, and a 32\" loading height. The 12\" belt accommodates more parts per pass or slightly wider components compared to the S200, while maintaining the same compact Silver footprint and lower loading height. Belt speed adjusts from 0.7–3.3 fpm. Built from AISI 304 stainless steel with temperature control and precision spray nozzles. The S300 is the right choice for operations that have outgrown the narrowest belt of the S200 but don't need the larger tank capacity and footprint of a Gold Series conveyor.",
+      "cardDescription": "12\" belt, 40 gal tank, 32\" loading height — more parts per pass than the S200 in the same compact Silver footprint."
     },
     {
       "slug": "s400",
@@ -7323,8 +7323,8 @@
           "unit": "Siemens"
         }
       },
-      "description": "The Magido S400 is a compact single-stage in-line belt conveyor parts washer from the Silver Series, featuring a 16\" wide stainless steel mesh belt, a 40-gallon wash tank, and a 32\" loading height. The 16\" belt is the widest in the Silver Series, handling medium-sized parts that won't fit the S200 or S300 while still maintaining the Silver's compact footprint and ergonomic 32\" loading height \u2014 significantly lower than the Gold Series. Belt speed adjusts from 0.7\u20133.3 fpm. Built from AISI 304 stainless steel with temperature control and precision spray nozzles. Ideal for small shops or work cells needing automated inline cleaning for medium-sized parts without the investment in a full Gold Series installation.",
-      "cardDescription": "Widest Silver model \u2014 16\" belt, 40 gal tank, 32\" loading height. Handles medium-sized parts where the S200/S300 belt width is insufficient."
+      "description": "The Magido S400 is a compact single-stage in-line belt conveyor parts washer from the Silver Series, featuring a 16\" wide stainless steel mesh belt, a 40-gallon wash tank, and a 32\" loading height. The 16\" belt is the widest in the Silver Series, handling medium-sized parts that won't fit the S200 or S300 while still maintaining the Silver's compact footprint and ergonomic 32\" loading height — significantly lower than the Gold Series. Belt speed adjusts from 0.7–3.3 fpm. Built from AISI 304 stainless steel with temperature control and precision spray nozzles. Ideal for small shops or work cells needing automated inline cleaning for medium-sized parts without the investment in a full Gold Series installation.",
+      "cardDescription": "Widest Silver model — 16\" belt, 40 gal tank, 32\" loading height. Handles medium-sized parts where the S200/S300 belt width is insufficient."
     },
     {
       "slug": "dg-8",
@@ -7359,8 +7359,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113\u00b0F",
-          "unit": "\u00b0F"
+          "value": "113°F",
+          "unit": "°F"
         },
         "Voltage / Amperage": {
           "value": "115/19",
@@ -7387,8 +7387,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido DG-8 is a sink-style manual aqueous parts washer built entirely from AISI 304 stainless steel, featuring a 33.5\" \u00d7 19.5\" work surface, a 26.5-gallon heated tank, and a 2 kW thermostat-controlled heater. An external magnetic drive pump circulates heated water-based detergent through a flow-through brush, allowing operators to manually degrease small to medium parts up to 300 lbs. The sink design gives hands-on control for irregularly shaped components, tooling, and shop parts where an automated machine would be impractical. Standard features include a liquid level shut-off to protect the heater and pump. The DG-8's smaller 26.5-gallon tank is suited for lower-volume shops where solution economy matters. Optional cartridge filter and casters available.",
-      "cardDescription": "Sink-style manual washer \u2014 33.5\" \u00d7 19.5\" work surface, 26.5 gal tank, 2 kW heater. Flow-through brush for hands-on degreasing up to 300 lbs."
+      "description": "The Magido DG-8 is a sink-style manual aqueous parts washer built entirely from AISI 304 stainless steel, featuring a 33.5\" × 19.5\" work surface, a 26.5-gallon heated tank, and a 2 kW thermostat-controlled heater. An external magnetic drive pump circulates heated water-based detergent through a flow-through brush, allowing operators to manually degrease small to medium parts up to 300 lbs. The sink design gives hands-on control for irregularly shaped components, tooling, and shop parts where an automated machine would be impractical. Standard features include a liquid level shut-off to protect the heater and pump. The DG-8's smaller 26.5-gallon tank is suited for lower-volume shops where solution economy matters. Optional cartridge filter and casters available.",
+      "cardDescription": "Sink-style manual washer — 33.5\" × 19.5\" work surface, 26.5 gal tank, 2 kW heater. Flow-through brush for hands-on degreasing up to 300 lbs."
     },
     {
       "slug": "dg-9",
@@ -7423,8 +7423,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113\u00b0F",
-          "unit": "\u00b0F"
+          "value": "113°F",
+          "unit": "°F"
         },
         "Voltage / Amperage": {
           "value": "115/19",
@@ -7451,8 +7451,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido DG-9 is a sink-style manual aqueous parts washer built entirely from AISI 304 stainless steel, featuring a 33.5\" \u00d7 19.5\" work surface, a 34.5-gallon heated tank, and a 2 kW thermostat-controlled heater. It shares the same work surface dimensions and pump system as the DG-8 but increases tank capacity to 34.5 gallons \u2014 providing approximately 30% more solution volume for longer cleaning intervals between changes and better performance under higher-frequency use or heavier contamination loads. An external magnetic drive pump circulates solution through a flow-through brush for hands-on degreasing of parts up to 300 lbs. Standard features include a liquid level shut-off. Optional cartridge filter and casters available.",
-      "cardDescription": "Sink-style manual washer \u2014 33.5\" \u00d7 19.5\" work surface, 34.5 gal tank. Larger solution volume than the DG-8 for higher-frequency use."
+      "description": "The Magido DG-9 is a sink-style manual aqueous parts washer built entirely from AISI 304 stainless steel, featuring a 33.5\" × 19.5\" work surface, a 34.5-gallon heated tank, and a 2 kW thermostat-controlled heater. It shares the same work surface dimensions and pump system as the DG-8 but increases tank capacity to 34.5 gallons — providing approximately 30% more solution volume for longer cleaning intervals between changes and better performance under higher-frequency use or heavier contamination loads. An external magnetic drive pump circulates solution through a flow-through brush for hands-on degreasing of parts up to 300 lbs. Standard features include a liquid level shut-off. Optional cartridge filter and casters available.",
+      "cardDescription": "Sink-style manual washer — 33.5\" × 19.5\" work surface, 34.5 gal tank. Larger solution volume than the DG-8 for higher-frequency use."
     },
     {
       "slug": "l-7",
@@ -7487,8 +7487,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113\u00b0F",
-          "unit": "\u00b0F"
+          "value": "113°F",
+          "unit": "°F"
         },
         "Voltage": {
           "value": "115",
@@ -7519,8 +7519,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L-7 is a vat-style manual aqueous parts washer built entirely from AISI 304 stainless steel, featuring a 19\" \u00d7 27.5\" open-top work area and a 24-gallon heated tank. The open-top vat design allows operators to soak and manually scrub parts using a flow-through brush and heated aqueous detergent \u2014 particularly effective for removing heavy grease, carbon deposits, and built-up contamination from engine parts, gearbox components, and shop tooling. A 2 kW thermostat-controlled heater and external magnetic drive pump maintain solution temperature and circulation. The L-7 is the compact model in the L Series, suited for smaller shops or secondary cleaning stations where a full automated machine isn't justified. Optional cartridge filter and casters available.",
-      "cardDescription": "Vat-style manual washer \u2014 19\" \u00d7 27.5\" work area, 24 gal tank. Open-top design for soaking and manual cleaning with heated aqueous solution."
+      "description": "The Magido L-7 is a vat-style manual aqueous parts washer built entirely from AISI 304 stainless steel, featuring a 19\" × 27.5\" open-top work area and a 24-gallon heated tank. The open-top vat design allows operators to soak and manually scrub parts using a flow-through brush and heated aqueous detergent — particularly effective for removing heavy grease, carbon deposits, and built-up contamination from engine parts, gearbox components, and shop tooling. A 2 kW thermostat-controlled heater and external magnetic drive pump maintain solution temperature and circulation. The L-7 is the compact model in the L Series, suited for smaller shops or secondary cleaning stations where a full automated machine isn't justified. Optional cartridge filter and casters available.",
+      "cardDescription": "Vat-style manual washer — 19\" × 27.5\" work area, 24 gal tank. Open-top design for soaking and manual cleaning with heated aqueous solution."
     },
     {
       "slug": "l-10",
@@ -7555,8 +7555,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113\u00b0F",
-          "unit": "\u00b0F"
+          "value": "113°F",
+          "unit": "°F"
         },
         "Voltage": {
           "value": "115",
@@ -7587,8 +7587,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L-10 is a vat-style manual aqueous parts washer built entirely from AISI 304 stainless steel, featuring a 29.5\" \u00d7 34\" open-top work area and a 40-gallon heated tank. Compared to the L-7, the L-10 provides a significantly larger work surface and nearly double the solution volume \u2014 accommodating bulkier components like engine blocks, transmission cases, axle housings, and large fabricated parts that won't fit the smaller model. A 3 kW heater (vs. 2 kW on the L-7) recovers solution temperature faster under heavier use. An external magnetic drive pump circulates heated aqueous detergent through a flow-through brush for hands-on cleaning. Optional cartridge filter and casters available.",
-      "cardDescription": "Larger vat-style manual washer \u2014 29.5\" \u00d7 34\" work area, 40 gal tank, 3 kW heater. More capacity for bulkier parts or higher cleaning volumes than the L-7."
+      "description": "The Magido L-10 is a vat-style manual aqueous parts washer built entirely from AISI 304 stainless steel, featuring a 29.5\" × 34\" open-top work area and a 40-gallon heated tank. Compared to the L-7, the L-10 provides a significantly larger work surface and nearly double the solution volume — accommodating bulkier components like engine blocks, transmission cases, axle housings, and large fabricated parts that won't fit the smaller model. A 3 kW heater (vs. 2 kW on the L-7) recovers solution temperature faster under heavier use. An external magnetic drive pump circulates heated aqueous detergent through a flow-through brush for hands-on cleaning. Optional cartridge filter and casters available.",
+      "cardDescription": "Larger vat-style manual washer — 29.5\" × 34\" work area, 40 gal tank, 3 kW heater. More capacity for bulkier parts or higher cleaning volumes than the L-7."
     },
     {
       "slug": "hp-25",
@@ -7635,8 +7635,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113\u00b0F",
-          "unit": "\u00b0F"
+          "value": "113°F",
+          "unit": "°F"
         },
         "Voltage / Amperage": {
           "value": "26.5/14",
@@ -7676,8 +7676,8 @@
         "HP Demo",
         "HP Instructional"
       ],
-      "description": "The Magido HP-25 is a high-pressure manual cabinet parts washer built entirely from AISI 304 stainless steel, featuring a 23\" \u00d7 31.5\" \u00d7 19.5\" enclosed work envelope and a 40-gallon heated tank. A 870 PSI piston-drive pump delivers a focused high-pressure spray wand at 3.7 GPM, blasting contamination out of blind holes, bearing bores, threaded passages, valve body galleries, and intricate features that conventional spray manifolds cannot reach. The enclosed cabinet keeps overspray contained and the operator dry. Standard features include an LED-illuminated cabinet, ergonomic spray wand, window-clearing blower, thermostat-controlled heater, liquid level sensor, low water shut-off, removable work tray, and screened filter basket. The HP-25 is the compact model \u2014 ideal for automotive service bays, transmission shops, and maintenance facilities where floor space is limited.",
-      "cardDescription": "High-pressure cabinet \u2014 23\" \u00d7 31.5\" \u00d7 19.5\" envelope, 40 gal tank. 870 PSI wand blasts blind holes, bearing bores, and valve body passages."
+      "description": "The Magido HP-25 is a high-pressure manual cabinet parts washer built entirely from AISI 304 stainless steel, featuring a 23\" × 31.5\" × 19.5\" enclosed work envelope and a 40-gallon heated tank. A 870 PSI piston-drive pump delivers a focused high-pressure spray wand at 3.7 GPM, blasting contamination out of blind holes, bearing bores, threaded passages, valve body galleries, and intricate features that conventional spray manifolds cannot reach. The enclosed cabinet keeps overspray contained and the operator dry. Standard features include an LED-illuminated cabinet, ergonomic spray wand, window-clearing blower, thermostat-controlled heater, liquid level sensor, low water shut-off, removable work tray, and screened filter basket. The HP-25 is the compact model — ideal for automotive service bays, transmission shops, and maintenance facilities where floor space is limited.",
+      "cardDescription": "High-pressure cabinet — 23\" × 31.5\" × 19.5\" envelope, 40 gal tank. 870 PSI wand blasts blind holes, bearing bores, and valve body passages."
     },
     {
       "slug": "hp-30",
@@ -7723,8 +7723,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "113\u00b0F",
-          "unit": "\u00b0F"
+          "value": "113°F",
+          "unit": "°F"
         },
         "Voltage / Amperage": {
           "value": "31/15.5",
@@ -7764,8 +7764,8 @@
         "HP Demo",
         "HP Instructional"
       ],
-      "description": "The Magido HP-30 is a high-pressure manual cabinet parts washer built entirely from AISI 304 stainless steel, featuring a 27.5\" \u00d7 47.5\" \u00d7 19.5\" enclosed work envelope and a 45-gallon heated tank. It delivers identical 870 PSI / 3.7 GPM high-pressure cleaning to the HP-25 but in a larger cabinet that accommodates wider components \u2014 cylinder heads, differential housings, transfer cases, large valve bodies, and oversized tooling that won't fit the HP-25's 23\" width. The enclosed cabinet keeps overspray contained. Standard features include an LED-illuminated cabinet, ergonomic spray wand, window-clearing blower, thermostat-controlled heater, liquid level sensor, low water shut-off, removable work tray, and screened filter basket. The HP-30 is the larger model for shops that regularly clean wide or bulky components.",
-      "cardDescription": "High-pressure cabinet \u2014 27.5\" \u00d7 47.5\" \u00d7 19.5\" envelope, 45 gal tank. Wider chamber than the HP-25 for cylinder heads, differential housings, and large valve bodies."
+      "description": "The Magido HP-30 is a high-pressure manual cabinet parts washer built entirely from AISI 304 stainless steel, featuring a 27.5\" × 47.5\" × 19.5\" enclosed work envelope and a 45-gallon heated tank. It delivers identical 870 PSI / 3.7 GPM high-pressure cleaning to the HP-25 but in a larger cabinet that accommodates wider components — cylinder heads, differential housings, transfer cases, large valve bodies, and oversized tooling that won't fit the HP-25's 23\" width. The enclosed cabinet keeps overspray contained. Standard features include an LED-illuminated cabinet, ergonomic spray wand, window-clearing blower, thermostat-controlled heater, liquid level sensor, low water shut-off, removable work tray, and screened filter basket. The HP-30 is the larger model for shops that regularly clean wide or bulky components.",
+      "cardDescription": "High-pressure cabinet — 27.5\" × 47.5\" × 19.5\" envelope, 45 gal tank. Wider chamber than the HP-25 for cylinder heads, differential housings, and large valve bodies."
     },
     {
       "slug": "l-35",
@@ -7820,8 +7820,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -7864,8 +7864,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L-35 is a compact top load spray cabinet parts washer from the X81 Series, featuring a 15\" rotating turntable, a 15-gallon tank, and a 155-lb load capacity. The small tank heats quickly and the minimal footprint fits on a workbench or in tight corners of a machining cell \u2014 making the L-35 the right choice when floor space is the primary constraint. A calibrated jet-spray manifold delivers heated aqueous cleaning at temperatures up to 150\u00b0F, removing oils, coolants, and contaminants from small precision parts, tooling, and components. Built entirely from AISI 304 stainless steel with a solution heater, fluid level control, tank drain, and removable filter basket.",
-      "cardDescription": "Entry X81 \u2014 15\" turntable, 15 gal tank, 155 lb capacity. Built for compact work cells where bench-top or corner placement is required."
+      "description": "The Magido L-35 is a compact top load spray cabinet parts washer from the X81 Series, featuring a 15\" rotating turntable, a 15-gallon tank, and a 155-lb load capacity. The small tank heats quickly and the minimal footprint fits on a workbench or in tight corners of a machining cell — making the L-35 the right choice when floor space is the primary constraint. A calibrated jet-spray manifold delivers heated aqueous cleaning at temperatures up to 150°F, removing oils, coolants, and contaminants from small precision parts, tooling, and components. Built entirely from AISI 304 stainless steel with a solution heater, fluid level control, tank drain, and removable filter basket.",
+      "cardDescription": "Entry X81 — 15\" turntable, 15 gal tank, 155 lb capacity. Built for compact work cells where bench-top or corner placement is required."
     },
     {
       "slug": "l-55",
@@ -7921,8 +7921,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -7965,8 +7965,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L-55 is a compact top load spray cabinet parts washer from the X81 Series, featuring a 23\" rotating turntable, a 25-gallon tank, and a 220-lb load capacity. It bridges the gap between the entry-level L-35 and the larger L-90 \u2014 the 23\" turntable handles medium machined parts, small castings, and shop tooling that exceed the L-35's 15\" capacity without requiring the full footprint of the L-90. A calibrated jet-spray manifold delivers heated aqueous cleaning at temperatures up to 150\u00b0F. Built entirely from AISI 304 stainless steel with a solution heater, fluid level control, tank drain, and removable filter basket. A popular choice for job shops and machining cells cleaning a variety of mid-sized components.",
-      "cardDescription": "23\" turntable, 25 gal tank, 220 lb capacity \u2014 mid-range X81 bridging the gap between the compact L-35 and the larger L-90."
+      "description": "The Magido L-55 is a compact top load spray cabinet parts washer from the X81 Series, featuring a 23\" rotating turntable, a 25-gallon tank, and a 220-lb load capacity. It bridges the gap between the entry-level L-35 and the larger L-90 — the 23\" turntable handles medium machined parts, small castings, and shop tooling that exceed the L-35's 15\" capacity without requiring the full footprint of the L-90. A calibrated jet-spray manifold delivers heated aqueous cleaning at temperatures up to 150°F. Built entirely from AISI 304 stainless steel with a solution heater, fluid level control, tank drain, and removable filter basket. A popular choice for job shops and machining cells cleaning a variety of mid-sized components.",
+      "cardDescription": "23\" turntable, 25 gal tank, 220 lb capacity — mid-range X81 bridging the gap between the compact L-35 and the larger L-90."
     },
     {
       "slug": "l-90",
@@ -8022,8 +8022,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -8066,8 +8066,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L-90 is the largest model in the X81 Series, featuring a 31\" rotating turntable, a 30-gallon tank, a 330-lb load capacity, and a 19.5\" load height \u2014 the tallest working envelope in the X81 line. The greater load height accommodates taller parts that exceed the L-35 and L-55's vertical clearance, making the L-90 the right choice when part height is as much of a constraint as turntable diameter. A calibrated jet-spray manifold delivers heated aqueous cleaning at temperatures up to 150\u00b0F. Built entirely from AISI 304 stainless steel with a solution heater, fluid level control, tank drain, and removable filter basket.",
-      "cardDescription": "Largest X81 \u2014 31\" turntable, 30 gal tank, 330 lb capacity, 19.5\" load height. Handles taller parts than the L-35 and L-55."
+      "description": "The Magido L-90 is the largest model in the X81 Series, featuring a 31\" rotating turntable, a 30-gallon tank, a 330-lb load capacity, and a 19.5\" load height — the tallest working envelope in the X81 line. The greater load height accommodates taller parts that exceed the L-35 and L-55's vertical clearance, making the L-90 the right choice when part height is as much of a constraint as turntable diameter. A calibrated jet-spray manifold delivers heated aqueous cleaning at temperatures up to 150°F. Built entirely from AISI 304 stainless steel with a solution heater, fluid level control, tank drain, and removable filter basket.",
+      "cardDescription": "Largest X81 — 31\" turntable, 30 gal tank, 330 lb capacity, 19.5\" load height. Handles taller parts than the L-35 and L-55."
     },
     {
       "slug": "l800fp",
@@ -8113,8 +8113,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -8149,8 +8149,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L800FP is a compact top load aqueous parts washer from the Eco Series, featuring a 31\" automatic sprocket turntable, a 22.5-gallon tank, and a 350-lb load capacity. With the smallest solution volume and footprint in the Eco line, the L800FP is designed specifically for facilities where floor space is the primary constraint \u2014 fitting into tight production cells, secondary cleaning stations, and small shop environments. Calibrated jet-spray nozzles deliver heated aqueous cleaning with a liquid level sensor monitoring solution throughout. Built entirely from AISI 304 stainless steel with adjustable heater and timer.",
-      "cardDescription": "Most compact Eco \u2014 31\" turntable, 22.5 gal tank. Smallest footprint in the series for facilities where floor space is the primary constraint."
+      "description": "The Magido L800FP is a compact top load aqueous parts washer from the Eco Series, featuring a 31\" automatic sprocket turntable, a 22.5-gallon tank, and a 350-lb load capacity. With the smallest solution volume and footprint in the Eco line, the L800FP is designed specifically for facilities where floor space is the primary constraint — fitting into tight production cells, secondary cleaning stations, and small shop environments. Calibrated jet-spray nozzles deliver heated aqueous cleaning with a liquid level sensor monitoring solution throughout. Built entirely from AISI 304 stainless steel with adjustable heater and timer.",
+      "cardDescription": "Most compact Eco — 31\" turntable, 22.5 gal tank. Smallest footprint in the series for facilities where floor space is the primary constraint."
     },
     {
       "slug": "l901fp",
@@ -8196,8 +8196,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -8279,8 +8279,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -8315,8 +8315,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L902FP is a top load aqueous parts washer from the Eco Series, featuring a 36\" automatic sprocket turntable, a 50-gallon tank, and a 330-lb load capacity. It closely matches the L901FP in specifications but offers a marginally wider 36\" turntable on the same 50-gallon solution volume \u2014 the 1\" difference can matter for parts that sit at the very edge of the L901FP's capacity. Both models share the same tank size, load rating, and feature set. Calibrated jet-spray nozzles deliver heated aqueous cleaning with a liquid level sensor. Built entirely from AISI 304 stainless steel with adjustable heater and timer.",
-      "cardDescription": "36\" turntable, 50 gal tank, 330 lb capacity \u2014 marginally wider than the L901FP on the same solution volume for parts at the edge of the L901FP's capacity."
+      "description": "The Magido L902FP is a top load aqueous parts washer from the Eco Series, featuring a 36\" automatic sprocket turntable, a 50-gallon tank, and a 330-lb load capacity. It closely matches the L901FP in specifications but offers a marginally wider 36\" turntable on the same 50-gallon solution volume — the 1\" difference can matter for parts that sit at the very edge of the L901FP's capacity. Both models share the same tank size, load rating, and feature set. Calibrated jet-spray nozzles deliver heated aqueous cleaning with a liquid level sensor. Built entirely from AISI 304 stainless steel with adjustable heater and timer.",
+      "cardDescription": "36\" turntable, 50 gal tank, 330 lb capacity — marginally wider than the L901FP on the same solution volume for parts at the edge of the L901FP's capacity."
     },
     {
       "slug": "l922fp",
@@ -8362,8 +8362,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Timer": {
           "value": "0 - 60",
@@ -8398,8 +8398,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L922FP is the largest model in the Eco Series, featuring a 45\" automatic sprocket turntable, a 74-gallon tank, and a 440-lb load capacity. With a 45\" turntable and 74 gallons of solution, the L922FP handles parts and loads that would otherwise require a full X51 Series machine \u2014 but in the Eco's more economical package. The larger solution volume supports higher-frequency cleaning without constant solution changes. Calibrated jet-spray nozzles deliver heated aqueous cleaning with a liquid level sensor. Built entirely from AISI 304 stainless steel with adjustable heater and timer.",
-      "cardDescription": "Largest Eco \u2014 45\" turntable, 74 gal tank, 440 lb capacity. Handles parts and loads that would otherwise require a full X51 Series machine."
+      "description": "The Magido L922FP is the largest model in the Eco Series, featuring a 45\" automatic sprocket turntable, a 74-gallon tank, and a 440-lb load capacity. With a 45\" turntable and 74 gallons of solution, the L922FP handles parts and loads that would otherwise require a full X51 Series machine — but in the Eco's more economical package. The larger solution volume supports higher-frequency cleaning without constant solution changes. Calibrated jet-spray nozzles deliver heated aqueous cleaning with a liquid level sensor. Built entirely from AISI 304 stainless steel with adjustable heater and timer.",
+      "cardDescription": "Largest Eco — 45\" turntable, 74 gal tank, 440 lb capacity. Handles parts and loads that would otherwise require a full X51 Series machine."
     },
     {
       "slug": "l101hp",
@@ -8453,8 +8453,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0F",
-          "unit": "\u00b0F"
+          "value": "160°F",
+          "unit": "°F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -8490,7 +8490,7 @@
         }
       },
       "description": "The Magido L101HP is a high-performance top load spray cabinet washer from the X51HP Series, combining the 35\" turntable, 46-gallon tank, and 440-lb load capacity of the standard L101 with an integrated 870 PSI / 3.7 GPM high-pressure spray wand. A single pump drives the 22-nozzle spray manifold for automatic turntable cleaning while the built-in wand allows the operator to target blind holes, threaded passages, and internal features without removing the part from the machine. This combination of automated spray coverage and manual high-pressure detail cleaning makes the X51HP Series the right choice when standard spray pressure alone isn't sufficient. Built from AISI 304 stainless steel with adjustable heater, timer, and fluid level sensor. Options include filtration and drying.",
-      "cardDescription": "35\" turntable, 46 gal tank, 440 lb \u2014 X51 platform plus integrated 870 PSI / 3.7 GPM wand. Single pump drives 22 nozzles; wand clears blind holes and internal passages."
+      "cardDescription": "35\" turntable, 46 gal tank, 440 lb — X51 platform plus integrated 870 PSI / 3.7 GPM wand. Single pump drives 22 nozzles; wand clears blind holes and internal passages."
     },
     {
       "slug": "l102hp",
@@ -8544,8 +8544,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0F",
-          "unit": "\u00b0F"
+          "value": "160°F",
+          "unit": "°F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -8580,8 +8580,8 @@
           "unit": "Inches"
         }
       },
-      "description": "The Magido L102HP is a high-performance top load spray cabinet washer from the X51HP Series, featuring a 35\" turntable, 46-gallon tank, and 440-lb load capacity \u2014 identical to the L101HP in size but upgrading to a dual-pump configuration. Two 1.5 HP pumps feed two spray manifolds with 44 nozzles total, delivering twice the spray coverage of the L101HP across the full turntable diameter. The integrated 870 PSI / 3.7 GPM wand remains standard for detail cleaning of blind holes and internal passages. The L102HP is the right choice when contamination is heavy across the entire part surface, not just concentrated in specific features. Built from AISI 304 stainless steel with adjustable heater, timer, and fluid level sensor.",
-      "cardDescription": "35\" turntable, 46 gal tank, 440 lb \u2014 dual-pump X51HP. Two 1.5 HP pumps feed 44 nozzles across two manifolds, plus the integrated 870 PSI wand."
+      "description": "The Magido L102HP is a high-performance top load spray cabinet washer from the X51HP Series, featuring a 35\" turntable, 46-gallon tank, and 440-lb load capacity — identical to the L101HP in size but upgrading to a dual-pump configuration. Two 1.5 HP pumps feed two spray manifolds with 44 nozzles total, delivering twice the spray coverage of the L101HP across the full turntable diameter. The integrated 870 PSI / 3.7 GPM wand remains standard for detail cleaning of blind holes and internal passages. The L102HP is the right choice when contamination is heavy across the entire part surface, not just concentrated in specific features. Built from AISI 304 stainless steel with adjustable heater, timer, and fluid level sensor.",
+      "cardDescription": "35\" turntable, 46 gal tank, 440 lb — dual-pump X51HP. Two 1.5 HP pumps feed 44 nozzles across two manifolds, plus the integrated 870 PSI wand."
     },
     {
       "slug": "l122hp",
@@ -8635,8 +8635,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0F",
-          "unit": "\u00b0F"
+          "value": "160°F",
+          "unit": "°F"
         },
         "Timer": {
           "value": "0-60 min",
@@ -8671,8 +8671,8 @@
           "unit": "Inches"
         }
       },
-      "description": "The Magido L122HP is the largest model in the X51HP Series, featuring a 45\" turntable, 74-gallon tank, and 770-lb load capacity \u2014 the maximum in the high-pressure top load line. Dual 2 HP pumps drive 58 V-jet nozzles across two spray manifolds for complete coverage of the full 45\" turntable sweep, while the integrated 870 PSI / 3.7 GPM wand handles detail cleaning of blind holes, threaded features, and internal passages on larger, heavier parts. Built from AISI 304 stainless steel with adjustable heater, timer, and fluid level sensor. Options include filtration and drying. The L122HP is the top choice when large, heavily soiled parts require both aggressive automated spray cleaning and precision high-pressure detail work.",
-      "cardDescription": "Largest X51HP \u2014 45\" turntable, 74 gal tank, 770 lb. Dual 2 HP pumps drive 58 nozzles across two manifolds plus the 870 PSI wand for large, heavily soiled parts."
+      "description": "The Magido L122HP is the largest model in the X51HP Series, featuring a 45\" turntable, 74-gallon tank, and 770-lb load capacity — the maximum in the high-pressure top load line. Dual 2 HP pumps drive 58 V-jet nozzles across two spray manifolds for complete coverage of the full 45\" turntable sweep, while the integrated 870 PSI / 3.7 GPM wand handles detail cleaning of blind holes, threaded features, and internal passages on larger, heavier parts. Built from AISI 304 stainless steel with adjustable heater, timer, and fluid level sensor. Options include filtration and drying. The L122HP is the top choice when large, heavily soiled parts require both aggressive automated spray cleaning and precision high-pressure detail work.",
+      "cardDescription": "Largest X51HP — 45\" turntable, 74 gal tank, 770 lb. Dual 2 HP pumps drive 58 nozzles across two manifolds plus the 870 PSI wand for large, heavily soiled parts."
     },
     {
       "slug": "l103",
@@ -8749,8 +8749,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0",
-          "unit": "\u00b0F"
+          "value": "140°",
+          "unit": "°F"
         },
         "Timer": {
           "value": "Programmable",
@@ -8801,8 +8801,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/P-4oF1WX7Qw"
       ],
-      "description": "The Magido L103 is a dual-stage top load spray cabinet washer from the X51/2 Series, featuring a 35\" turntable, a 35-gallon wash tank, a 23-gallon rinse tank, and a 440-lb load capacity. A Siemens PLC and Weintek HMI control the sequential wash-then-rinse cycle automatically, transitioning between tanks to prevent cross-contamination and ensure parts emerge residue-free. This two-stage process is essential for parts going directly to coating, plating, precision assembly, or quality inspection where detergent residue is unacceptable. Built from AISI 304 stainless steel with independent heaters for each tank, fluid level sensors, and a 7 RPM rotating turntable. The L103 is the entry dual-stage model \u2014 the right fit for medium parts requiring validated residue-free cleaning. Options include filtration and drying.",
-      "cardDescription": "Entry X51/2 \u2014 35\" turntable, 35 gal wash + 23 gal rinse, 440 lb. Siemens PLC / Weintek HMI controls the sequential dual-stage cycle automatically."
+      "description": "The Magido L103 is a dual-stage top load spray cabinet washer from the X51/2 Series, featuring a 35\" turntable, a 35-gallon wash tank, a 23-gallon rinse tank, and a 440-lb load capacity. A Siemens PLC and Weintek HMI control the sequential wash-then-rinse cycle automatically, transitioning between tanks to prevent cross-contamination and ensure parts emerge residue-free. This two-stage process is essential for parts going directly to coating, plating, precision assembly, or quality inspection where detergent residue is unacceptable. Built from AISI 304 stainless steel with independent heaters for each tank, fluid level sensors, and a 7 RPM rotating turntable. The L103 is the entry dual-stage model — the right fit for medium parts requiring validated residue-free cleaning. Options include filtration and drying.",
+      "cardDescription": "Entry X51/2 — 35\" turntable, 35 gal wash + 23 gal rinse, 440 lb. Siemens PLC / Weintek HMI controls the sequential dual-stage cycle automatically."
     },
     {
       "slug": "l123",
@@ -8876,8 +8876,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0",
-          "unit": "\u00b0F"
+          "value": "140°",
+          "unit": "°F"
         },
         "Timer": {
           "value": "Programmable",
@@ -8929,7 +8929,7 @@
         "https://www.youtube.com/embed/P-4oF1WX7Qw"
       ],
       "description": "The Magido L123 is a dual-stage top load spray cabinet washer from the X51/2 Series, featuring a 45\" turntable, a 55-gallon wash tank, a 25-gallon rinse tank, and a 770-lb load capacity. It steps up from the L103 in both turntable diameter and wash solution volume, handling larger and heavier parts that exceed the L103's 35\" capacity while maintaining the same Siemens PLC / Weintek HMI-controlled dual-stage wash-and-rinse sequence. The larger wash tank provides better solution stability for higher-load operations. Built from AISI 304 stainless steel with independent heaters for each tank, fluid level sensors, and a 7 RPM rotating turntable. Options include filtration and drying.",
-      "cardDescription": "45\" turntable, 55 gal wash + 25 gal rinse, 770 lb \u2014 larger part envelope and wash volume than the L103 with the same PLC-controlled dual-stage sequence."
+      "cardDescription": "45\" turntable, 55 gal wash + 25 gal rinse, 770 lb — larger part envelope and wash volume than the L103 with the same PLC-controlled dual-stage sequence."
     },
     {
       "slug": "l153",
@@ -9003,8 +9003,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0",
-          "unit": "\u00b0F"
+          "value": "140°",
+          "unit": "°F"
         },
         "Timer": {
           "value": "Programmable",
@@ -9055,8 +9055,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/P-4oF1WX7Qw"
       ],
-      "description": "The Magido L153 is the largest model in the X51/2 Series, featuring a 50\" turntable, a 79-gallon wash tank, a 65-gallon rinse tank, and a 1,102-lb load capacity \u2014 the highest weight rating in the top-load dual-stage category. The expanded rinse tank (nearly three times the L123's 25-gallon rinse volume) ensures thorough residue-free rinsing even for large, complex parts with significant surface area. A Siemens PLC and Weintek HMI control the sequential dual-stage cycle, with independent heaters for each tank maintaining precise temperature control. Built from AISI 304 stainless steel throughout. The L153 is the right choice when part size, load weight, and cleanliness standard all demand the maximum dual-stage top-load configuration available.",
-      "cardDescription": "Largest X51/2 \u2014 50\" turntable, 79 gal wash + 65 gal rinse, 1,102 lb capacity. Highest weight rating in the top-load dual-stage category."
+      "description": "The Magido L153 is the largest model in the X51/2 Series, featuring a 50\" turntable, a 79-gallon wash tank, a 65-gallon rinse tank, and a 1,102-lb load capacity — the highest weight rating in the top-load dual-stage category. The expanded rinse tank (nearly three times the L123's 25-gallon rinse volume) ensures thorough residue-free rinsing even for large, complex parts with significant surface area. A Siemens PLC and Weintek HMI control the sequential dual-stage cycle, with independent heaters for each tank maintaining precise temperature control. Built from AISI 304 stainless steel throughout. The L153 is the right choice when part size, load weight, and cleanliness standard all demand the maximum dual-stage top-load configuration available.",
+      "cardDescription": "Largest X51/2 — 50\" turntable, 79 gal wash + 65 gal rinse, 1,102 lb capacity. Highest weight rating in the top-load dual-stage category."
     },
     {
       "slug": "l160",
@@ -9102,8 +9102,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0",
-          "unit": "\u00b0F"
+          "value": "160°",
+          "unit": "°F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -9134,8 +9134,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L160 is a front load spray cabinet parts washer from the X53 Series, featuring a 31.5\" load height, 77-gallon tank, and 1,500-lb load capacity. The front-loading door and removable turntable \u2014 which transfers directly onto a mobile cart \u2014 allow safe loading of heavy components that cannot be lifted into a top-load machine: engine blocks, gear cases, large castings, and heavy fabricated assemblies. Fixed angled V-jet nozzles on a spray ramp deliver heated aqueous cleaning at temperatures up to 160\u00b0F across all part surfaces. Built from AISI 304 stainless steel with programmable wash cycles. The L160 is the entry X53 model \u2014 suited for facilities where front-load convenience and high weight capacity are required but load height is not the primary constraint. Options include filtration, rinse, and drying.",
-      "cardDescription": "Entry X53 \u2014 31.5\" load height, 77 gal tank, 1,500 lb. Removable turntable transfers to mobile cart for safe loading of heavy engine blocks and large castings."
+      "description": "The Magido L160 is a front load spray cabinet parts washer from the X53 Series, featuring a 31.5\" load height, 77-gallon tank, and 1,500-lb load capacity. The front-loading door and removable turntable — which transfers directly onto a mobile cart — allow safe loading of heavy components that cannot be lifted into a top-load machine: engine blocks, gear cases, large castings, and heavy fabricated assemblies. Fixed angled V-jet nozzles on a spray ramp deliver heated aqueous cleaning at temperatures up to 160°F across all part surfaces. Built from AISI 304 stainless steel with programmable wash cycles. The L160 is the entry X53 model — suited for facilities where front-load convenience and high weight capacity are required but load height is not the primary constraint. Options include filtration, rinse, and drying.",
+      "cardDescription": "Entry X53 — 31.5\" load height, 77 gal tank, 1,500 lb. Removable turntable transfers to mobile cart for safe loading of heavy engine blocks and large castings."
     },
     {
       "slug": "l190",
@@ -9183,8 +9183,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0",
-          "unit": "\u00b0F"
+          "value": "160°",
+          "unit": "°F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -9215,8 +9215,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L190 is a front load spray cabinet parts washer from the X53 Series, featuring a 35.5\" load height, 103-gallon tank, and 1,500-lb load capacity. Compared to the L160, the L190 provides 4\" more vertical clearance and 26 more gallons of solution \u2014 handling taller components and maintaining solution temperature stability under longer or more frequent cleaning cycles. The removable turntable transfers to a mobile cart for safe loading. Fixed angled V-jet nozzles deliver heated aqueous cleaning at temperatures up to 160\u00b0F. Built from AISI 304 stainless steel with programmable wash cycles. Options include filtration, rinse, and drying.",
-      "cardDescription": "35.5\" load height, 103 gal tank, 1,500 lb \u2014 taller working envelope and more solution volume than the L160 for taller industrial components."
+      "description": "The Magido L190 is a front load spray cabinet parts washer from the X53 Series, featuring a 35.5\" load height, 103-gallon tank, and 1,500-lb load capacity. Compared to the L160, the L190 provides 4\" more vertical clearance and 26 more gallons of solution — handling taller components and maintaining solution temperature stability under longer or more frequent cleaning cycles. The removable turntable transfers to a mobile cart for safe loading. Fixed angled V-jet nozzles deliver heated aqueous cleaning at temperatures up to 160°F. Built from AISI 304 stainless steel with programmable wash cycles. Options include filtration, rinse, and drying.",
+      "cardDescription": "35.5\" load height, 103 gal tank, 1,500 lb — taller working envelope and more solution volume than the L160 for taller industrial components."
     },
     {
       "slug": "l210",
@@ -9262,8 +9262,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0",
-          "unit": "\u00b0F"
+          "value": "160°",
+          "unit": "°F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -9294,8 +9294,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L210 is a front load spray cabinet parts washer from the X53 Series, featuring a 39\" load height, 132-gallon tank, and 1,500-lb load capacity. The 39\" load height \u2014 matching the largest X53 model \u2014 provides the maximum vertical clearance in the mid-range X53 configuration, accommodating tall assemblies, long cylindrical components, and large fabricated parts. At 132 gallons, the wash tank provides significantly more solution stability than the L190 for extended production shifts. The removable turntable transfers to a mobile cart. Fixed angled V-jet nozzles deliver heated aqueous cleaning at temperatures up to 160\u00b0F. Built from AISI 304 stainless steel. Options include filtration, rinse, and drying.",
-      "cardDescription": "39\" load height, 132 gal tank, 1,500 lb \u2014 more vertical clearance and solution volume than the L190 for taller, more complex components."
+      "description": "The Magido L210 is a front load spray cabinet parts washer from the X53 Series, featuring a 39\" load height, 132-gallon tank, and 1,500-lb load capacity. The 39\" load height — matching the largest X53 model — provides the maximum vertical clearance in the mid-range X53 configuration, accommodating tall assemblies, long cylindrical components, and large fabricated parts. At 132 gallons, the wash tank provides significantly more solution stability than the L190 for extended production shifts. The removable turntable transfers to a mobile cart. Fixed angled V-jet nozzles deliver heated aqueous cleaning at temperatures up to 160°F. Built from AISI 304 stainless steel. Options include filtration, rinse, and drying.",
+      "cardDescription": "39\" load height, 132 gal tank, 1,500 lb — more vertical clearance and solution volume than the L190 for taller, more complex components."
     },
     {
       "slug": "l240",
@@ -9341,8 +9341,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0",
-          "unit": "\u00b0F"
+          "value": "160°",
+          "unit": "°F"
         },
         "Voltage": {
           "value": "460 V-60 Hz",
@@ -9373,8 +9373,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L240 is the largest model in the X53 Series, featuring a 39\" load height, 185-gallon tank, and 1,500-lb load capacity \u2014 the highest solution volume in the single-stage front load line. The 185-gallon tank is designed for the most demanding operations: maximum solution stability under continuous high-load use, extended intervals between changes, and consistent temperature maintenance shift after shift. The removable turntable transfers to a mobile cart for safe loading of the heaviest components. Fixed angled V-jet nozzles deliver heated aqueous cleaning at temperatures up to 160\u00b0F. Built from AISI 304 stainless steel with programmable wash cycles. Options include filtration, rinse, and drying.",
-      "cardDescription": "Largest X53 \u2014 39\" load height, 185 gal tank, 1,500 lb. Highest solution volume in the single-stage front load line for maximum stability under continuous load."
+      "description": "The Magido L240 is the largest model in the X53 Series, featuring a 39\" load height, 185-gallon tank, and 1,500-lb load capacity — the highest solution volume in the single-stage front load line. The 185-gallon tank is designed for the most demanding operations: maximum solution stability under continuous high-load use, extended intervals between changes, and consistent temperature maintenance shift after shift. The removable turntable transfers to a mobile cart for safe loading of the heaviest components. Fixed angled V-jet nozzles deliver heated aqueous cleaning at temperatures up to 160°F. Built from AISI 304 stainless steel with programmable wash cycles. Options include filtration, rinse, and drying.",
+      "cardDescription": "Largest X53 — 39\" load height, 185 gal tank, 1,500 lb. Highest solution volume in the single-stage front load line for maximum stability under continuous load."
     },
     {
       "slug": "l162",
@@ -9432,8 +9432,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0",
-          "unit": "\u00b0F"
+          "value": "160°",
+          "unit": "°F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9476,8 +9476,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L162 is a dual-stage front load spray cabinet washer from the X53/2 Series, featuring a 31.5\" load height and 1,500-lb load capacity with separate wash and rinse tanks. The two-stage process ensures large, heavy components emerge residue-free \u2014 critical for parts going to coating, precision assembly, or quality inspection where detergent residue causes adhesion failures or contamination. The removable turntable transfers to a mobile cart for safe loading. PLC-controlled sequential wash-then-rinse cycle prevents cross-contamination. Built from AISI 304 stainless steel with temperatures up to 160\u00b0F.",
-      "cardDescription": "Entry X53/2 \u2014 31.5\" load height, 1,500 lb, separate wash and rinse tanks. Residue-free output for large components going to coating, inspection, or assembly."
+      "description": "The Magido L162 is a dual-stage front load spray cabinet washer from the X53/2 Series, featuring a 31.5\" load height and 1,500-lb load capacity with separate wash and rinse tanks. The two-stage process ensures large, heavy components emerge residue-free — critical for parts going to coating, precision assembly, or quality inspection where detergent residue causes adhesion failures or contamination. The removable turntable transfers to a mobile cart for safe loading. PLC-controlled sequential wash-then-rinse cycle prevents cross-contamination. Built from AISI 304 stainless steel with temperatures up to 160°F. An optional heavy-duty turntable configuration is available to increase load capacity up to 5,000 lbs for oversized industrial components.",
+      "cardDescription": "Entry X53/2 — 31.5\" load height, 1,500 lb, separate wash and rinse tanks. Residue-free output for large components going to coating, inspection, or assembly. Optional 5,000 lb capacity upgrade available."
     },
     {
       "slug": "l192",
@@ -9535,8 +9535,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0",
-          "unit": "\u00b0F"
+          "value": "160°",
+          "unit": "°F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9579,8 +9579,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L192 is a dual-stage front load spray cabinet washer from the X53/2 Series, featuring a 35.5\" load height and 1,500-lb load capacity with separate wash and rinse tanks. It provides 4\" more vertical clearance than the L162 for taller large components that require both the front-load handling convenience and the residue-free output of a dual-stage process. The removable turntable transfers to a mobile cart. PLC-controlled sequential cycle prevents cross-contamination between tanks. Built from AISI 304 stainless steel with temperatures up to 160\u00b0F.",
-      "cardDescription": "35.5\" load height, 1,500 lb, dual-stage \u2014 taller working envelope than the L162 for large components requiring both height clearance and residue-free cleaning."
+      "description": "The Magido L192 is a dual-stage front load spray cabinet washer from the X53/2 Series, featuring a 35.5\" load height and 1,500-lb load capacity with separate wash and rinse tanks. It provides 4\" more vertical clearance than the L162 for taller large components that require both the front-load handling convenience and the residue-free output of a dual-stage process. The removable turntable transfers to a mobile cart. PLC-controlled sequential cycle prevents cross-contamination between tanks. Built from AISI 304 stainless steel with temperatures up to 160°F. An optional heavy-duty turntable configuration is available to increase load capacity up to 5,000 lbs for oversized industrial components.",
+      "cardDescription": "35.5\" load height, 1,500 lb, dual-stage — taller working envelope than the L162 for large components requiring both height clearance and residue-free cleaning. Optional 5,000 lb capacity upgrade available."
     },
     {
       "slug": "l212",
@@ -9638,8 +9638,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0",
-          "unit": "\u00b0F"
+          "value": "160°",
+          "unit": "°F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9682,8 +9682,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L212 is a dual-stage front load spray cabinet washer from the X53/2 Series, featuring a 39\" load height and 1,500-lb load capacity with separate wash and rinse tanks. The 39\" load height provides the maximum vertical clearance available in the X53/2 line, accommodating the tallest large components while adding the dedicated rinse stage that the single-stage L210 lacks. PLC-controlled sequential wash-then-rinse cycle prevents cross-contamination. The removable turntable transfers to a mobile cart for safe loading. Built from AISI 304 stainless steel with temperatures up to 160\u00b0F.",
-      "cardDescription": "39\" load height, 1,500 lb, dual-stage \u2014 vertical clearance of the L210 single-stage model with the added dedicated rinse cycle."
+      "description": "The Magido L212 is a dual-stage front load spray cabinet washer from the X53/2 Series, featuring a 39\" load height and 1,500-lb load capacity with separate wash and rinse tanks. The 39\" load height provides the maximum vertical clearance available in the X53/2 line, accommodating the tallest large components while adding the dedicated rinse stage that the single-stage L210 lacks. PLC-controlled sequential wash-then-rinse cycle prevents cross-contamination. The removable turntable transfers to a mobile cart for safe loading. Built from AISI 304 stainless steel with temperatures up to 160°F. An optional heavy-duty turntable configuration is available to increase load capacity up to 5,000 lbs for oversized industrial components.",
+      "cardDescription": "39\" load height, 1,500 lb, dual-stage — vertical clearance of the L210 single-stage model with the added dedicated rinse cycle. Optional 5,000 lb capacity upgrade available."
     },
     {
       "slug": "l242",
@@ -9741,8 +9741,8 @@
           "unit": ""
         },
         "Max Operating Temperature": {
-          "value": "160\u00b0",
-          "unit": "\u00b0F"
+          "value": "160°",
+          "unit": "°F"
         },
         "Power": {
           "value": "0.5 hp",
@@ -9785,8 +9785,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido L242 is the largest model in the X53/2 Series, featuring a 39\" load height and 1,500-lb load capacity with the highest wash and rinse solution capacities in the dual-stage front load line. Designed for operations where part size, contamination severity, and cleanliness standard all demand maximum performance \u2014 the L242 delivers the largest front-load dual-stage configuration available. PLC-controlled sequential cycle and independent tank heaters maintain precise process control. The removable turntable transfers to a mobile cart. Built from AISI 304 stainless steel with temperatures up to 160\u00b0F.",
-      "cardDescription": "Largest X53/2 \u2014 39\" load height, 1,500 lb, highest solution capacities in the dual-stage front load line. Maximum wash and rinse volume for the most demanding applications."
+      "description": "The Magido L242 is the largest model in the X53/2 Series, featuring a 39\" load height and 1,500-lb load capacity with the highest wash and rinse solution capacities in the dual-stage front load line. Designed for operations where part size, contamination severity, and cleanliness standard all demand maximum performance — the L242 delivers the largest front-load dual-stage configuration available. PLC-controlled sequential cycle and independent tank heaters maintain precise process control. The removable turntable transfers to a mobile cart. Built from AISI 304 stainless steel with temperatures up to 160°F. An optional heavy-duty turntable configuration is available to increase load capacity up to 5,000 lbs for oversized industrial components.",
+      "cardDescription": "Largest X53/2 — 39\" load height, 1,500 lb, highest solution capacities in the dual-stage front load line. Maximum wash and rinse volume for the most demanding applications. Optional 5,000 lb capacity upgrade available."
     },
     {
       "slug": "a700",
@@ -9820,8 +9820,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170\u00b0F",
-          "unit": "\u00b0F"
+          "value": "Ambient-170°F",
+          "unit": "°F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9848,8 +9848,8 @@
           "unit": "Inches"
         }
       },
-      "description": "The Magido A700 is a top load immersion parts washer from the Agita Series, featuring a 70-gallon tank and 180-lb load capacity. Parts are lowered into heated aqueous cleaning solution by a pneumatic platform that oscillates during the cleaning cycle, driving solution into blind holes, internal passages, threaded features, and complex geometries that spray washing alone cannot reach \u2014 making the Agita Series the right choice for precision components where complete surface contact with the cleaning solution is required. Operating at temperatures up to 167\u00b0F, the A700 is the entry-level Agita model suited for smaller precision components, instrument parts, and machined assemblies. Built entirely from AISI 304 stainless steel.",
-      "cardDescription": "Entry Agita \u2014 70 gal tank, 180 lb capacity. Pneumatic platform lowers parts into heated solution and oscillates to drive cleaning into blind holes and internal passages."
+      "description": "The Magido A700 is a top load immersion parts washer from the Agita Series, featuring a 70-gallon tank and 180-lb load capacity. Parts are lowered into heated aqueous cleaning solution by a pneumatic platform that oscillates during the cleaning cycle, driving solution into blind holes, internal passages, threaded features, and complex geometries that spray washing alone cannot reach — making the Agita Series the right choice for precision components where complete surface contact with the cleaning solution is required. Operating at temperatures up to 167°F, the A700 is the entry-level Agita model suited for smaller precision components, instrument parts, and machined assemblies. Built entirely from AISI 304 stainless steel.",
+      "cardDescription": "Entry Agita — 70 gal tank, 180 lb capacity. Pneumatic platform lowers parts into heated solution and oscillates to drive cleaning into blind holes and internal passages."
     },
     {
       "slug": "a900",
@@ -9883,8 +9883,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170\u00b0F",
-          "unit": "\u00b0F"
+          "value": "Ambient-170°F",
+          "unit": "°F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9911,8 +9911,8 @@
           "unit": "Inches"
         }
       },
-      "description": "The Magido A900 is a top load immersion parts washer from the Agita Series, featuring a 100-gallon tank and 550-lb load capacity \u2014 significantly more capable than the A700 for larger and heavier precision parts. The pneumatic oscillating platform lowers parts into heated aqueous solution (up to 167\u00b0F) and agitates to drive cleaning action into blind holes, internal passages, and complex geometries. The 100-gallon tank accommodates parts with greater surface area and provides more solution stability than the A700. Built entirely from AISI 304 stainless steel. The A900 is well-suited for medium-sized castings, hydraulic components, manifolds, and precision assemblies that require full immersion agitation.",
-      "cardDescription": "100 gal tank, 550 lb capacity \u2014 significantly larger than the A700 for heavier parts requiring full immersion agitation to clean complex geometries."
+      "description": "The Magido A900 is a top load immersion parts washer from the Agita Series, featuring a 100-gallon tank and 550-lb load capacity — significantly more capable than the A700 for larger and heavier precision parts. The pneumatic oscillating platform lowers parts into heated aqueous solution (up to 167°F) and agitates to drive cleaning action into blind holes, internal passages, and complex geometries. The 100-gallon tank accommodates parts with greater surface area and provides more solution stability than the A700. Built entirely from AISI 304 stainless steel. The A900 is well-suited for medium-sized castings, hydraulic components, manifolds, and precision assemblies that require full immersion agitation.",
+      "cardDescription": "100 gal tank, 550 lb capacity — significantly larger than the A700 for heavier parts requiring full immersion agitation to clean complex geometries."
     },
     {
       "slug": "a1100",
@@ -9946,8 +9946,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170\u00b0F",
-          "unit": "\u00b0F"
+          "value": "Ambient-170°F",
+          "unit": "°F"
         },
         "PLC": {
           "value": "Siemens",
@@ -9974,8 +9974,8 @@
           "unit": "Inches"
         }
       },
-      "description": "The Magido A1100 is a top load immersion parts washer from the Agita Series, featuring a 140-gallon tank and 550-lb load capacity \u2014 sharing the A900's weight rating but increasing solution volume by 40%. The larger tank is particularly beneficial for parts with significant internal volume \u2014 manifolds, cylinder heads, hydraulic blocks, and complex castings that displace a large portion of solution when submerged, which can cause temperature drop and reduced cleaning effectiveness in smaller-tank models. The pneumatic oscillating platform drives heated solution (up to 167\u00b0F) into all internal features. Built entirely from AISI 304 stainless steel.",
-      "cardDescription": "140 gal tank, 550 lb capacity \u2014 more solution volume than the A900 for parts with large internal volume like manifolds, cylinder heads, and hydraulic blocks."
+      "description": "The Magido A1100 is a top load immersion parts washer from the Agita Series, featuring a 140-gallon tank and 550-lb load capacity — sharing the A900's weight rating but increasing solution volume by 40%. The larger tank is particularly beneficial for parts with significant internal volume — manifolds, cylinder heads, hydraulic blocks, and complex castings that displace a large portion of solution when submerged, which can cause temperature drop and reduced cleaning effectiveness in smaller-tank models. The pneumatic oscillating platform drives heated solution (up to 167°F) into all internal features. Built entirely from AISI 304 stainless steel.",
+      "cardDescription": "140 gal tank, 550 lb capacity — more solution volume than the A900 for parts with large internal volume like manifolds, cylinder heads, and hydraulic blocks."
     },
     {
       "slug": "a1300",
@@ -10009,8 +10009,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "Ambient-170\u00b0F",
-          "unit": "\u00b0F"
+          "value": "Ambient-170°F",
+          "unit": "°F"
         },
         "PLC": {
           "value": "Siemens",
@@ -10037,8 +10037,8 @@
           "unit": "Inches"
         }
       },
-      "description": "The Magido A1300 is the largest model in the Agita Series, featuring a 180-gallon tank and 550-lb load capacity \u2014 the maximum solution volume in the immersion line. Designed for facilities with the highest throughput requirements, the most demanding parts, or applications where continuous operation requires maximum solution stability and the longest intervals between changes. The pneumatic oscillating platform drives heated aqueous solution (up to 167\u00b0F) into blind holes, internal passages, and complex geometries. Built entirely from AISI 304 stainless steel. The A1300 is the definitive choice when the A1100's 140-gallon tank is insufficient for the cleaning load.",
-      "cardDescription": "Largest Agita \u2014 180 gal tank, 550 lb capacity. Maximum solution volume in the immersion series for the highest throughput or most demanding cleaning loads."
+      "description": "The Magido A1300 is the largest model in the Agita Series, featuring a 180-gallon tank and 550-lb load capacity — the maximum solution volume in the immersion line. Designed for facilities with the highest throughput requirements, the most demanding parts, or applications where continuous operation requires maximum solution stability and the longest intervals between changes. The pneumatic oscillating platform drives heated aqueous solution (up to 167°F) into blind holes, internal passages, and complex geometries. Built entirely from AISI 304 stainless steel. The A1300 is the definitive choice when the A1100's 140-gallon tank is insufficient for the cleaning load.",
+      "cardDescription": "Largest Agita — 180 gal tank, 550 lb capacity. Maximum solution volume in the immersion series for the highest throughput or most demanding cleaning loads."
     },
     {
       "slug": "j320",
@@ -10105,7 +10105,7 @@
         },
         "Solution temperature": {
           "value": "100-140",
-          "unit": "\u00b0F"
+          "unit": "°F"
         },
         "Steam aspirator": {
           "value": "0.12 / 60",
@@ -10136,8 +10136,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
-      "description": "The Magido J320 is a single-stage rotary drum aqueous parts washer from the Jolly Series, featuring a 12\" diameter \u00d7 47\" helical auger drum. Small loose parts \u2014 fasteners, stampings, turned components, and small machined parts \u2014 are loaded into one end of the rotating drum and carried continuously through the heated wash zone by the internal helix, emerging clean at the other end for non-stop processing without batching. Heated aqueous detergent removes oils, coolants, chips, and contaminants effectively. Built from AISI 304 stainless steel. The J320 is a single-stage wash-only system suited for lower-volume operations where a rinse stage is not required.",
-      "cardDescription": "Single-stage Jolly \u2014 12\" \u00d7 47\" drum. Helical auger carries small loose parts continuously from entry to exit through the heated wash zone without batching."
+      "description": "The Magido J320 is a single-stage rotary drum aqueous parts washer from the Jolly Series, featuring a 12\" diameter × 47\" helical auger drum. Small loose parts — fasteners, stampings, turned components, and small machined parts — are loaded into one end of the rotating drum and carried continuously through the heated wash zone by the internal helix, emerging clean at the other end for non-stop processing without batching. Heated aqueous detergent removes oils, coolants, chips, and contaminants effectively. Built from AISI 304 stainless steel. The J320 is a single-stage wash-only system suited for lower-volume operations where a rinse stage is not required.",
+      "cardDescription": "Single-stage Jolly — 12\" × 47\" drum. Helical auger carries small loose parts continuously from entry to exit through the heated wash zone without batching."
     },
     {
       "slug": "j320-2",
@@ -10204,7 +10204,7 @@
         },
         "Solution temperature": {
           "value": "100-140",
-          "unit": "\u00b0F"
+          "unit": "°F"
         },
         "Steam aspirator": {
           "value": "0.12 / 60",
@@ -10235,8 +10235,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
-      "description": "The Magido J320/2 is a dual-stage rotary drum aqueous parts washer from the Jolly Series, featuring a 12\" diameter \u00d7 71\" helical auger drum \u2014 the same drum diameter as the J320 but extended to incorporate a dedicated rinse zone after the wash stage. The added rinse cycle delivers residue-free output, making the J320/2 the right choice for small parts going directly to coating, plating, anodizing, or precision assembly where detergent residue is unacceptable. Parts travel continuously from entry to exit without batching. Built from AISI 304 stainless steel with heated aqueous detergent. Same compact drum diameter as the J320 with the added benefit of a clean rinse.",
-      "cardDescription": "Dual-stage Jolly \u2014 12\" \u00d7 71\" drum. Adds a rinse zone after the wash for residue-free output on small parts going to coating, plating, or precision assembly."
+      "description": "The Magido J320/2 is a dual-stage rotary drum aqueous parts washer from the Jolly Series, featuring a 12\" diameter × 71\" helical auger drum — the same drum diameter as the J320 but extended to incorporate a dedicated rinse zone after the wash stage. The added rinse cycle delivers residue-free output, making the J320/2 the right choice for small parts going directly to coating, plating, anodizing, or precision assembly where detergent residue is unacceptable. Parts travel continuously from entry to exit without batching. Built from AISI 304 stainless steel with heated aqueous detergent. Same compact drum diameter as the J320 with the added benefit of a clean rinse.",
+      "cardDescription": "Dual-stage Jolly — 12\" × 71\" drum. Adds a rinse zone after the wash for residue-free output on small parts going to coating, plating, or precision assembly."
     },
     {
       "slug": "sp320",
@@ -10299,7 +10299,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "\u00b0F"
+          "unit": "°F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10334,8 +10334,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
-      "description": "The Magido SP320 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, featuring a 12\" diameter \u00d7 67\" drum and a production rate of approximately 3.2 cubic feet per hour. Unlike the Jolly Series which uses spray-only washing, the Spira combines spray and full immersion washing in a single continuous pass \u2014 the rotating drum carries parts through a spray zone and then submerges them in the heated wash solution, providing more thorough cleaning of complex geometries. Built from AISI 304 stainless steel. The SP320 is the entry Spira 1b model suited for small parts \u2014 fasteners, turned components, and small stampings \u2014 at production volumes where the compact 12\" drum is sufficient.",
-      "cardDescription": "Entry Spira 1b \u2014 12\" drum, ~3.2 CFH. Combines spray and immersion washing in a single continuous pass for small fasteners and turned components."
+      "description": "The Magido SP320 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, featuring a 12\" diameter × 67\" drum and a production rate of approximately 3.2 cubic feet per hour. Unlike the Jolly Series which uses spray-only washing, the Spira combines spray and full immersion washing in a single continuous pass — the rotating drum carries parts through a spray zone and then submerges them in the heated wash solution, providing more thorough cleaning of complex geometries. Built from AISI 304 stainless steel. The SP320 is the entry Spira 1b model suited for small parts — fasteners, turned components, and small stampings — at production volumes where the compact 12\" drum is sufficient.",
+      "cardDescription": "Entry Spira 1b — 12\" drum, ~3.2 CFH. Combines spray and immersion washing in a single continuous pass for small fasteners and turned components."
     },
     {
       "slug": "sp480",
@@ -10398,7 +10398,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "\u00b0F"
+          "unit": "°F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10433,8 +10433,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
-      "description": "The Magido SP480 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, featuring a 19\" diameter \u00d7 98\" drum and approximately 6.4 CFH production rate \u2014 roughly twice the throughput of the SP320. The larger 19\" drum accommodates slightly larger individual parts and handles greater batch volumes per pass, making it the right step up when the SP320's capacity or output rate has been exceeded. Combines spray and immersion washing in a single continuous pass. Built from AISI 304 stainless steel with heated aqueous detergent.",
-      "cardDescription": "19\" drum, ~6.4 CFH \u2014 roughly twice the SP320's throughput. Larger drum accommodates slightly larger parts and greater batch volumes per pass."
+      "description": "The Magido SP480 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, featuring a 19\" diameter × 98\" drum and approximately 6.4 CFH production rate — roughly twice the throughput of the SP320. The larger 19\" drum accommodates slightly larger individual parts and handles greater batch volumes per pass, making it the right step up when the SP320's capacity or output rate has been exceeded. Combines spray and immersion washing in a single continuous pass. Built from AISI 304 stainless steel with heated aqueous detergent.",
+      "cardDescription": "19\" drum, ~6.4 CFH — roughly twice the SP320's throughput. Larger drum accommodates slightly larger parts and greater batch volumes per pass."
     },
     {
       "slug": "sp640",
@@ -10497,7 +10497,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "\u00b0F"
+          "unit": "°F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10532,8 +10532,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
-      "description": "The Magido SP640 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, featuring a 25\" diameter \u00d7 98\" drum and approximately 12.7 CFH production rate \u2014 about four times the SP320's throughput. The 25\" drum handles medium-sized parts and higher production volumes that exceed the SP480's capacity. Combines spray and immersion washing in a single continuous pass for thorough contaminant removal. Built from AISI 304 stainless steel with heated aqueous detergent. The SP640 is a mid-to-high volume solution for operations that have outgrown the smaller Spira models.",
-      "cardDescription": "25\" drum, ~12.7 CFH \u2014 approximately four times the SP320's throughput. Handles medium-sized parts at mid-volume production."
+      "description": "The Magido SP640 is a single-stage rotary drum aqueous parts washer from the Spira 1b Series, featuring a 25\" diameter × 98\" drum and approximately 12.7 CFH production rate — about four times the SP320's throughput. The 25\" drum handles medium-sized parts and higher production volumes that exceed the SP480's capacity. Combines spray and immersion washing in a single continuous pass for thorough contaminant removal. Built from AISI 304 stainless steel with heated aqueous detergent. The SP640 is a mid-to-high volume solution for operations that have outgrown the smaller Spira models.",
+      "cardDescription": "25\" drum, ~12.7 CFH — approximately four times the SP320's throughput. Handles medium-sized parts at mid-volume production."
     },
     {
       "slug": "sp950",
@@ -10596,7 +10596,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "\u00b0F"
+          "unit": "°F"
         },
         "Steam aspirator": {
           "value": "0.75 / 470",
@@ -10631,8 +10631,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
-      "description": "The Magido SP950 is the largest single-stage model in the Spira 1b Series, featuring a 37\" diameter \u00d7 150\" drum and a 25 CFH production rate \u2014 the maximum throughput in the rotary drum line. The 37\" drum and extended length accommodate larger parts and the highest production volumes available in the Spira configuration. Combines spray and immersion washing in a single continuous pass. Built from AISI 304 stainless steel with heated aqueous detergent. The SP950 is designed for high-volume manufacturing operations where drum diameter and capacity are the limiting factors for throughput.",
-      "cardDescription": "Largest Spira 1b \u2014 37\" drum, 150\" length, 25 CFH. Maximum throughput and drum capacity in the single-stage rotary drum line."
+      "description": "The Magido SP950 is the largest single-stage model in the Spira 1b Series, featuring a 37\" diameter × 150\" drum and a 25 CFH production rate — the maximum throughput in the rotary drum line. The 37\" drum and extended length accommodate larger parts and the highest production volumes available in the Spira configuration. Combines spray and immersion washing in a single continuous pass. Built from AISI 304 stainless steel with heated aqueous detergent. The SP950 is designed for high-volume manufacturing operations where drum diameter and capacity are the limiting factors for throughput.",
+      "cardDescription": "Largest Spira 1b — 37\" drum, 150\" length, 25 CFH. Maximum throughput and drum capacity in the single-stage rotary drum line."
     },
     {
       "slug": "sp320-2",
@@ -10711,7 +10711,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "\u00b0F"
+          "unit": "°F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10746,8 +10746,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
-      "description": "The Magido SP320/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring a 12\" diameter \u00d7 106\" drum \u2014 the same 12\" diameter as the SP320 but extended to incorporate a dedicated rinse zone after the wash stage. The dual-stage process delivers residue-free output for small parts going to coating, plating, or precision assembly. Combines spray and immersion washing in the wash stage, followed by a clean rinse, all in a continuous pass without batching. Built from AISI 304 stainless steel. The SP320/2 delivers the SP320's cleaning performance with residue-free results.",
-      "cardDescription": "Dual-stage Spira \u2014 12\" drum, 106\" length. Adds a dedicated rinse zone after the wash for residue-free output at the same compact drum diameter as the SP320."
+      "description": "The Magido SP320/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring a 12\" diameter × 106\" drum — the same 12\" diameter as the SP320 but extended to incorporate a dedicated rinse zone after the wash stage. The dual-stage process delivers residue-free output for small parts going to coating, plating, or precision assembly. Combines spray and immersion washing in the wash stage, followed by a clean rinse, all in a continuous pass without batching. Built from AISI 304 stainless steel. The SP320/2 delivers the SP320's cleaning performance with residue-free results.",
+      "cardDescription": "Dual-stage Spira — 12\" drum, 106\" length. Adds a dedicated rinse zone after the wash for residue-free output at the same compact drum diameter as the SP320."
     },
     {
       "slug": "sp480-2",
@@ -10826,7 +10826,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "\u00b0F"
+          "unit": "°F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10861,7 +10861,7 @@
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
-      "description": "The Magido SP480/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring a 19\" diameter \u00d7 138\" drum and approximately 6.4 CFH production rate. The 138\" drum incorporates both a wash stage (spray + immersion) and a dedicated rinse stage, delivering residue-free output at the same throughput as the single-stage SP480. The 19\" drum handles slightly larger parts than the 12\" SP320/2 models. Built from AISI 304 stainless steel. The right choice when the SP480's throughput is needed but parts must emerge residue-free for downstream finishing.",
+      "description": "The Magido SP480/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring a 19\" diameter × 138\" drum and approximately 6.4 CFH production rate. The 138\" drum incorporates both a wash stage (spray + immersion) and a dedicated rinse stage, delivering residue-free output at the same throughput as the single-stage SP480. The 19\" drum handles slightly larger parts than the 12\" SP320/2 models. Built from AISI 304 stainless steel. The right choice when the SP480's throughput is needed but parts must emerge residue-free for downstream finishing.",
       "cardDescription": "19\" drum, 138\" dual-stage length, ~6.4 CFH. SP480 throughput with a dedicated rinse stage for residue-free output before downstream finishing."
     },
     {
@@ -10941,7 +10941,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "\u00b0F"
+          "unit": "°F"
         },
         "Steam aspirator": {
           "value": "0.25 / 180",
@@ -10976,7 +10976,7 @@
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
-      "description": "The Magido SP640/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring a 25\" diameter \u00d7 138\" drum and approximately 12.7 CFH production rate. It delivers the SP640's mid-range throughput with an added dedicated rinse stage for residue-free output. The 25\" drum handles medium-sized parts at production volumes that exceed the smaller dual-stage models. Combines spray and immersion washing followed by a clean rinse in a single continuous pass. Built from AISI 304 stainless steel. Suited for medium-volume operations where parts must emerge residue-free.",
+      "description": "The Magido SP640/2 is a dual-stage rotary drum aqueous parts washer from the Spira 2b Series, featuring a 25\" diameter × 138\" drum and approximately 12.7 CFH production rate. It delivers the SP640's mid-range throughput with an added dedicated rinse stage for residue-free output. The 25\" drum handles medium-sized parts at production volumes that exceed the smaller dual-stage models. Combines spray and immersion washing followed by a clean rinse in a single continuous pass. Built from AISI 304 stainless steel. Suited for medium-volume operations where parts must emerge residue-free.",
       "cardDescription": "25\" drum, 138\" dual-stage length, ~12.7 CFH. Mid-range throughput with a clean rinse cycle for medium-sized parts requiring residue-free results."
     },
     {
@@ -11056,7 +11056,7 @@
         },
         "Solution temperature": {
           "value": "100-160",
-          "unit": "\u00b0F"
+          "unit": "°F"
         },
         "Steam aspirator": {
           "value": "0.75 / 470",
@@ -11091,8 +11091,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/4VWa99wPMK0"
       ],
-      "description": "The Magido SP950/2 is the largest dual-stage model in the Spira 2b Series, featuring a 37\" diameter \u00d7 208\" drum and 25 CFH production rate \u2014 the maximum throughput in the rotary drum line with a dedicated rinse stage. The 208\" dual-stage drum delivers both spray-plus-immersion washing and a full clean rinse in a single continuous pass at maximum production capacity. Built from AISI 304 stainless steel. The SP950/2 is designed for the most demanding high-volume bulk cleaning operations where maximum throughput and residue-free output are both required.",
-      "cardDescription": "Largest dual-stage Spira \u2014 37\" drum, 208\" length, 25 CFH. Maximum throughput in the rotary drum line with a dedicated rinse for residue-free production output."
+      "description": "The Magido SP950/2 is the largest dual-stage model in the Spira 2b Series, featuring a 37\" diameter × 208\" drum and 25 CFH production rate — the maximum throughput in the rotary drum line with a dedicated rinse stage. The 208\" dual-stage drum delivers both spray-plus-immersion washing and a full clean rinse in a single continuous pass at maximum production capacity. Built from AISI 304 stainless steel. The SP950/2 is designed for the most demanding high-volume bulk cleaning operations where maximum throughput and residue-free output are both required.",
+      "cardDescription": "Largest dual-stage Spira — 37\" drum, 208\" length, 25 CFH. Maximum throughput in the rotary drum line with a dedicated rinse for residue-free production output."
     },
     {
       "slug": "pm400",
@@ -11118,8 +11118,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/1Qrr-9qi16s"
       ],
-      "description": "The Magido PM400 is a 2-stage rotary immersion parts washer from the Platinum Series \u2014 the entry-level model and the only 2-stage configuration in the line, featuring wash and rinse phases without a dedicated third stage. The Platinum Series cleaning process combines three simultaneous actions: direct spray impingement, full hydraulic immersion purging, and rotational agitation of the containment basket. This multi-action approach cleans complex precision components with internal bores, channels, and blind passages more thoroughly than spray-only or immersion-only systems. Built from AISI 304 stainless steel. The PM400 is suited for turbine components, valve bodies, hydraulic manifolds, and precision machined assemblies requiring thorough, repeatable cleaning \u2014 a practical entry point for facilities moving from spray-only to multi-action cleaning.",
-      "cardDescription": "Entry Platinum \u2014 2-stage wash + rinse. Combines direct spray impingement, full immersion, and rotational agitation for precision components with complex internal geometries."
+      "description": "The Magido PM400 is a 2-stage rotary immersion parts washer from the Platinum Series — the entry-level model and the only 2-stage configuration in the line, featuring wash and rinse phases without a dedicated third stage. The Platinum Series cleaning process combines three simultaneous actions: direct spray impingement, full hydraulic immersion purging, and rotational agitation of the containment basket. This multi-action approach cleans complex precision components with internal bores, channels, and blind passages more thoroughly than spray-only or immersion-only systems. Built from AISI 304 stainless steel. The PM400 is suited for turbine components, valve bodies, hydraulic manifolds, and precision machined assemblies requiring thorough, repeatable cleaning — a practical entry point for facilities moving from spray-only to multi-action cleaning.",
+      "cardDescription": "Entry Platinum — 2-stage wash + rinse. Combines direct spray impingement, full immersion, and rotational agitation for precision components with complex internal geometries."
     },
     {
       "slug": "p600-2",
@@ -11165,7 +11165,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "\u00bc Hp / 60 cfm",
+          "value": "¼ Hp / 60 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11181,7 +11181,7 @@
           "unit": "Inches"
         },
         "Drum Rotation": {
-          "value": "\u00bc Hp",
+          "value": "¼ Hp",
           "unit": ""
         },
         "Rotation Speed": {
@@ -11201,8 +11201,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/1Qrr-9qi16s"
       ],
-      "description": "The Magido P600/2 is a 3-stage rotary immersion parts washer from the Platinum Series, featuring a 24\" \u00d7 12\" \u00d7 12\" containment basket and 440-lb load capacity. Built to order, the P600/2 adds a dedicated third stage \u2014 typically a hot-air drying cycle or additional rinse \u2014 beyond the PM400's 2-stage process. The three-stage sequence supports IQ/OQ/PQ validation protocols for aerospace, automotive transmission, and medical device cleaning applications where a documented, repeatable process is required. Combines direct spray impingement, full immersion, and rotational agitation. Built from AISI 304 stainless steel.",
-      "cardDescription": "3-stage Platinum \u2014 24\" \u00d7 12\" \u00d7 12\" basket, 440 lb. Built to order. Wash, rinse, plus third stage for aerospace, automotive, and medical precision components."
+      "description": "The Magido P600/2 is a 3-stage rotary immersion parts washer from the Platinum Series, featuring a 24\" × 12\" × 12\" containment basket and 440-lb load capacity. Built to order, the P600/2 adds a dedicated third stage — typically a hot-air drying cycle or additional rinse — beyond the PM400's 2-stage process. The three-stage sequence supports IQ/OQ/PQ validation protocols for aerospace, automotive transmission, and medical device cleaning applications where a documented, repeatable process is required. Combines direct spray impingement, full immersion, and rotational agitation. Built from AISI 304 stainless steel.",
+      "cardDescription": "3-stage Platinum — 24\" × 12\" × 12\" basket, 440 lb. Built to order. Wash, rinse, plus third stage for aerospace, automotive, and medical precision components."
     },
     {
       "slug": "p900-2",
@@ -11248,7 +11248,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "\u00bd HP / 180 cfm",
+          "value": "½ HP / 180 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11264,7 +11264,7 @@
           "unit": "Inches"
         },
         "Drum Rotation": {
-          "value": "\u00be Hp",
+          "value": "¾ Hp",
           "unit": ""
         },
         "Rotation Speed": {
@@ -11284,8 +11284,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/1Qrr-9qi16s"
       ],
-      "description": "The Magido P900/2 is a 3-stage rotary immersion parts washer from the Platinum Series, featuring a 35\" \u00d7 15\" \u00d7 15\" containment basket and 770-lb load capacity \u2014 handling significantly larger and heavier parts than the P600/2 while maintaining the full 3-stage cleaning sequence. The larger basket accommodates medium-sized precision assemblies, complex manifolds, hydraulic components, and structural parts that exceed the P600/2's envelope. Built to order with customer-specific process configurations. Combines direct spray impingement, full immersion, and rotational agitation. Built from AISI 304 stainless steel.",
-      "cardDescription": "3-stage Platinum \u2014 35\" \u00d7 15\" \u00d7 15\" basket, 770 lb. Larger envelope than the P600/2 for medium-sized precision assemblies, manifolds, and complex geometry parts."
+      "description": "The Magido P900/2 is a 3-stage rotary immersion parts washer from the Platinum Series, featuring a 35\" × 15\" × 15\" containment basket and 770-lb load capacity — handling significantly larger and heavier parts than the P600/2 while maintaining the full 3-stage cleaning sequence. The larger basket accommodates medium-sized precision assemblies, complex manifolds, hydraulic components, and structural parts that exceed the P600/2's envelope. Built to order with customer-specific process configurations. Combines direct spray impingement, full immersion, and rotational agitation. Built from AISI 304 stainless steel.",
+      "cardDescription": "3-stage Platinum — 35\" × 15\" × 15\" basket, 770 lb. Larger envelope than the P600/2 for medium-sized precision assemblies, manifolds, and complex geometry parts."
     },
     {
       "slug": "p1200-2",
@@ -11331,7 +11331,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "\u00bd HP / 180 cfm",
+          "value": "½ HP / 180 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11367,8 +11367,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/1Qrr-9qi16s"
       ],
-      "description": "The Magido P1200/2 is a 3-stage rotary immersion parts washer from the Platinum Series, featuring a 47\" \u00d7 19\" \u00d7 19\" containment basket and 1,100-lb load capacity. Designed for large, heavy precision components in aerospace, automotive, and heavy industrial applications where both basket size and cleanliness standard are demanding. The P1200/2 delivers the full Platinum Series multi-action cleaning process \u2014 spray impingement, full immersion, and rotational agitation \u2014 at a scale suited for large structural components and heavy assemblies. Built to order from AISI 304 stainless steel.",
-      "cardDescription": "3-stage Platinum \u2014 47\" \u00d7 19\" \u00d7 19\" basket, 1,100 lb. Built to order for large, heavy precision components in aerospace, automotive, and heavy industrial applications."
+      "description": "The Magido P1200/2 is a 3-stage rotary immersion parts washer from the Platinum Series, featuring a 47\" × 19\" × 19\" containment basket and 1,100-lb load capacity. Designed for large, heavy precision components in aerospace, automotive, and heavy industrial applications where both basket size and cleanliness standard are demanding. The P1200/2 delivers the full Platinum Series multi-action cleaning process — spray impingement, full immersion, and rotational agitation — at a scale suited for large structural components and heavy assemblies. Built to order from AISI 304 stainless steel.",
+      "cardDescription": "3-stage Platinum — 47\" × 19\" × 19\" basket, 1,100 lb. Built to order for large, heavy precision components in aerospace, automotive, and heavy industrial applications."
     },
     {
       "slug": "p1500-2",
@@ -11414,7 +11414,7 @@
           "unit": "kW"
         },
         "Steam Exhaust": {
-          "value": "\u00be HP / 470 cfm",
+          "value": "¾ HP / 470 cfm",
           "unit": ""
         },
         "PLC": {
@@ -11450,8 +11450,8 @@
       "videoUrls": [
         "https://www.youtube.com/embed/1Qrr-9qi16s"
       ],
-      "description": "The Magido P1500/2 is the largest model in the Platinum Series, featuring a 59\" \u00d7 31\" \u00d7 34\" containment basket and 1,500-lb load capacity \u2014 the maximum configuration in the rotary immersion line. Built for the largest, heaviest precision components in aerospace, defense, and heavy industrial applications where no other cleaning method can achieve the required cleanliness standard at this part size. Delivers the full Platinum multi-action process: direct spray impingement, full hydraulic immersion purging, and rotational agitation across all three stages. Built to order from AISI 304 stainless steel.",
-      "cardDescription": "Largest Platinum \u2014 59\" \u00d7 31\" \u00d7 34\" basket, 1,500 lb. Maximum rotary immersion capacity for the largest precision components in aerospace and defense applications."
+      "description": "The Magido P1500/2 is the largest model in the Platinum Series, featuring a 59\" × 31\" × 34\" containment basket and 1,500-lb load capacity — the maximum configuration in the rotary immersion line. Built for the largest, heaviest precision components in aerospace, defense, and heavy industrial applications where no other cleaning method can achieve the required cleanliness standard at this part size. Delivers the full Platinum multi-action process: direct spray impingement, full hydraulic immersion purging, and rotational agitation across all three stages. Built to order from AISI 304 stainless steel.",
+      "cardDescription": "Largest Platinum — 59\" × 31\" × 34\" basket, 1,500 lb. Maximum rotary immersion capacity for the largest precision components in aerospace and defense applications."
     },
     {
       "slug": "fls-30",
@@ -11506,8 +11506,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Electric Power": {
           "value": "230",
@@ -11530,8 +11530,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido FLS-30 is a front load spray cabinet parts washer from the FLS Series, featuring a 30\" turntable, 60-gallon tank, 2 HP pump, and 1,200-lb weight capacity in a compact 50\" \u00d7 60\" \u00d7 72\" footprint. The front-loading door provides easy access for loading medium to large parts, and the FLS Series' fixed spray nozzle configuration delivers thorough automated aqueous cleaning at temperatures up to 140\u00b0F. Safety interlocks and programmable wash cycles are standard. The FLS-30 is the entry model and the most space-efficient configuration in the FLS line \u2014 suited for automotive service, diesel maintenance, and industrial facilities that need automated front-load spray cleaning without a large floor area commitment.",
-      "cardDescription": "Entry FLS \u2014 30\" turntable, 60 gal tank, 2 HP pump, 1,200 lb. Most compact front-load option in the FLS line at 50\" \u00d7 60\" \u00d7 72\"."
+      "description": "The Magido FLS-30 is a front load spray cabinet parts washer from the FLS Series, featuring a 30\" turntable, 60-gallon tank, 2 HP pump, and 1,200-lb weight capacity in a compact 50\" × 60\" × 72\" footprint. The front-loading door provides easy access for loading medium to large parts, and the FLS Series' fixed spray nozzle configuration delivers thorough automated aqueous cleaning at temperatures up to 140°F. Safety interlocks and programmable wash cycles are standard. The FLS-30 is the entry model and the most space-efficient configuration in the FLS line — suited for automotive service, diesel maintenance, and industrial facilities that need automated front-load spray cleaning without a large floor area commitment.",
+      "cardDescription": "Entry FLS — 30\" turntable, 60 gal tank, 2 HP pump, 1,200 lb. Most compact front-load option in the FLS line at 50\" × 60\" × 72\"."
     },
     {
       "slug": "fls-35",
@@ -11586,8 +11586,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Electric Power": {
           "value": "230/480",
@@ -11610,8 +11610,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido FLS-35 is a front load spray cabinet parts washer from the FLS Series, featuring a 35\" turntable, 70-gallon tank, 3 HP pump, and 1,200-lb weight capacity. Compared to the FLS-30, the FLS-35 provides a larger turntable, 10 more gallons of solution, and a more powerful pump \u2014 delivering more aggressive cleaning for medium-to-large parts with heavier contamination loads like gear oils, hydraulic fluids, and baked-on industrial grease. The front-loading door and fixed spray nozzle system deliver automated aqueous cleaning at temperatures up to 140\u00b0F. Safety interlocks and programmable wash cycles are standard. The FLS-35 is the mid-range model \u2014 a step up in cleaning intensity within a similar cabinet size.",
-      "cardDescription": "35\" turntable, 70 gal tank, 3 HP pump, 1,200 lb \u2014 more cleaning power than the FLS-30 for medium-to-large parts with heavier contamination loads."
+      "description": "The Magido FLS-35 is a front load spray cabinet parts washer from the FLS Series, featuring a 35\" turntable, 70-gallon tank, 3 HP pump, and 1,200-lb weight capacity. Compared to the FLS-30, the FLS-35 provides a larger turntable, 10 more gallons of solution, and a more powerful pump — delivering more aggressive cleaning for medium-to-large parts with heavier contamination loads like gear oils, hydraulic fluids, and baked-on industrial grease. The front-loading door and fixed spray nozzle system deliver automated aqueous cleaning at temperatures up to 140°F. Safety interlocks and programmable wash cycles are standard. The FLS-35 is the mid-range model — a step up in cleaning intensity within a similar cabinet size.",
+      "cardDescription": "35\" turntable, 70 gal tank, 3 HP pump, 1,200 lb — more cleaning power than the FLS-30 for medium-to-large parts with heavier contamination loads."
     },
     {
       "slug": "fls-45",
@@ -11666,8 +11666,8 @@
           "unit": "kW"
         },
         "Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Electric Power": {
           "value": "230/480",
@@ -11690,8 +11690,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido FLS-45 is the largest model in the FLS Series, featuring a 45\" turntable, 130-gallon tank, 5.5 HP pump, and 1,500-lb weight capacity in a 64\" \u00d7 90\" \u00d7 83\" cabinet. The 5.5 HP pump delivers substantially more spray pressure and flow than the FLS-30 and FLS-35, making the FLS-45 well-suited for the most demanding front-load cleaning applications \u2014 heavily contaminated automotive components, large diesel engine parts, heavy equipment maintenance, and industrial overhaul operations. The front-loading door provides easy access for the largest parts in the FLS range. Safety interlocks and programmable wash cycles are standard. Built from AISI 304 stainless steel throughout.",
-      "cardDescription": "Largest FLS \u2014 45\" turntable, 130 gal tank, 5.5 HP pump, 1,500 lb. Maximum FLS capacity at 64\" \u00d7 90\" \u00d7 83\" for demanding automotive and heavy equipment applications."
+      "description": "The Magido FLS-45 is the largest model in the FLS Series, featuring a 45\" turntable, 130-gallon tank, 5.5 HP pump, and 1,500-lb weight capacity in a 64\" × 90\" × 83\" cabinet. The 5.5 HP pump delivers substantially more spray pressure and flow than the FLS-30 and FLS-35, making the FLS-45 well-suited for the most demanding front-load cleaning applications — heavily contaminated automotive components, large diesel engine parts, heavy equipment maintenance, and industrial overhaul operations. The front-loading door provides easy access for the largest parts in the FLS range. Safety interlocks and programmable wash cycles are standard. Built from AISI 304 stainless steel throughout.",
+      "cardDescription": "Largest FLS — 45\" turntable, 130 gal tank, 5.5 HP pump, 1,500 lb. Maximum FLS capacity at 64\" × 90\" × 83\" for demanding automotive and heavy equipment applications."
     },
     {
       "slug": "tr450",
@@ -11713,7 +11713,7 @@
           "unit": "Lbs"
         },
         "Basket Rotation": {
-          "value": "0.7 \u2013 2.5",
+          "value": "0.7 – 2.5",
           "unit": "RPM"
         },
         "Fluid/Tank Capacity": {
@@ -11737,8 +11737,8 @@
           "unit": "kW"
         },
         "Max Operating Temperature": {
-          "value": "140\u00b0F",
-          "unit": "\u00b0F"
+          "value": "140°F",
+          "unit": "°F"
         },
         "Voltage": {
           "value": "230V/460V",
@@ -11753,7 +11753,7 @@
           "unit": "Amps"
         },
         "Timer": {
-          "value": "0\u201360",
+          "value": "0–60",
           "unit": "Minute"
         },
         "Overall Dimensions (LxW)": {
@@ -11769,8 +11769,8 @@
           "unit": "Lbs"
         }
       },
-      "description": "The Magido TR-450 is a compact, ergonomically designed top load parts washer purpose-built for precision cleaning of machined components in manufacturing cell environments. Unlike standard top-load spray cabinets, the TR-450 uses a rotating basket that is simultaneously sprayed from the front, back, and sides while partially submerging during the cleaning cycle \u2014 combining spray impingement and immersion in a single automated process that ensures uniform coverage and complete contamination removal on complex small to medium-sized parts. A variable-speed basket rotation of 0.7\u20132.5 RPM, 60-gallon tank, 2 HP pump, and NEMA-4 rated control panel make the TR-450 a reliable, integration-ready cleaning cell for CNC machining environments. Built entirely from AISI 304 stainless steel.",
-      "cardDescription": "Compact top load washer for precision machined components \u2014 rotating basket sprayed from all sides while partially submerging. 60 gal tank, 2 HP pump, NEMA-4 panel."
+      "description": "The Magido TR-450 is a compact, ergonomically designed top load parts washer purpose-built for precision cleaning of machined components in manufacturing cell environments. Unlike standard top-load spray cabinets, the TR-450 uses a rotating basket that is simultaneously sprayed from the front, back, and sides while partially submerging during the cleaning cycle — combining spray impingement and immersion in a single automated process that ensures uniform coverage and complete contamination removal on complex small to medium-sized parts. A variable-speed basket rotation of 0.7–2.5 RPM, 60-gallon tank, 2 HP pump, and NEMA-4 rated control panel make the TR-450 a reliable, integration-ready cleaning cell for CNC machining environments. Built entirely from AISI 304 stainless steel.",
+      "cardDescription": "Compact top load washer for precision machined components — rotating basket sprayed from all sides while partially submerging. 60 gal tank, 2 HP pump, NEMA-4 panel."
     }
   ]
 }
