@@ -243,7 +243,7 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
           <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
               href="/contact"
-              className="inline-flex rounded-lg bg-magido-orange px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
+              className="btn-quote"
             >
               Request a Quote
             </Link>

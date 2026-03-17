@@ -277,7 +277,7 @@ export default function ProductPage({
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href={`/contact?product=${encodeURIComponent(product.slug)}`}
-                  className="inline-flex items-center gap-2 rounded-lg bg-magido-orange px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
+                  className="btn-quote"
                 >
                   Request a Quote
                 </Link>
@@ -363,7 +363,7 @@ export default function ProductPage({
           <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
               href="/contact"
-              className="inline-flex rounded-lg bg-magido-orange px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
+              className="btn-quote"
             >
               Request a Quote
             </Link>

@@ -145,7 +145,7 @@ export function SeriesComparisonTable({
               <Link
                 key={model}
                 href={`/contact?model=${encodeURIComponent(model)}`}
-                className="rounded-lg bg-magido-orange/10 px-3 py-1.5 text-xs font-semibold text-magido-orange transition-colors hover:bg-magido-orange hover:text-white"
+                className="btn-quote btn-quote-sm"
               >
                 Quote {getDisplayModel(model)}
               </Link>

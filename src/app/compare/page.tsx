@@ -213,7 +213,7 @@ export default function ComparePage() {
                       {/* Quote CTA */}
                       <Link
                         href={`/contact?model=${encodeURIComponent(product.model)}`}
-                        className="mt-2 inline-flex items-center gap-1 rounded bg-magido-orange/10 px-2.5 py-1 text-2xs font-semibold text-magido-orange transition-colors hover:bg-magido-orange hover:text-white"
+                        className="btn-quote btn-quote-sm mt-2"
                       >
                         <FileText className="h-3 w-3" />
                         Get Quote

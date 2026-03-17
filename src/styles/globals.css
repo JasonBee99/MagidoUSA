@@ -478,6 +478,25 @@
   display: none;
 }
 
+/* ── Static variant — keeps all btn-secondary styles but removes the orange flood-fill animation ── */
+.btn-secondary--static {
+  background-image: none;
+}
+
+/* ── No-fill variant — removes the orange flood animation ── */
+/* Used on contact/social buttons where color override on hover is needed */
+.btn-secondary--no-fill {
+  background-image: none;
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.btn-secondary--no-fill:hover {
+  background-position: unset;
+  background-color: transparent;
+  color: var(--color-text);
+}
+
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    GHOST DARK — for use on dark/hero backgrounds
    Hover: subtle white fill, stays white text
@@ -611,5 +630,129 @@
   [class*="bg-magido-orange"][class*="rounded-lg"]::after,
   [class*="bg-magido-orange"][class*="rounded-xl"]::after {
     display: none;
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   BTN-QUOTE — Splatoon-style liquid fill button
+   Used on every "Get a Quote" / "Request a Quote" CTA.
+   Base: magido-blue. Wave PNG rises from bottom on hover.
+   Orange wave on blue = warm/cool brand contrast.
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.btn-quote {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  color: #ffffff;
+  border: 2px solid #315687;
+  box-shadow: 0 2px 8px rgba(49, 86, 135, 0.30);
+  text-decoration: none;
+
+  /* Wave PNG starts hidden below the button */
+  background-color: #315687;
+  background-image: url('/images/nav-bg-fill-orange.png');
+  background-repeat: repeat-x;
+  background-position: 0 -120%;
+  transition: 1.8s ease;
+}
+
+/* Wave rises and scrolls sideways on hover */
+.btn-quote:hover {
+  background-position: 500% 100%;
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 20px rgba(49, 86, 135, 0.45),
+    0 2px 6px rgba(235, 108, 28, 0.20);
+}
+
+/* Stamp press on click */
+.btn-quote:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 1px 4px rgba(49, 86, 135, 0.30);
+  transition-duration: 0.08s;
+}
+
+/* Keyboard focus ring */
+.btn-quote:focus-visible {
+  outline: 2px solid #EB6C1C;
+  outline-offset: 3px;
+}
+
+/* Arrow nudge */
+.btn-quote .btn-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.btn-quote:hover .btn-arrow {
+  transform: translateX(3px);
+}
+
+/* ── Compact variant — for tight spaces like cards, tables, nav ── */
+.btn-quote-sm {
+  padding: 0.375rem 0.875rem;
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+}
+
+/* ── SpecTable alias — no TSX edit needed ── */
+/* SpecTable uses .spec-table__quote-btn — wire it to btn-quote styles */
+.spec-table__quote-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.875rem;
+  overflow: hidden;
+  cursor: pointer;
+  color: #ffffff;
+  border: 2px solid #315687;
+  box-shadow: 0 2px 8px rgba(49, 86, 135, 0.30);
+  text-decoration: none;
+  background-color: #315687;
+  background-image: url('/images/nav-bg-fill-orange.png');
+  background-repeat: repeat-x;
+  background-position: 0 -120%;
+  transition: 1.2s ease;
+}
+
+.spec-table__quote-btn:hover {
+  background-position: 500% 100%;
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 20px rgba(49, 86, 135, 0.45),
+    0 2px 6px rgba(235, 108, 28, 0.20);
+}
+
+.spec-table__quote-btn:active {
+  transform: translateY(1px) scale(0.97);
+  transition-duration: 0.08s;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn-quote,
+  .spec-table__quote-btn {
+    background-image: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    transform: none !important;
+  }
+  .btn-quote .btn-arrow {
+    transition: none;
   }
 }

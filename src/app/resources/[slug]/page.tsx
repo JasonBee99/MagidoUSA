@@ -157,7 +157,7 @@ export default function ResourceDetailPage({
           </Link>
           <Link
             href="/contact"
-            className="inline-flex rounded-lg bg-magido-orange px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark"
+            className="btn-quote btn-quote-sm"
           >
             Request a Quote
           </Link>

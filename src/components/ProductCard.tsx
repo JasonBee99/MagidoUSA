@@ -285,7 +285,7 @@ export function ProductCard({
           <div className="relative mt-3 flex items-center border-t border-[var(--color-border-light)] pt-3">
             <Link
               href={`/contact?product=${encodeURIComponent(product.slug)}`}
-              className="rounded-md bg-magido-orange/10 px-3 py-1.5 text-xs font-semibold text-magido-orange transition-colors hover:bg-magido-orange hover:text-white"
+              className="btn-quote btn-quote-sm"
             >
               Get Quote
               <span className="sr-only"> for {product.name}</span>

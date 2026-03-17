@@ -326,7 +326,7 @@ export function Header() {
               {/* Request a Quote CTA (desktop) */}
               <Link
                 href="/contact"
-                className="hidden rounded-lg bg-magido-orange px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark lg:inline-flex"
+                className="btn-quote btn-quote-sm hidden lg:inline-flex"
               >
                 Request a Quote
               </Link>
@@ -475,7 +475,7 @@ export function Header() {
                   </a>
                   <Link
                     href="/contact"
-                    className="flex items-center justify-center rounded-lg bg-magido-orange px-4 py-2.5 text-sm font-medium text-white"
+                    className="btn-quote w-full"
                   >
                     Request a Quote
                   </Link>
