@@ -6,16 +6,16 @@ import solutionsData from '@/data/solutions.json';
 const { solutions } = solutionsData as SolutionsData;
 
 export const metadata: Metadata = {
-  title: 'Parts Washing Solutions & Guides',
+  title: 'Aqueous Parts Washer Guides & Solutions | Magido USA',
   description:
-    'Expert guides on aqueous parts washing — comparisons, application guides, and industry resources to help you choose the right parts washer for your operation.',
-  alternates: { canonical: 'https://www.magidousa.com/solutions' },
+    'Expert aqueous parts washer guides — compare water-based vs. solvent parts washers, spray cabinet vs. immersion, and application-specific cleaning solutions for automotive, aerospace, machining, and more.',
+  alternates: { canonical: 'https://magidousa.com/solutions' },
   openGraph: {
-    title: 'Parts Washing Solutions & Guides',
+    title: 'Aqueous Parts Washer Guides & Solutions | Magido USA',
     description:
-      'Expert guides on aqueous parts washing — comparisons, application guides, and industry resources to help you choose the right parts washer for your operation.',
-    url: 'https://www.magidousa.com/solutions',
-    images: [{ url: 'https://www.magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+      'Compare aqueous vs. solvent parts washers, spray cabinet vs. immersion, and find the right water-based cleaning solution for your application.',
+    url: 'https://magidousa.com/solutions',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
   },
 };
 

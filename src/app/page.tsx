@@ -1,8 +1,24 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllCategories, getCategoryRepresentativeImage } from '@/lib/products';
 import { Shield, Zap, Leaf, HeadphonesIcon, Clock, LayoutGrid, Layers, MapPin } from 'lucide-react';
 import { HomeHero } from '@/components/HomeHero';
+
+export const metadata: Metadata = {
+  title: 'Magido USA — Industrial Aqueous Parts Washers | Stainless Steel, Made in Italy',
+  description:
+    'Magido USA manufactures industrial aqueous parts washers and water-based parts cleaning systems — 75+ models, 100% AISI 304 stainless steel construction, made in Italy since 1980. Spray cabinet, immersion, conveyor, and rotary drum washers for automotive, aerospace, machining, and heavy equipment.',
+  alternates: {
+    canonical: 'https://magidousa.com',
+  },
+  openGraph: {
+    title: 'Magido USA — Industrial Aqueous Parts Washers | Stainless Steel, Made in Italy',
+    description:
+      '75+ aqueous parts washers and water-based cleaning systems — 100% AISI 304 stainless steel, made in Italy since 1980. Automotive, aerospace, machining, heavy equipment.',
+    url: 'https://magidousa.com',
+  },
+};
 
 export default function HomePage() {
   const categories = getAllCategories();

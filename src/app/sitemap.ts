@@ -18,6 +18,8 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE}/industries`,    lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.8 },
   // FAQ — added Phase 11
   { url: `${BASE}/faq`,           lastModified: new Date('2025-03-01'), changeFrequency: 'monthly', priority: 0.7 },
+  // SEO landing pages — added Phase 19
+  { url: `${BASE}/aqueous-parts-washers`, lastModified: new Date('2026-03-18'), changeFrequency: 'monthly', priority: 0.9 },
 ];
 
 // ─── Product category pages ───────────────────────────────────────────────────
@@ -183,12 +185,12 @@ const resourceRoutes: MetadataRoute.Sitemap = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    ...staticRoutes,    //  11 pages (inc. FAQ)
+    ...staticRoutes,    //  12 pages (inc. FAQ + aqueous landing page)
     ...categoryRoutes,  //   7 pages
     ...productRoutes,   //  75 pages
     ...industryRoutes,  //   6 pages
     ...solutionRoutes,  //  12 pages
     ...resourceRoutes,  //   8 pages
-    // Total: 119 URLs
+    // Total: 120 URLs
   ];
 }

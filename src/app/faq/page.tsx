@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { faqCategories, getAllFaqItems } from '@/data/faq';
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions',
+  title: 'Aqueous Parts Washer FAQ | Magido USA — Common Questions Answered',
   description:
-    'Answers to common questions about Magido USA aqueous parts washers — product selection, technical operation, detergents, lead times, and more.',
+    'Answers to common questions about Magido USA aqueous parts washers and water-based parts cleaning systems — product selection, technical operation, stainless steel construction, detergents, lead times, and more.',
   alternates: {
-    canonical: 'https://www.magidousa.com/faq',
+    canonical: 'https://magidousa.com/faq',
   },
 };
 

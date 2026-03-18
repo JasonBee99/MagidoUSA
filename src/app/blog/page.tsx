@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Blog — Industrial Parts Washing Guides & Insights',
   description: 'Expert guides on aqueous parts washing: cleaning methods, maintenance tips, sizing guides, and industry comparisons from the Magido USA team.',
   alternates: {
-    canonical: 'https://www.magidousa.com/blog',
+    canonical: 'https://magidousa.com/blog',
   },
 };
 

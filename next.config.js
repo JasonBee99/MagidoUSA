@@ -9,13 +9,18 @@ const nextConfig = {
     dangerouslyAllowSVG: false,
     contentDispositionType: 'inline',
   },
-
   // Enable compression
   compress: true,
-
-  // ─── 301 redirects from old WordPress + OpenCart URL structures ───
+  // ─── 301 redirects ───────────────────────────────────────────────────────
   async redirects() {
     return [
+      // ── www → non-www canonical redirect (MUST be first) ──────────────────
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.magidousa.com' }],
+        destination: 'https://magidousa.com/:path*',
+        permanent: true,
+      },
       // ── Old product-category pages → new category pages ──
       { source: '/product-category/manual-washers/:path*',              destination: '/products/manual-washers',                permanent: true },
       { source: '/product-category/top-load-washers/:path*',            destination: '/products/top-load-washers',              permanent: true },
@@ -25,7 +30,6 @@ const nextConfig = {
       { source: '/product-category/rotary-drum/:path*',                 destination: '/products/rotary-drum-washers',           permanent: true },
       { source: '/product-category/rotary-immersion/:path*',            destination: '/products/rotary-immersion-washers',      permanent: true },
       { source: '/product-category/:path*',                             destination: '/products',                               permanent: true },
-
       // ── Old individual product pages → new product pages ──
       { source: '/product/l-101',                                  destination: '/products/top-load-washers/l101',         permanent: true },
       { source: '/product/l102',                                   destination: '/products/top-load-washers/l102',         permanent: true },
@@ -49,7 +53,6 @@ const nextConfig = {
       { source: '/product/dg-11',                                  destination: '/products/manual-washers/dg-11',          permanent: true },
       // Catch-all for any remaining /product/ URLs not explicitly mapped above
       { source: '/product/:path*',                                 destination: '/products',                               permanent: true },
-
       // ── Old docs/resources pages → new resources pages ──
       // NOTE: /docs/ catch-all is safe — PDF brochures now live at /brochures/ (not /docs/)
       { source: '/docs/magido-manual-aqueous-parts-washers',               destination: '/resources/manual-washers',              permanent: true },
@@ -59,7 +62,6 @@ const nextConfig = {
       { source: '/docs/top-load-aqueous-parts-washing-systems',            destination: '/resources/top-load-washers',            permanent: true },
       { source: '/docs/2722',                                              destination: '/resources/catalog',                     permanent: true },
       { source: '/docs/:path*',                                            destination: '/resources',                             permanent: true },
-
       // ── Old misc pages ──
       { source: '/applications',            destination: '/solutions',    permanent: true },
       { source: '/applications/:path*',     destination: '/solutions',    permanent: true },
@@ -67,7 +69,6 @@ const nextConfig = {
       { source: '/contact-us',              destination: '/contact',      permanent: true },
       { source: '/brand/magido-usa',        destination: '/about',        permanent: true },
       { source: '/brand/:path*',            destination: '/about',        permanent: true },
-
       // ── Old WP/OpenCart query string URLs ──
       // Next.js redirects don't support query string matching natively.
       // The /index.php path redirect handles the path portion.
@@ -75,7 +76,6 @@ const nextConfig = {
       { source: '/index.php',              destination: '/',              permanent: true },
     ];
   },
-
   // Headers for caching static assets
   async headers() {
     return [
@@ -113,9 +113,7 @@ const nextConfig = {
       },
     ];
   },
-
   // PoweredByHeader off for security
   poweredByHeader: false,
 };
-
 module.exports = nextConfig;
