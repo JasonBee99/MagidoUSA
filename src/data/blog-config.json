@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "title": "Blog — Industrial Parts Washing Guides & Insights",
+    "description": "Expert guides on aqueous parts washing: cleaning methods, maintenance tips, sizing guides, and industry comparisons from the Magido USA team.",
+    "canonical": "https://magidousa.com/blog"
+  },
+  "breadcrumb": {
+    "home": { "label": "Home", "href": "/" },
+    "current": "Blog"
+  },
+  "hero": {
+    "eyebrow": "Blog & Guides",
+    "heading": "Parts Washing Insights",
+    "subheading": "Expert guides on aqueous cleaning methods, maintenance, sizing, and making the right equipment decisions."
+  },
+  "sortOptions": [
+    { "key": "newest",   "label": "Newest First" },
+    { "key": "alpha",    "label": "A – Z" },
+    { "key": "readtime", "label": "Shortest Read" }
+  ],
+  "cta": {
+    "heading": "Need Help Choosing the Right System?",
+    "subheading": "Magido offers free parts cleaning process evaluations.",
+    "containerHref": "/how-to-choose",
+    "primaryLabel": "Free Evaluation",
+    "primaryHref": "/contact#evaluation",
+    "secondaryLabel": "Browse Products",
+    "secondaryHref": "/products"
+  }
+}

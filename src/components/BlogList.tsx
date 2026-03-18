@@ -1,7 +1,7 @@
 'use client';
 
 // src/components/BlogList.tsx
-// Client component — handles sort state for the blog index.
+// Client component — sort state only. All labels and options come from props (blog-config.json).
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -10,11 +10,15 @@ import type { BlogPost } from '@/data/blog';
 
 type SortKey = 'newest' | 'alpha' | 'readtime';
 
-const SORT_OPTIONS: { key: SortKey; label: string }[] = [
-  { key: 'newest',   label: 'Newest First' },
-  { key: 'alpha',    label: 'A – Z' },
-  { key: 'readtime', label: 'Shortest Read' },
-];
+interface SortOption {
+  key: string;
+  label: string;
+}
+
+interface BlogListProps {
+  posts: BlogPost[];
+  sortOptions: SortOption[];
+}
 
 function sortPosts(posts: BlogPost[], key: SortKey): BlogPost[] {
   const copy = [...posts];
@@ -25,10 +29,12 @@ function sortPosts(posts: BlogPost[], key: SortKey): BlogPost[] {
       return copy.sort((a, b) => a.title.localeCompare(b.title));
     case 'readtime':
       return copy.sort((a, b) => parseInt(a.readTime) - parseInt(b.readTime));
+    default:
+      return copy;
   }
 }
 
-// ─── Topic-matched SVG illustrations ──────────────────────────────────────
+// ─── Topic-matched SVG illustrations ─────────────────────────────────────────
 
 function IllustrationAqueousVsSolvent() {
   return (
@@ -173,33 +179,35 @@ function DefaultIllustration() {
   );
 }
 
-const POST_ILLUSTRATION_MAP: Record<string, React.ReactNode> = {
-  'aqueous-vs-solvent-parts-cleaning':          <IllustrationAqueousVsSolvent />,
-  'stainless-steel-parts-washers-outlast-competition': <IllustrationStainlessSteel />,
-  'spray-washing-vs-immersion-cleaning':         <IllustrationSprayVsImmersion />,
-  'aqueous-parts-washer-maintenance-guide':      <IllustrationMaintenance />,
-  'choosing-right-parts-washer-size':            <IllustrationSizing />,
-  'how-often-change-parts-washer-solution':      <IllustrationSolution />,
-  '5-signs-parts-washer-needs-servicing':        <IllustrationServicing />,
-  'parts-washing-medical-device-manufacturing':  <IllustrationMedical />,
+// illustrationKey (from blog.json) → SVG component
+const ILLUSTRATION_MAP: Record<string, React.ReactNode> = {
+  'aqueous-vs-solvent':  <IllustrationAqueousVsSolvent />,
+  'stainless-steel':     <IllustrationStainlessSteel />,
+  'spray-vs-immersion':  <IllustrationSprayVsImmersion />,
+  'maintenance':         <IllustrationMaintenance />,
+  'sizing':              <IllustrationSizing />,
+  'solution':            <IllustrationSolution />,
+  'servicing':           <IllustrationServicing />,
+  'medical':             <IllustrationMedical />,
+  'default':             <DefaultIllustration />,
 };
 
-export function BlogList({ posts }: { posts: BlogPost[] }) {
+export function BlogList({ posts, sortOptions }: BlogListProps) {
   const [activeSort, setActiveSort] = useState<SortKey>('newest');
   const sorted = sortPosts(posts, activeSort);
 
   return (
     <>
-      {/* Sort bar */}
+      {/* Sort bar — labels from blog-config.json via props */}
       <div className="mb-8 flex items-center gap-2">
         <span className="flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-[var(--color-text-muted)]">
           <ChevronDown className="h-3.5 w-3.5" /> Sort
         </span>
         <div className="flex flex-wrap gap-2">
-          {SORT_OPTIONS.map((opt) => (
+          {sortOptions.map((opt) => (
             <button
               key={opt.key}
-              onClick={() => setActiveSort(opt.key)}
+              onClick={() => setActiveSort(opt.key as SortKey)}
               className={`rounded-lg border px-3 py-1.5 text-xs font-semibold transition-colors ${
                 activeSort === opt.key
                   ? 'border-magido-orange bg-magido-orange text-white'
@@ -220,12 +228,11 @@ export function BlogList({ posts }: { posts: BlogPost[] }) {
             href={`/blog/${post.slug}`}
             className="group flex gap-5 rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-5 transition-all hover:border-magido-orange/30 hover:shadow-lg"
           >
-            {/* Illustration — hidden on mobile, visible sm+ */}
+            {/* Illustration — driven by illustrationKey in blog.json */}
             <div className="hidden h-20 w-20 flex-shrink-0 sm:block">
-              {POST_ILLUSTRATION_MAP[post.slug] ?? <DefaultIllustration />}
+              {ILLUSTRATION_MAP[post.illustrationKey] ?? <DefaultIllustration />}
             </div>
 
-            {/* Content */}
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-3 text-xs text-[var(--color-text-muted)]">
                 <time dateTime={post.date}>

@@ -1,5 +1,4 @@
 'use client';
-
 import { createContext, useContext, useEffect, useState, useCallback } from 'react';
 
 type Theme = 'light' | 'dark';
@@ -25,13 +24,24 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    // Read stored preference or system preference
     const stored = localStorage.getItem('magido-theme') as Theme | null;
-    if (stored) {
-      setThemeState(stored);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setThemeState('dark');
+    const resolved: Theme =
+      stored
+        ? stored
+        : window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light';
+
+    // Apply immediately — don't wait for a second render cycle
+    if (resolved === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
     }
+
+    setThemeState(resolved);
+    setMounted(true);
   }, []);
 
   const setTheme = useCallback((newTheme: Theme) => {
@@ -48,11 +58,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     setTheme(theme === 'light' ? 'dark' : 'light');
   }, [theme, setTheme]);
 
-  // Prevent hydration mismatch
-  if (!mounted) {
-    return <>{children}</>;
-  }
-
+  // While not yet mounted, still render children — the inline script in
+  // layout.tsx has already set the correct dark class on <html> so there
+  // is no visible flash. We no longer block rendering here.
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
       {children}
