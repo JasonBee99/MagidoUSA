@@ -35,7 +35,7 @@
   --color-bg: #0a1628;
   --color-bg-secondary: #0f1f38;
   --color-bg-tertiary: #162a48;
-  --color-text: #e2eaf4;
+  --color-text: #f0ead8;
   --color-text-secondary: #a0b4cc;
   --color-text-muted: #90aac7;       /* was #6b83a0 — lightened for 4.5:1 contrast */
   --color-border: #1e3554;
@@ -618,6 +618,32 @@
   transform: translateY(1px) scale(0.97) !important;
   box-shadow: 0 1px 4px rgba(235, 108, 28, 0.30) !important;
   transition-duration: 0.08s !important;
+}
+
+/* ── CTABanner — orange grid background ── */
+.cta-banner-grid {
+  background-image:
+    linear-gradient(rgba(235, 108, 28, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(235, 108, 28, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ── Checkbox labels caught by the bg-magido-orange wildcard above.
+   Override to strip all hover/active effects completely. ── */
+.checkbox-group-label::after {
+  display: none !important;
+}
+.checkbox-group-label > * {
+  position: static !important;
+  z-index: auto !important;
+}
+.checkbox-group-label:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+.checkbox-group-label:active {
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 /* Respect reduced motion */

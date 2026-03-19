@@ -19,8 +19,8 @@ import { getAllCategories } from '@/lib/products';
 
 // ─── Formspree endpoints ───
 // Replace these with your actual Formspree form IDs after signup at https://formspree.io
-const QUOTE_FORM_ID = 'mzdawvdq';
-const EVAL_FORM_ID = 'mdaljded';
+const QUOTE_FORM_ID = 'mjgalzvb';
+const EVAL_FORM_ID = 'xlgpzvdd';
 
 type ActiveForm = 'quote' | 'evaluation';
 type SubmitStatus = 'idle' | 'submitting' | 'success' | 'error';
@@ -74,12 +74,14 @@ function ContactPageInner() {
   const [quoteStatus, setQuoteStatus] = useState<SubmitStatus>('idle');
   const [evalStatus, setEvalStatus] = useState<SubmitStatus>('idle');
 
-  // Switch to eval form if hash is #evaluation
+  // Switch active form based on query param (?form=evaluation) or legacy hash
   useEffect(() => {
-    if (window.location.hash === '#evaluation') {
+    const form = searchParams.get('form');
+    const hash = window.location.hash;
+    if (form === 'evaluation' || hash === '#evaluation') {
       setActiveForm('evaluation');
     }
-  }, []);
+  }, [searchParams]);
 
   // ─── Quote form submission ───
   async function handleQuoteSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -189,7 +191,7 @@ function ContactPageInner() {
             {/* ─── Left Column: Forms ─── */}
             <div className="lg:w-2/3">
               {/* Form toggle tabs */}
-              <div className="flex gap-1 rounded-xl border border-[var(--color-card-border)] bg-[var(--color-bg-secondary)] p-1">
+              <div id="contact-forms" className="scroll-mt-28 flex gap-1 rounded-xl border border-[var(--color-card-border)] bg-[var(--color-bg-secondary)] p-1">
                 <button
                   onClick={() => setActiveForm('quote')}
                   className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition-all ${
@@ -229,6 +231,24 @@ function ContactPageInner() {
                     <form onSubmit={handleQuoteSubmit} className="space-y-5">
                       {/* Hidden Formspree fields */}
                       <input type="hidden" name="_subject" value="New Quote Request — Magido USA Website" />
+
+                      {/* Form intro */}
+                      <div className="rounded-lg border border-[var(--color-border-light)] bg-[var(--color-bg-secondary)] px-4 py-3.5 text-sm text-[var(--color-text)] leading-relaxed">
+                        Fill in as much detail as you can — the more we know about your application, the faster we can prepare an accurate quote.
+                        If you already have a model in mind, enter it below. Not sure which machine fits your process?{' '}
+                        <Link href="/how-to-choose" className="font-medium text-magido-orange hover:underline">
+                          Use our selector guide
+                        </Link>{' '}
+                        or switch to the{' '}
+                        <button
+                          type="button"
+                          onClick={() => setActiveForm('evaluation')}
+                          className="font-medium text-magido-orange hover:underline"
+                        >
+                          Process Evaluation form
+                        </button>
+                        .
+                      </div>
 
                       {/* Name + Email row */}
                       <div className="grid gap-5 sm:grid-cols-2">
@@ -300,7 +320,7 @@ function ContactPageInner() {
                   PARTS CLEANING EVALUATION FORM
                   ═══════════════════════════════════════════ */}
               {activeForm === 'evaluation' && (
-                <div className="mt-6" id="evaluation">
+                <div className="mt-6">
                   {evalStatus === 'success' ? (
                     <SuccessMessage
                       title="Process Evaluation Request Sent!"
@@ -311,6 +331,16 @@ function ContactPageInner() {
                     <form onSubmit={handleEvalSubmit} className="space-y-5">
                       {/* Hidden Formspree fields */}
                       <input type="hidden" name="_subject" value="Process Evaluation Request — Magido USA Website" />
+
+                      {/* Form intro */}
+                      <div className="rounded-lg border border-[var(--color-border-light)] bg-[var(--color-bg-secondary)] px-4 py-3.5 text-sm text-[var(--color-text)] leading-relaxed">
+                        Every evaluation request is reviewed by our sales team, who will follow up with a tailored recommendation based on your specific cleaning requirements. The more detail you provide, the more useful that recommendation will be.
+                        Response times vary — if you need to connect sooner, prefer to talk it through first?{' '}
+                        <a href="tel:8444624436" className="font-medium text-magido-orange hover:underline">
+                          Call us at 844-462-4436
+                        </a>
+                        .
+                      </div>
 
                       {/* Section: Contact Info */}
                       <SectionLabel label="Your Information" />
@@ -652,7 +682,7 @@ function CheckboxGroup({
         {options.map((opt) => (
           <label
             key={opt}
-            className="flex cursor-pointer items-center gap-2 rounded-lg border border-[var(--color-border-light)] px-3 py-2 text-sm text-[var(--color-text-secondary)] transition-colors hover:border-magido-orange/30 hover:bg-[var(--color-bg-secondary)] has-[:checked]:border-magido-orange/40 has-[:checked]:bg-magido-orange/5 has-[:checked]:text-[var(--color-text)]"
+            className="checkbox-group-label flex cursor-pointer items-center gap-2 rounded-lg border border-[var(--color-border-light)] px-3 py-2 text-sm text-[var(--color-text-secondary)] has-[:checked]:border-magido-orange/40 has-[:checked]:bg-magido-orange/5 has-[:checked]:text-[var(--color-text)]"
           >
             <input
               type="checkbox"

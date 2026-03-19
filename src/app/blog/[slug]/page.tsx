@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { ChevronRight, Clock, ArrowLeft, ArrowRight } from 'lucide-react';
 import { getBlogPost, blogPosts, type BlogSectionImage } from '@/data/blog';
 import { ShareButtons } from '@/components/ShareButtons';
+import CTABanner from '@/components/CTABanner';
 import blogConfig from '@/data/blog-config.json';
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -86,7 +87,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
             {post.heroImage && (
               <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
-                <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                <div className="cta-banner-grid overflow-hidden rounded-xl border border-magido-orange/30">
                   <Image
                     src={post.heroImage}
                     alt={post.heroImageAlt || post.title}
@@ -146,8 +147,11 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             <ShareButtons title={post.title} slug={params.slug} />
           </div>
 
+          {/* ── CTA Banner ── */}
+          <CTABanner className="mt-8" />
+
           {/* ── Prev / Next ── */}
-          <div className="mt-6 flex items-center justify-between">
+          <div className="mt-8 flex items-center justify-between">
             {prevPost ? (
               <Link
                 href={`/blog/${prevPost.slug}`}
