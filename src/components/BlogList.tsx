@@ -179,6 +179,56 @@ function DefaultIllustration() {
   );
 }
 
+function IllustrationWaterBased() {
+  return (
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
+      <rect width="80" height="80" rx="12" fill="#315687" fillOpacity="0.08"/>
+      {/* Washer cabinet */}
+      <rect x="18" y="22" width="44" height="38" rx="3" fill="#315687" fillOpacity="0.12" stroke="#315687" strokeWidth="2"/>
+      {/* Door circle */}
+      <circle cx="40" cy="41" r="12" stroke="#315687" strokeWidth="1.5" fill="none" opacity="0.5"/>
+      <circle cx="40" cy="41" r="7" stroke="#315687" strokeWidth="1.5" fill="none" opacity="0.3"/>
+      {/* Water droplets */}
+      <path d="M54 12c0 3.5-3 6-3 6s-3-2.5-3-6a3 3 0 0 1 6 0z" fill="#eb6c1c" fillOpacity="0.7"/>
+      <path d="M64 18c0 2.5-2 4.5-2 4.5S60 21 60 18a2 2 0 0 1 4 0z" fill="#315687" fillOpacity="0.5"/>
+      {/* Wave lines at bottom */}
+      <path d="M18 62c4-2 6-2 10 0s6 2 10 0 6-2 10 0 6-2 10 0" stroke="#eb6c1c" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
+      {/* Control panel dots */}
+      <circle cx="26" cy="28" r="2" fill="#eb6c1c" fillOpacity="0.7"/>
+      <circle cx="33" cy="28" r="1.5" fill="#315687" fillOpacity="0.4"/>
+    </svg>
+  );
+}
+
+function IllustrationAutomotive() {
+  return (
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
+      <rect width="80" height="80" rx="12" fill="#eb6c1c" fillOpacity="0.08"/>
+      {/* Gear large */}
+      <circle cx="32" cy="42" r="14" stroke="#315687" strokeWidth="2" fill="#315687" fillOpacity="0.1"/>
+      <circle cx="32" cy="42" r="5" stroke="#315687" strokeWidth="1.5" fill="white" fillOpacity="0.6"/>
+      {/* Gear teeth large */}
+      <rect x="30" y="25" width="4" height="5" rx="1" fill="#315687" fillOpacity="0.4"/>
+      <rect x="30" y="54" width="4" height="5" rx="1" fill="#315687" fillOpacity="0.4"/>
+      <rect x="15" y="40" width="5" height="4" rx="1" fill="#315687" fillOpacity="0.4"/>
+      <rect x="44" y="40" width="5" height="4" rx="1" fill="#315687" fillOpacity="0.4"/>
+      <rect x="19" y="29" width="4" height="5" rx="1" fill="#315687" fillOpacity="0.4" transform="rotate(45 21 31.5)"/>
+      <rect x="41" y="29" width="4" height="5" rx="1" fill="#315687" fillOpacity="0.4" transform="rotate(-45 43 31.5)"/>
+      {/* Gear small */}
+      <circle cx="55" cy="30" r="9" stroke="#eb6c1c" strokeWidth="1.5" fill="#eb6c1c" fillOpacity="0.1"/>
+      <circle cx="55" cy="30" r="3.5" stroke="#eb6c1c" strokeWidth="1.5" fill="white" fillOpacity="0.6"/>
+      {/* Gear teeth small */}
+      <rect x="53" y="18" width="3" height="4" rx="1" fill="#eb6c1c" fillOpacity="0.5"/>
+      <rect x="53" y="38" width="3" height="4" rx="1" fill="#eb6c1c" fillOpacity="0.5"/>
+      <rect x="43" y="28" width="4" height="3" rx="1" fill="#eb6c1c" fillOpacity="0.5"/>
+      <rect x="63" y="28" width="4" height="3" rx="1" fill="#eb6c1c" fillOpacity="0.5"/>
+      {/* Checkmark — clean result */}
+      <circle cx="58" cy="58" r="10" fill="#22c55e" fillOpacity="0.15" stroke="#22c55e" strokeWidth="1.5"/>
+      <path d="M53 58l3.5 3.5 7-7" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  );
+}
+
 // illustrationKey (from blog.json) → SVG component
 const ILLUSTRATION_MAP: Record<string, React.ReactNode> = {
   'aqueous-vs-solvent':  <IllustrationAqueousVsSolvent />,
@@ -189,6 +239,8 @@ const ILLUSTRATION_MAP: Record<string, React.ReactNode> = {
   'solution':            <IllustrationSolution />,
   'servicing':           <IllustrationServicing />,
   'medical':             <IllustrationMedical />,
+  'water-based':         <IllustrationWaterBased />,
+  'automotive':          <IllustrationAutomotive />,
   'default':             <DefaultIllustration />,
 };
 

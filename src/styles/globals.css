@@ -110,10 +110,33 @@
 
   /* Product image background — Option G: Orange warm floor glow */
   .product-image-bg {
+    position: relative;
     background:
       radial-gradient(ellipse 70% 30% at 50% 100%, rgba(235, 108, 28, 0.10) 0%, transparent 70%),
       radial-gradient(ellipse 90% 70% at 50% 20%, #dce6f0 0%, #c8d6e6 100%);
     border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .product-image-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 0;
+    /* Perspective grid — same line color as hero, fades out at midpoint */
+    background-image:
+      linear-gradient(rgba(49, 86, 135, 0.22) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(49, 86, 135, 0.22) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center bottom;
+    /* Perspective tilt — grid recedes toward the vertical center */
+    transform: perspective(300px) rotateX(35deg);
+    transform-origin: center bottom;
+    /* Fade out toward the middle so only the bottom half shows */
+    mask-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 40%, transparent 65%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 40%, transparent 65%);
   }
 
   .dark .product-image-bg {
@@ -123,12 +146,38 @@
     border-radius: 1rem;
   }
 
+  .dark .product-image-bg::before {
+    background-image:
+      linear-gradient(rgba(49, 86, 135, 0.30) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(49, 86, 135, 0.30) 1px, transparent 1px);
+  }
+
   /* Product card background — Option G: Orange warm floor glow */
   .product-card-image-bg {
+    position: relative;
     background:
       radial-gradient(ellipse 70% 30% at 50% 100%, rgba(235, 108, 28, 0.10) 0%, transparent 70%),
       radial-gradient(ellipse 90% 70% at 50% 20%, #dce6f0 0%, #c8d6e6 100%);
     border-radius: 0.75rem;
+    overflow: hidden;
+  }
+
+  .product-card-image-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+      linear-gradient(rgba(49, 86, 135, 0.22) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(49, 86, 135, 0.22) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center bottom;
+    transform: perspective(200px) rotateX(35deg);
+    transform-origin: center bottom;
+    mask-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 40%, transparent 65%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 40%, transparent 65%);
   }
 
   .dark .product-card-image-bg {
@@ -136,6 +185,12 @@
       radial-gradient(ellipse 70% 30% at 50% 100%, rgba(235, 108, 28, 0.12) 0%, transparent 70%),
       radial-gradient(ellipse 90% 70% at 50% 20%, #16202e 0%, #08111c 100%);
     border-radius: 0.75rem;
+  }
+
+  .dark .product-card-image-bg::before {
+    background-image:
+      linear-gradient(rgba(49, 86, 135, 0.30) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(49, 86, 135, 0.30) 1px, transparent 1px);
   }
 
   /* Product halo effect for category hero images */
@@ -622,10 +677,13 @@
 
 /* ── CTABanner — orange grid background ── */
 .cta-banner-grid {
+  background-color: rgba(10, 22, 40, 0.45);
   background-image:
     linear-gradient(rgba(235, 108, 28, 0.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(235, 108, 28, 0.08) 1px, transparent 1px);
   background-size: 40px 40px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 /* ── Checkbox labels caught by the bg-magido-orange wildcard above.

@@ -140,7 +140,7 @@ function CatalogSection({
         </div>
 
         {/* Description + Images */}
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-8 lg:grid-cols-3 lg:items-stretch">
           <div className="lg:col-span-2 space-y-4">
             <div className="text-sm leading-relaxed text-[var(--color-text-secondary)] space-y-3 text-justify">
               {typeof description === 'string' ? <p>{description}</p> : description}
@@ -173,11 +173,11 @@ function CatalogSection({
 
           {/* Images */}
           {images && images.length > 0 && (
-            <div className="lg:self-start lg:sticky lg:top-20 flex flex-row flex-wrap lg:flex-col gap-3 items-center">
+            <div className="lg:sticky lg:top-20 flex flex-row flex-wrap lg:flex-col gap-3 items-center lg:items-stretch lg:justify-start">
               {images.map((img) => (
                 <div
                   key={img.src}
-                  className="product-card-image-bg relative rounded-xl overflow-hidden border border-[var(--color-border)] w-36 h-36 lg:w-full lg:h-44 flex-shrink-0"
+                  className="product-card-image-bg relative rounded-xl overflow-hidden border border-[var(--color-border)] w-36 h-36 lg:w-full lg:flex-1 lg:min-h-[8rem] lg:max-h-[14rem] flex-shrink-0"
                 >
                   <Image
                     src={img.src}
@@ -1352,7 +1352,7 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/jolly/j320-1.webp', alt: 'Jolly J320 Rotary Drum Washer', series: 'Jolly', model: 'J320' },
+          { src: '/images/products/jolly/j320.webp', alt: 'Jolly J320 Rotary Drum Washer', series: 'Jolly', model: 'J320' },
           { src: '/images/products/spira-1b/sp480.webp', alt: 'Spira 1b Series SP480 Rotary Drum Washer', series: 'Spira 1b', model: 'SP480' },
           { src: '/images/products/spira-1b/sp950.webp', alt: 'Spira SP950 Rotary Drum Washer', series: 'Spira 1b', model: 'SP950' },
         ]}

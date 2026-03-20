@@ -103,8 +103,15 @@ export function Header() {
             href="https://magido.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 text-xs text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange"
+            className="flex items-center gap-1.5 text-xs text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange"
           >
+            <Image
+              src="/images/italian-flag.svg"
+              alt="Italy"
+              width={14}
+              height={10}
+              className="flex-shrink-0"
+            />
             Magido Italy
             <ExternalLink className="h-3 w-3" />
           </a>
@@ -487,8 +494,15 @@ export function Header() {
                     href="https://magido.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-xs text-[var(--color-text-muted)] transition-colors hover:text-magido-orange"
+                    className="flex items-center gap-1.5 text-xs text-[var(--color-text-muted)] transition-colors hover:text-magido-orange"
                   >
+                    <Image
+                      src="/images/italian-flag.svg"
+                      alt="Italy"
+                      width={14}
+                      height={10}
+                      className="flex-shrink-0"
+                    />
                     Magido Italy
                     <ExternalLink className="h-3 w-3" />
                   </a>

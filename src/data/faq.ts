@@ -89,7 +89,8 @@ export const faqCategories: FaqCategory[] = [
   <li><strong>Contamination type</strong> — heavy carbon deposits, cutting oils, coolants, and forming compounds each respond differently to wash temperatures and chemistry</li>
   <li><strong>Floor space</strong> — compact manual washers (<a href="/products/manual-washers/dg">DG</a>, <a href="/products/manual-washers/l">L</a>, <a href="/products/manual-washers/hp">HP</a>) and the <a href="/products/top-load-washers/eco">Eco</a> series are ideal for smaller shops; automated systems require more space</li>
 </ul>
-<p>We offer free process evaluations — <a href="/contact#evaluation">contact us</a> and we'll recommend the best fit for your specific operation.</p>`,
+<p>Not sure where to start? Our <a href="/how-to-choose">How to Choose a Parts Washer</a> guide walks through each of these factors in detail and includes an interactive <strong>Product Selector</strong> to match your application to the right machine family, plus a <strong>Capacity Calculator</strong> to estimate how many parts each model can handle per shift.</p>
+<p>We also offer free process evaluations — <a href="/contact?form=evaluation#contact-forms">contact us</a> and we'll recommend the best fit for your specific operation.</p>`,
       },
       {
         id: 'difference-top-front-load',

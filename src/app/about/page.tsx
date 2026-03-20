@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ChevronRight, ArrowRight, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -22,21 +23,77 @@ export default function AboutPage() {
       </nav>
       <section className="hero-bg px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
-          <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">About Magido USA</p>
-          <h1 className="mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">Leaders in Aqueous Cleaning Solutions</h1>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg">Engineered in Italy. Built from stainless steel. Supported across the United States.</p>
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
+
+            {/* Text */}
+            <div className="flex-1 min-w-0">
+              <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">About Magido USA</p>
+              <h1 className="mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">Leaders in Aqueous Cleaning Solutions</h1>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg">Engineered in Italy. Built from stainless steel. Supported across the United States.</p>
+            </div>
+
+            {/* Italian facility photo */}
+            <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
+              <div className="cta-banner-grid overflow-hidden rounded-xl border border-magido-orange/30">
+                <Image
+                  src="/images/about/magido-sede-italia.webp"
+                  alt="Magido manufacturing facility in Italy"
+                  width={480}
+                  height={280}
+                  className="h-52 w-full object-cover object-center lg:h-60"
+                  priority
+                />
+              </div>
+              <p className="mt-2 text-center text-xs text-white/40">
+                Magido — Manufacturing facility, Italy
+              </p>
+            </div>
+
+          </div>
         </div>
       </section>
       <article className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-3xl space-y-8 text-[var(--color-text-secondary)] leading-relaxed">
           <section>
             <h2 className="font-display text-2xl font-bold text-[var(--color-text)]">Our Story</h2>
-            <p className="mt-3">Magido has been engineering and manufacturing parts washing systems from our facility in Italy for decades. What began as a commitment to building better cleaning equipment has grown into one of the broadest lines of aqueous parts washing systems available from a single manufacturer — 84 models across 7 product categories.</p>
-            <p className="mt-3">Every Magido machine is built entirely from AISI 304 stainless steel. Not painted mild steel. Not powder-coated carbon steel. True corrosion-resistant stainless. That commitment to materials is what separates Magido from the rest of the market.</p>
+            <div className="mt-3 flex flex-col gap-6 sm:flex-row sm:items-start">
+              <div className="flex-1 space-y-3">
+                <p>Magido has been engineering and manufacturing parts washing systems from our facility in Italy for decades. What began as a commitment to building better cleaning equipment has grown into one of the broadest lines of aqueous parts washing systems available from a single manufacturer — 84 models across 7 product categories.</p>
+                <p>Every Magido machine is built entirely from AISI 304 stainless steel. Not painted mild steel. Not powder-coated carbon steel. True corrosion-resistant stainless. That commitment to materials is what separates Magido from the rest of the market.</p>
+              </div>
+              <div className="w-full flex-shrink-0 sm:w-52 lg:w-60">
+                <div className="overflow-hidden rounded-xl border border-[var(--color-card-border)]">
+                  <Image
+                    src="/images/about/magido-welding.webp"
+                    alt="Welders assembling Magido stainless steel parts washers"
+                    width={320}
+                    height={400}
+                    className="h-56 w-full object-cover object-center sm:h-64"
+                  />
+                </div>
+                <p className="mt-2 text-center text-xs text-[var(--color-text-muted)]">Stainless steel fabrication</p>
+              </div>
+            </div>
           </section>
           <section>
             <h2 className="font-display text-2xl font-bold text-[var(--color-text)]">Why Stainless Steel Changes Everything</h2>
-            <p className="mt-3">Most parts washers are built from mild steel with a painted finish that degrades under hot alkaline cleaning solutions. Magido builds every component — tank, cabinet, wash basket, nozzle headers, internal plumbing — from AISI 304 stainless steel. This is not an upgrade option. It is standard across the entire product line.</p>
+            <div className="mt-3 flex flex-col gap-6 sm:flex-row-reverse sm:items-start">
+              <div className="flex-1">
+                <p>Most parts washers are built from mild steel with a painted finish that degrades under hot alkaline cleaning solutions. Magido builds every component — tank, cabinet, wash basket, nozzle headers, internal plumbing — from AISI 304 stainless steel. This is not an upgrade option. It is standard across the entire product line.</p>
+              </div>
+              <div className="w-full flex-shrink-0 sm:w-52 lg:w-60">
+                <div className="overflow-hidden rounded-xl border border-[var(--color-card-border)]">
+                  <Image
+                    src="/images/about/magido-parts-washer.webp"
+                    alt="Magido stainless steel parts washers ready for delivery"
+                    width={320}
+                    height={240}
+                    className="h-48 w-full object-cover object-center"
+                  />
+                </div>
+                <p className="mt-2 text-center text-xs text-[var(--color-text-muted)]">Ready for delivery — Sturtevant, WI</p>
+              </div>
+            </div>
           </section>
           <section>
             <h2 className="font-display text-2xl font-bold text-[var(--color-text)]">What Sets Us Apart</h2>

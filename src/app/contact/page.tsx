@@ -3,6 +3,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   ChevronRight,
   Phone,
@@ -150,17 +151,41 @@ function ContactPageInner() {
       {/* ─── Hero ─── */}
       <section className="hero-bg px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
-          <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
-            Get In Touch
-          </p>
-          <h1 className="mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Let&apos;s Find Your Solution
-          </h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
-            Whether you need a quote on a specific machine or want us to evaluate your
-            parts cleaning process, our team is ready to help. Every recommendation is
-            backed by decades of aqueous cleaning expertise.
-          </p>
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
+
+            {/* Text */}
+            <div className="flex-1 min-w-0">
+              <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
+                Get In Touch
+              </p>
+              <h1 className="mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                Let&apos;s Find Your Solution
+              </h1>
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
+                Whether you need a quote on a specific machine or want us to evaluate your
+                parts cleaning process, our team is ready to help. Every recommendation is
+                backed by decades of aqueous cleaning expertise.
+              </p>
+            </div>
+
+            {/* Facility photo */}
+            <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
+              <div className="cta-banner-grid overflow-hidden rounded-xl border border-magido-orange/30">
+                <Image
+                  src="/images/magido-facility.webp"
+                  alt="Magido USA facility in Sturtevant, Wisconsin"
+                  width={480}
+                  height={280}
+                  className="h-52 w-full object-cover object-center lg:h-60"
+                  priority
+                />
+              </div>
+              <p className="mt-2 text-center text-xs text-white/40">
+                Magido USA — Sturtevant, WI
+              </p>
+            </div>
+
+          </div>
         </div>
       </section>
 

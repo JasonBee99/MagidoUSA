@@ -227,10 +227,17 @@ export function ProductCard({
             )}
           </div>
 
-          {/* Series badge — bottom-left of image */}
+          {/* Series badge — top left */}
           {seriesName && (
-            <div className="absolute left-0 top-0 rounded-br-lg bg-[#eb6c1c] px-3 py-1 text-xs font-bold text-white">
+            <div className="absolute left-0 top-0 rounded-br-lg rounded-tl-lg bg-[#eb6c1c] px-3 py-1 text-xs font-bold text-white">
               {seriesName}
+            </div>
+          )}
+
+          {/* Model badge — top right */}
+          {product.model && (
+            <div className="absolute right-0 top-0 rounded-bl-lg rounded-tr-lg bg-[#315687] px-3 py-1 text-xs font-bold text-white">
+              {product.model}
             </div>
           )}
 

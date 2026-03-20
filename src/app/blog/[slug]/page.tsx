@@ -87,7 +87,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
             {post.heroImage && (
               <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
-                <div className="cta-banner-grid overflow-hidden rounded-xl border border-magido-orange/30">
+                <div className="relative cta-banner-grid overflow-hidden rounded-xl border border-magido-orange/30">
                   <Image
                     src={post.heroImage}
                     alt={post.heroImageAlt || post.title}
@@ -96,6 +96,24 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     className="h-56 w-full object-contain p-4 lg:h-64"
                     priority
                   />
+                  {post.heroSeriesUrl && post.heroSeriesName && (
+                    <a
+                      href={post.heroSeriesUrl}
+                      className="absolute left-0 top-0 z-10 rounded-br-lg bg-magido-orange px-2.5 py-1 text-xs font-bold text-white transition-opacity hover:opacity-80"
+                      aria-label={`View ${post.heroSeriesName} series`}
+                    >
+                      {post.heroSeriesName} Series
+                    </a>
+                  )}
+                  {post.heroProductUrl && post.heroModel && (
+                    <a
+                      href={post.heroProductUrl}
+                      className="absolute right-0 top-0 z-10 rounded-bl-lg bg-magido-blue px-2.5 py-1 text-xs font-bold text-white transition-opacity hover:opacity-80"
+                      aria-label={`View ${post.heroModel} product page`}
+                    >
+                      {post.heroModel}
+                    </a>
+                  )}
                 </div>
               </div>
             )}
@@ -106,7 +124,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       {/* ── Article body ── */}
       <article className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-4xl">
 
           <div className="space-y-10">
             {post.sections.map((section, i) => (

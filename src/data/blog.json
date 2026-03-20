@@ -443,7 +443,11 @@
     "readTime": "10 min read",
     "heroImage": "/images/products/x53/l160.webp",
     "heroImageAlt": "Magido X53 front load aqueous parts washer — water-based industrial cleaning system",
-    "illustrationKey": "default",
+    "heroSeriesName": "X53",
+    "heroModel": "L160",
+    "heroProductUrl": "/products/front-load-washers/l160",
+    "heroSeriesUrl": "/products/front-load-washers?series=x53-series",
+    "illustrationKey": "water-based",
     "sections": [
       {
         "content": "Water-based parts washing — also called aqueous parts washing — has replaced solvent cleaning as the standard in most industrial applications over the past two decades. The shift was driven by environmental regulations, worker safety requirements, and the fact that modern aqueous systems clean as well as or better than solvents for the majority of industrial contamination types. If you are evaluating aqueous cleaning for the first time, or trying to get more out of a system you already have, this guide covers everything you need to know. For a direct comparison of aqueous and solvent cleaning side by side, see our <a href=\"/blog/aqueous-vs-solvent-parts-cleaning\" class=\"text-magido-orange hover:underline\">aqueous vs. solvent parts cleaning</a> post."
@@ -561,7 +565,11 @@
     "readTime": "7 min read",
     "heroImage": "/images/products/gold-2b/g800.webp",
     "heroImageAlt": "Magido Gold 2b dual-stage in-line belt conveyor aqueous parts washer — automotive production line cleaning",
-    "illustrationKey": "default",
+    "heroSeriesName": "Gold 2b",
+    "heroModel": "G800",
+    "heroProductUrl": "/products/in-line-belt-conveyor-washers/g800",
+    "heroSeriesUrl": "/products/in-line-belt-conveyor-washers?series=gold-2b-series",
+    "illustrationKey": "automotive",
     "sections": [
       {
         "content": "Automotive manufacturing imposes some of the most demanding parts cleaning requirements of any industry. Engine blocks, transmission components, brake assemblies, and precision powertrain parts must meet tight cleanliness specifications — often defined in gravimetric terms or particle count standards per VDA 19 or ISO 16232. These requirements have tightened steadily as engine tolerances have decreased and electrification has introduced new sensitivity to ionic contamination on electrical components. Aqueous parts washers are the standard cleaning technology in automotive production. This guide covers the machine types used at each production scale, the cleanliness standards that apply, and the EV-specific cleaning challenges emerging across the industry."

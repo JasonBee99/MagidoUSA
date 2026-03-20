@@ -30,6 +30,10 @@ export interface BlogPost {
   readTime: string;
   heroImage?: string;
   heroImageAlt?: string;
+  heroSeriesName?: string;
+  heroModel?: string;
+  heroProductUrl?: string;
+  heroSeriesUrl?: string;
   illustrationKey: string;
   sections: BlogSection[];
 }
