@@ -67,13 +67,14 @@ export default function BlogPage() {
             </div>
             {/* Image */}
             <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
-              <div className="cta-banner-grid overflow-hidden rounded-xl border border-magido-orange/30">
+              <div className="overflow-hidden rounded-xl border border-magido-orange/30">
                 <Image
                   src="/images/magido-facility.webp"
                   alt="Magido USA — industrial aqueous parts washer facility"
                   width={480}
-                  height={280}
-                  className="h-52 w-full object-cover object-center lg:h-60"
+                  height={320}
+                  className="w-full object-cover object-center"
+                  style={{ height: '20em' }}
                   priority
                 />
               </div>
