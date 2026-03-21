@@ -16,6 +16,8 @@ export interface Solution {
   metaTitle: string;
   metaDescription: string;
   intro: string;
+  heroImage?: string;
+  heroImageAlt?: string;
   sections: SolutionSection[];
   comparisonTable?: ComparisonTable;
   verdict?: string;

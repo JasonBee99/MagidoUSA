@@ -33,7 +33,7 @@ export function HomeHero() {
               {/* Description */}
               <p className="mt-4 text-base leading-relaxed text-gray-300 sm:text-lg">
                 The newest addition to the Magido lineup. Heavy-duty front-loading design for large,
-                heavy components — built entirely from AISI 304 stainless steel with automated wash cycles.
+                heavy components — built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a> with automated wash cycles.
               </p>
 
               {/* CTAs */}

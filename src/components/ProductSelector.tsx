@@ -23,10 +23,12 @@ interface AlsoItem {
   url: string;
 }
 
+import type { ReactNode } from 'react';
+
 interface Result {
   name: string;
   series: string;
-  tagline: string;
+  tagline: ReactNode;
   features: { label: string; val: string }[];
   url: string;
   cta: string;
@@ -73,8 +75,7 @@ const RESULTS: Record<string, Result> = {
   manual: {
     name: 'Manual Cabinet Washers',
     series: 'DG / L / HP Series',
-    tagline:
-      'Heated sink-style cleaning stations for hands-on shop-floor degreasing. Simple, durable, and built entirely from AISI 304 stainless steel.',
+    tagline: <>Heated sink-style cleaning stations for hands-on shop-floor degreasing. Simple, durable, and built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>.</>,
     features: [
       { label: 'Operation',  val: 'Manual'           },
       { label: 'Models',     val: '6 available'      },

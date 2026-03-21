@@ -160,6 +160,7 @@ const solutionRoutes: MetadataRoute.Sitemap = [
   'cleaning-electrical-and-electronic-components',
   'cleaning-aerospace-components',
   'cleaning-medical-device-components',
+  'aisi-304-stainless-steel-parts-washers',
 ].map((slug) => ({
   url: `${BASE}/solutions/${slug}`,
   lastModified: new Date('2025-01-01'),

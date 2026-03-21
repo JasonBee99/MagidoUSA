@@ -48,7 +48,7 @@ export default function FaqPage() {
                 Frequently Asked Questions
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
-                Common questions about Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer selection, operation, detergents, removing cutting oil and coolant from machined parts, AISI 304 stainless steel construction, made in Italy.
+                Common questions about Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer selection, operation, detergents, removing cutting oil and coolant from machined parts, <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a> construction, made in Italy.
               </p>
             </div>
             {/* Image */}

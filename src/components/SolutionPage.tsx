@@ -55,28 +55,49 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
             <span style={{ color: 'var(--color-text-muted)' }}>{solution.title}</span>
           </nav>
 
-          {/* Badge */}
-          <div className="mb-4">
-            <span
-              className="inline-block text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-              style={{ backgroundColor: '#EB6C1C20', color: '#EB6C1C' }}
-            >
-              {isComparison ? 'Comparison Guide' : 'Application Guide'}
-            </span>
-          </div>
+          <div className={`flex flex-col gap-8 ${solution.heroImage ? 'lg:flex-row lg:items-center lg:gap-12' : ''}`}>
+            {/* Text */}
+            <div className="flex-1 min-w-0">
+              {/* Badge */}
+              <div className="mb-4">
+                <span
+                  className="inline-block text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
+                  style={{ backgroundColor: '#EB6C1C20', color: '#EB6C1C' }}
+                >
+                  {isComparison ? 'Comparison Guide' : 'Application Guide'}
+                </span>
+              </div>
 
-          <h1
-            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
-            style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
-          >
-            {solution.headline}
-          </h1>
-          <p
-            className="text-lg md:text-xl leading-relaxed max-w-3xl"
-            style={{ color: 'var(--color-text-secondary)' }}
-          >
-            {solution.intro}
-          </p>
+              <h1
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
+                style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
+              >
+                {solution.headline}
+              </h1>
+              <p
+                className="text-lg md:text-xl leading-relaxed max-w-3xl"
+                style={{ color: 'var(--color-text-secondary)' }}
+              >
+                {solution.intro}
+              </p>
+            </div>
+
+            {/* Hero image — optional */}
+            {solution.heroImage && (
+              <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
+                <div className="relative overflow-hidden rounded-xl border border-magido-orange/30" style={{ height: '18em' }}>
+                  <Image
+                    src={solution.heroImage}
+                    alt={solution.heroImageAlt ?? solution.title}
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 1024px) 100vw, 384px"
+                    priority
+                  />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </section>
 
@@ -280,6 +301,7 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
                   {[
                     { href: '/solutions/aqueous-vs-solvent-parts-washers', label: 'Aqueous vs. Solvent Washers' },
                     { href: '/solutions/spray-cabinet-vs-immersion-parts-washers', label: 'Spray Cabinet vs. Immersion' },
+                    { href: '/solutions/aisi-304-stainless-steel-parts-washers', label: 'AISI 304 Stainless Steel' },
                     { href: '/solutions/cleaning-brake-components', label: 'Cleaning Brake Components' },
                     { href: '/solutions/removing-cutting-oil-and-coolant', label: 'Removing Cutting Oil & Coolant' },
                     { href: '/solutions/industrial-parts-washing-for-mro', label: 'Parts Washing for MRO' },

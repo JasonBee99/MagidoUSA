@@ -59,7 +59,7 @@ export default function SolutionsIndexPage() {
                 className="text-lg md:text-xl max-w-2xl leading-relaxed"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
-                Practical guides to choosing the right industrial aqueous parts washer — AISI 304 stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer vs solvent, cutting oil and coolant removal, machined parts cleaning for automotive, aerospace, and machining.
+                Practical guides to choosing the right industrial aqueous parts washer — <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a> spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer vs solvent, cutting oil and coolant removal, machined parts cleaning for automotive, aerospace, and machining.
               </p>
             </div>
             {/* Image */}

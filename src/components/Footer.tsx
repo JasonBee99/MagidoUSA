@@ -23,7 +23,7 @@ export function Footer() {
               />
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)]">
-              Leaders in Aqueous Cleaning Solutions. Every machine built from AISI 304 stainless steel.
+              Leaders in Aqueous Cleaning Solutions. Every machine built from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange hover:text-[var(--color-text)]">AISI 304 stainless steel</a>.
             </p>
             <div className="mt-4 space-y-2">
               <a href="tel:8444624436" className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange">

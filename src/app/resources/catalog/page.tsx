@@ -99,11 +99,11 @@ function SpecHead({ cols }: { cols: string[] }) {
 }
 
 // ─── Feature / Option list ──────────────────────────────────────────────────
-function FeatureList({ items }: { items: string[] }) {
+function FeatureList({ items }: { items: React.ReactNode[] }) {
   return (
     <ul className="mt-3 space-y-1.5">
-      {items.map((item) => (
-        <li key={item} className="flex items-start gap-2 text-sm text-[var(--color-text-secondary)]">
+      {items.map((item, idx) => (
+        <li key={idx} className="flex items-start gap-2 text-sm text-[var(--color-text-secondary)]">
           <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-magido-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
@@ -131,7 +131,7 @@ function CatalogSection({
   title: string;
   description: string | React.ReactNode;
   images?: { src: string; alt: string; model?: string; series?: string }[];
-  features: string[];
+  features: React.ReactNode[];
   options: string[];
   safety?: string[];
   specs: React.ReactNode;
@@ -300,7 +300,7 @@ export default function CatalogPage() {
               <div className="mt-4 space-y-3 text-sm leading-relaxed text-[var(--color-text-secondary)] text-justify">
                 <p>
                   MAGIDO is recognized as one of the industry&apos;s leading manufacturers of aqueous parts
-                  washing systems. Every machine is constructed entirely from AISI 304 stainless steel —
+                  washing systems. Every machine is constructed entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a> —
                   the same material used in food-grade and pharmaceutical environments — ensuring
                   corrosion resistance, longevity, and easy maintenance in even the harshest industrial settings.
                 </p>
@@ -349,7 +349,7 @@ export default function CatalogPage() {
             <p>
               Magido DG Series manual sink-style aqueous parts washers are engineered to handle the
               most rigorous challenges found in industrial and automotive maintenance parts cleaning
-              applications. Built entirely from AISI 304 stainless steel, the DG8 and DG9 feature a
+              applications. Built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>, the DG8 and DG9 feature a
               foot-pedal-regulated, hand-held flow-through cleaning brush that delivers heated aqueous
               solution directly to the part surface.
             </p>
@@ -373,7 +373,7 @@ export default function CatalogPage() {
           { src: '/images/products/dg/dg9-1.webp', alt: 'DG9 Sink-Style Manual Parts Washer', series: 'DG', model: 'DG-9' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'External Magnetic Drive Pump (seal-free)',
           'Foot-Pedal Regulated Flo-Thru Brush',
           'Electrical Heater with Thermostat Control',
@@ -439,7 +439,7 @@ export default function CatalogPage() {
               solution precisely where it&apos;s needed while scrubbing.
             </p>
             <p>
-              Like all Magido products, the L Series is built entirely from AISI 304 stainless
+              Like all Magido products, the L Series is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless</a>
               steel and operates on standard 115V power. The magnetic drive pump and liquid
               level shut-off provide reliable, maintenance-light operation in demanding shop
               environments.
@@ -451,7 +451,7 @@ export default function CatalogPage() {
           { src: '/images/products/l-series/l10-1.webp', alt: 'L10 Vat-Style Manual Parts Washer', series: 'L Series', model: 'L-10' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'External Magnetic Drive Pump',
           'Flo-Thru Brush with Flexible Spigot',
           'Removable Work Shelves',
@@ -506,7 +506,7 @@ export default function CatalogPage() {
           <>
             <p>
               The Magido HP25 and HP30 are heated water blasting cabinets built entirely from
-              AISI 304 stainless steel. Developed for technicians who need to dramatically reduce
+              <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>. Developed for technicians who need to dramatically reduce
               cleaning time, the HP Series uses a high-pressure piston-drive pump to deliver a
               heated aqueous cleaning solution at up to 870 PSI through an easy-to-handle spray
               wand — blasting away grease, carbon deposits, and industrial soils that would
@@ -532,7 +532,7 @@ export default function CatalogPage() {
           { src: '/images/products/hp/hp30.webp', alt: 'HP30 High-Pressure Manual Parts Washer', series: 'HP', model: 'HP-30' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Piston-Drive Pump — Up to 870 PSI',
           'Ergonomic High-Pressure Spray Wand',
           'Foot Pedal Operation',
@@ -603,7 +603,7 @@ export default function CatalogPage() {
           <>
             <p>
               The X81 Series parts washers are automatic spray jet wash systems constructed using
-              AISI 304 stainless steel, available in three models (L-35, L-55, L-90) with turntable
+              <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>, available in three models (L-35, L-55, L-90) with turntable
               diameters ranging from 15" to 31". Each system features a motorized rotating turntable
               and swing-away spray manifold fitted with optimized V-Jet nozzles that use water pressure
               to thoroughly clean small to medium-sized parts without manual intervention.
@@ -629,7 +629,7 @@ export default function CatalogPage() {
           { src: '/images/products/x81/l90-1.webp', alt: 'X81 Series L90 Top Load Parts Washer', series: 'X81', model: 'L90' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Automatic Rotary Turntable with Sprocket Drive',
           'Swing-Away V-Jet Spray Manifolds',
           'Calibrated V-Jet Spray Nozzle System',
@@ -727,7 +727,7 @@ export default function CatalogPage() {
           { src: '/images/products/x51/l152-1.webp', alt: 'X51 Series L152 Top Load Washer', series: 'X51', model: 'L152' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Automatic Rotary Turntable with Sprocket Drive',
           'Clamshell Lid Design — Spray Bars Close to Parts',
           'Up to 2 Spray Bars with 58 V-Jet Nozzles',
@@ -822,7 +822,7 @@ export default function CatalogPage() {
           { src: '/images/products/x51hp/l122hp.webp', alt: 'X51 HP Series L122HP Top Load Washer', series: 'X51 HP', model: 'L122HP' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Automatic Rotary Turntable with Containment Ring',
           'V-Jet Spray Manifold System',
           'Integrated High-Pressure Spray Wand (870 PSI / 3.7 GPM)',
@@ -912,7 +912,7 @@ export default function CatalogPage() {
           { src: '/images/products/x51-2/l153.webp', alt: 'X51/2 Series L153 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L153' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Dual Tanks — Independent Wash & Rinse Stages',
           'Siemens PLC with Weintek HMI Touch Screen',
           'Automatic Rotary Turntable',
@@ -1009,7 +1009,7 @@ export default function CatalogPage() {
           { src: '/images/products/fls/fls35-open.webp', alt: 'FLS35 Heavy-Duty Top Load Washer Open', series: 'FLS', model: 'FLS-35' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Heavy-Duty Rotary Turntable — Up to 1,500 lbs',
           'High-Flow Pump System (up to 75 GPM)',
           'High Spray Pressure (up to 60 PSI)',
@@ -1104,7 +1104,7 @@ export default function CatalogPage() {
           { src: '/images/products/x53/l210.webp', alt: 'X53 Series L210 Front Load Parts Washer', series: 'X53', model: 'L210' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Front-Loading Door for Easy Part Access',
           'Fixed Platform with Angled V-Jet Spray Ramp',
           'Automatic Rotary Turntable',
@@ -1197,7 +1197,7 @@ export default function CatalogPage() {
           { src: '/images/products/x53-2/l212.webp', alt: 'X53/2 Series L212 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L212' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Dual Equal-Capacity Wash & Rinse Tanks',
           'Siemens PLC with Weintek HMI Touch Screen',
           'Front-Loading Door — Easy Heavy Part Access',
@@ -1300,7 +1300,7 @@ export default function CatalogPage() {
           { src: '/images/products/agita/a1100.webp', alt: 'Agita A1100 Immersion Parts Washer', series: 'Agita', model: 'A1100' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Heated Immersion Bath with Mechanical Agitation',
           'Large-Capacity Insulated Tank (70–180 gal)',
           'Temperature Range: Ambient to 170°F',
@@ -1388,7 +1388,7 @@ export default function CatalogPage() {
           { src: '/images/products/spira-1b/sp950.webp', alt: 'Spira SP950 Rotary Drum Washer', series: 'Spira 1b', model: 'SP950' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Helical Auger Drum — Continuous Parts Flow',
           'Dual-Action Cleaning: Submersion + Spray',
           'Heated Insulated Wash Tank',
@@ -1556,7 +1556,7 @@ export default function CatalogPage() {
           { src: '/images/products/gold-2b/g1000.webp', alt: 'Gold 2b Series G1000 In-Line Belt Conveyor Washer', series: 'Gold 2b', model: 'G1000' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Continuous Stainless Steel Conveyor Belt',
           'Adjustable Belt Speed (0.7–5 fpm)',
           'V-Jet Spray Nozzle Arrays (Wash & Rinse)',
@@ -1722,7 +1722,7 @@ export default function CatalogPage() {
           { src: '/images/products/platinum/p1500.webp', alt: 'Platinum Series P1500/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P1500/2' },
         ]}
         features={[
-          'AISI 304 Stainless Steel Construction',
+          <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
           'Rotary Basket/Fixture Drum System',
           'Turbulent Immersion Bath + Simultaneous Spray',
           'Adjustable Drum Rotation Speed (0.5–3 RPM)',

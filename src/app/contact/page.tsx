@@ -566,7 +566,7 @@ function ContactPageInner() {
                   <ul className="mt-3 space-y-2 text-sm text-[var(--color-text-secondary)]">
                     <li className="flex items-start gap-2">
                       <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-magido-orange" />
-                      100% AISI 304 stainless steel construction
+                      100% <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a> construction
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-magido-orange" />

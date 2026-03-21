@@ -179,7 +179,7 @@ const CLEANING_METHODS = [
     title: 'Top Load Spray Cabinet Washers',
     subtitle: 'Eco, X81, X51 & X51/2 Series',
     description:
-      'Parts loaded onto a motorized rotating turntable inside an enclosed stainless steel cabinet and blasted with heated aqueous solution from strategically positioned spray nozzles. Available in single-stage wash and dual-stage wash/rinse configurations. AISI 304 stainless steel throughout, made in Italy.',
+      <>Parts loaded onto a motorized rotating turntable inside an enclosed stainless steel cabinet and blasted with heated aqueous solution from strategically positioned spray nozzles. Available in single-stage wash and dual-stage wash/rinse configurations. <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a> throughout, made in Italy.</>,
     bestFor: 'Cutting oil, coolant, metallic fines, and machining residue on machined parts — automotive components, castings, stamped parts',
     series: 'Eco, X81, X51, X51/2',
     url: '/products/top-load-washers',
@@ -224,7 +224,7 @@ const CLEANING_METHODS = [
     title: 'Rotary Immersion Washers',
     subtitle: 'Platinum Series',
     description:
-      'Combines direct spray impingement with full immersion and rotational basket agitation through separate wash and rinse stages. AISI 304 stainless steel, made in Italy. Specified for aerospace, automotive, and precision machining applications requiring validated cleanliness.',
+      <>Combines direct spray impingement with full immersion and rotational basket agitation through separate wash and rinse stages. <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>, made in Italy. Specified for aerospace, automotive, and precision machining applications requiring validated cleanliness.</>,
     bestFor: 'Complex geometries, tight tolerances, critical cleanliness specs — aerospace components, hydraulic manifolds, precision machined parts',
     series: 'Platinum (PM400, P600/2, P900/2, P1200/2, P1500/2)',
     url: '/products/rotary-immersion-washers',
