@@ -18,15 +18,13 @@ export function HomeHero() {
             {/* Left: Text */}
             <div className="w-full text-center lg:w-1/2 lg:text-left">
 
-              {/* Heading + badge inline */}
-              <div className="flex items-center justify-center gap-3 lg:justify-start">
-                <h1 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                  FLS Series
-                </h1>
-                <span className="inline-flex flex-shrink-0 items-center gap-1 rounded-full bg-magido-orange/20 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-magido-orange">
+              {/* Heading — full width, badge inline after title */}
+              <h1 className="flex w-full flex-wrap items-baseline justify-center gap-x-3 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl lg:justify-start lg:text-6xl">
+                FLS Series
+                <span className="inline-flex items-center rounded-full bg-magido-orange/20 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-magido-orange" style={{ fontSize: '0.6em', verticalAlign: 'middle' }}>
                   New Product
                 </span>
-              </div>
+              </h1>
 
               {/* Subtitle with lines */}
               <div className="mt-3 flex items-center justify-center gap-3">
