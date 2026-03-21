@@ -16,7 +16,7 @@ export function HomeHero() {
           <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-12">
 
             {/* Left: Text */}
-            <div className="max-w-2xl lg:w-1/2 lg:max-w-none">
+            <div className="w-full text-center lg:w-1/2 lg:text-left">
               {/* Badge */}
               <span className="inline-flex items-center gap-1.5 rounded-full bg-magido-orange/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-magido-orange">
                 New Product
@@ -33,11 +33,11 @@ export function HomeHero() {
               {/* Description */}
               <p className="mt-4 text-base leading-relaxed text-gray-300 sm:text-lg">
                 The newest addition to the Magido lineup. Heavy-duty front-loading design for large,
-                heavy components — built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a> with automated wash cycles.
+                heavy components — built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="font-medium text-magido-orange hover:text-magido-blue">AISI 304 stainless steel</a> with automated wash cycles.
               </p>
 
               {/* CTAs */}
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
                 <Link
                   href="/products/front-load-washers"
                   className="btn-primary"
@@ -53,8 +53,8 @@ export function HomeHero() {
                 </Link>
               </div>
 
-              {/* Secondary links */}
-              <div className="mt-6 flex flex-wrap gap-4 border-t border-white/10 pt-6">
+              {/* Secondary links — stack on mobile, row on sm+ */}
+              <div className="mt-6 flex flex-col items-center gap-3 border-t border-white/10 pt-6 sm:flex-row sm:flex-wrap sm:gap-4 lg:items-start lg:justify-start">
                 <Link
                   href="/products/top-load-washers"
                   className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
@@ -78,14 +78,14 @@ export function HomeHero() {
             </div>
 
             {/* Right: FLS product image */}
-            <div className="flex lg:w-1/2 items-center justify-center">
-              <div className="product-halo relative h-60 w-60 sm:h-72 sm:w-72 lg:h-96 lg:w-96">
+            <div className="flex w-full items-center justify-center lg:w-1/2">
+              <div className="product-halo relative h-56 w-56 sm:h-72 sm:w-72 lg:h-96 lg:w-96">
                 <Image
                   src="/images/products/fls/fls35-open.webp"
                   alt="FLS-35 Front Load Spray Cabinet Washer"
                   fill
                   className="object-contain"
-                  sizes="(max-width: 640px) 240px, (max-width: 1024px) 288px, 384px"
+                  sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 384px"
                   priority
                 />
               </div>

@@ -87,7 +87,7 @@ export default function HomePage() {
             </div>
 
             {/* ── Right: stat grid ── */}
-            <div className="grid grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               {COMPANY_STATS.map((stat) => (
                 <div
                   key={stat.label}
@@ -288,7 +288,7 @@ export default function HomePage() {
                 href={`/industries/${ind.slug}`}
                 className="group flex items-start gap-5 rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-6 transition-all hover:border-magido-orange/40 hover:shadow-lg"
               >
-                <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-magido-blue/10 text-3xl ring-1 ring-magido-blue/20 transition-colors group-hover:bg-magido-orange/10 group-hover:ring-magido-orange/30" aria-hidden="true">
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-magido-blue/10 text-2xl ring-1 ring-magido-blue/20 transition-colors group-hover:bg-magido-orange/10 group-hover:ring-magido-orange/30 sm:h-14 sm:w-14 sm:text-3xl" aria-hidden="true">
                   {ind.icon}
                 </div>
                 <div className="min-w-0">
@@ -317,19 +317,19 @@ export default function HomePage() {
 
                 {/* ── Left: Identity + contact ── */}
                 <div>
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
+                  <div className="flex items-start gap-4">
+                    <div className="min-w-0 flex-1">
                       <p className="font-display text-xs font-semibold uppercase tracking-widest text-magido-orange">
                         National Sales Manager
                       </p>
-                      <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">
+                      <h2 className="mt-2 font-display text-2xl font-bold tracking-tight text-[var(--color-text)] sm:text-3xl lg:text-4xl">
                         Scott Morin
                       </h2>
                       <p className="mt-1 text-sm text-[var(--color-text-muted)]">
                         Global Parts Cleaning Manufacturer at Magido USA
                       </p>
                     </div>
-                    <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-2xl ring-4 ring-magido-orange/20 sm:h-28 sm:w-28">
+                    <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-2xl ring-4 ring-magido-orange/20 sm:h-28 sm:w-28">
                       <Image
                         src="/images/scott-morin.webp"
                         alt="Scott Morin — National Sales Manager, Magido USA"
@@ -343,22 +343,22 @@ export default function HomePage() {
                   <p className="mt-5 text-sm leading-relaxed text-[var(--color-text-secondary)]">
                     Contact Scott today — he wants to understand your parts cleaning challenges and recommend the right solution. Free consultation, same-day response.
                   </p>
-                  <div className="mt-5 flex flex-wrap gap-3">
+                  <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                     <Link
                       href="/contact"
-                      className="btn-primary"
+                      className="btn-primary sm:w-auto"
                     >
                       Contact Scott <span className="btn-arrow">→</span>
                     </Link>
                     <a
                       href="tel:8444624436"
-                      className="btn-secondary btn-secondary--static"
+                      className="btn-secondary btn-secondary--static sm:w-auto"
                     >
                       <span aria-hidden="true">📞</span> 844-462-4436
                     </a>
                     <a
                       href="mailto:sales@magidousa.com"
-                      className="btn-secondary btn-secondary--static"
+                      className="btn-secondary btn-secondary--static sm:w-auto"
                     >
                       <span aria-hidden="true">✉️</span> Sales@MagidoUSA.com
                     </a>
@@ -366,7 +366,7 @@ export default function HomePage() {
                       href="https://www.linkedin.com/in/toscottmorin/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-secondary btn-secondary--static hover:!text-[#0A66C2] hover:!border-[#0A66C2]"
+                      className="btn-secondary btn-secondary--static sm:w-auto hover:!text-[#0A66C2] hover:!border-[#0A66C2]"
                     >
                       <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -377,7 +377,7 @@ export default function HomePage() {
                 </div>
 
                 {/* ── Right: 2×2 service pillars ── */}
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   {SCOTT_PILLARS.map((p) => (
                     <div key={p.title} className="flex flex-col gap-2">
                       <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-magido-blue/10 text-xl ring-1 ring-magido-blue/20" aria-hidden="true">

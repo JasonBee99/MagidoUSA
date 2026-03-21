@@ -126,13 +126,13 @@ export function Footer() {
             <div className="mt-4 flex flex-col gap-2">
               <Link
                 href="/contact"
-                className="btn-quote"
+                className="btn-quote w-full text-center"
               >
                 Request a Quote
               </Link>
               <Link
                 href="/contact#evaluation"
-                className="inline-flex items-center justify-center rounded-lg border border-magido-blue px-4 py-2.5 text-sm font-medium text-magido-blue transition-colors hover:bg-magido-blue hover:text-white dark:border-[var(--color-border)] dark:text-[var(--color-text-secondary)] dark:hover:bg-[var(--color-bg-tertiary)]"
+                className="flex w-full items-center justify-center rounded-lg border border-magido-blue px-4 py-2.5 text-sm font-medium text-magido-blue transition-colors hover:bg-magido-blue hover:text-white dark:border-[var(--color-border)] dark:text-[var(--color-text-secondary)] dark:hover:bg-[var(--color-bg-tertiary)]"
               >
                 Free Process Evaluation
               </Link>
