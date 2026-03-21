@@ -5,7 +5,7 @@ import { ChevronRight, ArrowRight, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Magido USA — Italian-Engineered Stainless Steel Parts Washers',
-  description: 'Magido USA manufactures industrial aqueous parts washers and water-based parts cleaning systems in Italy since 1980 — stainless steel spray cabinet, immersion, conveyor, rotary drum, and manual parts washers for automotive, aerospace, and machining. AISI 304 stainless steel throughout. US sales and support, Sturtevant, WI.',
+  description: 'Magido USA aqueous parts washers since 1980. Spray cabinet, immersion, belt conveyor, rotary drum, and manual. AISI 304 stainless steel, made in Italy.',
   alternates: {
     canonical: 'https://magidousa.com/about',
   },

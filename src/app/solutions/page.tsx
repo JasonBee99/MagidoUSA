@@ -8,7 +8,7 @@ const { solutions } = solutionsData as SolutionsData;
 export const metadata: Metadata = {
   title: 'Aqueous Parts Washer Guides & Solutions | Magido USA',
   description:
-    'Industrial aqueous parts washer guides — aqueous vs solvent parts washers, spray cabinet vs immersion, removing cutting oil and coolant, cleaning machined parts for automotive, aerospace, and machining. Stainless steel water-based parts cleaning systems, made in Italy.',
+    'Aqueous parts washer guides: water-based vs solvent, spray vs immersion, cutting oil and coolant removal from machined parts. Automotive, aerospace, machining.',
   alternates: { canonical: 'https://magidousa.com/solutions' },
   openGraph: {
     title: 'Aqueous Parts Washer Guides & Solutions | Magido USA',

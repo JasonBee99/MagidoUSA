@@ -5,7 +5,7 @@ import { faqCategories, getAllFaqItems } from '@/data/faq';
 export const metadata: Metadata = {
   title: 'Aqueous Parts Washer FAQ | Magido USA — Common Questions Answered',
   description:
-    'Common questions about Magido USA industrial aqueous parts washers — spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washer selection, operation, AISI 304 stainless steel construction, detergents, lead times, automotive, aerospace, and machining applications.',
+    'Aqueous parts washer FAQ: spray cabinet, immersion, belt conveyor, rotary drum, and manual. Cutting oil and coolant removal, detergents, operation, lead times.',
   alternates: {
     canonical: 'https://magidousa.com/faq',
   },

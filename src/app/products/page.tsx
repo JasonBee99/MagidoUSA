@@ -7,7 +7,7 @@ import { ArrowRight, ChevronRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Aqueous Parts Washers — All Models & Categories | Magido USA',
   description:
-    'Browse 75+ Magido USA industrial aqueous parts washers — manual parts washers, top load spray cabinet washers, front load washers, immersion parts washers, belt conveyor washers, rotary drum washers, and rotary immersion washers. Water-based parts cleaning systems, AISI 304 stainless steel, made in Italy. Automotive, aerospace, machining, heavy equipment.',
+    'Browse 75+ Magido USA aqueous parts washers: spray cabinet, immersion, belt conveyor, rotary drum, and manual. Stainless steel, AISI 304, made in Italy.',
   alternates: {
     canonical: 'https://magidousa.com/products',
   },

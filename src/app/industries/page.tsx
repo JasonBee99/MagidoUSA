@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Industries Served — Aqueous Parts Washers for Every Sector | Magido USA',
   description:
-    'Industrial aqueous parts washers for automotive, aerospace, machining, heavy equipment, medical, and food processing — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts cleaning systems, AISI 304 stainless steel, made in Italy.',
+    'Aqueous parts washers for automotive, aerospace, machining, heavy equipment, medical, and food processing. Spray cabinet, immersion, belt conveyor, rotary drum.',
   alternates: {
     canonical: 'https://magidousa.com/industries',
   },

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: '%s | Magido USA',
   },
   description:
-    'Magido USA manufactures professional aqueous parts washers built entirely from AISI 304 stainless steel. Spray cabinet, immersion, conveyor, and rotary systems for every industrial cleaning application.',
+    'Magido USA industrial aqueous parts washers: spray cabinet, immersion, belt conveyor, rotary drum, and manual. AISI 304 stainless steel, made in Italy.',
   keywords: [
     'aqueous parts washer',
     'industrial parts cleaning',

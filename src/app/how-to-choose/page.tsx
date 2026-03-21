@@ -6,7 +6,7 @@ import AqueousProcessDiagram from '@/components/AqueousProcessDiagram';
 export const metadata: Metadata = {
   title: 'How to Choose a Parts Washer — Sizing & Selection Guide | Magido USA',
   description:
-    'How to choose the right industrial aqueous parts washer — spray cabinet, immersion, belt conveyor, rotary drum, or manual parts washer. Match machine type to parts size, contamination (cutting oil, coolant, grease), and production volume. Interactive selector and full sizing guide.',
+    'Choose the right aqueous parts washer: spray cabinet, immersion, belt conveyor, rotary drum, or manual. Match to parts size, cutting oil, and production volume.',
   alternates: {
     canonical: 'https://magidousa.com/how-to-choose',
   },
