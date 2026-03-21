@@ -42,6 +42,10 @@ export function CategoryContent({
     ? activeSeries.description || `${activeSeries.type} aqueous parts washing systems.`
     : category.description || category.shortDescription;
 
+  const activeHeroImage = activeSeries
+    ? (productsBySeries[activeSeries.slug]?.[0]?.images?.[0] ?? heroImage)
+    : heroImage;
+
   return (
     <>
       {/* Hero — pure server component, no hydration cost */}
@@ -49,7 +53,7 @@ export function CategoryContent({
         heroTitle={heroTitle}
         heroDescription={heroDescription}
         categoryName={category.name}
-        heroImage={heroImage}
+        heroImage={activeHeroImage}
       />
 
       {/* Tabs + grid — tabs are client (URL state), grid renders immediately */}
