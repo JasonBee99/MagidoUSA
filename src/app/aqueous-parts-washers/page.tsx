@@ -214,13 +214,13 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      'Placeholder: "The AISI 304 construction throughout is what sold us. We\'ve had other manufacturers\' machines rust out after 5 years. The Magido has been running daily for 8 years without any corrosion issues."',
+      "Placeholder: \"The AISI 304 construction throughout is what sold us. We've had other manufacturers' machines rust out after 5 years. The Magido has been running daily for 8 years without any corrosion issues.\"",
     name: 'Maintenance Director',
     company: 'Precision Machining Facility — Southeast',
   },
   {
     quote:
-      'Placeholder: "Scott walked us through the entire process evaluation before we committed. The Gold 2b conveyor washer he recommended handles our production volume perfectly — we haven\'t looked back."',
+      "Placeholder: \"Scott walked us through the entire process evaluation before we committed. The Gold 2b conveyor washer he recommended handles our production volume perfectly — we haven't looked back.\"",
     name: 'Operations Manager',
     company: 'Medical Device Manufacturer — Northeast',
   },
@@ -237,12 +237,10 @@ export default function AqueousPartsWashersPage() {
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="hero-bg relative overflow-hidden">
-        {/* Decorative glows */}
         <div className="pointer-events-none absolute -top-32 right-0 h-[520px] w-[520px] rounded-full bg-magido-orange/10 blur-[120px]" />
         <div className="pointer-events-none absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-magido-blue/15 blur-[100px]" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-32">
-          {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-8 flex items-center gap-2 text-sm text-white/50">
             <Link href="/" className="transition hover:text-white/80">Home</Link>
             <ChevronRight className="h-3.5 w-3.5" />
@@ -251,11 +249,11 @@ export default function AqueousPartsWashersPage() {
 
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
-              <Droplets className="h-3.5 w-3.5" />
+              <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
               Water-Based Industrial Cleaning
             </div>
 
-            <h1 className="mb-6 text-4xl font-bold leading-tight text-white lg:text-5xl xl:text-6xl">
+            <h1 className="mb-6 font-display text-4xl font-bold leading-tight text-white lg:text-5xl xl:text-6xl">
               Aqueous Parts Washers{' '}
               <span className="text-magido-orange">Built Different</span>
             </h1>
@@ -282,7 +280,6 @@ export default function AqueousPartsWashersPage() {
             </div>
           </div>
 
-          {/* Stats strip */}
           <div className="mt-16 grid grid-cols-2 gap-4 border-t border-white/10 pt-10 sm:grid-cols-4">
             {[
               { value: '75+', label: 'Aqueous washer models' },
@@ -300,24 +297,23 @@ export default function AqueousPartsWashersPage() {
       </section>
 
       {/* ── WHAT IS AN AQUEOUS PARTS WASHER ──────────────────────────────── */}
-      <section className="bg-white py-20">
+      <section className="border-b border-[var(--color-border)] bg-[var(--color-bg)] py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-6 text-3xl font-bold text-gray-900 lg:text-4xl">
+            <h2 className="mb-6 font-display text-3xl font-bold text-[var(--color-text)] lg:text-4xl">
               What Is an Aqueous Parts Washer?
             </h2>
-            <p className="mb-6 text-lg leading-relaxed text-gray-600">
-              An <strong>aqueous parts washer</strong> is an industrial cleaning machine that uses
+            <p className="mb-6 text-lg leading-relaxed text-[var(--color-text-secondary)]">
+              An <strong className="text-[var(--color-text)]">aqueous parts washer</strong> is an industrial cleaning machine that uses
               heated water combined with biodegradable detergent — rather than hazardous chemical
               solvents — to remove manufacturing contaminants from metal parts and components.
             </p>
-            <p className="mb-6 text-lg leading-relaxed text-gray-600">
-              Also called a <strong>water-based parts washer</strong>, aqueous cleaning systems
+            <p className="mb-6 text-lg leading-relaxed text-[var(--color-text-secondary)]">
+              Also called a <strong className="text-[var(--color-text)]">water-based parts washer</strong>, aqueous cleaning systems
               deliver powerful degreasing performance while eliminating the worker safety hazards,
-              environmental liabilities, and regulatory burdens associated with solvent-based
-              cleaning.
+              environmental liabilities, and regulatory burdens associated with solvent-based cleaning.
             </p>
-            <p className="text-lg leading-relaxed text-gray-600">
+            <p className="text-lg leading-relaxed text-[var(--color-text-secondary)]">
               Aqueous parts washers work by combining four cleaning factors — <em>chemistry</em>{' '}
               (detergent selection), <em>thermal energy</em> (heated solution), <em>mechanical
               action</em> (spray pressure or agitation), and <em>time</em> — to break down and
@@ -329,16 +325,16 @@ export default function AqueousPartsWashersPage() {
       </section>
 
       {/* ── WHY AQUEOUS BENEFITS ─────────────────────────────────────────── */}
-      <section className="bg-gray-50 py-20">
+      <section className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
-            <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-magido-orange">
+            <p className="mb-3 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
               Why Aqueous Cleaning
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900 lg:text-4xl">
+            </p>
+            <h2 className="font-display text-3xl font-bold text-[var(--color-text)] lg:text-4xl">
               The Case for Water-Based Parts Washing
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-gray-600">
+            <p className="mx-auto mt-4 max-w-2xl text-[var(--color-text-secondary)]">
               Industries from automotive to aerospace have largely shifted from solvent to aqueous
               parts cleaning — and for good reason.
             </p>
@@ -348,13 +344,13 @@ export default function AqueousPartsWashersPage() {
             {BENEFITS.map((b) => (
               <div
                 key={b.title}
-                className="rounded-xl border border-gray-100 bg-white p-7 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                className="rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-7 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
               >
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-magido-orange/10">
-                  <b.icon className="h-5 w-5 text-magido-orange" />
+                  <b.icon className="h-5 w-5 text-magido-orange" aria-hidden="true" />
                 </div>
-                <h3 className="mb-2 font-semibold text-gray-900">{b.title}</h3>
-                <p className="text-sm leading-relaxed text-gray-600">{b.body}</p>
+                <h3 className="mb-2 font-semibold text-[var(--color-text)]">{b.title}</h3>
+                <p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">{b.body}</p>
               </div>
             ))}
           </div>
@@ -366,10 +362,10 @@ export default function AqueousPartsWashersPage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-start gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
-              <div className="mb-2 text-sm font-semibold uppercase tracking-widest text-magido-orange">
+              <p className="mb-2 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
                 The Magido Standard
-              </div>
-              <h2 className="mb-4 text-2xl font-bold text-white lg:text-3xl">
+              </p>
+              <h2 className="mb-4 font-display text-2xl font-bold text-white lg:text-3xl">
                 Every Aqueous Washer — 100% AISI 304 Stainless Steel Throughout
               </h2>
               <p className="leading-relaxed text-white/75">
@@ -389,7 +385,7 @@ export default function AqueousPartsWashersPage() {
                 'Hardware & fasteners',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5">
-                  <CheckCircle className="h-4 w-4 shrink-0 text-magido-orange" />
+                  <CheckCircle className="h-4 w-4 shrink-0 text-magido-orange" aria-hidden="true" />
                   <span className="text-sm">{item}</span>
                 </div>
               ))}
@@ -399,16 +395,16 @@ export default function AqueousPartsWashersPage() {
       </section>
 
       {/* ── PRODUCT CATEGORIES ───────────────────────────────────────────── */}
-      <section className="bg-white py-20">
+      <section className="border-b border-[var(--color-border)] bg-[var(--color-bg)] py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-14 text-center">
-            <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-magido-orange">
+            <p className="mb-3 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
               75 Models · 7 Machine Types
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900 lg:text-4xl">
+            </p>
+            <h2 className="font-display text-3xl font-bold text-[var(--color-text)] lg:text-4xl">
               Aqueous Parts Washer Types
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-gray-600">
+            <p className="mx-auto mt-4 max-w-2xl text-[var(--color-text-secondary)]">
               Every Magido aqueous parts washer is built to order from AISI 304 stainless steel.
               Select the machine type that matches your parts, contamination, and production volume.
             </p>
@@ -419,20 +415,20 @@ export default function AqueousPartsWashersPage() {
               <Link
                 key={cat.slug}
                 href={`/products/${cat.slug}`}
-                className="group relative rounded-xl border border-gray-100 bg-gray-50 p-7 transition hover:-translate-y-0.5 hover:border-magido-orange/30 hover:bg-white hover:shadow-md"
+                className="group relative rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-7 transition hover:-translate-y-0.5 hover:border-magido-orange/40 hover:shadow-md"
               >
                 {cat.badge && (
                   <span className="absolute right-4 top-4 rounded-full bg-magido-orange/10 px-2.5 py-0.5 text-xs font-semibold text-magido-orange">
                     {cat.badge}
                   </span>
                 )}
-                <h3 className="mb-2 font-semibold text-gray-900 transition group-hover:text-magido-orange">
+                <h3 className="mb-2 font-semibold text-[var(--color-text)] transition group-hover:text-magido-orange">
                   {cat.name}
                 </h3>
-                <p className="mb-4 text-sm leading-relaxed text-gray-600">{cat.shortDesc}</p>
+                <p className="mb-4 text-sm leading-relaxed text-[var(--color-text-secondary)]">{cat.shortDesc}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-400">{cat.models}</span>
-                  <ArrowRight className="h-4 w-4 text-magido-orange opacity-0 transition group-hover:translate-x-1 group-hover:opacity-100" />
+                  <span className="text-xs text-[var(--color-text-muted)]">{cat.models}</span>
+                  <ArrowRight className="h-4 w-4 text-magido-orange opacity-0 transition group-hover:translate-x-1 group-hover:opacity-100" aria-hidden="true" />
                 </div>
               </Link>
             ))}
@@ -447,47 +443,47 @@ export default function AqueousPartsWashersPage() {
       </section>
 
       {/* ── AQUEOUS VS SOLVENT TABLE ──────────────────────────────────────── */}
-      <section className="bg-gray-50 py-20">
+      <section className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12 text-center">
-            <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-magido-orange">
+            <p className="mb-3 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
               Comparison
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900 lg:text-4xl">
+            </p>
+            <h2 className="font-display text-3xl font-bold text-[var(--color-text)] lg:text-4xl">
               Aqueous vs. Solvent Parts Washers
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-gray-600">
+            <p className="mx-auto mt-4 max-w-2xl text-[var(--color-text-secondary)]">
               For the vast majority of industrial applications, aqueous parts washers outperform
               solvent-based systems on safety, cost, and environmental impact.
             </p>
           </div>
 
-          <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
-            {/* Header */}
-            <div className="grid grid-cols-3 bg-gray-900 px-6 py-4 text-sm font-semibold">
-              <span className="text-gray-400">Factor</span>
+          <div className="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-card-bg)] shadow-sm">
+            <div className="grid grid-cols-3 bg-magido-blue px-6 py-4 text-sm font-semibold">
+              <span className="text-white/50">Factor</span>
               <span className="text-magido-orange">Aqueous (Water-Based)</span>
-              <span className="text-gray-300">Solvent-Based</span>
+              <span className="text-white/70">Solvent-Based</span>
             </div>
-            {/* Rows */}
             {VS_TABLE.map((row, i) => (
               <div
                 key={row.factor}
                 className={`grid grid-cols-3 gap-4 px-6 py-4 text-sm ${
-                  i % 2 === 0 ? 'bg-white' : 'bg-gray-50'
+                  i % 2 === 0
+                    ? 'bg-[var(--color-card-bg)]'
+                    : 'bg-[var(--color-bg-secondary)]'
                 }`}
               >
-                <span className="font-medium text-gray-700">{row.factor}</span>
-                <span className="text-gray-800">
-                  <CheckCircle className="mr-1.5 inline h-3.5 w-3.5 text-magido-orange" />
+                <span className="font-medium text-[var(--color-text)]">{row.factor}</span>
+                <span className="text-[var(--color-text-secondary)]">
+                  <CheckCircle className="mr-1.5 inline h-3.5 w-3.5 text-magido-orange" aria-hidden="true" />
                   {row.aqueous}
                 </span>
-                <span className="text-gray-500">{row.solvent}</span>
+                <span className="text-[var(--color-text-muted)]">{row.solvent}</span>
               </div>
             ))}
           </div>
 
-          <p className="mt-6 text-center text-sm text-gray-500">
+          <p className="mt-6 text-center text-sm text-[var(--color-text-muted)]">
             Not sure if aqueous cleaning is right for your application?{' '}
             <Link href="/solutions/aqueous-vs-solvent-parts-washers" className="text-magido-orange hover:underline">
               Read our full aqueous vs. solvent guide →
@@ -497,48 +493,48 @@ export default function AqueousPartsWashersPage() {
       </section>
 
       {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
-      <section className="bg-white py-20">
+      <section className="border-b border-[var(--color-border)] bg-[var(--color-bg)] py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12 text-center">
-            <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-magido-orange">
+            <p className="mb-3 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
               Customer Results
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900 lg:text-4xl">
+            </p>
+            <h2 className="font-display text-3xl font-bold text-[var(--color-text)] lg:text-4xl">
               What Our Customers Say
             </h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
             {TESTIMONIALS.map((t) => (
-              <div key={t.name} className="rounded-xl border border-gray-100 bg-gray-50 p-7">
+              <div key={t.name} className="rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-7">
                 <div className="mb-4 flex gap-0.5">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-magido-orange text-magido-orange" />
+                    <Star key={i} className="h-4 w-4 fill-magido-orange text-magido-orange" aria-hidden="true" />
                   ))}
                 </div>
-                <p className="mb-5 text-sm italic leading-relaxed text-gray-600">{t.quote}</p>
+                <p className="mb-5 text-sm italic leading-relaxed text-[var(--color-text-secondary)]">{t.quote}</p>
                 <div>
-                  <div className="text-sm font-semibold text-gray-900">{t.name}</div>
-                  <div className="text-xs text-gray-500">{t.company}</div>
+                  <div className="text-sm font-semibold text-[var(--color-text)]">{t.name}</div>
+                  <div className="text-xs text-[var(--color-text-muted)]">{t.company}</div>
                 </div>
               </div>
             ))}
           </div>
 
-          <p className="mt-6 text-center text-xs text-gray-400">
+          <p className="mt-6 text-center text-xs text-[var(--color-text-muted)]">
             * Placeholder testimonials — replace with actual customer quotes before launch
           </p>
         </div>
       </section>
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-      <section className="bg-gray-50 py-20">
+      <section className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] py-20">
         <div className="mx-auto max-w-4xl px-6">
           <div className="mb-12 text-center">
-            <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-magido-orange">
+            <p className="mb-3 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
               FAQ
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900 lg:text-4xl">
+            </p>
+            <h2 className="font-display text-3xl font-bold text-[var(--color-text)] lg:text-4xl">
               Aqueous Parts Washer — Common Questions
             </h2>
           </div>
@@ -548,13 +544,13 @@ export default function AqueousPartsWashersPage() {
               (faq) => (
                 <details
                   key={faq.name}
-                  className="group rounded-xl border border-gray-200 bg-white"
+                  className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-card-bg)]"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-base font-semibold text-gray-900 marker:content-none">
+                  <summary className="flex cursor-pointer items-center justify-between px-6 py-5 text-base font-semibold text-[var(--color-text)] marker:content-none [&::-webkit-details-marker]:hidden">
                     {faq.name}
-                    <ChevronRight className="h-5 w-5 shrink-0 text-magido-orange transition group-open:rotate-90" />
+                    <ChevronRight className="h-5 w-5 shrink-0 text-magido-orange transition group-open:rotate-90" aria-hidden="true" />
                   </summary>
-                  <div className="border-t border-gray-100 px-6 pb-5 pt-4 text-sm leading-relaxed text-gray-600">
+                  <div className="border-t border-[var(--color-border)] px-6 pb-5 pt-4 text-sm leading-relaxed text-[var(--color-text-secondary)]">
                     {faq.acceptedAnswer.text}
                   </div>
                 </details>
@@ -566,9 +562,8 @@ export default function AqueousPartsWashersPage() {
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
       <section className="hero-bg py-20">
-        <div className="pointer-events-none absolute inset-0 bg-magido-orange/5" />
-        <div className="relative mx-auto max-w-3xl px-6 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-white lg:text-4xl">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <h2 className="mb-4 font-display text-3xl font-bold text-white lg:text-4xl">
             Find the Right Aqueous Parts Washer for Your Operation
           </h2>
           <p className="mb-10 text-lg text-white/70">
@@ -581,7 +576,7 @@ export default function AqueousPartsWashersPage() {
               Request a Free Evaluation <span className="btn-arrow">→</span>
             </Link>
             <a href="tel:8444624436" className="btn-ghost-dark">
-              <Phone className="mr-2 inline h-4 w-4" />
+              <Phone className="mr-2 inline h-4 w-4" aria-hidden="true" />
               844-462-4436
             </a>
           </div>
