@@ -216,38 +216,32 @@ export default function HomePage() {
       {/* ─── The Magido Difference ─── */}
       <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-16">
-            {/* Left: heading + intro */}
-            <div>
-              {/* Badge + title on same line */}
-              <div className="flex items-center gap-3">
-                <span className="shrink-0 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
-                  The Magido Difference
-                </span>
-                <div className="h-px flex-1 bg-magido-orange/20" />
-              </div>
-              <h2 className="mt-2 font-display text-4xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-5xl">
-                Precision Engineered. Proven.
-              </h2>
-              <p className="mt-4 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
-                Through strategic planning, careful selection of quality materials, and a constant search for innovative solutions, Magido has earned the reputation of producing the highest quality and most competitive wash systems on the market.
-              </p>
-              <p className="mt-3 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
-                Our team is always attentive and willing to help before and after the sale — ensuring total flexibility in creating a tailor-made wash system for your maintenance or production parts cleaning operation.
-              </p>
-              <div className="mt-8">
-                <Link
-                  href="/contact"
-                  className="btn-primary"
-                >
-                  Talk to an Expert
-                  <span className="btn-arrow">→</span>
-                </Link>
-              </div>
+          <div>
+            {/* Badge + title on same line */}
+            <div className="flex items-center gap-3">
+              <span className="shrink-0 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
+                The Magido Difference
+              </span>
+              <div className="h-px flex-1 bg-magido-orange/20" />
+            </div>
+            <h2 className="mt-2 font-display text-4xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-5xl">
+              Precision Engineered. Proven.
+            </h2>
+            <p className="mt-4 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
+              Through strategic planning, careful selection of quality materials, and a constant search for innovative solutions, Magido has earned the reputation of producing the highest quality and most competitive wash systems on the market.
+            </p>
+            <p className="mt-3 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
+              Our team is always attentive and willing to help before and after the sale — ensuring total flexibility in creating a tailor-made wash system for your maintenance or production parts cleaning operation.
+            </p>
+            <div className="mt-8">
+              <Link href="/contact" className="btn-primary">
+                Talk to an Expert
+                <span className="btn-arrow">→</span>
+              </Link>
             </div>
 
-            {/* Right: 4 value props */}
-            <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:mt-0">
+            {/* 4 value prop cards — 2-col grid at all sizes */}
+            <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <WhyCard
                 icon={<Shield className="h-6 w-6" />}
                 title="Unmatched Expertise"
