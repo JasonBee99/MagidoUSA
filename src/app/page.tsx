@@ -58,13 +58,13 @@ export default function HomePage() {
                 <span className="btn-arrow">→</span>
               </Link>
 
-              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">
+              <h2 className="mt-3 text-center font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl lg:text-left">
                 Stainless Steel<br />
                 <span className="text-magido-orange">Industrial Cleaning</span><br />
                 Technology
               </h2>
 
-              <div className="mt-4 h-1 w-16 rounded-full bg-magido-orange" />
+              <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-magido-orange lg:mx-0" />
 
               <p className="mt-6 text-base leading-relaxed text-[var(--color-text-secondary)]">
                 Magido Group is recognized as one of the world&apos;s leading manufacturers of aqueous parts washing systems — engineering stainless steel industrial cleaning technology for automotive, aerospace, machining, and heavy equipment applications since 1980.
@@ -343,32 +343,32 @@ export default function HomePage() {
                   <p className="mt-5 text-sm leading-relaxed text-[var(--color-text-secondary)]">
                     Contact Scott today — he wants to understand your parts cleaning challenges and recommend the right solution. Free consultation, same-day response.
                   </p>
-                  <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                  <div className="mt-5 flex flex-row flex-wrap gap-2">
                     <Link
                       href="/contact"
-                      className="btn-primary sm:w-auto"
+                      className="btn-primary btn-sm"
                     >
-                      Contact Scott <span className="btn-arrow">→</span>
+                      Contact Scott →
                     </Link>
                     <a
                       href="tel:8444624436"
-                      className="btn-secondary btn-secondary--static sm:w-auto"
+                      className="btn-secondary btn-secondary--static btn-sm"
                     >
-                      <span aria-hidden="true">📞</span> 844-462-4436
+                      📞 844-462-4436
                     </a>
                     <a
                       href="mailto:sales@magidousa.com"
-                      className="btn-secondary btn-secondary--static sm:w-auto"
+                      className="btn-secondary btn-secondary--static btn-sm"
                     >
-                      <span aria-hidden="true">✉️</span> Sales@MagidoUSA.com
+                      ✉️ Email Scott
                     </a>
                     <a
                       href="https://www.linkedin.com/in/toscottmorin/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-secondary btn-secondary--static sm:w-auto hover:!text-[#0A66C2] hover:!border-[#0A66C2]"
+                      className="btn-secondary btn-secondary--static btn-sm hover:!text-[#0A66C2] hover:!border-[#0A66C2]"
                     >
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                      <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                       </svg>
                       LinkedIn

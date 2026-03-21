@@ -17,16 +17,19 @@ export function HomeHero() {
 
             {/* Left: Text */}
             <div className="w-full text-center lg:w-1/2 lg:text-left">
-              {/* Badge */}
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-magido-orange/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-magido-orange">
-                New Product
-              </span>
 
-              {/* Heading */}
-              <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                FLS Series
-              </h1>
-              <p className="mt-2 font-display text-lg font-medium text-magido-orange sm:text-xl">
+              {/* Heading + badge inline */}
+              <div className="flex items-center justify-center gap-3 lg:justify-start">
+                <h1 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                  FLS Series
+                </h1>
+                <span className="inline-flex flex-shrink-0 items-center gap-1 rounded-full bg-magido-orange/20 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-magido-orange">
+                  New
+                </span>
+              </div>
+
+              {/* Subtitle — always centered */}
+              <p className="mt-2 text-center font-display text-lg font-medium text-magido-orange sm:text-xl">
                 Front Load Spray Cabinet Washers
               </p>
 
@@ -53,24 +56,26 @@ export function HomeHero() {
                 </Link>
               </div>
 
-              {/* Secondary links — stack on mobile, row on sm+ */}
-              <div className="mt-6 flex flex-col items-center gap-3 border-t border-white/10 pt-6 sm:flex-row sm:flex-wrap sm:gap-4 lg:items-start lg:justify-start">
+              {/* Secondary links — always one row, centered, wrap gracefully */}
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 border-t border-white/10 pt-5 lg:justify-start">
                 <Link
-                  href="/products/top-load-washers"
-                  className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                  href="/products"
+                  className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
                 >
-                  Browse Top Load Washers →
+                  Browse Washers →
                 </Link>
+                <span className="text-white/20" aria-hidden="true">|</span>
                 <Link
                   href="/contact#evaluation"
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                  className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
                 >
                   <FlaskConical className="h-3.5 w-3.5 text-magido-orange" />
-                  Free Process Evaluation
+                  Process Evaluation
                 </Link>
+                <span className="text-white/20" aria-hidden="true">|</span>
                 <Link
                   href="/how-to-choose"
-                  className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                  className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
                 >
                   Help Me Choose →
                 </Link>
