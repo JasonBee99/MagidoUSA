@@ -422,7 +422,7 @@ function WhyCard({
         <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-magido-orange/10 text-magido-orange ring-1 ring-magido-orange/30">
           {icon}
         </div>
-        <h3 className="font-display text-base font-bold text-[var(--color-text)]">
+        <h3 className="font-display text-lg font-bold leading-tight text-[var(--color-text)]">
           {title}
         </h3>
       </div>
