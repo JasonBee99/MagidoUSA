@@ -8,10 +8,17 @@ export const metadata: Metadata = {
     canonical: 'https://magidousa.com/contact',
   },
   openGraph: {
-    title: 'Contact Us',
+    title: 'Contact Us — Get a Quote or Request a Demo',
     description:
-      'Request a quote, schedule an evaluation, or ask about our aqueous parts washing systems.',
+      'Request a quote, schedule an evaluation, or ask about our aqueous parts washing systems. Sturtevant, WI.',
     url: 'https://magidousa.com/contact',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Magido USA — Get a Quote',
+    description:
+      'Request a quote, schedule a free process evaluation, or ask about aqueous parts washing systems.',
   },
 };
 

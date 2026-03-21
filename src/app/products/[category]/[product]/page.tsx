@@ -45,16 +45,21 @@ export function generateMetadata({
     : `${product.name} by Magido USA. ${series?.type || 'Parts Washer'}. ${specHighlights.join(', ')}. Built from AISI 304 stainless steel.`;
 
   return {
-    title: `${product.name}`,
+    title: `${product.name} | ${series?.name || category?.name || 'Parts Washer'} | Magido USA`,
     description: metaDescription,
     alternates: {
       canonical: `https://magidousa.com/products/${params.category}/${params.product}`,
     },
     openGraph: {
-      title: `${product.name}`,
+      title: `${product.name} | ${series?.name || 'Magido USA'}`,
       description: metaDescription,
       url: `https://magidousa.com/products/${params.category}/${params.product}`,
       images: product.images.length > 0 ? [{ url: product.images[0] }] : undefined,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${product.name} | ${series?.name || 'Magido USA'}`,
+      description: metaDescription,
     },
   };
 }
@@ -371,7 +376,7 @@ export default function ProductPage({
               href="tel:8444624436"
               className="inline-flex rounded-lg border border-magido-blue px-6 py-2.5 text-sm font-semibold text-magido-blue transition-colors hover:bg-magido-blue hover:text-white dark:border-[var(--color-border)] dark:text-[var(--color-text-secondary)] dark:hover:bg-[var(--color-bg-tertiary)]"
             >
-              📞 844-462-4436
+              <span aria-hidden="true">📞</span> 844-462-4436
             </a>
           </div>
         </div>

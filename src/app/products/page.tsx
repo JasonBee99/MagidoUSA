@@ -16,6 +16,13 @@ export const metadata: Metadata = {
     description:
       'Browse 75+ aqueous parts washers and water-based cleaning systems — 7 machine types, all built from AISI 304 stainless steel, made in Italy since 1980.',
     url: 'https://magidousa.com/products',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Aqueous Parts Washers — All Models & Categories | Magido USA',
+    description:
+      '75+ aqueous parts washers — manual, top load, front load, immersion, conveyor, rotary drum and immersion. All AISI 304 stainless steel, made in Italy.',
   },
 };
 

@@ -8,6 +8,7 @@ import {
 } from '@/data/resources';
 import { getSeriesBySlug, getProductsBySeries } from '@/lib/products';
 import { ResourceSeriesCard, type SeriesCardData } from '@/components/ResourceSeriesCard';
+import { BreadcrumbJsonLd } from '@/components/JsonLd';
 
 // ─── Static params ───
 export function generateStaticParams() {
@@ -23,10 +24,20 @@ export function generateMetadata({
   const doc = getResourceBySlug(params.slug);
   if (!doc) return { title: 'Not Found' };
   return {
-    title: doc.title,
+    title: `${doc.title} | Magido USA`,
     description: doc.metaDescription,
     alternates: { canonical: `https://magidousa.com/resources/${params.slug}` },
-    openGraph: { url: `https://magidousa.com/resources/${params.slug}` },
+    openGraph: {
+      title: `${doc.title} | Magido USA`,
+      description: doc.metaDescription,
+      url: `https://magidousa.com/resources/${params.slug}`,
+      images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${doc.title} | Magido USA`,
+      description: doc.metaDescription,
+    },
   };
 }
 
@@ -73,6 +84,13 @@ export default function ResourceDetailPage({
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Resources', url: '/resources' },
+          { name: doc.title, url: `/resources/${doc.slug}` },
+        ]}
+      />
       {/* ─── Hero ─── */}
       <section className="hero-bg py-12 text-white lg:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">

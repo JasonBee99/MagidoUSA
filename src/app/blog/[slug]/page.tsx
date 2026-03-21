@@ -10,6 +10,7 @@ import { getBlogPost, blogPosts, type BlogSectionImage } from '@/data/blog';
 import { ShareButtons } from '@/components/ShareButtons';
 import CTABanner from '@/components/CTABanner';
 import blogConfig from '@/data/blog-config.json';
+import { ArticleJsonLd } from '@/components/JsonLd';
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const post = getBlogPost(params.slug);
@@ -18,7 +19,18 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title: post.metaTitle,
     description: post.metaDescription,
     alternates: { canonical: `https://magidousa.com/blog/${params.slug}` },
-    openGraph: { url: `https://magidousa.com/blog/${params.slug}` },
+    openGraph: {
+      url: `https://magidousa.com/blog/${params.slug}`,
+      type: 'article',
+      ...(post.heroImage
+        ? { images: [{ url: post.heroImage, width: 1200, height: 630, alt: post.heroImageAlt || post.title }] }
+        : { images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }] }),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.metaTitle,
+      description: post.metaDescription,
+    },
   };
 }
 
@@ -38,6 +50,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
+
+      <ArticleJsonLd
+        title={post.metaTitle}
+        description={post.metaDescription}
+        url={`https://magidousa.com/blog/${post.slug}`}
+        datePublished={post.date}
+      />
 
       {/* ── Breadcrumb ── */}
       <nav

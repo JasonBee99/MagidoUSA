@@ -6,11 +6,24 @@ import Link from 'next/link';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'Product Catalog — Full Specifications',
+  title: 'Product Catalog — Full Specifications & Series Data | Magido USA',
   description:
     'Complete MAGIDO USA aqueous parts washing systems product catalog. Full specifications, standard features, options, and technical data for every series.',
   alternates: {
     canonical: 'https://magidousa.com/resources/catalog',
+  },
+  openGraph: {
+    title: 'Product Catalog — Full Specifications | Magido USA',
+    description:
+      'Full specifications, standard features, options, and technical data for every Magido USA aqueous parts washing series.',
+    url: 'https://magidousa.com/resources/catalog',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Product Catalog | Magido USA',
+    description:
+      'Full specifications and technical data for every Magido USA aqueous parts washing series.',
   },
 };
 

@@ -4,10 +4,21 @@ import Image from 'next/image';
 import { ChevronRight, ArrowRight, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'Magido has been engineering parts washing systems in Italy for decades. Every machine is built from AISI 304 stainless steel. US sales, service, and support from Sturtevant, WI.',
+  title: 'About Magido USA — Italian-Engineered Stainless Steel Parts Washers',
+  description: 'Magido has been engineering aqueous parts washing systems in Italy since 1980. Every machine is built from AISI 304 stainless steel. US sales, service, and support from Sturtevant, WI.',
   alternates: {
     canonical: 'https://magidousa.com/about',
+  },
+  openGraph: {
+    title: 'About Magido USA — Italian-Engineered Stainless Steel Parts Washers',
+    description: 'Engineering aqueous parts washing systems since 1980. 100% AISI 304 stainless steel, made in Italy. US sales and support in Sturtevant, WI.',
+    url: 'https://magidousa.com/about',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Magido USA — Italian-Engineered Stainless Steel Parts Washers',
+    description: 'Engineering aqueous parts washing systems since 1980. 100% AISI 304 stainless steel, made in Italy.',
   },
 };
 

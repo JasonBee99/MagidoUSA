@@ -13,6 +13,11 @@ export const metadata: Metadata = {
       'Side-by-side specs, features, and options across Magido USA aqueous parts washing models.',
     url: 'https://magidousa.com/compare',
   },
+  twitter: {
+    card: 'summary',
+    title: 'Compare Parts Washers | Magido USA',
+    description: 'Side-by-side specs and features across Magido USA aqueous parts washing models.',
+  },
   robots: {
     index: false, // comparison tool state is ephemeral — no value in indexing
     follow: true,

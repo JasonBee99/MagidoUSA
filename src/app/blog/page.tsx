@@ -13,6 +13,17 @@ export function generateMetadata(): Metadata {
     title: blogConfig.meta.title,
     description: blogConfig.meta.description,
     alternates: { canonical: blogConfig.meta.canonical },
+    openGraph: {
+      title: blogConfig.meta.title,
+      description: blogConfig.meta.description,
+      url: blogConfig.meta.canonical,
+      images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: blogConfig.meta.title,
+      description: blogConfig.meta.description,
+    },
   };
 }
 

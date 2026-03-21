@@ -6,9 +6,25 @@ import { BreadcrumbJsonLd } from '@/components/JsonLd';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Industries Served',
+  title: 'Industries Served — Aqueous Parts Washers for Every Sector | Magido USA',
   description:
     'Magido USA aqueous parts washers serve automotive, aerospace, machining, heavy equipment, medical, and food processing industries — stainless steel systems built for the toughest cleaning applications.',
+  alternates: {
+    canonical: 'https://magidousa.com/industries',
+  },
+  openGraph: {
+    title: 'Industries Served — Aqueous Parts Washers for Every Sector | Magido USA',
+    description:
+      'Stainless steel aqueous parts washing systems for automotive, aerospace, machining, heavy equipment, medical, and food processing.',
+    url: 'https://magidousa.com/industries',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Industries Served | Magido USA',
+    description:
+      'Aqueous parts washers for automotive, aerospace, machining, heavy equipment, medical, and food processing.',
+  },
 };
 
 export default function IndustriesPage() {

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import SolutionPage from '@/components/SolutionPage';
 import type { Solution, SolutionsData, SolutionProduct } from '@/types/solutions';
+import { BreadcrumbJsonLd } from '@/components/JsonLd';
 
 // Import data
 import solutionsData from '@/data/solutions.json';
@@ -56,5 +57,16 @@ export default function SolutionRoute({ params }: { params: { slug: string } }) 
     .map((slug: string) => allProducts.find((p: SolutionProduct) => p.slug === slug))
     .filter((p): p is SolutionProduct => p !== undefined);
 
-  return <SolutionPage solution={solution} relatedProducts={relatedProducts} />;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Solutions', url: '/solutions' },
+          { name: solution.title, url: `/solutions/${solution.slug}` },
+        ]}
+      />
+      <SolutionPage solution={solution} relatedProducts={relatedProducts} />
+    </>
+  );
 }

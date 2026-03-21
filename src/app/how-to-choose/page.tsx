@@ -4,14 +4,24 @@ import SelectorTabs from '@/components/SelectorTabs';
 import AqueousProcessDiagram from '@/components/AqueousProcessDiagram';
 
 export const metadata: Metadata = {
-  title: 'How to Choose a Parts Washer — Sizing & Selection Guide',
+  title: 'How to Choose a Parts Washer — Sizing & Selection Guide | Magido USA',
   description:
     'Match the right aqueous parts washer to your parts, contamination type, and production volume. Use our interactive selector or read the full sizing guide.',
+  alternates: {
+    canonical: 'https://magidousa.com/how-to-choose',
+  },
   openGraph: {
-    title: 'How to Choose a Parts Washer',
+    title: 'How to Choose a Parts Washer — Sizing & Selection Guide | Magido USA',
     description:
-      'Interactive selector and complete guide to matching the right wash system to your application.',
+      'Interactive selector and complete guide to matching the right aqueous wash system to your application.',
     url: 'https://magidousa.com/how-to-choose',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Choose a Parts Washer | Magido USA',
+    description:
+      'Interactive selector and sizing guide — match the right aqueous wash system to your application.',
   },
 };
 

@@ -17,6 +17,12 @@ export const metadata: Metadata = {
     url: 'https://magidousa.com/solutions',
     images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Aqueous Parts Washer Guides & Solutions | Magido USA',
+    description:
+      'Compare aqueous vs. solvent parts washers, spray vs. immersion, and find the right cleaning solution for your application.',
+  },
 };
 
 export default function SolutionsIndexPage() {

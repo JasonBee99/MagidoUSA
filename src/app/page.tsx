@@ -278,7 +278,7 @@ export default function HomePage() {
                 href={`/industries/${ind.slug}`}
                 className="group flex items-start gap-5 rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-6 transition-all hover:border-magido-orange/40 hover:shadow-lg"
               >
-                <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-magido-blue/10 text-3xl ring-1 ring-magido-blue/20 transition-colors group-hover:bg-magido-orange/10 group-hover:ring-magido-orange/30">
+                <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-magido-blue/10 text-3xl ring-1 ring-magido-blue/20 transition-colors group-hover:bg-magido-orange/10 group-hover:ring-magido-orange/30" aria-hidden="true">
                   {ind.icon}
                 </div>
                 <div className="min-w-0">
@@ -344,13 +344,13 @@ export default function HomePage() {
                       href="tel:8444624436"
                       className="btn-secondary btn-secondary--static"
                     >
-                      📞 844-462-4436
+                      <span aria-hidden="true">📞</span> 844-462-4436
                     </a>
                     <a
                       href="mailto:sales@magidousa.com"
                       className="btn-secondary btn-secondary--static"
                     >
-                      ✉️ Sales@MagidoUSA.com
+                      <span aria-hidden="true">✉️</span> Sales@MagidoUSA.com
                     </a>
                     <a
                       href="https://www.linkedin.com/in/toscottmorin/"
@@ -370,7 +370,7 @@ export default function HomePage() {
                 <div className="grid grid-cols-2 gap-5">
                   {SCOTT_PILLARS.map((p) => (
                     <div key={p.title} className="flex flex-col gap-2">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-magido-blue/10 text-xl ring-1 ring-magido-blue/20">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-magido-blue/10 text-xl ring-1 ring-magido-blue/20" aria-hidden="true">
                         {p.icon}
                       </div>
                       <h3 className="mt-1 font-display text-sm font-bold text-[var(--color-text)]">

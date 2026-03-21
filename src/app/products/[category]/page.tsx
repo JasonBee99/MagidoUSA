@@ -13,6 +13,7 @@ import {
 import { getAllResourceDocuments } from '@/data/resources';
 import { CategoryContent } from '@/components/CategoryContent';
 import { ChevronRight } from 'lucide-react';
+import { BreadcrumbJsonLd } from '@/components/JsonLd';
 
 // ─── Static generation ───
 export function generateStaticParams() {
@@ -39,9 +40,15 @@ export function generateMetadata({
       canonical: `https://magidousa.com/products/${params.category}`,
     },
     openGraph: {
-      title: `${category.name}`,
+      title: `${category.name} | Magido USA`,
       description: category.shortDescription,
       url: `https://magidousa.com/products/${params.category}`,
+      images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${category.name} | Magido USA`,
+      description: category.shortDescription,
     },
   };
 }
@@ -81,6 +88,13 @@ export default function CategoryPage({
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Products', url: '/products' },
+          { name: category.name, url: `/products/${params.category}` },
+        ]}
+      />
       {/* ─── Breadcrumb ─── */}
       <nav
         className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-3 sm:px-6 lg:px-8"

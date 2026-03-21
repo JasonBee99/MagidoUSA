@@ -9,6 +9,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://magidousa.com/faq',
   },
+  openGraph: {
+    title: 'Aqueous Parts Washer FAQ | Magido USA',
+    description:
+      'Common questions about Magido USA aqueous parts washers — product selection, operation, construction, detergents, lead times, and more.',
+    url: 'https://magidousa.com/faq',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Aqueous Parts Washer FAQ | Magido USA',
+    description:
+      'Common questions about aqueous parts washers — product selection, operation, construction, detergents, and more.',
+  },
 };
 
 export default function FaqPage() {
@@ -123,7 +136,7 @@ export default function FaqPage() {
               href="tel:8444624436"
               className="inline-flex rounded-lg border border-magido-blue px-6 py-2.5 text-sm font-semibold text-magido-blue transition-colors hover:bg-magido-blue hover:text-white dark:border-[var(--color-border)] dark:text-[var(--color-text-secondary)] dark:hover:bg-[var(--color-bg-tertiary)]"
             >
-              📞 844-462-4436
+              <span aria-hidden="true">📞</span> 844-462-4436
             </a>
           </div>
         </div>

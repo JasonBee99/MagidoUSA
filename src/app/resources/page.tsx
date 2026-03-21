@@ -78,11 +78,24 @@ function CategoryIcon({ name }: { name: string }) {
 }
 
 export const metadata: Metadata = {
-  title: 'Resources & Documentation',
+  title: 'Resources & Documentation — Parts Washer Guides | Magido USA',
   description:
     'Technical documentation, product catalogs, startup guides, and service instructions for all Magido USA aqueous parts washing systems.',
   alternates: {
     canonical: 'https://magidousa.com/resources',
+  },
+  openGraph: {
+    title: 'Resources & Documentation — Parts Washer Guides | Magido USA',
+    description:
+      'Product catalogs, startup guides, service instructions, and technical documentation for all Magido USA aqueous parts washing systems.',
+    url: 'https://magidousa.com/resources',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Resources & Documentation | Magido USA',
+    description:
+      'Product catalogs, startup guides, and technical documentation for all Magido USA parts washing systems.',
   },
 };
 

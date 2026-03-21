@@ -197,7 +197,7 @@ export default function AqueousProcessDiagram() {
             strokeWidth="0.5" />
           {/* Gear icon */}
           <text x="66" y="108" textAnchor="middle" dominantBaseline="central"
-            fontSize="28" fill="var(--color-text-secondary, #9ca3af)">⚙</text>
+            fontSize="28" fill="var(--color-text-secondary, #9ca3af)" aria-hidden="true">⚙</text>
           {/* Grime patches */}
           <rect x="22" y="72"  width="24" height="8" rx="3" fill="#E24B4A" opacity="0.5" />
           <rect x="50" y="77"  width="16" height="7" rx="3" fill="#E24B4A" opacity="0.38" />
@@ -379,7 +379,7 @@ export default function AqueousProcessDiagram() {
             stroke="#1D9E75" strokeWidth="1.2" />
           {/* Clean gear — teal tint */}
           <text x="716" y="108" textAnchor="middle" dominantBaseline="central"
-            fontSize="28" fill="#1D9E75">⚙</text>
+            fontSize="28" fill="#1D9E75" aria-hidden="true">⚙</text>
           {/* Clean checkmark badge */}
           <circle cx="741" cy="76" r="9" fill="#1D9E75" />
           <path d="M736 76 L739 80 L746 72" fill="none"

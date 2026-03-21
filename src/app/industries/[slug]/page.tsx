@@ -20,8 +20,22 @@ export async function generateMetadata({
   const industry = getIndustry(params.slug);
   if (!industry) return {};
   return {
-    title: `${industry.name} Parts Washing`,
+    title: `${industry.name} Parts Washing Solutions | Magido USA`,
     description: industry.metaDescription,
+    alternates: {
+      canonical: `https://magidousa.com/industries/${industry.slug}`,
+    },
+    openGraph: {
+      title: `${industry.name} Parts Washing Solutions | Magido USA`,
+      description: industry.metaDescription,
+      url: `https://magidousa.com/industries/${industry.slug}`,
+      images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${industry.name} Parts Washing Solutions | Magido USA`,
+      description: industry.metaDescription,
+    },
   };
 }
 
