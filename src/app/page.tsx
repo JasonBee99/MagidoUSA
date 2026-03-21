@@ -220,14 +220,15 @@ export default function HomePage() {
 
             {/* Left: heading + intro */}
             <div>
-              {/* Badge + title on same line */}
+              {/* Lines + badge + lines */}
               <div className="flex items-center gap-3">
+                <div className="h-px flex-1 bg-magido-orange/20" />
                 <span className="shrink-0 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
                   The Magido Difference
                 </span>
                 <div className="h-px flex-1 bg-magido-orange/20" />
               </div>
-              <h2 className="mt-2 font-display text-4xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-5xl">
+              <h2 className="mt-2 text-center font-display text-4xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-5xl">
                 Precision Engineered. Proven.
               </h2>
               <p className="mt-4 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
@@ -422,7 +423,7 @@ function WhyCard({
         <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-magido-orange/10 text-magido-orange ring-1 ring-magido-orange/30">
           {icon}
         </div>
-        <h3 className="font-display text-lg font-bold leading-tight text-[var(--color-text)]">
+        <h3 className="text-center font-display text-lg font-bold leading-tight text-[var(--color-text)]">
           {title}
         </h3>
       </div>
