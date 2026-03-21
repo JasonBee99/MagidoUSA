@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { Droplets } from 'lucide-react';
 import { linkAisi } from '@/lib/linkAisi';
