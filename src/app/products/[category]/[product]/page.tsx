@@ -256,11 +256,19 @@ export default function ProductPage({
                 {product.name}
               </h1>
 
-              {(product.description || series?.description) && (
-                <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base">
-                  {product.description || series?.description}
-                </p>
-              )}
+              {(product.description || series?.description) && (() => {
+                const raw = product.description || series?.description || '';
+                const html = raw.replace(
+                  /AISI 304 stainless steel/gi,
+                  '<a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a>'
+                );
+                return (
+                  <p
+                    className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base"
+                    dangerouslySetInnerHTML={{ __html: html }}
+                  />
+                );
+              })()}
 
               {/* Key specs — wrapped in <dl> for valid semantics */}
               {keySpecs.length > 0 && (

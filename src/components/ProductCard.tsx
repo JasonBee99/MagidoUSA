@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { linkAisi } from '@/lib/linkAisi';
 import { BarChart2, Check, GitCompareArrows, Play, X } from 'lucide-react';
 import { useCompare } from './CompareProvider';
 import type { Product } from '@/lib/products';
@@ -273,9 +274,10 @@ export function ProductCard({
           </Link>
 
           {seriesDescription && (
-            <p className="mt-1 line-clamp-3 text-xs text-[var(--color-text-secondary)]">
-              {seriesDescription}
-            </p>
+            <p
+              className="mt-1 line-clamp-3 text-xs text-[var(--color-text-secondary)]"
+              dangerouslySetInnerHTML={{ __html: linkAisi(seriesDescription) }}
+            />
           )}
 
           <Link

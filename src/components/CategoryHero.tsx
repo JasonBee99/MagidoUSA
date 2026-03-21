@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Droplets } from 'lucide-react';
+import { linkAisi } from '@/lib/linkAisi';
 
 interface CategoryHeroProps {
   heroTitle: string;
@@ -37,9 +38,10 @@ export function CategoryHero({
             <h1 className="mt-4 font-display text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl lg:text-5xl">
               {heroTitle}
             </h1>
-            <p className="mt-4 text-base leading-relaxed text-gray-300 sm:text-lg">
-              {heroDescription}
-            </p>
+            <p
+              className="mt-4 text-base leading-relaxed text-gray-300 sm:text-lg"
+              dangerouslySetInnerHTML={{ __html: linkAisi(heroDescription) }}
+            />
           </div>
 
           {/* Image */}

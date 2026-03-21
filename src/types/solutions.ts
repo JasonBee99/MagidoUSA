@@ -1,6 +1,7 @@
 export interface SolutionSection {
   heading: string;
   content: string;
+  contentHtml?: string;
 }
 
 export interface ComparisonTable {

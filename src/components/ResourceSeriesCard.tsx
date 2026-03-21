@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Check, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
+import { linkAisi } from '@/lib/linkAisi';
 
 interface SpecRow {
   name: string;
@@ -239,9 +240,10 @@ export function ResourceSeriesCard({ series }: { series: SeriesCardData }) {
 
           {/* Description + features */}
           <div className="min-w-0 flex-1">
-            <p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">
-              {series.description}
-            </p>
+            <p
+              className="text-sm leading-relaxed text-[var(--color-text-secondary)]"
+              dangerouslySetInnerHTML={{ __html: linkAisi(series.description) }}
+            />
 
             {hasTabs && (
               <div className="mt-4">

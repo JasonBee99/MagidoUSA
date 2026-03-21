@@ -19,6 +19,7 @@
 
 import React, { useState } from 'react';
 import type { Series } from '@/lib/products';
+import { linkAisi } from '@/lib/linkAisi';
 
 // ─── TYPES ───────────────────────────────────────────────────────────────────
 
@@ -114,7 +115,10 @@ export default function SpecTable({
         <h3 className="spec-table__series-name">{series.name}</h3>
         {series.isNew && <span className="spec-table__badge spec-table__badge--new">New</span>}
         {series.description && (
-          <p className="spec-table__series-desc">{series.description}</p>
+          <p
+            className="spec-table__series-desc"
+            dangerouslySetInnerHTML={{ __html: linkAisi(series.description) }}
+          />
         )}
       </div>
 

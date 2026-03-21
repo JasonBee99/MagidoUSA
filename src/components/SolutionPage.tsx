@@ -120,15 +120,23 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
                   >
                     {section.heading}
                   </h2>
-                  {section.content.split('\n\n').map((para, pIdx) => (
-                    <p
-                      key={pIdx}
-                      className="leading-relaxed mb-4 last:mb-0"
+                  {section.contentHtml ? (
+                    <div
+                      className="leading-relaxed mb-4 last:mb-0 space-y-4"
                       style={{ color: 'var(--color-text)' }}
-                    >
-                      {para}
-                    </p>
-                  ))}
+                      dangerouslySetInnerHTML={{ __html: section.contentHtml }}
+                    />
+                  ) : (
+                    section.content.split('\n\n').map((para, pIdx) => (
+                      <p
+                        key={pIdx}
+                        className="leading-relaxed mb-4 last:mb-0"
+                        style={{ color: 'var(--color-text)' }}
+                      >
+                        {para}
+                      </p>
+                    ))
+                  )}
                 </div>
               ))}
 
