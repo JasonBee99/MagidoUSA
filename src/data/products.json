@@ -4303,7 +4303,7 @@
             "name": "Basket Dimensions",
             "unit": "Inches",
             "values": {
-              "PM400": "",
+              "PM400": "2x L17.7\" x W13.8\" x H7.9\"",
               "P600/2": "L24\" x W12\" x H12\"",
               "P900/2": "L35\" x W15\" x H15\"",
               "P1200/2": "L47\" x W19\" x H19\"",
@@ -4314,7 +4314,7 @@
             "name": "Load Weight",
             "unit": "Lbs",
             "values": {
-              "PM400": "",
+              "PM400": "35 kg / basket",
               "P600/2": "440 lbs",
               "P900/2": "770 lbs",
               "P1200/2": "1100 lbs",
@@ -4325,7 +4325,7 @@
             "name": "Wash Fluid Capacity",
             "unit": "gal US",
             "values": {
-              "PM400": "",
+              "PM400": "158.5 gal",
               "P600/2": "130 gal",
               "P900/2": "210 gal",
               "P1200/2": "320 gal",
@@ -4336,7 +4336,7 @@
             "name": "Wash Pump",
             "unit": "Hp / PSI / GPM",
             "values": {
-              "PM400": "",
+              "PM400": "79 GPM / 87 PSI",
               "P600/2": "4 Hp / 60 psi / 65 GPM",
               "P900/2": "4 Hp / 60 psi / 65 GPM",
               "P1200/2": "5.5 Hp / 60 psi / 90 GPM",
@@ -4424,7 +4424,7 @@
             "name": "Load Height",
             "unit": "Inches",
             "values": {
-              "PM400": "",
+              "PM400": "46.1\"",
               "P600/2": "36\"",
               "P900/2": "40\"",
               "P1200/2": "40\"",
@@ -4457,7 +4457,7 @@
             "name": "Machine Dimensions",
             "unit": "",
             "values": {
-              "PM400": "",
+              "PM400": "L98.4\" x W78.7\" x H106.3\"",
               "P600/2": "L110\" x W67\" x H95\"",
               "P900/2": "L140\" x W70\" x H110\"",
               "P1200/2": "L165\" x W75\" x H120\"",
@@ -4468,7 +4468,7 @@
             "name": "Voltage",
             "unit": "",
             "values": {
-              "PM400": "",
+              "PM400": "400V / 3Ph+N / 50Hz",
               "P600/2": "460V/3PH/60 Hz",
               "P900/2": "460V/3PH/60 Hz",
               "P1200/2": "460V/3PH/60 Hz",
@@ -11105,6 +11105,38 @@
         "/images/products/platinum/pm400.webp"
       ],
       "specs": {
+        "Basket Dimensions": {
+          "value": "2x L17.7\" x W13.8\" x H7.9\"",
+          "unit": "Inches"
+        },
+        "Load Weight": {
+          "value": "35 kg / basket",
+          "unit": "kg"
+        },
+        "Production": {
+          "value": "140",
+          "unit": "l/h"
+        },
+        "Load Height": {
+          "value": "46.1\"",
+          "unit": "Inches"
+        },
+        "Wash Fluid Capacity": {
+          "value": "158.5 gal",
+          "unit": "gal US"
+        },
+        "Wash Pump": {
+          "value": "79 GPM / 87 PSI",
+          "unit": "GPM / PSI"
+        },
+        "Machine Dimensions": {
+          "value": "L98.4\" x W78.7\" x H106.3\"",
+          "unit": "Inches"
+        },
+        "Voltage": {
+          "value": "400V / 3Ph+N / 50Hz",
+          "unit": ""
+        },
         "PLC": {
           "value": "Siemens",
           "unit": ""
