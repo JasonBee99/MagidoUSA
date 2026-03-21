@@ -291,28 +291,46 @@ export default function CatalogPage() {
       {/* ── Overview ── */}
       <section id="overview" className="scroll-mt-20 py-14 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <h2 className="font-display text-2xl font-bold text-[var(--color-text)] sm:text-3xl">
-            Stainless Steel Industrial Cleaning Technology
-          </h2>
-          <div className="mt-4 max-w-3xl space-y-3 text-sm leading-relaxed text-[var(--color-text-secondary)] text-justify">
-            <p>
-              MAGIDO is recognized as one of the industry&apos;s leading manufacturers of aqueous parts
-              washing systems. Every machine is constructed entirely from AISI 304 stainless steel —
-              the same material used in food-grade and pharmaceutical environments — ensuring
-              corrosion resistance, longevity, and easy maintenance in even the harshest industrial settings.
-            </p>
-            <p>
-              Our product range covers every parts cleaning application from small-shop manual
-              washers to fully automated high-volume production lines. Whether you need a compact
-              sink-style unit for a single technician or a customized conveyor system processing
-              thousands of parts per hour, Magido has a purpose-built solution.
-            </p>
-            <p>
-              All Magido systems use environmentally friendly aqueous (water-based) cleaning
-              solutions, eliminating the hazardous waste disposal costs and worker safety risks
-              associated with solvent-based cleaners. Our team provides comprehensive support before
-              and after the sale to ensure the right system is matched to your exact application.
-            </p>
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-12">
+            {/* Text */}
+            <div className="flex-1 min-w-0">
+              <h2 className="font-display text-2xl font-bold text-[var(--color-text)] sm:text-3xl">
+                Stainless Steel Industrial Cleaning Technology
+              </h2>
+              <div className="mt-4 space-y-3 text-sm leading-relaxed text-[var(--color-text-secondary)] text-justify">
+                <p>
+                  MAGIDO is recognized as one of the industry&apos;s leading manufacturers of aqueous parts
+                  washing systems. Every machine is constructed entirely from AISI 304 stainless steel —
+                  the same material used in food-grade and pharmaceutical environments — ensuring
+                  corrosion resistance, longevity, and easy maintenance in even the harshest industrial settings.
+                </p>
+                <p>
+                  Our product range covers every parts cleaning application from small-shop manual
+                  washers to fully automated high-volume production lines. Whether you need a compact
+                  sink-style unit for a single technician or a customized conveyor system processing
+                  thousands of parts per hour, Magido has a purpose-built solution.
+                </p>
+                <p>
+                  All Magido systems use environmentally friendly aqueous (water-based) cleaning
+                  solutions, eliminating the hazardous waste disposal costs and worker safety risks
+                  associated with solvent-based cleaners. Our team provides comprehensive support before
+                  and after the sale to ensure the right system is matched to your exact application.
+                </p>
+              </div>
+            </div>
+            {/* Italy facility image */}
+            <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
+              <div className="relative overflow-hidden rounded-xl border border-[var(--color-card-border)]" style={{ height: '18em' }}>
+                <Image
+                  src="/images/about/magido-sede-italia.webp"
+                  alt="Magido manufacturing facility in Italy — industrial aqueous parts washers"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 384px"
+                />
+              </div>
+              <p className="mt-2 text-center text-xs text-[var(--color-text-muted)]">Magido Group — Manufacturing facility, Italy</p>
+            </div>
           </div>
         </div>
       </section>
