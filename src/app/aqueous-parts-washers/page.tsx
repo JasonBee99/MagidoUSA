@@ -236,11 +236,8 @@ export default function AqueousPartsWashersPage() {
       />
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="hero-bg relative overflow-hidden">
-        <div className="pointer-events-none absolute -top-32 right-0 h-[520px] w-[520px] rounded-full bg-magido-orange/10 blur-[120px]" />
-        <div className="pointer-events-none absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-magido-blue/15 blur-[100px]" />
-
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-32">
+      <section className="hero-bg relative px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl">
           <nav aria-label="Breadcrumb" className="mb-8 flex items-center gap-2 text-sm text-white/50">
             <Link href="/" className="transition hover:text-white/80">Home</Link>
             <ChevronRight className="h-3.5 w-3.5" />
