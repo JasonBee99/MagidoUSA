@@ -108,27 +108,80 @@ export default function ResourcesPage() {
     <>
       {/* Hero */}
       <section className="hero-bg py-16 text-white lg:py-24">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <nav className="mb-6 flex items-center gap-2 text-sm text-gray-400">
-            <Link href="/" className="transition-colors hover:text-white">
-              Home
-            </Link>
+            <Link href="/" className="transition-colors hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-gray-300">Resources</span>
           </nav>
 
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
-            <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
-            Aqueous Parts Washer Documentation
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
+            {/* Text */}
+            <div className="flex-1 min-w-0">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+                <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
+                Aqueous Parts Washer Documentation
+              </div>
+              <h1 className="font-display text-3xl font-bold uppercase tracking-tight sm:text-4xl lg:text-5xl">
+                Resources &amp; Docs
+              </h1>
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
+                Technical documentation, product catalogs, startup guides, and
+                service instructions for Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer systems for removing cutting oil, coolant, and machining residue from machined parts. Automotive, aerospace, machining.
+              </p>
+            </div>
+
+            {/* Illustration */}
+            <div className="w-full flex-shrink-0 lg:w-72 xl:w-80 flex items-center justify-center">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[260px]" aria-hidden="true">
+                {/* Background */}
+                <rect width="200" height="200" rx="20" fill="#315687" fillOpacity="0.15"/>
+
+                {/* Main document / catalog */}
+                <rect x="40" y="30" width="90" height="115" rx="6" fill="#315687" fillOpacity="0.25" stroke="#315687" strokeWidth="2"/>
+                <rect x="40" y="30" width="90" height="22" rx="6" fill="#315687" fillOpacity="0.5"/>
+                <rect x="40" y="44" width="90" height="8" rx="0" fill="#315687" fillOpacity="0.5"/>
+
+                {/* Document lines */}
+                <rect x="52" y="68" width="66" height="4" rx="2" fill="white" fillOpacity="0.3"/>
+                <rect x="52" y="78" width="50" height="4" rx="2" fill="white" fillOpacity="0.2"/>
+                <rect x="52" y="88" width="60" height="4" rx="2" fill="white" fillOpacity="0.2"/>
+                <rect x="52" y="98" width="44" height="4" rx="2" fill="white" fillOpacity="0.2"/>
+                <rect x="52" y="108" width="54" height="4" rx="2" fill="white" fillOpacity="0.2"/>
+                <rect x="52" y="118" width="40" height="4" rx="2" fill="white" fillOpacity="0.2"/>
+
+                {/* Catalog label */}
+                <text x="85" y="40" textAnchor="middle" fontSize="7" fontWeight="bold" fill="white" fillOpacity="0.9">MAGIDO USA</text>
+                <text x="85" y="50" textAnchor="middle" fontSize="5" fill="white" fillOpacity="0.6">PRODUCT CATALOG</text>
+
+                {/* Second doc behind */}
+                <rect x="55" y="22" width="90" height="115" rx="6" fill="#eb6c1c" fillOpacity="0.12" stroke="#eb6c1c" strokeWidth="1.5" strokeDasharray="4 2"/>
+
+                {/* Gear icon — spec sheet */}
+                <circle cx="148" cy="80" r="22" fill="#eb6c1c" fillOpacity="0.12" stroke="#eb6c1c" strokeWidth="1.5"/>
+                <circle cx="148" cy="80" r="10" fill="#eb6c1c" fillOpacity="0.2" stroke="#eb6c1c" strokeWidth="1.5"/>
+                <circle cx="148" cy="80" r="4" fill="#eb6c1c" fillOpacity="0.5"/>
+                {/* Gear teeth */}
+                <rect x="146" y="55" width="4" height="7" rx="1" fill="#eb6c1c" fillOpacity="0.6"/>
+                <rect x="146" y="98" width="4" height="7" rx="1" fill="#eb6c1c" fillOpacity="0.6"/>
+                <rect x="125" y="78" width="7" height="4" rx="1" fill="#eb6c1c" fillOpacity="0.6"/>
+                <rect x="168" y="78" width="7" height="4" rx="1" fill="#eb6c1c" fillOpacity="0.6"/>
+                <rect x="131" y="61" width="4" height="7" rx="1" fill="#eb6c1c" fillOpacity="0.5" transform="rotate(45 133 64.5)"/>
+                <rect x="161" y="61" width="4" height="7" rx="1" fill="#eb6c1c" fillOpacity="0.5" transform="rotate(-45 163 64.5)"/>
+                <rect x="131" y="90" width="4" height="7" rx="1" fill="#eb6c1c" fillOpacity="0.5" transform="rotate(-45 133 93.5)"/>
+                <rect x="161" y="90" width="4" height="7" rx="1" fill="#eb6c1c" fillOpacity="0.5" transform="rotate(45 163 93.5)"/>
+
+                {/* Checkmark badge */}
+                <circle cx="155" cy="140" r="22" fill="#22c55e" fillOpacity="0.15" stroke="#22c55e" strokeWidth="1.5"/>
+                <path d="M144 140l7 7 14-14" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+
+                {/* Download arrow */}
+                <circle cx="50" cy="162" r="16" fill="#315687" fillOpacity="0.2" stroke="#315687" strokeWidth="1.5"/>
+                <path d="M50 154v12M50 166l-5-5M50 166l5-5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.7"/>
+              </svg>
+            </div>
           </div>
-          <h1 className="font-display text-3xl font-bold uppercase tracking-tight sm:text-4xl lg:text-5xl">
-            Resources &amp; Docs
-          </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
-            Technical documentation, product catalogs, startup guides, and
-            service instructions for Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer systems for removing cutting oil, coolant, and machining residue from machined parts. Automotive, aerospace, machining.
-          </p>
         </div>
       </section>
 
