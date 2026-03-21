@@ -229,7 +229,7 @@ export default function HomePage() {
                 <div className="h-px flex-1 bg-magido-orange/20" />
               </div>
               <h2 className="mt-2 text-center font-display text-4xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-5xl">
-                Precision Engineered. Proven.
+                Precision Engineered Proven
               </h2>
               <p className="mt-4 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
                 Through strategic planning, careful selection of quality materials, and a constant search for innovative solutions, Magido has earned the reputation of producing the highest quality and most competitive wash systems on the market.
@@ -237,7 +237,7 @@ export default function HomePage() {
               <p className="mt-3 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
                 Our team is always attentive and willing to help before and after the sale — ensuring total flexibility in creating a tailor-made wash system for your maintenance or production parts cleaning operation.
               </p>
-              <div className="mt-8">
+              <div className="mt-8 text-center">
                 <Link href="/contact" className="btn-primary">
                   Talk to an Expert
                   <span className="btn-arrow">→</span>
