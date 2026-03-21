@@ -260,7 +260,7 @@ export default function ProductPage({
                 const raw = product.description || series?.description || '';
                 const html = raw.replace(
                   /AISI 304 stainless steel/gi,
-                  '<a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a>'
+                  '<a href="/solutions/aisi-304-stainless-steel-parts-washers" style="color:#eb6c1c;font-weight:500;text-decoration:none;" onmouseover="this.style.color=\'#315687\'" onmouseout="this.style.color=\'#eb6c1c\'">AISI 304 stainless steel</a>'
                 );
                 return (
                   <p
