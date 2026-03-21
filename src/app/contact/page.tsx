@@ -332,6 +332,22 @@ function ContactPageInner() {
                         rows={4}
                       />
 
+                      <SelectField
+                        label="How did you hear about Magido USA?"
+                        name="referral_source"
+                        options={[
+                          { value: '', label: 'Select one (optional)' },
+                          { value: 'Web search (Google, Bing, etc.)', label: 'Web search (Google, Bing, etc.)' },
+                          { value: 'YouTube video', label: 'YouTube video' },
+                          { value: 'Social media', label: 'Social media' },
+                          { value: 'Trade show or industry event', label: 'Trade show or industry event' },
+                          { value: 'Referral from colleague or distributor', label: 'Referral from colleague or distributor' },
+                          { value: 'Magido Italy / magido.com', label: 'Magido Italy / magido.com' },
+                          { value: 'Returning customer', label: 'Returning customer' },
+                          { value: 'Other', label: 'Other' },
+                        ]}
+                      />
+
                       {/* Submit */}
                       <SubmitButton status={quoteStatus} label="Send Quote Request" />
 
@@ -455,6 +471,22 @@ function ContactPageInner() {
                         name="notes"
                         placeholder="Any special requirements: drying needs, space constraints, utilities available, budget range, etc."
                         rows={3}
+                      />
+
+                      <SelectField
+                        label="How did you hear about Magido USA?"
+                        name="referral_source"
+                        options={[
+                          { value: '', label: 'Select one (optional)' },
+                          { value: 'Web search (Google, Bing, etc.)', label: 'Web search (Google, Bing, etc.)' },
+                          { value: 'YouTube video', label: 'YouTube video' },
+                          { value: 'Social media', label: 'Social media' },
+                          { value: 'Trade show or industry event', label: 'Trade show or industry event' },
+                          { value: 'Referral from colleague or distributor', label: 'Referral from colleague or distributor' },
+                          { value: 'Magido Italy / magido.com', label: 'Magido Italy / magido.com' },
+                          { value: 'Returning customer', label: 'Returning customer' },
+                          { value: 'Other', label: 'Other' },
+                        ]}
                       />
 
                       {/* Submit */}
