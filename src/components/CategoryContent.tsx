@@ -46,6 +46,11 @@ export function CategoryContent({
     ? (productsBySeries[activeSeries.slug]?.[0]?.images?.[0] ?? heroImage)
     : heroImage;
 
+  // Badge: when series tab active use series type, otherwise use category heroBadge
+  const heroBadge = activeSeries
+    ? `${activeSeries.type} — AISI 304 Stainless Steel`
+    : (category.heroBadge ?? category.name);
+
   return (
     <>
       {/* Hero — pure server component, no hydration cost */}
@@ -54,6 +59,7 @@ export function CategoryContent({
         heroDescription={heroDescription}
         categoryName={category.name}
         heroImage={activeHeroImage}
+        heroBadge={heroBadge}
       />
 
       {/* Tabs + grid — tabs are client (URL state), grid renders immediately */}

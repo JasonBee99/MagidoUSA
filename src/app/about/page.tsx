@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ChevronRight, ArrowRight, Phone } from 'lucide-react';
+import { ChevronRight, ArrowRight, Phone, Droplets } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Magido USA — Italian-Engineered Stainless Steel Parts Washers',
@@ -38,8 +38,11 @@ export default function AboutPage() {
 
             {/* Text */}
             <div className="flex-1 min-w-0">
-              <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">About Magido USA</p>
-              <h1 className="mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">Leaders in Aqueous Cleaning Solutions</h1>
+              <div className="inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+                <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
+                Italian-Engineered Aqueous Parts Washers Since 1980
+              </div>
+              <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">Leaders in Aqueous Cleaning Solutions</h1>
               <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg">Engineered in Italy. Built from AISI 304 stainless steel. Industrial aqueous parts washers for automotive, aerospace, machining, and heavy equipment — supported across the United States.</p>
             </div>
 

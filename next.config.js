@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Allow network access from local devices during development
+  allowedDevOrigins: ['192.168.1.113'],
   // Image optimization
   images: {
     formats: ['image/avif', 'image/webp'],

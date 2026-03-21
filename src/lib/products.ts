@@ -69,6 +69,7 @@ export interface Category {
   slug: string;
   shortDescription: string;
   description?: string;
+  heroBadge?: string;
   order: number;
   series: SeriesSummary[];
   totalProducts: number;

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Droplets } from 'lucide-react';
 import { faqCategories, getAllFaqItems } from '@/data/faq';
 
 export const metadata: Metadata = {
@@ -38,9 +39,10 @@ export default function FaqPage() {
             <span className="text-gray-300">FAQ</span>
           </nav>
 
-          <p className="mb-2 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
-            FAQ
-          </p>
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+            <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
+            Aqueous Parts Washer FAQ
+          </div>
           <h1 className="font-display text-3xl font-bold uppercase tracking-tight sm:text-4xl lg:text-5xl">
             Frequently Asked Questions
           </h1>

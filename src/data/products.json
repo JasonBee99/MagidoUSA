@@ -40,7 +40,8 @@
       ],
       "totalProducts": 6,
       "description": "Magido manual aqueous parts washers are engineered to handle the most rigorous cleaning challenges found in industrial and automotive maintenance applications. Available in sink-style, vat-style, and high-pressure cabinet configurations, these systems use environmentally safe water-based cleaning solutions to effectively remove oils, greases, dirt, and grime. Built entirely from AISI 304 stainless steel, Magido manual washers deliver reliable performance with minimal maintenance — ideal for shop-floor degreasing where hands-on control is essential.",
-      "heroImage": null
+      "heroImage": null,
+      "heroBadge": "Manual Aqueous Parts Washers"
     },
     {
       "name": "Top Load Washers",
@@ -101,7 +102,8 @@
       ],
       "totalProducts": 18,
       "description": "Magido top load aqueous parts washers are engineered for automatic spray washing applications using aqueous detergents at temperatures up to 150°F. Each system features a motorized rotating turntable and precision-angled jet nozzles that deliver thorough, consistent cleaning coverage across all part surfaces. Available in compact, standard, and high-performance configurations with turntable sizes ranging from 14\" to 55\" in diameter, these washers handle everything from small precision components to medium-sized industrial parts. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages.",
-      "heroImage": "/images/products/x51-2/l153.webp"
+      "heroImage": "/images/products/x51-2/l153.webp",
+      "heroBadge": "Spray Cabinet Parts Washers"
     },
     {
       "name": "Front Load Washers",
@@ -138,7 +140,8 @@
       ],
       "totalProducts": 11,
       "description": "Magido front load aqueous parts washers are engineered for automatic spray washing of large, heavy components using aqueous detergents at temperatures up to 160°F. The operation principle uses a fixed platform with a series of angled water jet nozzles configured on a spray ramp to optimally clean all part surfaces. Front load systems feature a removable turntable that transfers easily onto a mobile cart for convenient loading and unloading outside the wash chamber. All machines are constructed from AISI 304 stainless steel with options for filtration, rinsing, and drying stages — built for high-throughput production environments.",
-      "heroImage": null
+      "heroImage": null,
+      "heroBadge": "Front Load Spray Cabinet Washers"
     },
     {
       "name": "Immersion Washers",
@@ -159,7 +162,8 @@
       ],
       "totalProducts": 10,
       "description": "Magido immersion aqueous parts washers are designed for thorough cleaning of parts with complex geometries using a full-submersion agitation process. Parts are lowered into a heated aqueous cleaning solution via a pneumatic platform that oscillates to facilitate the cleaning process, reaching internal passages and intricate features that spray washing alone cannot. Operating at temperatures up to 167°F, these systems are ideal for precision components, machined parts, and assemblies requiring complete surface contact. All machines are constructed from AISI 304 stainless steel and are characterized by their cleaning platform size and load capacity.",
-      "heroImage": "/images/products/agita/a1300.webp"
+      "heroImage": "/images/products/agita/a1300.webp",
+      "heroBadge": "Immersion Aqueous Parts Washers"
     },
     {
       "name": "In-Line Belt Conveyor Washers",
@@ -196,7 +200,8 @@
       ],
       "totalProducts": 21,
       "description": "Magido in-line belt conveyor aqueous parts washers are designed for continuous, high-volume cleaning integrated directly into your production line. Parts are loaded onto a stainless steel mesh belt that carries them through single-stage or dual-stage wash and rinse zones at controlled speeds, delivering consistent results without manual handling. Available in compact Silver series and high-capacity Gold series configurations, these systems use environmentally safe aqueous cleaning solutions and are built entirely from AISI 304 stainless steel. Ideal for manufacturing operations that demand automated throughput with repeatable cleaning quality.",
-      "heroImage": null
+      "heroImage": null,
+      "heroBadge": "In-Line Belt Conveyor Washers"
     },
     {
       "name": "Rotary Drum Washers",
@@ -233,7 +238,8 @@
       ],
       "totalProducts": 14,
       "description": "Magido rotary drum aqueous parts washers use a helical auger drum system for continuous bulk cleaning of small, loose parts such as fasteners, stampings, and machined components. Parts are loaded into one end of the rotating drum and are carried through the wash zone by the internal helix, emerging clean at the other end — enabling non-stop processing without batching. Available in single-stage and dual-stage configurations with wash and rinse capabilities, all machines are constructed from AISI 304 stainless steel. These systems are the right choice for high-volume operations requiring consistent, automated cleaning.",
-      "heroImage": "/images/products/spira-2b/sp950-2.webp"
+      "heroImage": "/images/products/spira-2b/sp950-2.webp",
+      "heroBadge": "Rotary Drum Parts Washers"
     },
     {
       "name": "Rotary Immersion Washers",
@@ -254,7 +260,8 @@
       ],
       "totalProducts": 5,
       "description": "Magido rotary immersion aqueous parts washers combine turbulent immersion washing with spray cleaning to deliver superior results on parts with complex geometries. During the cleaning cycle, parts in baskets or fixtures are rotated through an immersion bath while simultaneously receiving spray cleaning, followed by spray and immersion rinsing with an available drying stage. Each system is customizable to your exact specifications and built entirely from AISI 304 stainless steel. These multi-action washers are ideal for critical components in aerospace, automotive, and precision manufacturing where thorough, repeatable cleaning is essential.",
-      "heroImage": "/images/products/platinum/p1200.webp"
+      "heroImage": "/images/products/platinum/p1200.webp",
+      "heroBadge": "Rotary Immersion Parts Washers"
     }
   ],
   "series": [
