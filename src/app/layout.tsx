@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
 import Script from 'next/script';
-import { Suspense } from 'react';
 import '@/styles/globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { CompareProvider } from '@/components/CompareProvider';
@@ -9,7 +8,6 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CompareBar } from '@/components/CompareBar';
 import { OrganizationJsonLd } from '@/components/JsonLd';
-import { SiteTagline } from '@/components/SiteTagline';
 
 const GA_ID = 'G-M6YLZ7YG7T';
 
@@ -133,11 +131,6 @@ export default function RootLayout({
             </a>
             <div className="flex min-h-screen flex-col">
               <Header />
-              <Suspense fallback={
-                <div className="border-b border-[var(--color-border)] bg-magido-blue px-4 py-1.5" />
-              }>
-                <SiteTagline />
-              </Suspense>
               <main id="main-content" className="flex-1">{children}</main>
               <Footer />
             </div>
