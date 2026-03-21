@@ -11,7 +11,7 @@ interface ShareButtonsProps {
 export function ShareButtons({ title, slug }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
 
-  const url = `https://www.magidousa.com/blog/${slug}`;
+  const url = `https://magidousa.com/blog/${slug}`;
   const encoded = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
 

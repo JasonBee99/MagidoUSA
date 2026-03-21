@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     title: 'Aqueous Parts Washers | Magido USA',
     description:
       'Premium aqueous parts washing systems — 100% stainless steel, made in Italy. 75+ models for automotive, aerospace, machining, and heavy equipment.',
-    url: 'https://www.magidousa.com/aqueous-parts-washers',
+    url: 'https://magidousa.com/aqueous-parts-washers',
   },
   alternates: {
-    canonical: 'https://www.magidousa.com/aqueous-parts-washers',
+    canonical: 'https://magidousa.com/aqueous-parts-washers',
   },
 };
 
@@ -45,18 +45,18 @@ const jsonLd = {
     {
       '@type': 'ItemPage',
       name: 'Aqueous Parts Washers | Magido USA',
-      url: 'https://www.magidousa.com/aqueous-parts-washers',
+      url: 'https://magidousa.com/aqueous-parts-washers',
       description:
         'Industrial aqueous parts washers and water-based parts cleaning systems from Magido USA — 100% AISI 304 stainless steel, 75 models, made in Italy since 1980.',
       breadcrumb: {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.magidousa.com' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://magidousa.com' },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Aqueous Parts Washers',
-            item: 'https://www.magidousa.com/aqueous-parts-washers',
+            item: 'https://magidousa.com/aqueous-parts-washers',
           },
         ],
       },

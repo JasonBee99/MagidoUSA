@@ -24,7 +24,7 @@ export async function generateMetadata({
   const solution = solutions.find((s: Solution) => s.slug === params.slug);
   if (!solution) return {};
 
-  const url = `https://www.magidousa.com/solutions/${solution.slug}`;
+  const url = `https://magidousa.com/solutions/${solution.slug}`;
 
   return {
     title: solution.metaTitle,
@@ -35,7 +35,7 @@ export async function generateMetadata({
       description: solution.metaDescription,
       url,
       type: 'article',
-      images: [{ url: 'https://www.magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+      images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',

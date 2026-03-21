@@ -82,7 +82,7 @@ export const metadata: Metadata = {
   description:
     'Technical documentation, product catalogs, startup guides, and service instructions for all Magido USA aqueous parts washing systems.',
   alternates: {
-    canonical: 'https://www.magidousa.com/resources',
+    canonical: 'https://magidousa.com/resources',
   },
 };
 

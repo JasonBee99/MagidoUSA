@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/', '/admin/'],
       },
     ],
-    sitemap: 'https://www.magidousa.com/sitemap.xml',
-    host: 'https://www.magidousa.com',
+    sitemap: 'https://magidousa.com/sitemap.xml',
+    host: 'https://magidousa.com',
   };
 }

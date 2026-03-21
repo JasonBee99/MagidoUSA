@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'How to Choose a Parts Washer',
     description:
       'Interactive selector and complete guide to matching the right wash system to your application.',
-    url: 'https://www.magidousa.com/how-to-choose',
+    url: 'https://magidousa.com/how-to-choose',
   },
 };
 

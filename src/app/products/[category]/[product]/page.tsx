@@ -48,12 +48,12 @@ export function generateMetadata({
     title: `${product.name}`,
     description: metaDescription,
     alternates: {
-      canonical: `https://www.magidousa.com/products/${params.category}/${params.product}`,
+      canonical: `https://magidousa.com/products/${params.category}/${params.product}`,
     },
     openGraph: {
       title: `${product.name}`,
       description: metaDescription,
-      url: `https://www.magidousa.com/products/${params.category}/${params.product}`,
+      url: `https://magidousa.com/products/${params.category}/${params.product}`,
       images: product.images.length > 0 ? [{ url: product.images[0] }] : undefined,
     },
   };

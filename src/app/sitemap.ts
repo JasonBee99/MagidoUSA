@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const BASE = 'https://www.magidousa.com';
+const BASE = 'https://magidousa.com';
 
 // ─── Static routes ───────────────────────────────────────────────────────────
 // lastModified: use a real date — only update this when the page content changes.

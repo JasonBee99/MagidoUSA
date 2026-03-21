@@ -48,18 +48,18 @@ export const metadata: Metadata = {
   },
   authors: [{ name: 'Magido USA' }],
   creator: 'Magido USA',
-  metadataBase: new URL('https://www.magidousa.com'),
+  metadataBase: new URL('https://magidousa.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.magidousa.com',
+    url: 'https://magidousa.com',
     siteName: 'Magido USA',
     title: 'Magido USA — Leaders in Aqueous Parts Washing Systems',
     description:
       'Professional aqueous parts washers built from AISI 304 stainless steel. Spray cabinet, immersion, conveyor, and rotary systems.',
     images: [
       {
-        url: 'https://www.magidousa.com/images/og-default.png',
+        url: 'https://magidousa.com/images/og-default.png',
         width: 1200,
         height: 630,
         alt: 'Magido USA — Aqueous Parts Washing Systems',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: 'Magido USA — Aqueous Parts Washing Systems',
     description:
       'Professional aqueous parts washers built from AISI 304 stainless steel.',
-    images: ['https://www.magidousa.com/images/og-default.png'],
+    images: ['https://magidousa.com/images/og-default.png'],
   },
   robots: {
     index: true,
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.magidousa.com',
+    canonical: 'https://magidousa.com',
   },
 };
 

@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     'Compare Magido USA aqueous parts washers side by side. View full specifications, features, and options across models to find the right machine for your application.',
   alternates: {
-    canonical: 'https://www.magidousa.com/compare',
+    canonical: 'https://magidousa.com/compare',
   },
   openGraph: {
     title: 'Compare Parts Washers',
     description:
       'Side-by-side specs, features, and options across Magido USA aqueous parts washing models.',
-    url: 'https://www.magidousa.com/compare',
+    url: 'https://magidousa.com/compare',
   },
   robots: {
     index: false, // comparison tool state is ephemeral — no value in indexing

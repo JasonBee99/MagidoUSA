@@ -19,8 +19,8 @@ export function OrganizationJsonLd() {
         '@context': 'https://schema.org',
         '@type': 'Organization',
         name: 'Magido USA',
-        url: 'https://www.magidousa.com',
-        logo: 'https://www.magidousa.com/images/magido-usa-logo.png',
+        url: 'https://magidousa.com',
+        logo: 'https://magidousa.com/images/magido-usa-logo.png',
         description:
           'Magido USA manufactures professional aqueous parts washers built entirely from AISI 304 stainless steel.',
         telephone: '+1-844-462-4436',
@@ -44,7 +44,7 @@ export function OrganizationJsonLd() {
   );
 }
 
-const BASE_URL = 'https://www.magidousa.com';
+const BASE_URL = 'https://magidousa.com';
 
 function toAbsoluteUrl(path: string): string {
   if (!path) return BASE_URL;
@@ -169,7 +169,7 @@ export function ArticleJsonLd({
           name: 'Magido USA',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://www.magidousa.com/images/magido-usa-logo.png',
+            url: 'https://magidousa.com/images/magido-usa-logo.png',
           },
         },
       }}
