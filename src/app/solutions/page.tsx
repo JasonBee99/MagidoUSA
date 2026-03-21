@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { Droplets } from 'lucide-react';
 import type { Solution, SolutionsData } from '@/types/solutions';
@@ -35,30 +36,46 @@ export default function SolutionsIndexPage() {
 
       {/* Hero */}
       <section className="hero-bg py-16 md:py-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="mb-6 flex items-center gap-2 text-sm" aria-label="Breadcrumb">
-            <Link href="/" className="hover:underline" style={{ color: 'var(--color-text-secondary)' }}>
-              Home
-            </Link>
+            <Link href="/" className="hover:underline" style={{ color: 'var(--color-text-secondary)' }}>Home</Link>
             <span style={{ color: 'var(--color-text-muted)' }}>/</span>
             <span style={{ color: 'var(--color-text-muted)' }}>Solutions</span>
           </nav>
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
-            <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
-            Aqueous vs Solvent · Spray vs Immersion · Application Guides
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
+            {/* Text */}
+            <div className="flex-1 min-w-0">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+                <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
+                Aqueous vs Solvent · Spray vs Immersion · Application Guides
+              </div>
+              <h1
+                className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-4"
+                style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
+              >
+                Parts Washing Solutions &amp; Guides
+              </h1>
+              <p
+                className="text-lg md:text-xl max-w-2xl leading-relaxed"
+                style={{ color: 'var(--color-text-secondary)' }}
+              >
+                Practical guides to choosing the right industrial aqueous parts washer — AISI 304 stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer vs solvent, cutting oil and coolant removal, machined parts cleaning for automotive, aerospace, and machining.
+              </p>
+            </div>
+            {/* Image */}
+            <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
+              <div className="product-halo relative h-52 w-full lg:h-60">
+                <Image
+                  src="/images/products/platinum/p1200.webp"
+                  alt="Magido Platinum Series rotary immersion aqueous parts washer"
+                  fill
+                  className="object-contain object-center"
+                  sizes="(max-width: 1024px) 100vw, 384px"
+                  priority
+                />
+              </div>
+            </div>
           </div>
-          <h1
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-4"
-            style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
-          >
-            Parts Washing Solutions &amp; Guides
-          </h1>
-          <p
-            className="text-lg md:text-xl max-w-2xl leading-relaxed"
-            style={{ color: 'var(--color-text-secondary)' }}
-          >
-            Practical guides to choosing the right industrial aqueous parts washer — AISI 304 stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer vs solvent, cutting oil and coolant removal, machined parts cleaning for automotive, aerospace, and machining.
-          </p>
         </div>
       </section>
 

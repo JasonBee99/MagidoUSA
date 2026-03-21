@@ -3,6 +3,7 @@ export const revalidate = 0;
 
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ChevronRight, Droplets } from 'lucide-react';
 import { blogPosts } from '@/data/blog';
 import { BlogList } from '@/components/BlogList';
@@ -50,16 +51,35 @@ export default function BlogPage() {
 
       <section className="hero-bg px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
-            <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
-            Industrial Parts Washing Guides
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
+            {/* Text */}
+            <div className="flex-1 min-w-0">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+                <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
+                Industrial Parts Washing Guides
+              </div>
+              <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                {hero.heading}
+              </h1>
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
+                {hero.subheading}
+              </p>
+            </div>
+            {/* Image */}
+            <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
+              <div className="cta-banner-grid overflow-hidden rounded-xl border border-magido-orange/30">
+                <Image
+                  src="/images/magido-facility.webp"
+                  alt="Magido USA — industrial aqueous parts washer facility"
+                  width={480}
+                  height={280}
+                  className="h-52 w-full object-cover object-center lg:h-60"
+                  priority
+                />
+              </div>
+              <p className="mt-2 text-center text-xs text-white/40">Magido USA — Sturtevant, WI</p>
+            </div>
           </div>
-          <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            {hero.heading}
-          </h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
-            {hero.subheading}
-          </p>
         </div>
       </section>
 

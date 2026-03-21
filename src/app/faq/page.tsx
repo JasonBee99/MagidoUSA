@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Droplets } from 'lucide-react';
 import { faqCategories, getAllFaqItems } from '@/data/faq';
 
@@ -30,25 +31,40 @@ export default function FaqPage() {
     <>
       {/* ─── Hero ─── */}
       <section className="hero-bg py-16 text-white lg:py-24">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <nav className="mb-6 flex items-center gap-2 text-sm text-gray-400">
-            <Link href="/" className="transition-colors hover:text-white">
-              Home
-            </Link>
+            <Link href="/" className="transition-colors hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-gray-300">FAQ</span>
           </nav>
-
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
-            <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
-            Aqueous Parts Washer FAQ
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
+            {/* Text */}
+            <div className="flex-1 min-w-0">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+                <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
+                Aqueous Parts Washer FAQ
+              </div>
+              <h1 className="font-display text-3xl font-bold uppercase tracking-tight sm:text-4xl lg:text-5xl">
+                Frequently Asked Questions
+              </h1>
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
+                Common questions about Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer selection, operation, detergents, removing cutting oil and coolant from machined parts, AISI 304 stainless steel construction, made in Italy.
+              </p>
+            </div>
+            {/* Image */}
+            <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
+              <div className="product-halo relative h-52 w-full lg:h-60">
+                <Image
+                  src="/images/about/magido-parts-washer.webp"
+                  alt="Magido stainless steel industrial aqueous parts washers"
+                  fill
+                  className="object-contain object-center"
+                  sizes="(max-width: 1024px) 100vw, 384px"
+                  priority
+                />
+              </div>
+            </div>
           </div>
-          <h1 className="font-display text-3xl font-bold uppercase tracking-tight sm:text-4xl lg:text-5xl">
-            Frequently Asked Questions
-          </h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
-            Common questions about Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer selection, operation, detergents, removing cutting oil and coolant from machined parts, AISI 304 stainless steel construction, made in Italy.
-          </p>
         </div>
       </section>
 
