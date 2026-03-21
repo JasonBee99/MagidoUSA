@@ -66,9 +66,12 @@ export function CategoryContent({
   const searchParams = useSearchParams();
   const activeSeriesParam = searchParams.get('series');
   const [specsMode, setSpecsMode] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  const activeSeries = activeSeriesParam
-    ? seriesList.find((s) => `${s.slug}-series` === activeSeriesParam)
+  useEffect(() => { setMounted(true); }, []);
+
+  const activeSeries = mounted && activeSeriesParam
+    ? seriesList.find((s) => `${s.slug}-series` === activeSeriesParam) ?? null
     : null;
 
   const allProducts = seriesList.flatMap((s) => productsBySeries[s.slug] || []);
@@ -92,7 +95,7 @@ export function CategoryContent({
       />
 
       {/* SEO Intro — keyword-rich copy, visible to crawlers, hidden when series tab is active */}
-      {!activeSeries && CATEGORY_SEO_INTRO[category.slug] && (
+      {(!mounted || !activeSeries) && CATEGORY_SEO_INTRO[category.slug] && (
         <section className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <h2 className="mb-3 font-display text-xl font-bold text-[var(--color-text)] lg:text-2xl">
