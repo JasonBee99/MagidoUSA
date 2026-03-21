@@ -86,15 +86,15 @@ export function HomeHero() {
               </div>
             </div>
 
-            {/* Right: FLS product image */}
+            {/* Right: FLS product image — fills half-width container */}
             <div className="flex w-full items-center justify-center lg:w-1/2">
-              <div className="product-halo relative h-56 w-56 sm:h-72 sm:w-72 lg:h-96 lg:w-96">
+              <div className="product-halo relative h-72 w-full sm:h-96 lg:h-[32rem]">
                 <Image
                   src="/images/products/fls/fls35-open.webp"
                   alt="FLS-35 Front Load Spray Cabinet Washer"
                   fill
                   className="object-contain"
-                  sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 384px"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
                   priority
                 />
               </div>
