@@ -9,7 +9,7 @@ export function HomeHero() {
   return (
     <>
       {/* ─── Hero section ─── */}
-      <section className="hero-bg relative px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <section className="hero-bg relative px-4 pt-8 pb-16 sm:px-6 lg:px-8 lg:pt-10 lg:pb-24">
         <div className="mx-auto max-w-7xl">
 
           {/* Main hero: FLS spotlight */}
@@ -21,7 +21,7 @@ export function HomeHero() {
               {/* Heading — full width, badge inline after title */}
               <h1 className="flex w-full flex-wrap items-baseline justify-center gap-x-3 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl lg:justify-start lg:text-6xl">
                 FLS Series
-                <span className="inline-flex items-center rounded-full bg-magido-orange/20 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-magido-orange" style={{ fontSize: '0.6em', verticalAlign: 'middle' }}>
+                <span className="inline-flex items-center rounded-full bg-magido-orange/20 px-2 py-0.5 font-bold uppercase tracking-wider text-magido-orange" style={{ fontSize: '0.35em' }}>
                   New Product
                 </span>
               </h1>
