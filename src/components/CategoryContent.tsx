@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import type { Category, Series, Product } from '@/lib/products';
 import { CategoryHero } from '@/components/CategoryHero';
@@ -27,9 +27,13 @@ export function CategoryContent({
   const searchParams = useSearchParams();
   const activeSeriesParam = searchParams.get('series');
   const [specsMode, setSpecsMode] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  const activeSeries = activeSeriesParam
-    ? seriesList.find((s) => `${s.slug}-series` === activeSeriesParam)
+  useEffect(() => { setMounted(true); }, []);
+
+  // Before mount (SSR), always treat as no active series to avoid hydration mismatch
+  const activeSeries = mounted && activeSeriesParam
+    ? seriesList.find((s) => `${s.slug}-series` === activeSeriesParam) ?? null
     : null;
 
   const allProducts = seriesList.flatMap((s) => productsBySeries[s.slug] || []);
