@@ -19,6 +19,7 @@ export interface Solution {
   intro: string;
   heroImage?: string;
   heroImageAlt?: string;
+  heroSvg?: string;
   sections: SolutionSection[];
   comparisonTable?: ComparisonTable;
   verdict?: string;

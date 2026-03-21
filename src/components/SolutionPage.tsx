@@ -100,6 +100,16 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
                 </div>
               </div>
             )}
+
+            {/* Hero SVG illustration — shown when no photo */}
+            {!solution.heroImage && solution.heroSvg && (
+              <div className="w-full flex-shrink-0 lg:w-72 xl:w-80 flex items-center justify-center">
+                <div
+                  className="w-full max-w-[260px]"
+                  dangerouslySetInnerHTML={{ __html: solution.heroSvg }}
+                />
+              </div>
+            )}
           </div>
         </div>
       </section>
