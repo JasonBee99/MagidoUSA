@@ -20,6 +20,8 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE}/faq`,           lastModified: new Date('2025-03-01'), changeFrequency: 'monthly', priority: 0.7 },
   // SEO landing pages — added Phase 19
   { url: `${BASE}/aqueous-parts-washers`, lastModified: new Date('2026-03-18'), changeFrequency: 'monthly', priority: 0.9 },
+  // Catalog — added Phase 22
+  { url: `${BASE}/resources/catalog`,     lastModified: new Date('2026-03-01'), changeFrequency: 'monthly', priority: 0.8 },
 ];
 
 // ─── Product category pages ───────────────────────────────────────────────────
@@ -165,7 +167,27 @@ const solutionRoutes: MetadataRoute.Sitemap = [
   priority: 0.8,
 }));
 
-// ─── Resource / documentation pages ──────────────────────────────────────────
+// ─── Blog post pages ──────────────────────────────────────────────────────────
+const blogRoutes: MetadataRoute.Sitemap = [
+  'aqueous-vs-solvent-parts-cleaning',
+  'stainless-steel-parts-washers-outlast-competition',
+  'spray-washing-vs-immersion-cleaning',
+  'aqueous-parts-washer-maintenance-guide',
+  'choosing-right-parts-washer-size',
+  'how-often-change-parts-washer-solution',
+  '5-signs-parts-washer-needs-servicing',
+  'parts-washing-medical-device-manufacturing',
+  'water-based-parts-washing-complete-guide',
+  'how-to-size-a-parts-washer',
+  'aqueous-parts-washers-automotive-manufacturing',
+].map((slug) => ({
+  url: `${BASE}/blog/${slug}`,
+  lastModified: new Date('2026-03-01'),
+  changeFrequency: 'monthly' as const,
+  priority: 0.7,
+}));
+
+
 // Note: /resources (the main page) is already in staticRoutes — do not duplicate it here.
 const resourceRoutes: MetadataRoute.Sitemap = [
   'top-load-washers',
@@ -185,12 +207,13 @@ const resourceRoutes: MetadataRoute.Sitemap = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    ...staticRoutes,    //  12 pages (inc. FAQ + aqueous landing page)
+    ...staticRoutes,    //  13 pages (inc. FAQ, aqueous landing, catalog)
     ...categoryRoutes,  //   7 pages
     ...productRoutes,   //  75 pages
     ...industryRoutes,  //   6 pages
     ...solutionRoutes,  //  12 pages
     ...resourceRoutes,  //   8 pages
-    // Total: 120 URLs
+    ...blogRoutes,      //  11 pages
+    // Total: 132 URLs
   ];
 }
