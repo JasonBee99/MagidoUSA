@@ -1,6 +1,6 @@
 // src/app/industries/page.tsx
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Droplets } from 'lucide-react';
 import { INDUSTRIES } from '@/data/industries';
 import { BreadcrumbJsonLd } from '@/components/JsonLd';
 import type { Metadata } from 'next';
@@ -41,10 +41,11 @@ export default function IndustriesPage() {
       <section className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
-              Industries Served
-            </p>
-            <h1 className="mt-3 font-display text-4xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-5xl">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+              <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
+              Industrial Aqueous Parts Washers — All Sectors
+            </div>
+            <h1 className="mt-4 font-display text-4xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-5xl">
               We Serve the Toughest Sectors
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[var(--color-text-secondary)]">

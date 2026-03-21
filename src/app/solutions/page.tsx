@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Droplets } from 'lucide-react';
 import type { Solution, SolutionsData } from '@/types/solutions';
 import solutionsData from '@/data/solutions.json';
 
@@ -42,8 +43,12 @@ export default function SolutionsIndexPage() {
             <span style={{ color: 'var(--color-text-muted)' }}>/</span>
             <span style={{ color: 'var(--color-text-muted)' }}>Solutions</span>
           </nav>
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+            <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
+            Aqueous vs Solvent · Spray vs Immersion · Application Guides
+          </div>
           <h1
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-4"
             style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
           >
             Parts Washing Solutions &amp; Guides

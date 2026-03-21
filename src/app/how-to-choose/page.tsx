@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Droplets } from 'lucide-react';
 import SelectorTabs from '@/components/SelectorTabs';
 import AqueousProcessDiagram from '@/components/AqueousProcessDiagram';
 
@@ -42,10 +43,11 @@ export default function HowToChoosePage() {
 
       {/* ── Page heading ── */}
       <div className="mb-10">
-        <p className="text-xs font-semibold tracking-widest uppercase text-magido-orange mb-2">
-          Selection Guide
-        </p>
-        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4 leading-tight">
+        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+          <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
+          Aqueous Parts Washer Selection Guide
+        </div>
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4 leading-tight mt-4">
           How to Choose a Parts Washer
         </h1>
         <p className="text-lg text-[var(--color-muted)] max-w-2xl leading-relaxed">

@@ -15,6 +15,7 @@ import {
   Send,
   CheckCircle2,
   Loader2,
+  Droplets,
 } from 'lucide-react';
 import { getAllCategories } from '@/lib/products';
 
@@ -155,10 +156,11 @@ function ContactPageInner() {
 
             {/* Text */}
             <div className="flex-1 min-w-0">
-              <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
-                Get In Touch
-              </p>
-              <h1 className="mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              <div className="inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+                <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
+                Aqueous Parts Washer Specialists — Free Consultation
+              </div>
+              <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
                 Let&apos;s Find Your Solution
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
