@@ -113,31 +113,37 @@ const jsonLd = {
 // ─── Data ────────────────────────────────────────────────────────────────────
 const BENEFITS = [
   {
+    id: 'safety',
     icon: ShieldCheck,
     title: 'Worker & Environmental Safety',
     body: 'Water-based cleaning eliminates solvent vapors, flammability risk, and hazardous waste handling. Aqueous systems support OSHA compliance and a safer shop floor.',
   },
   {
+    id: 'performance',
     icon: Droplets,
     title: 'Superior Cleaning Performance',
     body: 'Heated aqueous solution with targeted spray impingement removes machining oils, coolants, chips, carbon deposits, and oxide scale from the most complex part geometries.',
   },
   {
+    id: 'stainless',
     icon: ShieldCheck,
     title: <>100% <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 Stainless Steel</a></>,
     body: <>Every Magido aqueous parts washer is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a> — cabinet, tank, internal structure, and spray manifolds — not just the wash zone.</>,
   },
   {
+    id: 'cost',
     icon: Leaf,
     title: 'Lower Operating Costs',
     body: 'Biodegradable detergents cost a fraction of industrial solvents. Extended bath life, integrated filtration, and solution recovery reduce consumable spend significantly.',
   },
   {
+    id: 'repeatability',
     icon: Zap,
     title: 'Process Repeatability',
     body: 'Automated wash cycles with programmable temperature, pressure, and timing deliver consistent cleaning results every cycle — critical for production and quality-controlled environments.',
   },
   {
+    id: 'compliance',
     icon: ClipboardList,
     title: 'Regulatory Compliance',
     body: 'Aqueous parts washing systems simplify EPA and local environmental compliance. No hazardous waste manifests, no solvent storage permits, no air quality concerns.',
@@ -340,7 +346,7 @@ export default function AqueousPartsWashersPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {BENEFITS.map((b) => (
               <div
-                key={b.title}
+                key={b.id}
                 className="rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-7 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
               >
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-magido-orange/10">
