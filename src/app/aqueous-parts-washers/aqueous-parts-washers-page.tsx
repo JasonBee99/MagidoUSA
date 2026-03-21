@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     description:
       'Premium aqueous parts washing systems — 100% stainless steel, made in Italy. 75+ models for automotive, aerospace, machining, and heavy equipment.',
     url: 'https://magidousa.com/aqueous-parts-washers',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
   },
   alternates: {
     canonical: 'https://magidousa.com/aqueous-parts-washers',

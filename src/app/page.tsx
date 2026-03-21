@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     description:
       '75+ aqueous parts washers and water-based cleaning systems — 100% AISI 304 stainless steel, made in Italy since 1980. Automotive, aerospace, machining, heavy equipment.',
     url: 'https://magidousa.com',
+    images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Magido USA — Industrial Aqueous Parts Washers | Stainless Steel, Made in Italy',
+    description:
+      '75+ aqueous parts washers — 100% AISI 304 stainless steel, made in Italy since 1980.',
   },
 };
 
