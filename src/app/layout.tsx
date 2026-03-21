@@ -8,6 +8,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CompareBar } from '@/components/CompareBar';
 import { OrganizationJsonLd } from '@/components/JsonLd';
+import { SiteTagline } from '@/components/SiteTagline';
 
 const GA_ID = 'G-M6YLZ7YG7T';
 
@@ -131,6 +132,7 @@ export default function RootLayout({
             </a>
             <div className="flex min-h-screen flex-col">
               <Header />
+              <SiteTagline />
               <main id="main-content" className="flex-1">{children}</main>
               <Footer />
             </div>
