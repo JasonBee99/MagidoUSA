@@ -124,10 +124,8 @@ export default function RootLayout({
           <CompareProvider>
             <a
               href="#main-content"
-              style={{ position: 'absolute', top: '-9999px', left: '0' }}
-              onFocus={e => { e.currentTarget.style.top = '1rem'; e.currentTarget.style.left = '1rem'; e.currentTarget.style.zIndex = '9999'; }}
-              onBlur={e => { e.currentTarget.style.top = '-9999px'; }}
-              className="rounded-lg bg-magido-orange px-4 py-2 text-sm font-semibold text-white shadow-lg outline-none"
+              className="pointer-events-none fixed left-0 top-0 -translate-y-full bg-magido-orange px-4 py-2 text-sm font-semibold text-white shadow-lg transition-transform focus:pointer-events-auto focus:translate-y-0 focus:outline-none"
+              style={{ zIndex: 9999 }}
             >
               Skip to main content
             </a>
