@@ -74,7 +74,7 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
           </h1>
 
           {/* Below title: text left, image right */}
-          <div className={`flex flex-col gap-8 ${solution.heroImage ? 'lg:flex-row lg:items-start lg:gap-12' : ''}`}>
+          <div className={`flex flex-col gap-8 ${(solution.heroImage || solution.heroSvg) ? 'lg:flex-row lg:items-start lg:gap-12' : ''}`}>
             {/* Intro text */}
             <div className="flex-1 min-w-0">
               <p
