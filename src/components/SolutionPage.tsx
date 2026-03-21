@@ -55,27 +55,30 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
             <span style={{ color: 'var(--color-text-muted)' }}>{solution.title}</span>
           </nav>
 
-          <div className={`flex flex-col gap-8 ${solution.heroImage ? 'lg:flex-row lg:items-center lg:gap-12' : ''}`}>
-            {/* Text */}
-            <div className="flex-1 min-w-0">
-              {/* Badge */}
-              <div className="mb-4">
-                <span
-                  className="inline-block text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-                  style={{ backgroundColor: '#EB6C1C20', color: '#EB6C1C' }}
-                >
-                  {isComparison ? 'Comparison Guide' : 'Application Guide'}
-                </span>
-              </div>
+          {/* Badge */}
+          <div className="mb-4">
+            <span
+              className="inline-block text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
+              style={{ backgroundColor: '#EB6C1C20', color: '#EB6C1C' }}
+            >
+              {isComparison ? 'Comparison Guide' : 'Application Guide'}
+            </span>
+          </div>
 
-              <h1
-                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
-                style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
-              >
-                {solution.headline}
-              </h1>
+          {/* Title — full width */}
+          <h1
+            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8"
+            style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
+          >
+            {solution.headline}
+          </h1>
+
+          {/* Below title: text left, image right */}
+          <div className={`flex flex-col gap-8 ${solution.heroImage ? 'lg:flex-row lg:items-start lg:gap-12' : ''}`}>
+            {/* Intro text */}
+            <div className="flex-1 min-w-0">
               <p
-                className="text-lg md:text-xl leading-relaxed max-w-3xl"
+                className="text-lg md:text-xl leading-relaxed"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
                 {solution.intro}
