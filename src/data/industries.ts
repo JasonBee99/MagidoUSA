@@ -333,7 +333,7 @@ export const INDUSTRIES: Industry[] = [
     icon: '🍽️',
     tagline: 'NSF-compatible aqueous cleaning for food-grade equipment',
     description:
-      'Food processing facilities require cleaning equipment that meets food-grade material standards, handles food residues and sanitation chemicals, and supports HACCP-compliant cleaning programs. Magido <a href="/solutions/aisi-304-stainless-steel-parts-washers" style="color:#eb6c1c;font-weight:500;text-decoration:none;" onmouseover="this.style.color='#315687'" onmouseout="this.style.color='#eb6c1c'">AISI 304 stainless steel</a> construction is inherently food-grade — with no painted surfaces, no hidden carbon steel, and no areas that trap contamination.',
+      'Food processing facilities require cleaning equipment that meets food-grade material standards, handles food residues and sanitation chemicals, and supports HACCP-compliant cleaning programs. Magido <a href="/solutions/aisi-304-stainless-steel-parts-washers" style="color:#eb6c1c;font-weight:500;text-decoration:none;" onmouseover="this.style.color=&apos;#315687&apos;" onmouseout="this.style.color=&apos;#eb6c1c&apos;" >AISI 304 stainless steel</a> construction is inherently food-grade — with no painted surfaces, no hidden carbon steel, and no areas that trap contamination.',
     heroStat: { value: 'AISI 304', label: 'Food-Grade Stainless Steel' },
     challenges: [
       {
@@ -385,7 +385,7 @@ export const INDUSTRIES: Industry[] = [
       'aqueous-vs-solvent-parts-washers',
     ],
     metaDescription:
-      'Food-grade parts washers — <a href="/solutions/aisi-304-stainless-steel-parts-washers" style="color:#eb6c1c;font-weight:500;text-decoration:none;" onmouseover="this.style.color='#315687'" onmouseout="this.style.color='#eb6c1c'">AISI 304 stainless steel</a> aqueous cleaning systems for food processing equipment, tooling, and components.',
+      'Food-grade parts washers — <a href="/solutions/aisi-304-stainless-steel-parts-washers" style="color:#eb6c1c;font-weight:500;text-decoration:none;" onmouseover="this.style.color=&apos;#315687&apos;" onmouseout="this.style.color=&apos;#eb6c1c&apos;" >AISI 304 stainless steel</a> aqueous cleaning systems for food processing equipment, tooling, and components.',
   },
 ];
 
