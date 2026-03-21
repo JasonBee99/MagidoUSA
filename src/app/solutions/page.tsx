@@ -8,7 +8,7 @@ const { solutions } = solutionsData as SolutionsData;
 export const metadata: Metadata = {
   title: 'Aqueous Parts Washer Guides & Solutions | Magido USA',
   description:
-    'Expert aqueous parts washer guides — compare water-based vs. solvent parts washers, spray cabinet vs. immersion, and application-specific cleaning solutions for automotive, aerospace, machining, and more.',
+    'Industrial aqueous parts washer guides — aqueous vs solvent parts washers, spray cabinet vs immersion, removing cutting oil and coolant, cleaning machined parts for automotive, aerospace, and machining. Stainless steel water-based parts cleaning systems, made in Italy.',
   alternates: { canonical: 'https://magidousa.com/solutions' },
   openGraph: {
     title: 'Aqueous Parts Washer Guides & Solutions | Magido USA',
@@ -52,8 +52,7 @@ export default function SolutionsIndexPage() {
             className="text-lg md:text-xl max-w-2xl leading-relaxed"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            Practical guides to help you choose the right parts washing technology — from side-by-side
-            comparisons to application-specific recommendations.
+            Practical guides to choosing the right industrial aqueous parts washer — AISI 304 stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer vs solvent, cutting oil and coolant removal, machined parts cleaning for automotive, aerospace, and machining.
           </p>
         </div>
       </section>

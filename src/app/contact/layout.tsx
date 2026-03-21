@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Contact Us — Get a Quote or Request a Demo',
   description:
-    'Contact Magido USA to request a quote, schedule an evaluation, or ask about aqueous parts washing systems. Reach our sales team in Sturtevant, WI.',
+    'Request a quote or free process evaluation for Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer systems removing cutting oil, coolant, and machining residue from machined parts. AISI 304 stainless steel, made in Italy. Automotive, aerospace, machining. Sturtevant, WI.',
   alternates: {
     canonical: 'https://magidousa.com/contact',
   },

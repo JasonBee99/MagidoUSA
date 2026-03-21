@@ -8,7 +8,7 @@
     {
       "name": "Manual Washers",
       "slug": "manual-washers",
-      "shortDescription": "Hands-on cleaning stations for shop-floor degreasing",
+      "shortDescription": "Sink-style, vat-style, and high-pressure manual aqueous parts washers for shop-floor degreasing",
       "order": 1,
       "seriesOrder": [
         "dg",
@@ -45,7 +45,7 @@
     {
       "name": "Top Load Washers",
       "slug": "top-load-washers",
-      "shortDescription": "Versatile spray cabinet washers for small to mid-sized parts",
+      "shortDescription": "Automatic spray cabinet washers for small to mid-sized machined parts — cutting oil, coolant, and chip removal",
       "order": 2,
       "seriesOrder": [
         "tr450",
@@ -106,7 +106,7 @@
     {
       "name": "Front Load Washers",
       "slug": "front-load-washers",
-      "shortDescription": "Heavy-duty spray cabinets for large, heavy components",
+      "shortDescription": "Heavy-duty spray cabinet washers for large, heavy industrial components — automotive, aerospace, heavy equipment",
       "order": 3,
       "seriesOrder": [
         "fls",
@@ -143,7 +143,7 @@
     {
       "name": "Immersion Washers",
       "slug": "immersion-washers",
-      "shortDescription": "Full-submersion cleaning for complex internal geometries",
+      "shortDescription": "Full-submersion aqueous parts washers for complex internal geometries — hydraulic components, castings, blind holes",
       "order": 4,
       "seriesOrder": [
         "agita"
@@ -164,7 +164,7 @@
     {
       "name": "In-Line Belt Conveyor Washers",
       "slug": "in-line-belt-conveyor-washers",
-      "shortDescription": "Continuous high-volume cleaning integrated into production lines",
+      "shortDescription": "Continuous high-volume aqueous parts washing integrated into production lines — automotive and machining applications",
       "order": 5,
       "seriesOrder": [
         "silver",
@@ -201,7 +201,7 @@
     {
       "name": "Rotary Drum Washers",
       "slug": "rotary-drum-washers",
-      "shortDescription": "Helical drum systems for bulk cleaning of small, loose parts",
+      "shortDescription": "Helical drum aqueous parts washers for bulk cleaning of small loose parts — fasteners, stampings, turned components",
       "order": 6,
       "seriesOrder": [
         "jolly",
@@ -238,7 +238,7 @@
     {
       "name": "Rotary Immersion Washers",
       "slug": "rotary-immersion-washers",
-      "shortDescription": "Advanced multi-action cleaning for the most demanding applications",
+      "shortDescription": "Multi-action rotary immersion washers — spray, immersion, and rotation for precision aerospace and automotive parts",
       "order": 7,
       "seriesOrder": [
         "platinum"

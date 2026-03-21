@@ -6,7 +6,7 @@ import AqueousProcessDiagram from '@/components/AqueousProcessDiagram';
 export const metadata: Metadata = {
   title: 'How to Choose a Parts Washer — Sizing & Selection Guide | Magido USA',
   description:
-    'Match the right aqueous parts washer to your parts, contamination type, and production volume. Use our interactive selector or read the full sizing guide.',
+    'How to choose the right industrial aqueous parts washer — spray cabinet, immersion, belt conveyor, rotary drum, or manual parts washer. Match machine type to parts size, contamination (cutting oil, coolant, grease), and production volume. Interactive selector and full sizing guide.',
   alternates: {
     canonical: 'https://magidousa.com/how-to-choose',
   },
@@ -49,8 +49,7 @@ export default function HowToChoosePage() {
           How to Choose a Parts Washer
         </h1>
         <p className="text-lg text-[var(--color-muted)] max-w-2xl leading-relaxed">
-          Match the right cleaning method, capacity, and automation level to your parts,
-          contamination type, and production requirements.
+          Match the right industrial aqueous parts washer — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, or manual parts washer — to your parts size, contamination type (cutting oil, coolant, metallic fines), and production requirements.
         </p>
       </div>
 
@@ -178,8 +177,8 @@ const CLEANING_METHODS = [
     title: 'Top Load Spray Cabinet Washers',
     subtitle: 'Eco, X81, X51 & X51/2 Series',
     description:
-      'Parts loaded onto a motorized rotating turntable inside an enclosed stainless steel cabinet and blasted with heated aqueous solution from strategically positioned spray nozzles. Available in single-stage wash and dual-stage wash/rinse configurations.',
-    bestFor: 'External surfaces, heavy contamination, oils, greases, carbon deposits',
+      'Parts loaded onto a motorized rotating turntable inside an enclosed stainless steel cabinet and blasted with heated aqueous solution from strategically positioned spray nozzles. Available in single-stage wash and dual-stage wash/rinse configurations. AISI 304 stainless steel throughout, made in Italy.',
+    bestFor: 'Cutting oil, coolant, metallic fines, and machining residue on machined parts — automotive components, castings, stamped parts',
     series: 'Eco, X81, X51, X51/2',
     url: '/products/top-load-washers',
   },
@@ -188,7 +187,7 @@ const CLEANING_METHODS = [
     subtitle: 'X53, X53/2 & FLS Series',
     description:
       'Parts placed on a fixed platform that rolls out on a mobile cart for loading, then closes inside an enclosed cabinet where angled spray nozzles on a spray ramp wash all surfaces. Designed for heavy, bulky parts up to 1,500 lbs that cannot be lifted into a top-load machine.',
-    bestFor: 'Large engine blocks, gear cases, heavy castings, bulky industrial components',
+    bestFor: 'Large engine blocks, gear cases, heavy castings, automotive and aerospace structural components, heavy equipment parts',
     series: 'X53, X53/2, FLS',
     url: '/products/front-load-washers',
   },
@@ -196,8 +195,8 @@ const CLEANING_METHODS = [
     title: 'Immersion Washers',
     subtitle: 'Agita Series',
     description:
-      'Parts fully submerged in heated aqueous solution with pneumatic platform oscillation to force cleaning solution into every internal cavity.',
-    bestFor: 'Blind holes, internal channels, threaded bores, complex geometries',
+      'Parts fully submerged in heated aqueous solution with pneumatic platform oscillation to force cleaning solution into every internal cavity. Removes cutting oil, coolant, and packed-in machining residue from complex machined parts.',
+    bestFor: 'Blind holes, internal channels, threaded bores, hydraulic components, complex geometries — aerospace and precision machining',
     series: 'Agita (A700, A900, A1100, A1300)',
     url: '/products/immersion-washers',
   },
@@ -205,8 +204,8 @@ const CLEANING_METHODS = [
     title: 'Belt Conveyor Washers',
     subtitle: 'Silver & Gold Series',
     description:
-      'Parts travel on a stainless steel mesh conveyor belt through enclosed wash, rinse, and drying stages. Integrates directly into production lines.',
-    bestFor: 'High-volume production, continuous flow, CNC cell integration',
+      'Parts travel on a stainless steel mesh conveyor belt through enclosed wash, rinse, and drying stages. Integrates directly into automotive and machining production lines for continuous high-volume parts cleaning.',
+    bestFor: 'High-volume production — automotive fasteners, machined components, stampings, continuous flow CNC cell integration',
     series: 'Silver, Gold 1b, Gold 2b',
     url: '/products/in-line-belt-conveyor-washers',
   },
@@ -214,8 +213,8 @@ const CLEANING_METHODS = [
     title: 'Rotary Drum Washers',
     subtitle: 'Jolly & Spira Series',
     description:
-      'A helical screw-type rotating drum continuously tumbles and advances small parts through spray and immersion cleaning stages.',
-    bestFor: 'Small loose parts in high volumes — fasteners, stampings, springs',
+      'A helical screw-type rotating drum continuously tumbles and advances small parts through spray and immersion cleaning stages. Removes cutting oil, coolant, and chips from small machined components in bulk.',
+    bestFor: 'Small loose machined parts in high volumes — fasteners, stampings, springs, turned components — automotive and machining production',
     series: 'Jolly, Spira 1b, Spira 2b',
     url: '/products/rotary-drum-washers',
   },
@@ -223,8 +222,8 @@ const CLEANING_METHODS = [
     title: 'Rotary Immersion Washers',
     subtitle: 'Platinum Series',
     description:
-      'Combines direct spray impingement with full immersion and rotational basket agitation through separate wash and rinse stages.',
-    bestFor: 'Complex geometries, tight tolerances, critical cleanliness specs',
+      'Combines direct spray impingement with full immersion and rotational basket agitation through separate wash and rinse stages. AISI 304 stainless steel, made in Italy. Specified for aerospace, automotive, and precision machining applications requiring validated cleanliness.',
+    bestFor: 'Complex geometries, tight tolerances, critical cleanliness specs — aerospace components, hydraulic manifolds, precision machined parts',
     series: 'Platinum (PM400, P600/2, P900/2, P1200/2, P1500/2)',
     url: '/products/rotary-immersion-washers',
   },
@@ -232,8 +231,8 @@ const CLEANING_METHODS = [
     title: 'Manual Washers',
     subtitle: 'DG, L & HP Series',
     description:
-      'Heated stainless steel work tanks with flow-through brush, flexible spigot, and integrated filtration. HP series adds 870 PSI spray wand.',
-    bestFor: 'Hands-on inspection, one-off parts, maintenance bays',
+      'Heated stainless steel work tanks with flow-through brush, flexible spigot, and integrated filtration for removing cutting oil, coolant, and grease. HP series adds 870 PSI spray wand for heavy soils.',
+    bestFor: 'Shop-floor degreasing, hands-on inspection, one-off parts, maintenance bays — MRO and automotive service',
     series: 'DG, L, HP',
     url: '/products/manual-washers',
   },

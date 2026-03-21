@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Industries Served — Aqueous Parts Washers for Every Sector | Magido USA',
   description:
-    'Magido USA aqueous parts washers serve automotive, aerospace, machining, heavy equipment, medical, and food processing industries — stainless steel systems built for the toughest cleaning applications.',
+    'Industrial aqueous parts washers for automotive, aerospace, machining, heavy equipment, medical, and food processing — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts cleaning systems, AISI 304 stainless steel, made in Italy.',
   alternates: {
     canonical: 'https://magidousa.com/industries',
   },
@@ -48,7 +48,7 @@ export default function IndustriesPage() {
               We Serve the Toughest Sectors
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[var(--color-text-secondary)]">
-              From the production line to the maintenance bay, Magido aqueous parts washers are engineered for the specific demands of each industry — all in AISI 304 stainless steel with no compromises.
+              From the production line to the maintenance bay, Magido industrial aqueous parts washers — spray cabinet, immersion, belt conveyor, rotary drum, and manual — remove cutting oil, coolant, and machining residue from machined parts. Water-based parts washer systems, AISI 304 stainless steel throughout, made in Italy.
             </p>
           </div>
         </div>

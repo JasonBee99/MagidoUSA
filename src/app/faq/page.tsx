@@ -5,7 +5,7 @@ import { faqCategories, getAllFaqItems } from '@/data/faq';
 export const metadata: Metadata = {
   title: 'Aqueous Parts Washer FAQ | Magido USA — Common Questions Answered',
   description:
-    'Answers to common questions about Magido USA aqueous parts washers and water-based parts cleaning systems — product selection, technical operation, stainless steel construction, detergents, lead times, and more.',
+    'Common questions about Magido USA industrial aqueous parts washers — spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washer selection, operation, AISI 304 stainless steel construction, detergents, lead times, automotive, aerospace, and machining applications.',
   alternates: {
     canonical: 'https://magidousa.com/faq',
   },
@@ -45,8 +45,7 @@ export default function FaqPage() {
             Frequently Asked Questions
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
-            Common questions about Magido USA aqueous parts washing systems —
-            product selection, operation, detergents, and purchasing.
+            Common questions about Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer selection, operation, detergents, removing cutting oil and coolant from machined parts, AISI 304 stainless steel construction, made in Italy.
           </p>
         </div>
       </section>

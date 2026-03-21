@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Blog — Industrial Parts Washing Guides & Insights",
-    "description": "Expert guides on aqueous parts washing: cleaning methods, maintenance tips, sizing guides, and industry comparisons from the Magido USA team.",
+    "description": "Expert guides on industrial aqueous parts washing — spray cabinet vs immersion, water-based vs solvent, removing cutting oil and coolant from machined parts, sizing for automotive, aerospace, and machining applications. Stainless steel parts washer insights from Magido USA.",
     "canonical": "https://magidousa.com/blog"
   },
   "breadcrumb": {
@@ -11,7 +11,7 @@
   "hero": {
     "eyebrow": "Blog & Guides",
     "heading": "Parts Washing Insights",
-    "subheading": "Expert guides on aqueous cleaning methods, maintenance, sizing, and making the right equipment decisions."
+    "subheading": "Expert guides on aqueous parts washer selection, cleaning methods, cutting oil and coolant removal, maintenance, and sizing — for automotive, aerospace, machining, and heavy equipment."
   },
   "sortOptions": [
     { "key": "newest",   "label": "Newest First" },

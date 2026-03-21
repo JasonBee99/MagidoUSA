@@ -5,13 +5,13 @@ import { ChevronRight, ArrowRight, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Magido USA — Italian-Engineered Stainless Steel Parts Washers',
-  description: 'Magido has been engineering aqueous parts washing systems in Italy since 1980. Every machine is built from AISI 304 stainless steel. US sales, service, and support from Sturtevant, WI.',
+  description: 'Magido USA manufactures industrial aqueous parts washers and water-based parts cleaning systems in Italy since 1980 — stainless steel spray cabinet, immersion, conveyor, rotary drum, and manual parts washers for automotive, aerospace, and machining. AISI 304 stainless steel throughout. US sales and support, Sturtevant, WI.',
   alternates: {
     canonical: 'https://magidousa.com/about',
   },
   openGraph: {
     title: 'About Magido USA — Italian-Engineered Stainless Steel Parts Washers',
-    description: 'Engineering aqueous parts washing systems since 1980. 100% AISI 304 stainless steel, made in Italy. US sales and support in Sturtevant, WI.',
+    description: 'Engineering aqueous parts washing systems since 1980 — stainless steel spray cabinet, immersion, conveyor, rotary drum, and manual parts washers. AISI 304 stainless steel, made in Italy. US sales and support in Sturtevant, WI.',
     url: 'https://magidousa.com/about',
     images: [{ url: 'https://magidousa.com/images/og-default.png', width: 1200, height: 630 }],
   },
@@ -40,7 +40,7 @@ export default function AboutPage() {
             <div className="flex-1 min-w-0">
               <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">About Magido USA</p>
               <h1 className="mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">Leaders in Aqueous Cleaning Solutions</h1>
-              <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg">Engineered in Italy. Built from stainless steel. Supported across the United States.</p>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg">Engineered in Italy. Built from AISI 304 stainless steel. Industrial aqueous parts washers for automotive, aerospace, machining, and heavy equipment — supported across the United States.</p>
             </div>
 
             {/* Italian facility photo */}
@@ -69,7 +69,7 @@ export default function AboutPage() {
             <h2 className="font-display text-2xl font-bold text-[var(--color-text)]">Our Story</h2>
             <div className="mt-3 flex flex-col gap-6 sm:flex-row sm:items-start">
               <div className="flex-1 space-y-3">
-                <p>Magido has been engineering and manufacturing parts washing systems from our facility in Italy for decades. What began as a commitment to building better cleaning equipment has grown into one of the broadest lines of aqueous parts washing systems available from a single manufacturer — 84 models across 7 product categories.</p>
+                <p>Magido has been engineering and manufacturing parts washing systems from our facility in Italy for decades. What began as a commitment to building better cleaning equipment has grown into one of the broadest lines of aqueous parts washing systems available from a single manufacturer — 84 models across 7 product categories. Our water-based parts cleaning systems remove cutting oil, coolant, metallic fines, and machining residue from automotive, aerospace, and industrial machined parts.</p>
                 <p>Every Magido machine is built entirely from AISI 304 stainless steel. Not painted mild steel. Not powder-coated carbon steel. True corrosion-resistant stainless. That commitment to materials is what separates Magido from the rest of the market.</p>
               </div>
               <div className="w-full flex-shrink-0 sm:w-52 lg:w-60">

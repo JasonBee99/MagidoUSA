@@ -80,7 +80,7 @@ function CategoryIcon({ name }: { name: string }) {
 export const metadata: Metadata = {
   title: 'Resources & Documentation — Parts Washer Guides | Magido USA',
   description:
-    'Technical documentation, product catalogs, startup guides, and service instructions for all Magido USA aqueous parts washing systems.',
+    'Technical documentation for Magido USA industrial aqueous parts washers — spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washer catalogs, startup guides, and service instructions. Water-based parts cleaning systems, AISI 304 stainless steel, made in Italy.',
   alternates: {
     canonical: 'https://magidousa.com/resources',
   },
@@ -125,8 +125,7 @@ export default function ResourcesPage() {
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
             Technical documentation, product catalogs, startup guides, and
-            service instructions for all Magido USA aqueous parts washing
-            systems.
+            service instructions for Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer systems for removing cutting oil, coolant, and machining residue from machined parts. Automotive, aerospace, machining.
           </p>
         </div>
       </section>
