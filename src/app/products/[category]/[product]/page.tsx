@@ -365,27 +365,69 @@ export default function ProductPage({
 
       {/* ─── Bottom CTA ─── */}
       <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-12 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-xl font-bold text-[var(--color-text)]">
-            Ready to Move Forward?
-          </h2>
-          <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-            Contact our team for a quote, process evaluation, or to discuss
-            custom configurations for your specific parts cleaning application.
-          </p>
-          <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="/contact"
-              className="btn-quote"
-            >
-              Request a Quote
-            </Link>
-            <a
-              href="tel:8444624436"
-              className="inline-flex rounded-lg border border-magido-blue px-6 py-2.5 text-sm font-semibold text-magido-blue transition-colors hover:bg-magido-blue hover:text-white dark:border-[var(--color-border)] dark:text-[var(--color-text-secondary)] dark:hover:bg-[var(--color-bg-tertiary)]"
-            >
-              <span aria-hidden="true">📞</span> 844-462-4436
-            </a>
+        <div className="mx-auto max-w-4xl">
+          {/* Primary CTA */}
+          <div className="text-center">
+            <h2 className="font-display text-xl font-bold text-[var(--color-text)]">
+              Ready to Move Forward?
+            </h2>
+            <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
+              Contact our team for a quote, process evaluation, or to discuss
+              custom configurations for your specific parts cleaning application.
+            </p>
+            <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="/contact"
+                className="btn-quote"
+              >
+                Request a Quote
+              </Link>
+              <a
+                href="tel:8444624436"
+                className="inline-flex rounded-lg border border-magido-blue px-6 py-2.5 text-sm font-semibold text-magido-blue transition-colors hover:bg-magido-blue hover:text-white dark:border-[var(--color-border)] dark:text-[var(--color-text-secondary)] dark:hover:bg-[var(--color-bg-tertiary)]"
+              >
+                <span aria-hidden="true">📞</span> 844-462-4436
+              </a>
+            </div>
+          </div>
+
+          {/* Secondary — guides for unsure users */}
+          <div className="mt-10 border-t border-[var(--color-border)] pt-8">
+            <p className="text-center text-sm font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-5">
+              Not sure yet? Start here.
+            </p>
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+              <Link
+                href="/how-to-choose"
+                className="group flex items-start gap-3 rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-4 transition hover:border-magido-orange/40 hover:shadow-sm"
+              >
+                <span className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-magido-orange/10 text-magido-orange text-base">🔍</span>
+                <div>
+                  <p className="text-sm font-semibold text-[var(--color-text)] group-hover:text-magido-orange">How to Choose a Parts Washer</p>
+                  <p className="mt-0.5 text-xs text-[var(--color-text-muted)]">Match machine type to your parts, contamination, and volume</p>
+                </div>
+              </Link>
+              <Link
+                href="/solutions/aqueous-vs-solvent-parts-washers"
+                className="group flex items-start gap-3 rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-4 transition hover:border-magido-orange/40 hover:shadow-sm"
+              >
+                <span className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-magido-orange/10 text-magido-orange text-base">⚖️</span>
+                <div>
+                  <p className="text-sm font-semibold text-[var(--color-text)] group-hover:text-magido-orange">Aqueous vs. Solvent</p>
+                  <p className="mt-0.5 text-xs text-[var(--color-text-muted)]">Compare cleaning technologies side by side</p>
+                </div>
+              </Link>
+              <Link
+                href="/contact#evaluation"
+                className="group flex items-start gap-3 rounded-xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] p-4 transition hover:border-magido-orange/40 hover:shadow-sm"
+              >
+                <span className="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-magido-orange/10 text-magido-orange text-base">🧪</span>
+                <div>
+                  <p className="text-sm font-semibold text-[var(--color-text)] group-hover:text-magido-orange">Free Process Evaluation</p>
+                  <p className="mt-0.5 text-xs text-[var(--color-text-muted)]">Send us your parts — we validate the cleaning solution first</p>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
