@@ -59,7 +59,7 @@ export default function ProductsIndexPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
             From compact manual stations to fully automated conveyor and rotary
-            systems — every Magido machine is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304
+            systems — every Magido machine is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304
             stainless steel</a> and engineered in Italy.
           </p>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-gray-400">

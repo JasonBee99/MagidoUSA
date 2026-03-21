@@ -75,7 +75,7 @@ const RESULTS: Record<string, Result> = {
   manual: {
     name: 'Manual Cabinet Washers',
     series: 'DG / L / HP Series',
-    tagline: <>Heated sink-style cleaning stations for hands-on shop-floor degreasing. Simple, durable, and built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>.</>,
+    tagline: <>Heated sink-style cleaning stations for hands-on shop-floor degreasing. Simple, durable, and built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>.</>,
     features: [
       { label: 'Operation',  val: 'Manual'           },
       { label: 'Models',     val: '6 available'      },

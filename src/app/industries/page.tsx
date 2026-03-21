@@ -49,7 +49,7 @@ export default function IndustriesPage() {
               We Serve the Toughest Sectors
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[var(--color-text-secondary)]">
-              From the production line to the maintenance bay, Magido industrial aqueous parts washers — spray cabinet, immersion, belt conveyor, rotary drum, and manual — remove cutting oil, coolant, and machining residue from machined parts. Water-based parts washer systems, <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a> throughout, made in Italy.
+              From the production line to the maintenance bay, Magido industrial aqueous parts washers — spray cabinet, immersion, belt conveyor, rotary drum, and manual — remove cutting oil, coolant, and machining residue from machined parts. Water-based parts washer systems, <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a> throughout, made in Italy.
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function IndustriesPage() {
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { stat: '100%', label: 'Stainless Steel', desc: <><a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304</a> throughout — no painted carbon steel, no hidden rust risk.</> },
+              { stat: '100%', label: 'Stainless Steel', desc: <><a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304</a> throughout — no painted carbon steel, no hidden rust risk.</> },
               { stat: '74', label: 'Models', desc: 'From compact manual cabinets to fully automated conveyor systems.' },
               { stat: '7', label: 'Categories', desc: 'Manual, top load, front load, immersion, conveyor, drum, and rotary immersion.' },
               { stat: '1', label: 'Expert to Call', desc: 'Scott Morin — National Sales Manager — handles every inquiry personally.' },

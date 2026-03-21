@@ -124,8 +124,8 @@ const BENEFITS = [
   },
   {
     icon: ShieldCheck,
-    title: <>100% <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 Stainless Steel</a></>,
-    body: <>Every Magido aqueous parts washer is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a> — cabinet, tank, internal structure, and spray manifolds — not just the wash zone.</>,
+    title: <>100% <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 Stainless Steel</a></>,
+    body: <>Every Magido aqueous parts washer is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a> — cabinet, tank, internal structure, and spray manifolds — not just the wash zone.</>,
   },
   {
     icon: Leaf,
@@ -258,7 +258,7 @@ export default function AqueousPartsWashersPage() {
             <p className="mb-4 text-lg leading-relaxed text-white/75 lg:text-xl">
               Magido USA manufactures industrial aqueous parts washers and water-based parts cleaning
               systems engineered entirely from{' '}
-              <strong className="text-white"><a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-white/40 hover:decoration-white">100% AISI 304 stainless steel</a></strong> — not just the
+              <strong className="text-white"><a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">100% AISI 304 stainless steel</a></strong> — not just the
               wash zone, but every surface, weld, and component inside and out.
             </p>
             <p className="mb-10 text-lg leading-relaxed text-white/75">
@@ -363,12 +363,12 @@ export default function AqueousPartsWashersPage() {
                 The Magido Standard
               </p>
               <h2 className="mb-4 font-display text-2xl font-bold text-white lg:text-3xl">
-                Every Aqueous Washer — 100% <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-white/40 hover:decoration-white">AISI 304 Stainless Steel</a> Throughout
+                Every Aqueous Washer — 100% <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 Stainless Steel</a> Throughout
               </h2>
               <p className="leading-relaxed text-white/75">
                 Most manufacturers use stainless steel only in the wash zone — the rest of the
                 machine is carbon steel coated with paint or powder coat that eventually corrodes.
-                Every Magido stainless steel parts washer is built from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-white/40 hover:decoration-white">AISI 304 stainless steel</a>{' '}
+                Every Magido stainless steel parts washer is built from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>{' '}
                 <em>throughout</em>: cabinet walls, structural frame, internal spray manifolds, tank,
                 conveyor components, and hardware. No rust. No repainting. No premature failures.
               </p>
@@ -402,7 +402,7 @@ export default function AqueousPartsWashersPage() {
               Aqueous Parts Washer Types
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-[var(--color-text-secondary)]">
-              Every Magido aqueous parts washer is built to order from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>.
+              Every Magido aqueous parts washer is built to order from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>.
               Select the machine type that matches your parts, contamination, and production volume.
             </p>
           </div>

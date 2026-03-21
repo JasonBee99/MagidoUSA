@@ -300,7 +300,7 @@ export default function CatalogPage() {
               <div className="mt-4 space-y-3 text-sm leading-relaxed text-[var(--color-text-secondary)] text-justify">
                 <p>
                   MAGIDO is recognized as one of the industry&apos;s leading manufacturers of aqueous parts
-                  washing systems. Every machine is constructed entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a> —
+                  washing systems. Every machine is constructed entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a> —
                   the same material used in food-grade and pharmaceutical environments — ensuring
                   corrosion resistance, longevity, and easy maintenance in even the harshest industrial settings.
                 </p>
@@ -349,7 +349,7 @@ export default function CatalogPage() {
             <p>
               Magido DG Series manual sink-style aqueous parts washers are engineered to handle the
               most rigorous challenges found in industrial and automotive maintenance parts cleaning
-              applications. Built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>, the DG8 and DG9 feature a
+              applications. Built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>, the DG8 and DG9 feature a
               foot-pedal-regulated, hand-held flow-through cleaning brush that delivers heated aqueous
               solution directly to the part surface.
             </p>
@@ -439,7 +439,7 @@ export default function CatalogPage() {
               solution precisely where it&apos;s needed while scrubbing.
             </p>
             <p>
-              Like all Magido products, the L Series is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless</a>
+              Like all Magido products, the L Series is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless</a>
               steel and operates on standard 115V power. The magnetic drive pump and liquid
               level shut-off provide reliable, maintenance-light operation in demanding shop
               environments.
@@ -506,7 +506,7 @@ export default function CatalogPage() {
           <>
             <p>
               The Magido HP25 and HP30 are heated water blasting cabinets built entirely from
-              <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>. Developed for technicians who need to dramatically reduce
+              <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>. Developed for technicians who need to dramatically reduce
               cleaning time, the HP Series uses a high-pressure piston-drive pump to deliver a
               heated aqueous cleaning solution at up to 870 PSI through an easy-to-handle spray
               wand — blasting away grease, carbon deposits, and industrial soils that would
@@ -603,7 +603,7 @@ export default function CatalogPage() {
           <>
             <p>
               The X81 Series parts washers are automatic spray jet wash systems constructed using
-              <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>, available in three models (L-35, L-55, L-90) with turntable
+              <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>, available in three models (L-35, L-55, L-90) with turntable
               diameters ranging from 15" to 31". Each system features a motorized rotating turntable
               and swing-away spray manifold fitted with optimized V-Jet nozzles that use water pressure
               to thoroughly clean small to medium-sized parts without manual intervention.

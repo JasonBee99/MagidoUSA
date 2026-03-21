@@ -43,7 +43,7 @@ export default function AboutPage() {
                 Italian-Engineered Aqueous Parts Washers Since 1980
               </div>
               <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">Leaders in Aqueous Cleaning Solutions</h1>
-              <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg">Engineered in Italy. Built from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-white/40 hover:decoration-white">AISI 304 stainless steel</a>. Industrial aqueous parts washers for automotive, aerospace, machining, and heavy equipment — supported across the United States.</p>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg">Engineered in Italy. Built from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>. Industrial aqueous parts washers for automotive, aerospace, machining, and heavy equipment — supported across the United States.</p>
             </div>
 
             {/* Italian facility photo */}
@@ -73,7 +73,7 @@ export default function AboutPage() {
             <div className="mt-3 flex flex-col gap-6 sm:flex-row sm:items-start">
               <div className="flex-1 space-y-3">
                 <p>Magido has been engineering and manufacturing parts washing systems from our facility in Italy for decades. What began as a commitment to building better cleaning equipment has grown into one of the broadest lines of aqueous parts washing systems available from a single manufacturer — 84 models across 7 product categories. Our water-based parts cleaning systems remove cutting oil, coolant, metallic fines, and machining residue from automotive, aerospace, and industrial machined parts.</p>
-                <p>Every Magido machine is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>. Not painted mild steel. Not powder-coated carbon steel. True corrosion-resistant stainless. That commitment to materials is what separates Magido from the rest of the market.</p>
+                <p>Every Magido machine is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>. Not painted mild steel. Not powder-coated carbon steel. True corrosion-resistant stainless. That commitment to materials is what separates Magido from the rest of the market.</p>
               </div>
               <div className="w-full flex-shrink-0 sm:w-52 lg:w-60">
                 <div className="overflow-hidden rounded-xl border border-[var(--color-card-border)]">
@@ -93,7 +93,7 @@ export default function AboutPage() {
             <h2 className="font-display text-2xl font-bold text-[var(--color-text)]">Why Stainless Steel Changes Everything</h2>
             <div className="mt-3 flex flex-col gap-6 sm:flex-row-reverse sm:items-start">
               <div className="flex-1">
-                <p>Most parts washers are built from mild steel with a painted finish that degrades under hot alkaline cleaning solutions. Magido builds every component — tank, cabinet, wash basket, nozzle headers, internal plumbing — from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a>. This is not an upgrade option. It is standard across the entire product line.</p>
+                <p>Most parts washers are built from mild steel with a painted finish that degrades under hot alkaline cleaning solutions. Magido builds every component — tank, cabinet, wash basket, nozzle headers, internal plumbing — from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>. This is not an upgrade option. It is standard across the entire product line.</p>
               </div>
               <div className="w-full flex-shrink-0 sm:w-52 lg:w-60">
                 <div className="overflow-hidden rounded-xl border border-[var(--color-card-border)]">

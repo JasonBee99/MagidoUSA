@@ -105,7 +105,7 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
                   {industry.heroStat.label}
                 </p>
                 <p className="mt-6 text-sm leading-relaxed text-[var(--color-text-secondary)]">
-                  Every Magido system is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="underline decoration-magido-orange/60 hover:decoration-magido-orange">AISI 304 stainless steel</a> — no painted surfaces, no hidden carbon steel, no compromises.
+                  Every Magido system is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a> — no painted surfaces, no hidden carbon steel, no compromises.
                 </p>
               </div>
             </div>

@@ -51,7 +51,7 @@ export const productCatalog: ResourceDocument = {
       heading: 'DG Series — Sink-Style Manual Parts Washers',
       body: `<p>Magido Manual Sink-style Aqueous Parts Washers are engineered to handle the most rigorous challenges commonly found in industrial-automotive maintenance parts cleaning applications. Designed to use environmentally friendly aqueous (water-based) cleaning solutions for safe and effective parts cleaning results.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>External Magnetic Drive Pump</li><li>Flo-Thru Brush</li><li>Electrical Heater Controlled by a Thermostat</li><li>Liquid Level Shut Off</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>External Magnetic Drive Pump</li><li>Flo-Thru Brush</li><li>Electrical Heater Controlled by a Thermostat</li><li>Liquid Level Shut Off</li></ul>
 <h4>Available Options</h4>
 <ul><li>Cartridge filter</li><li>Casters</li></ul>`,
     },
@@ -59,13 +59,13 @@ export const productCatalog: ResourceDocument = {
       heading: 'L Series — Vat-Style Manual Parts Washers',
       body: `<p>Magido Manual Vat-style Aqueous Parts Washers are engineered to handle rigorous industrial-automotive maintenance parts cleaning applications. These systems use environmentally friendly aqueous cleaning solutions for effective degreasing of medium to large components.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Electrical Heater with Thermostat Control</li><li>Liquid Level Sensor</li><li>Drain Valve</li><li>Removable Parts Basket</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Electrical Heater with Thermostat Control</li><li>Liquid Level Sensor</li><li>Drain Valve</li><li>Removable Parts Basket</li></ul>
 <h4>Available Options</h4>
 <ul><li>Cartridge or bag filtration</li><li>Additional heater capacity</li></ul>`,
     },
     {
       heading: 'HP Series — High-Pressure Manual Parts Washers',
-      body: `<p>The HP25 &amp; HP30 parts washers are heated water blasting cabinets made entirely of <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a>. Developed for technicians that need to reduce cleaning time by blasting parts clean with a heated aqueous solution. The high-pressure spray wand delivers up to 870 PSI.</p>
+      body: `<p>The HP25 &amp; HP30 parts washers are heated water blasting cabinets made entirely of <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a>. Developed for technicians that need to reduce cleaning time by blasting parts clean with a heated aqueous solution. The high-pressure spray wand delivers up to 870 PSI.</p>
 <h4>Standard Features</h4>
 <ul><li>Powerful (870 PSI) Piston-Drive Pump</li><li>LED Illuminated Cabinet</li><li>Ergonomic Spray Wand</li><li>Window-Clearing Blower</li><li>Thermostat Controlled Heater</li><li>Liquid Level Sensor &amp; Low Water Shut Off</li><li>Removable Work Tray &amp; Screened Filter Basket</li></ul>
 <h4>Available Options</h4>
@@ -73,25 +73,25 @@ export const productCatalog: ResourceDocument = {
     },
     {
       heading: 'X81 Series — Compact Top Load Spray Cabinet Washers',
-      body: `<p>X81 Series parts washers are automatic spray jet wash systems constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a>, available in 3 models with turntable sizes ranging from 14" to 30". Each wash system is equipped with a rotating turntable and spray bar that uses water pressure for washing small to medium-sized parts.</p>
+      body: `<p>X81 Series parts washers are automatic spray jet wash systems constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a>, available in 3 models with turntable sizes ranging from 14" to 30". Each wash system is equipped with a rotating turntable and spray bar that uses water pressure for washing small to medium-sized parts.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Automatic Rotary Turntable with Sprocket Drive</li><li>Calibrated V-Jet Spray Nozzle System</li><li>Adjustable Solution Heater with Thermostat</li><li>Fluid Level Sensor</li><li>Removable Mesh Filter Basket</li><li>Tank Drain</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Automatic Rotary Turntable with Sprocket Drive</li><li>Calibrated V-Jet Spray Nozzle System</li><li>Adjustable Solution Heater with Thermostat</li><li>Fluid Level Sensor</li><li>Removable Mesh Filter Basket</li><li>Tank Drain</li></ul>
 <h4>Available Options</h4>
 <ul><li>Drying cycle with heated blower</li><li>Cartridge or bag filtration</li><li>Oil skimmer</li><li>Stainless steel lid lifter</li></ul>`,
     },
     {
       heading: 'X51 Series — Top Load Spray Cabinet Washers',
-      body: `<p>The X51 Series is designed with a unique clamshell design that brings the jet-spray cleaning power closer to your parts for maximum performance. Automatic spray jet wash systems constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a> with turntable sizes ranging from 35" to 51". Equipped with rotating turntable and spray bars using water pressure for washing medium to large-sized parts.</p>
+      body: `<p>The X51 Series is designed with a unique clamshell design that brings the jet-spray cleaning power closer to your parts for maximum performance. Automatic spray jet wash systems constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a> with turntable sizes ranging from 35" to 51". Equipped with rotating turntable and spray bars using water pressure for washing medium to large-sized parts.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Automatic Rotary Turntable with Sprocket Drive</li><li>V-Jet Spray Nozzle System (up to 58 nozzles)</li><li>Adjustable Solution Heater &amp; Wash Cycle Timer</li><li>Fluid Level Sensor</li><li>Removable Filter Basket</li><li>Tank Drain</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Automatic Rotary Turntable with Sprocket Drive</li><li>V-Jet Spray Nozzle System (up to 58 nozzles)</li><li>Adjustable Solution Heater &amp; Wash Cycle Timer</li><li>Fluid Level Sensor</li><li>Removable Filter Basket</li><li>Tank Drain</li></ul>
 <h4>Available Options</h4>
 <ul><li>Drying cycle with heated blower</li><li>Rinse stage</li><li>Cartridge or bag filtration</li><li>Oil skimmer</li><li>Stainless steel lid lifter (pneumatic or electric)</li></ul>`,
     },
     {
       heading: 'X51/2 Series — Dual-Stage Top Load Washers',
-      body: `<p>X51/2 series parts washers are automatic spray jet wash systems with dual tanks for wash and rinse stages that ensure a residue-free finish. Constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a> with turntable sizes ranging from 35" to 55". The wash and rinse stages are controlled by PLC operation that prevents cross contamination between tanks.</p>
+      body: `<p>X51/2 series parts washers are automatic spray jet wash systems with dual tanks for wash and rinse stages that ensure a residue-free finish. Constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a> with turntable sizes ranging from 35" to 55". The wash and rinse stages are controlled by PLC operation that prevents cross contamination between tanks.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Dual Tanks — Wash &amp; Rinse with PLC Control</li><li>Automatic Rotary Turntable</li><li>V-Jet Spray Nozzle System</li><li>Independent Heaters for Each Tank</li><li>Fluid Level Sensors</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Dual Tanks — Wash &amp; Rinse with PLC Control</li><li>Automatic Rotary Turntable</li><li>V-Jet Spray Nozzle System</li><li>Independent Heaters for Each Tank</li><li>Fluid Level Sensors</li></ul>
 <h4>Available Options</h4>
 <ul><li>Drying cycle with heated blower</li><li>Cartridge or bag filtration</li><li>Oil skimmer</li><li>Pneumatic or electric lid lifter</li></ul>`,
     },
@@ -99,7 +99,7 @@ export const productCatalog: ResourceDocument = {
       heading: 'X53 Series — Front Load Spray Cabinet Washers',
       body: `<p>Magido X53 Series parts washers are engineered for automatic spray parts washing applications utilizing aqueous detergents at temperatures of 160°F. The front-loading design allows easy access for loading and unloading heavy or awkward parts. The turntable removes easily from the wash system onto a mobile cart.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Front-Loading Door with Safety Interlock</li><li>Fixed Platform with Spray Ramp</li><li>V-Jet Nozzle Configuration</li><li>Adjustable Solution Heater</li><li>Fluid Level Sensor</li><li>Removable Filter Basket</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Front-Loading Door with Safety Interlock</li><li>Fixed Platform with Spray Ramp</li><li>V-Jet Nozzle Configuration</li><li>Adjustable Solution Heater</li><li>Fluid Level Sensor</li><li>Removable Filter Basket</li></ul>
 <h4>Available Options</h4>
 <ul><li>Mobile loading cart</li><li>Drying cycle</li><li>Rinse stage</li><li>Oil skimmer</li><li>Filtration upgrades</li></ul>`,
     },
@@ -107,7 +107,7 @@ export const productCatalog: ResourceDocument = {
       heading: 'X53/2 Series — Dual-Stage Front Load Washers',
       body: `<p>Magido X53/2 Series parts washers are engineered for automatic spray parts washing applications with dual tanks for wash and rinse stages at temperatures of 160°F. The operation principle is based on a fixed platform with angled water jet nozzles configured on a spray ramp. Turntable capacity up to 59"x59".</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Dual Tanks — Wash &amp; Rinse with PLC Control</li><li>Front-Loading Door with Safety Interlock</li><li>Fixed Platform with Spray Ramp</li><li>Independent Heaters for Each Tank</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Dual Tanks — Wash &amp; Rinse with PLC Control</li><li>Front-Loading Door with Safety Interlock</li><li>Fixed Platform with Spray Ramp</li><li>Independent Heaters for Each Tank</li></ul>
 <h4>Available Options</h4>
 <ul><li>Mobile loading cart</li><li>Drying cycle</li><li>Oil skimmer</li><li>Filtration upgrades</li></ul>`,
     },
@@ -115,7 +115,7 @@ export const productCatalog: ResourceDocument = {
       heading: 'Rotary Drum Aqueous Parts Washing Systems',
       body: `<p>Magido industrial rotary-auger drum wash systems are the right choice for continuous parts cleaning. Parts are augured through the machine's processing drum and cleaned by a dual action process combining submersion (flushing inside hollow parts) and spray cleaning (exterior surfaces). Each wash system is customized to exact specifications with process zones including prewash, wash, rinse, rust prevention, blow-off, and drying stages.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Helical Auger Drum Design</li><li>Combined Submersion &amp; Spray Cleaning</li><li>Adjustable Drum Speed</li><li>Solution Heating System</li><li>Customizable Process Zones</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Helical Auger Drum Design</li><li>Combined Submersion &amp; Spray Cleaning</li><li>Adjustable Drum Speed</li><li>Solution Heating System</li><li>Customizable Process Zones</li></ul>
 <h4>Available Options</h4>
 <ul><li>Rinse stage</li><li>Rust prevention stage</li><li>Blow-off and drying stages</li><li>Filtration systems</li><li>Oil skimmer</li></ul>`,
     },
@@ -123,7 +123,7 @@ export const productCatalog: ResourceDocument = {
       heading: 'In-Line Belt Conveyor Aqueous Parts Washing Systems',
       body: `<p>Magido industrial in-line belt conveyor wash systems are the right choice for flow-through cleaning processes. Each system is customized to exact specifications with process zones including pre-wash, wash, rinse, rust prevention, blow-off, and drying stages. Designed to use environmentally safe aqueous cleaning solutions for parts cleaning applications.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Continuous Belt Conveyor System</li><li>Adjustable Belt Speed</li><li>V-Jet Spray Nozzle Arrays</li><li>Solution Heating System</li><li>Customizable Process Zones</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Continuous Belt Conveyor System</li><li>Adjustable Belt Speed</li><li>V-Jet Spray Nozzle Arrays</li><li>Solution Heating System</li><li>Customizable Process Zones</li></ul>
 <h4>Available Options</h4>
 <ul><li>Pre-wash stage</li><li>Rinse stage</li><li>Rust prevention stage</li><li>Blow-off and drying stages</li><li>Filtration systems</li><li>Oil skimmer</li></ul>`,
     },
@@ -131,7 +131,7 @@ export const productCatalog: ResourceDocument = {
       heading: 'Rotary Immersion Aqueous Parts Washing Systems',
       body: `<p>Magido's industrial rotary-immersion style wash systems clean parts in baskets or fixtures by rotating them in a turbulent immersion parts washing bath combined with a spray cleaning cycle. The cleaning cycle is followed by a combination of spray and immersion rinsing with an available stage for drying. Each system is customized to exact specifications.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Rotary Basket/Fixture Immersion System</li><li>Turbulent Immersion Bath</li><li>Combined Immersion &amp; Spray Cycles</li><li>PLC Control Operation</li><li>Solution Heating System</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Rotary Basket/Fixture Immersion System</li><li>Turbulent Immersion Bath</li><li>Combined Immersion &amp; Spray Cycles</li><li>PLC Control Operation</li><li>Solution Heating System</li></ul>
 <h4>Available Options</h4>
 <ul><li>Rinse stage (spray and/or immersion)</li><li>Heated drying stage</li><li>Filtration systems</li><li>Oil skimmer</li></ul>`,
     },
@@ -167,33 +167,33 @@ export const resourceDocuments: ResourceDocument[] = [
       {
         heading: 'Overview',
         body: `<p>Magido X-51 and X-81 Series parts washers are engineered for automatic spray parts washing applications utilizing aqueous detergents at temperatures of 150°F. The operation principle is based on a rotating platform on which the parts are placed, and a series of angled water jet nozzles which optimally wash all areas of the parts needed to be cleaned.</p>
-<p>X-Series wash systems are mainly categorized by the size and capacity of the turntable with sizes ranging from 14" to 55" in diameter. All machines are constructed in <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a> and additional options are available for filtration, rinsing, and drying stages.</p>`,
+<p>X-Series wash systems are mainly categorized by the size and capacity of the turntable with sizes ranging from 14" to 55" in diameter. All machines are constructed in <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a> and additional options are available for filtration, rinsing, and drying stages.</p>`,
       },
       {
         heading: 'Eco Series',
-        body: `<p>The Eco parts washer series are designed with a small footprint, making them the ideal solution for small workspaces. Each parts washer is manufactured in <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">304 stainless steel</a> with an automatic sprocket turntable drive, liquid level sensor, calibrated jet-spray nozzles, and tank drain.</p>`,
+        body: `<p>The Eco parts washer series are designed with a small footprint, making them the ideal solution for small workspaces. Each parts washer is manufactured in <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">304 stainless steel</a> with an automatic sprocket turntable drive, liquid level sensor, calibrated jet-spray nozzles, and tank drain.</p>`,
       },
       {
         heading: 'X81 Series',
-        body: `<p>X81 Series parts washers are automatic spray jet wash systems constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a>, available in 3 models with turntable sizes ranging from 14" to 30". Each wash system is equipped with a rotating turntable and a spray bar that uses water pressure for washing small to medium-sized parts.</p>
+        body: `<p>X81 Series parts washers are automatic spray jet wash systems constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a>, available in 3 models with turntable sizes ranging from 14" to 30". Each wash system is equipped with a rotating turntable and a spray bar that uses water pressure for washing small to medium-sized parts.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Automatic Rotary Turntable with Sprocket Drive</li><li>Calibrated V-Jet Spray Nozzle System</li><li>Adjustable Solution Heater with Thermostat</li><li>Fluid Level Sensor</li><li>Removable Mesh Filter Basket</li><li>Tank Drain</li></ul>`,
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Automatic Rotary Turntable with Sprocket Drive</li><li>Calibrated V-Jet Spray Nozzle System</li><li>Adjustable Solution Heater with Thermostat</li><li>Fluid Level Sensor</li><li>Removable Mesh Filter Basket</li><li>Tank Drain</li></ul>`,
       },
       {
         heading: 'X51 Series',
         body: `<p>The X-51 Series is designed with a unique clamshell design that brings the jet-spray cleaning power closer to your parts for maximum performance. Each of four models features an automatic rotary turntable, jet-spray cleaning manifolds, adjustable solution heater, complete stainless steel construction, fluid level sensor, removable filter basket, and tank drain.</p>
-<p>X-51 series parts washers are automatic spray jet wash systems constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a> with turntable sizes ranging from 35" to 51". They are ergonomic and engineered to reduce shop labor cost without sacrificing wash performance.</p>
+<p>X-51 series parts washers are automatic spray jet wash systems constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a> with turntable sizes ranging from 35" to 51". They are ergonomic and engineered to reduce shop labor cost without sacrificing wash performance.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Automatic Rotary Turntable with Sprocket Drive</li><li>V-Jet Spray Nozzle System</li><li>Adjustable Solution Heater &amp; Wash Cycle Timer</li><li>Fluid Level Sensor</li><li>Removable Filter Basket</li><li>Tank Drain</li></ul>
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Automatic Rotary Turntable with Sprocket Drive</li><li>V-Jet Spray Nozzle System</li><li>Adjustable Solution Heater &amp; Wash Cycle Timer</li><li>Fluid Level Sensor</li><li>Removable Filter Basket</li><li>Tank Drain</li></ul>
 <h4>Available Options</h4>
 <ul><li>Drying cycle with heated blower</li><li>Rinse stage</li><li>Cartridge or bag filtration</li><li>Oil skimmer</li><li>Stainless steel lid lifter (pneumatic or electric)</li></ul>`,
       },
       {
         heading: 'X51/2 Series (Dual Stage)',
-        body: `<p>X51/2 series parts washers are automatic spray jet wash systems with dual tanks for wash and rinse stages that ensure a residue-free finish. Constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a> with turntable sizes ranging from 35" to 55". The wash and rinse stages are controlled by PLC operation that prevents cross contamination in the tanks.</p>
+        body: `<p>X51/2 series parts washers are automatic spray jet wash systems with dual tanks for wash and rinse stages that ensure a residue-free finish. Constructed using <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a> with turntable sizes ranging from 35" to 55". The wash and rinse stages are controlled by PLC operation that prevents cross contamination in the tanks.</p>
 <p>They are ideal for medium workloads with bulky parts and offer ease of operation. Simply by loading parts on the turntable, the operator starts the automatic cycle and can return to their task.</p>
 <h4>Standard Features</h4>
-<ul><li>Dual Tanks — Wash &amp; Rinse with PLC Control</li><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Automatic Rotary Turntable</li><li>V-Jet Spray Nozzle System</li><li>Independent Heaters for Each Tank</li><li>Fluid Level Sensors</li></ul>`,
+<ul><li>Dual Tanks — Wash &amp; Rinse with PLC Control</li><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Automatic Rotary Turntable</li><li>V-Jet Spray Nozzle System</li><li>Independent Heaters for Each Tank</li><li>Fluid Level Sensors</li></ul>`,
       },
     ],
     relatedSeries: ['x81', 'eco', 'x51', 'x51hp', 'x51-2'],
@@ -218,13 +218,13 @@ export const resourceDocuments: ResourceDocument[] = [
         heading: 'X53 Series',
         body: `<p>Magido X53 Series parts washers are engineered for automatic spray parts washing applications utilizing aqueous detergents at temperatures of 160°F. The turntable removes easily from the wash system onto a mobile cart for easy loading and unloading.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Front-Loading Door with Safety Interlock</li><li>Fixed Platform with Spray Ramp</li><li>V-Jet Nozzle Configuration</li><li>Adjustable Solution Heater</li><li>Fluid Level Sensor</li></ul>`,
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Front-Loading Door with Safety Interlock</li><li>Fixed Platform with Spray Ramp</li><li>V-Jet Nozzle Configuration</li><li>Adjustable Solution Heater</li><li>Fluid Level Sensor</li></ul>`,
       },
       {
         heading: 'X53/2 Series (Dual Stage)',
         body: `<p>Magido X53/2 Series parts washers provide dual tanks for wash and rinse stages at temperatures of 160°F. The operation principle is based on a fixed platform with angled water jet nozzles configured on a spray ramp. Turntable capacity up to 59"x59".</p>
 <h4>Standard Features</h4>
-<ul><li>Dual Tanks — Wash &amp; Rinse with PLC Control</li><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Front-Loading Door with Safety Interlock</li><li>Independent Heaters for Each Tank</li></ul>`,
+<ul><li>Dual Tanks — Wash &amp; Rinse with PLC Control</li><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Front-Loading Door with Safety Interlock</li><li>Independent Heaters for Each Tank</li></ul>`,
       },
     ],
     relatedSeries: ['fls', 'x53', 'x53-2'],
@@ -247,7 +247,7 @@ export const resourceDocuments: ResourceDocument[] = [
       },
       {
         heading: 'DG Series — Sink-Style Washers',
-        body: `<p>The DG8 and DG9 are sink-style manual parts washers with a foot-pedal regulated hand-held flow-through cleaning brush. Constructed entirely of <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a>.</p>
+        body: `<p>The DG8 and DG9 are sink-style manual parts washers with a foot-pedal regulated hand-held flow-through cleaning brush. Constructed entirely of <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a>.</p>
 <h4>Standard Features</h4>
 <ul><li>Stainless Steel Construction</li><li>External Magnetic Drive Pump</li><li>Flo-Thru Brush</li><li>Electrical Heater Controlled by a Thermostat</li><li>Liquid Level Shut Off</li></ul>`,
       },
@@ -255,11 +255,11 @@ export const resourceDocuments: ResourceDocument[] = [
         heading: 'L Series — Vat-Style Washers',
         body: `<p>The L7 and L10 vat-style manual washers are designed for soaking and manual cleaning of medium to large components using heated aqueous solutions.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Electrical Heater with Thermostat Control</li><li>Liquid Level Sensor</li><li>Drain Valve</li><li>Removable Parts Basket</li></ul>`,
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Electrical Heater with Thermostat Control</li><li>Liquid Level Sensor</li><li>Drain Valve</li><li>Removable Parts Basket</li></ul>`,
       },
       {
         heading: 'HP Series — High-Pressure Washers',
-        body: `<p>The HP25 &amp; HP30 are heated water blasting cabinets made entirely of <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a>. The high-pressure spray wand delivers up to 870 PSI for fast, thorough cleaning of complex parts like wheel bearings, valve bodies, small dies, and cylinder heads.</p>
+        body: `<p>The HP25 &amp; HP30 are heated water blasting cabinets made entirely of <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a>. The high-pressure spray wand delivers up to 870 PSI for fast, thorough cleaning of complex parts like wheel bearings, valve bodies, small dies, and cylinder heads.</p>
 <h4>Standard Features</h4>
 <ul><li>870 PSI Piston-Drive Pump</li><li>LED Illuminated Cabinet</li><li>Ergonomic Spray Wand</li><li>Window-Clearing Blower</li><li>Thermostat Controlled Heater</li><li>Liquid Level Sensor &amp; Low Water Shut Off</li><li>Removable Work Tray &amp; Screened Filter Basket</li></ul>`,
       },
@@ -321,7 +321,7 @@ export const resourceDocuments: ResourceDocument[] = [
         heading: 'Silver Series',
         body: `<p>The Silver series offers an economical entry point for continuous belt conveyor washing. Ideal for medium-volume production environments requiring automated wash and rinse cycles.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Continuous Belt Conveyor</li><li>Adjustable Belt Speed</li><li>V-Jet Spray Nozzle Arrays</li><li>Solution Heating System</li></ul>`,
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Continuous Belt Conveyor</li><li>Adjustable Belt Speed</li><li>V-Jet Spray Nozzle Arrays</li><li>Solution Heating System</li></ul>`,
       },
       {
         heading: 'Gold 1b Series',
@@ -350,12 +350,12 @@ export const resourceDocuments: ResourceDocument[] = [
         heading: 'Overview',
         body: `<p>The Magido Agita Series immersion parts washers are engineered for aqueous immersion cleaning using water-based detergent solutions at temperatures up to 170°F (75°C). Unlike spray-cabinet washers, immersion cleaning fully submerges parts — ensuring detergent penetrates complex geometries, blind bores, and recessed cavities that spray alone cannot reach.</p>
 <p>The core cleaning action is delivered by a pneumatic oscillating platform that agitates parts within the solution, driving fresh fluid into every surface and displacing loosened contamination. An optional ultrasonic stage, operating at the bottom of the tank, further enhances cleaning performance for the most demanding contamination levels.</p>
-<p>All Agita Series machines are fabricated from <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a>, providing long-term corrosion resistance in aqueous detergent environments. The Siemens PLC control system delivers repeatable, programmable cleaning cycles, while the oil sparger and weir system continuously removes surface contamination from the solution — extending fluid life and reducing operating costs.</p>`,
+<p>All Agita Series machines are fabricated from <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a>, providing long-term corrosion resistance in aqueous detergent environments. The Siemens PLC control system delivers repeatable, programmable cleaning cycles, while the oil sparger and weir system continuously removes surface contamination from the solution — extending fluid life and reducing operating costs.</p>`,
       },
       {
         heading: 'Standard Features',
         body: `<ul>
-<li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a> throughout</li>
+<li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a> throughout</li>
 <li>Pneumatic Oscillating Immersion Platform — agitates parts during wash cycle</li>
 <li>Oil Sparger &amp; Weir System — continuously skims surface oils to extend fluid life</li>
 <li>Stainless Steel / Incoloy Heating Elements</li>
@@ -423,12 +423,12 @@ export const resourceDocuments: ResourceDocument[] = [
         body: `<p>The Magido Platinum Series rotary immersion parts washers are designed to clean critical components with complex geometry — particularly parts featuring internal bores, deep channels, and blind passages where chips, swarf, and oils become trapped and cannot be removed by spray-only systems.</p>
 <p>Cleaning performance is achieved through the combination of three complementary mechanisms working simultaneously: direct spray impingement from internal manifolds, hydraulic purging through full-part immersion, and continuous rotational agitation of the wash basket. This triple-action process drives fresh cleaning solution through internal passages throughout the entire cycle.</p>
 <p>Each process stage (wash and rinse) is completely isolated, with its own dedicated fluid tank, high-speed drain actuator, circulation pump, and spray manifold. This separation prevents cross-contamination between stages and allows independent temperature and chemical control for each phase. The Siemens PLC with Weintek HMI touch screen provides straightforward operator control and fully automated cycle management.</p>
-<p>All Platinum Series machines are fabricated from <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a>. The rotating wash basket accepts parts loaded on a front-loading table, with pneumatic door closure sealing the chamber before each cycle begins.</p>`,
+<p>All Platinum Series machines are fabricated from <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a>. The rotating wash basket accepts parts loaded on a front-loading table, with pneumatic door closure sealing the chamber before each cycle begins.</p>`,
       },
       {
         heading: 'Standard Features',
         body: `<ul>
-<li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a> throughout</li>
+<li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a> throughout</li>
 <li>Front-Loading Table with Operator Controls</li>
 <li>Siemens PLC with Weintek HMI Operator Touch Screen</li>
 <li>Fully Automated Cycle Control</li>
@@ -514,7 +514,7 @@ export const resourceDocuments: ResourceDocument[] = [
         heading: 'Jolly Series',
         body: `<p>The Jolly series is a compact rotary drum washer ideal for smaller parts volumes and facilities with limited floor space.</p>
 <h4>Standard Features</h4>
-<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 Stainless Steel Construction</a></li><li>Helical Auger Drum</li><li>Combined Submersion &amp; Spray Cleaning</li><li>Adjustable Drum Speed</li><li>Solution Heating System</li></ul>`,
+<ul><li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 Stainless Steel Construction</a></li><li>Helical Auger Drum</li><li>Combined Submersion &amp; Spray Cleaning</li><li>Adjustable Drum Speed</li><li>Solution Heating System</li></ul>`,
       },
       {
         heading: 'Spira 1b &amp; Spira 2b Series',

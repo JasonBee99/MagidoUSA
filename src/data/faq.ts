@@ -33,7 +33,7 @@ export const faqCategories: FaqCategory[] = [
       {
         id: 'what-is-magido',
         question: 'What is Magido USA?',
-        answer: `<p>Magido USA is the exclusive North American distributor of Magido industrial aqueous parts washing systems. Magido is an Italian manufacturer with over 40 years of experience producing stainless steel parts washers for industrial, automotive, aerospace, and manufacturing applications. Every machine is built from <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a> and uses water-based cleaning solutions — no solvents, no hazardous chemicals.</p>`,
+        answer: `<p>Magido USA is the exclusive North American distributor of Magido industrial aqueous parts washing systems. Magido is an Italian manufacturer with over 40 years of experience producing stainless steel parts washers for industrial, automotive, aerospace, and manufacturing applications. Every machine is built from <a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a> and uses water-based cleaning solutions — no solvents, no hazardous chemicals.</p>`,
       },
       {
         id: 'where-are-machines-made',
@@ -47,7 +47,7 @@ export const faqCategories: FaqCategory[] = [
 <ul>
   <li>No hazardous solvents — safer for operators and the environment</li>
   <li>Lower disposal and regulatory compliance costs</li>
-  <li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="underline decoration-[#eb6c1c]/60 hover:decoration-[#eb6c1c]">AISI 304 stainless steel</a> construction resists corrosion and is easy to clean</li>
+  <li><a href="/solutions/aisi-304-stainless-steel-parts-washers" class="text-[#eb6c1c] hover:text-[#315687] font-medium">AISI 304 stainless steel</a> construction resists corrosion and is easy to clean</li>
   <li>Effective on a wide range of contaminants including coolants, cutting oils, and carbon deposits</li>
   <li>Suitable for most metals including steel, aluminum, cast iron, and brass</li>
 </ul>`,
