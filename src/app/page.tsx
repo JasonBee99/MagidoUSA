@@ -66,13 +66,13 @@ export default function HomePage() {
 
               <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-magido-orange lg:mx-0" />
 
-              <p className="mt-6 text-base leading-relaxed text-[var(--color-text-secondary)]">
+              <p className="mt-6 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
                 Magido Group is recognized as one of the world&apos;s leading manufacturers of aqueous parts washing systems — engineering stainless steel industrial cleaning technology for automotive, aerospace, machining, and heavy equipment applications since 1980.
               </p>
-              <p className="mt-3 text-base leading-relaxed text-[var(--color-text-secondary)]">
-                Every system is built to order from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a> with the flexibility to tailor wash, rinse, and drying stages to your exact process requirements. US sales and support based in Sturtevant, WI.
+              <p className="mt-3 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
+                Every system is built to order from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="font-medium text-magido-orange hover:text-magido-blue">AISI 304 stainless steel</a> with the flexibility to tailor wash, rinse, and drying stages to your exact process requirements. US sales and support based in Sturtevant, WI.
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-muted)]">
+              <p className="mt-3 text-justify text-sm leading-relaxed text-[var(--color-text-muted)]">
                 Industrial aqueous parts washers for removing cutting oil, coolant, metallic fines, and machining residue — spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts cleaning systems, made in Italy.
               </p>
 
@@ -340,10 +340,10 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  <p className="mt-5 text-sm leading-relaxed text-[var(--color-text-secondary)]">
+                  <p className="mt-5 text-justify text-sm leading-relaxed text-[var(--color-text-secondary)]">
                     Contact Scott today — he wants to understand your parts cleaning challenges and recommend the right solution. Free consultation, same-day response.
                   </p>
-                  <div className="mt-5 flex flex-row flex-wrap gap-2">
+                  <div className="mt-5 flex flex-row flex-wrap justify-center gap-2 lg:justify-start">
                     <Link
                       href="/contact"
                       className="btn-primary btn-sm"

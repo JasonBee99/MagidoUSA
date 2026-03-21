@@ -24,7 +24,7 @@ export function HomeHero() {
                   FLS Series
                 </h1>
                 <span className="inline-flex flex-shrink-0 items-center gap-1 rounded-full bg-magido-orange/20 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-magido-orange">
-                  New
+                  New Product
                 </span>
               </div>
 
@@ -34,23 +34,23 @@ export function HomeHero() {
               </p>
 
               {/* Description */}
-              <p className="mt-4 text-base leading-relaxed text-gray-300 sm:text-lg">
+              <p className="mt-4 text-justify text-base leading-relaxed text-gray-300 sm:text-lg">
                 The newest addition to the Magido lineup. Heavy-duty front-loading design for large,
                 heavy components — built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="font-medium text-magido-orange hover:text-magido-blue">AISI 304 stainless steel</a> with automated wash cycles.
               </p>
 
-              {/* CTAs */}
-              <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
+              {/* CTAs — compact, side-by-side */}
+              <div className="mt-6 flex flex-wrap justify-center gap-2 lg:justify-start">
                 <Link
                   href="/products/front-load-washers"
-                  className="btn-primary"
+                  className="btn-primary btn-sm"
                 >
                   Explore FLS Series
                   <span className="btn-arrow">→</span>
                 </Link>
                 <Link
                   href="/contact?model=FLS-35"
-                  className="btn-ghost-dark"
+                  className="btn-ghost-dark btn-sm"
                 >
                   Request a Quote
                 </Link>
