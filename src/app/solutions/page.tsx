@@ -84,7 +84,7 @@ export default function SolutionsIndexPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-2xl font-bold mb-8"
-            style={{ color: '#315687', fontFamily: 'var(--font-display)' }}
+            className="text-[var(--color-text)] font-display"
           >
             Comparison Guides
           </h2>
@@ -101,7 +101,7 @@ export default function SolutionsIndexPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-2xl font-bold mb-8"
-            style={{ color: '#315687', fontFamily: 'var(--font-display)' }}
+            className="text-[var(--color-text)] font-display"
           >
             Application Guides
           </h2>
@@ -114,7 +114,7 @@ export default function SolutionsIndexPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-12 md:py-16" style={{ backgroundColor: '#315687' }}>
+      <section className="py-12 md:py-16 bg-magido-blue">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-2xl md:text-3xl font-bold text-white mb-4"
@@ -173,7 +173,7 @@ function SolutionCard({ solution }: { solution: Solution }) {
       {/* Title — turns orange on hover */}
       <h3
         className="text-lg font-bold mb-2 transition-colors duration-200 group-hover:text-[#EB6C1C]"
-        style={{ color: '#315687', fontFamily: 'var(--font-display)' }}
+        style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
       >
         {solution.headline}
       </h3>

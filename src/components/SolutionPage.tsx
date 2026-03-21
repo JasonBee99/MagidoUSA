@@ -115,7 +115,7 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
                     style={{
                       fontFamily: 'var(--font-display)',
                       borderLeftColor: '#EB6C1C', background: 'transparent',
-                      color: '#315687',
+                      color: 'var(--color-text)',
                     }}
                   >
                     {section.heading}
@@ -148,7 +148,7 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
                     style={{
                       fontFamily: 'var(--font-display)',
                       borderLeftColor: '#EB6C1C', background: 'transparent',
-                      color: '#315687',
+                      color: 'var(--color-text)',
                     }}
                   >
                     Side-by-Side Comparison
@@ -209,7 +209,7 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
                 >
                   <h3
                     className="text-lg font-bold mb-3"
-                    style={{ color: '#315687', fontFamily: 'var(--font-display)' }}
+                    style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
                   >
                     Bottom Line
                   </h3>
@@ -231,7 +231,7 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
                 >
                   <h3
                     className="text-base font-bold mb-4"
-                    style={{ color: '#315687', fontFamily: 'var(--font-display)' }}
+                    style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
                   >
                     Key Benefits
                   </h3>
@@ -343,7 +343,7 @@ export default function SolutionPage({ solution, relatedProducts }: SolutionPage
               style={{
                 fontFamily: 'var(--font-display)',
                 borderLeftColor: '#EB6C1C', background: 'transparent',
-                color: '#315687',
+                color: 'var(--color-text)',
               }}
             >
               {solution.relatedProductHeading}
