@@ -50,21 +50,25 @@ export default function HomePage() {
 
             {/* ── Left: brand statement ── */}
             <div>
-              <Link
-                href="/about"
-                className="inline-flex items-center gap-1.5 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange transition-opacity hover:opacity-70"
-              >
-                About Magido USA
-                <span className="btn-arrow">→</span>
-              </Link>
+              {/* Lines + badge + lines */}
+              <div className="flex items-center gap-3">
+                <div className="h-px flex-1 bg-magido-orange/20" />
+                <Link
+                  href="/about"
+                  className="shrink-0 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange transition-opacity hover:opacity-70"
+                >
+                  About Magido USA →
+                </Link>
+                <div className="h-px flex-1 bg-magido-orange/20" />
+              </div>
 
-              <h2 className="mt-3 text-center font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl lg:text-left">
+              <h2 className="mt-3 text-center font-display text-3xl font-bold tracking-tight text-[var(--color-text)] sm:text-4xl">
                 Stainless Steel<br />
                 <span className="text-magido-orange">Industrial Cleaning</span><br />
                 Technology
               </h2>
 
-              <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-magido-orange lg:mx-0" />
+              <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-magido-orange" />
 
               <p className="mt-6 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
                 Magido Group is recognized as one of the world&apos;s leading manufacturers of aqueous parts washing systems — engineering stainless steel industrial cleaning technology for automotive, aerospace, machining, and heavy equipment applications since 1980.
@@ -143,9 +147,13 @@ export default function HomePage() {
       <section className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
-              Our Systems
-            </p>
+            <div className="flex items-center gap-3">
+              <div className="h-px flex-1 bg-magido-orange/20" />
+              <p className="shrink-0 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
+                Our Systems
+              </p>
+              <div className="h-px flex-1 bg-magido-orange/20" />
+            </div>
             <h2 className="mt-3 font-display text-3xl font-bold uppercase tracking-tight sm:text-4xl">
               Built for Every Application
             </h2>
@@ -276,9 +284,13 @@ export default function HomePage() {
       <section className="border-t border-[var(--color-border)] px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
-              Industries Served
-            </p>
+            <div className="flex items-center gap-3">
+              <div className="h-px flex-1 bg-magido-orange/20" />
+              <p className="shrink-0 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
+                Industries Served
+              </p>
+              <div className="h-px flex-1 bg-magido-orange/20" />
+            </div>
             <h2 className="mt-3 font-display text-3xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-4xl">
               We Serve the Toughest Sectors
             </h2>

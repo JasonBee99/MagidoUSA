@@ -28,10 +28,14 @@ export function HomeHero() {
                 </span>
               </div>
 
-              {/* Subtitle — always centered */}
-              <p className="mt-2 text-center font-display text-lg font-medium text-magido-orange sm:text-xl">
-                Front Load Spray Cabinet Washers
-              </p>
+              {/* Subtitle with lines */}
+              <div className="mt-3 flex items-center justify-center gap-3">
+                <div className="h-px flex-1 max-w-[4rem] bg-magido-orange/30" />
+                <p className="shrink-0 font-display text-lg font-medium text-magido-orange sm:text-xl">
+                  Front Load Spray Cabinet Washers
+                </p>
+                <div className="h-px flex-1 max-w-[4rem] bg-magido-orange/30" />
+              </div>
 
               {/* Description */}
               <p className="mt-4 text-justify text-base leading-relaxed text-gray-300 sm:text-lg">
