@@ -216,19 +216,23 @@ export default function HomePage() {
       {/* ─── The Magido Difference ─── */}
       <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+          <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-16">
             {/* Left: heading + intro */}
             <div>
-              <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
-                The Magido Difference
-              </p>
-              <h2 className="mt-3 font-display text-3xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-4xl">
+              {/* Badge + title on same line */}
+              <div className="flex items-center gap-3">
+                <span className="shrink-0 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
+                  The Magido Difference
+                </span>
+                <div className="h-px flex-1 bg-magido-orange/20" />
+              </div>
+              <h2 className="mt-2 font-display text-4xl font-bold uppercase tracking-tight text-[var(--color-text)] sm:text-5xl">
                 Precision Engineered. Proven.
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-[var(--color-text-secondary)]">
+              <p className="mt-4 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
                 Through strategic planning, careful selection of quality materials, and a constant search for innovative solutions, Magido has earned the reputation of producing the highest quality and most competitive wash systems on the market.
               </p>
-              <p className="mt-3 text-base leading-relaxed text-[var(--color-text-secondary)]">
+              <p className="mt-3 text-justify text-base leading-relaxed text-[var(--color-text-secondary)]">
                 Our team is always attentive and willing to help before and after the sale — ensuring total flexibility in creating a tailor-made wash system for your maintenance or production parts cleaning operation.
               </p>
               <div className="mt-8">
@@ -416,13 +420,15 @@ function WhyCard({
 }) {
   return (
     <div className="rounded-xl border border-magido-orange/30 bg-[var(--color-card-bg)] p-6">
-      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-magido-orange/10 text-magido-orange ring-1 ring-magido-orange/30">
-        {icon}
+      <div className="flex items-center gap-3">
+        <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-magido-orange/10 text-magido-orange ring-1 ring-magido-orange/30">
+          {icon}
+        </div>
+        <h3 className="font-display text-base font-bold text-[var(--color-text)]">
+          {title}
+        </h3>
       </div>
-      <h3 className="mt-4 font-display text-sm font-bold text-[var(--color-text)]">
-        {title}
-      </h3>
-      <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-secondary)]">
+      <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)]">
         {description}
       </p>
     </div>
