@@ -101,39 +101,54 @@ export default function HomePage() {
                       : 'border-[var(--color-card-border)]'
                   }`}
                 >
-                  <div className="flex items-start justify-between gap-2">
-                    <div className={`font-display text-2xl font-bold sm:text-3xl ${stat.italian ? '' : 'text-magido-orange'}`}>
-                      {stat.italian ? (
-                        <span>
-                          <span className="text-[#009246]">Ma</span>
-                          <span className="text-[var(--color-text)]">de </span>
-                          <span className="text-[var(--color-text)]">in </span>
-                          <span className="text-[#CE2B37]">Italy</span>
-                        </span>
-                      ) : (
-                        stat.value
-                      )}
-                    </div>
-                    <div className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg ring-1 ${
-                      stat.italian
-                        ? 'bg-[#009246]/10 text-[#009246] ring-[#009246]/20'
-                        : 'bg-magido-blue/10 text-magido-blue ring-magido-blue/20'
-                    }`}>
-                      {stat.icon}
-                    </div>
-                  </div>
-                  <div className="mt-2 text-sm font-semibold text-[var(--color-text)]">
-                    {stat.label}
-                  </div>
-                  <div className="mt-1 text-xs leading-relaxed text-[var(--color-text-secondary)]">
-                    {stat.description}
-                  </div>
-                  {stat.italian && (
-                    <div className="mt-3 flex h-1.5 overflow-hidden rounded-full">
-                      <div className="flex-1 bg-[#009246]" />
-                      <div className="flex-1 bg-white" />
-                      <div className="flex-1 bg-[#CE2B37]" />
-                    </div>
+                  {stat.italian ? (
+                    /* ── Made in Italy card — unchanged ── */
+                    <>
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="font-display text-2xl font-bold sm:text-3xl">
+                          <span>
+                            <span className="text-[#009246]">Ma</span>
+                            <span className="text-[var(--color-text)]">de </span>
+                            <span className="text-[var(--color-text)]">in </span>
+                            <span className="text-[#CE2B37]">Italy</span>
+                          </span>
+                        </div>
+                        <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-[#009246]/10 text-[#009246] ring-1 ring-[#009246]/20">
+                          {stat.icon}
+                        </div>
+                      </div>
+                      <div className="mt-2 text-sm font-semibold text-[var(--color-text)]">
+                        {stat.label}
+                      </div>
+                      <div className="mt-1 text-xs leading-relaxed text-[var(--color-text-secondary)]">
+                        {stat.description}
+                      </div>
+                      <div className="mt-3 flex h-1.5 overflow-hidden rounded-full">
+                        <div className="flex-1 bg-[#009246]" />
+                        <div className="flex-1 bg-white" />
+                        <div className="flex-1 bg-[#CE2B37]" />
+                      </div>
+                    </>
+                  ) : (
+                    /* ── Standard stat card — value + label on same line ── */
+                    <>
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="flex items-baseline gap-2">
+                          <span className="font-display text-2xl font-bold text-magido-orange sm:text-3xl">
+                            {stat.value}
+                          </span>
+                          <span className="text-sm font-semibold text-[var(--color-text)]">
+                            {stat.label}
+                          </span>
+                        </div>
+                        <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-magido-blue/10 text-magido-blue ring-1 ring-magido-blue/20">
+                          {stat.icon}
+                        </div>
+                      </div>
+                      <div className="mt-2 text-xs leading-relaxed text-[var(--color-text-secondary)]">
+                        {stat.description}
+                      </div>
+                    </>
                   )}
                 </div>
               ))}
