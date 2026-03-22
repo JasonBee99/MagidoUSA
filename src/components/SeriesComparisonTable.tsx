@@ -76,7 +76,9 @@ export function SeriesComparisonTable({
   const hasMore = specTable.rows.length > 8;
 
   const thLabelClass = frozen ? 'sticky left-0 z-10 bg-[var(--color-bg-secondary)]' : '';
-  const tdLabelClass = frozen ? 'sticky left-0 z-10 bg-inherit' : '';
+  // Explicit solid backgrounds per row — no bg-inherit which causes transparency
+  const tdLabelEvenBg = frozen ? 'sticky left-0 z-10 bg-[var(--color-card-bg)]' : '';
+  const tdLabelOddBg  = frozen ? 'sticky left-0 z-10 bg-[var(--color-bg-secondary)]' : '';
 
   // Compressed label cell — only padding/overflow changes, width set via colgroup
   const labelCellStyle: React.CSSProperties = {
@@ -160,11 +162,11 @@ export function SeriesComparisonTable({
                 <tr
                   key={row.name}
                   className={`border-t border-[var(--color-border-light)] ${
-                    i % 2 === 0 ? 'bg-[var(--color-card-bg)]' : 'bg-[var(--color-bg-secondary)]/40'
+                    i % 2 === 0 ? 'bg-[var(--color-card-bg)]' : 'bg-[var(--color-bg-secondary)]'
                   }`}
                 >
                   <td
-                    className={`${tdLabelClass} px-4 py-2.5 text-sm font-medium text-[var(--color-text-secondary)]`}
+                    className={`${i % 2 === 0 ? tdLabelEvenBg : tdLabelOddBg} px-4 py-2.5 text-sm font-medium text-[var(--color-text-secondary)]`}
                     style={labelCellStyle}
                   >
                     {compressed ? (
