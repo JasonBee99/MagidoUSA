@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronRight, Droplets, Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { privacyPolicy } from '@/data/privacy-policy';
+import { PrivacyPolicySectionNav } from '@/components/PrivacyPolicySectionNav';
 
 export const metadata: Metadata = {
   title: privacyPolicy.meta.title,
@@ -74,22 +75,10 @@ export default function PrivacyPolicyPage() {
         </div>
       </section>
 
-      {/* ─── Jump nav ─── */}
-      <div className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <nav className="flex flex-wrap gap-x-5 gap-y-2" aria-label="Privacy policy sections">
-            {sections.map((s) => (
-              <a
-                key={s.id}
-                href={`#${s.id}`}
-                className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange"
-              >
-                {s.heading}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </div>
+      {/* ─── Sticky section nav ─── */}
+      <PrivacyPolicySectionNav
+        sections={sections.map((s) => ({ id: s.id, heading: s.heading }))}
+      />
 
       {/* ─── Body ─── */}
       <article className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
@@ -103,7 +92,7 @@ export default function PrivacyPolicyPage() {
           {/* Sections */}
           <div className="mt-10 space-y-12">
             {sections.map((section) => (
-              <section key={section.id} id={section.id} className="scroll-mt-24">
+              <section key={section.id} id={section.id} className="scroll-mt-28">
                 <h2 className="font-display text-xl font-bold text-[var(--color-text)] lg:text-2xl">
                   {section.heading}
                 </h2>

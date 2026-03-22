@@ -7,6 +7,7 @@ import { CompareProvider } from '@/components/CompareProvider';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CompareBar } from '@/components/CompareBar';
+import { BackToTop } from '@/components/BackToTop';
 import { OrganizationJsonLd } from '@/components/JsonLd';
 
 const GA_ID = 'G-M6YLZ7YG7T';
@@ -135,6 +136,7 @@ export default function RootLayout({
               <Footer />
             </div>
             <CompareBar />
+            <BackToTop />
           </CompareProvider>
         </ThemeProvider>
 
