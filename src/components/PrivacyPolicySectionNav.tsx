@@ -51,3 +51,5 @@ export function PrivacyPolicySectionNav({ sections }: SectionNavProps) {
     </div>
   );
 }
+
+export default PrivacyPolicySectionNav;

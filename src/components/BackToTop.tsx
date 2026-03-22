@@ -30,3 +30,5 @@ export function BackToTop() {
     </button>
   );
 }
+
+export default BackToTop;
