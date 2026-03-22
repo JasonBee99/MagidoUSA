@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllCategories, getCategoryRepresentativeImage } from '@/lib/products';
-import { ArrowRight, ChevronRight } from 'lucide-react';
+import { ChevronRight, FlaskConical } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Aqueous Parts Washers — All Models & Categories | Magido USA',
@@ -51,20 +51,68 @@ export default function ProductsIndexPage() {
       {/* ─── Hero ─── */}
       <section className="hero-bg px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
-          <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
-            7 Categories • 20 Series • 84 Models
-          </p>
-          <h1 className="mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+            7 Categories · 20 Series · 84 Models
+          </div>
+
+          <h1 className="mt-4 font-display text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl lg:text-5xl">
             Aqueous Parts Washing Systems
           </h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
+
+          {/* Subtitle with lines */}
+          <div className="mt-3 flex items-center justify-start gap-3">
+            <div className="h-px w-12 bg-magido-orange/30" />
+            <p className="shrink-0 font-display text-base font-medium text-magido-orange sm:text-lg">
+              Stainless Steel · Made in Italy · All 84 Models
+            </p>
+            <div className="h-px flex-1 max-w-[8rem] bg-magido-orange/30" />
+          </div>
+
+          <p className="mt-4 max-w-2xl text-justify text-base leading-relaxed text-gray-300 sm:text-lg">
             From compact manual stations to fully automated conveyor and rotary
-            systems — every Magido machine is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304
-            stainless steel</a> and engineered in Italy.
+            systems — every Magido machine is built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="font-medium text-magido-orange hover:text-magido-blue">AISI 304
+            stainless steel</a> and engineered in Italy. Industrial aqueous parts washers
+            for removing cutting oil, coolant, metallic fines, and machining residue.
           </p>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-gray-400">
-            Industrial aqueous parts washers and water-based parts washer systems for removing cutting oil, coolant, metallic fines, and machining residue from automotive, aerospace, machining, and heavy equipment machined parts.
-          </p>
+
+          {/* CTAs — btn-sm side-by-side */}
+          <div className="mt-6 flex flex-wrap gap-2">
+            <Link href="/contact" className="btn-primary btn-sm">
+              Request a Quote
+              <span className="btn-arrow">→</span>
+            </Link>
+            <Link href="/contact#evaluation" className="btn-ghost-dark btn-sm">
+              Process Evaluation
+            </Link>
+          </div>
+
+          {/* Secondary links — pipe-separated */}
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/10 pt-5">
+            <Link
+              href="/how-to-choose"
+              className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+            >
+              Help Me Choose →
+            </Link>
+            <span className="text-white/20" aria-hidden="true">|</span>
+            <Link
+              href="/compare"
+              className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+            >
+              <FlaskConical className="h-3.5 w-3.5 text-magido-orange" />
+              Compare Products
+            </Link>
+            <span className="text-white/20" aria-hidden="true">|</span>
+            <Link
+              href="/solutions"
+              className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+            >
+              Buying Guides →
+            </Link>
+          </div>
+
         </div>
       </section>
 

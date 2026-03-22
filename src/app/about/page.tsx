@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ChevronRight, ArrowRight, Phone, Droplets } from 'lucide-react';
+import { ChevronRight, Phone, Droplets, FlaskConical } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Magido USA — Italian-Engineered Stainless Steel Parts Washers',
@@ -42,8 +42,49 @@ export default function AboutPage() {
                 <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
                 Italian-Engineered Aqueous Parts Washers Since 1980
               </div>
-              <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">Leaders in Aqueous Cleaning Solutions</h1>
-              <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-300 sm:text-lg">Engineered in Italy. Built from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>. Industrial aqueous parts washers for automotive, aerospace, machining, and heavy equipment — supported across the United States.</p>
+              <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                Leaders in Aqueous Cleaning Solutions
+              </h1>
+              <p className="mt-4 max-w-3xl text-justify text-base leading-relaxed text-gray-300 sm:text-lg">
+                Engineered in Italy. Built from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="font-medium text-magido-orange hover:text-magido-blue">AISI 304 stainless steel</a>. Industrial aqueous parts washers for automotive, aerospace, machining, and heavy equipment — supported across the United States.
+              </p>
+
+              {/* CTAs — btn-sm side-by-side */}
+              <div className="mt-6 flex flex-wrap gap-2">
+                <Link href="/contact" className="btn-primary btn-sm">
+                  Contact Scott
+                  <span className="btn-arrow">→</span>
+                </Link>
+                <a href="tel:8444624436" className="btn-ghost-dark btn-sm">
+                  <Phone className="h-3.5 w-3.5" />
+                  844-462-4436
+                </a>
+              </div>
+
+              {/* Secondary links — pipe-separated */}
+              <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/10 pt-5">
+                <Link
+                  href="/products"
+                  className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                >
+                  Browse Washers →
+                </Link>
+                <span className="text-white/20" aria-hidden="true">|</span>
+                <Link
+                  href="/contact#evaluation"
+                  className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                >
+                  <FlaskConical className="h-3.5 w-3.5 text-magido-orange" />
+                  Process Evaluation
+                </Link>
+                <span className="text-white/20" aria-hidden="true">|</span>
+                <Link
+                  href="/resources/catalog"
+                  className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                >
+                  Download Catalog →
+                </Link>
+              </div>
             </div>
 
             {/* Italian facility photo */}
@@ -117,10 +158,6 @@ export default function AboutPage() {
             <h2 className="font-display text-2xl font-bold text-[var(--color-text)]">US Presence</h2>
             <p className="mt-3">Magido USA is headquartered in Sturtevant, Wisconsin, providing sales, application engineering, and after-sale support across the United States.</p>
           </section>
-          <div className="flex flex-wrap gap-3 pt-4">
-            <Link href="/contact" className="inline-flex items-center gap-2 rounded-lg bg-magido-orange px-6 py-3 text-sm font-semibold text-white hover:bg-magido-orange-dark">Contact Us <ArrowRight className="h-4 w-4" /></Link>
-            <a href="tel:8444624436" className="inline-flex items-center gap-2 rounded-lg border border-[var(--color-border)] px-6 py-3 text-sm font-semibold text-[var(--color-text)] hover:border-magido-orange/30"><Phone className="h-4 w-4" /> 844-4MA-GIDO</a>
-          </div>
         </div>
       </article>
     </>

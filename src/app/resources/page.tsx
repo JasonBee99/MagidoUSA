@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Droplets } from 'lucide-react';
+import { Droplets, FlaskConical } from 'lucide-react';
 import {
   productCatalog,
   getResourcesByCategory,
@@ -126,10 +126,39 @@ export default function ResourcesPage() {
               <h1 className="font-display text-3xl font-bold uppercase tracking-tight sm:text-4xl lg:text-5xl">
                 Resources &amp; Docs
               </h1>
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
+              <p className="mt-4 max-w-2xl text-justify text-base leading-relaxed text-gray-300 sm:text-lg">
                 Technical documentation, product catalogs, startup guides, and
                 service instructions for Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer systems for removing cutting oil, coolant, and machining residue from machined parts. Automotive, aerospace, machining.
               </p>
+
+              {/* CTAs — btn-sm side-by-side */}
+              <div className="mt-6 flex flex-wrap gap-2">
+                <Link href="/resources/catalog" className="btn-primary btn-sm">
+                  Download Catalog
+                  <span className="btn-arrow">→</span>
+                </Link>
+                <Link href="/contact" className="btn-ghost-dark btn-sm">
+                  Request a Quote
+                </Link>
+              </div>
+
+              {/* Secondary links — pipe-separated */}
+              <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/10 pt-5">
+                <Link
+                  href="/products"
+                  className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                >
+                  Browse Products →
+                </Link>
+                <span className="text-white/20" aria-hidden="true">|</span>
+                <Link
+                  href="/contact#evaluation"
+                  className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                >
+                  <FlaskConical className="h-3.5 w-3.5 text-magido-orange" />
+                  Process Evaluation
+                </Link>
+              </div>
             </div>
 
             {/* Illustration */}

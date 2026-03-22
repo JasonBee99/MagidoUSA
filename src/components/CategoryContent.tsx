@@ -64,6 +64,7 @@ export function CategoryContent({
         categoryName={category.name}
         heroImage={activeHeroImage}
         heroBadge={heroBadge}
+        categorySlug={category.slug}
       />
 
       {/* Tabs + grid — tabs are client (URL state), grid renders immediately */}

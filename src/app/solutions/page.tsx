@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import { Droplets } from 'lucide-react';
+import { ChevronRight, Droplets, FlaskConical } from 'lucide-react';
 import type { Solution, SolutionsData } from '@/types/solutions';
 import solutionsData from '@/data/solutions.json';
 
@@ -32,36 +32,70 @@ export default function SolutionsIndexPage() {
   const useCases = solutions.filter((s: Solution) => s.type === 'use-case');
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'var(--color-bg)' }}>
+    <div className="min-h-screen bg-[var(--color-bg)]">
 
-      {/* Hero */}
-      <section className="hero-bg py-12 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="mb-6 flex items-center gap-2 text-sm" aria-label="Breadcrumb">
-            <Link href="/" className="hover:underline" style={{ color: 'var(--color-text-secondary)' }}>Home</Link>
-            <span style={{ color: 'var(--color-text-muted)' }}>/</span>
-            <span style={{ color: 'var(--color-text-muted)' }}>Solutions</span>
-          </nav>
+      {/* ─── Breadcrumb ─── */}
+      <nav
+        className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-3 sm:px-6 lg:px-8"
+        aria-label="Breadcrumb"
+      >
+        <div className="mx-auto flex max-w-7xl items-center gap-2 text-sm">
+          <Link href="/" className="text-[var(--color-text-muted)] transition-colors hover:text-magido-orange">Home</Link>
+          <ChevronRight className="h-3.5 w-3.5 text-[var(--color-text-muted)]" />
+          <span className="font-medium text-[var(--color-text)]">Solutions</span>
+        </div>
+      </nav>
+
+      {/* ─── Hero ─── */}
+      <section className="hero-bg px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
+
             {/* Text */}
             <div className="flex-1 min-w-0">
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+              <div className="inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
                 <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
                 Aqueous vs Solvent · Spray vs Immersion · Application Guides
               </div>
-              <h1
-                className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-4"
-                style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
-              >
+
+              <h1 className="mt-4 font-display text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl lg:text-5xl">
                 Parts Washing Solutions &amp; Guides
               </h1>
-              <p
-                className="text-lg md:text-xl max-w-2xl leading-relaxed"
-                style={{ color: 'var(--color-text-secondary)' }}
-              >
-                Practical guides to choosing the right industrial aqueous parts washer — <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a> spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer vs solvent, cutting oil and coolant removal, machined parts cleaning for automotive, aerospace, and machining.
+
+              <p className="mt-4 max-w-2xl text-justify text-base leading-relaxed text-gray-300 sm:text-lg">
+                Practical guides to choosing the right industrial aqueous parts washer — <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="font-medium text-magido-orange hover:text-magido-blue">AISI 304 stainless steel</a> spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer vs solvent, cutting oil and coolant removal, machined parts cleaning for automotive, aerospace, and machining.
               </p>
+
+              {/* CTAs — btn-sm side-by-side */}
+              <div className="mt-6 flex flex-wrap gap-2">
+                <Link href="/how-to-choose" className="btn-primary btn-sm">
+                  Help Me Choose
+                  <span className="btn-arrow">→</span>
+                </Link>
+                <Link href="/contact" className="btn-ghost-dark btn-sm">
+                  Talk to an Expert
+                </Link>
+              </div>
+
+              {/* Secondary links — pipe-separated */}
+              <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/10 pt-5">
+                <Link
+                  href="/products"
+                  className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                >
+                  Browse Washers →
+                </Link>
+                <span className="text-white/20" aria-hidden="true">|</span>
+                <Link
+                  href="/contact#evaluation"
+                  className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                >
+                  <FlaskConical className="h-3.5 w-3.5 text-magido-orange" />
+                  Process Evaluation
+                </Link>
+              </div>
             </div>
+
             {/* Image */}
             <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
               <div className="product-halo relative h-52 w-full lg:h-60">
@@ -75,17 +109,18 @@ export default function SolutionsIndexPage() {
                 />
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* Comparison Guides */}
-      <section className="py-12 md:py-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-center text-[var(--color-text)] mb-10 lg:text-4xl">
+      {/* ─── Comparison Guides ─── */}
+      <section className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-10 text-center font-display text-3xl font-bold text-[var(--color-text)] lg:text-4xl">
             Comparison Guides
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {comparisons.map((s: Solution) => (
               <SolutionCard key={s.slug} solution={s} />
             ))}
@@ -93,13 +128,13 @@ export default function SolutionsIndexPage() {
         </div>
       </section>
 
-      {/* Application Guides */}
-      <section className="py-12 md:py-16" style={{ backgroundColor: 'var(--color-bg-secondary)' }}>
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-center text-[var(--color-text)] mb-10 lg:text-4xl">
+      {/* ─── Application Guides ─── */}
+      <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-10 text-center font-display text-3xl font-bold text-[var(--color-text)] lg:text-4xl">
             Application Guides
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {useCases.map((s: Solution) => (
               <SolutionCard key={s.slug} solution={s} />
             ))}
@@ -107,22 +142,16 @@ export default function SolutionsIndexPage() {
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="py-12 md:py-16 bg-magido-blue">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2
-            className="text-2xl md:text-3xl font-bold text-white mb-4"
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
+      {/* ─── Bottom CTA ─── */}
+      <section className="bg-magido-blue px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-display text-2xl font-bold text-white md:text-3xl">
             Still have questions? We can help.
           </h2>
-          <p className="mb-8 text-lg" style={{ color: '#cbd5e1' }}>
+          <p className="mb-8 mt-4 text-lg text-blue-200">
             Our team works with industrial shops of all sizes to find the right cleaning solution.
           </p>
-          <Link
-            href="/contact"
-            className="btn-primary"
-          >
+          <Link href="/contact" className="btn-primary">
             Contact Us <span className="btn-arrow">→</span>
           </Link>
         </div>
@@ -135,22 +164,17 @@ function SolutionCard({ solution }: { solution: Solution }) {
   return (
     <Link
       href={`/solutions/${solution.slug}`}
-      className="solution-card group block rounded-xl border p-6"
-      style={{ backgroundColor: 'var(--color-card-bg)', borderColor: 'var(--color-border)' }}
+      className="solution-card group block rounded-xl border border-[var(--color-border)] bg-[var(--color-card-bg)] p-6 transition-shadow hover:shadow-md"
     >
       {/* Top row: badge + gear icon */}
       <div className="mb-3 flex items-center justify-between">
-        <span
-          className="inline-block text-xs font-semibold uppercase tracking-widest px-2.5 py-1 rounded-full"
-          style={{ backgroundColor: '#EB6C1C20', color: '#EB6C1C' }}
-        >
+        <span className="inline-block rounded-full bg-magido-orange/10 px-2.5 py-1 text-xs font-semibold uppercase tracking-widest text-magido-orange">
           {solution.type === 'comparison' ? 'Comparison Guide' : 'Application Guide'}
         </span>
 
         {/* Gear icon — spins in on hover */}
         <svg
-          className="solution-card-gear h-6 w-6 flex-shrink-0"
-          style={{ color: '#EB6C1C' }}
+          className="solution-card-gear h-6 w-6 flex-shrink-0 text-magido-orange"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -164,24 +188,18 @@ function SolutionCard({ solution }: { solution: Solution }) {
         </svg>
       </div>
 
-      {/* Title — turns orange on hover */}
-      <h3
-        className="text-lg font-bold mb-2 transition-colors duration-200 group-hover:text-[#EB6C1C]"
-        style={{ color: 'var(--color-text)', fontFamily: 'var(--font-display)' }}
-      >
+      {/* Title */}
+      <h3 className="mb-2 font-display text-lg font-bold text-[var(--color-text)] transition-colors duration-200 group-hover:text-magido-orange">
         {solution.headline}
       </h3>
 
       {/* Excerpt */}
-      <p
-        className="text-sm leading-relaxed line-clamp-3"
-        style={{ color: 'var(--color-text-secondary)' }}
-      >
+      <p className="line-clamp-3 text-sm leading-relaxed text-[var(--color-text-secondary)]">
         {solution.intro}
       </p>
 
       {/* CTA row */}
-      <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold" style={{ color: '#EB6C1C' }}>
+      <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-magido-orange">
         <span>Read Guide</span>
         <span className="solution-card-arrow">→</span>
       </div>

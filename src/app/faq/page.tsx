@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Droplets } from 'lucide-react';
+import { ChevronRight, Droplets, FlaskConical } from 'lucide-react';
 import { faqCategories, getAllFaqItems } from '@/data/faq';
 
 export const metadata: Metadata = {
@@ -29,28 +29,65 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <>
+      {/* ─── Breadcrumb ─── */}
+      <nav
+        className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-3 sm:px-6 lg:px-8"
+        aria-label="Breadcrumb"
+      >
+        <div className="mx-auto flex max-w-7xl items-center gap-2 text-sm">
+          <Link href="/" className="text-[var(--color-text-muted)] transition-colors hover:text-magido-orange">Home</Link>
+          <ChevronRight className="h-3.5 w-3.5 text-[var(--color-text-muted)]" />
+          <span className="font-medium text-[var(--color-text)]">FAQ</span>
+        </div>
+      </nav>
+
       {/* ─── Hero ─── */}
-      <section className="hero-bg py-12 text-white lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <nav className="mb-6 flex items-center gap-2 text-sm text-gray-400">
-            <Link href="/" className="transition-colors hover:text-white">Home</Link>
-            <span>/</span>
-            <span className="text-gray-300">FAQ</span>
-          </nav>
+      <section className="hero-bg px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
             {/* Text */}
             <div className="flex-1 min-w-0">
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
+              <div className="inline-flex items-center gap-2 rounded-full border border-magido-orange/30 bg-magido-orange/10 px-4 py-1.5 text-sm font-medium text-magido-orange">
                 <Droplets className="h-3.5 w-3.5" aria-hidden="true" />
                 Aqueous Parts Washer FAQ
               </div>
-              <h1 className="font-display text-3xl font-bold uppercase tracking-tight sm:text-4xl lg:text-5xl">
+              <h1 className="mt-4 font-display text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl lg:text-5xl">
                 Frequently Asked Questions
               </h1>
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
-                Common questions about Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer selection, operation, detergents, removing cutting oil and coolant from machined parts, <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a> construction, made in Italy.
+              <p className="mt-4 max-w-2xl text-justify text-base leading-relaxed text-gray-300 sm:text-lg">
+                Common questions about Magido USA industrial aqueous parts washers — stainless steel spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers. Water-based parts washer selection, operation, detergents, removing cutting oil and coolant from machined parts, <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="font-medium text-magido-orange hover:text-magido-blue">AISI 304 stainless steel</a> construction, made in Italy.
               </p>
+
+              {/* CTAs — btn-sm side-by-side */}
+              <div className="mt-6 flex flex-wrap gap-2">
+                <Link href="/contact" className="btn-primary btn-sm">
+                  Contact Scott
+                  <span className="btn-arrow">→</span>
+                </Link>
+                <Link href="/contact#evaluation" className="btn-ghost-dark btn-sm">
+                  Process Evaluation
+                </Link>
+              </div>
+
+              {/* Secondary links — pipe-separated */}
+              <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/10 pt-5">
+                <Link
+                  href="/products"
+                  className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                >
+                  Browse Washers →
+                </Link>
+                <span className="text-white/20" aria-hidden="true">|</span>
+                <Link
+                  href="/how-to-choose"
+                  className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                >
+                  <FlaskConical className="h-3.5 w-3.5 text-magido-orange" />
+                  Help Me Choose
+                </Link>
+              </div>
             </div>
+
             {/* Image */}
             <div className="w-full flex-shrink-0 lg:w-80 xl:w-96">
               <div className="product-halo relative h-52 w-full lg:h-60">
