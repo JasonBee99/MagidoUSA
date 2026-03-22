@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllCategories, getCategoryRepresentativeImage } from '@/lib/products';
-import { ChevronRight, FlaskConical } from 'lucide-react';
+import { ArrowRight, ChevronRight, FlaskConical } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Aqueous Parts Washers — All Models & Categories | Magido USA',
