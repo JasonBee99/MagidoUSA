@@ -85,10 +85,10 @@ export default function HomePage() {
 
               <div className="mt-8">
                 <Link
-                  href="/about"
+                  href="/resources/catalog"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-magido-orange transition-opacity hover:opacity-70"
                 >
-                  Learn More About Magido <span className="btn-arrow">→</span>
+                  Download Product Catalog <span className="btn-arrow">→</span>
                 </Link>
               </div>
             </div>
