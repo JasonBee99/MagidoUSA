@@ -7,8 +7,7 @@ import { CompareProvider } from '@/components/CompareProvider';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CompareBar } from '@/components/CompareBar';
-import dynamic from 'next/dynamic';
-const BackToTop = dynamic(() => import('@/components/BackToTop'), { ssr: false });
+import { BackToTop } from '@/components/BackToTop';
 import { OrganizationJsonLd } from '@/components/JsonLd';
 
 const GA_ID = 'G-M6YLZ7YG7T';
