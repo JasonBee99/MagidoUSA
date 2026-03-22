@@ -150,7 +150,7 @@ function ContactPageInner() {
       </nav>
 
       {/* ─── Hero ─── */}
-      <section className="hero-bg px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      <section className="hero-bg px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
 

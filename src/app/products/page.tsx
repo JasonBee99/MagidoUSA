@@ -49,7 +49,7 @@ export default function ProductsIndexPage() {
       </nav>
 
       {/* ─── Hero ─── */}
-      <section className="hero-bg px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      <section className="hero-bg px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
           <p className="font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
             7 Categories • 20 Series • 84 Models

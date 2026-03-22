@@ -162,13 +162,13 @@ export function ProductCard({
           className="relative block"
           tabIndex={showSpecs ? -1 : undefined}
         >
-          <div className="product-card-image-bg relative flex aspect-[4/3] items-center justify-center overflow-hidden p-4">
+          <div className="product-card-image-bg relative flex aspect-[4/3] items-center justify-center overflow-hidden">
             {hasImage ? (
               <Image
                 src={product.images[0]}
                 alt={product.name}
                 fill
-                className={`object-contain p-3 transition-transform duration-300 group-hover:scale-105 ${showSpecs ? 'opacity-0' : 'opacity-100'}`}
+                className={`object-contain transition-transform duration-300 group-hover:scale-105 ${showSpecs ? 'opacity-0' : 'opacity-100'}`}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 priority={priority}
                 loading={priority ? undefined : 'lazy'}

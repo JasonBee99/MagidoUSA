@@ -35,7 +35,7 @@ export default function SolutionsIndexPage() {
     <div className="min-h-screen" style={{ backgroundColor: 'var(--color-bg)' }}>
 
       {/* Hero */}
-      <section className="hero-bg py-16 md:py-20">
+      <section className="hero-bg py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="mb-6 flex items-center gap-2 text-sm" aria-label="Breadcrumb">
             <Link href="/" className="hover:underline" style={{ color: 'var(--color-text-secondary)' }}>Home</Link>

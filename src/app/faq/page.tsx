@@ -30,7 +30,7 @@ export default function FaqPage() {
   return (
     <>
       {/* ─── Hero ─── */}
-      <section className="hero-bg py-16 text-white lg:py-24">
+      <section className="hero-bg py-12 text-white lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <nav className="mb-6 flex items-center gap-2 text-sm text-gray-400">
             <Link href="/" className="transition-colors hover:text-white">Home</Link>

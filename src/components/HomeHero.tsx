@@ -9,7 +9,7 @@ export function HomeHero() {
   return (
     <>
       {/* ─── Hero section ─── */}
-      <section className="hero-bg relative px-4 pt-8 pb-16 sm:px-6 lg:px-8 lg:pt-10 lg:pb-24">
+      <section className="hero-bg relative px-4 pt-6 pb-12 sm:px-6 lg:px-8 lg:pt-10 lg:pb-24">
         <div className="mx-auto max-w-7xl">
 
           {/* Main hero: FLS spotlight */}
