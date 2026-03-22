@@ -344,6 +344,16 @@ export default function HomePage() {
       {/* ─── National Sales Manager ─── */}
       <section id="contact-scott" aria-label="Contact Scott Morin — National Sales Manager" className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
+          {/* Section heading */}
+          <div className="mb-8 text-center">
+            <div className="flex items-center gap-3">
+              <div className="h-px flex-1 bg-magido-orange/20" />
+              <h2 className="shrink-0 font-display text-sm font-semibold uppercase tracking-widest text-magido-orange">
+                Your Parts Washing Expert
+              </h2>
+              <div className="h-px flex-1 bg-magido-orange/20" />
+            </div>
+          </div>
           <div className="overflow-hidden rounded-2xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] shadow-sm">
             <div className="p-8 lg:p-12">
               <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
@@ -355,9 +365,9 @@ export default function HomePage() {
                       <p className="font-display text-xs font-semibold uppercase tracking-widest text-magido-orange">
                         National Sales Manager
                       </p>
-                      <h2 className="mt-2 font-display text-2xl font-bold tracking-tight text-[var(--color-text)] sm:text-3xl lg:text-4xl">
+                      <h3 className="mt-2 font-display text-2xl font-bold tracking-tight text-[var(--color-text)] sm:text-3xl lg:text-4xl">
                         Scott Morin
-                      </h2>
+                      </h3>
                       <p className="mt-1 text-sm text-[var(--color-text-muted)]">
                         Global Parts Cleaning Manufacturer at Magido USA
                       </p>
