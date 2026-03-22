@@ -264,7 +264,7 @@ export default function ProductPage({
                 );
                 return (
                   <p
-                    className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base"
+                    className="mt-3 text-justify text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base"
                     dangerouslySetInnerHTML={{ __html: html }}
                   />
                 );
