@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Droplets, FlaskConical } from 'lucide-react';
 import { faqCategories, getAllFaqItems } from '@/data/faq';
+import { BreadcrumbJsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Aqueous Parts Washer FAQ | Magido USA — Common Questions Answered',
@@ -29,6 +30,10 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <>
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', url: '/' },
+        { name: 'FAQ', url: '/faq' },
+      ]} />
       {/* ─── Breadcrumb ─── */}
       <nav
         className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-3 sm:px-6 lg:px-8"

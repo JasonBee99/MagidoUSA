@@ -101,6 +101,7 @@ export default function RootLayout({
         {/* Favicon */}
         <link rel="icon" href="/images/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/favicon.png" />
+        <link rel="manifest" href="/manifest.json" />
         {/* Prevent FOUC for dark mode */}
         <script
           dangerouslySetInnerHTML={{

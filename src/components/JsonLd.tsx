@@ -18,27 +18,84 @@ export function OrganizationJsonLd() {
       data={{
         '@context': 'https://schema.org',
         '@type': 'Organization',
+        '@id': 'https://magidousa.com/#organization',
         name: 'Magido USA',
         url: 'https://magidousa.com',
         logo: 'https://magidousa.com/images/magido-usa-logo.png',
         description:
-          'Magido USA manufactures professional aqueous parts washers built entirely from AISI 304 stainless steel.',
+          'Magido USA distributes professional aqueous parts washers built entirely from AISI 304 stainless steel, manufactured by Magido Group in Italy.',
         telephone: '+1-844-462-4436',
         email: 'Sales@MagidoUSA.com',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: '1500 S Sylvania Ave',
           addressLocality: 'Sturtevant',
           addressRegion: 'WI',
           postalCode: '53177',
           addressCountry: 'US',
         },
-        sameAs: ['https://www.linkedin.com/in/toscottmorin'],
+        sameAs: [
+          'https://www.linkedin.com/in/toscottmorin',
+          'https://magido.com',
+        ],
         contactPoint: {
           '@type': 'ContactPoint',
           telephone: '+1-844-462-4436',
           contactType: 'sales',
+          areaServed: 'US',
           availableLanguage: 'English',
+          hoursAvailable: {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+            opens: '08:00',
+            closes: '17:00',
+          },
         },
+      }}
+    />
+  );
+}
+
+// LocalBusiness schema — helps Google Knowledge Panel show address/hours
+export function LocalBusinessJsonLd() {
+  return (
+    <JsonLd
+      data={{
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        '@id': 'https://magidousa.com/#localbusiness',
+        name: 'Magido USA',
+        description:
+          'Industrial aqueous parts washers — spray cabinet, immersion, belt conveyor, rotary drum, and manual. 100% AISI 304 stainless steel, made in Italy.',
+        url: 'https://magidousa.com',
+        telephone: '+1-844-462-4436',
+        email: 'Sales@MagidoUSA.com',
+        logo: 'https://magidousa.com/images/magido-usa-logo.png',
+        image: 'https://magidousa.com/images/og-default.png',
+        priceRange: '$$',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '1500 S Sylvania Ave',
+          addressLocality: 'Sturtevant',
+          addressRegion: 'WI',
+          postalCode: '53177',
+          addressCountry: 'US',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 42.7166028,
+          longitude: -87.9552287,
+        },
+        openingHoursSpecification: {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '08:00',
+          closes: '17:00',
+        },
+        sameAs: [
+          'https://www.linkedin.com/in/toscottmorin',
+          'https://magido.com',
+        ],
       }}
     />
   );
@@ -165,7 +222,7 @@ export function HomePageJsonLd() {
           '@id': 'https://magidousa.com/#organization',
           name: 'Magido USA',
         },
-        dateModified: new Date().toISOString().split('T')[0],
+        dateModified: '2026-03-22',
       }}
     />
   );

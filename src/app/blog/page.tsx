@@ -8,6 +8,7 @@ import { ChevronRight, Droplets } from 'lucide-react';
 import { blogPosts } from '@/data/blog';
 import { BlogList } from '@/components/BlogList';
 import blogConfig from '@/data/blog-config.json';
+import { BreadcrumbJsonLd } from '@/components/JsonLd';
 
 export function generateMetadata(): Metadata {
   return {
@@ -33,6 +34,10 @@ export default function BlogPage() {
 
   return (
     <>
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+      ]} />
       <nav
         className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-3 sm:px-6 lg:px-8"
         aria-label="Breadcrumb"

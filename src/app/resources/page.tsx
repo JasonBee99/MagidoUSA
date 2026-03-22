@@ -8,6 +8,7 @@ import {
 } from '@/data/resources';
 import { ResourceAccordion } from './ResourceAccordion';
 import { ResourceVideoCard, type ResourceVideo } from '@/components/ResourceVideoCard';
+import { BreadcrumbJsonLd } from '@/components/JsonLd';
 
 // ─── Category icon map ────────────────────────────────────────────────────────
 function CategoryIcon({ name }: { name: string }) {
@@ -106,6 +107,10 @@ export default function ResourcesPage() {
 
   return (
     <>
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', url: '/' },
+        { name: 'Resources', url: '/resources' },
+      ]} />
       {/* Hero */}
       <section className="hero-bg py-16 text-white lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { ChevronRight, Droplets, FlaskConical } from 'lucide-react';
 import type { Solution, SolutionsData } from '@/types/solutions';
 import solutionsData from '@/data/solutions.json';
+import { BreadcrumbJsonLd } from '@/components/JsonLd';
 
 const { solutions } = solutionsData as SolutionsData;
 
@@ -33,6 +34,10 @@ export default function SolutionsIndexPage() {
 
   return (
     <div className="min-h-screen bg-[var(--color-bg)]">
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', url: '/' },
+        { name: 'Solutions', url: '/solutions' },
+      ]} />
 
       {/* ─── Breadcrumb ─── */}
       <nav

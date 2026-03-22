@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronRight, Phone, Droplets, FlaskConical } from 'lucide-react';
+import { BreadcrumbJsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'About Magido USA — Italian-Engineered Stainless Steel Parts Washers',
@@ -25,6 +26,10 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      <BreadcrumbJsonLd items={[
+        { name: 'Home', url: '/' },
+        { name: 'About', url: '/about' },
+      ]} />
       <nav className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-3 sm:px-6 lg:px-8" aria-label="Breadcrumb">
         <div className="mx-auto flex max-w-7xl items-center gap-2 text-sm">
           <Link href="/" className="text-[var(--color-text-muted)] hover:text-magido-orange">Home</Link>

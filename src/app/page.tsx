@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { getAllCategories, getCategoryRepresentativeImage } from '@/lib/products';
 import { Shield, Zap, Leaf, HeadphonesIcon, Clock, LayoutGrid, Layers, MapPin } from 'lucide-react';
 import { HomeHero } from '@/components/HomeHero';
-import { WebSiteJsonLd, HomePageJsonLd } from '@/components/JsonLd';
+import { WebSiteJsonLd, HomePageJsonLd, LocalBusinessJsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Magido USA — Industrial Aqueous Parts Washers | Stainless Steel, Made in Italy',
@@ -35,6 +35,7 @@ export default function HomePage() {
     <>
       <WebSiteJsonLd />
       <HomePageJsonLd />
+      <LocalBusinessJsonLd />
       {/* Hero */}
       <HomeHero />
 
