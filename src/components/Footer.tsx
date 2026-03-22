@@ -117,6 +117,11 @@ export function Footer() {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link href="/terms-of-use" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
+                  Terms of Use
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -148,10 +153,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[var(--color-border)] pt-8 sm:flex-row">
           <p className="text-xs text-[var(--color-text-muted)]">
-            © {new Date().getFullYear()} Magido USA. All rights reserved.{' '}
-            <Link href="/privacy-policy" className="transition-colors hover:text-magido-orange">
-              Privacy Policy
-            </Link>
+            © {new Date().getFullYear()} Magido USA. All rights reserved. ·{' '}
+            <Link href="/privacy-policy" className="transition-colors hover:text-magido-orange">Privacy Policy</Link>
+            {' '}·{' '}
+            <Link href="/terms-of-use" className="transition-colors hover:text-magido-orange">Terms of Use</Link>
           </p>
           <p className="text-xs text-[var(--color-text-muted)]">
             Manufactured with pride in Italy. Distributed across the United States.

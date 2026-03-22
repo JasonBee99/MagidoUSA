@@ -31,6 +31,7 @@ const TAGLINES: { match: string; tagline: string }[] = [
   { match: '/faq',                tagline: 'Aqueous Parts Washer FAQ — Stainless Steel, Water-Based Industrial Parts Cleaning Systems' },
   { match: '/about',              tagline: 'Leaders in Industrial Aqueous Parts Washing — 100% Stainless Steel, Made in Italy Since 1980' },
   { match: '/privacy-policy',    tagline: 'Magido USA Privacy Policy — magidousa.com' },
+  { match: '/terms-of-use',      tagline: 'Magido USA Terms of Use — magidousa.com' },
   { match: '/aqueous-parts-washers', tagline: 'Industrial Aqueous Parts Washers — 100% AISI 304 Stainless Steel, Made in Italy' },
   { match: '/',                   tagline: 'Industrial Aqueous Parts Washers — 100% AISI 304 Stainless Steel, Made in Italy' },
 ];
