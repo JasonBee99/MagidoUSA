@@ -36,7 +36,7 @@ export default function HomePage() {
       <HomeHero />
 
       {/* ─── Company Intro ─── */}
-      <section className="relative overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <section id="about" aria-label="About Magido USA" className="relative overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
 
         {/* Decorative background accents */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -159,7 +159,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Built for Every Application ─── */}
-      <section className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <section id="systems" aria-label="Our Aqueous Parts Washing Systems" className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
             <div className="flex items-center gap-3">
@@ -237,7 +237,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── The Magido Difference ─── */}
-      <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <section id="difference" aria-label="The Magido Difference" className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-16">
 
@@ -296,7 +296,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Industries Served ─── */}
-      <section className="border-t border-[var(--color-border)] px-4 py-10 sm:px-6 lg:px-8">
+      <section id="industries" aria-label="Industries Served" className="border-t border-[var(--color-border)] px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
             <div className="flex items-center gap-3">
@@ -339,7 +339,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── National Sales Manager ─── */}
-      <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8">
+      <section id="contact-scott" aria-label="Contact Scott Morin — National Sales Manager" className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="overflow-hidden rounded-2xl border border-[var(--color-card-border)] bg-[var(--color-card-bg)] shadow-sm">
             <div className="p-8 lg:p-12">
