@@ -117,7 +117,61 @@ export function ProductJsonLd({
   );
 }
 
-// BreadcrumbList schema
+// WebSite schema — enables Google sitelinks search box in SERPs
+export function WebSiteJsonLd() {
+  return (
+    <JsonLd
+      data={{
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Magido USA',
+        url: 'https://magidousa.com',
+        description:
+          'Industrial aqueous parts washers — 100% AISI 304 stainless steel, made in Italy. Spray cabinet, immersion, belt conveyor, rotary drum, and manual parts washers.',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: 'https://magidousa.com/products?q={search_term_string}',
+          },
+          'query-input': 'required name=search_term_string',
+        },
+      }}
+    />
+  );
+}
+
+// WebPage schema for the home page
+export function HomePageJsonLd() {
+  return (
+    <JsonLd
+      data={{
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        '@id': 'https://magidousa.com/#webpage',
+        url: 'https://magidousa.com',
+        name: 'Magido USA — Industrial Aqueous Parts Washers | Stainless Steel, Made in Italy',
+        description:
+          'Industrial aqueous parts washers by Magido USA. Spray cabinet, immersion, belt conveyor, rotary drum, and manual. 75+ models, AISI 304 stainless steel, made in Italy.',
+        inLanguage: 'en-US',
+        isPartOf: {
+          '@type': 'WebSite',
+          '@id': 'https://magidousa.com/#website',
+          url: 'https://magidousa.com',
+          name: 'Magido USA',
+        },
+        about: {
+          '@type': 'Organization',
+          '@id': 'https://magidousa.com/#organization',
+          name: 'Magido USA',
+        },
+        dateModified: new Date().toISOString().split('T')[0],
+      }}
+    />
+  );
+}
+
+
 export function BreadcrumbJsonLd({
   items,
 }: {
