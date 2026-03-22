@@ -264,7 +264,7 @@ export default function ProductPage({
                 );
                 return (
                   <p
-                    className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base"
+                    className="mt-3 text-justify text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-base"
                     dangerouslySetInnerHTML={{ __html: html }}
                   />
                 );
@@ -272,7 +272,7 @@ export default function ProductPage({
 
               {/* Key specs — wrapped in <dl> for valid semantics */}
               {keySpecs.length > 0 && (
-                <dl className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 lg:grid-cols-4">
+                <dl className="mt-6 mx-auto grid w-fit grid-cols-2 gap-x-6 gap-y-3 sm:mx-0 sm:w-auto sm:grid-cols-3 lg:grid-cols-4">
                   {keySpecs.map((ks) => (
                     <div key={ks.label}>
                       <dt className="text-xs font-medium text-[var(--color-text-secondary)]">
