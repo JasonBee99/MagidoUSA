@@ -64,9 +64,21 @@ export function SeriesComparisonTable({
 
   const thLabelClass = frozen ? 'sticky left-0 z-10 bg-[var(--color-bg-secondary)]' : '';
   const tdLabelClass = frozen ? 'sticky left-0 z-10 bg-inherit' : '';
-  const labelStyle: React.CSSProperties = compressed
-    ? { width: '2.5rem', minWidth: '2.5rem', maxWidth: '2.5rem', padding: '0.5rem 0.25rem', overflow: 'hidden', transition: 'all 0.25s ease' }
-    : { transition: 'all 0.25s ease' };
+
+  // Label column width — fixed in both states so table never reflows
+  // Compressed: column stays same width, content just swaps to abbreviation
+  const LABEL_WIDTH_FULL = '160px';
+  const LABEL_WIDTH_COMPRESSED = '2.5rem';
+  const labelColWidth = compressed ? LABEL_WIDTH_COMPRESSED : LABEL_WIDTH_FULL;
+  const labelStyle: React.CSSProperties = {
+    width: labelColWidth,
+    minWidth: labelColWidth,
+    maxWidth: labelColWidth,
+    overflow: 'hidden',
+    transition: 'width 0.25s ease, min-width 0.25s ease, max-width 0.25s ease',
+    padding: compressed ? '0.5rem 0.25rem' : undefined,
+    whiteSpace: 'nowrap',
+  };
 
   return (
     <div className="overflow-hidden rounded-xl border border-[var(--color-card-border)]">
@@ -91,7 +103,7 @@ export function SeriesComparisonTable({
       </div>
 
       <div ref={scrollRef} className="overflow-x-auto scrollbar-thin">
-        <table className="w-full min-w-[600px]">
+        <table className="w-full min-w-[600px]" style={{ tableLayout: 'fixed' }}>
           <thead>
             <tr className="bg-[var(--color-bg-secondary)]">
               <th
