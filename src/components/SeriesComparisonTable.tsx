@@ -62,12 +62,11 @@ export function SeriesComparisonTable({
 
   const compressed = frozen && isScrolled;
 
-  // When compression state changes, compensate scroll so column 2 stays visible
+  // When compression activates, compensate scroll so col 2 stays visible
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
     if (compressed && !prevCompressed.current) {
-      // Just compressed — scroll left by the amount the column shrank (160px - 40px = 120px)
       el.scrollLeft = Math.max(0, el.scrollLeft - 120);
     }
     prevCompressed.current = compressed;
@@ -79,18 +78,15 @@ export function SeriesComparisonTable({
   const thLabelClass = frozen ? 'sticky left-0 z-10 bg-[var(--color-bg-secondary)]' : '';
   const tdLabelClass = frozen ? 'sticky left-0 z-10 bg-inherit' : '';
 
-  // Label column — fixed width always, only content changes on compress
-  // This prevents ANY table reflow or column shifting
-  const LABEL_WIDTH = '160px';
-  const labelStyle: React.CSSProperties = {
-    width: LABEL_WIDTH,
-    minWidth: LABEL_WIDTH,
-    maxWidth: LABEL_WIDTH,
+  // Compressed label cell — only padding/overflow changes, width set via colgroup
+  const labelCellStyle: React.CSSProperties = {
     overflow: 'hidden',
     whiteSpace: 'nowrap',
-    transition: 'padding 0.2s ease',
     padding: compressed ? '0.5rem 0.25rem' : undefined,
   };
+
+  // colgroup widths — label col shrinks on compress, model cols share remaining space
+  const labelColWidth = compressed ? 40 : 160; // px
 
   return (
     <div className="overflow-hidden rounded-xl border border-[var(--color-card-border)]">
@@ -116,11 +112,16 @@ export function SeriesComparisonTable({
 
       <div ref={scrollRef} className="overflow-x-auto scrollbar-thin">
         <table className="w-full min-w-[600px]" style={{ tableLayout: 'fixed' }}>
+          {/* colgroup controls column widths — label shrinks on compress */}
+          <colgroup>
+            <col style={{ width: `${labelColWidth}px`, transition: 'width 0.25s ease' }} />
+            {specTable.models.map((m) => <col key={m} />)}
+          </colgroup>
           <thead>
             <tr className="bg-[var(--color-bg-secondary)]">
               <th
                 className={`${thLabelClass} px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider text-[var(--color-text-muted)]`}
-                style={labelStyle}
+                style={labelCellStyle}
               >
                 {compressed ? <span aria-hidden="true">—</span> : 'Specification'}
               </th>
@@ -164,7 +165,7 @@ export function SeriesComparisonTable({
                 >
                   <td
                     className={`${tdLabelClass} px-4 py-2.5 text-sm font-medium text-[var(--color-text-secondary)]`}
-                    style={labelStyle}
+                    style={labelCellStyle}
                   >
                     {compressed ? (
                       <span className="block text-center text-xs font-bold uppercase tracking-wide text-[var(--color-text-muted)]" title={row.name}>
