@@ -46,6 +46,9 @@ export const metadata: Metadata = {
   ],
   verification: {
     google: 'cThqZI_BN2gt3t2kc77Y6TtfTLPr7TtbkMFxWcE184U',
+    other: {
+      'msvalidate.01': '789825D2AD4DFA38B9CAA16B7C9FEC3B',
+    },
   },
   authors: [{ name: 'Magido USA' }],
   creator: 'Magido USA',
