@@ -154,6 +154,7 @@ export function Header() {
                 className="h-10 w-auto lg:h-12"
                 sizes="216px"
                 priority
+                fetchPriority="high"
               />
             </Link>
 
