@@ -533,14 +533,13 @@ export function Header() {
             </div>
           </>
         )}
-      </header>
-
-      {/* ─── SEO Tagline Bar ─── */}
+      {/* ─── SEO Tagline Bar — inside header to avoid hydration mismatch ─── */}
       <div className="border-b border-magido-blue/40 bg-magido-blue px-4 py-1.5 text-center">
         <p className="text-[11px] font-medium uppercase tracking-widest text-white/80">
           {tagline}
         </p>
       </div>
+    </header>
     </>
   );
 }
