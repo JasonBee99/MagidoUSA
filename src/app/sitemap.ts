@@ -22,6 +22,8 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE}/aqueous-parts-washers`, lastModified: new Date('2026-03-18'), changeFrequency: 'monthly', priority: 0.9 },
   // Catalog — added Phase 22
   { url: `${BASE}/resources/catalog`,     lastModified: new Date('2026-03-01'), changeFrequency: 'monthly', priority: 0.8 },
+  // Privacy Policy — added Phase 24
+  { url: `${BASE}/privacy-policy`,        lastModified: new Date('2026-03-22'), changeFrequency: 'yearly',  priority: 0.3 },
 ];
 
 // ─── Product category pages ───────────────────────────────────────────────────
