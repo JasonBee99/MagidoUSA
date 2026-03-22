@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enforce no trailing slashes — 301 redirect /path/ → /path
+  trailingSlash: false,
   // Allow network access from local devices during development
   allowedDevOrigins: ['192.168.1.113'],
   // Image optimization

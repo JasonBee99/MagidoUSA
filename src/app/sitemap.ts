@@ -6,7 +6,7 @@ const BASE = 'https://magidousa.com';
 // lastModified: use a real date — only update this when the page content changes.
 // This tells Google "this page actually changed on X" rather than "today" every build.
 const staticRoutes: MetadataRoute.Sitemap = [
-  { url: `${BASE}/`,              lastModified: new Date('2025-01-01'), changeFrequency: 'weekly',  priority: 1.0 },
+  { url: `${BASE}`,              lastModified: new Date('2025-01-01'), changeFrequency: 'weekly',  priority: 1.0 },
   { url: `${BASE}/products`,      lastModified: new Date('2025-01-01'), changeFrequency: 'weekly',  priority: 0.9 },
   { url: `${BASE}/solutions`,     lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.9 },
   { url: `${BASE}/resources`,     lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.8 },
