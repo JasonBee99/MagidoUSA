@@ -56,7 +56,7 @@ export function ProductSpecTabs({ product, series }: ProductSpecTabsProps) {
             </button>
           ))}
         </div>
-        <div className="ml-auto flex-shrink-0 px-4">
+        <div className="ml-auto hidden flex-shrink-0 px-4 sm:block">
           <span className="rounded-md bg-[#eb6c1c] px-3 py-1.5 text-xs font-bold text-white">
             {series?.name || ''} {product.model}
           </span>
