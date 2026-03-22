@@ -227,7 +227,7 @@ export default function HomePage() {
                       <span className="text-xs font-medium text-[var(--color-text-muted)]">
                         {cat.totalProducts} models • {cat.series.length} series
                       </span>
-                      <span className="text-xs font-semibold text-magido-orange opacity-0 transition-opacity group-hover:opacity-100">
+                      <span className="text-xs font-semibold text-magido-orange transition-opacity sm:opacity-0 sm:group-hover:opacity-100">
                         View Series →
                       </span>
                     </div>
