@@ -2,11 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronRight, Droplets, Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { privacyPolicy } from '@/data/privacy-policy';
-import dynamic from 'next/dynamic';
-const PrivacyPolicySectionNav = dynamic(
-  () => import('@/components/PrivacyPolicySectionNav').then(m => m.PrivacyPolicySectionNav),
-  { ssr: false }
-);
+import { PrivacyPolicySectionNav } from '@/components/PrivacyPolicySectionNav';
 
 export const metadata: Metadata = {
   title: privacyPolicy.meta.title,
