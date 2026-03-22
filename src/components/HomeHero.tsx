@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FlaskConical } from 'lucide-react';
+import { FlaskConical, Phone } from 'lucide-react';
 
 
 // ─── Component ───────────────────────────────────────────────────────────────
@@ -11,6 +11,17 @@ export function HomeHero() {
       {/* ─── Hero section ─── */}
       <section className="hero-bg relative px-4 pt-6 pb-12 sm:px-6 lg:px-8 lg:pt-10 lg:pb-24">
         <div className="mx-auto max-w-7xl">
+
+          {/* Tap-to-call — mobile only, above fold */}
+          <div className="mb-4 flex justify-center lg:hidden">
+            <a
+              href="tel:8444624436"
+              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-white/20"
+            >
+              <Phone className="h-3.5 w-3.5 text-magido-orange" />
+              844-462-4436 · M–F 8am–5pm CST
+            </a>
+          </div>
 
           {/* Main hero: FLS spotlight */}
           <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-12">
