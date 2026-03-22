@@ -24,4 +24,15 @@ export function BackToTop() {
       aria-label="Back to top"
       aria-hidden={!visible}
       tabIndex={visible ? 0 : -1}
-      className={`fixed bottom-6 right-6 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-magido-blue text-white shadow-lg ring-1 ring-magido-blue/30
+      className={`fixed bottom-6 right-6 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-magido-blue text-white shadow-lg ring-1 ring-magido-blue/30 transition-all duration-300 hover:bg-magido-orange hover:ring-magido-orange/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-magido-orange ${
+        visible
+          ? 'pointer-events-auto translate-y-0 opacity-100'
+          : 'pointer-events-none translate-y-4 opacity-0'
+      }`}
+    >
+      <ChevronUp className="h-5 w-5" />
+    </button>
+  );
+}
+
+export default BackToTop;
