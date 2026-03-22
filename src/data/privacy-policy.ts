@@ -71,8 +71,16 @@ export const privacyPolicyData = {
     {
       heading: 'Contact Us',
       paragraphs: [
-        'Magido USA · 1500 S Sylvania Ave, Sturtevant, WI 53177 · Sales@MagidoUSA.com · 844-462-4436 · M–F 8:00 am – 5:00 pm CST',
+        'If you have questions or concerns about this Privacy Policy or our data practices, please contact us:',
       ],
+      contact: {
+        company: 'Magido USA',
+        addressText: '1500 S Sylvania Ave, Sturtevant, WI 53177',
+        addressUrl: 'https://www.google.com/maps/place/1500+S+Sylvania+Ave,+Sturtevant,+WI+53177/@42.924813,-88.6008321,368780m/data=!3m1!1e3!4m6!3m5!1s0x88056f17a8348f5f:0xa12292fcce87ef08!8m2!3d42.7166028!4d-87.9552287!16s%2Fg%2F11b8v54lgx?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D',
+        email: 'Sales@MagidoUSA.com',
+        phone: '844-462-4436',
+        hours: 'M–F 8:00 am – 5:00 pm CST',
+      },
     },
   ],
 };

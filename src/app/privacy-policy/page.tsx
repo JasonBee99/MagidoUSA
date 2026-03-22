@@ -50,6 +50,32 @@ export default function PrivacyPolicyPage() {
               {section.paragraphs.map((p, i) => (
                 <p key={i} className="mt-3 text-justify">{p}</p>
               ))}
+              {'contact' in section && section.contact && (
+                <div className="mt-4 space-y-1.5 text-sm">
+                  <p className="font-semibold text-[var(--color-text)]">{section.contact.company}</p>
+                  <p>
+                    <a
+                      href={section.contact.addressUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-magido-orange hover:text-magido-blue"
+                    >
+                      {section.contact.addressText}
+                    </a>
+                  </p>
+                  <p>
+                    <a href={`mailto:${section.contact.email}`} className="text-magido-orange hover:text-magido-blue">
+                      {section.contact.email}
+                    </a>
+                  </p>
+                  <p>
+                    <a href="tel:8444624436" className="text-magido-orange hover:text-magido-blue">
+                      {section.contact.phone}
+                    </a>
+                  </p>
+                  <p>{section.contact.hours}</p>
+                </div>
+              )}
             </section>
           ))}
         </div>
