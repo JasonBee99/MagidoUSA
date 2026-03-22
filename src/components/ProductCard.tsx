@@ -275,7 +275,7 @@ export function ProductCard({
 
           {seriesDescription && (
             <p
-              className="mt-1 line-clamp-3 text-justify text-xs text-[var(--color-text-secondary)]"
+              className="mt-1 line-clamp-3 text-xs text-[var(--color-text-secondary)]"
               dangerouslySetInnerHTML={{ __html: linkAisi(seriesDescription) }}
             />
           )}

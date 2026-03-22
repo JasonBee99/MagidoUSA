@@ -101,7 +101,7 @@ export function CategoryContent({
             <h2 className="mb-3 font-display text-xl font-bold text-[var(--color-text)] lg:text-2xl">
               {CATEGORY_SEO_INTRO[category.slug].headline}
             </h2>
-            <p className="max-w-4xl text-justify text-sm leading-relaxed text-[var(--color-text-secondary)] lg:text-base">
+            <p className="max-w-4xl text-sm leading-relaxed text-[var(--color-text-secondary)] lg:text-base">
               {CATEGORY_SEO_INTRO[category.slug].body}
             </p>
           </div>

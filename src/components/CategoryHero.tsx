@@ -41,7 +41,7 @@ export function CategoryHero({
               {heroTitle}
             </h1>
             <p
-              className="mt-4 text-base leading-relaxed text-gray-300 sm:text-lg"
+              className="mt-4 text-justify text-base leading-relaxed text-gray-300 sm:text-lg"
               dangerouslySetInnerHTML={{ __html: linkAisi(heroDescription) }}
             />
           </div>
