@@ -112,16 +112,6 @@ export function Footer() {
                   Solutions
                 </Link>
               </li>
-              <li>
-                <Link href="/privacy-policy" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms-of-use" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
-                  Terms of Use
-                </Link>
-              </li>
             </ul>
           </div>
 
