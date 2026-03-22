@@ -45,6 +45,8 @@ export function SeriesComparisonTable({
   const [isScrolled, setIsScrolled] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  const prevCompressed = useRef(false);
+
   const handleScroll = useCallback(() => {
     if (scrollRef.current) {
       setIsScrolled(scrollRef.current.scrollLeft > 8);
@@ -59,25 +61,35 @@ export function SeriesComparisonTable({
   }, [handleScroll]);
 
   const compressed = frozen && isScrolled;
+
+  // When compression state changes, compensate scroll so column 2 stays visible
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    if (compressed && !prevCompressed.current) {
+      // Just compressed — scroll left by the amount the column shrank (160px - 40px = 120px)
+      el.scrollLeft = Math.max(0, el.scrollLeft - 120);
+    }
+    prevCompressed.current = compressed;
+  }, [compressed]);
+
   const visibleRows = showAll ? specTable.rows : specTable.rows.slice(0, 8);
   const hasMore = specTable.rows.length > 8;
 
   const thLabelClass = frozen ? 'sticky left-0 z-10 bg-[var(--color-bg-secondary)]' : '';
   const tdLabelClass = frozen ? 'sticky left-0 z-10 bg-inherit' : '';
 
-  // Label column width — fixed in both states so table never reflows
-  // Compressed: column stays same width, content just swaps to abbreviation
-  const LABEL_WIDTH_FULL = '160px';
-  const LABEL_WIDTH_COMPRESSED = '2.5rem';
-  const labelColWidth = compressed ? LABEL_WIDTH_COMPRESSED : LABEL_WIDTH_FULL;
+  // Label column — fixed width always, only content changes on compress
+  // This prevents ANY table reflow or column shifting
+  const LABEL_WIDTH = '160px';
   const labelStyle: React.CSSProperties = {
-    width: labelColWidth,
-    minWidth: labelColWidth,
-    maxWidth: labelColWidth,
+    width: LABEL_WIDTH,
+    minWidth: LABEL_WIDTH,
+    maxWidth: LABEL_WIDTH,
     overflow: 'hidden',
-    transition: 'width 0.25s ease, min-width 0.25s ease, max-width 0.25s ease',
-    padding: compressed ? '0.5rem 0.25rem' : undefined,
     whiteSpace: 'nowrap',
+    transition: 'padding 0.2s ease',
+    padding: compressed ? '0.5rem 0.25rem' : undefined,
   };
 
   return (
