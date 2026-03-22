@@ -129,7 +129,7 @@ export default function RootLayout({
             >
               Skip to main content
             </a>
-            <div className="flex min-h-screen flex-col">
+            <div className="flex min-h-screen w-full flex-col overflow-x-hidden">
               <Header />
               <main id="main-content" className="flex-1">{children}</main>
               <Footer />
