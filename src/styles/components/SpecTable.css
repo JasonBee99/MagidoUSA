@@ -61,6 +61,54 @@
   gap: 0.5rem 1rem;
 }
 
+/* Header top row — titles left, toggle button right */
+.spec-table__header-top {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.spec-table__header-titles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+}
+
+/* ── Freeze toggle button ───────────────────────────────────────────────────── */
+.spec-table__freeze-btn {
+  flex-shrink: 0;
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.75);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.spec-table__freeze-btn:hover {
+  background: rgba(255,255,255,0.16);
+  color: #ffffff;
+}
+
+.spec-table__freeze-btn--active {
+  background: rgba(235,108,28,0.25);
+  border-color: rgba(235,108,28,0.5);
+  color: #f5923f;
+}
+
+.spec-table__freeze-btn--active:hover {
+  background: rgba(235,108,28,0.35);
+  color: #ffffff;
+}
+
 .spec-table__series-type {
   font-size: 0.7rem;
   font-weight: 600;
@@ -413,3 +461,52 @@
     min-width: 130px;
   }
 }
+
+/* ── Label full / short toggle ──────────────────────────────────────────────── */
+/* By default show full label, hide short */
+.spec-table__label-short {
+  display: none;
+}
+.spec-table__label-full {
+  display: inline;
+}
+
+/* ── Free scroll mode — remove sticky from label column ─────────────────────── */
+.spec-table--free .spec-table__th--label,
+.spec-table--free .spec-table__td--label {
+  position: static;
+  box-shadow: none;
+}
+
+/* ── Compressed mode — label column shrinks, shows unit abbreviation only ────── */
+.spec-table--compressed .spec-table__th--label,
+.spec-table--compressed .spec-table__td--label {
+  min-width: 2.5rem !important;
+  width: 2.5rem;
+  max-width: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: min-width 0.25s ease, width 0.25s ease, padding 0.25s ease;
+}
+
+.spec-table--compressed .spec-table__label-full {
+  display: none;
+}
+
+.spec-table--compressed .spec-table__label-short {
+  display: inline;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--st-label-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Smooth transition when NOT compressed */
+.spec-table__th--label,
+.spec-table__td--label {
+  transition: min-width 0.25s ease, width 0.25s ease, padding 0.25s ease;
+}
+
