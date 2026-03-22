@@ -199,7 +199,7 @@ export default function HomePage() {
                     {image ? (
                       <Image
                         src={image}
-                        alt={cat.name}
+                        alt={`Magido ${cat.name} — ${cat.shortDescription}`}
                         fill
                         className="object-contain transition-transform duration-500 group-hover:scale-105"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

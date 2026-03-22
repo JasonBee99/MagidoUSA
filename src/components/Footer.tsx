@@ -12,14 +12,14 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand + Contact */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-block">
+            <Link href="/" className="flex justify-center sm:justify-start">
               <Image
                 src="/images/magido-usa-logo.webp"
                 alt="Magido USA"
-                width={192}
-                height={43}
-                className="h-10 w-auto"
-                sizes="192px"
+                width={230}
+                height={52}
+                className="h-12 w-auto"
+                sizes="230px"
               />
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)]">
