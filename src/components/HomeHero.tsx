@@ -32,7 +32,7 @@ export function HomeHero() {
               {/* Heading — full width, badge inline after title */}
               <h1 className="flex w-full flex-wrap items-baseline justify-center gap-x-3 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl lg:justify-start lg:text-6xl">
                 FLS Series
-                <span className="inline-flex items-center rounded-full bg-magido-orange/20 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-magido-orange sm:py-1">
+                <span className="inline-flex items-center rounded-full bg-magido-orange/20 px-2.5 py-0.5 text-[11px] font-bold leading-none uppercase tracking-wider text-magido-orange sm:py-1">
                   New Product
                 </span>
               </h1>
