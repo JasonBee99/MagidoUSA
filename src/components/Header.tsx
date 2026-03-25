@@ -527,9 +527,9 @@ export function Header() {
                     <Image
                       src="/images/italian-flag.svg"
                       alt="Italy"
-                      width={14}
-                      height={10}
-                      className="h-[10px] w-[14px] flex-shrink-0"
+                      width={21}
+                      height={15}
+                      className="h-[15px] w-[21px] flex-shrink-0"
                     />
                     Magido Italy
                     <ExternalLink className="h-3 w-3" />
