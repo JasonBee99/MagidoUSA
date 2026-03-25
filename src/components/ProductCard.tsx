@@ -194,8 +194,8 @@ export function ProductCard({
             {/* ── Spec panel overlay (same dimensions as image area) ── */}
             {showSpecs && (
               <div className="absolute inset-0 flex flex-col bg-[var(--color-card-bg)] px-4 pb-3 pt-3">
-                {/* "Key Specs" label — top-right to avoid overlap with series badge (top-left) */}
-                <p className="mb-2 self-end text-[10px] font-bold uppercase tracking-widest text-magido-blue">
+                {/* "Key Specs" label — centered */}
+                <p className="mb-2 text-center text-[10px] font-bold uppercase tracking-widest text-magido-blue">
                   Key Specs
                 </p>
                 {keySpecs.length > 0 ? (
