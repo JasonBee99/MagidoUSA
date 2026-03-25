@@ -505,12 +505,6 @@ export function Header() {
                     <Phone className="h-4 w-4" />
                     844-462-4436
                   </a>
-                  <Link
-                    href="/contact"
-                    className="btn-quote w-full"
-                  >
-                    Quote
-                  </Link>
                   {/* Theme toggle — mobile */}
                   <button
                     onClick={toggleTheme}
