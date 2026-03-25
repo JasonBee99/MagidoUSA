@@ -39,6 +39,7 @@ const TAGLINES: { match: string; tagline: string }[] = [
 export function Header() {
   const { theme, toggleTheme } = useTheme();
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
@@ -46,6 +47,8 @@ export function Header() {
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
   const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const solutionsTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => { setMounted(true); }, []);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -530,10 +533,10 @@ export function Header() {
             </div>
           </>
         )}
-      {/* ─── SEO Tagline Bar — inside header to avoid hydration mismatch ─── */}
+      {/* ─── SEO Tagline Bar ─── */}
       <div className="overflow-hidden border-b border-magido-blue/40 bg-magido-blue px-4 py-1.5 text-center">
         <p className="truncate text-[11px] font-medium uppercase tracking-widest text-white/80">
-          {tagline}
+          {mounted ? tagline : ''}
         </p>
       </div>
     </header>
