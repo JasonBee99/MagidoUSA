@@ -144,16 +144,16 @@ export function Header() {
 
       {/* ─── Main Header ─── */}
       <header className="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/95 backdrop-blur-md">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="flex h-16 w-full items-center justify-between lg:h-[4.5rem]">
-            {/* Logo */}
+            {/* Logo — w-auto preserves aspect ratio, never stretches */}
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="/images/magido-usa-logo.webp"
                 alt="Magido USA"
                 width={216}
                 height={48}
-                className="h-10 w-auto max-w-[160px] lg:max-w-none lg:h-12"
+                className="h-10 w-auto lg:h-12"
                 sizes="216px"
                 priority
                 fetchPriority="high"
@@ -509,7 +509,7 @@ export function Header() {
                     href="/contact"
                     className="btn-quote w-full"
                   >
-                    Request a Quote
+                    Quote
                   </Link>
                 </div>
 
