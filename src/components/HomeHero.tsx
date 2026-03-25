@@ -13,7 +13,7 @@ export function HomeHero() {
         <div className="mx-auto max-w-7xl">
 
           {/* Tap-to-call — mobile only, above fold */}
-          <div className="mb-4 flex justify-center lg:hidden">
+          <div className="relative z-10 mb-4 flex justify-center lg:hidden">
             <a
               href="tel:8444624436"
               className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-white/20"
@@ -32,7 +32,7 @@ export function HomeHero() {
               {/* Heading — full width, badge inline after title */}
               <h1 className="flex w-full flex-wrap items-baseline justify-center gap-x-3 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl lg:justify-start lg:text-6xl">
                 FLS Series
-                <span className="inline-flex items-center rounded-full bg-magido-orange/20 px-2 py-0.5 font-bold uppercase tracking-wider text-magido-orange" style={{ fontSize: '0.35em' }}>
+                <span className="inline-flex items-center rounded-full bg-magido-orange/20 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-magido-orange">
                   New Product
                 </span>
               </h1>

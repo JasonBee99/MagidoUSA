@@ -129,12 +129,11 @@ export default function RootLayout({
           <CompareProvider>
             <a
               href="#main-content"
-              className="pointer-events-none fixed left-0 top-0 -translate-y-full bg-magido-orange px-4 py-2 text-sm font-semibold text-white shadow-lg transition-transform focus:pointer-events-auto focus:translate-y-0 focus:outline-none"
-              style={{ zIndex: 9999 }}
+              className="pointer-events-none fixed left-0 top-0 z-[9999] -translate-y-full bg-magido-orange px-4 py-2 text-sm font-semibold text-white shadow-lg transition-transform focus:pointer-events-auto focus:translate-y-0 focus:outline-none"
             >
               Skip to main content
             </a>
-            <div className="flex min-h-screen w-full flex-col overflow-x-hidden">
+            <div className="flex min-h-screen w-full flex-col">
               <Header />
               <main id="main-content" className="flex-1">{children}</main>
               <Footer />
