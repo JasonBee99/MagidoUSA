@@ -65,7 +65,8 @@ export function HomeHero() {
                   href="/contact?model=FLS-35"
                   className="btn-ghost-dark btn-sm"
                 >
-                  Request a Quote
+                  <span className="sm:hidden">Quote?</span>
+                  <span className="hidden sm:inline">Request a Quote</span>
                 </Link>
               </div>
 

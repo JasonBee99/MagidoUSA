@@ -153,7 +153,7 @@ export function Header() {
                 alt="Magido USA"
                 width={216}
                 height={48}
-                className="h-10 w-auto lg:h-12"
+                className="h-8 w-auto sm:h-10 lg:h-12"
                 sizes="216px"
                 priority
                 fetchPriority="high"
