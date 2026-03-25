@@ -194,12 +194,12 @@ export function ProductCard({
             {/* ── Spec panel overlay (same dimensions as image area) ── */}
             {showSpecs && (
               <div className="absolute inset-0 flex flex-col bg-[var(--color-card-bg)] px-4 pb-3 pt-3">
-                {/* "Key Specs" label — centered */}
-                <p className="mb-2 w-full text-center text-[10px] font-bold uppercase tracking-widest text-magido-blue">
+                {/* "Key Specs" label — absolutely centered, above badges */}
+                <p className="absolute left-0 right-0 top-3 z-20 text-center text-[10px] font-bold uppercase tracking-widest text-magido-blue">
                   Key Specs
                 </p>
                 {keySpecs.length > 0 ? (
-                  <dl className="flex flex-1 flex-col justify-around overflow-visible">
+                  <dl className="mt-5 flex flex-1 flex-col justify-around overflow-visible">
                     {keySpecs.map((spec) => (
                       <div key={spec.label} className="flex items-baseline justify-between gap-2 border-b border-[var(--color-border-light)] pb-1 last:border-0">
                         <dt className="min-w-0 text-[0.68em] leading-tight text-[var(--color-text-muted)]" style={{ wordBreak: 'break-word' }}>
