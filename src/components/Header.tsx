@@ -143,9 +143,9 @@ export function Header() {
       </div>
 
       {/* ─── Main Header ─── */}
-      <header className="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/95 backdrop-blur-md">
+      <header className="sticky top-0 z-50 overflow-x-hidden border-b border-[var(--color-border)] bg-[var(--color-bg)]/95 backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between lg:h-[4.5rem]">
+          <div className="flex h-16 w-full items-center justify-between lg:h-[4.5rem]">
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <Image
@@ -153,7 +153,7 @@ export function Header() {
                 alt="Magido USA"
                 width={216}
                 height={48}
-                className="h-10 w-auto lg:h-12"
+                className="h-10 w-auto max-w-[160px] lg:max-w-none lg:h-12"
                 sizes="216px"
                 priority
                 fetchPriority="high"
@@ -537,8 +537,8 @@ export function Header() {
           </>
         )}
       {/* ─── SEO Tagline Bar — inside header to avoid hydration mismatch ─── */}
-      <div className="border-b border-magido-blue/40 bg-magido-blue px-4 py-1.5 text-center">
-        <p className="text-[11px] font-medium uppercase tracking-widest text-white/80">
+      <div className="overflow-hidden border-b border-magido-blue/40 bg-magido-blue px-4 py-1.5 text-center">
+        <p className="truncate text-[11px] font-medium uppercase tracking-widest text-white/80">
           {tagline}
         </p>
       </div>
