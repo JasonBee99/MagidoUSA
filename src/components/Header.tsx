@@ -143,7 +143,7 @@ export function Header() {
       </div>
 
       {/* ─── Main Header ─── */}
-      <header className="sticky top-0 z-50 overflow-x-hidden border-b border-[var(--color-border)] bg-[var(--color-bg)]/95 backdrop-blur-md">
+      <header className="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/95 backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 w-full items-center justify-between lg:h-[4.5rem]">
             {/* Logo */}
