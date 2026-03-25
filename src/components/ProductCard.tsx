@@ -195,7 +195,7 @@ export function ProductCard({
             {showSpecs && (
               <div className="absolute inset-0 flex flex-col bg-[var(--color-card-bg)] px-4 pb-3 pt-3">
                 {/* "Key Specs" label — centered */}
-                <p className="mb-2 text-center text-[10px] font-bold uppercase tracking-widest text-magido-blue">
+                <p className="mb-2 w-full text-center text-[10px] font-bold uppercase tracking-widest text-magido-blue">
                   Key Specs
                 </p>
                 {keySpecs.length > 0 ? (
