@@ -355,14 +355,6 @@ export function Header() {
                 )}
               </button>
 
-              {/* Request a Quote CTA (desktop) */}
-              <Link
-                href="/contact"
-                className="btn-quote btn-quote-sm hidden lg:inline-flex"
-              >
-                Request a Quote
-              </Link>
-
               {/* Mobile menu toggle */}
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
