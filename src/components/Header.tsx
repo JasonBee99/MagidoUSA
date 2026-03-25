@@ -138,7 +138,6 @@ export function Header() {
               width={14}
               height={10}
               className="flex-shrink-0"
-              style={{ width: 'auto' }}
             />
             Magido Italy
             <ExternalLink className="h-3 w-3" />
@@ -531,7 +530,6 @@ export function Header() {
                       width={14}
                       height={10}
                       className="flex-shrink-0"
-                      style={{ width: 'auto' }}
                     />
                     Magido Italy
                     <ExternalLink className="h-3 w-3" />
