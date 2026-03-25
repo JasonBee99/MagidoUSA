@@ -853,3 +853,10 @@
     transition: none;
   }
 }
+
+/* ── Key Specs label center ── */
+.key-specs-label {
+  text-align: center !important;
+  width: 100%;
+  display: block;
+}
