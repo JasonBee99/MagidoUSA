@@ -61,17 +61,10 @@ export function HomeHero() {
                   Explore FLS Series
                   <span className="btn-arrow">→</span>
                 </Link>
-                <Link
-                  href="/contact?model=FLS-35"
-                  className="btn-ghost-dark btn-sm"
-                >
-                  <span className="sm:hidden">Quote?</span>
-                  <span className="hidden sm:inline">Request a Quote</span>
-                </Link>
               </div>
 
-              {/* Secondary links — always one row, centered, wrap gracefully */}
-              <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 border-t border-white/10 pt-5 lg:justify-start">
+              {/* Secondary links — desktop only, hidden on mobile to avoid clutter */}
+              <div className="mt-6 hidden flex-wrap items-center justify-center gap-x-5 gap-y-2 border-t border-white/10 pt-5 sm:flex lg:justify-start">
                 <Link
                   href="/products"
                   className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
