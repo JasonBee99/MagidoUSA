@@ -331,7 +331,7 @@ export function Header() {
             </nav>
 
             {/* Right side actions */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1 lg:gap-2">
               {/* Phone (desktop) */}
               <a
                 href="tel:8444624436"
@@ -342,10 +342,10 @@ export function Header() {
                 <span className="hidden xl:inline">844-462-4436</span>
               </a>
 
-              {/* Theme toggle */}
+              {/* Theme toggle — desktop only */}
               <button
                 onClick={toggleTheme}
-                className="rounded-lg p-2 text-[var(--color-text-secondary)] transition-colors hover:bg-[var(--color-bg-secondary)] hover:text-[var(--color-text)]"
+                className="hidden rounded-lg p-2 text-[var(--color-text-secondary)] transition-colors hover:bg-[var(--color-bg-secondary)] hover:text-[var(--color-text)] lg:block"
                 aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
               >
                 {theme === 'light' ? (
@@ -511,6 +511,14 @@ export function Header() {
                   >
                     Quote
                   </Link>
+                  {/* Theme toggle — mobile */}
+                  <button
+                    onClick={toggleTheme}
+                    className="flex items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] px-4 py-2.5 text-sm font-medium text-[var(--color-text-secondary)]"
+                  >
+                    {theme === 'light' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+                    {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+                  </button>
                 </div>
 
                 {/* Mobile Magido Italy link */}
