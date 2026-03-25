@@ -148,7 +148,7 @@ export function Header() {
       {/* ─── Main Header ─── */}
       <header className="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/95 backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div className="flex h-16 w-full items-center justify-between lg:h-[4.5rem]">
+          <div className="flex h-14 w-full items-center justify-between lg:h-[4.5rem]">
             {/* Logo — w-auto preserves aspect ratio, never stretches */}
             <Link href="/" className="flex-shrink-0">
               <Image
@@ -156,7 +156,7 @@ export function Header() {
                 alt="Magido USA"
                 width={216}
                 height={48}
-                className="h-8 w-auto sm:h-10 lg:h-12"
+                className="h-12 w-auto lg:h-12"
                 sizes="216px"
                 priority
                 fetchPriority="high"
@@ -376,12 +376,12 @@ export function Header() {
           <>
             {/* Backdrop */}
             <div
-              className="fixed inset-0 top-16 z-40 bg-black/40 backdrop-blur-sm lg:hidden"
+              className="fixed inset-0 top-14 z-40 bg-black/40 backdrop-blur-sm lg:hidden"
               onClick={() => setMobileOpen(false)}
             />
 
             {/* Panel */}
-            <div className="fixed inset-x-0 top-16 z-50 max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-[var(--color-border)] bg-[var(--color-bg)] pb-6 shadow-xl lg:hidden">
+            <div className="fixed inset-x-0 top-14 z-50 max-h-[calc(100vh-3.5rem)] overflow-y-auto border-t border-[var(--color-border)] bg-[var(--color-bg)] pb-6 shadow-xl lg:hidden">
               <div className="mx-auto max-w-7xl px-4 pt-3 sm:px-6">
                 {/* Mobile info bar */}
                 <div className="mb-3 flex flex-col gap-1.5 rounded-lg bg-[var(--color-bg-secondary)] p-3">
@@ -500,6 +500,12 @@ export function Header() {
                     <Phone className="h-4 w-4" />
                     844-462-4436
                   </a>
+                  <Link
+                    href="/contact"
+                    className="btn-quote w-full text-center"
+                  >
+                    Request a Quote
+                  </Link>
                   {/* Theme toggle — mobile */}
                   <button
                     onClick={toggleTheme}

@@ -16,7 +16,7 @@ export function HomeHero() {
           <div className="relative z-10 mb-4 flex justify-center lg:hidden">
             <a
               href="tel:8444624436"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-white/20"
+              className="inline-flex items-center gap-2 rounded-full border border-magido-orange/50 bg-magido-blue/80 px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-magido-blue"
             >
               <Phone className="h-3.5 w-3.5 text-magido-orange" />
               844-462-4436 · M–F 8am–5pm CST
