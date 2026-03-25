@@ -529,7 +529,7 @@ export function Header() {
                       alt="Italy"
                       width={14}
                       height={10}
-                      className="flex-shrink-0"
+                      className="h-[10px] w-[14px] flex-shrink-0"
                     />
                     Magido Italy
                     <ExternalLink className="h-3 w-3" />
