@@ -369,14 +369,14 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              Magido DG Series manual sink-style aqueous parts washers are engineered to handle the
+              Magido <a href="/products/manual-washers/dg" className="font-medium text-magido-orange hover:text-magido-blue">DG Series</a> manual sink-style aqueous parts washers are engineered to handle the
               most rigorous challenges found in industrial and automotive maintenance parts cleaning
               applications. Built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>, the DG8 and DG9 feature a
               foot-pedal-regulated, hand-held flow-through cleaning brush that delivers heated aqueous
               solution directly to the part surface.
             </p>
             <p>
-              The DG Series is the ideal entry-level professional solution for shops that need a
+              The <a href="/products/manual-washers/dg" className="font-medium text-magido-orange hover:text-magido-blue">DG Series</a> is the ideal entry-level professional solution for shops that need a
               reliable, heated, pump-driven washer with a small footprint. The external magnetic drive
               pump eliminates shaft seals for maintenance-free operation, while the built-in liquid
               level shut-off protects the heater from running dry. Both models operate on standard
@@ -384,7 +384,7 @@ export default function CatalogPage() {
             </p>
             <p>
               Designed to use environmentally friendly aqueous (water-based) cleaning solutions,
-              the DG Series eliminates the hazardous waste costs associated with solvent-based
+              the <a href="/products/manual-washers/dg" className="font-medium text-magido-orange hover:text-magido-blue">DG Series</a> eliminates the hazardous waste costs associated with solvent-based
               sink washers while delivering superior cleaning performance at controlled temperatures
               up to 113°F.
             </p>
@@ -453,7 +453,7 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              The Magido L Series manual vat-style aqueous parts washers are designed for
+              The Magido <a href="/products/manual-washers/l" className="font-medium text-magido-orange hover:text-magido-blue">L Series</a> manual vat-style aqueous parts washers are designed for
               industrial and automotive shops that need to clean medium to large components
               that don&apos;t fit in a standard sink-style washer. The open vat design accommodates
               bulky assemblies, engine components, transmission cases, and other large parts
@@ -541,7 +541,7 @@ export default function CatalogPage() {
             <p>
               The Magido HP25 and HP30 are heated water blasting cabinets built entirely from
               <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>. Developed for technicians who need to dramatically reduce
-              cleaning time, the HP Series uses a high-pressure piston-drive pump to deliver a
+              cleaning time, the <a href="/products/manual-washers/hp" className="font-medium text-magido-orange hover:text-magido-blue">HP Series</a> uses a high-pressure piston-drive pump to deliver a
               heated aqueous cleaning solution at up to 870 PSI through an easy-to-handle spray
               wand — blasting away grease, carbon deposits, and industrial soils that would
               require extended soaking or scrubbing in a conventional washer.
@@ -554,7 +554,7 @@ export default function CatalogPage() {
               tray and screened basket filter make cleanup quick and straightforward.
             </p>
             <p>
-              The HP Series is ideally suited for automotive shops, heavy equipment maintenance,
+              The <a href="/products/manual-washers/hp" className="font-medium text-magido-orange hover:text-magido-blue">HP Series</a> is ideally suited for automotive shops, heavy equipment maintenance,
               machine shops, and any application where thorough, rapid cleaning of heavily
               contaminated parts is a priority. Both models support single and three-phase power
               and can be operated with foot pedal control for hands-free solution delivery.
@@ -642,7 +642,7 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              The X81 Series parts washers are automatic spray jet wash systems constructed using
+              The <a href="/products/top-load-washers/x81" className="font-medium text-magido-orange hover:text-magido-blue">X81 Series</a> parts washers are automatic spray jet wash systems constructed using
               <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>, available in three models (L-35, L-55, L-90) with turntable
               diameters ranging from 15" to 31". Each system features a motorized rotating turntable
               and swing-away spray manifold fitted with optimized V-Jet nozzles that use water pressure
@@ -746,7 +746,7 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              The X51 Series is Magido&apos;s workhorse top-load spray cabinet washer for medium to
+              The <a href="/products/top-load-washers/x51" className="font-medium text-magido-orange hover:text-magido-blue">X51 Series</a> is Magido&apos;s workhorse top-load spray cabinet washer for medium to
               large parts. Available in four models (L101, L102, L122, L152) with turntable diameters
               from 35" to 51", the X51 features a unique clamshell lid design that brings the jet-spray
               cleaning power closer to the parts for maximum wash performance. Up to two independent
@@ -856,7 +856,7 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              The X51 HP Series combines the proven rotary turntable spray-cabinet design of the X51
+              The <a href="/products/top-load-washers/x51hp" className="font-medium text-magido-orange hover:text-magido-blue">X51 HP Series</a> combines the proven rotary turntable spray-cabinet design of the X51
               with an integrated high-pressure spray wand capable of delivering 870 PSI — giving
               operators both automated batch-cleaning and on-demand blast cleaning in a single
               machine. Available in three models (L101HP, L102HP, L122HP) with turntables from 35" to
@@ -950,7 +950,7 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              The X51/2 Series adds a dedicated heated rinse stage to the X51 platform, providing a
+              The <a href="/products/top-load-washers/x51-2" className="font-medium text-magido-orange hover:text-magido-blue">X51/2 Series</a> adds a dedicated heated rinse stage to the X51 platform, providing a
               two-stage wash-then-rinse process controlled by Siemens PLC with Weintek HMI. Available
               in three models (L103, L123, L153) with turntable diameters from 35" to 50", the
               dual-tank design prevents cross-contamination between wash and rinse solutions —
@@ -1061,7 +1061,7 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              The FLS Series represents Magido&apos;s heavy-duty top-load platform, designed for
+              The <a href="/products/front-load-washers/fls" className="font-medium text-magido-orange hover:text-magido-blue">FLS Series</a> represents Magido&apos;s heavy-duty top-load platform, designed for
               high-capacity cleaning of large, heavy parts up to 1,500 lbs. Available in three
               models (FLS-30, FLS-35, FLS-45) with turntable diameters from 30" to 45", the FLS
               Series delivers high flow rates (up to 75 GPM) and spray pressures up to 60 PSI
@@ -1154,7 +1154,7 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              The Magido X53 Series parts washers are engineered for automatic spray parts washing
+              The Magido <a href="/products/front-load-washers/x53" className="font-medium text-magido-orange hover:text-magido-blue">X53 Series</a> parts washers are engineered for automatic spray parts washing
               applications utilizing aqueous detergents at temperatures up to 160°F. The front-loading
               design provides easy access for loading and unloading of heavy or awkward parts without
               requiring the operator to lift over the machine — a significant ergonomic advantage
@@ -1254,7 +1254,7 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              The X53/2 Series adds a full-capacity dedicated rinse stage to the X53 platform.
+              The <a href="/products/front-load-washers/x53-2" className="font-medium text-magido-orange hover:text-magido-blue">X53/2 Series</a> adds a full-capacity dedicated rinse stage to the X53 platform.
               Both the wash and rinse tanks have equal capacity and independent pump, heater, and
               spray systems — providing true two-stage aqueous cleaning with complete solution
               separation and no cross-contamination.
@@ -1361,7 +1361,7 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              The Magido Agita Series immersion parts washers use a combination of heated aqueous
+              The Magido <a href="/products/immersion-washers/agita" className="font-medium text-magido-orange hover:text-magido-blue">Agita Series</a> immersion parts washers use a combination of heated aqueous
               immersion and mechanical agitation to achieve thorough cleaning of complex parts with
               internal passages, blind holes, and intricate geometries that spray-based systems
               cannot fully reach. Parts are placed on a platform that is lowered into the heated
@@ -1369,7 +1369,7 @@ export default function CatalogPage() {
             </p>
             <p>
               Available in four models (A700 through A1300) with platform sizes from
-              27.6"×15.7" to 51.2"×23.6" and solution temperatures up to 170°F, the Agita Series
+              27.6"×15.7" to 51.2"×23.6" and solution temperatures up to 170°F, the <a href="/products/immersion-washers/agita" className="font-medium text-magido-orange hover:text-magido-blue">Agita Series</a>
               is designed for precision cleaning of hydraulic components, fuel system parts,
               bearing housings, intricate machined parts, and other components that demand
               internal cleanliness verification.
@@ -1460,10 +1460,10 @@ export default function CatalogPage() {
               cleaning action cleans all exterior surfaces simultaneously.
             </p>
             <p>
-              The Jolly Series (J320, J320/2) is the compact entry-level rotary drum, ideal for
-              small shops processing moderate volumes of small parts. The Spira 1b Series (SP320
+              The <a href="/products/rotary-drum-washers/jolly" className="font-medium text-magido-orange hover:text-magido-blue">Jolly Series</a> (J320, J320/2) is the compact entry-level rotary drum, ideal for
+              small shops processing moderate volumes of small parts. The <a href="/products/rotary-drum-washers/spira-1b" className="font-medium text-magido-orange hover:text-magido-blue">Spira 1b Series</a> (SP320
               through SP950) provides single-stage wash with integral drying for production
-              environments. The Spira 2b Series (SP320/2 through SP950/2) adds a full rinse
+              environments. The <a href="/products/rotary-drum-washers/spira-2b" className="font-medium text-magido-orange hover:text-magido-blue">Spira 2b Series</a> (SP320/2 through SP950/2) adds a full rinse
               stage for applications requiring residue-free parts.
             </p>
             <p>
@@ -1632,9 +1632,9 @@ export default function CatalogPage() {
               dry at the discharge end, ready for the next production step.
             </p>
             <p>
-              The Silver Series (S200–S400) is the compact entry-level conveyor washer with belt
+              The <a href="/products/in-line-belt-conveyor-washers/silver" className="font-medium text-magido-orange hover:text-magido-blue">Silver Series</a> (S200–S400) is the compact entry-level conveyor washer with belt
               widths from 8" to 16", designed for small to medium parts at moderate throughput.
-              The Gold 1b Series (G200–G1000) provides single-stage wash with drying for
+              The <a href="/products/in-line-belt-conveyor-washers/gold-1b" className="font-medium text-magido-orange hover:text-magido-blue">Gold 1b Series</a> (G200–G1000) provides single-stage wash with drying for
               production volumes, available in nine belt widths from 8" to 39". The Gold 2b
               Series (G200/2–G1000/2) adds a full rinse stage for applications requiring a
               contaminant-free finish.
@@ -1797,22 +1797,22 @@ export default function CatalogPage() {
         description={
           <>
             <p>
-              Magido&apos;s Platinum Series industrial rotary-immersion wash systems clean parts
+              Magido&apos;s <a href="/products/rotary-immersion-washers/platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> industrial rotary-immersion wash systems clean parts
               in baskets or fixtures by rotating them through a turbulent immersion bath combined
               with a simultaneous spray cleaning cycle. This dual-action process — immersion
               turbulence driving solution into complex internal geometries while spray jets clean
-              all exterior surfaces — makes the Platinum Series ideal for high-precision components
+              all exterior surfaces — makes the <a href="/products/rotary-immersion-washers/platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> ideal for high-precision components
               with tight tolerances, blind holes, internal channels, and complex surface profiles.
             </p>
             <p>
               The cleaning cycle is followed by a combination of spray and immersion rinsing,
               with an optional heated drying stage. Available in four models (P600/2 through
               P1500/2) with basket sizes from L24"×W12"×H12" to L59"×W31"×H34" and load capacities
-              from 440 lbs to 1,500 lbs, the Platinum Series covers a broad range of production
+              from 440 lbs to 1,500 lbs, the <a href="/products/rotary-immersion-washers/platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> covers a broad range of production
               cleaning requirements.
             </p>
             <p>
-              All Platinum Series machines feature Siemens PLC with Weintek HMI for full process
+              All <a href="/products/rotary-immersion-washers/platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> machines feature Siemens PLC with Weintek HMI for full process
               control, adjustable drum rotation speed (0.5–3 RPM), and a front-loading design
               with external loading table for safe, ergonomic loading and unloading of heavy baskets
               and fixtures. Three-phase 460V power is required. Each system is customized
