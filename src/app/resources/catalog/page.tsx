@@ -118,7 +118,9 @@ function FeatureList({ items }: { items: React.ReactNode[] }) {
 function CatalogSection({
   id,
   badge,
+  badgeUrl,
   title,
+  titleUrl,
   description,
   images,
   features,
@@ -128,9 +130,11 @@ function CatalogSection({
 }: {
   id: string;
   badge: string;
+  badgeUrl?: string;
   title: string;
+  titleUrl?: string;
   description: string | React.ReactNode;
-  images?: { src: string; alt: string; model?: string; series?: string }[];
+  images?: { src: string; alt: string; model?: string; modelUrl?: string; series?: string; seriesUrl?: string }[];
   features: React.ReactNode[];
   options: string[];
   safety?: string[];
@@ -145,10 +149,14 @@ function CatalogSection({
         {/* Header */}
         <div className="mb-8">
           <p className="font-display text-xs font-semibold uppercase tracking-widest text-magido-orange">
-            {badge}
+            {badgeUrl ? (
+              <Link href={badgeUrl} className="hover:underline">{badge}</Link>
+            ) : badge}
           </p>
           <h2 className="mt-1 font-display text-2xl font-bold text-[var(--color-text)] sm:text-3xl">
-            {title}
+            {titleUrl ? (
+              <Link href={titleUrl} className="hover:text-magido-orange transition-colors">{title}</Link>
+            ) : title}
           </h2>
         </div>
 
@@ -199,17 +207,29 @@ function CatalogSection({
                     className="object-contain p-3"
                     sizes="(max-width: 1024px) 176px, 25vw"
                   />
-                  {/* Model badge — top-left, orange, rounded bottom-right only */}
+                  {/* Model badge — top-left, orange */}
                   {img.model && (
-                    <span className="absolute top-0 left-0 z-10 rounded-br-md bg-magido-orange px-2 py-1 text-[10px] font-bold tracking-wide text-white leading-none">
-                      {img.model}
-                    </span>
+                    img.modelUrl ? (
+                      <Link href={img.modelUrl} className="absolute top-0 left-0 z-10 rounded-br-md bg-magido-orange px-2 py-1 text-[10px] font-bold tracking-wide text-white leading-none hover:bg-magido-orange-dark transition-colors">
+                        {img.model}
+                      </Link>
+                    ) : (
+                      <span className="absolute top-0 left-0 z-10 rounded-br-md bg-magido-orange px-2 py-1 text-[10px] font-bold tracking-wide text-white leading-none">
+                        {img.model}
+                      </span>
+                    )
                   )}
-                  {/* Series badge — top-right, blue, rounded bottom-left only */}
+                  {/* Series badge — top-right, blue */}
                   {img.series && (
-                    <span className="absolute top-0 right-0 z-10 rounded-bl-md bg-[var(--color-brand-blue)] px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-white leading-none">
-                      {img.series}
-                    </span>
+                    img.seriesUrl ? (
+                      <Link href={img.seriesUrl} className="absolute top-0 right-0 z-10 rounded-bl-md bg-[var(--color-brand-blue)] px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-white leading-none hover:opacity-80 transition-opacity">
+                        {img.series}
+                      </Link>
+                    ) : (
+                      <span className="absolute top-0 right-0 z-10 rounded-bl-md bg-[var(--color-brand-blue)] px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-white leading-none">
+                        {img.series}
+                      </span>
+                    )
                   )}
                 </div>
               ))}
@@ -342,7 +362,9 @@ export default function CatalogPage() {
       {/* DG Series */}
       <CatalogSection
         id="dg-series"
+        badgeUrl="/products/manual-washers"
         badge="Manual Washers"
+        titleUrl="/products/manual-washers/dg"
         title="DG Series — Sink-Style Manual Parts Washers"
         description={
           <>
@@ -369,8 +391,12 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/dg/dg8-1.webp', alt: 'DG8 Sink-Style Manual Parts Washer', series: 'DG', model: 'DG-8' },
-          { src: '/images/products/dg/dg9-1.webp', alt: 'DG9 Sink-Style Manual Parts Washer', series: 'DG', model: 'DG-9' },
+          { src: '/images/products/dg/dg8-1.webp', alt: 'DG8 Sink-Style Manual Parts Washer', series: 'DG', model: 'DG-8',
+              seriesUrl: '/products/manual-washers/dg',
+              modelUrl: '/products/manual-washers/dg-8' },
+          { src: '/images/products/dg/dg9-1.webp', alt: 'DG9 Sink-Style Manual Parts Washer', series: 'DG', model: 'DG-9',
+              seriesUrl: '/products/manual-washers/dg',
+              modelUrl: '/products/manual-washers/dg-9' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -420,7 +446,9 @@ export default function CatalogPage() {
       {/* L Series */}
       <CatalogSection
         id="l-series"
+        badgeUrl="/products/manual-washers"
         badge="Manual Washers"
+        titleUrl="/products/manual-washers/l"
         title="L Series — Vat-Style Manual Parts Washers"
         description={
           <>
@@ -447,8 +475,12 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/l-series/l7-1.webp', alt: 'L7 Vat-Style Manual Parts Washer', series: 'L Series', model: 'L-7' },
-          { src: '/images/products/l-series/l10-1.webp', alt: 'L10 Vat-Style Manual Parts Washer', series: 'L Series', model: 'L-10' },
+          { src: '/images/products/l-series/l7-1.webp', alt: 'L7 Vat-Style Manual Parts Washer', series: 'L Series', model: 'L-7',
+              seriesUrl: '/products/manual-washers/l',
+              modelUrl: '/products/manual-washers/l-7' },
+          { src: '/images/products/l-series/l10-1.webp', alt: 'L10 Vat-Style Manual Parts Washer', series: 'L Series', model: 'L-10',
+              seriesUrl: '/products/manual-washers/l',
+              modelUrl: '/products/manual-washers/l-10' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -500,7 +532,9 @@ export default function CatalogPage() {
       {/* HP Series */}
       <CatalogSection
         id="hp-series"
+        badgeUrl="/products/manual-washers"
         badge="Manual Washers"
+        titleUrl="/products/manual-washers/hp"
         title="HP Series — High-Pressure Blast Cabinet Washers"
         description={
           <>
@@ -528,8 +562,12 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/hp/hp25-1.webp', alt: 'HP25 High-Pressure Manual Parts Washer', series: 'HP', model: 'HP-25' },
-          { src: '/images/products/hp/hp30.webp', alt: 'HP30 High-Pressure Manual Parts Washer', series: 'HP', model: 'HP-30' },
+          { src: '/images/products/hp/hp25-1.webp', alt: 'HP25 High-Pressure Manual Parts Washer', series: 'HP', model: 'HP-25',
+              seriesUrl: '/products/manual-washers/hp',
+              modelUrl: '/products/manual-washers/hp-25' },
+          { src: '/images/products/hp/hp30.webp', alt: 'HP30 High-Pressure Manual Parts Washer', series: 'HP', model: 'HP-30',
+              seriesUrl: '/products/manual-washers/hp',
+              modelUrl: '/products/manual-washers/hp-30' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -597,7 +635,9 @@ export default function CatalogPage() {
       {/* X81 Series */}
       <CatalogSection
         id="x81-series"
+        badgeUrl="/products/top-load-washers"
         badge="Top Load Washers"
+        titleUrl="/products/top-load-washers/x81"
         title="X81 Series — Compact Top Load Spray Cabinet Washers"
         description={
           <>
@@ -624,9 +664,15 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x81/l35-1.webp', alt: 'X81 Series L35 Top Load Parts Washer', series: 'X81', model: 'L35' },
-          { src: '/images/products/x81/l55-1.webp', alt: 'X81 Series L55 Top Load Parts Washer', series: 'X81', model: 'L55' },
-          { src: '/images/products/x81/l90-1.webp', alt: 'X81 Series L90 Top Load Parts Washer', series: 'X81', model: 'L90' },
+          { src: '/images/products/x81/l35-1.webp', alt: 'X81 Series L35 Top Load Parts Washer', series: 'X81', model: 'L35',
+              seriesUrl: '/products/top-load-washers/x81',
+              modelUrl: '/products/top-load-washers/l35' },
+          { src: '/images/products/x81/l55-1.webp', alt: 'X81 Series L55 Top Load Parts Washer', series: 'X81', model: 'L55',
+              seriesUrl: '/products/top-load-washers/x81',
+              modelUrl: '/products/top-load-washers/l55' },
+          { src: '/images/products/x81/l90-1.webp', alt: 'X81 Series L90 Top Load Parts Washer', series: 'X81', model: 'L90',
+              seriesUrl: '/products/top-load-washers/x81',
+              modelUrl: '/products/top-load-washers/l90' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -693,7 +739,9 @@ export default function CatalogPage() {
       {/* X51 Series */}
       <CatalogSection
         id="x51-series"
+        badgeUrl="/products/top-load-washers"
         badge="Top Load Washers"
+        titleUrl="/products/top-load-washers/x51"
         title="X51 Series — Top Load Spray Cabinet Washers"
         description={
           <>
@@ -722,9 +770,15 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x51/l101-1.webp', alt: 'X51 Series L101 Top Load Washer', series: 'X51', model: 'L101' },
-          { src: '/images/products/x51/l122-1.webp', alt: 'X51 Series L122 Top Load Washer', series: 'X51', model: 'L122' },
-          { src: '/images/products/x51/l152-1.webp', alt: 'X51 Series L152 Top Load Washer', series: 'X51', model: 'L152' },
+          { src: '/images/products/x51/l101-1.webp', alt: 'X51 Series L101 Top Load Washer', series: 'X51', model: 'L101',
+              seriesUrl: '/products/top-load-washers/x51',
+              modelUrl: '/products/top-load-washers/l101' },
+          { src: '/images/products/x51/l122-1.webp', alt: 'X51 Series L122 Top Load Washer', series: 'X51', model: 'L122',
+              seriesUrl: '/products/top-load-washers/x51',
+              modelUrl: '/products/top-load-washers/l122' },
+          { src: '/images/products/x51/l152-1.webp', alt: 'X51 Series L152 Top Load Washer', series: 'X51', model: 'L152',
+              seriesUrl: '/products/top-load-washers/x51',
+              modelUrl: '/products/top-load-washers/l152' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -795,7 +849,9 @@ export default function CatalogPage() {
       {/* X51 HP Series */}
       <CatalogSection
         id="x51hp-series"
+        badgeUrl="/products/top-load-washers"
         badge="Top Load Washers"
+        titleUrl="/products/top-load-washers/x51hp"
         title="X51 HP Series — High-Pressure Top Load Washers"
         description={
           <>
@@ -817,9 +873,15 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x51hp/l101hp.webp', alt: 'X51 HP Series L101HP Top Load Washer', series: 'X51 HP', model: 'L101HP' },
-          { src: '/images/products/x51hp/l102hp.webp', alt: 'X51 HP Series L102HP Top Load Washer', series: 'X51 HP', model: 'L102HP' },
-          { src: '/images/products/x51hp/l122hp.webp', alt: 'X51 HP Series L122HP Top Load Washer', series: 'X51 HP', model: 'L122HP' },
+          { src: '/images/products/x51hp/l101hp.webp', alt: 'X51 HP Series L101HP Top Load Washer', series: 'X51 HP', model: 'L101HP',
+              seriesUrl: '/products/top-load-washers/x51hp',
+              modelUrl: '/products/top-load-washers/l101hp' },
+          { src: '/images/products/x51hp/l102hp.webp', alt: 'X51 HP Series L102HP Top Load Washer', series: 'X51 HP', model: 'L102HP',
+              seriesUrl: '/products/top-load-washers/x51hp',
+              modelUrl: '/products/top-load-washers/l102hp' },
+          { src: '/images/products/x51hp/l122hp.webp', alt: 'X51 HP Series L122HP Top Load Washer', series: 'X51 HP', model: 'L122HP',
+              seriesUrl: '/products/top-load-washers/x51hp',
+              modelUrl: '/products/top-load-washers/l122hp' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -881,7 +943,9 @@ export default function CatalogPage() {
       {/* X51/2 Series */}
       <CatalogSection
         id="x51-2-series"
+        badgeUrl="/products/top-load-washers"
         badge="Top Load Washers"
+        titleUrl="/products/top-load-washers/x51-2"
         title="X51/2 Series — Dual-Stage Top Load Washers"
         description={
           <>
@@ -907,9 +971,15 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x51-2/l103-1.webp', alt: 'X51/2 Series L103 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L103' },
-          { src: '/images/products/x51-2/l123-1.webp', alt: 'X51/2 Series L123 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L123' },
-          { src: '/images/products/x51-2/l153.webp', alt: 'X51/2 Series L153 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L153' },
+          { src: '/images/products/x51-2/l103-1.webp', alt: 'X51/2 Series L103 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L103',
+              seriesUrl: '/products/top-load-washers/x51-2',
+              modelUrl: '/products/top-load-washers/l103' },
+          { src: '/images/products/x51-2/l123-1.webp', alt: 'X51/2 Series L123 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L123',
+              seriesUrl: '/products/top-load-washers/x51-2',
+              modelUrl: '/products/top-load-washers/l123' },
+          { src: '/images/products/x51-2/l153.webp', alt: 'X51/2 Series L153 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L153',
+              seriesUrl: '/products/top-load-washers/x51-2',
+              modelUrl: '/products/top-load-washers/l153' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -984,7 +1054,9 @@ export default function CatalogPage() {
       {/* FLS Series */}
       <CatalogSection
         id="fls-series"
+        badgeUrl="/products/front-load-washers"
         badge="Top Load Washers"
+        titleUrl="/products/front-load-washers/fls"
         title="FLS Series — Heavy-Duty Top Load Washers"
         description={
           <>
@@ -1005,8 +1077,12 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/fls/fls35-closed.webp', alt: 'FLS35 Heavy-Duty Top Load Washer', series: 'FLS', model: 'FLS-35' },
-          { src: '/images/products/fls/fls35-open.webp', alt: 'FLS35 Heavy-Duty Top Load Washer Open', series: 'FLS', model: 'FLS-35' },
+          { src: '/images/products/fls/fls35-closed.webp', alt: 'FLS35 Heavy-Duty Top Load Washer', series: 'FLS', model: 'FLS-35',
+              seriesUrl: '/products/front-load-washers/fls',
+              modelUrl: '/products/front-load-washers/fls-35' },
+          { src: '/images/products/fls/fls35-open.webp', alt: 'FLS35 Heavy-Duty Top Load Washer Open', series: 'FLS', model: 'FLS-35',
+              seriesUrl: '/products/front-load-washers/fls',
+              modelUrl: '/products/front-load-washers/fls-35' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1071,7 +1147,9 @@ export default function CatalogPage() {
       {/* X53 Series */}
       <CatalogSection
         id="x53-series"
+        badgeUrl="/products/front-load-washers"
         badge="Front Load Washers"
+        titleUrl="/products/front-load-washers/x53"
         title="X53 Series — Front Load Spray Cabinet Washers"
         description={
           <>
@@ -1099,9 +1177,12 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x53/l160.webp', alt: 'X53 Series L160 Front Load Parts Washer', series: 'X53', model: 'L160' },
-          { src: '/images/products/x53/l190-1.webp', alt: 'X53 Series L190 Front Load Parts Washer', series: 'X53', model: 'L190' },
-          { src: '/images/products/x53/l210.webp', alt: 'X53 Series L210 Front Load Parts Washer', series: 'X53', model: 'L210' },
+          { src: '/images/products/x53/l160.webp', alt: 'X53 Series L160 Front Load Parts Washer', series: 'X53', model: 'L160',
+              seriesUrl: '/products/front-load-washers/x53' },
+          { src: '/images/products/x53/l190-1.webp', alt: 'X53 Series L190 Front Load Parts Washer', series: 'X53', model: 'L190',
+              seriesUrl: '/products/front-load-washers/x53' },
+          { src: '/images/products/x53/l210.webp', alt: 'X53 Series L210 Front Load Parts Washer', series: 'X53', model: 'L210',
+              seriesUrl: '/products/front-load-washers/x53' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1166,7 +1247,9 @@ export default function CatalogPage() {
       {/* X53/2 Series */}
       <CatalogSection
         id="x53-2-series"
+        badgeUrl="/products/front-load-washers"
         badge="Front Load Washers"
+        titleUrl="/products/front-load-washers/x53-2"
         title="X53/2 Series — Dual-Stage Front Load Washers"
         description={
           <>
@@ -1192,9 +1275,12 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/x53-2/l162.webp', alt: 'X53/2 Series L162 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L162' },
-          { src: '/images/products/x53-2/l192.webp', alt: 'X53/2 Series L192 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L192' },
-          { src: '/images/products/x53-2/l212.webp', alt: 'X53/2 Series L212 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L212' },
+          { src: '/images/products/x53-2/l162.webp', alt: 'X53/2 Series L162 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L162',
+              seriesUrl: '/products/front-load-washers/x53-2' },
+          { src: '/images/products/x53-2/l192.webp', alt: 'X53/2 Series L192 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L192',
+              seriesUrl: '/products/front-load-washers/x53-2' },
+          { src: '/images/products/x53-2/l212.webp', alt: 'X53/2 Series L212 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L212',
+              seriesUrl: '/products/front-load-washers/x53-2' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1268,7 +1354,9 @@ export default function CatalogPage() {
       {/* Agita Series */}
       <CatalogSection
         id="agita-series"
+        badgeUrl="/products/immersion-washers"
         badge="Immersion Washers"
+        titleUrl="/products/immersion-washers/agita"
         title="Agita Series — Ultrasonic-Agitation Immersion Parts Washers"
         description={
           <>
@@ -1295,9 +1383,12 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/agita/a700.webp', alt: 'Agita A700 Immersion Parts Washer', series: 'Agita', model: 'A700' },
-          { src: '/images/products/agita/a900.webp', alt: 'Agita A900 Immersion Parts Washer', series: 'Agita', model: 'A900' },
-          { src: '/images/products/agita/a1100.webp', alt: 'Agita A1100 Immersion Parts Washer', series: 'Agita', model: 'A1100' },
+          { src: '/images/products/agita/a700.webp', alt: 'Agita A700 Immersion Parts Washer', series: 'Agita', model: 'A700',
+              seriesUrl: '/products/immersion-washers/agita' },
+          { src: '/images/products/agita/a900.webp', alt: 'Agita A900 Immersion Parts Washer', series: 'Agita', model: 'A900',
+              seriesUrl: '/products/immersion-washers/agita' },
+          { src: '/images/products/agita/a1100.webp', alt: 'Agita A1100 Immersion Parts Washer', series: 'Agita', model: 'A1100',
+              seriesUrl: '/products/immersion-washers/agita' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1355,7 +1446,9 @@ export default function CatalogPage() {
 
       <CatalogSection
         id="rotary-drum"
+        badgeUrl="/products/rotary-drum-washers"
         badge="Rotary Drum Washers"
+        titleUrl="/products/rotary-drum-washers"
         title="Rotary Drum Aqueous Parts Washing Systems"
         description={
           <>
@@ -1383,9 +1476,12 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/jolly/j320.webp', alt: 'Jolly J320 Rotary Drum Washer', series: 'Jolly', model: 'J320' },
-          { src: '/images/products/spira-1b/sp480.webp', alt: 'Spira 1b Series SP480 Rotary Drum Washer', series: 'Spira 1b', model: 'SP480' },
-          { src: '/images/products/spira-1b/sp950.webp', alt: 'Spira SP950 Rotary Drum Washer', series: 'Spira 1b', model: 'SP950' },
+          { src: '/images/products/jolly/j320.webp', alt: 'Jolly J320 Rotary Drum Washer', series: 'Jolly', model: 'J320',
+              seriesUrl: '/products/rotary-drum-washers/jolly' },
+          { src: '/images/products/spira-1b/sp480.webp', alt: 'Spira 1b Series SP480 Rotary Drum Washer', series: 'Spira 1b', model: 'SP480',
+              seriesUrl: '/products/rotary-drum-washers/spira-1b' },
+          { src: '/images/products/spira-1b/sp950.webp', alt: 'Spira SP950 Rotary Drum Washer', series: 'Spira 1b', model: 'SP950',
+              seriesUrl: '/products/rotary-drum-washers/spira-1b' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1522,7 +1618,9 @@ export default function CatalogPage() {
 
       <CatalogSection
         id="conveyor"
+        badgeUrl="/products/in-line-belt-conveyor-washers"
         badge="In-Line Belt Conveyor Washers"
+        titleUrl="/products/in-line-belt-conveyor-washers"
         title="In-Line Belt Conveyor Aqueous Parts Washing Systems"
         description={
           <>
@@ -1551,9 +1649,13 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/silver/s200.webp', alt: 'Silver Series S200 In-Line Belt Conveyor Washer', series: 'Silver', model: 'S200' },
-          { src: '/images/products/gold-1b/g400.webp', alt: 'Gold 1b Series G400 In-Line Belt Conveyor Washer', series: 'Gold 1b', model: 'G400' },
-          { src: '/images/products/gold-2b/g1000.webp', alt: 'Gold 2b Series G1000 In-Line Belt Conveyor Washer', series: 'Gold 2b', model: 'G1000' },
+          { src: '/images/products/silver/s200.webp', alt: 'Silver Series S200 In-Line Belt Conveyor Washer', series: 'Silver', model: 'S200',
+              seriesUrl: '/products/in-line-belt-conveyor-washers/silver' },
+          { src: '/images/products/gold-1b/g400.webp', alt: 'Gold 1b Series G400 In-Line Belt Conveyor Washer', series: 'Gold 1b', model: 'G400',
+              seriesUrl: '/products/in-line-belt-conveyor-washers/gold-1b',
+              modelUrl: '/products/in-line-belt-conveyor-washers/g400' },
+          { src: '/images/products/gold-2b/g1000.webp', alt: 'Gold 2b Series G1000 In-Line Belt Conveyor Washer', series: 'Gold 2b', model: 'G1000',
+              seriesUrl: '/products/in-line-belt-conveyor-washers/gold-2b' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1688,7 +1790,9 @@ export default function CatalogPage() {
 
       <CatalogSection
         id="rotary-immersion"
+        badgeUrl="/products/rotary-immersion-washers"
         badge="Rotary Immersion Washers"
+        titleUrl="/products/rotary-immersion-washers/platinum"
         title="Platinum Series — Rotary Immersion Aqueous Parts Washing Systems"
         description={
           <>
@@ -1717,9 +1821,15 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/platinum/p600.webp', alt: 'Platinum Series P600/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P600/2' },
-          { src: '/images/products/platinum/p1200.webp', alt: 'Platinum Series P1200/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P1200/2' },
-          { src: '/images/products/platinum/p1500.webp', alt: 'Platinum Series P1500/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P1500/2' },
+          { src: '/images/products/platinum/p600.webp', alt: 'Platinum Series P600/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P600/2',
+              seriesUrl: '/products/rotary-immersion-washers/platinum',
+              modelUrl: '/products/rotary-immersion-washers/p600-2' },
+          { src: '/images/products/platinum/p1200.webp', alt: 'Platinum Series P1200/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P1200/2',
+              seriesUrl: '/products/rotary-immersion-washers/platinum',
+              modelUrl: '/products/rotary-immersion-washers/p1200-2' },
+          { src: '/images/products/platinum/p1500.webp', alt: 'Platinum Series P1500/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P1500/2',
+              seriesUrl: '/products/rotary-immersion-washers/platinum',
+              modelUrl: '/products/rotary-immersion-washers/p1500-2' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
