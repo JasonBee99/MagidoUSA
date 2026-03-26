@@ -64,30 +64,30 @@ export default function FaqPage() {
               </p>
 
               {/* CTAs — btn-sm side-by-side */}
-              <div className="mt-6 flex flex-wrap gap-2">
-                <Link href="/contact" className="btn-primary btn-sm">
+              <div className="mt-6 flex gap-2">
+                <Link href="/contact" className="btn-primary btn-sm whitespace-nowrap">
                   Contact Scott
                   <span className="btn-arrow">→</span>
                 </Link>
-                <Link href="/contact#evaluation" className="btn-ghost-dark btn-sm">
+                <Link href="/contact#evaluation" className="btn-ghost-dark btn-sm whitespace-nowrap">
                   Process Evaluation
                 </Link>
               </div>
 
               {/* Secondary links — pipe-separated */}
-              <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/10 pt-5">
+              <div className="mt-5 flex items-center gap-x-2 border-t border-white/10 pt-5 sm:gap-x-4">
                 <Link
                   href="/products"
-                  className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                  className="whitespace-nowrap text-xs font-medium text-gray-300 transition-colors hover:text-white sm:text-sm"
                 >
                   Browse Washers →
                 </Link>
                 <span className="text-white/20" aria-hidden="true">|</span>
                 <Link
                   href="/how-to-choose"
-                  className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                  className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap text-xs font-medium text-gray-300 transition-colors hover:text-white sm:gap-1.5 sm:text-sm"
                 >
-                  <FlaskConical className="h-3.5 w-3.5 text-magido-orange" />
+                  <FlaskConical className="h-3 w-3 text-magido-orange sm:h-3.5 sm:w-3.5" />
                   Help Me Choose
                 </Link>
               </div>
