@@ -1055,9 +1055,9 @@ export default function CatalogPage() {
       <CatalogSection
         id="fls-series"
         badgeUrl="/products/front-load-washers"
-        badge="Top Load Washers"
+        badge="Front Load Washers"
         titleUrl="/products/front-load-washers/fls"
-        title="FLS Series — Heavy-Duty Top Load Washers"
+        title="FLS Series — Heavy-Duty Front Load Washers"
         description={
           <>
             <p>
@@ -1077,10 +1077,10 @@ export default function CatalogPage() {
           </>
         }
         images={[
-          { src: '/images/products/fls/fls35-closed.webp', alt: 'FLS35 Heavy-Duty Top Load Washer', series: 'FLS', model: 'FLS-35',
+          { src: '/images/products/fls/fls35-closed.webp', alt: 'FLS-35 Heavy-Duty Front Load Washer', series: 'FLS', model: 'FLS-35',
               seriesUrl: '/products/front-load-washers/fls',
               modelUrl: '/products/front-load-washers/fls-35' },
-          { src: '/images/products/fls/fls35-open.webp', alt: 'FLS35 Heavy-Duty Top Load Washer Open', series: 'FLS', model: 'FLS-35',
+          { src: '/images/products/fls/fls35-open.webp', alt: 'FLS-35 Heavy-Duty Front Load Washer Open', series: 'FLS', model: 'FLS-35',
               seriesUrl: '/products/front-load-washers/fls',
               modelUrl: '/products/front-load-washers/fls-35' },
         ]}
