@@ -251,11 +251,11 @@ export function BlogList({ posts, sortOptions }: BlogListProps) {
   return (
     <>
       {/* Sort bar — labels from blog-config.json via props */}
-      <div className="mb-8 flex items-center gap-2">
+      <div className="mb-8 flex flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:gap-2">
         <span className="flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-[var(--color-text-muted)]">
           <ChevronDown className="h-3.5 w-3.5" /> Sort
         </span>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2">
           {sortOptions.map((opt) => (
             <button
               key={opt.key}
