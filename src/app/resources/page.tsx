@@ -137,12 +137,12 @@ export default function ResourcesPage() {
               </p>
 
               {/* CTAs — btn-sm side-by-side */}
-              <div className="mt-6 flex flex-wrap gap-2">
-                <Link href="/resources/catalog" className="btn-primary btn-sm">
+              <div className="mt-6 flex gap-2">
+                <Link href="/resources/catalog" className="btn-primary btn-sm whitespace-nowrap">
                   Download Catalog
                   <span className="btn-arrow">→</span>
                 </Link>
-                <Link href="/contact" className="btn-ghost-dark btn-sm">
+                <Link href="/contact" className="btn-ghost-dark btn-sm whitespace-nowrap">
                   Request a Quote
                 </Link>
               </div>
