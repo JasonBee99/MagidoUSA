@@ -364,19 +364,19 @@ export default function CatalogPage() {
         id="dg-series"
         badgeUrl="/products/manual-washers"
         badge="Manual Washers"
-        titleUrl="/products/manual-washers/dg"
+        titleUrl="/products/manual-washers?series=dg"
         title="DG Series — Sink-Style Manual Parts Washers"
         description={
           <>
             <p>
-              Magido <a href="/products/manual-washers/dg" className="font-medium text-magido-orange hover:text-magido-blue">DG Series</a> manual sink-style aqueous parts washers are engineered to handle the
+              Magido <a href="/products/manual-washers?series=dg" className="font-medium text-magido-orange hover:text-magido-blue">DG Series</a> manual sink-style aqueous parts washers are engineered to handle the
               most rigorous challenges found in industrial and automotive maintenance parts cleaning
               applications. Built entirely from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>, the DG8 and DG9 feature a
               foot-pedal-regulated, hand-held flow-through cleaning brush that delivers heated aqueous
               solution directly to the part surface.
             </p>
             <p>
-              The <a href="/products/manual-washers/dg" className="font-medium text-magido-orange hover:text-magido-blue">DG Series</a> is the ideal entry-level professional solution for shops that need a
+              The <a href="/products/manual-washers?series=dg" className="font-medium text-magido-orange hover:text-magido-blue">DG Series</a> is the ideal entry-level professional solution for shops that need a
               reliable, heated, pump-driven washer with a small footprint. The external magnetic drive
               pump eliminates shaft seals for maintenance-free operation, while the built-in liquid
               level shut-off protects the heater from running dry. Both models operate on standard
@@ -384,7 +384,7 @@ export default function CatalogPage() {
             </p>
             <p>
               Designed to use environmentally friendly aqueous (water-based) cleaning solutions,
-              the <a href="/products/manual-washers/dg" className="font-medium text-magido-orange hover:text-magido-blue">DG Series</a> eliminates the hazardous waste costs associated with solvent-based
+              the <a href="/products/manual-washers?series=dg" className="font-medium text-magido-orange hover:text-magido-blue">DG Series</a> eliminates the hazardous waste costs associated with solvent-based
               sink washers while delivering superior cleaning performance at controlled temperatures
               up to 113°F.
             </p>
@@ -392,11 +392,11 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/dg/dg8-1.webp', alt: 'DG8 Sink-Style Manual Parts Washer', series: 'DG', model: 'DG-8',
-              seriesUrl: '/products/manual-washers/dg',
-              modelUrl: '/products/manual-washers/dg-8' },
+              seriesUrl: '/products/manual-washers?series=dg',
+              modelUrl: '/products/manual-washers?series=dg-8' },
           { src: '/images/products/dg/dg9-1.webp', alt: 'DG9 Sink-Style Manual Parts Washer', series: 'DG', model: 'DG-9',
-              seriesUrl: '/products/manual-washers/dg',
-              modelUrl: '/products/manual-washers/dg-9' },
+              seriesUrl: '/products/manual-washers?series=dg',
+              modelUrl: '/products/manual-washers?series=dg-9' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -448,12 +448,12 @@ export default function CatalogPage() {
         id="l-series"
         badgeUrl="/products/manual-washers"
         badge="Manual Washers"
-        titleUrl="/products/manual-washers/l"
+        titleUrl="/products/manual-washers?series=l"
         title="L Series — Vat-Style Manual Parts Washers"
         description={
           <>
             <p>
-              The Magido <a href="/products/manual-washers/l" className="font-medium text-magido-orange hover:text-magido-blue">L Series</a> manual vat-style aqueous parts washers are designed for
+              The Magido <a href="/products/manual-washers?series=l" className="font-medium text-magido-orange hover:text-magido-blue">L Series</a> manual vat-style aqueous parts washers are designed for
               industrial and automotive shops that need to clean medium to large components
               that don&apos;t fit in a standard sink-style washer. The open vat design accommodates
               bulky assemblies, engine components, transmission cases, and other large parts
@@ -476,11 +476,11 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/l-series/l7-1.webp', alt: 'L7 Vat-Style Manual Parts Washer', series: 'L Series', model: 'L-7',
-              seriesUrl: '/products/manual-washers/l',
-              modelUrl: '/products/manual-washers/l-7' },
+              seriesUrl: '/products/manual-washers?series=l',
+              modelUrl: '/products/manual-washers?series=l-7' },
           { src: '/images/products/l-series/l10-1.webp', alt: 'L10 Vat-Style Manual Parts Washer', series: 'L Series', model: 'L-10',
-              seriesUrl: '/products/manual-washers/l',
-              modelUrl: '/products/manual-washers/l-10' },
+              seriesUrl: '/products/manual-washers?series=l',
+              modelUrl: '/products/manual-washers?series=l-10' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -534,14 +534,14 @@ export default function CatalogPage() {
         id="hp-series"
         badgeUrl="/products/manual-washers"
         badge="Manual Washers"
-        titleUrl="/products/manual-washers/hp"
+        titleUrl="/products/manual-washers?series=hp"
         title="HP Series — High-Pressure Blast Cabinet Washers"
         description={
           <>
             <p>
               The Magido HP25 and HP30 are heated water blasting cabinets built entirely from
               <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>. Developed for technicians who need to dramatically reduce
-              cleaning time, the <a href="/products/manual-washers/hp" className="font-medium text-magido-orange hover:text-magido-blue">HP Series</a> uses a high-pressure piston-drive pump to deliver a
+              cleaning time, the <a href="/products/manual-washers?series=hp" className="font-medium text-magido-orange hover:text-magido-blue">HP Series</a> uses a high-pressure piston-drive pump to deliver a
               heated aqueous cleaning solution at up to 870 PSI through an easy-to-handle spray
               wand — blasting away grease, carbon deposits, and industrial soils that would
               require extended soaking or scrubbing in a conventional washer.
@@ -554,7 +554,7 @@ export default function CatalogPage() {
               tray and screened basket filter make cleanup quick and straightforward.
             </p>
             <p>
-              The <a href="/products/manual-washers/hp" className="font-medium text-magido-orange hover:text-magido-blue">HP Series</a> is ideally suited for automotive shops, heavy equipment maintenance,
+              The <a href="/products/manual-washers?series=hp" className="font-medium text-magido-orange hover:text-magido-blue">HP Series</a> is ideally suited for automotive shops, heavy equipment maintenance,
               machine shops, and any application where thorough, rapid cleaning of heavily
               contaminated parts is a priority. Both models support single and three-phase power
               and can be operated with foot pedal control for hands-free solution delivery.
@@ -563,11 +563,11 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/hp/hp25-1.webp', alt: 'HP25 High-Pressure Manual Parts Washer', series: 'HP', model: 'HP-25',
-              seriesUrl: '/products/manual-washers/hp',
-              modelUrl: '/products/manual-washers/hp-25' },
+              seriesUrl: '/products/manual-washers?series=hp',
+              modelUrl: '/products/manual-washers?series=hp-25' },
           { src: '/images/products/hp/hp30.webp', alt: 'HP30 High-Pressure Manual Parts Washer', series: 'HP', model: 'HP-30',
-              seriesUrl: '/products/manual-washers/hp',
-              modelUrl: '/products/manual-washers/hp-30' },
+              seriesUrl: '/products/manual-washers?series=hp',
+              modelUrl: '/products/manual-washers?series=hp-30' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -637,12 +637,12 @@ export default function CatalogPage() {
         id="x81-series"
         badgeUrl="/products/top-load-washers"
         badge="Top Load Washers"
-        titleUrl="/products/top-load-washers/x81"
+        titleUrl="/products/top-load-washers?series=x81"
         title="X81 Series — Compact Top Load Spray Cabinet Washers"
         description={
           <>
             <p>
-              The <a href="/products/top-load-washers/x81" className="font-medium text-magido-orange hover:text-magido-blue">X81 Series</a> parts washers are automatic spray jet wash systems constructed using
+              The <a href="/products/top-load-washers?series=x81" className="font-medium text-magido-orange hover:text-magido-blue">X81 Series</a> parts washers are automatic spray jet wash systems constructed using
               <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>, available in three models (L-35, L-55, L-90) with turntable
               diameters ranging from 15" to 31". Each system features a motorized rotating turntable
               and swing-away spray manifold fitted with optimized V-Jet nozzles that use water pressure
@@ -665,13 +665,13 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/x81/l35-1.webp', alt: 'X81 Series L35 Top Load Parts Washer', series: 'X81', model: 'L35',
-              seriesUrl: '/products/top-load-washers/x81',
+              seriesUrl: '/products/top-load-washers?series=x81',
               modelUrl: '/products/top-load-washers/l35' },
           { src: '/images/products/x81/l55-1.webp', alt: 'X81 Series L55 Top Load Parts Washer', series: 'X81', model: 'L55',
-              seriesUrl: '/products/top-load-washers/x81',
+              seriesUrl: '/products/top-load-washers?series=x81',
               modelUrl: '/products/top-load-washers/l55' },
           { src: '/images/products/x81/l90-1.webp', alt: 'X81 Series L90 Top Load Parts Washer', series: 'X81', model: 'L90',
-              seriesUrl: '/products/top-load-washers/x81',
+              seriesUrl: '/products/top-load-washers?series=x81',
               modelUrl: '/products/top-load-washers/l90' },
         ]}
         features={[
@@ -741,12 +741,12 @@ export default function CatalogPage() {
         id="x51-series"
         badgeUrl="/products/top-load-washers"
         badge="Top Load Washers"
-        titleUrl="/products/top-load-washers/x51"
+        titleUrl="/products/top-load-washers?series=x51"
         title="X51 Series — Top Load Spray Cabinet Washers"
         description={
           <>
             <p>
-              The <a href="/products/top-load-washers/x51" className="font-medium text-magido-orange hover:text-magido-blue">X51 Series</a> is Magido&apos;s workhorse top-load spray cabinet washer for medium to
+              The <a href="/products/top-load-washers?series=x51" className="font-medium text-magido-orange hover:text-magido-blue">X51 Series</a> is Magido&apos;s workhorse top-load spray cabinet washer for medium to
               large parts. Available in four models (L101, L102, L122, L152) with turntable diameters
               from 35" to 51", the X51 features a unique clamshell lid design that brings the jet-spray
               cleaning power closer to the parts for maximum wash performance. Up to two independent
@@ -771,13 +771,13 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/x51/l101-1.webp', alt: 'X51 Series L101 Top Load Washer', series: 'X51', model: 'L101',
-              seriesUrl: '/products/top-load-washers/x51',
+              seriesUrl: '/products/top-load-washers?series=x51',
               modelUrl: '/products/top-load-washers/l101' },
           { src: '/images/products/x51/l122-1.webp', alt: 'X51 Series L122 Top Load Washer', series: 'X51', model: 'L122',
-              seriesUrl: '/products/top-load-washers/x51',
+              seriesUrl: '/products/top-load-washers?series=x51',
               modelUrl: '/products/top-load-washers/l122' },
           { src: '/images/products/x51/l152-1.webp', alt: 'X51 Series L152 Top Load Washer', series: 'X51', model: 'L152',
-              seriesUrl: '/products/top-load-washers/x51',
+              seriesUrl: '/products/top-load-washers?series=x51',
               modelUrl: '/products/top-load-washers/l152' },
         ]}
         features={[
@@ -851,12 +851,12 @@ export default function CatalogPage() {
         id="x51hp-series"
         badgeUrl="/products/top-load-washers"
         badge="Top Load Washers"
-        titleUrl="/products/top-load-washers/x51hp"
+        titleUrl="/products/top-load-washers?series=x51hp"
         title="X51 HP Series — High-Pressure Top Load Washers"
         description={
           <>
             <p>
-              The <a href="/products/top-load-washers/x51hp" className="font-medium text-magido-orange hover:text-magido-blue">X51 HP Series</a> combines the proven rotary turntable spray-cabinet design of the X51
+              The <a href="/products/top-load-washers?series=x51hp" className="font-medium text-magido-orange hover:text-magido-blue">X51 HP Series</a> combines the proven rotary turntable spray-cabinet design of the X51
               with an integrated high-pressure spray wand capable of delivering 870 PSI — giving
               operators both automated batch-cleaning and on-demand blast cleaning in a single
               machine. Available in three models (L101HP, L102HP, L122HP) with turntables from 35" to
@@ -874,13 +874,13 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/x51hp/l101hp.webp', alt: 'X51 HP Series L101HP Top Load Washer', series: 'X51 HP', model: 'L101HP',
-              seriesUrl: '/products/top-load-washers/x51hp',
+              seriesUrl: '/products/top-load-washers?series=x51hp',
               modelUrl: '/products/top-load-washers/l101hp' },
           { src: '/images/products/x51hp/l102hp.webp', alt: 'X51 HP Series L102HP Top Load Washer', series: 'X51 HP', model: 'L102HP',
-              seriesUrl: '/products/top-load-washers/x51hp',
+              seriesUrl: '/products/top-load-washers?series=x51hp',
               modelUrl: '/products/top-load-washers/l102hp' },
           { src: '/images/products/x51hp/l122hp.webp', alt: 'X51 HP Series L122HP Top Load Washer', series: 'X51 HP', model: 'L122HP',
-              seriesUrl: '/products/top-load-washers/x51hp',
+              seriesUrl: '/products/top-load-washers?series=x51hp',
               modelUrl: '/products/top-load-washers/l122hp' },
         ]}
         features={[
@@ -945,12 +945,12 @@ export default function CatalogPage() {
         id="x51-2-series"
         badgeUrl="/products/top-load-washers"
         badge="Top Load Washers"
-        titleUrl="/products/top-load-washers/x51-2"
+        titleUrl="/products/top-load-washers?series=x51-2"
         title="X51/2 Series — Dual-Stage Top Load Washers"
         description={
           <>
             <p>
-              The <a href="/products/top-load-washers/x51-2" className="font-medium text-magido-orange hover:text-magido-blue">X51/2 Series</a> adds a dedicated heated rinse stage to the X51 platform, providing a
+              The <a href="/products/top-load-washers?series=x51-2" className="font-medium text-magido-orange hover:text-magido-blue">X51/2 Series</a> adds a dedicated heated rinse stage to the X51 platform, providing a
               two-stage wash-then-rinse process controlled by Siemens PLC with Weintek HMI. Available
               in three models (L103, L123, L153) with turntable diameters from 35" to 50", the
               dual-tank design prevents cross-contamination between wash and rinse solutions —
@@ -972,13 +972,13 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/x51-2/l103-1.webp', alt: 'X51/2 Series L103 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L103',
-              seriesUrl: '/products/top-load-washers/x51-2',
+              seriesUrl: '/products/top-load-washers?series=x51-2',
               modelUrl: '/products/top-load-washers/l103' },
           { src: '/images/products/x51-2/l123-1.webp', alt: 'X51/2 Series L123 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L123',
-              seriesUrl: '/products/top-load-washers/x51-2',
+              seriesUrl: '/products/top-load-washers?series=x51-2',
               modelUrl: '/products/top-load-washers/l123' },
           { src: '/images/products/x51-2/l153.webp', alt: 'X51/2 Series L153 Dual-Stage Top Load Washer', series: 'X51/2', model: 'L153',
-              seriesUrl: '/products/top-load-washers/x51-2',
+              seriesUrl: '/products/top-load-washers?series=x51-2',
               modelUrl: '/products/top-load-washers/l153' },
         ]}
         features={[
@@ -1056,12 +1056,12 @@ export default function CatalogPage() {
         id="fls-series"
         badgeUrl="/products/front-load-washers"
         badge="Front Load Washers"
-        titleUrl="/products/front-load-washers/fls"
+        titleUrl="/products/front-load-washers?series=fls"
         title="FLS Series — Heavy-Duty Front Load Washers"
         description={
           <>
             <p>
-              The <a href="/products/front-load-washers/fls" className="font-medium text-magido-orange hover:text-magido-blue">FLS Series</a> represents Magido&apos;s heavy-duty top-load platform, designed for
+              The <a href="/products/front-load-washers?series=fls" className="font-medium text-magido-orange hover:text-magido-blue">FLS Series</a> represents Magido&apos;s heavy-duty top-load platform, designed for
               high-capacity cleaning of large, heavy parts up to 1,500 lbs. Available in three
               models (FLS-30, FLS-35, FLS-45) with turntable diameters from 30" to 45", the FLS
               Series delivers high flow rates (up to 75 GPM) and spray pressures up to 60 PSI
@@ -1078,11 +1078,11 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/fls/fls35-closed.webp', alt: 'FLS-35 Heavy-Duty Front Load Washer', series: 'FLS', model: 'FLS-35',
-              seriesUrl: '/products/front-load-washers/fls',
-              modelUrl: '/products/front-load-washers/fls-35' },
+              seriesUrl: '/products/front-load-washers?series=fls',
+              modelUrl: '/products/front-load-washers?series=fls-35' },
           { src: '/images/products/fls/fls35-open.webp', alt: 'FLS-35 Heavy-Duty Front Load Washer Open', series: 'FLS', model: 'FLS-35',
-              seriesUrl: '/products/front-load-washers/fls',
-              modelUrl: '/products/front-load-washers/fls-35' },
+              seriesUrl: '/products/front-load-washers?series=fls',
+              modelUrl: '/products/front-load-washers?series=fls-35' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1149,12 +1149,12 @@ export default function CatalogPage() {
         id="x53-series"
         badgeUrl="/products/front-load-washers"
         badge="Front Load Washers"
-        titleUrl="/products/front-load-washers/x53"
+        titleUrl="/products/front-load-washers?series=x53"
         title="X53 Series — Front Load Spray Cabinet Washers"
         description={
           <>
             <p>
-              The Magido <a href="/products/front-load-washers/x53" className="font-medium text-magido-orange hover:text-magido-blue">X53 Series</a> parts washers are engineered for automatic spray parts washing
+              The Magido <a href="/products/front-load-washers?series=x53" className="font-medium text-magido-orange hover:text-magido-blue">X53 Series</a> parts washers are engineered for automatic spray parts washing
               applications utilizing aqueous detergents at temperatures up to 160°F. The front-loading
               design provides easy access for loading and unloading of heavy or awkward parts without
               requiring the operator to lift over the machine — a significant ergonomic advantage
@@ -1178,11 +1178,11 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/x53/l160.webp', alt: 'X53 Series L160 Front Load Parts Washer', series: 'X53', model: 'L160',
-              seriesUrl: '/products/front-load-washers/x53' },
+              seriesUrl: '/products/front-load-washers?series=x53' },
           { src: '/images/products/x53/l190-1.webp', alt: 'X53 Series L190 Front Load Parts Washer', series: 'X53', model: 'L190',
-              seriesUrl: '/products/front-load-washers/x53' },
+              seriesUrl: '/products/front-load-washers?series=x53' },
           { src: '/images/products/x53/l210.webp', alt: 'X53 Series L210 Front Load Parts Washer', series: 'X53', model: 'L210',
-              seriesUrl: '/products/front-load-washers/x53' },
+              seriesUrl: '/products/front-load-washers?series=x53' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1249,12 +1249,12 @@ export default function CatalogPage() {
         id="x53-2-series"
         badgeUrl="/products/front-load-washers"
         badge="Front Load Washers"
-        titleUrl="/products/front-load-washers/x53-2"
+        titleUrl="/products/front-load-washers?series=x53-2"
         title="X53/2 Series — Dual-Stage Front Load Washers"
         description={
           <>
             <p>
-              The <a href="/products/front-load-washers/x53-2" className="font-medium text-magido-orange hover:text-magido-blue">X53/2 Series</a> adds a full-capacity dedicated rinse stage to the X53 platform.
+              The <a href="/products/front-load-washers?series=x53-2" className="font-medium text-magido-orange hover:text-magido-blue">X53/2 Series</a> adds a full-capacity dedicated rinse stage to the X53 platform.
               Both the wash and rinse tanks have equal capacity and independent pump, heater, and
               spray systems — providing true two-stage aqueous cleaning with complete solution
               separation and no cross-contamination.
@@ -1276,11 +1276,11 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/x53-2/l162.webp', alt: 'X53/2 Series L162 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L162',
-              seriesUrl: '/products/front-load-washers/x53-2' },
+              seriesUrl: '/products/front-load-washers?series=x53-2' },
           { src: '/images/products/x53-2/l192.webp', alt: 'X53/2 Series L192 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L192',
-              seriesUrl: '/products/front-load-washers/x53-2' },
+              seriesUrl: '/products/front-load-washers?series=x53-2' },
           { src: '/images/products/x53-2/l212.webp', alt: 'X53/2 Series L212 Dual-Stage Front Load Washer', series: 'X53/2', model: 'L212',
-              seriesUrl: '/products/front-load-washers/x53-2' },
+              seriesUrl: '/products/front-load-washers?series=x53-2' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1356,12 +1356,12 @@ export default function CatalogPage() {
         id="agita-series"
         badgeUrl="/products/immersion-washers"
         badge="Immersion Washers"
-        titleUrl="/products/immersion-washers/agita"
+        titleUrl="/products/immersion-washers?series=agita"
         title="Agita Series — Ultrasonic-Agitation Immersion Parts Washers"
         description={
           <>
             <p>
-              The Magido <a href="/products/immersion-washers/agita" className="font-medium text-magido-orange hover:text-magido-blue">Agita Series</a> immersion parts washers use a combination of heated aqueous
+              The Magido <a href="/products/immersion-washers?series=agita" className="font-medium text-magido-orange hover:text-magido-blue">Agita Series</a> immersion parts washers use a combination of heated aqueous
               immersion and mechanical agitation to achieve thorough cleaning of complex parts with
               internal passages, blind holes, and intricate geometries that spray-based systems
               cannot fully reach. Parts are placed on a platform that is lowered into the heated
@@ -1369,7 +1369,7 @@ export default function CatalogPage() {
             </p>
             <p>
               Available in four models (A700 through A1300) with platform sizes from
-              27.6"×15.7" to 51.2"×23.6" and solution temperatures up to 170°F, the <a href="/products/immersion-washers/agita" className="font-medium text-magido-orange hover:text-magido-blue">Agita Series</a>
+              27.6"×15.7" to 51.2"×23.6" and solution temperatures up to 170°F, the <a href="/products/immersion-washers?series=agita" className="font-medium text-magido-orange hover:text-magido-blue">Agita Series</a>
               is designed for precision cleaning of hydraulic components, fuel system parts,
               bearing housings, intricate machined parts, and other components that demand
               internal cleanliness verification.
@@ -1384,11 +1384,11 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/agita/a700.webp', alt: 'Agita A700 Immersion Parts Washer', series: 'Agita', model: 'A700',
-              seriesUrl: '/products/immersion-washers/agita' },
+              seriesUrl: '/products/immersion-washers?series=agita' },
           { src: '/images/products/agita/a900.webp', alt: 'Agita A900 Immersion Parts Washer', series: 'Agita', model: 'A900',
-              seriesUrl: '/products/immersion-washers/agita' },
+              seriesUrl: '/products/immersion-washers?series=agita' },
           { src: '/images/products/agita/a1100.webp', alt: 'Agita A1100 Immersion Parts Washer', series: 'Agita', model: 'A1100',
-              seriesUrl: '/products/immersion-washers/agita' },
+              seriesUrl: '/products/immersion-washers?series=agita' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1460,10 +1460,10 @@ export default function CatalogPage() {
               cleaning action cleans all exterior surfaces simultaneously.
             </p>
             <p>
-              The <a href="/products/rotary-drum-washers/jolly" className="font-medium text-magido-orange hover:text-magido-blue">Jolly Series</a> (J320, J320/2) is the compact entry-level rotary drum, ideal for
-              small shops processing moderate volumes of small parts. The <a href="/products/rotary-drum-washers/spira-1b" className="font-medium text-magido-orange hover:text-magido-blue">Spira 1b Series</a> (SP320
+              The <a href="/products/rotary-drum-washers?series=jolly" className="font-medium text-magido-orange hover:text-magido-blue">Jolly Series</a> (J320, J320/2) is the compact entry-level rotary drum, ideal for
+              small shops processing moderate volumes of small parts. The <a href="/products/rotary-drum-washers?series=spira-1b" className="font-medium text-magido-orange hover:text-magido-blue">Spira 1b Series</a> (SP320
               through SP950) provides single-stage wash with integral drying for production
-              environments. The <a href="/products/rotary-drum-washers/spira-2b" className="font-medium text-magido-orange hover:text-magido-blue">Spira 2b Series</a> (SP320/2 through SP950/2) adds a full rinse
+              environments. The <a href="/products/rotary-drum-washers?series=spira-2b" className="font-medium text-magido-orange hover:text-magido-blue">Spira 2b Series</a> (SP320/2 through SP950/2) adds a full rinse
               stage for applications requiring residue-free parts.
             </p>
             <p>
@@ -1477,11 +1477,11 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/jolly/j320.webp', alt: 'Jolly J320 Rotary Drum Washer', series: 'Jolly', model: 'J320',
-              seriesUrl: '/products/rotary-drum-washers/jolly' },
+              seriesUrl: '/products/rotary-drum-washers?series=jolly' },
           { src: '/images/products/spira-1b/sp480.webp', alt: 'Spira 1b Series SP480 Rotary Drum Washer', series: 'Spira 1b', model: 'SP480',
-              seriesUrl: '/products/rotary-drum-washers/spira-1b' },
+              seriesUrl: '/products/rotary-drum-washers?series=spira-1b' },
           { src: '/images/products/spira-1b/sp950.webp', alt: 'Spira SP950 Rotary Drum Washer', series: 'Spira 1b', model: 'SP950',
-              seriesUrl: '/products/rotary-drum-washers/spira-1b' },
+              seriesUrl: '/products/rotary-drum-washers?series=spira-1b' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1632,9 +1632,9 @@ export default function CatalogPage() {
               dry at the discharge end, ready for the next production step.
             </p>
             <p>
-              The <a href="/products/in-line-belt-conveyor-washers/silver" className="font-medium text-magido-orange hover:text-magido-blue">Silver Series</a> (S200–S400) is the compact entry-level conveyor washer with belt
+              The <a href="/products/in-line-belt-conveyor-washers?series=silver" className="font-medium text-magido-orange hover:text-magido-blue">Silver Series</a> (S200–S400) is the compact entry-level conveyor washer with belt
               widths from 8" to 16", designed for small to medium parts at moderate throughput.
-              The <a href="/products/in-line-belt-conveyor-washers/gold-1b" className="font-medium text-magido-orange hover:text-magido-blue">Gold 1b Series</a> (G200–G1000) provides single-stage wash with drying for
+              The <a href="/products/in-line-belt-conveyor-washers?series=gold-1b" className="font-medium text-magido-orange hover:text-magido-blue">Gold 1b Series</a> (G200–G1000) provides single-stage wash with drying for
               production volumes, available in nine belt widths from 8" to 39". The Gold 2b
               Series (G200/2–G1000/2) adds a full rinse stage for applications requiring a
               contaminant-free finish.
@@ -1650,12 +1650,12 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/silver/s200.webp', alt: 'Silver Series S200 In-Line Belt Conveyor Washer', series: 'Silver', model: 'S200',
-              seriesUrl: '/products/in-line-belt-conveyor-washers/silver' },
+              seriesUrl: '/products/in-line-belt-conveyor-washers?series=silver' },
           { src: '/images/products/gold-1b/g400.webp', alt: 'Gold 1b Series G400 In-Line Belt Conveyor Washer', series: 'Gold 1b', model: 'G400',
-              seriesUrl: '/products/in-line-belt-conveyor-washers/gold-1b',
+              seriesUrl: '/products/in-line-belt-conveyor-washers?series=gold-1b',
               modelUrl: '/products/in-line-belt-conveyor-washers/g400' },
           { src: '/images/products/gold-2b/g1000.webp', alt: 'Gold 2b Series G1000 In-Line Belt Conveyor Washer', series: 'Gold 2b', model: 'G1000',
-              seriesUrl: '/products/in-line-belt-conveyor-washers/gold-2b' },
+              seriesUrl: '/products/in-line-belt-conveyor-washers?series=gold-2b' },
         ]}
         features={[
           <><a href='/solutions/aisi-304-stainless-steel-parts-washers' className='underline decoration-magido-orange/60 hover:decoration-magido-orange'>AISI 304 Stainless Steel</a> Construction</>,
@@ -1792,27 +1792,27 @@ export default function CatalogPage() {
         id="rotary-immersion"
         badgeUrl="/products/rotary-immersion-washers"
         badge="Rotary Immersion Washers"
-        titleUrl="/products/rotary-immersion-washers/platinum"
+        titleUrl="/products/rotary-immersion-washers?series=platinum"
         title="Platinum Series — Rotary Immersion Aqueous Parts Washing Systems"
         description={
           <>
             <p>
-              Magido&apos;s <a href="/products/rotary-immersion-washers/platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> industrial rotary-immersion wash systems clean parts
+              Magido&apos;s <a href="/products/rotary-immersion-washers?series=platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> industrial rotary-immersion wash systems clean parts
               in baskets or fixtures by rotating them through a turbulent immersion bath combined
               with a simultaneous spray cleaning cycle. This dual-action process — immersion
               turbulence driving solution into complex internal geometries while spray jets clean
-              all exterior surfaces — makes the <a href="/products/rotary-immersion-washers/platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> ideal for high-precision components
+              all exterior surfaces — makes the <a href="/products/rotary-immersion-washers?series=platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> ideal for high-precision components
               with tight tolerances, blind holes, internal channels, and complex surface profiles.
             </p>
             <p>
               The cleaning cycle is followed by a combination of spray and immersion rinsing,
               with an optional heated drying stage. Available in four models (P600/2 through
               P1500/2) with basket sizes from L24"×W12"×H12" to L59"×W31"×H34" and load capacities
-              from 440 lbs to 1,500 lbs, the <a href="/products/rotary-immersion-washers/platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> covers a broad range of production
+              from 440 lbs to 1,500 lbs, the <a href="/products/rotary-immersion-washers?series=platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> covers a broad range of production
               cleaning requirements.
             </p>
             <p>
-              All <a href="/products/rotary-immersion-washers/platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> machines feature Siemens PLC with Weintek HMI for full process
+              All <a href="/products/rotary-immersion-washers?series=platinum" className="font-medium text-magido-orange hover:text-magido-blue">Platinum Series</a> machines feature Siemens PLC with Weintek HMI for full process
               control, adjustable drum rotation speed (0.5–3 RPM), and a front-loading design
               with external loading table for safe, ergonomic loading and unloading of heavy baskets
               and fixtures. Three-phase 460V power is required. Each system is customized
@@ -1822,13 +1822,13 @@ export default function CatalogPage() {
         }
         images={[
           { src: '/images/products/platinum/p600.webp', alt: 'Platinum Series P600/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P600/2',
-              seriesUrl: '/products/rotary-immersion-washers/platinum',
+              seriesUrl: '/products/rotary-immersion-washers?series=platinum',
               modelUrl: '/products/rotary-immersion-washers/p600-2' },
           { src: '/images/products/platinum/p1200.webp', alt: 'Platinum Series P1200/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P1200/2',
-              seriesUrl: '/products/rotary-immersion-washers/platinum',
+              seriesUrl: '/products/rotary-immersion-washers?series=platinum',
               modelUrl: '/products/rotary-immersion-washers/p1200-2' },
           { src: '/images/products/platinum/p1500.webp', alt: 'Platinum Series P1500/2 Rotary Immersion Parts Washer', series: 'Platinum', model: 'P1500/2',
-              seriesUrl: '/products/rotary-immersion-washers/platinum',
+              seriesUrl: '/products/rotary-immersion-washers?series=platinum',
               modelUrl: '/products/rotary-immersion-washers/p1500-2' },
         ]}
         features={[
