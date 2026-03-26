@@ -148,7 +148,7 @@ export default function ResourcesPage() {
               </div>
 
               {/* Secondary links — pipe-separated */}
-              <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/10 pt-5">
+              <div className="mt-5 flex items-center gap-x-3 border-t border-white/10 pt-5">
                 <Link
                   href="/products"
                   className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
