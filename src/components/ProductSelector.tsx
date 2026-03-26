@@ -281,7 +281,7 @@ export default function ProductSelector() {
   return (
     <div className="mx-auto max-w-xl">
       {/* Outer card — matches site card style with blue hover border */}
-      <div className="relative overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-card-bg)] p-7 transition-colors duration-300 hover:border-magido-blue/40">
+      <div className="relative overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-card-bg)] p-3 sm:p-7 transition-colors duration-300 hover:border-magido-blue/40">
 
         {/* Subtle dot-grid texture at ~12% opacity using brand blue */}
         <div
@@ -298,7 +298,7 @@ export default function ProductSelector() {
         <div className="relative">
 
           {/* Header — logo left, label right */}
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center justify-between mb-3 sm:mb-6">
             <Image
               src="/images/magido-usa-logo.webp"
               alt="Magido USA"
@@ -318,7 +318,7 @@ export default function ProductSelector() {
           <p className="text-xs font-semibold tracking-widest uppercase text-magido-orange mb-1">
             Question {step + 1} of {totalSteps}
           </p>
-          <h3 className="text-2xl font-bold text-[var(--color-text)] mb-5 leading-tight">
+          <h3 className="text-xl font-bold text-[var(--color-text)] mb-3 sm:mb-5 leading-tight sm:text-2xl">
             {currentQuestion.text}
           </h3>
           <div className={`grid gap-2 ${twoCol ? 'grid-cols-2' : 'grid-cols-1'}`}>
@@ -326,7 +326,7 @@ export default function ProductSelector() {
               <button
                 key={opt.val}
                 onClick={() => choose(currentQuestion.id, opt.val)}
-                className="text-left bg-[var(--color-bg-secondary)] border border-[var(--color-border)] hover:border-magido-orange hover:bg-[var(--color-bg-secondary)] transition-colors duration-150 p-3 rounded-lg"
+                className="text-left bg-[var(--color-bg-secondary)] border border-[var(--color-border)] hover:border-magido-orange hover:bg-[var(--color-bg-secondary)] transition-colors duration-150 p-2 sm:p-3 rounded-lg"
               >
                 <span className="block font-semibold text-[15px] text-[var(--color-text)] mb-0.5">
                   {opt.label}
@@ -356,11 +356,11 @@ export default function ProductSelector() {
             {result.name}
           </h3>
           <p className="text-sm text-magido-orange font-medium mb-3">{result.series}</p>
-          <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-5">{result.tagline}</p>
+          <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-3 sm:mb-5">{result.tagline}</p>
 
-          <div className="grid grid-cols-2 gap-2 mb-5">
+          <div className="grid grid-cols-2 gap-2 mb-3 sm:mb-5">
             {result.features.map((f) => (
-              <div key={f.label} className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] p-3 rounded-lg">
+              <div key={f.label} className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] p-2 sm:p-3 rounded-lg">
                 <p className="text-[10px] font-semibold tracking-widest uppercase text-[var(--color-text-muted)] mb-1">
                   {f.label}
                 </p>

@@ -344,8 +344,8 @@ export default function CapacityCalculator() {
     <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-card-bg)] overflow-hidden">
 
       {/* ── Inputs ── */}
-      <div className="p-6 border-b border-[var(--color-border)]">
-        <p className="text-xs font-semibold tracking-widest uppercase text-magido-orange mb-4">
+      <div className="p-3 sm:p-6 border-b border-[var(--color-border)]">
+        <p className="text-xs font-semibold tracking-widest uppercase text-magido-orange mb-2 sm:mb-4">
           Capacity Calculator
         </p>
 
@@ -353,7 +353,7 @@ export default function CapacityCalculator() {
         <p className="text-xs font-semibold text-[var(--color-text)] mb-2">
           Largest part dimensions <span className="font-normal text-[var(--color-text-muted)]">(inches — optional, filters machines by fit)</span>
         </p>
-        <div className="grid grid-cols-3 gap-3 mb-5">
+        <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-3 sm:mb-5">
           {[
             { label: 'Length', val: partL, set: setPartL },
             { label: 'Width',  val: partW, set: setPartW },
@@ -373,7 +373,7 @@ export default function CapacityCalculator() {
         </div>
 
         {/* Row 2 — Throughput inputs */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4">
           <div>
             <label className="block text-xs font-semibold text-[var(--color-text)] mb-1.5">
               Parts needed per shift
@@ -438,11 +438,11 @@ export default function CapacityCalculator() {
 
       {/* ── Results ── */}
       {calculated && (
-        <div ref={resultsRef} className="p-6">
+        <div ref={resultsRef} className="p-3 sm:p-6">
 
           {/* ── Outcome: nothing fits by size ── */}
           {nothingFits && (
-            <div className="mb-6 rounded-lg border border-magido-blue/40 bg-magido-blue/5 px-5 py-5">
+            <div className="mb-4 sm:mb-6 rounded-lg border border-magido-blue/40 bg-magido-blue/5 px-3 py-3 sm:px-5 sm:py-5">
               <p className="font-semibold text-sm text-[var(--color-text)] mb-1">
                 No standard machine fits these part dimensions
               </p>
@@ -470,7 +470,7 @@ export default function CapacityCalculator() {
 
           {/* ── Outcome: throughput target not met ── */}
           {noThroughput && (
-            <div className="mb-6 rounded-lg border border-amber-300 bg-amber-50 dark:border-amber-700 dark:bg-amber-900/15 px-5 py-4">
+            <div className="mb-4 sm:mb-6 rounded-lg border border-amber-300 bg-amber-50 dark:border-amber-700 dark:bg-amber-900/15 px-3 py-3 sm:px-5 sm:py-4">
               <p className="font-semibold text-sm text-amber-800 dark:text-amber-300 mb-1">
                 No single machine meets your throughput target
               </p>
@@ -520,7 +520,7 @@ export default function CapacityCalculator() {
           {!nothingFits && Array.from(grouped.entries()).map(([seriesName, seriesResults]) => {
             if (seriesResults.length === 0) return null;
             return (
-              <div key={seriesName} className="mb-8 last:mb-0">
+              <div key={seriesName} className="mb-4 sm:mb-8 last:mb-0">
                 <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--color-text-muted)] mb-3 pb-2 border-b border-[var(--color-border)]">
                   {seriesName}
                 </h3>
