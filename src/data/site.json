@@ -17,9 +17,9 @@
     "parentLabel": "Magido Italy"
   },
   "contact": {
-    "consultationLine": "Free consultation, same-day response.",
-    "scottLine": "Talk to Scott Morin — free consultation, same-day response.",
-    "quoteTagline": "Request a Quote — Free Industrial Parts Cleaning Process Evaluation · Same-Day Response"
+    "consultationLine": "Free consultation, quick response.",
+    "scottLine": "Talk to Scott Morin — free consultation, quick response.",
+    "quoteTagline": "Request a Quote — Free Industrial Parts Cleaning Process Evaluation · Quick Response"
   },
   "scott": {
     "name": "Scott Morin",
@@ -34,7 +34,7 @@
     { "match": "/blog",                  "tagline": "Industrial Parts Washing Guides — Aqueous, Water-Based & Stainless Steel Cleaning Systems" },
     { "match": "/resources",             "tagline": "Aqueous Parts Washer Documentation & Catalog — Industrial Stainless Steel Cleaning Systems" },
     { "match": "/industries",            "tagline": "Industrial Aqueous Parts Washers for Automotive, Aerospace, Machining & Heavy Equipment" },
-    { "match": "/contact",               "tagline": "Request a Quote — Free Industrial Parts Cleaning Process Evaluation · Same-Day Response" },
+    { "match": "/contact",               "tagline": "Request a Quote — Free Industrial Parts Cleaning Process Evaluation · Quick Response" },
     { "match": "/faq",                   "tagline": "Aqueous Parts Washer FAQ — Stainless Steel, Water-Based Industrial Parts Cleaning Systems" },
     { "match": "/about",                 "tagline": "Leaders in Industrial Aqueous Parts Washing — 100% Stainless Steel, Made in Italy Since 1980" },
     { "match": "/privacy-policy",        "tagline": "Magido USA Privacy Policy — magidousa.com" },
