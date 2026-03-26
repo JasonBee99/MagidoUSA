@@ -29,25 +29,27 @@ export function Footer() {
               Every machine built from<br className="sm:hidden" />{' '}
               <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="font-medium text-magido-orange hover:text-magido-blue">AISI 304 stainless steel</a>.
             </p>
-            {/* Contact lines — centered on mobile */}
-            <div className="mt-4 space-y-2">
-              <a href="tel:8444624436" className="flex items-center justify-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange sm:justify-start">
-                <Phone className="h-4 w-4 flex-shrink-0" /> 844-4MA-GIDO (844-462-4436)
-              </a>
-              <a href="mailto:Sales@MagidoUSA.com" className="flex items-center justify-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange sm:justify-start">
-                <Mail className="h-4 w-4 flex-shrink-0" /> Sales@MagidoUSA.com
-              </a>
-              <a
-                href="https://www.google.com/maps/place/1500+S+Sylvania+Ave,+Sturtevant,+WI+53177/@42.924813,-88.6008321,368780m/data=!3m1!1e3!4m6!3m5!1s0x88056f17a8348f5f:0xa12292fcce87ef08!8m2!3d42.7166028!4d-87.9552287!16s%2Fg%2F11b8v54lgx?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-start justify-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange sm:justify-start"
-              >
-                <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0" />
-                <span className="text-center sm:text-left">1500 S Sylvania Ave<br />Sturtevant, WI 53177</span>
-              </a>
-              <div className="flex items-center justify-center gap-2 text-sm text-[var(--color-text-secondary)] sm:justify-start">
-                <Clock className="h-4 w-4 flex-shrink-0" /> M–F 8:00 am – 5:00 pm (CST)
+            {/* Contact lines — centered block, left-aligned text inside */}
+            <div className="mt-4 flex flex-col items-center sm:items-start">
+              <div className="flex flex-col gap-2">
+                <a href="tel:8444624436" className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange">
+                  <Phone className="h-4 w-4 flex-shrink-0" /> 844-4MA-GIDO (844-462-4436)
+                </a>
+                <a href="mailto:Sales@MagidoUSA.com" className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange">
+                  <Mail className="h-4 w-4 flex-shrink-0" /> Sales@MagidoUSA.com
+                </a>
+                <a
+                  href="https://www.google.com/maps/place/1500+S+Sylvania+Ave,+Sturtevant,+WI+53177/@42.924813,-88.6008321,368780m/data=!3m1!1e3!4m6!3m5!1s0x88056f17a8348f5f:0xa12292fcce87ef08!8m2!3d42.7166028!4d-87.9552287!16s%2Fg%2F11b8v54lgx?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange"
+                >
+                  <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0" />
+                  <span>1500 S Sylvania Ave<br />Sturtevant, WI 53177</span>
+                </a>
+                <div className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)]">
+                  <Clock className="h-4 w-4 flex-shrink-0" /> M–F 8:00 am – 5:00 pm (CST)
+                </div>
               </div>
             </div>
           </div>
