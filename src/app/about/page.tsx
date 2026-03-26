@@ -55,7 +55,7 @@ export default function AboutPage() {
               </p>
 
               {/* CTAs — btn-sm side-by-side */}
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="mt-6 flex flex-wrap justify-center gap-2 sm:justify-start">
                 <Link href="/contact" className="btn-primary btn-sm">
                   Contact Scott
                   <span className="btn-arrow">→</span>
