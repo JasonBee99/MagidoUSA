@@ -540,8 +540,21 @@ export function Header() {
           </>
         )}
       {/* ─── SEO Tagline Bar ─── */}
-      <div className="overflow-hidden border-b border-magido-blue/40 bg-magido-blue px-4 py-1.5 text-center">
-        <p className="truncate text-[11px] font-medium uppercase tracking-widest text-white/80">
+      <div className="overflow-hidden border-b border-magido-blue/40 bg-magido-blue px-4 py-1.5">
+        {/* Mobile — scrolling marquee */}
+        <div className="tagline-marquee lg:hidden">
+          <div className="tagline-marquee__inner">
+            {/* Duplicate for seamless loop */}
+            <span className="text-[11px] font-medium uppercase tracking-widest text-white/80">
+              {mounted ? tagline : ''}
+            </span>
+            <span className="text-[11px] font-medium uppercase tracking-widest text-white/80" aria-hidden="true">
+              {mounted ? tagline : ''}
+            </span>
+          </div>
+        </div>
+        {/* Desktop — static centered */}
+        <p className="hidden truncate text-center text-[11px] font-medium uppercase tracking-widest text-white/80 lg:block">
           {mounted ? tagline : ''}
         </p>
       </div>

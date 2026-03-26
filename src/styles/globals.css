@@ -860,3 +860,28 @@
   width: 100%;
   display: block;
 }
+
+/* ── Tagline marquee — mobile only ── */
+@media (max-width: 1023px) {
+  .tagline-marquee {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  }
+  .tagline-marquee__inner {
+    display: flex;
+    gap: 3rem;
+    white-space: nowrap;
+    animation: tagline-scroll 22s linear infinite;
+    will-change: transform;
+  }
+  .tagline-marquee__inner:hover {
+    animation-play-state: paused;
+  }
+  @keyframes tagline-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
