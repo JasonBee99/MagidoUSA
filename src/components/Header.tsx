@@ -485,7 +485,7 @@ export function Header() {
                     href="/contact"
                     className="btn-quote w-full text-center"
                   >
-                    Request a Quote
+                    Contact / Request a Quote
                   </Link>
                   <a
                     href="mailto:Sales@MagidoUSA.com"
@@ -494,25 +494,22 @@ export function Header() {
                     <Mail className="h-4 w-4 flex-shrink-0" />
                     Sales@MagidoUSA.com
                   </a>
-                </div>
 
-                {/* Magido Italy */}
-                <div className="mt-3 flex justify-center">
+                  {/* Magido Italy — Italian flag stripe button */}
                   <a
                     href="https://magido.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-xs text-[var(--color-text-muted)] transition-colors hover:text-magido-orange"
+                    className="overflow-hidden rounded-lg"
+                    aria-label="Magido Italy"
                   >
-                    <Image
-                      src="/images/italian-flag.svg"
-                      alt="Italy"
-                      width={21}
-                      height={15}
-                      className="h-[15px] w-[21px] flex-shrink-0"
-                    />
-                    Magido Italy
-                    <ExternalLink className="h-3 w-3" />
+                    <div className="flex h-9 w-full">
+                      <div className="flex flex-1 items-center justify-center bg-[#009246]" />
+                      <div className="flex flex-1 items-center justify-center bg-white">
+                        <span className="text-xs font-semibold text-[#1a1a1a]">Magido Italy</span>
+                      </div>
+                      <div className="flex flex-1 items-center justify-center bg-[#CE2B37]" />
+                    </div>
                   </a>
                 </div>
               </div>
