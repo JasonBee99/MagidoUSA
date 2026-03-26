@@ -137,7 +137,7 @@ export default function ResourcesPage() {
               </p>
 
               {/* CTAs — btn-sm side-by-side */}
-              <div className="mt-6 flex gap-2">
+              <div className="mt-6 flex justify-center gap-2 sm:justify-start">
                 <Link href="/resources/catalog" className="btn-primary btn-sm whitespace-nowrap">
                   Download Catalog
                   <span className="btn-arrow">→</span>
@@ -148,12 +148,12 @@ export default function ResourcesPage() {
               </div>
 
               {/* Secondary links — pipe-separated */}
-              <div className="mt-5 flex items-center gap-x-2 border-t border-white/10 pt-5 sm:gap-x-4">
+              <div className="mt-5 flex items-center justify-center gap-x-2 border-t border-white/10 pt-5 sm:justify-start sm:gap-x-4">
                 <Link
                   href="/products"
                   className="whitespace-nowrap text-xs font-medium text-gray-300 transition-colors hover:text-white sm:text-sm"
                 >
-                  Browse Products →
+                  Browse Products
                 </Link>
                 <span className="text-white/20" aria-hidden="true">|</span>
                 <Link
