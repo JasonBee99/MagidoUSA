@@ -35,7 +35,7 @@ export default function SelectorTabs() {
 
       {/* Panel — consistent background container for both tabs, grid matches hero-bg */}
       <div
-        className="rounded-b-xl rounded-tr-xl border border-t-0 border-[var(--color-border)] p-6"
+        className="rounded-b-xl rounded-tr-xl border border-t-0 border-[var(--color-border)] p-0 sm:p-4 lg:p-6"
         style={{
           backgroundColor: 'color-mix(in srgb, var(--color-bg-secondary) 20%, var(--color-bg))',
           backgroundImage: `
