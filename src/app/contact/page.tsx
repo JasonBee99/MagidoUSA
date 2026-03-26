@@ -200,7 +200,19 @@ function ContactPageInner() {
               FAQ page
             </Link>
             <br className="sm:hidden" />
-            {' '}we may already have the answer.
+            {' '}we may already have the answer.{' '}
+            Not sure which machine fits?{' '}Try our{' '}
+            <Link href="/how-to-choose" className="font-medium text-magido-orange hover:underline">
+              How to Choose
+            </Link>
+            {' '}guide with{' '}
+            <Link href="/how-to-choose#selector" className="font-medium text-magido-orange hover:underline">
+              Product Picker
+            </Link>
+            {' '}&amp;{' '}
+            <Link href="/how-to-choose#calculator" className="font-medium text-magido-orange hover:underline">
+              Capacity Calculator
+            </Link>.
           </p>
         </div>
       </div>
