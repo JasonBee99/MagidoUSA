@@ -200,7 +200,7 @@ function ContactPageInner() {
               FAQ page
             </Link>
             <br className="sm:hidden" />
-            {' '}— we may already have the answer.
+            {' '}we may already have the answer.
           </p>
         </div>
       </div>
@@ -255,7 +255,7 @@ function ContactPageInner() {
                       <input type="hidden" name="_subject" value="New Quote Request — Magido USA Website" />
 
                       {/* Form intro */}
-                      <div className="rounded-lg border border-[var(--color-border-light)] bg-[var(--color-bg-secondary)] px-4 py-3.5 text-sm text-[var(--color-text)] leading-relaxed">
+                      <div className="rounded-lg border border-[var(--color-border-light)] bg-[var(--color-bg-secondary)] px-4 py-3.5 text-sm text-[var(--color-text)] leading-relaxed text-justify">
                         Fill in as much detail as you can — the more we know about your application, the faster we can prepare an accurate quote.
                         If you already have a model in mind, enter it below. Not sure which machine fits your process?{' '}
                         <Link href="/how-to-choose" className="font-medium text-magido-orange hover:underline">
@@ -561,7 +561,7 @@ function ContactPageInner() {
                   <ul className="mt-3 space-y-2 text-sm text-[var(--color-text-secondary)]">
                     <li className="flex items-start gap-2">
                       <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-magido-orange" />
-                      100% <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a> construction
+                      100% AISI 304 stainless steel construction
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-magido-orange" />
@@ -763,7 +763,7 @@ function SubmitButton({
     <button
       type="submit"
       disabled={status === 'submitting'}
-      className="inline-flex items-center gap-2 rounded-lg bg-magido-orange px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark disabled:cursor-not-allowed disabled:opacity-60"
+      className="mx-auto flex items-center gap-2 rounded-lg bg-magido-orange px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-magido-orange-dark disabled:cursor-not-allowed disabled:opacity-60"
     >
       {status === 'submitting' ? (
         <>
