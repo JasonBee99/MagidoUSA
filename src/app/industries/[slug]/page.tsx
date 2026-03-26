@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { INDUSTRIES, getIndustry } from '@/data/industries';
+import siteConfig from '@/data/site.json';
 import { BreadcrumbJsonLd } from '@/components/JsonLd';
 import type { Metadata } from 'next';
 
@@ -252,7 +253,7 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
             Ready to solve your {industry.name.toLowerCase()} cleaning challenge?
           </h2>
           <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-            Talk to Scott Morin — free consultation, same-day response.
+            {siteConfig.contact.scottLine}
           </p>
           <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link

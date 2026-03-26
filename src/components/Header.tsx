@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import { Menu, X, Sun, Moon, ChevronDown, Phone, Mail, ExternalLink } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
 import { getAllCategories, getSeriesByCategory } from '@/lib/products';
+import siteConfig from '@/data/site.json';
 
 const categories = getAllCategories();
 
@@ -18,23 +19,8 @@ const NAV_LINKS = [
   { href: '/contact', label: 'Contact' },
 ];
 
-// ─── Route-matched SEO taglines ───────────────────────────────────────────────
-// Packs the 5 highest-volume search terms into natural language per page.
-const TAGLINES: { match: string; tagline: string }[] = [
-  { match: '/products',           tagline: 'Stainless Steel Aqueous Parts Washing Systems — 84 Models · 7 Categories · Made in Italy' },
-  { match: '/solutions',          tagline: 'Aqueous Parts Washer Selection Guides — Spray Cabinet, Immersion, Conveyor, Rotary & Manual' },
-  { match: '/how-to-choose',      tagline: 'How to Choose an Industrial Aqueous Parts Washer — Free Water-Based Parts Cleaning Evaluation' },
-  { match: '/blog',               tagline: 'Industrial Parts Washing Guides — Aqueous, Water-Based & Stainless Steel Cleaning Systems' },
-  { match: '/resources',          tagline: 'Aqueous Parts Washer Documentation & Catalog — Industrial Stainless Steel Cleaning Systems' },
-  { match: '/industries',         tagline: 'Industrial Aqueous Parts Washers for Automotive, Aerospace, Machining & Heavy Equipment' },
-  { match: '/contact',            tagline: 'Request a Quote — Free Industrial Parts Cleaning Process Evaluation · Same-Day Response' },
-  { match: '/faq',                tagline: 'Aqueous Parts Washer FAQ — Stainless Steel, Water-Based Industrial Parts Cleaning Systems' },
-  { match: '/about',              tagline: 'Leaders in Industrial Aqueous Parts Washing — 100% Stainless Steel, Made in Italy Since 1980' },
-  { match: '/privacy-policy',    tagline: 'Magido USA Privacy Policy — magidousa.com' },
-  { match: '/terms-of-use',      tagline: 'Magido USA Terms of Use — magidousa.com' },
-  { match: '/aqueous-parts-washers', tagline: 'Industrial Aqueous Parts Washers — 100% AISI 304 Stainless Steel, Made in Italy' },
-  { match: '/',                   tagline: 'Industrial Aqueous Parts Washers — 100% AISI 304 Stainless Steel, Made in Italy' },
-];
+// Route-matched SEO taglines — sourced from src/data/site.json
+const TAGLINES = siteConfig.taglines;
 
 export function Header() {
   const { theme, toggleTheme } = useTheme();

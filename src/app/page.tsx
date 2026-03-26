@@ -1,3 +1,4 @@
+import siteConfig from '@/data/site.json';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -385,7 +386,7 @@ export default function HomePage() {
                   </div>
 
                   <p className="mt-5 text-justify text-sm leading-relaxed text-[var(--color-text-secondary)]">
-                    Contact Scott today — he wants to understand your parts cleaning challenges and recommend the right solution. Free consultation, same-day response.
+                    Contact Scott today — he wants to understand your parts cleaning challenges and recommend the right solution. {siteConfig.contact.consultationLine}
                   </p>
                   <div className="mt-5 flex flex-row flex-wrap justify-center gap-2 lg:justify-start">
                     <Link

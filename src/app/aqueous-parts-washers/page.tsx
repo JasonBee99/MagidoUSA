@@ -1,3 +1,4 @@
+import siteConfig from '@/data/site.json';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
@@ -572,7 +573,7 @@ export default function AqueousPartsWashersPage() {
           <p className="mb-10 text-lg text-white/70">
             Scott Morin, our National Sales Manager, will evaluate your parts, contamination type,
             and throughput requirements — and recommend the exact stainless steel parts washer for
-            your application. Free consultation, same-day response.
+            your application. {siteConfig.contact.consultationLine}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary">

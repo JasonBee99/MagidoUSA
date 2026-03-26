@@ -1,3 +1,4 @@
+import siteConfig from '@/data/site.json';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Droplets, FlaskConical } from 'lucide-react';
@@ -373,7 +374,7 @@ export default function ResourcesPage() {
             Need help choosing the right system?
           </h2>
           <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-            Talk to Scott Morin — free consultation, same-day response.
+            {siteConfig.contact.scottLine}
           </p>
           <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link

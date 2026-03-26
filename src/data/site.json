@@ -1,0 +1,45 @@
+{
+  "company": {
+    "name": "Magido USA",
+    "phone": "844-462-4436",
+    "phoneFormatted": "844-4MA-GIDO (844-462-4436)",
+    "phoneTel": "8444624436",
+    "email": "Sales@MagidoUSA.com",
+    "address": {
+      "street": "1500 S Sylvania Ave",
+      "city": "Sturtevant",
+      "state": "WI",
+      "zip": "53177",
+      "full": "1500 S Sylvania Ave, Sturtevant, WI 53177"
+    },
+    "hours": "M–F 8:00 am – 5:00 pm (CST)",
+    "parentUrl": "https://magido.com",
+    "parentLabel": "Magido Italy"
+  },
+  "contact": {
+    "consultationLine": "Free consultation, same-day response.",
+    "scottLine": "Talk to Scott Morin — free consultation, same-day response.",
+    "quoteTagline": "Request a Quote — Free Industrial Parts Cleaning Process Evaluation · Same-Day Response"
+  },
+  "scott": {
+    "name": "Scott Morin",
+    "title": "National Sales Manager",
+    "subtitle": "Global Parts Cleaning Manufacturer at Magido USA",
+    "linkedin": "https://www.linkedin.com/in/toscottmorin"
+  },
+  "taglines": [
+    { "match": "/products",              "tagline": "Stainless Steel Aqueous Parts Washing Systems — 84 Models · 7 Categories · Made in Italy" },
+    { "match": "/solutions",             "tagline": "Aqueous Parts Washer Selection Guides — Spray Cabinet, Immersion, Conveyor, Rotary & Manual" },
+    { "match": "/how-to-choose",         "tagline": "How to Choose an Industrial Aqueous Parts Washer — Free Water-Based Parts Cleaning Evaluation" },
+    { "match": "/blog",                  "tagline": "Industrial Parts Washing Guides — Aqueous, Water-Based & Stainless Steel Cleaning Systems" },
+    { "match": "/resources",             "tagline": "Aqueous Parts Washer Documentation & Catalog — Industrial Stainless Steel Cleaning Systems" },
+    { "match": "/industries",            "tagline": "Industrial Aqueous Parts Washers for Automotive, Aerospace, Machining & Heavy Equipment" },
+    { "match": "/contact",               "tagline": "Request a Quote — Free Industrial Parts Cleaning Process Evaluation · Same-Day Response" },
+    { "match": "/faq",                   "tagline": "Aqueous Parts Washer FAQ — Stainless Steel, Water-Based Industrial Parts Cleaning Systems" },
+    { "match": "/about",                 "tagline": "Leaders in Industrial Aqueous Parts Washing — 100% Stainless Steel, Made in Italy Since 1980" },
+    { "match": "/privacy-policy",        "tagline": "Magido USA Privacy Policy — magidousa.com" },
+    { "match": "/terms-of-use",          "tagline": "Magido USA Terms of Use — magidousa.com" },
+    { "match": "/aqueous-parts-washers", "tagline": "Industrial Aqueous Parts Washers — 100% AISI 304 Stainless Steel, Made in Italy" },
+    { "match": "/",                      "tagline": "Industrial Aqueous Parts Washers — 100% AISI 304 Stainless Steel, Made in Italy" }
+  ]
+}

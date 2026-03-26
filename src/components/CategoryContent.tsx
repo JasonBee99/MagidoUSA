@@ -1,4 +1,5 @@
 'use client';
+import siteConfig from '@/data/site.json';
 
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
@@ -222,7 +223,7 @@ function CategoryCta() {
           Not sure which system is right for you?
         </h2>
         <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-          Talk to Scott Morin — free consultation, same-day response.
+          {siteConfig.contact.scottLine}
         </p>
         <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
