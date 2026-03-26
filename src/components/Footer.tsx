@@ -10,6 +10,7 @@ export function Footer() {
     <footer className="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)]">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
           {/* Brand + Contact */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex justify-center sm:justify-start">
@@ -22,37 +23,42 @@ export function Footer() {
                 sizes="230px"
               />
             </Link>
-            <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)]">
-              Leaders in Aqueous Cleaning Solutions. Every machine built from <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="text-magido-orange hover:text-magido-blue font-medium">AISI 304 stainless steel</a>.
+            {/* 3 lines centered on mobile */}
+            <p className="mt-3 text-center text-sm leading-relaxed text-[var(--color-text-secondary)] sm:text-left">
+              Leaders in Aqueous Cleaning Solutions.<br />
+              Every machine built from<br className="sm:hidden" />{' '}
+              <a href="/solutions/aisi-304-stainless-steel-parts-washers" className="font-medium text-magido-orange hover:text-magido-blue">AISI 304 stainless steel</a>.
             </p>
+            {/* Contact lines — centered on mobile */}
             <div className="mt-4 space-y-2">
-              <a href="tel:8444624436" className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange">
+              <a href="tel:8444624436" className="flex items-center justify-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange sm:justify-start">
                 <Phone className="h-4 w-4 flex-shrink-0" /> 844-4MA-GIDO (844-462-4436)
               </a>
-              <a href="mailto:Sales@MagidoUSA.com" className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange">
+              <a href="mailto:Sales@MagidoUSA.com" className="flex items-center justify-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange sm:justify-start">
                 <Mail className="h-4 w-4 flex-shrink-0" /> Sales@MagidoUSA.com
               </a>
               <a
                 href="https://www.google.com/maps/place/1500+S+Sylvania+Ave,+Sturtevant,+WI+53177/@42.924813,-88.6008321,368780m/data=!3m1!1e3!4m6!3m5!1s0x88056f17a8348f5f:0xa12292fcce87ef08!8m2!3d42.7166028!4d-87.9552287!16s%2Fg%2F11b8v54lgx?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange"
+                className="flex items-start justify-center gap-2 text-sm text-[var(--color-text-secondary)] hover:text-magido-orange sm:justify-start"
               >
                 <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0" />
-                <span>1500 S Sylvania Ave<br />Sturtevant, WI 53177</span>
+                <span className="text-center sm:text-left">1500 S Sylvania Ave<br />Sturtevant, WI 53177</span>
               </a>
-              <div className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)]">
+              <div className="flex items-center justify-center gap-2 text-sm text-[var(--color-text-secondary)] sm:justify-start">
                 <Clock className="h-4 w-4 flex-shrink-0" /> M–F 8:00 am – 5:00 pm (CST)
               </div>
             </div>
           </div>
 
           {/* Product Categories */}
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-[var(--color-text)]">
               Products
             </h3>
-            <ul className="mt-3 space-y-2">
+            {/* Horizontal wrapping links on mobile, vertical on sm+ */}
+            <ul className="mt-3 flex flex-wrap justify-center gap-x-3 gap-y-2 sm:flex-col sm:flex-nowrap sm:justify-start sm:gap-x-0 sm:space-y-2">
               {categories.map((cat) => (
                 <li key={cat.slug}>
                   <Link
@@ -67,11 +73,11 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-[var(--color-text)]">
               Resources
             </h3>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-3 flex flex-wrap justify-center gap-x-3 gap-y-2 sm:flex-col sm:flex-nowrap sm:justify-start sm:gap-x-0 sm:space-y-2">
               <li>
                 <Link href="/about" className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange">
                   About Magido USA
@@ -97,7 +103,7 @@ export function Footer() {
                   href="https://magido.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange"
+                  className="inline-flex items-center gap-1 text-sm text-[var(--color-text-secondary)] transition-colors hover:text-magido-orange"
                 >
                   Magido Italy <ExternalLink className="h-3 w-3" />
                 </a>
@@ -121,7 +127,7 @@ export function Footer() {
           </div>
 
           {/* CTA */}
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-[var(--color-text)]">
               Get Started
             </h3>
