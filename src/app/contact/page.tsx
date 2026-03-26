@@ -195,7 +195,7 @@ function ContactPageInner() {
       <div className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)]">
         <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
           <p className="text-sm text-[var(--color-text-secondary)]">
-            Have a general question? Check our{' '}
+            Have a general question?{' '}<br className="sm:hidden" />Check our{' '}
             <Link href="/faq" className="font-medium text-magido-orange hover:underline">
               FAQ page
             </Link>{' '}
