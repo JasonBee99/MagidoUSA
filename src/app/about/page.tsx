@@ -67,27 +67,27 @@ export default function AboutPage() {
               </div>
 
               {/* Secondary links — pipe-separated */}
-              <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-white/10 pt-5">
+              <div className="mt-5 flex items-center justify-center gap-x-2 border-t border-white/10 pt-5 sm:justify-start sm:gap-x-4">
                 <Link
                   href="/products"
-                  className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                  className="whitespace-nowrap text-xs font-medium text-gray-300 transition-colors hover:text-white sm:text-sm"
                 >
                   Browse Washers →
                 </Link>
                 <span className="text-white/20" aria-hidden="true">|</span>
                 <Link
-                  href="/contact#evaluation"
-                  className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                  href="/resources/catalog"
+                  className="whitespace-nowrap text-xs font-medium text-gray-300 transition-colors hover:text-white sm:text-sm"
                 >
-                  <FlaskConical className="h-3.5 w-3.5 text-magido-orange" />
-                  Process Evaluation
+                  View Catalog →
                 </Link>
                 <span className="text-white/20" aria-hidden="true">|</span>
                 <Link
-                  href="/resources/catalog"
-                  className="whitespace-nowrap text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                  href="/contact#evaluation"
+                  className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap text-xs font-medium text-gray-300 transition-colors hover:text-white sm:gap-1.5 sm:text-sm"
                 >
-                  Download Catalog →
+                  <FlaskConical className="h-3 w-3 text-magido-orange sm:h-3.5 sm:w-3.5" />
+                  Process Evaluation
                 </Link>
               </div>
             </div>
