@@ -369,22 +369,16 @@ export function Header() {
             {/* Panel */}
             <div className="fixed inset-x-0 top-14 z-50 max-h-[calc(100vh-3.5rem)] overflow-y-auto border-t border-[var(--color-border)] bg-[var(--color-bg)] pb-6 shadow-xl lg:hidden">
               <div className="mx-auto max-w-7xl px-4 pt-3 sm:px-6">
-                {/* Mobile info bar */}
-                <div className="mb-3 flex flex-col gap-1.5 rounded-lg bg-[var(--color-bg-secondary)] p-3">
-                  <a
-                    href="mailto:Sales@MagidoUSA.com"
-                    className="flex items-center gap-2 text-xs text-[var(--color-text-secondary)]"
+
+                {/* Theme toggle — top of panel */}
+                <div className="mb-3 px-1">
+                  <button
+                    onClick={toggleTheme}
+                    className="flex w-full items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] px-4 py-2 text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:border-magido-orange/40 hover:text-[var(--color-text)]"
                   >
-                    <Mail className="h-3 w-3" />
-                    Sales@MagidoUSA.com
-                  </a>
-                  <a
-                    href="tel:8444624436"
-                    className="flex items-center gap-2 text-xs text-[var(--color-text-secondary)]"
-                  >
-                    <Phone className="h-3 w-3" />
-                    844-462-4436 | M–F 8am–5pm CST
-                  </a>
+                    {theme === 'light' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+                    {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+                  </button>
                 </div>
 
                 {/* Products accordion */}
@@ -478,13 +472,14 @@ export function Header() {
                   </Link>
                 ))}
 
-                <div className="mt-4 flex flex-col gap-2 px-3">
+                {/* Bottom CTAs */}
+                <div className="mt-4 flex flex-col gap-2 px-1">
                   <a
                     href="tel:8444624436"
-                    className="flex items-center justify-center gap-2 rounded-lg bg-magido-blue px-4 py-2.5 text-sm font-medium text-white"
+                    className="flex items-center justify-center gap-2 rounded-lg bg-magido-blue px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-magido-blue/90"
                   >
-                    <Phone className="h-4 w-4" />
-                    844-462-4436
+                    <Phone className="h-4 w-4 flex-shrink-0" />
+                    844-462-4436 · M–F 8am–5pm
                   </a>
                   <Link
                     href="/contact"
@@ -492,17 +487,16 @@ export function Header() {
                   >
                     Request a Quote
                   </Link>
-                  {/* Theme toggle — mobile */}
-                  <button
-                    onClick={toggleTheme}
-                    className="flex items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] px-4 py-2.5 text-sm font-medium text-[var(--color-text-secondary)]"
+                  <a
+                    href="mailto:Sales@MagidoUSA.com"
+                    className="flex items-center justify-center gap-2 rounded-lg border border-[var(--color-border)] px-4 py-2.5 text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:border-magido-orange/40 hover:text-magido-orange"
                   >
-                    {theme === 'light' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-                    {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
-                  </button>
+                    <Mail className="h-4 w-4 flex-shrink-0" />
+                    Sales@MagidoUSA.com
+                  </a>
                 </div>
 
-                {/* Mobile Magido Italy link */}
+                {/* Magido Italy */}
                 <div className="mt-3 flex justify-center">
                   <a
                     href="https://magido.com"
