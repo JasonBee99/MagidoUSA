@@ -193,27 +193,29 @@ function ContactPageInner() {
 
       {/* ─── FAQ Callout ─── */}
       <div className="border-b border-[var(--color-border)] bg-[var(--color-bg-secondary)]">
-        <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
-          <p className="text-center text-sm text-[var(--color-text-secondary)]">
-            Have a general question?{' '}<br className="sm:hidden" />Check our{' '}
-            <Link href="/faq" className="font-medium text-magido-orange hover:underline">
-              FAQ page
-            </Link>
-            <br className="sm:hidden" />
-            {' '}we may already have the answer.{' '}
-            Not sure which machine fits?{' '}Try our{' '}
-            <Link href="/how-to-choose" className="font-medium text-magido-orange hover:underline">
-              How to Choose
-            </Link>
-            {' '}guide with{' '}
-            <Link href="/how-to-choose#selector" className="font-medium text-magido-orange hover:underline">
-              Product Picker
-            </Link>
-            {' '}&amp;{' '}
-            <Link href="/how-to-choose#calculator" className="font-medium text-magido-orange hover:underline">
-              Capacity Calculator
-            </Link>.
-          </p>
+        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-8">
+            <div className="text-center">
+              <p className="text-sm font-semibold text-[var(--color-text)]">Have a general question?</p>
+              <p className="mt-0.5 text-xs text-[var(--color-text-secondary)]">
+                Check our{' '}
+                <Link href="/faq" className="font-medium text-magido-orange hover:underline">FAQ page</Link>
+                {' '}— we may already have the answer.
+              </p>
+            </div>
+            <div className="hidden h-8 w-px bg-[var(--color-border)] sm:block" aria-hidden="true" />
+            <div className="text-center">
+              <p className="text-sm font-semibold text-[var(--color-text)]">Not sure which machine fits?</p>
+              <p className="mt-0.5 text-xs text-[var(--color-text-secondary)]">
+                Try our{' '}
+                <Link href="/how-to-choose" className="font-medium text-magido-orange hover:underline">How to Choose</Link>
+                {' '}guide with{' '}
+                <Link href="/how-to-choose" className="font-medium text-magido-orange hover:underline">Product Picker</Link>
+                {' '}&amp;{' '}
+                <Link href="/how-to-choose" className="font-medium text-magido-orange hover:underline">Capacity Calculator</Link>.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
