@@ -186,18 +186,18 @@ function CatalogSection({
 
           {/* Images */}
           {images && images.length > 0 && (
-            <div className="lg:sticky lg:top-20 flex flex-row flex-wrap lg:flex-col gap-3 items-center lg:items-stretch lg:justify-start">
+            <div className="lg:sticky lg:top-20 flex flex-row flex-wrap justify-center lg:flex-col gap-3 items-center lg:items-stretch lg:justify-start px-4 lg:px-0">
               {images.map((img) => (
                 <div
                   key={img.src}
-                  className="product-card-image-bg relative rounded-xl overflow-hidden border border-[var(--color-border)] w-36 h-36 lg:w-full lg:flex-1 lg:min-h-[8rem] lg:max-h-[14rem] flex-shrink-0"
+                  className="product-card-image-bg relative rounded-xl overflow-hidden border border-[var(--color-border)] w-44 h-44 lg:w-full lg:flex-1 lg:min-h-[8rem] lg:max-h-[14rem] flex-shrink-0"
                 >
                   <Image
                     src={img.src}
                     alt={img.alt}
                     fill
                     className="object-contain p-3"
-                    sizes="(max-width: 1024px) 144px, 25vw"
+                    sizes="(max-width: 1024px) 176px, 25vw"
                   />
                   {/* Model badge — top-left, orange, rounded bottom-right only */}
                   {img.model && (
