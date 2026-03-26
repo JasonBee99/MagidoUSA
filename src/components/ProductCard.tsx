@@ -216,14 +216,9 @@ export function ProductCard({
                     Specs not yet available.
                   </p>
                 )}
-                <Link
-                  href={`/products/${categorySlug}/${product.slug}`}
-                  className="mt-2 text-center text-[11px] font-semibold text-magido-orange hover:text-magido-orange-dark"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  Full specs & details →
-                  <span className="sr-only"> for {product.name}</span>
-                </Link>
+                <span className="mt-2 block text-center text-[11px] font-semibold text-magido-orange">
+                  Full specs &amp; details →
+                </span>
               </div>
             )}
           </div>
